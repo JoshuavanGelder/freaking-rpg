@@ -1,0 +1,73 @@
+{
+ "id": "muq032nm-pozov",
+ "finishedAt": "2026-10-01T20:42:58.122Z",
+ "durationMs": 12012,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "Barry en de Verdwenen Maandag",
+  "narration": "Het is 07:00 's ochtends in Central City, en Barry Allen heeft al driemaal ontbeten, de krant gelezen en de was gedaan. Het is nog steeds 07:00. Dat is het probleem.\n\nBuiten staat de hele stad stil. Een duif hangt roerloos in de lucht met een half broodkruimeltje in zijn snavel. Een voetganger heeft zijn paraplu halverwege opengeklapt, en hij kijkt verrassend tevreden.\n\nDan hoor je een klein, beleefd kuchje. Op je vensterbank zit een sprekende bureaulamp met een kleine cape.\n\n\"Meneer Allen. Iemand heeft de maandag gestolen. Alle zeven uur, ook de lunch. Zonder maandag kan de dinsdag niet beginnen en dan wordt het een hele rommel. De verdachte vluchtte naar het Pretpark van Verloren Sokken.\"\n\nJe spieren tintelen. Je schoenen roken al een beetje van ongeduld.",
+  "choices": [
+   "Rennen naar het pretpark, meteen!",
+   "Eerst de lamp ondervragen over de dief",
+   "Rond de duif rennen en zijn kruimel opeten"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 5
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 4
+   },
+   {
+    "name": "Vindingrijkheid",
+    "value": 3
+   },
+   {
+    "name": "Geduld",
+    "value": 1
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 0,
+   "addItems": [
+    "Rode speedsterpak"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Vind de gestolen maandag",
+     "detail": "Zoek de dief in het Pretpark van Verloren Sokken."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Central City, appartement"
+  },
+  "summary": "Barry Allen, speedster, zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape meldt dat iemand de maandag heeft gestolen en naar het Pretpark van Verloren Sokken is gevlucht. Barry moet de maandag terugvinden.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A young speedster in a red suit with lightning emblem and gold accents stands at a city apartment window, a tiny talking desk lamp with a cape on the sill, frozen pigeon mid-air outside, morning light",
+   "fallback": "A young man in a red suit with lightning emblem at an apartment window in a sunny city, a small desk lamp with a tiny cape on the windowsill."
+  },
+  "heroLook": "Young man with short messy blond-brown hair, athletic build, red full-body speedster suit with gold lightning bolt emblem on chest, gold boots and wrist bands, cowl-free, determined friendly face.",
+  "portrait": "Head and shoulders portrait of a young man with short messy blond-brown hair, friendly determined smile, red speedster suit collar with golden lightning emblem, city skyline at dawn behind him."
+ },
+ "model": "sonnet"
+}
