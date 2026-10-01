@@ -1,24 +1,20 @@
 #!/usr/bin/env bash
-# Maakt een Claude-token (claude setup-token) en zet het als secret CLAUDE_CODE_OAUTH_TOKEN,
-# zonder dat je iets uit de terminal hoeft te kopiëren of erin hoeft te plakken. Gemaakt voor een
-# GitHub Codespace op je telefoon.
+# Maakt een Claude-token (claude setup-token) en zet het in claude-token.md, zodat je het daar kunt kopiëren
+# en als secret in GitHub kunt plakken. Gemaakt voor een GitHub Codespace op je telefoon: je hoeft niets uit
+# de terminal te kopiëren.
 #
 #   bash scripts/claude-token.sh
 #
-# Zo werkt het:
-#   1. De editor opent "claude-inloggen.md" met één grote link: tik erop en log in bij Claude.
-#   2. Claude toont daarna een code. Kopieer die en plak hem in "plak-hier-de-code.txt" (opent ook).
-#      Kom je op een kapotte localhost-pagina? Plak dan de hele link uit de adresbalk in dat bestand.
-#   3. Het script ziet dat vanzelf, maakt het token, test het en zet het als secret.
-#
-# Standaard in freaking-rpg én freaking-dj (hetzelfde token mag in beide). Ander lijstje:
-#   REPOS="JoshuavanGelder/freaking-rpg" bash scripts/claude-token.sh
+#   1. De editor opent "claude-inloggen.md": tik op de link en log in bij Claude.
+#   2. Plak de code die Claude toont in "plak-hier-de-code.txt" (of de hele localhost-link als je daarop uitkomt).
+#   3. "claude-token.md" opent met je token en een link naar de plek in GitHub waar je het plakt.
 # Na een jaar verloopt het token: draai dit script dan opnieuw.
 set -uo pipefail
-REPOS="${REPOS:-JoshuavanGelder/freaking-rpg JoshuavanGelder/freaking-dj}"
+REPO="${REPO:-JoshuavanGelder/freaking-rpg}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LINK_FILE="$ROOT/claude-inloggen.md"
 CODE_FILE="$ROOT/plak-hier-de-code.txt"
+OUT_FILE="$ROOT/claude-token.md"
 TOKEN_FILE="$(mktemp)"
 chmod 600 "$TOKEN_FILE"
 trap 'rm -f "$TOKEN_FILE" "$LINK_FILE" "$CODE_FILE"' EXIT
@@ -167,34 +163,30 @@ echo
 echo "Token gemaakt: ${TOKEN:0:16}…${TOKEN: -4} (${#TOKEN} tekens)"
 
 echo
-echo "== Stap 2: token testen (één heel klein verzoek aan Claude) =="
+echo "Token testen (één heel klein verzoek aan Claude)…"
 if CLAUDE_CODE_OAUTH_TOKEN="$TOKEN" claude -p "Antwoord alleen met: ok" --max-turns 1 --tools "" >/dev/null 2>&1; then
-  echo "Het token werkt."
+  TESTED="Getest: het token werkt."
 else
-  echo "Claude accepteert dit token niet. Draai het script opnieuw."
-  exit 1
+  TESTED="Let op: de test lukte niet. Probeer het toch; werkt het niet, draai het script dan opnieuw."
 fi
 
+cat > "$OUT_FILE" <<MD
+# Je Claude-token
+
+$TOKEN
+
+$TESTED
+
+## Zo zet je het in GitHub
+
+1. Houd je vinger op deze pagina, kies **Alles selecteren** en dan **Kopiëren**.
+   (Alles meekopiëren is prima: de app haalt het token er zelf uit.)
+2. Tik op **[deze link](https://github.com/$REPO/settings/secrets/actions/CLAUDE_CODE_OAUTH_TOKEN)**,
+   plak alles in het vak *Value* en tik op **Update secret**.
+3. Tik in de app op **Opnieuw proberen**.
+
+Daarna kun je deze codespace verwijderen via github.com/codespaces (het token staat in dit bestand).
+MD
+open_in_editor "$OUT_FILE"
 echo
-echo "== Stap 3: secret in GitHub zetten =="
-set_all() {
-  local ok=0
-  for r in $REPOS; do
-    if printf '%s' "$TOKEN" | gh secret set CLAUDE_CODE_OAUTH_TOKEN --repo "$r" >/dev/null 2>&1; then
-      echo "  ✓ $r"
-    else
-      ok=1
-    fi
-  done
-  return $ok
-}
-if ! set_all; then
-  echo "GitHub vraagt eenmalig om in te loggen. Er verschijnt hieronder een code van 8 tekens:"
-  echo "open github.com/login/device, typ die code over en keur het goed."
-  unset GITHUB_TOKEN GH_TOKEN
-  BROWSER=true gh auth login --hostname github.com --git-protocol https --web --scopes repo || exit 1
-  set_all || { echo "Het secret kon niet overal gezet worden."; exit 1; }
-fi
-echo
-echo "Klaar: CLAUDE_CODE_OAUTH_TOKEN staat in: $REPOS"
-echo "Tik in de app op 'Opnieuw proberen'. Deze codespace mag je daarna verwijderen (github.com/codespaces)."
+echo "Klaar: je token staat in claude-token.md (opent in de editor). Volg de stappen op die pagina."

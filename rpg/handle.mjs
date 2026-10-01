@@ -65,7 +65,12 @@ export async function handleRequest(id, dataDir) {
 
   // Op de telefoon gekopieerde tokens bevatten vaak een regeleinde of spatie (het token loopt over twee
   // regels). Claude weigert dat als ongeldig, dus eerst opschonen.
-  const token = String(process.env.CLAUDE_CODE_OAUTH_TOKEN ?? '').replace(/\s+/g, '');
+  // Er mag ook extra tekst omheen staan (bv. de hele claude-token.md geplakt): we pakken het token eruit.
+  const rawToken = String(process.env.CLAUDE_CODE_OAUTH_TOKEN ?? '');
+  const TOKEN_RE = /sk-ant-oat01-[A-Za-z0-9_-]+/;
+  // Echte tokens zijn ~108 tekens; is het gevonden stuk korter, dan zat er een regeleinde in het token.
+  const direct = rawToken.match(TOKEN_RE)?.[0] ?? '';
+  const token = direct.length >= 90 ? direct : (rawToken.replace(/\s+/g, '').match(TOKEN_RE)?.[0] ?? rawToken.trim());
   const env = { ...process.env, CLAUDE_CODE_OAUTH_TOKEN: token };
 
   return new Promise((resolve) => {

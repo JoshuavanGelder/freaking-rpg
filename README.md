@@ -11,12 +11,12 @@ Open op je Android-telefoon de nieuwste [release](../../releases/latest) en tik 
    fine-grained, alleen repo `freaking-rpg`, rechten **Contents** en **Actions**: *Read and write*.
    Plak het in Freaking RPG → Instellingen → GitHub. (Je kunt ook je token van Freaking DJ uitbreiden met deze repo.)
 2. **Claude-token** — open een Codespace op deze repo (knop *Code → Codespaces*, kan op je telefoon), typ in de
-   terminal `bash scripts/claude-token.sh` en volg de stappen. Kopiëren uit de terminal is niet nodig:
-   - de editor opent `claude-inloggen.md` met één link: tik erop, log in bij Claude en tik op *Authorize*;
-   - Claude toont een code: plak die in `plak-hier-de-code.txt` (opent ook). Kom je op een kapotte
-     localhost-pagina, plak dan de hele link uit de adresbalk in dat bestand;
-   - het script maakt het token, test het en zet het als secret **`CLAUDE_CODE_OAUTH_TOKEN`** in
-     `freaking-rpg` én `freaking-dj` (hetzelfde token mag in beide). Het is 1 jaar geldig; daarna opnieuw draaien.
+   terminal `bash scripts/claude-token.sh`. Kopiëren uit de terminal is niet nodig:
+   - de editor opent `claude-inloggen.md`: tik op de link, log in bij Claude en tik op *Authorize*;
+   - plak de code die Claude toont in `plak-hier-de-code.txt` (of de hele localhost-link als je daarop uitkomt);
+   - `claude-token.md` opent met je token: *Alles selecteren* → *Kopiëren*, tik op de link op die pagina en plak
+     alles bij het secret **`CLAUDE_CODE_OAUTH_TOKEN`** (extra tekst mag, de verteller haalt het token eruit).
+   Het token is 1 jaar geldig; daarna het script opnieuw draaien. Hetzelfde token mag ook in `freaking-dj`.
 3. **Beelden** — plak in Instellingen → Beelden de URL van je Images-koppeling (je Cloudflare Worker
    `claudia-image-mcp`, eindigt op `/mcp/<geheime code>`). De app test hem zonder tegoed te gebruiken.
 
