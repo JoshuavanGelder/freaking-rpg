@@ -1,0 +1,151 @@
+import React from 'react';
+import { Alert, Pressable, View } from 'react-native';
+import { useApp } from '../store';
+import { useTurns } from '../turns';
+import { useNav } from '../nav';
+import { C, F } from '../theme';
+import { Icon } from '../icons';
+import { IconButton, Label, Row, Screen, T } from '../ui';
+import { ago, turnCount, worldLabel } from '../logic/game';
+import type { Adventure } from '../logic/types';
+
+export function HomeScreen() {
+  const { state, removeAdventure } = useApp();
+  const { warm, health, phase } = useTurns();
+  const nav = useNav();
+
+  const confirmDelete = (a: Adventure) =>
+    Alert.alert('Avontuur verwijderen?', `"${a.title}" verdwijnt van je telefoon.`, [
+      { text: 'Annuleren', style: 'cancel' },
+      { text: 'Verwijderen', style: 'destructive', onPress: () => removeAdventure(a.id) },
+    ]);
+
+  const narrator =
+    warm === 'klaar'
+      ? { dot: C.good, text: 'Verteller is wakker', sub: 'je volgende beurt gaat snel' }
+      : warm === 'opwarmen'
+        ? { dot: C.accent, text: 'Verteller wordt wakker', sub: 'nog even geduld' }
+        : { dot: C.dim, text: 'Verteller slaapt', sub: 'wordt wakker zodra je speelt' };
+
+  return (
+    <Screen gap={0}>
+      <Row style={{ justifyContent: 'space-between', paddingTop: 8 }}>
+        <T weight="display" size={28} style={{ letterSpacing: -0.3 }}>
+          <T weight="display" size={28} color={C.accent}>
+            FREAKING
+          </T>{' '}
+          RPG
+        </T>
+        <IconButton icon="settings" label="Instellingen" onPress={() => nav.push({ name: 'settings' })} />
+      </Row>
+      <T size={15} color={C.muted} style={{ marginTop: 4 }}>
+        Jij doet iets. De verteller doet de rest.
+      </T>
+
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => nav.push({ name: 'new' })}
+        style={({ pressed }) => ({
+          marginTop: 22,
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 16,
+          padding: 20,
+          borderRadius: 18,
+          backgroundColor: pressed ? C.accentPressed : C.accent,
+        })}
+      >
+        <View style={{ width: 52, height: 52, borderRadius: 14, backgroundColor: C.onAccent, alignItems: 'center', justifyContent: 'center' }}>
+          <Icon name="plus" size={26} color={C.accent} strokeWidth={2.5} />
+        </View>
+        <View style={{ gap: 2, flex: 1 }}>
+          <T weight="display" size={20} color={C.onAccent}>
+            Nieuw avontuur
+          </T>
+          <T size={14} weight="semibold" color={C.onAccent}>
+            Kies je wereld, toon en held
+          </T>
+        </View>
+      </Pressable>
+
+      {state.adventures.length ? (
+        <View style={{ marginTop: 28, gap: 10 }}>
+          <Label>Verder spelen</Label>
+          {state.adventures.map((a) => {
+            const busy = !!a.pending && !a.error;
+            const n = turnCount(a);
+            return (
+              <Pressable
+                key={a.id}
+                accessibilityRole="button"
+                accessibilityHint="Lang ingedrukt houden om te verwijderen"
+                onPress={() => nav.push({ name: 'story', id: a.id })}
+                onLongPress={() => confirmDelete(a)}
+                style={({ pressed }) => ({
+                  flexDirection: 'row',
+                  gap: 14,
+                  alignItems: 'center',
+                  padding: 12,
+                  borderRadius: 16,
+                  backgroundColor: pressed ? C.cardHi : C.card,
+                })}
+              >
+                <View style={{ width: 64, height: 64, borderRadius: 12, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center' }}>
+                  <Icon name={a.ended ? 'scroll' : 'book'} size={24} color={C.dim} strokeWidth={1.75} />
+                </View>
+                <View style={{ flex: 1, gap: 3 }}>
+                  <T size={17} weight="bold" numberOfLines={1}>
+                    {a.title}
+                  </T>
+                  <T size={13} color={C.muted} numberOfLines={1}>
+                    {worldLabel(a.world)}
+                  </T>
+                  <T size={13} color={busy ? C.accent : a.error ? C.hp : C.muted} numberOfLines={1}>
+                    {busy
+                      ? phase[a.id]?.stage === 'schrijven'
+                        ? 'De verteller schrijft…'
+                        : 'Beurt onderweg…'
+                      : a.error
+                        ? 'Beurt mislukt, tik om opnieuw te proberen'
+                        : a.ended
+                          ? `Einde · ${n} beurten`
+                          : `Beurt ${n} · ${ago(a.updatedAt)}`}
+                  </T>
+                </View>
+              </Pressable>
+            );
+          })}
+        </View>
+      ) : (
+        <View style={{ marginTop: 28, padding: 18, borderRadius: 16, borderWidth: 1.5, borderStyle: 'dashed', borderColor: C.dashed, gap: 6 }}>
+          <T size={16} weight="bold">
+            Nog geen avonturen
+          </T>
+          <T size={14} color={C.muted} style={{ lineHeight: 20 }}>
+            Begin je eerste avontuur. Jij kiest de wereld en de toon, de verteller doet de rest.
+          </T>
+        </View>
+      )}
+
+      <View style={{ marginTop: 28, padding: 16, borderRadius: 14, borderWidth: 1, borderColor: C.border, gap: 10 }}>
+        <Row style={{ gap: 10 }}>
+          <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: narrator.dot }} />
+          <T size={14} weight="semibold">
+            {narrator.text}
+          </T>
+          <T size={14} color={C.muted} style={{ flex: 1 }} numberOfLines={1}>
+            · {narrator.sub}
+          </T>
+        </Row>
+        {health.level !== 'ok' && health.level !== 'onbekend' ? (
+          <Row style={{ gap: 10, alignItems: 'flex-start' }}>
+            <Icon name="alert" size={16} color={C.hp} />
+            <T size={13} color={C.ink} style={{ flex: 1, fontFamily: F.regular }}>
+              {health.text}
+            </T>
+          </Row>
+        ) : null}
+      </View>
+    </Screen>
+  );
+}

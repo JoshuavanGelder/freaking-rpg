@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "description": "Only on the start turn: Dutch title of the adventure, max 5 words. Otherwise empty string." },
+    "narration": { "type": "string", "description": "Dutch narration, 80-170 words, short paragraphs separated by a blank line. No numbers or game terms." },
+    "choices": {
+      "type": "array",
+      "description": "Exactly 3 short Dutch actions (max 8 words each).",
+      "items": { "type": "string" }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Hidden skill check for this turn.",
+      "properties": {
+        "used": { "type": "boolean" },
+        "attribute": { "type": "string", "description": "Name of the hidden attribute used, or empty string." },
+        "dc": { "type": "integer", "description": "Difficulty 8-18, or 0 when not used." },
+        "success": { "type": "boolean" }
+      },
+      "required": ["used", "attribute", "dc", "success"]
+    },
+    "attributes": {
+      "type": "array",
+      "description": "Only on the start turn: 4-6 hidden attributes that fit this hero. Empty on other turns.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Dutch attribute name." },
+          "value": { "type": "integer", "description": "0-5." }
+        },
+        "required": ["name", "value"]
+      }
+    },
+    "changes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hp": { "type": "integer", "description": "Change in hit points this turn (negative = damage)." },
+        "gold": { "type": "integer", "description": "Change in gold this turn." },
+        "xp": { "type": "integer", "description": "Experience gained this turn, 0-30." },
+        "addItems": { "type": "array", "items": { "type": "string" } },
+        "removeItems": { "type": "array", "items": { "type": "string" } },
+        "addQuests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "title": { "type": "string" },
+              "detail": { "type": "string" }
+            },
+            "required": ["title", "detail"]
+          }
+        },
+        "completeQuests": { "type": "array", "items": { "type": "string" }, "description": "Exact titles of open quests that are now done." },
+        "location": { "type": "string", "description": "Where the hero is now (short Dutch name), or empty string when unchanged." }
+      },
+      "required": ["hp", "gold", "xp", "addItems", "removeItems", "addQuests", "completeQuests", "location"]
+    },
+    "summary": { "type": "string", "description": "The whole story so far in at most 120 Dutch words." },
+    "gameOver": { "type": "boolean", "description": "True only when the hero dies or the story truly ends." }
+  },
+  "required": ["title", "narration", "choices", "check", "attributes", "changes", "summary", "gameOver"]
+}

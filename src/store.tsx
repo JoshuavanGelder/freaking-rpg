@@ -1,0 +1,108 @@
+// Alle app-gegevens op één plek, bewaard in AsyncStorage. Het GitHub-token staat apart in SecureStore.
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import type { Adventure, TurnResponse } from './logic/types';
+
+export type Model = 'sonnet' | 'haiku' | 'opus';
+
+export type Settings = {
+  owner: string;
+  repo: string;
+  model: Model;
+  warm: boolean; // warme verteller starten als je de app opent
+};
+
+export type AppState = {
+  version: 1;
+  adventures: Adventure[];
+  settings: Settings;
+  lastResponse: TurnResponse | null;
+};
+
+export const DEFAULT_SETTINGS: Settings = {
+  owner: 'JoshuavanGelder',
+  repo: 'freaking-rpg',
+  model: 'sonnet',
+  warm: true,
+};
+
+const EMPTY: AppState = { version: 1, adventures: [], settings: DEFAULT_SETTINGS, lastResponse: null };
+const KEY = 'frpg-state-v1';
+
+type Ctx = {
+  state: AppState;
+  loaded: boolean;
+  /** Huidige staat, ook buiten React-renders (voor lopende beurten). */
+  current: () => AppState;
+  update: (fn: (s: AppState) => AppState) => void;
+  saveAdventure: (adv: Adventure) => void;
+  patchAdventure: (id: string, fn: (a: Adventure) => Adventure) => void;
+  removeAdventure: (id: string) => void;
+  setSettings: (patch: Partial<Settings>) => void;
+};
+
+const AppCtx = createContext<Ctx | null>(null);
+
+export function useApp(): Ctx {
+  const c = useContext(AppCtx);
+  if (!c) throw new Error('useApp buiten AppProvider');
+  return c;
+}
+
+export function useAdventure(id: string): Adventure | null {
+  const { state } = useApp();
+  return state.adventures.find((a) => a.id === id) ?? null;
+}
+
+function sorted(list: Adventure[]): Adventure[] {
+  return [...list].sort((a, b) => b.updatedAt - a.updatedAt);
+}
+
+export function AppProvider({ children }: { children: React.ReactNode }) {
+  const [state, setState] = useState<AppState>(EMPTY);
+  const [loaded, setLoaded] = useState(false);
+  const ref = useRef<AppState>(EMPTY);
+
+  useEffect(() => {
+    AsyncStorage.getItem(KEY)
+      .then((raw) => {
+        if (!raw) return;
+        const parsed = JSON.parse(raw) as Partial<AppState>;
+        const next: AppState = {
+          ...EMPTY,
+          ...parsed,
+          adventures: Array.isArray(parsed.adventures) ? parsed.adventures : [],
+          settings: { ...DEFAULT_SETTINGS, ...(parsed.settings ?? {}) },
+        };
+        ref.current = next;
+        setState(next);
+      })
+      .catch(() => undefined)
+      .finally(() => setLoaded(true));
+  }, []);
+
+  const update = useCallback((fn: (s: AppState) => AppState) => {
+    const next = fn(ref.current);
+    ref.current = next;
+    setState(next);
+    AsyncStorage.setItem(KEY, JSON.stringify(next)).catch(() => undefined);
+  }, []);
+
+  const value = useMemo<Ctx>(
+    () => ({
+      state,
+      loaded,
+      current: () => ref.current,
+      update,
+      saveAdventure: (adv) =>
+        update((s) => ({ ...s, adventures: sorted([adv, ...s.adventures.filter((a) => a.id !== adv.id)]) })),
+      patchAdventure: (id, fn) =>
+        update((s) => ({ ...s, adventures: sorted(s.adventures.map((a) => (a.id === id ? fn(a) : a))) })),
+      removeAdventure: (id) => update((s) => ({ ...s, adventures: s.adventures.filter((a) => a.id !== id) })),
+      setSettings: (patch) => update((s) => ({ ...s, settings: { ...s.settings, ...patch } })),
+    }),
+    [state, loaded, update],
+  );
+
+  return <AppCtx.Provider value={value}>{children}</AppCtx.Provider>;
+}

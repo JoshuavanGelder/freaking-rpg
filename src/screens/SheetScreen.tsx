@@ -1,0 +1,144 @@
+import React from 'react';
+import { View } from 'react-native';
+import { useAdventure } from '../store';
+import { useNav } from '../nav';
+import { C } from '../theme';
+import { Icon } from '../icons';
+import { Bar, Card, Label, Row, Screen, T, TopBar } from '../ui';
+import { XP_PER_LEVEL, worldLabel } from '../logic/game';
+
+/** Je held: leven, goud, level, tas en quests. Verborgen eigenschappen blijven verborgen. */
+export function SheetScreen({ id }: { id: string }) {
+  const adv = useAdventure(id);
+  const nav = useNav();
+  if (!adv) {
+    return (
+      <Screen>
+        <TopBar onBack={nav.back} />
+        <T size={16}>Dit avontuur bestaat niet meer.</T>
+      </Screen>
+    );
+  }
+  const s = adv.state;
+  const h = adv.hero;
+  const open = s.quests.filter((q) => !q.done);
+  const done = s.quests.filter((q) => q.done);
+  const xpInLevel = s.xp % XP_PER_LEVEL;
+
+  return (
+    <Screen gap={22}>
+      <TopBar onBack={nav.back} title="Je held" center />
+      <Row style={{ gap: 16 }}>
+        <View style={{ width: 96, height: 120, borderRadius: 16, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center' }}>
+          <Icon name="user" size={30} color={C.dim} strokeWidth={1.5} />
+        </View>
+        <View style={{ flex: 1, gap: 6 }}>
+          <T weight="display" size={24} style={{ lineHeight: 28 }}>
+            {h.name}
+          </T>
+          <T size={14} color={C.muted}>
+            {h.className} · level {s.level}
+          </T>
+          <Row style={{ gap: 8, marginTop: 4 }}>
+            <Bar value={xpInLevel} max={XP_PER_LEVEL} color={C.gold} height={6} />
+          </Row>
+          <T size={12} color={C.muted}>
+            Op weg naar level {s.level + 1}
+          </T>
+        </View>
+      </Row>
+
+      <Row style={{ gap: 10 }}>
+        <Card style={{ flex: 1, gap: 4, padding: 14 }}>
+          <T size={12} weight="bold" color={C.muted} style={{ letterSpacing: 0.8, textTransform: 'uppercase' }}>
+            Leven
+          </T>
+          <T weight="display" size={24} color={C.hp}>
+            {s.hp}
+            <T size={15} color={C.muted}>
+              {' '}
+              / {s.maxHp}
+            </T>
+          </T>
+        </Card>
+        <Card style={{ flex: 1, gap: 4, padding: 14 }}>
+          <T size={12} weight="bold" color={C.muted} style={{ letterSpacing: 0.8, textTransform: 'uppercase' }}>
+            Goud
+          </T>
+          <T weight="display" size={24} color={C.gold}>
+            {s.gold}
+          </T>
+        </Card>
+      </Row>
+
+      {h.powers ? (
+        <View style={{ gap: 10 }}>
+          <Label>Krachten en zwaktes</Label>
+          <T size={15} color={C.ink} style={{ lineHeight: 22 }}>
+            {h.powers}
+          </T>
+        </View>
+      ) : null}
+
+      <View style={{ gap: 10 }}>
+        <Label right={<T size={13} color={C.muted}>{s.inventory.length === 1 ? '1 voorwerp' : `${s.inventory.length} voorwerpen`}</T>}>Tas</Label>
+        {s.inventory.length ? (
+          <View style={{ borderRadius: 14, backgroundColor: C.card }}>
+            {s.inventory.map((it, i) => (
+              <View
+                key={`${it}-${i}`}
+                style={{ minHeight: 52, paddingHorizontal: 16, justifyContent: 'center', borderTopWidth: i ? 1 : 0, borderTopColor: C.line }}
+              >
+                <T size={15} weight="semibold">
+                  {it}
+                </T>
+              </View>
+            ))}
+          </View>
+        ) : (
+          <T size={14} color={C.muted}>
+            Je tas is nog leeg.
+          </T>
+        )}
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>Quests</Label>
+        {open.length ? (
+          open.map((q) => (
+            <Row key={q.title} style={{ gap: 12, alignItems: 'flex-start', padding: 14, borderRadius: 14, backgroundColor: C.card }}>
+              <View style={{ width: 10, height: 10, borderRadius: 5, marginTop: 5, backgroundColor: C.gold }} />
+              <View style={{ flex: 1, gap: 2 }}>
+                <T size={15} weight="semibold">
+                  {q.title}
+                </T>
+                {q.detail ? (
+                  <T size={13} color={C.muted}>
+                    {q.detail}
+                  </T>
+                ) : null}
+              </View>
+            </Row>
+          ))
+        ) : (
+          <T size={14} color={C.muted}>
+            Geen open quests.
+          </T>
+        )}
+        {done.map((q) => (
+          <Row key={q.title} style={{ gap: 12, paddingHorizontal: 14 }}>
+            <Icon name="check" size={16} color={C.good} strokeWidth={2.5} />
+            <T size={14} color={C.muted} style={{ flex: 1, textDecorationLine: 'line-through' }}>
+              {q.title}
+            </T>
+          </Row>
+        ))}
+      </View>
+
+      <T size={13} color={C.dim}>
+        {worldLabel(adv.world)}
+        {s.location ? ` · ${s.location}` : ''}
+      </T>
+    </Screen>
+  );
+}
