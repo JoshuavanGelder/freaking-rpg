@@ -40,7 +40,14 @@ jobs:
           exit $code
 
       - name: Pakketten installeren
-        run: npm install --no-audit --no-fund --legacy-peer-deps
+        run: |
+          set +e
+          npm install --no-audit --no-fund --legacy-peer-deps > npm.log 2>&1
+          code=$?
+          if [ $code -ne 0 ]; then
+            grep -E "npm (error|ERR)" npm.log | grep -v "A complete log" | head -12 | while IFS= read -r line; do echo "::warning title=npm::$line"; done
+          fi
+          exit $code
 
       - name: Versies afstemmen op de Expo SDK
         run: npx expo install --fix -- --legacy-peer-deps
@@ -69,7 +76,14 @@ jobs:
           java-version: 17
 
       - name: Pakketten installeren
-        run: npm install --no-audit --no-fund --legacy-peer-deps
+        run: |
+          set +e
+          npm install --no-audit --no-fund --legacy-peer-deps > npm.log 2>&1
+          code=$?
+          if [ $code -ne 0 ]; then
+            grep -E "npm (error|ERR)" npm.log | grep -v "A complete log" | head -12 | while IFS= read -r line; do echo "::warning title=npm::$line"; done
+          fi
+          exit $code
 
       - name: Versies afstemmen op de Expo SDK
         run: npx expo install --fix -- --legacy-peer-deps
