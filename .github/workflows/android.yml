@@ -10,6 +10,8 @@ on:
       - 'scripts/**'
       - '.github/workflows/rpg.yml'
       - '**.md'
+      - '.vscode/**'
+      - '.gitignore'
   workflow_dispatch:
 
 permissions:

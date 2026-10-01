@@ -1,0 +1,7 @@
+{
+  "workbench.editorAssociations": {
+    "claude-inloggen.md": "vscode.markdown.preview.editor"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500
+}
