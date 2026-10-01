@@ -46,7 +46,10 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   `tools/call generate_image` met `model: klein`, 512×512. URL (`…workers.dev/mcp/<SECRET>`) in SecureStore; testen
   met `tools/list` (kost geen tegoed). Geen Cloudflare-token nodig.
 - Verteller levert per beurt `image {show, kind, prompt, fallback}`, bij de start `heroLook` en `portrait`.
-  De app plakt een stijl per setting erachter (`styledPrompt`). Filterfout 3030 → één poging met `fallback`.
+  De app plakt een stijl per setting erachter (`styledPrompt`). Filterfout 3030 → één poging met `fallback`
+  (alleen de plek, geen personen). Getest: het filter weigert alles wat op een superheld lijkt (kostuum, embleem,
+  cape, masker, "speedster"); helden dus in gewone kleding met krachten als effecten (snelheidsstrepen, gloed).
+  Netwerkfout (app op achtergrond) → wachten tot de app voorop staat en max. 2 keer opnieuw.
 - Wachtrij: één beeld tegelijk, portret eerst, hervat na herstart; bestanden in `Paths.document/frpg-beelden`
   (expo-file-system); dagteller per UTC-dag (`imageCounter`), max. per dag instelbaar (standaard 150).
 

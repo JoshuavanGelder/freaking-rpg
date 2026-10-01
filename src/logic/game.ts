@@ -252,7 +252,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   const portraitPrompt = pending.kind === 'start' && answer.portrait ? answer.portrait : '';
   const portrait =
     portraitPrompt && images
-      ? newPicture(`${adv.id}-portret`, { kind: 'portrait', prompt: portraitPrompt, fallback: `head and shoulders portrait of ${hero.heroLook || hero.className}, calm expression, simple background` }, now)
+      ? newPicture(`${adv.id}-portret`, { kind: 'portrait', prompt: portraitPrompt, fallback: `head and shoulders portrait of ${hero.heroLook || 'a person in a casual jacket'}, calm expression, plain softly lit background` }, now)
       : adv.portrait;
 
   const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests };

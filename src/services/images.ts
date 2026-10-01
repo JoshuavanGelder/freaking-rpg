@@ -6,7 +6,7 @@ import { IMAGE_SIZE } from '../logic/game';
 
 const K_URL = 'frpg_image_url';
 
-export type ImageErrorKind = 'filter' | 'tegoed' | 'setup' | 'fout';
+export type ImageErrorKind = 'filter' | 'tegoed' | 'setup' | 'netwerk' | 'fout';
 
 export class ImageError extends Error {
   kind: ImageErrorKind;
@@ -51,8 +51,9 @@ async function rpc(url: string, method: string, params: unknown, timeoutMs: numb
     return body?.result;
   } catch (e: any) {
     if (e instanceof ImageError) throw e;
-    if (e?.name === 'AbortError') throw new ImageError('fout', 'Het beeld duurde te lang.');
-    throw new ImageError('fout', 'Geen verbinding met de beeldenserver.');
+    if (e?.name === 'AbortError') throw new ImageError('netwerk', 'Het beeld duurde te lang.');
+    // Vaak: de app stond even op de achtergrond en Android verbrak de verbinding. De wachtrij probeert het opnieuw.
+    throw new ImageError('netwerk', `Geen verbinding met de beeldenserver${e?.message ? ` (${String(e.message).slice(0, 80)})` : ''}.`);
   } finally {
     clearTimeout(timer);
   }

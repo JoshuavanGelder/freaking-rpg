@@ -24,6 +24,19 @@ export function usePictures(): PicCtx {
   return c;
 }
 
+/** Wacht tot de app voorop staat: op de achtergrond verbreekt Android lopende verbindingen. */
+function whenActive(): Promise<void> {
+  if (RNAppState.currentState === 'active') return Promise.resolve();
+  return new Promise((resolve) => {
+    const sub = RNAppState.addEventListener('change', (st) => {
+      if (st === 'active') {
+        sub.remove();
+        resolve();
+      }
+    });
+  });
+}
+
 function nextPending(adventures: Adventure[]): { advId: string; pic: Picture } | null {
   for (const a of adventures) {
     for (const p of picturesOf(a)) if (p.status === 'pending') return { advId: a.id, pic: p };
@@ -66,18 +79,33 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
         let result: { data: string; mime: string } | null = null;
         let error = '';
         let attempts = 0;
-        for (const prompt of [pic.prompt, pic.fallback]) {
-          if (!prompt || result) continue;
+        // Volgorde: de echte prompt; bij het filter de rustige versie (alleen de plek). Valt de verbinding weg
+        // (app even op de achtergrond), dan dezelfde prompt nog twee keer, telkens als de app weer voorop staat.
+        const prompts = [pic.prompt, pic.fallback].filter(Boolean);
+        let p = 0;
+        let netTries = 0;
+        while (p < prompts.length && !result) {
+          await whenActive();
           attempts++;
           try {
-            result = await img.generate(url, styledPrompt(adv.world.setting, prompt));
+            result = await img.generate(url, styledPrompt(adv.world.setting, prompts[p]));
           } catch (e: any) {
             error = e?.message ?? 'Het beeld kon niet gemaakt worden.';
             if (e?.kind === 'tegoed') {
               update((s) => ({ ...s, imageCounter: { ...imagesUsed(s.imageCounter), exhausted: true } }));
               break;
             }
-            if (e?.kind !== 'filter') break; // alleen bij het filter de rustige versie proberen
+            if (e?.kind === 'netwerk' && netTries < 2) {
+              netTries++;
+              attempts--; // telt niet mee: er is niets gemaakt
+              await new Promise((r) => setTimeout(r, 3000));
+              continue;
+            }
+            if (e?.kind === 'filter') {
+              p++;
+              continue;
+            }
+            break;
           }
         }
         update((s) => {

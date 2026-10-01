@@ -168,7 +168,7 @@
         },
         "fallback": {
           "type": "string",
-          "description": "English, the same moment as a calm, safe picture (place and hero, no fighting or violence words), 20-40 words."
+          "description": "English, only the place of this moment without any people or creatures (very safe), 20-40 words."
         }
       },
       "required": [
@@ -180,7 +180,7 @@
     },
     "heroLook": {
       "type": "string",
-      "description": "Only on the start turn: English description of the hero's visual appearance (20-40 words) to reuse in every picture. Otherwise empty string, unless the appearance really changed."
+      "description": "On the start turn: English description of the hero's visual appearance (20-40 words): everyday or stylish clothes, hair, face, build. Never a costume, suit with emblem, cape or mask. Otherwise empty string, unless the look changed or the given heroLook contains a costume."
     },
     "portrait": {
       "type": "string",
