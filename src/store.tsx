@@ -2,6 +2,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Adventure, TurnResponse } from './logic/types';
+import { DEFAULT_IMAGE_LIMIT, type ImageCounter } from './logic/game';
 
 export type Model = 'sonnet' | 'haiku' | 'opus';
 
@@ -10,6 +11,9 @@ export type Settings = {
   repo: string;
   model: Model;
   warm: boolean; // warme verteller starten als je de app opent
+  images: boolean; // beelden maken
+  imageLimit: number; // max. beelden per dag (gratis tegoed)
+  imageUrlSet: boolean; // staat de koppelings-URL in SecureStore?
 };
 
 export type AppState = {
@@ -17,6 +21,7 @@ export type AppState = {
   adventures: Adventure[];
   settings: Settings;
   lastResponse: TurnResponse | null;
+  imageCounter: ImageCounter | null;
 };
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -24,9 +29,12 @@ export const DEFAULT_SETTINGS: Settings = {
   repo: 'freaking-rpg',
   model: 'sonnet',
   warm: true,
+  images: true,
+  imageLimit: DEFAULT_IMAGE_LIMIT,
+  imageUrlSet: false,
 };
 
-const EMPTY: AppState = { version: 1, adventures: [], settings: DEFAULT_SETTINGS, lastResponse: null };
+const EMPTY: AppState = { version: 1, adventures: [], settings: DEFAULT_SETTINGS, lastResponse: null, imageCounter: null };
 const KEY = 'frpg-state-v1';
 
 type Ctx = {

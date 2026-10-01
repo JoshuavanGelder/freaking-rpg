@@ -13,7 +13,9 @@ Open op je Android-telefoon de nieuwste [release](../../releases/latest) en tik 
 2. **Claude-token** — open een Codespace op deze repo (knop *Code → Codespaces*, kan op je telefoon) en draai
    `bash scripts/claude-token.sh`. Dat maakt het token met `claude setup-token`, test het en zet het meteen als
    secret **`CLAUDE_CODE_OAUTH_TOKEN`** in deze repo (1 jaar geldig; daarna het script opnieuw draaien).
-   Het secret van Freaking DJ geldt alleen voor die repo, dus dit moet hier apart.
+   Het secret van Freaking DJ geldt alleen voor die repo, dus dit moet hier apart (hetzelfde token mag).
+3. **Beelden** — plak in Instellingen → Beelden de URL van je Images-koppeling (je Cloudflare Worker
+   `claudia-image-mcp`, eindigt op `/mcp/<geheime code>`). De app test hem zonder tegoed te gebruiken.
 
 ## Hoe het werkt
 - De app zet je beurt (wereld, held, verborgen staat, samenvatting, laatste beurten, je actie en een verborgen
@@ -26,8 +28,11 @@ Open op je Android-telefoon de nieuwste [release](../../releases/latest) en tik 
 - Je verhalen staan op je telefoon. Let op: deze repo is publiek, dus de beurten in `rpg-data` zijn voor
   iedereen leesbaar. Maak de repo privé als je dat niet wilt (dan heb je ca. 2.000 gratis Actions-minuten per maand).
 
-## Fases
-- **Fase 0 (nu):** wereld en toon kiezen, held maken, spelen met keuzes of eigen tekst, verborgen eigenschappen,
-  leven, goud, level, tas en quests.
-- **Fase 2:** beelden (max. 512×512, goedkoopste instelling) via Cloudflare Workers AI, ook van actiemomenten.
-- **Fase 3–4:** betere samenvattingen, meerdere saves, thema per setting, afwerking.
+## Beelden
+- Vierkant, 512×512, met FLUX.2 klein 4B (het goedkoopste model) via je eigen Worker: ongeveer 26 van de
+  10.000 gratis Cloudflare-punten per beeld. In de app stel je een maximum per dag in (standaard 150).
+- De verteller beschrijft elk moment voor een beeld en kiest zelf wanneer het de moeite waard is: de opening,
+  een nieuwe plek, een belangrijk personage of een actiemoment (gooi je een vuurbal, dan zie je die vuurbal).
+  Met de beeldknop bovenin ("Toon scène") vraag je zelf een beeld van het huidige moment.
+- Weigert het filter van Cloudflare een beeld, dan probeert de app automatisch een rustige versie van hetzelfde moment.
+- Bij de start maakt de app ook een portret van je held. Alle beelden staan in de galerij (via je held).

@@ -28,7 +28,8 @@ export function renderRequest(r) {
   lines.push(`- name: ${clean(h.name, 80) || 'onbekend'}`);
   lines.push(`- class or role: ${clean(h.className, 80) || 'free choice'}`);
   if (clean(h.powers)) lines.push(`- powers and weaknesses (player's words): ${clean(h.powers)}`);
-  if (clean(h.looks)) lines.push(`- appearance: ${clean(h.looks)}`);
+  if (clean(h.looks)) lines.push(`- appearance (player's words): ${clean(h.looks)}`);
+  if (clean(h.heroLook)) lines.push(`- heroLook for pictures (reuse it): ${clean(h.heroLook)}`);
   lines.push('');
   if (r.kind !== 'start') {
     lines.push('## Hidden state (never show numbers to the player)');

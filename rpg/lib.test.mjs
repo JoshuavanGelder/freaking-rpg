@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { classify, extractJson, parseCliOutput, pendingIds, renderRequest, validId } from './lib.mjs';
 
 const world = { setting: 'Superhelden', tones: ['Humoristisch', 'Rauw'], wishes: 'geen spinnen' };
-const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger' };
+const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger', heroLook: 'lanky teen in a red hoodie' };
 
 test('start-verzoek: wereld en held, geen staat of actie', () => {
   const t = renderRequest({ kind: 'start', world, hero, roll: 7 });
@@ -12,6 +12,7 @@ test('start-verzoek: wereld en held, geen staat of actie', () => {
   assert.match(t, /Humoristisch \+ Rauw/);
   assert.match(t, /geen spinnen/);
   assert.match(t, /supersnel, maar altijd honger/);
+  assert.match(t, /heroLook for pictures \(reuse it\): lanky teen in a red hoodie/);
   assert.match(t, /d20 roll for this turn: 7/);
   assert.doesNotMatch(t, /Hidden state/);
   assert.doesNotMatch(t, /The player does now/);

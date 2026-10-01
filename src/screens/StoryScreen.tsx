@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { Pressable, ScrollView, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useAdventure } from '../store';
+import { useAdventure, useApp } from '../store';
 import { useTurns, type Phase } from '../turns';
+import { usePictures } from '../pictures';
+import { PictureBox } from '../picture-view';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
@@ -15,6 +17,9 @@ export function StoryScreen({ id }: { id: string }) {
   const nav = useNav();
   const insets = useSafeAreaInsets();
   const scroll = useRef<any>(null);
+  const { showScene } = usePictures();
+  const { state } = useApp();
+  const imagesOn = state.settings.images && state.settings.imageUrlSet;
 
   if (!adv) {
     return (
@@ -27,6 +32,9 @@ export function StoryScreen({ id }: { id: string }) {
 
   const s = adv.state;
   const waiting = !!adv.pending && !adv.error;
+  const last = adv.turns[adv.turns.length - 1];
+  // "Toon scène" alleen als de laatste beurt nog geen (lopend of gelukt) beeld heeft.
+  const canShow = imagesOn && !!last?.scene && !waiting && (!last.image || last.image.status === 'failed');
 
   return (
     <View style={{ flex: 1, backgroundColor: C.bg }}>
@@ -35,7 +43,12 @@ export function StoryScreen({ id }: { id: string }) {
           onBack={nav.home}
           title={adv.title}
           subtitle={worldLabel(adv.world)}
-          right={<IconButton icon="user" label="Je held" onPress={() => nav.push({ name: 'sheet', id: adv.id })} />}
+          right={
+            <Row style={{ gap: 8 }}>
+              {canShow ? <IconButton icon="image" label="Toon scène als beeld" onPress={() => showScene(adv.id, last!.id)} /> : null}
+              <IconButton icon="user" label="Je held" onPress={() => nav.push({ name: 'sheet', id: adv.id })} />
+            </Row>
+          }
         />
         {adv.turns.length ? (
           <Row style={{ gap: 14 }}>
@@ -67,7 +80,7 @@ export function StoryScreen({ id }: { id: string }) {
         onContentSizeChange={() => scroll.current?.scrollToEnd({ animated: true })}
       >
         {adv.turns.map((t) => (
-          <TurnView key={t.id} turn={t} />
+          <TurnView key={t.id} turn={t} onRetryImage={() => showScene(adv.id, t.id)} />
         ))}
         {adv.pending ? <PendingAction text={adv.pending.action} /> : null}
         {waiting ? <Waiting adv={adv} /> : null}
@@ -80,10 +93,11 @@ export function StoryScreen({ id }: { id: string }) {
   );
 }
 
-function TurnView({ turn }: { turn: Turn }) {
+function TurnView({ turn, onRetryImage }: { turn: Turn; onRetryImage: () => void }) {
   return (
     <View style={{ gap: 16 }}>
       {turn.action ? <Bubble text={turn.action} /> : null}
+      {turn.image ? <PictureBox pic={turn.image} onRetry={onRetryImage} /> : null}
       {paragraphs(turn.narration).map((p, i) => (
         <T key={i} weight="story" size={17} selectable style={{ lineHeight: 27 }}>
           {p}

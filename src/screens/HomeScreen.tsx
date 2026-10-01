@@ -1,24 +1,35 @@
 import React from 'react';
-import { Alert, Pressable, View } from 'react-native';
+import { Alert, Image, Pressable, View } from 'react-native';
 import { useApp } from '../store';
 import { useTurns } from '../turns';
+import { usePictures } from '../pictures';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
 import { IconButton, Label, Row, Screen, T } from '../ui';
-import { ago, turnCount, worldLabel } from '../logic/game';
+import { ago, imagesUsed, picturesOf, turnCount, worldLabel } from '../logic/game';
 import type { Adventure } from '../logic/types';
 
+/** Laatste gelukte beeld van een avontuur (of het portret). */
+function thumb(a: Adventure): string | null {
+  const ok = picturesOf(a).filter((p) => p.status === 'ok' && p.uri);
+  const scene = [...ok].reverse().find((p) => p.kind !== 'portrait');
+  return (scene ?? ok[0])?.uri ?? null;
+}
+
 export function HomeScreen() {
-  const { state, removeAdventure } = useApp();
+  const { state } = useApp();
+  const { removeWithPictures } = usePictures();
   const { warm, health, phase } = useTurns();
   const nav = useNav();
 
   const confirmDelete = (a: Adventure) =>
     Alert.alert('Avontuur verwijderen?', `"${a.title}" verdwijnt van je telefoon.`, [
       { text: 'Annuleren', style: 'cancel' },
-      { text: 'Verwijderen', style: 'destructive', onPress: () => removeAdventure(a.id) },
+      { text: 'Verwijderen', style: 'destructive', onPress: () => removeWithPictures(a) },
     ]);
+
+  const used = imagesUsed(state.imageCounter);
 
   const narrator =
     warm === 'klaar'
@@ -90,8 +101,12 @@ export function HomeScreen() {
                   backgroundColor: pressed ? C.cardHi : C.card,
                 })}
               >
-                <View style={{ width: 64, height: 64, borderRadius: 12, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center' }}>
-                  <Icon name={a.ended ? 'scroll' : 'book'} size={24} color={C.dim} strokeWidth={1.75} />
+                <View style={{ width: 64, height: 64, borderRadius: 12, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                  {thumb(a) ? (
+                    <Image source={{ uri: thumb(a)! }} style={{ width: '100%', height: '100%' }} resizeMode="cover" />
+                  ) : (
+                    <Icon name={a.ended ? 'scroll' : 'book'} size={24} color={C.dim} strokeWidth={1.75} />
+                  )}
                 </View>
                 <View style={{ flex: 1, gap: 3 }}>
                   <T size={17} weight="bold" numberOfLines={1}>
@@ -137,6 +152,17 @@ export function HomeScreen() {
             · {narrator.sub}
           </T>
         </Row>
+        {state.settings.images && state.settings.imageUrlSet ? (
+          <Row style={{ gap: 10 }}>
+            <Icon name="image" size={16} color={C.muted} />
+            <T size={14} weight="semibold">
+              Beelden vandaag
+            </T>
+            <T size={14} color={C.muted} style={{ flex: 1 }} numberOfLines={1}>
+              · {used.exhausted ? 'tegoed op' : `${used.count} van ${state.settings.imageLimit}`}
+            </T>
+          </Row>
+        ) : null}
         {health.level !== 'ok' && health.level !== 'onbekend' ? (
           <Row style={{ gap: 10, alignItems: 'flex-start' }}>
             <Icon name="alert" size={16} color={C.hp} />

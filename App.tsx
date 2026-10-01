@@ -8,6 +8,7 @@ import { Archivo_400Regular, Archivo_600SemiBold, Archivo_700Bold } from '@expo-
 import { Literata_400Regular, Literata_400Regular_Italic } from '@expo-google-fonts/literata';
 import { AppProvider, useApp } from './src/store';
 import { TurnProvider } from './src/turns';
+import { PictureProvider } from './src/pictures';
 import { Nav, NavProvider, Route } from './src/nav';
 import { C } from './src/theme';
 import { HomeScreen } from './src/screens/HomeScreen';
@@ -16,6 +17,7 @@ import { HeroScreen } from './src/screens/HeroScreen';
 import { StoryScreen } from './src/screens/StoryScreen';
 import { SheetScreen } from './src/screens/SheetScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
+import { GalleryScreen } from './src/screens/GalleryScreen';
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
@@ -30,7 +32,9 @@ export default function App() {
     <SafeAreaProvider>
       <StatusBar style="light" />
       <AppProvider>
-        <TurnProvider>{fontsLoaded || fontError ? <Root /> : <Loading />}</TurnProvider>
+        <TurnProvider>
+          <PictureProvider>{fontsLoaded || fontError ? <Root /> : <Loading />}</PictureProvider>
+        </TurnProvider>
       </AppProvider>
     </SafeAreaProvider>
   );
@@ -89,6 +93,9 @@ function Root() {
       break;
     case 'sheet':
       screen = <SheetScreen id={route.id} />;
+      break;
+    case 'gallery':
+      screen = <GalleryScreen id={route.id} />;
       break;
     case 'settings':
       screen = <SettingsScreen />;

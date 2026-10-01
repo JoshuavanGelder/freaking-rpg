@@ -15,7 +15,7 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - **Geen kansberekening zichtbaar**: geen dobbelstenen, eigenschappen, cijfers of moeilijkheden in de UI of
   verteltekst. Eigenschappen maakt Claude per held (een speedster heeft andere dan een ringdrager) en blijven verborgen.
   Zichtbaar mag: leven, goud, level, tas, quests.
-- Beelden (fase 2): max. 512×512, goedkoopste model/laagste instelling, ook actiemomenten (vuurbal → op het plaatje).
+- Beelden: max. 512×512, goedkoopste model/laagste instelling (FLUX.2 klein 4B), ook actiemomenten (vuurbal → op het plaatje).
 - Ontwerp: donker en warm (`#15120F`), oranje accent `#FF7A3D`, Archivo Black / Archivo, verhaal in Literata.
   Ontwerp-artifact: "Freaking RPG – App-ontwerp" op claude.ai.
 
@@ -34,6 +34,15 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - `applyAnswer`: de app past toe; eigenschappen alleen bij de start; level = 1 + xp/100 (+2 max leven per level);
   0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level (geen cijfers van worpen).
 
+## Beelden (`src/pictures.tsx`, `src/services/images.ts`, `src/services/files.ts`)
+- De app roept Joshua's eigen Cloudflare Worker `claudia-image-mcp` (= zijn Images-koppeling) direct aan via JSON-RPC
+  `tools/call generate_image` met `model: klein`, 512×512. URL (`…workers.dev/mcp/<SECRET>`) in SecureStore; testen
+  met `tools/list` (kost geen tegoed). Geen Cloudflare-token nodig.
+- Verteller levert per beurt `image {show, kind, prompt, fallback}`, bij de start `heroLook` en `portrait`.
+  De app plakt een stijl per setting erachter (`styledPrompt`). Filterfout 3030 → één poging met `fallback`.
+- Wachtrij: één beeld tegelijk, portret eerst, hervat na herstart; bestanden in `Paths.document/frpg-beelden`
+  (expo-file-system); dagteller per UTC-dag (`imageCounter`), max. per dag instelbaar (standaard 150).
+
 ## Bouwen en controleren (sandbox zonder npm)
 - `npm install` werkt lokaal niet. Wel: node 22, `tsc`, python3.
 - Tests: `npm test` (node --experimental-strip-types). Logica-bestanden importeren elkaar met `.ts`-extensie.
@@ -45,4 +54,6 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - `src/store.tsx`: avonturen + instellingen in AsyncStorage (`frpg-state-v1`). GitHub-token in SecureStore.
 - `src/turns.tsx`: lopende beurten (versturen, warme verteller, pollen, toepassen), hervat na herstart.
 - `src/services/github.ts`: branch `rpg-data`, workflow `rpg.yml`. `src/services/status.ts`: statuspagina Claude.
-- `src/screens/`: Home, New (wereld en toon), Hero (personage), Story (verhaal + wachtstand), Sheet (held), Settings.
+- `src/pictures.tsx`: beeldenwachtrij; `src/picture-view.tsx`: beeldvak + volledig scherm.
+- `src/screens/`: Home, New (wereld en toon), Hero (personage), Story (verhaal + wachtstand + beelden), Sheet (held + portret),
+  Gallery, Settings.

@@ -7,6 +7,7 @@ export type Route =
   | { name: 'hero'; world: World }
   | { name: 'story'; id: string }
   | { name: 'sheet'; id: string }
+  | { name: 'gallery'; id: string }
   | { name: 'settings' };
 
 export type Nav = {

@@ -12,8 +12,26 @@ export type Hero = {
   name: string;
   className: string;
   powers: string; // krachten en zwaktes in eigen woorden
-  looks: string; // uiterlijk (later voor het portret)
+  looks: string; // uiterlijk in eigen woorden
+  heroLook?: string; // Engelse beschrijving voor beelden, door de verteller gemaakt bij de start
 };
+
+export type PictureKind = 'portrait' | 'scene' | 'action' | 'character';
+
+/** Een beeld (max. 512x512) van een moment of van de held. Het bestand staat op de telefoon. */
+export type Picture = {
+  id: string;
+  kind: PictureKind;
+  prompt: string; // Engels, zonder stijl (die voegt de app toe)
+  fallback: string; // rustige versie voor als het filter de prompt weigert
+  status: 'pending' | 'ok' | 'failed';
+  uri?: string;
+  error?: string;
+  at: number;
+};
+
+/** Wat de verteller over het beeld van een moment zei (ook als er nog geen beeld is). */
+export type Scene = { kind: PictureKind; prompt: string; fallback: string };
 
 export type Attribute = { name: string; value: number };
 export type Quest = { title: string; detail: string; done: boolean };
@@ -38,6 +56,8 @@ export type Turn = {
   choices: string[];
   notes: string[]; // zichtbare wijzigingen, bv. "+ Vervloekt kaaswiel"
   at: number;
+  scene?: Scene; // voor "Toon scène"
+  image?: Picture;
 };
 
 export type Pending = {
@@ -66,6 +86,7 @@ export type Adventure = {
   pending: Pending | null;
   error: TurnError | null;
   ended: boolean;
+  portrait?: Picture;
 };
 
 /** Het antwoord van de verteller (zie rpg/schema.json). */
@@ -87,6 +108,9 @@ export type Answer = {
   };
   summary: string;
   gameOver: boolean;
+  image: { show: boolean; kind: 'scene' | 'action' | 'character'; prompt: string; fallback: string };
+  heroLook: string;
+  portrait: string;
 };
 
 /** Wat de workflow terugzet in responses/<id>.json. */

@@ -18,7 +18,9 @@ export type IconName =
   | 'alert'
   | 'refresh'
   | 'trash'
-  | 'pending';
+  | 'pending'
+  | 'close'
+  | 'grid';
 
 type Props = { name: IconName; size?: number; color: string; strokeWidth?: number };
 
@@ -126,6 +128,19 @@ export function Icon({ name, size = 22, color, strokeWidth = 2 }: Props) {
         <>
           <Path {...c} d="M3 6h18" />
           <Path {...c} d="M8 6V4h8v2M6 6l1 14h10l1-14" />
+        </>
+      );
+      break;
+    case 'close':
+      body = <Path {...c} d="M18 6L6 18M6 6l12 12" />;
+      break;
+    case 'grid':
+      body = (
+        <>
+          <Rect {...c} x={3} y={3} width={7} height={7} rx={1.5} />
+          <Rect {...c} x={14} y={3} width={7} height={7} rx={1.5} />
+          <Rect {...c} x={3} y={14} width={7} height={7} rx={1.5} />
+          <Rect {...c} x={14} y={14} width={7} height={7} rx={1.5} />
         </>
       );
       break;

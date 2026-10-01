@@ -1,16 +1,19 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Pressable, View } from 'react-native';
 import { useAdventure } from '../store';
 import { useNav } from '../nav';
 import { C } from '../theme';
 import { Icon } from '../icons';
-import { Bar, Card, Label, Row, Screen, T, TopBar } from '../ui';
-import { XP_PER_LEVEL, worldLabel } from '../logic/game';
+import { Bar, Button, Card, Label, Row, Screen, T, TopBar } from '../ui';
+import { PictureBox } from '../picture-view';
+import { usePictures } from '../pictures';
+import { XP_PER_LEVEL, picturesOf, worldLabel } from '../logic/game';
 
 /** Je held: leven, goud, level, tas en quests. Verborgen eigenschappen blijven verborgen. */
 export function SheetScreen({ id }: { id: string }) {
   const adv = useAdventure(id);
   const nav = useNav();
+  const { retryPortrait } = usePictures();
   if (!adv) {
     return (
       <Screen>
@@ -29,9 +32,23 @@ export function SheetScreen({ id }: { id: string }) {
     <Screen gap={22}>
       <TopBar onBack={nav.back} title="Je held" center />
       <Row style={{ gap: 16 }}>
-        <View style={{ width: 96, height: 120, borderRadius: 16, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center' }}>
-          <Icon name="user" size={30} color={C.dim} strokeWidth={1.5} />
-        </View>
+        {adv.portrait && adv.portrait.status !== 'failed' ? (
+          <PictureBox pic={adv.portrait} size={112} />
+        ) : (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={adv.portrait ? 'Portret opnieuw proberen' : 'Nog geen portret'}
+            onPress={adv.portrait ? () => retryPortrait(adv.id) : undefined}
+            style={{ width: 112, height: 112, borderRadius: 16, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center', gap: 6, padding: 8 }}
+          >
+            <Icon name={adv.portrait ? 'refresh' : 'user'} size={26} color={C.dim} strokeWidth={1.5} />
+            {adv.portrait ? (
+              <T size={11} color={C.muted} style={{ textAlign: 'center' }}>
+                Portret opnieuw
+              </T>
+            ) : null}
+          </Pressable>
+        )}
         <View style={{ flex: 1, gap: 6 }}>
           <T weight="display" size={24} style={{ lineHeight: 28 }}>
             {h.name}
@@ -70,6 +87,15 @@ export function SheetScreen({ id }: { id: string }) {
           </T>
         </Card>
       </Row>
+
+      {picturesOf(adv).some((p) => p.status === 'ok') ? (
+        <Button
+          label={`Galerij · ${picturesOf(adv).filter((p) => p.status === 'ok').length} beelden`}
+          variant="outline"
+          icon="grid"
+          onPress={() => nav.push({ name: 'gallery', id: adv.id })}
+        />
+      ) : null}
 
       {h.powers ? (
         <View style={{ gap: 10 }}>

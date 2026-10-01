@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Attribute, GameState, Hero, Pending, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Attribute, GameState, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -136,6 +136,7 @@ export function parseAnswer(raw: unknown): Answer | null {
   if (!narration) return null;
   const ch = a.changes && typeof a.changes === 'object' ? a.changes : {};
   const check = a.check && typeof a.check === 'object' ? a.check : {};
+  const img = a.image && typeof a.image === 'object' ? a.image : {};
   return {
     title: str(a.title, 60),
     narration,
@@ -161,13 +162,21 @@ export function parseAnswer(raw: unknown): Answer | null {
     },
     summary: typeof a.summary === 'string' ? a.summary.trim().slice(0, 1500) : '',
     gameOver: !!a.gameOver,
+    image: {
+      show: !!img.show,
+      kind: img.kind === 'action' || img.kind === 'character' ? img.kind : 'scene',
+      prompt: str(img.prompt, 600),
+      fallback: str(img.fallback, 400),
+    },
+    heroLook: str(a.heroLook, 400),
+    portrait: str(a.portrait, 600),
   };
 }
 
 const same = (a: string, b: string) => a.trim().toLowerCase() === b.trim().toLowerCase();
 
-/** Past het antwoord toe op het avontuur. De app bewaakt de grenzen. */
-export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, now = Date.now()): Adventure {
+/** Past het antwoord toe op het avontuur. De app bewaakt de grenzen. images = mogen er beelden gemaakt worden? */
+export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, now = Date.now(), images = false): Adventure {
   const s = adv.state;
   const c = answer.changes;
   const notes: string[] = [];
@@ -226,6 +235,8 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   const ended = answer.gameOver || hp <= 0;
   if (ended) hp = Math.max(0, hp);
 
+  const im = answer.image;
+  const scene = im.prompt ? { kind: im.kind as PictureKind, prompt: im.prompt, fallback: im.fallback } : undefined;
   const turn: Turn = {
     id: pending.requestId,
     action: pending.action,
@@ -233,11 +244,22 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     choices: ended ? [] : answer.choices,
     notes,
     at: now,
+    ...(scene ? { scene } : {}),
+    ...(scene && images && (im.show || pending.kind === 'start') ? { image: newPicture(`${pending.requestId}-beeld`, scene, now) } : {}),
   };
+
+  const hero: Hero = answer.heroLook ? { ...adv.hero, heroLook: answer.heroLook } : adv.hero;
+  const portraitPrompt = pending.kind === 'start' && answer.portrait ? answer.portrait : '';
+  const portrait =
+    portraitPrompt && images
+      ? newPicture(`${adv.id}-portret`, { kind: 'portrait', prompt: portraitPrompt, fallback: `head and shoulders portrait of ${hero.heroLook || hero.className}, calm expression, simple background` }, now)
+      : adv.portrait;
 
   const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests };
   return {
     ...adv,
+    hero,
+    ...(portrait ? { portrait } : {}),
     title: pending.kind === 'start' && answer.title ? answer.title : adv.title,
     state,
     summary: answer.summary || adv.summary,
@@ -273,4 +295,84 @@ export function paragraphs(text: string): string[] {
     .split(/\n\s*\n/)
     .map((p) => p.replace(/\s*\n\s*/g, ' ').trim())
     .filter(Boolean);
+}
+
+// ---------- beelden ----------
+
+/** Beelden zijn vierkant en maximaal 512x512, gemaakt met het goedkoopste model. */
+export const IMAGE_SIZE = 512;
+export const DEFAULT_IMAGE_LIMIT = 150;
+
+const STYLES: Record<string, string> = {
+  fantasy: 'painterly fantasy illustration, rich warm colors, cinematic lighting',
+  superhelden: 'dynamic comic book art, bold ink lines, vivid colors, cinematic lighting',
+  scifi: 'cinematic sci-fi concept art, moody lighting, detailed',
+  horror: 'dark atmospheric horror illustration, muted colors, eerie lighting',
+  apocalyps: 'gritty post-apocalyptic concept art, dusty light, muted colors',
+  noir: 'film noir illustration, high contrast, rain, neon reflections',
+  modern: 'semi-realistic digital illustration, natural light',
+  eigen: 'painterly digital illustration, cinematic lighting',
+};
+
+/** Prompt + vaste stijl per setting, zodat alle beelden van een avontuur bij elkaar passen. */
+export function styledPrompt(setting: string, prompt: string): string {
+  const style = STYLES[setting] ?? STYLES.eigen;
+  return `${prompt.trim().replace(/[.\s]+$/, '')}. ${style}, no text, no lettering, no watermark`;
+}
+
+export function newPicture(id: string, scene: { kind: PictureKind; prompt: string; fallback: string }, now = Date.now()): Picture {
+  return { id, kind: scene.kind, prompt: scene.prompt, fallback: scene.fallback || scene.prompt, status: 'pending', at: now };
+}
+
+/** Alle beelden van een avontuur, oudste eerst (portret voorop). */
+export function picturesOf(adv: Adventure): Picture[] {
+  const list: Picture[] = [];
+  if (adv.portrait) list.push(adv.portrait);
+  for (const t of adv.turns) if (t.image) list.push(t.image);
+  return list;
+}
+
+export function findPicture(adv: Adventure, id: string): Picture | null {
+  return picturesOf(adv).find((p) => p.id === id) ?? null;
+}
+
+/** Werkt één beeld bij (portret of beeld van een beurt). */
+export function updatePicture(adv: Adventure, id: string, patch: Partial<Picture>): Adventure {
+  if (adv.portrait?.id === id) return { ...adv, portrait: { ...adv.portrait, ...patch } };
+  return { ...adv, turns: adv.turns.map((t) => (t.image?.id === id ? { ...t, image: { ...t.image, ...patch } } : t)) };
+}
+
+/** "Toon scène": vraagt een beeld van een beurt die er nog geen had (of opnieuw na een fout). */
+export function requestPicture(adv: Adventure, turnId: string, now = Date.now()): Adventure {
+  return {
+    ...adv,
+    turns: adv.turns.map((t) => {
+      if (t.id !== turnId || !t.scene) return t;
+      if (t.image && t.image.status !== 'failed') return t;
+      return { ...t, image: newPicture(`${t.id}-beeld`, t.scene, now) };
+    }),
+  };
+}
+
+/** Portret opnieuw proberen (of alsnog maken). */
+export function requestPortrait(adv: Adventure, now = Date.now()): Adventure {
+  if (!adv.portrait || adv.portrait.status !== 'failed') return adv;
+  return { ...adv, portrait: { ...adv.portrait, status: 'pending', error: undefined, at: now } };
+}
+
+/** Dag van het gratis Cloudflare-tegoed (dat begint om 00:00 UTC opnieuw). */
+export function quotaDay(now = Date.now()): string {
+  return new Date(now).toISOString().slice(0, 10);
+}
+
+export type ImageCounter = { day: string; count: number; exhausted: boolean };
+
+export function imagesUsed(c: ImageCounter | null | undefined, now = Date.now()): ImageCounter {
+  const day = quotaDay(now);
+  return c && c.day === day ? c : { day, count: 0, exhausted: false };
+}
+
+export function canMakeImage(c: ImageCounter | null | undefined, limit: number, now = Date.now()): boolean {
+  const u = imagesUsed(c, now);
+  return !u.exhausted && u.count < limit;
 }

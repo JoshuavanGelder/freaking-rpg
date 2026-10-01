@@ -71,3 +71,11 @@ declare module '@expo-google-fonts/literata' { export const Literata_400Regular:
 declare module 'react-native' {
   export const Alert: { alert(title: string, message?: string, buttons?: { text: string; style?: 'cancel' | 'destructive' | 'default'; onPress?: () => void }[]): void };
 }
+declare module 'expo-file-system' {
+  export class Directory { constructor(...p: any[]); create(o?: { idempotent?: boolean; intermediates?: boolean; overwrite?: boolean }): void; }
+  export class File { constructor(...p: any[]); create(o?: { intermediates?: boolean; overwrite?: boolean }): void; write(c: string | Uint8Array, o?: { encoding?: 'utf8' | 'base64' }): void; delete(): void; readonly exists: boolean; readonly uri: string; }
+  export const Paths: { document: Directory; cache: Directory };
+}
+declare module 'react-native' {
+  export const Image: any;
+}

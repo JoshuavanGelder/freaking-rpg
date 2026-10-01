@@ -175,7 +175,9 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
       }
       const answer = parseAnswer(response.answer);
       if (!answer) throw new TurnFail('fout', 'Het antwoord van de verteller was leeg of onleesbaar.', null, runUrl);
-      patchAdventure(id, (a) => (a.pending?.requestId === p.requestId ? applyAnswer(a, p, answer) : a));
+      const st = current().settings;
+      const images = st.images && st.imageUrlSet;
+      patchAdventure(id, (a) => (a.pending?.requestId === p.requestId ? applyAnswer(a, p, answer, Date.now(), images) : a));
     } catch (e: any) {
       const err: TurnError =
         e instanceof TurnFail

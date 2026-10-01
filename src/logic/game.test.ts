@@ -2,6 +2,12 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   applyAnswer,
+  canMakeImage,
+  imagesUsed,
+  picturesOf,
+  requestPicture,
+  styledPrompt,
+  updatePicture,
   buildRequest,
   heroProblem,
   makePending,
@@ -30,6 +36,9 @@ const raw = (over: Record<string, any> = {}) => ({
   changes: { hp: 0, gold: 0, xp: 0, addItems: [], removeItems: [], addQuests: [], completeQuests: [], location: '' },
   summary: 'Bas begon.',
   gameOver: false,
+  image: { show: true, kind: 'scene', prompt: 'A rooftop at night.', fallback: 'A quiet rooftop.' },
+  heroLook: 'lanky teen in a red hoodie',
+  portrait: 'Portrait of a lanky teen in a red hoodie',
   ...over,
 });
 
@@ -137,4 +146,51 @@ test('op 0 leven is het verhaal klaar', () => {
 
 test('alinea\'s', () => {
   assert.deepEqual(paragraphs('Een\nregel.\n\nTwee.\n\n\n'), ['Een regel.', 'Twee.']);
+});
+
+test('startbeurt met beelden: portret en openingsbeeld klaargezet', () => {
+  const adv = newAdventure(world, hero, 1, 'adv-7');
+  const next = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3, true);
+  assert.equal(next.hero.heroLook, 'lanky teen in a red hoodie');
+  assert.equal(next.portrait?.status, 'pending');
+  assert.equal(next.portrait?.kind, 'portrait');
+  assert.equal(next.turns[0].image?.status, 'pending');
+  assert.equal(picturesOf(next).length, 2);
+});
+
+test('zonder beelden: alleen de scène bewaren, later alsnog "Toon scène"', () => {
+  const adv = newAdventure(world, hero, 1, 'adv-8');
+  const next = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3, false);
+  assert.equal(next.portrait, undefined);
+  assert.equal(next.turns[0].image, undefined);
+  assert.equal(next.turns[0].scene?.prompt, 'A rooftop at night.');
+  const asked = requestPicture(next, next.turns[0].id, 4);
+  assert.equal(asked.turns[0].image?.status, 'pending');
+  const done = updatePicture(asked, asked.turns[0].image!.id, { status: 'ok', uri: 'file://x.jpg' });
+  assert.equal(done.turns[0].image?.uri, 'file://x.jpg');
+  // Een gelukt beeld wordt niet opnieuw gemaakt.
+  assert.equal(requestPicture(done, done.turns[0].id, 5).turns[0].image?.uri, 'file://x.jpg');
+});
+
+test('gewone beurt zonder show: geen beeld, actie wel als scène', () => {
+  const adv = newAdventure(world, hero, 1, 'adv-9');
+  const a = parseAnswer(raw({ image: { show: false, kind: 'action', prompt: 'Hero hurls a fireball.', fallback: 'Hero in a hall.' } }))!;
+  const next = applyAnswer(adv, makePending('turn', 'vuurbal', 2), a, 3, true);
+  assert.equal(next.turns[0].image, undefined);
+  assert.equal(next.turns[0].scene?.kind, 'action');
+});
+
+test('stijl per setting en geen tekst in beelden', () => {
+  const p = styledPrompt('superhelden', 'A hero leaps.');
+  assert.match(p, /^A hero leaps\. dynamic comic book art/);
+  assert.match(p, /no text/);
+});
+
+test('dagteller begint om 00:00 UTC opnieuw', () => {
+  const day1 = Date.parse('2026-10-01T22:30:00Z');
+  const day2 = Date.parse('2026-10-02T00:10:00Z');
+  const c = { day: '2026-10-01', count: 150, exhausted: false };
+  assert.equal(canMakeImage(c, 150, day1), false);
+  assert.equal(canMakeImage(c, 150, day2), true);
+  assert.equal(imagesUsed({ day: '2026-10-01', count: 3, exhausted: true }, day2).exhausted, false);
 });
