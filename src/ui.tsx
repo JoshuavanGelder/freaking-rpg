@@ -3,6 +3,7 @@ import { Pressable, ScrollView, StyleProp, Text, TextInput, TextStyle, View, Vie
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { C, F } from './theme';
 import { Icon, IconName } from './icons';
+import { RevealCtx, useKeyboardReveal, useReveal } from './keyboard';
 
 // ---------- tekst ----------
 
@@ -52,14 +53,20 @@ export function Row({ children, style }: { children: React.ReactNode; style?: St
 /** Scrollend scherm met ruimte voor de systeembalken. */
 export function Screen({ children, gap = 20, bottom = 28 }: { children: React.ReactNode; gap?: number; bottom?: number }) {
   const insets = useSafeAreaInsets();
+  const kb = useKeyboardReveal();
   return (
-    <ScrollView
-      style={{ flex: 1, backgroundColor: C.bg }}
-      contentContainerStyle={{ paddingTop: insets.top + 12, paddingHorizontal: 20, paddingBottom: bottom + insets.bottom, gap }}
-      keyboardShouldPersistTaps="handled"
-    >
-      {children}
-    </ScrollView>
+    <RevealCtx.Provider value={kb.reveal}>
+      <ScrollView
+        ref={kb.ref}
+        onScroll={kb.onScroll}
+        scrollEventThrottle={32}
+        style={{ flex: 1, backgroundColor: C.bg }}
+        contentContainerStyle={{ paddingTop: insets.top + 12, paddingHorizontal: 20, paddingBottom: bottom + insets.bottom, gap }}
+        keyboardShouldPersistTaps="handled"
+      >
+        {children}
+      </ScrollView>
+    </RevealCtx.Provider>
   );
 }
 
@@ -249,6 +256,7 @@ export function Field({
   secure?: boolean;
   autoCapitalize?: 'none' | 'sentences' | 'words';
 }) {
+  const reveal = useReveal();
   return (
     <View style={{ gap: 8 }}>
       {label ? (
@@ -267,6 +275,7 @@ export function Field({
         accessibilityLabel={label ?? placeholder}
         value={value}
         onChangeText={onChangeText}
+        onFocus={reveal}
         placeholder={placeholder}
         placeholderTextColor={C.dim}
         multiline={multiline}

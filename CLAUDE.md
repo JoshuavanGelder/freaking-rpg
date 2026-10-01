@@ -16,6 +16,11 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   verteltekst. Eigenschappen maakt Claude per held (een speedster heeft andere dan een ringdrager) en blijven verborgen.
   Zichtbaar mag: leven, goud, level, tas, quests.
 - Beelden: max. 512×512, goedkoopste model/laagste instelling (FLUX.2 klein 4B), ook actiemomenten (vuurbal → op het plaatje).
+- **Toetsenbord (altijd controleren)**: elk invoerveld moet zichtbaar blijven als het telefoontoetsenbord open is.
+  Android edge-to-edge krimpt het venster niet mee. Oplossing in `src/keyboard.ts`: `KeyboardAvoidingView` (padding)
+  rond alle schermen in `App.tsx`, en `Screen`/`Field` in `ui.tsx` scrollen het actieve veld boven het toetsenbord.
+  Nieuw scherm of veld: gebruik `Screen` + `Field` (of `useKeyboardReveal` bij een eigen ScrollView); invoer buiten
+  een ScrollView onderaan het scherm zetten (zoals de actiebalk in Story). Bij elke wijziging aan invoer nalopen.
 - Ontwerp: donker en warm (`#15120F`), oranje accent `#FF7A3D`, Archivo Black / Archivo, verhaal in Literata.
   Ontwerp-artifact: "Freaking RPG – App-ontwerp" op claude.ai.
 

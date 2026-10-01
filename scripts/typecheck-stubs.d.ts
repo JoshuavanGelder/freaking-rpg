@@ -79,3 +79,7 @@ declare module 'expo-file-system' {
 declare module 'react-native' {
   export const Image: any;
 }
+declare module 'react-native' {
+  export const KeyboardAvoidingView: any;
+  export const Keyboard: { addListener(e: string, f: (e: any) => void): { remove(): void }; metrics(): { screenY: number; height: number } | undefined; dismiss(): void };
+}

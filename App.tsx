@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, BackHandler, View } from 'react-native';
+import { ActivityIndicator, BackHandler, KeyboardAvoidingView, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useFonts } from 'expo-font';
@@ -104,7 +104,10 @@ function Root() {
 
   return (
     <NavProvider value={nav}>
-      <View style={{ flex: 1, backgroundColor: C.bg }}>{screen}</View>
+      {/* Toetsenbord: zie src/keyboard.ts. Alleen het bedekte deel wordt opgevuld. */}
+      <KeyboardAvoidingView behavior="padding" style={{ flex: 1, backgroundColor: C.bg }}>
+        {screen}
+      </KeyboardAvoidingView>
     </NavProvider>
   );
 }

@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { Pressable, ScrollView, TextInput, View } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Keyboard, Pressable, ScrollView, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAdventure, useApp } from '../store';
 import { useTurns, type Phase } from '../turns';
@@ -20,6 +20,13 @@ export function StoryScreen({ id }: { id: string }) {
   const { showScene } = usePictures();
   const { state } = useApp();
   const imagesOn = state.settings.images && state.settings.imageUrlSet;
+
+  // Toetsenbord open: het invoerveld staat onderaan en schuift mee omhoog (KeyboardAvoidingView in App);
+  // het verhaal scrolt naar het einde zodat de laatste tekst zichtbaar blijft.
+  useEffect(() => {
+    const sub = Keyboard.addListener('keyboardDidShow', () => setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 80));
+    return () => sub.remove();
+  }, []);
 
   if (!adv) {
     return (
