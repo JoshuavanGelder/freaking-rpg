@@ -1,7 +1,7 @@
 {
  "id": "mupxhn88-h5eqz",
- "finishedAt": "2026-10-01T19:29:49.890Z",
- "durationMs": 2809,
+ "finishedAt": "2026-10-01T19:30:05.074Z",
+ "durationMs": 3245,
  "status": "token",
  "message": "Het Claude-token werkt niet (verlopen of ongeldig). Maak een nieuw token met scripts/claude-token.sh.",
  "resetAt": null,
