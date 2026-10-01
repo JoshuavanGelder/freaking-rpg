@@ -82,13 +82,19 @@ while (Date.now() - lastActivity < IDLE_MS && Date.now() - started < MAX_MS) {
   for (const id of todo) {
     done.add(id);
     console.log(`Verzoek ${id} oppakken`);
-    await handleRequest(id, dataDir);
+    const res = await handleRequest(id, dataDir);
     try {
       pushResponse(id);
     } catch (e) {
       console.error(`Terugzetten mislukt: ${e.message}`);
     }
     lastActivity = Date.now();
+    // Werkt het token niet, dan stoppen: een nieuw secret geldt pas in een nieuwe run.
+    // Zo start de app bij de volgende poging een verse verteller met het nieuwste token.
+    if (res && res.status === 'token') {
+      console.log('Claude-token werkt niet: warme verteller stopt, zodat een nieuwe run het nieuwe secret gebruikt.');
+      process.exit(0);
+    }
   }
   await sleep(1500);
 }
