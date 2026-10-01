@@ -1,0 +1,10 @@
+{
+ "id": "mupxh1zm-ak8ok",
+ "finishedAt": "2026-10-01T19:29:34.478Z",
+ "durationMs": 3003,
+ "status": "token",
+ "message": "Het Claude-token werkt niet (verlopen of ongeldig). Maak een nieuw token met scripts/claude-token.sh.",
+ "resetAt": null,
+ "answer": null,
+ "model": "sonnet"
+}
