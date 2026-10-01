@@ -5,6 +5,7 @@ import { useAdventure, useApp } from '../store';
 import { useTurns, type Phase } from '../turns';
 import { usePictures } from '../pictures';
 import { PictureBox } from '../picture-view';
+import { useDraft } from '../drafts';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
@@ -245,7 +246,8 @@ function EndCard() {
 
 function ActionBar({ adv, disabled, bottom }: { adv: Adventure; disabled: boolean; bottom: number }) {
   const { act } = useTurns();
-  const [text, setText] = useState('');
+  // Wat je aan het typen was blijft staan als je even naar je held kijkt.
+  const [text, setText] = useDraft<string>(`actie-${adv.id}`, '');
   const last = adv.turns[adv.turns.length - 1];
   const choices = !disabled && last ? last.choices : [];
   const send = (t: string) => {

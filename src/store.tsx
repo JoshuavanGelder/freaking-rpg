@@ -3,6 +3,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Adventure, TurnResponse } from './logic/types';
 import { DEFAULT_IMAGE_LIMIT, type ImageCounter } from './logic/game';
+import { loadDrafts } from './drafts';
 
 export type Model = 'sonnet' | 'haiku' | 'opus';
 
@@ -72,8 +73,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const ref = useRef<AppState>(EMPTY);
 
   useEffect(() => {
-    AsyncStorage.getItem(KEY)
-      .then((raw) => {
+    Promise.all([AsyncStorage.getItem(KEY), loadDrafts()])
+      .then(([raw]) => {
         if (!raw) return;
         const parsed = JSON.parse(raw) as Partial<AppState>;
         const next: AppState = {

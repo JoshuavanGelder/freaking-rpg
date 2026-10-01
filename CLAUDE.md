@@ -21,6 +21,8 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   rond alle schermen in `App.tsx`, en `Screen`/`Field` in `ui.tsx` scrollen het actieve veld boven het toetsenbord.
   Nieuw scherm of veld: gebruik `Screen` + `Field` (of `useKeyboardReveal` bij een eigen ScrollView); invoer buiten
   een ScrollView onderaan het scherm zetten (zoals de actiebalk in Story). Bij elke wijziging aan invoer nalopen.
+- **Invoer mag nooit resetten** bij wisselen tussen schermen (stap 1 ↔ 2, verhaal ↔ held): gebruik `useDraft`
+  uit `src/drafts.ts` (bewaard in AsyncStorage `frpg-drafts-v1`, los van de grote staat).
 - Ontwerp: donker en warm (`#15120F`), oranje accent `#FF7A3D`, Archivo Black / Archivo, verhaal in Literata.
   Ontwerp-artifact: "Freaking RPG – App-ontwerp" op claude.ai.
 

@@ -63,6 +63,11 @@ export async function handleRequest(id, dataDir) {
   // Korter nadenken = sneller antwoord.
   if (model !== 'haiku') args.push('--effort', 'low');
 
+  // Op de telefoon gekopieerde tokens bevatten vaak een regeleinde of spatie (het token loopt over twee
+  // regels). Claude weigert dat als ongeldig, dus eerst opschonen.
+  const token = String(process.env.CLAUDE_CODE_OAUTH_TOKEN ?? '').replace(/\s+/g, '');
+  const env = { ...process.env, CLAUDE_CODE_OAUTH_TOKEN: token };
+
   return new Promise((resolve) => {
     let done = false;
     const finish = (res) => {
@@ -70,7 +75,7 @@ export async function handleRequest(id, dataDir) {
       done = true;
       resolve(write(dataDir, id, started, res));
     };
-    const child = spawn('claude', args, { cwd, env: process.env, stdio: ['pipe', 'pipe', 'pipe'] });
+    const child = spawn('claude', args, { cwd, env, stdio: ['pipe', 'pipe', 'pipe'] });
     let stdout = '';
     let stderr = '';
     child.stdout.on('data', (d) => (stdout += d));

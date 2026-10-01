@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import { useNav } from '../nav';
+import { useDraft } from '../drafts';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Button, Chip, Field, Label, Row, Screen, T, Tile, TopBar } from '../ui';
@@ -10,7 +11,8 @@ import type { World } from '../logic/types';
 /** Stap 1: wereld en toon kiezen. */
 export function NewScreen() {
   const nav = useNav();
-  const [world, setWorld] = useState<World>({ setting: 'fantasy', settingText: '', tones: ['Humoristisch'], toneText: '', wishes: '' });
+  // Blijft bewaard als je naar stap 2 gaat en terugkomt (of de app tussendoor sluit).
+  const [world, setWorld] = useDraft<World>('new-world', { setting: 'fantasy', settingText: '', tones: ['Humoristisch'], toneText: '', wishes: '' });
   const [tried, setTried] = useState(false);
   const set = (patch: Partial<World>) => setWorld((w) => ({ ...w, ...patch }));
   const problem = worldProblem(world);

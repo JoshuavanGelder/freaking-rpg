@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { useNav } from '../nav';
 import { useTurns } from '../turns';
+import { clearDraft, useDraft } from '../drafts';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Button, Chip, Field, Label, Notice, Row, Screen, T, TopBar } from '../ui';
@@ -12,7 +13,8 @@ import type { Hero, World } from '../logic/types';
 export function HeroScreen({ world }: { world: World }) {
   const nav = useNav();
   const { startAdventure } = useTurns();
-  const [hero, setHero] = useState<Hero>({ name: '', className: '', powers: '', looks: '' });
+  // Blijft bewaard als je terug gaat naar stap 1 en weer verder.
+  const [hero, setHero] = useDraft<Hero>('new-hero', { name: '', className: '', powers: '', looks: '' });
   const [tried, setTried] = useState(false);
   const set = (patch: Partial<Hero>) => setHero((h) => ({ ...h, ...patch }));
   const classes = settingOf(world.setting).classes;
@@ -97,6 +99,7 @@ export function HeroScreen({ world }: { world: World }) {
             setTried(true);
             if (problem) return;
             const id = startAdventure(world, hero);
+            clearDraft('new-world', 'new-hero');
             nav.home();
             nav.push({ name: 'story', id });
           }}
