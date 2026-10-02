@@ -1,0 +1,45 @@
+{
+ "id": "muqomz97-3cad7",
+ "finishedAt": "2026-10-02T08:09:59.782Z",
+ "durationMs": 12843,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 10,
+   "success": true
+  },
+  "choices": [
+   "Spring door de bel heen",
+   "Vraag de bel waar de dief ging",
+   "Rol de bel zelf naar de Wasmachine"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Young man with short messy blond-brown hair, red jacket, gold boots and wrist bands, sprinting in a curve around a giant car-sized soap bubble on an amusement park path, motion streaks, sock-decorated ferris wheel behind, bright colors",
+   "fallback": "An amusement park path lined with colorful hanging socks, giant shimmering soap bubbles floating above, a ferris wheel in the distance, warm light."
+  },
+  "narration": "Je schiet naar links. De zeepbel schuift mee. Je schiet naar rechts. De bel ook. Hij lijkt het leuk te vinden.\n\nJe zet een tandje bij, zo snel dat je schaduw een seconde te laat vertrekt. Je glipt langs de bel, zo dicht dat je je eigen gezicht erin ziet uitrekken. Je ziet er verrassend bezorgd uit.\n\nDan gaat het mis. Een tweede, kleinere bel dook ongemerkt op uit het niets. Plop! Je knalt erdoorheen, en een straal lauw sopwater klettert in je gezicht. Het smaakt naar lavendel en oude kousen.\n\nAchter je mompelt de grote bel beledigd: \"Onbeleefd.\" Hij begint je te volgen, langzaam en vol wrok. Voor je doemt een boog van waslijnen op. Daarachter bromt iets dreigends, en het ruikt naar schoon wasgoed. De Wasmachine van het Noodlot kan niet ver meer zijn.",
+  "portrait": "",
+  "summary": "Barry Allen zit vast in een eeuwige 07:00. Een sprekende lamp met cape stuurde hem achter de gestolen maandag aan, gestolen door een Sokkenfluisteraar (lange man, jas van gebreide mist, gigantische gestreepte sok). Kaartjesverkoper Wol wees naar de Wasmachine van het Noodlot. Barry betaalde met zijn plakkerige sok. Hij ontweek een grote zeepbel, kreeg sop in zijn gezicht, en wordt nu langzaam gevolgd door de beledigde bel. Voor hem ligt een boog van waslijnen en de bromming van de Wasmachine.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
