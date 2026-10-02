@@ -50,6 +50,8 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   (alleen de plek, geen personen). Getest: het filter weigert alles wat op een superheld lijkt (kostuum, embleem,
   cape, masker, "speedster"); helden dus in gewone kleding met krachten als effecten (snelheidsstrepen, gloed).
   Netwerkfout (app op achtergrond) → wachten tot de app voorop staat en max. 2 keer opnieuw.
+  Vangnet in de app: `defuse()` haalt kostuumwoorden uit elke prompt; pogingen = prompt, defuse(prompt),
+  defuse(fallback) (`promptAttempts`). Ook de `heroLook` in het verzoek gaat eerst door `defuse`.
 - Wachtrij: één beeld tegelijk, portret eerst, hervat na herstart; bestanden in `Paths.document/frpg-beelden`
   (expo-file-system); dagteller per UTC-dag (`imageCounter`), max. per dag instelbaar (standaard 150).
 

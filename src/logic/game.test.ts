@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import {
   applyAnswer,
   canMakeImage,
+  defuse,
+  promptAttempts,
   imagesUsed,
   picturesOf,
   requestPicture,
@@ -193,4 +195,24 @@ test('dagteller begint om 00:00 UTC opnieuw', () => {
   assert.equal(canMakeImage(c, 150, day1), false);
   assert.equal(canMakeImage(c, 150, day2), true);
   assert.equal(imagesUsed({ day: '2026-10-01', count: 3, exhausted: true }, day2).exhausted, false);
+});
+
+test('superheldenwoorden worden uit beeldprompts gehaald', () => {
+  assert.equal(
+    defuse('A young man in a red suit with lightning emblem at an apartment window.'),
+    'A young man in a red jacket at an apartment window.',
+  );
+  assert.equal(
+    defuse('A young speedster in a red suit with lightning emblem and gold accents stands at a window'),
+    'A young person in a red jacket and gold accents stands at a window',
+  );
+  assert.equal(defuse('athletic build, red full-body speedster suit with gold lightning bolt emblem'), 'athletic build, red jacket');
+  const d = defuse('A masked vigilante in a black cape and full-body costume with a bat symbol on his chest');
+  assert.doesNotMatch(d, /mask|vigilante|cape|costume|symbol|bat/i);
+  assert.equal(defuse('A quiet rooftop at dusk.'), 'A quiet rooftop at dusk.');
+});
+
+test('beeldpogingen: geen dubbele prompts', () => {
+  assert.deepEqual(promptAttempts({ prompt: 'A quiet rooftop.', fallback: 'A quiet rooftop.' }), ['A quiet rooftop.']);
+  assert.equal(promptAttempts({ prompt: 'A speedster on a roof.', fallback: 'A roof.' }).length, 3);
 });

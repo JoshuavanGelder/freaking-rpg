@@ -5,7 +5,7 @@ import { AppState as RNAppState } from 'react-native';
 import { useApp } from './store';
 import * as img from './services/images';
 import { deletePictures, savePicture } from './services/files';
-import { canMakeImage, findPicture, imagesUsed, picturesOf, requestPicture, requestPortrait, styledPrompt, updatePicture } from './logic/game';
+import { canMakeImage, promptAttempts, findPicture, imagesUsed, picturesOf, requestPicture, requestPortrait, styledPrompt, updatePicture } from './logic/game';
 import type { Adventure, Picture } from './logic/types';
 
 type PicCtx = {
@@ -81,7 +81,7 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
         let attempts = 0;
         // Volgorde: de echte prompt; bij het filter de rustige versie (alleen de plek). Valt de verbinding weg
         // (app even op de achtergrond), dan dezelfde prompt nog twee keer, telkens als de app weer voorop staat.
-        const prompts = [pic.prompt, pic.fallback].filter(Boolean);
+        const prompts = promptAttempts(pic);
         let p = 0;
         let netTries = 0;
         while (p < prompts.length && !result) {

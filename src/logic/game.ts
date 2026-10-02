@@ -111,7 +111,8 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     kind: pending.kind,
     model,
     world,
-    hero: adv.hero,
+    // Oude looks met een kostuum (van vóór de nieuwe regels) eerst opschonen, anders herhaalt de verteller ze.
+    hero: adv.hero.heroLook ? { ...adv.hero, heroLook: defuse(adv.hero.heroLook) } : adv.hero,
     state: adv.state,
     summary: adv.summary,
     recent: adv.turns.slice(-RECENT_TURNS).map((t) => ({ action: t.action, narration: t.narration })),
@@ -315,6 +316,32 @@ const STYLES: Record<string, string> = {
 };
 
 /** Prompt + vaste stijl per setting, zodat alle beelden van een avontuur bij elkaar passen. */
+/**
+ * Haalt superheldenwoorden uit een beeldprompt. Het filter van Cloudflare weigert alles wat op een
+ * superheld lijkt (kostuum, embleem, cape, masker, "speedster"); een held in een gewone jas komt wel door.
+ * Getest: "young man in a red suit with lightning emblem" → geweigerd, "young man in a red jacket" → goed.
+ */
+export function defuse(prompt: string): string {
+  return prompt
+    .replace(/\b(?:with|and|bearing|featuring)\s+(?:a|an|the)?\s*(?:[\w-]+\s+){0,3}(?:emblems?|insignias?|logos?|symbols?|crests?)(?:\s+on\s+(?:his|her|their|the)\s+\w+)?/gi, '')
+    .replace(/\b(?:[\w-]+\s+){0,2}(?:emblems?|insignias?|logos?|symbols?)\b/gi, '')
+    .replace(/\b(?:full-body\s+|skin-?tight\s+|form-fitting\s+)?(?:speed(?:ster)?\s+|super-?hero\s+)?(?:suits?|costumes?|spandex|bodysuits?|uniforms?)\b/gi, 'jacket')
+    .replace(/\b(?:super-?\s?heroe?s?|speedsters?|vigilantes?|super-?villains?)\b/gi, 'person')
+    .replace(/\b(?:capes?|cloaks?)\b/gi, 'scarf')
+    .replace(/\b(?:masked|caped|costumed|hooded crime-fighting)\s+/gi, '')
+    .replace(/\b(?:masks?|cowls?|domino masks?)\b/gi, 'sunglasses')
+    .replace(/\b(?:a|an)\s+person\b/gi, 'a young person')
+    .replace(/\s+([,.])/g, '$1')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+/** Volgorde van pogingen: de prompt, de opgeschoonde prompt, de opgeschoonde reserve (alleen de plek). */
+export function promptAttempts(pic: { prompt: string; fallback: string }): string[] {
+  const list = [pic.prompt, defuse(pic.prompt), defuse(pic.fallback)].map((x) => x.trim()).filter(Boolean);
+  return list.filter((x, i) => list.indexOf(x) === i);
+}
+
 export function styledPrompt(setting: string, prompt: string): string {
   const style = STYLES[setting] ?? STYLES.eigen;
   return `${prompt.trim().replace(/[.\s]+$/, '')}. ${style}, no text, no lettering, no watermark`;
