@@ -1,0 +1,45 @@
+{
+ "id": "murc2lh0-uonyy",
+ "finishedAt": "2026-10-02T19:05:55.948Z",
+ "durationMs": 10358,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ik heb niks meer te verliezen,\" fluister je. Het is de waarheid, en dat maakt je kalm.\n\nDit keer dwing je niets. Je laat het kraaienteken koud over je hand kruipen en je roept de schaduw die onder de laarzen van de lange man ligt. Fakkellicht, vallende veren en de put erachter: overal zijn schaduwen, en ze luisteren.\n\nZe komen. Een zwarte inktgolf rijst uit de stenen, glad en gehoorzaam, en slaat als een zweep om de pols van de man met het mes. Het lemmet schiet van Marens keel en kletterend over de rand. Een tweede strook schaduw rukt de laars van je pols.\n\nDe lange man wankelt en zijn glimlach verdwijnt voor het eerst. \"Wat ben jij?\" sist hij.\n\nMaren rukt zich los en stort naar je toe. Je ziet zwarte vlekken, en je lichaam trilt als een bijna gedoofd vuur. Ver rechts glimt de fluisterende steen tussen de stenen. De Orde komt weer overeind.",
+  "choices": [
+   "Grijp de steen en vlucht met Maren",
+   "Laat de schaduw de lange man vastbinden",
+   "Beveel de kraaien de Orde de put in te drijven"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. In de Kraaienkelk koos hij als prijs één dienst aan de kroonkraai en kreeg kraaienteken en Kraaienzegel. Aan de put-rand liet hij kraaien de Orde aanvallen. Daarna riep hij schaduw: die rukte het mes van Marens keel en de laars van zijn pols. Maren is vrij en bij hem. De lange leider met zilveren kraaienspeld is geschrokken. De steen ligt vlakbij op de stenen. Joshua is bijna dood.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, hand outstretched as a ribbon of black shadow whips around a knife-wielding man's wrist at a stone well rim, circling crows, torchlight, night, dramatic",
+   "fallback": "A stone well rim at night lit by fallen torches, black feathers drifting in the air, dark shadows curling over the stones, a small glowing stone nearby."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
