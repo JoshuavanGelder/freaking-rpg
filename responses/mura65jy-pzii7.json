@@ -1,0 +1,45 @@
+{
+ "id": "mura65jy-pzii7",
+ "finishedAt": "2026-10-02T18:12:43.441Z",
+ "durationMs": 10037,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Vraag wat de prijs van de gift is",
+   "Eis de gift zonder prijs te kennen",
+   "Vraag de steen om raad"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A thin young man with messy dark hair in torn patched brown robes stands defiant on a black glass floor, facing a man-sized crow wearing a crown of broken glass, hundreds of crows with human eyes around them, red light from above",
+   "fallback": "A vast cavern with a black glass floor, a small round opening of red light far above, drifting black feathers in the dim air."
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren opende hij het kraaienreliëf en blies Orde-mannen weg met rode wind. Hij sprong in de Kraaienkelk en landde gewond op zwart glas tussen kraaien met mensenogen. Een grote kraai met glazen kroon en grijze ogen biedt een gift met een prijs. Joshua tttart hem: hij wordt de sterkste ooit. De steen zwijgt eerbiedig. Maren en de Orde-mannen zijn boven.",
+  "narration": "\"Kleine magiër?\" Je stem slaat over van woede, en je komt wankelend overeind. \"Hoe durf je! Wacht maar. Ik word de sterkste ooit. Sterker dan de Orde, sterker dan jij, sterker dan wie dan ook!\"\n\nDe stilte die volgt is zwaar. Honderden mensenogen staren je aan. Je knieën trillen, maar je blijft staan, en je wilskracht wordt een ijzeren staaf in je rug.\n\nDan klinkt er een geluid dat je niet verwacht: de kroonkraai lacht. Het is een droog, krakend lachen, en de glazen scherven op zijn kop rinkelen mee.\n\n\"Zo klonk de eerste ook,\" zegt hij. \"Hij had dezelfde grijze ogen. Hij is vergeten wat het kostte.\" Hij buigt zijn kop, bijna als een groet. \"Goed. Geen kleine magiër dan. Maar een gift zonder prijs bestaat niet, Joshua. Zelfs voor wie springt.\"\n\nOnder je gewaad gloeit de steen zacht, alsof hij je wil waarschuwen. Of aanmoedigen.",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet"
+}
