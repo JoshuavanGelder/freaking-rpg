@@ -1,0 +1,45 @@
+{
+ "id": "mur3qzvq-mruj0",
+ "finishedAt": "2026-10-02T15:13:08.486Z",
+ "durationMs": 20827,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "narration": "Je geeft het verzet op en laat de kracht door je heen stromen als een rivier door een gebroken dam.\n\nHet is te veel. Je ziet de zwarte glazen troon, een hemel vol kraaien, en je eigen naam, uitgesproken door duizend snavels. Je botten zingen. Je mond opent zich en er komt geen schreeuw uit maar een windstoot, rood en snijdend. De wijnvaten rondom je barsten open. Schimmelige wijn spat over de muren en de kratten spatten uiteen.\n\nDan slaat de kracht terug. Het voelt alsof een gloeiende hand je borstkas dichtknijpt. Je zakt op je knieën en proeft ijzer. Je lichaam is te zwak voor wat erin woont.\n\n\"Genoeg,\" hijgt de steen, bijna verontschuldigend. \"Nog niet. Je bent nog te klein voor mij.\"\n\nMaren trekt je overeind. Haar ogen zijn groot, maar ze lacht zacht. \"Gek jongetje. Je hebt de kamer wakker gemaakt.\" Tussen de omgevallen vaten staan twee mannen in zwarte mantels. Ze zijn doorweekt en duizelig, maar hun messen glimmen. Achter je gloeit de rode gang, warm en uitnodigend.",
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Kraaienkamer onder Velmoor"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": false
+  },
+  "choices": [
+   "Vlucht de rode gang in met Maren",
+   "Richt de rode wind op de mannen",
+   "Spreek tot de steen en eis controle"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, torn patched brown robes, kneeling in a wine cellar as a burst of red wind and glowing red veins explode from him, barrels bursting, wine splashing, two dark-cloaked figures staggering behind, red light from a tunnel",
+   "fallback": "A damp stone wine cellar with burst barrels, spilled wine on the floor and a narrow passage glowing with deep red light in the wall."
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. Twee mannen van de Orde van de Kraai jagen hem na. Met Maren, ex-kluizenaar van de Orde, vluchtte hij de wijnkelders in. Hij drukte de steen in het kraaienreliëf en gaf zich over aan de kracht. Die was te groot: de vaten barstten, hij raakte gewond. De steen zegt dat hij nog te klein is. Twee natte, duizelige Orde-mannen staan vlakbij; achter Joshua gloeit een rode gang.",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet"
+}
