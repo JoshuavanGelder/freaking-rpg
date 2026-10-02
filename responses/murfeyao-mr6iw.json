@@ -1,0 +1,48 @@
+{
+ "id": "murfeyao-mr6iw",
+ "finishedAt": "2026-10-02T20:39:36.244Z",
+ "durationMs": 15547,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Akkoord,\" zeg je. \"Drie regels. Begin.\"\n\nDe oude man knikt en schuift een stuk touw uit zijn sjaal, grijs, vezelig en stijf van de inkt. Hij legt het in de krijtcirkel. \"De eerste knoop bindt niets vast,\" kraakt hij. \"Hij houdt vast wat al wil breken. Voel je wind of woede, dan leg je er een lus omheen en trek je aan.\"\n\nJe knielt. Het krijt kraakt onder je knieën. Je roept de rode zweem op en laat hem langs je vingers kruipen. Hij is warm en wild, en hij wil niet in een lus. Je legt hem om het touw, trekt aan, en voor een tel hangt er een glanzende knoop in de lucht.\n\nDan schiet hij los. De rode draad zweept terug over je hand en brandt een striem over je knokkels. Je bijt op je tong en valt achterover. De tekens in de cirkel flakkeren schel.\n\n\"Bijna,\" zegt de spreukenmaker, en hij klinkt tevreden. \"Je trok uit woede, niet uit wil. Nog eens.\" Op de dorpel houdt de kraai zijn kop scheef, stil en aandachtig.",
+  "choices": [
+   "Probeer het nog eens, kalm en geconcentreerd",
+   "Vraag hoe wil anders is dan woede",
+   "Bestudeer eerst het touw en de tekens"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Leergierigheid",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) stemde in met lessen onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua begon de eerste knoop, maar de rode draad schoot terug en brandde zijn hand. De spreukenmaker zegt dat hij uit woede trok, niet uit wil. De kraai kijkt mee vanaf de dorpel.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A cramped workshop with a glowing chalk circle on the floor, a coil of grey rope, shelves of jars and herbs, warm lantern light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
