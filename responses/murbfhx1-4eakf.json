@@ -1,0 +1,52 @@
+{
+ "id": "murbfhx1-4eakf",
+ "finishedAt": "2026-10-02T18:48:05.478Z",
+ "durationMs": 17492,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Kraaienzegel"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Betaal de schuld aan de kroonkraai",
+     "detail": "Eén keer gehoorzamen, op een dag die hij kiest."
+    }
+   ],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Vraag wat de gift precies inhoudt",
+   "Rennen naar het licht, weg van hem",
+   "Bied Maren aan te redden als eerste dienst"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, kneeling on black glass floor as a giant crow with a broken glass crown spreads its wings, black light flowing into his chest, hundreds of crows watching, red light far above",
+   "fallback": "A vast cavern with a black glass floor, a small round red light high above, black feathers drifting in the dark air."
+  },
+  "narration": "\"Drie,\" zeg je. \"Een dienst.\"\n\nJe zegt het snel, want als je nadenkt, durf je niet meer. De kroonkraai blijft doodstil. Dan klinkt er een zacht gekraak, bijna teleurgesteld, bijna tevreden.\n\n\"De meesten kiezen hun naam,\" kraakt hij. \"Ze denken dat een naam niets weegt. Jij kiest wat je het langst kunt vergeten. Een schuld die je zelf nog niet kent.\"\n\nHij spreidt zijn vleugels. De zwarte vlam uit de veer schiet naar je borst en brandt zich erin, koud als winterijzer. Je schreeuwt. Je knieën slaan op het glas, en iets duisters stroomt door je aderen. Je voelt je botten zingen, je handen gloeien, de wereld wordt scherper en luider.\n\nOp je hand blijft een zwart kraaienteken achter, en in je zak ligt ineens een koud, glazen zegel.\n\n\"Het is gedaan,\" zegt de kroonkraai. \"Je bent van mij, eenmaal. Totdat ik roep.\"\n\nDe steen fluistert zacht: \"Wat heb je gedaan?\" Boven je klinken laarzen aan de rand van de put.",
+  "portrait": "",
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk en landde gewond tussen kraaien met mensenogen. Hij koos de prijs van de dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon en grijze ogen, op een dag naar zijn keuze. Hij kreeg een gift van zwart licht, een kraaienteken en een Kraaienzegel. De steen is bezorgd. Maren en de Orde-mannen zijn boven aan de put.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
