@@ -1,0 +1,47 @@
+{
+ "id": "muqoip2r-8d30i",
+ "finishedAt": "2026-10-02T08:06:37.091Z",
+ "durationMs": 10352,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je trekt een streep langs Wol, sneller dan hij kan knipperen. Dat dacht je tenminste. Wol blijkt een sok met reflexen. Een pluizige arm schiet uit zijn pak en pakt je bij je jaskraag.\n\n\"Zonder kaartje? In MIJN park?\" piept hij.\n\nJe rem is er niet op berekend. Je snelheid draait je om je as, en je knalt met je neus in het draaihek. Het hek zegt vrolijk \"DING!\" en spuugt een rij losse sokken over je heen. Een daarvan blijft op je hoofd plakken, als een hoedje.\n\nWol schudt zijn hoofd. \"Dat is een boete van twee munten. Plus de sok. Die is nu van jou, hij heeft een band met je opgebouwd.\"\n\nAchter hem wijst een bordje met een pijl naar de Wasmachine van het Noodlot. Het hele pad ernaartoe is bezaaid met zeepbellen zo groot als ballonnen.",
+  "choices": [
+   "Betaal de boete en het kaartje",
+   "Ren nogmaals, nu in een boog",
+   "Onderhandel met Wol over de sok"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": -2,
+   "xp": 5,
+   "addItems": [
+    "Plakkerige sok"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00. Een sprekende lamp met cape stuurde hem op zoek naar de gestolen maandag, gestolen door een Sokkenfluisteraar met een gigantische gestreepte sok. In het Pretpark van Verloren Sokken vertelde kaartjesverkoper Wol dat de dief (lange man, jas van gebreide mist) naar de Wasmachine van het Noodlot ging. Barry probeerde langs Wol te rennen, botste op het draaihek en kreeg een boete van twee munten plus een plakkerige sok. Een kaartje kost tien munten.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "Entrance gate of a whimsical amusement park decorated with hundreds of colorful socks, giant soap bubbles drifting along a path toward a huge washing machine."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
