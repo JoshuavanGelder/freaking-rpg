@@ -1,0 +1,45 @@
+{
+ "id": "muqoeny4-fdatz",
+ "finishedAt": "2026-10-02T08:03:27.230Z",
+ "durationMs": 9980,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De kaartjesverkoper kijkt je aan met twee kraalogen die precies op zijn sokkenpak zijn genaaid. Zijn naam is Wol, staat op zijn badge, en hij heeft duidelijk al een lange maandag gehad. Of juist niet.\n\n\"Een dief?\" fluistert hij. \"Ja hoor, die kwam hier langs. Lange man, jas van gebreide mist, droeg een sok zo groot als een slaapzak. Hij betaalde met een losse knoop en een zucht. Ik heb hem gewoon binnengelaten.\"\n\nHij leunt naar je toe en zijn pluisjes kietelen je neus. \"Hij ging richting de Wasmachine van het Noodlot. Daar verdwijnt alles. Maar voor jou kost het een kaartje. Dat is tien munten.\"\n\nAchter hem draait het reuzenrad piepend rond. Er hangt een sok in elke gondel, en een paar lijken naar je te zwaaien.",
+  "choices": [
+   "Betaal tien munten voor het kaartje",
+   "Ren zomaar langs hem heen naar binnen",
+   "Bied een zucht aan als betaling"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape vertelde dat een Sokkenfluisteraar de maandag stal met een gigantische gestreepte sok. Barry rende naar het Pretpark van Verloren Sokken. Kaartjesverkoper Wol vertelde dat de dief (lange man, jas van gebreide mist) naar de Wasmachine van het Noodlot ging. Wol wil tien munten voor een kaartje.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A colorful amusement park gate decorated with hundreds of fluttering socks, a ferris wheel with socks in every gondola, soft morning light."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
