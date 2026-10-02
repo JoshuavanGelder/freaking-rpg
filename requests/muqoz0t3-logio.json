@@ -1,0 +1,94 @@
+{
+ "id": "muqoz0t3-logio",
+ "createdAt": "2026-10-02T08:19:05.559Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Absurd"
+  ],
+  "toneText": "",
+  "wishes": "Kort vehaal"
+ },
+ "hero": {
+  "name": "Barry Allen",
+  "className": "Speedster",
+  "powers": "Een echte speedster met bijna geen zwaktes.",
+  "looks": "Zoals in de flash new 53 comics",
+  "heroLook": "Young man with short messy blond-brown hair, athletic build, red jacket on chest, gold boots and wrist bands, sunglasses-free, determined friendly face."
+ },
+ "state": {
+  "hp": 12,
+  "maxHp": 20,
+  "gold": 0,
+  "xp": 60,
+  "level": 1,
+  "location": "Wasmachine van het Noodlot",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 5
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 4
+   },
+   {
+    "name": "Vindingrijkheid",
+    "value": 3
+   },
+   {
+    "name": "Geduld",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Rode speedsterpak",
+   "Pretparkkaartje",
+   "Gloeiende sok"
+  ],
+  "quests": [
+   {
+    "title": "Vind de gestolen maandag",
+    "detail": "Zoek de dief in het Pretpark van Verloren Sokken.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Barry Allen zit vast in een eeuwige 07:00 en jaagt op de gestolen maandag in het Pretpark van Verloren Sokken. Hij gaf Wol zijn plakkerige sok als betaling. Een beledigde zeepbel volgt hem. Bij de Wasmachine van het Noodlot griste Barry de gloeiende sok met het kalenderblad MAANDAG van de Sokkenfluisteraar. Nu zuigt de machine alles naar binnen.",
+ "recent": [
+  {
+   "action": "Ren zomaar langs hem heen naar binnen",
+   "narration": "Je trekt een streep langs Wol, sneller dan hij kan knipperen. Dat dacht je tenminste. Wol blijkt een sok met reflexen. Een pluizige arm schiet uit zijn pak en pakt je bij je jaskraag.\n\n\"Zonder kaartje? In MIJN park?\" piept hij.\n\nJe rem is er niet op berekend. Je snelheid draait je om je as, en je knalt met je neus in het draaihek. Het hek zegt vrolijk \"DING!\" en spuugt een rij losse sokken over je heen. Een daarvan blijft op je hoofd plakken, als een hoedje.\n\nWol schudt zijn hoofd. \"Dat is een boete van twee munten. Plus de sok. Die is nu van jou, hij heeft een band met je opgebouwd.\"\n\nAchter hem wijst een bordje met een pijl naar de Wasmachine van het Noodlot. Het hele pad ernaartoe is bezaaid met zeepbellen zo groot als ballonnen."
+  },
+  {
+   "action": "Betaal de boete en het kaartje",
+   "narration": "Je graait in je zak en telt je munten uit op de toonbank. Acht. Wol telt mee met zijn pluizige vingers en schudt treurig zijn hoofd. \"De boete had je al betaald, jongen. Het kaartje kost tien. Je zit twee munten te kort.\"\n\nJe staart naar de munten. De munten staren terug. Dan kijkt Wol naar de plakkerige sok in je hand. Zijn kraaloogjes glimmen. \"Die sok... echt topkwaliteit. Heel plakkerig. Geef hem aan mij, dan reken ik hem als twee munten.\"\n\nJe geeft hem de sok. Wol drukt hem ontroerd tegen zijn borst. Hij stempelt een kaartje met een sokvormig gaatje en schuift het over de toonbank. \"Fijne dag. Pas op voor de zeepbellen. Ze hebben meningen.\"\n\nHet draaihek zegt \"DING!\" en laat je nu netjes door. Voor je rolt een zeepbel zo groot als een auto over het pad. Hij kijkt je recht aan, voor zover een bel dat kan."
+  },
+  {
+   "action": "Ren er razendsnel omheen",
+   "narration": "Je schiet naar links. De zeepbel schuift mee. Je schiet naar rechts. De bel ook. Hij lijkt het leuk te vinden.\n\nJe zet een tandje bij, zo snel dat je schaduw een seconde te laat vertrekt. Je glipt langs de bel, zo dicht dat je je eigen gezicht erin ziet uitrekken. Je ziet er verrassend bezorgd uit.\n\nDan gaat het mis. Een tweede, kleinere bel dook ongemerkt op uit het niets. Plop! Je knalt erdoorheen, en een straal lauw sopwater klettert in je gezicht. Het smaakt naar lavendel en oude kousen.\n\nAchter je mompelt de grote bel beledigd: \"Onbeleefd.\" Hij begint je te volgen, langzaam en vol wrok. Voor je doemt een boog van waslijnen op. Daarachter bromt iets dreigends, en het ruikt naar schoon wasgoed. De Wasmachine van het Noodlot kan niet ver meer zijn."
+  },
+  {
+   "action": "Ontwijk de bel en zoek verder naar de dief",
+   "narration": "Je draait je om en schiet onder de grote bel door. Dat is het plan. Reflexen genoeg, maar je zeepvoeten niet: het sop in je schoenen maakt van je laars een schaats. Je glijdt met een lange, elegante boog de waslijnen in.\n\nEen natte onderbroek klapt tegen je gezicht. Een hemd slaat om je schouders als een omhelzing. Je worstelt je los, en de bel zweeft ondertussen hoffelijk langs, alsof hij je een plezier doet. \"Graag gedaan,\" mompelt hij.\n\nJe stoot je elleboog tegen een wasknijper zo groot als een krokodil. Au. Die knijpt terug.\n\nDan zie je door de waslijnen heen een lange gestalte in een jas van gebreide mist. Hij staat bij de brommende Wasmachine en trekt een gigantische gestreepte sok achter zich aan. Hij heeft je nog niet gezien. Of hij doet alsof."
+  },
+  {
+   "action": "Sprint op de dief af pak hem vast en roep geef  de maandag terug",
+   "narration": "Je sprint op hem af, zo snel dat de waslijnen achter je gaan trillen als harpsnaren. Je grijpt de jas van gebreide mist. Dat is het plan.\n\nMist blijkt niet vast te pakken. Je vingers glijden erdoorheen, en je vliegt zonder tegenstand dwars door de Sokkenfluisteraar heen. Hij ruikt naar warme was en oud verdriet. \"Geef de maandag terug!\" brul je, tegen een wasknijper.\n\nJe remt, tolt om en landt met je neus tegen de Wasmachine van het Noodlot. De trommel bromt verontwaardigd en spuugt je een natte sok in je gezicht.\n\nDe Sokkenfluisteraar draait zich langzaam om. Zijn gezicht is een gat met een kraag. \"Ah,\" fluistert hij. \"De held van zeven uur. Je bent te vroeg.\" Hij zwaait met zijn gigantische gestreepte sok, en daarin zie je iets gloeien: een kalender met één blaadje, MAANDAG.\n\nAchter je schuift de beledigde zeepbel de waslijnen in."
+  },
+  {
+   "action": "Grijp de gloeiende sok, niet de jas",
+   "narration": "Je laat de mist met rust en duikt op de sok. Je vingers sluiten om gebreide wol, warm en vreemd trillend, als een kat die net wakker wordt.\n\nDe Sokkenfluisteraar zucht. \"Niet de sok. Iedereen pakt altijd de jas.\"\n\nHij grijpt nog, maar jij bent sneller. Veel sneller. Je rukt de sok uit zijn handen. Het gloeiende kalenderblad MAANDAG fladdert eruit en blijft boven je hand hangen. Het ruikt naar koude koffie en wekkers.\n\nDan begint de Wasmachine van het Noodlot te draaien. De trommel slaat open als een bek en een zuigkracht trekt aan het blaadje, aan de sok en aan jou. Je hakken schrapen over de grond. Achter je roept de zeepbel: \"Ik zei toch dat het onbeleefd was!\"\n\nDe Sokkenfluisteraar glimlacht met zijn gat. \"Zeven uur duurt zo lang als ik wil.\""
+  }
+ ],
+ "action": "Ren tegen de draairichting in",
+ "roll": 18
+}
