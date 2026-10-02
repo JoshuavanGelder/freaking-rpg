@@ -1,0 +1,101 @@
+{
+ "id": "muqxxv6t-8mlx2",
+ "createdAt": "2026-10-02T12:30:08.165Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 18,
+  "maxHp": 20,
+  "gold": 12,
+  "xp": 50,
+  "level": 1,
+  "location": "Onder de markt van Velmoor",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen met rode aderen. Twee mannen van de Orde van de Kraai jagen hem na. Hij doofde met wind de lantaarns op de markt en raakte licht gewond. De oude Maren, ex-kluizenaar van de Orde, wil de steen uit de Orde's handen houden en zien wat hij van Joshua maakt. Ze vluchtten door een lage deur de wijnkelders onder de markt in en grendelden hem. De Orde bonst op de deur. Beneden voelt de steen iets dat hem kent.",
+ "recent": [
+  {
+   "action": null,
+   "narration": "Regen druipt door de gescheurde mouwen van je gewaad terwijl je door de modder van Velmoor strompelt, een stad van scheve daken en rokende schoorstenen. In je zak rammelen twee koperen munten. Meer heb je niet.\n\nJe maag knort. Toch voel je het soms, diep in je borst: een zwak, warm gloeien, als een kooltje dat wacht op wind. Niemand in deze stad heeft ooit in je geloofd. Dat gaat veranderen.\n\nOnder een gebroken lantaarn, in een steegje vol afval, ligt iets te schitteren. Een zwarte steen, zo groot als een vuist, met rode aderen die pulseren als een hartslag. Als je dichterbij komt, fluistert hij je naam.\n\nAchter je klinken laarzen. Twee mannen in zwarte mantels, met een zilveren kraai op hun borst, komen de steeg in. \"Daar,\" zegt de ene zacht. \"Die steen is van de Orde. Weg ermee, bedelaar.\""
+  },
+  {
+   "action": "Grijp de steen en ren weg",
+   "narration": "Je duikt naar voren en je vingers sluiten zich om de steen. Hij is ijskoud, en dan ineens gloeiend heet. De fluistering zwelt aan tot een stem in je schedel: \"Ren, Joshua. Links.\"\n\nJe gehoorzaamt zonder na te denken. Achter je vloekt een man, en een mes fluit langs je oor en slaat vonken uit de bakstenen. Je glijdt uit door de modder, vangt jezelf op met één hand en schiet een smalle zijsteeg in die naar rotte vis stinkt.\n\nDe laarzen dreunen achter je aan. Dan voel je het: het kooltje in je borst vlamt op. Je steekt zonder te weten hoe je hand achterwaarts uit, en een golf van lucht slaat een stapel kratten om. De achtervolgers struikelen vloekend over het hout.\n\nJe adem brandt. Voor je ligt een kruispunt: een open markt vol late kooplui, een donkere trap naar de riolen, en een hoge muur met een wankel dak erachter.\n\n\"Sneller,\" fluistert de steen. \"Of ze krijgen mij.\""
+  },
+  {
+   "action": "Verdwijn tussen de marktkramen",
+   "narration": "Je werpt jezelf de markt op, tussen kraampjes vol natte kool, hangende hammen en geschreeuw. Lantaarns zwaaien in de wind. Je duikt onder een zeil door en probeert een gewoon mens te lijken, maar met je gescheurde gewaad en de gloeiende steen onder je arm val je op als een kraai tussen duiven.\n\n\"Hé, dief!\" brult een visverkoper wanneer je zijn tafel raakt. Een bak glibberige palingen klettert over de keien. Je glijdt weg, de steen klopt hard tegen je ribben, en achter je klinkt de stem van een van de mannen, nu dichtbij: \"Sluit de uitgang van de markt!\"\n\nEen mes scheert langs je schouder en snijdt een reep stof uit je mouw. Het brandt, warm en nat. Je struikelt tussen twee kraampjes, en daar ben je half verborgen achter een wagen vol lege vaten.\n\n\"Ze zien je,\" fluistert de steen, bijna vrolijk. \"Maar ze zien mij nog niet. Gebruik de wind weer, Joshua.\"\n\nVlakbij zie je een kar met kruiken olie, en op de rand van het plein een oude vrouw die je met scherpe ogen aanstaart."
+  },
+  {
+   "action": "Blaas de olielantaarns om met wind",
+   "narration": "Je sluit je ogen en laat het kooltje in je borst los. De steen trilt tegen je ribben, en een golf koude lucht rolt over het plein. Eén voor één doven de olielantaarns met een zacht gesis, alsof iemand de markt de adem ontneemt.\n\nDuisternis valt als een deken neer. Kooplui vloeken, een kind begint te huilen, ergens valt een stapel potten rinkelend om. \"Licht! Wie heeft het licht gedoofd?\" brult de man van de Orde, maar zijn stem klinkt nu onzeker en ver weg.\n\nJe kruipt langs de wagen, je schouder klopt pijnlijk. De steen gloeit zwak rood tussen je vingers, dus je drukt hem tegen je buik onder je gewaad. Dan voel je een rimpelige hand om je pols sluiten.\n\n\"Stil, jongen,\" sist de oude vrouw, vlak bij je oor. Ze ruikt naar kruiden en rook. \"Ik weet wat je draagt. Volg mij, of sterf hier tussen de vaten.\" Achter je klinken laarzen, steeds dichterbij, en het schrapen van staal."
+  },
+  {
+   "action": "Vraag wie ze is en wat ze wil",
+   "narration": "\"Wie ben je? Wat wil je van mij?\" fluister je, terwijl je pols in haar greep bijna gevoelloos wordt. Haar vingers zijn dun, maar sterk als ijzerdraad.\n\n\"Vragen, vragen,\" sist ze. \"Net als de vorige die hem droeg. Die stelde ook vragen, tot de kraaien hem vonden.\" Ze trekt je half overeind. \"Ik ben Maren. Ik was ooit kluizenaar van de Orde, tot ik begreep wat ze met zulke stenen doen. Ik wil niet dat ze die van jou krijgen. En eerlijk, jongen: ik wil zien wat hij van jou maakt.\"\n\nDe steen kloppen tegen je buik, en zijn fluistering klinkt bijna spottend: \"Ze liegt niet. Maar ze vertelt niet alles.\"\n\nAchter je schraapt staal over steen. Een lantaarn wordt met een vonk opnieuw ontstoken, nog geen twintig passen verder. Maren knikt naar een lage deur achter de kar met olie. \"Daar. Nu, of nooit.\""
+  },
+  {
+   "action": "Volg Maren door de lage deur",
+   "narration": "Je bukt en glipt achter Maren aan door de lage deur. Het hout schraapt over je schouder, precies over de snee, en je bijt op je tong om niet te kreunen. Achter je valt de deur met een doffe klap dicht. Maren schuift een roestige grendel dicht, net op tijd.\n\nDan is er alleen nog duisternis, en de geur van natte steen en oude wijn. Buiten bonst een vuist op het hout. \"Open! In naam van de Orde!\" Het hout kreunt, maar houdt stand.\n\n\"Dat houdt ze een minuut tegen,\" mompelt Maren. Ze strijkt een lucifer af en een flauw vlammetje onthult een smalle trap die naar beneden draait, de wijnkelders in. Aan de muur hangen oude kraaienveren, vastgespijkerd, vergeeld.\n\nDe steen kloppen tegen je buik. \"Niet alles hier is leeg,\" fluistert hij. \"Beneden is iets wat mij kent.\"\n\nMaren kijkt je aan, haar ogen glinsteren in het vuur. \"Je hoort het ook, nietwaar? Dan weet je dat we niet alleen zijn.\""
+  }
+ ],
+ "action": "Laat de steen je vooruit leiden",
+ "roll": 12
+}
