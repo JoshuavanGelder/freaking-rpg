@@ -1,0 +1,53 @@
+{
+ "id": "mureap1k-bf0ib",
+ "finishedAt": "2026-10-02T20:08:15.408Z",
+ "durationMs": 12527,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [
+   {
+    "name": "De oude spreukenmaker",
+    "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Werkplaats van de spreukenmaker",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag hem je als leerling aan te nemen",
+   "Wijs naar de steen en vraag naar zijn geheim",
+   "Blijf staan en luister eerst naar de spreuk"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, standing in a doorway of a cramped candlelit workshop; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe, murmuring a spell over glowing runes on the floor, warm lantern light, dust in the air",
+   "fallback": "A cramped candlelit workshop with shelves of old books, chalk runes glowing faintly on a wooden floor, a single hanging lantern, dust floating in warm light."
+  },
+  "narration": "Je duwt de deur open. De scharnieren kreunen, maar de stem binnen stopt niet.\n\nDe ruimte is een krap hok, volgestouwd met scheve boekenrekken, kruikjes en bundels gedroogd kruid. Aan een haak hangt de lantaarn die je van buiten zag. Op de vloer is met krijt een cirkel getekend, en de tekens daarin gloeien zwak, als sintels onder as.\n\nIn het midden zit een oude man met woest wit haar en een melkwit linkeroog. Zijn inktzwarte vingers volgen de krijtlijnen terwijl hij mompelt. Je voelt iets aan je huid trekken, een zachte tinteling, alsof de lucht naar je reikt.\n\nDan stopt hij. Zijn goede oog draait naar je toe, en hij glimlacht zonder tanden. \"Je bent laat, jongen,\" kraakt hij. \"De steen in je zak maakte zoveel lawaai dat ik er hoofdpijn van kreeg.\"\n\nIn je zak blijft de steen opvallend stil.\n\nBoven de deur hoor je vleugels. De kraai heeft zich op de dorpel gezet.",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter, betaalde de bakker eerlijk en ontsnapte aan soldaten. De looiers wezen hem af als te zwak. Een kraai volgt hem nog. Joshua stapte een hok binnen bij de poort, waar een oude spreukenmaker met melkwit oog hem verwachtte en de steen kent. De steen zwijgt opvallend.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
