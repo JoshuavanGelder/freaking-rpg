@@ -43,8 +43,14 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 
 ## Spellogica (`src/logic/game.ts`, getest)
 - `parseAnswer` maakt het antwoord veilig (grenzen: leven ±10 per beurt, xp 0–30, max 6 eigenschappen 0–5).
-- `applyAnswer`: de app past toe; eigenschappen alleen bij de start; level = 1 + xp/100 (+2 max leven per level);
-  0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level (geen cijfers van worpen).
+- `applyAnswer`: de app past toe; eigenschappen bij de start, later alleen nieuwe erbij (max. 8, bestaande nooit anders);
+  level = 1 + xp/100 (+2 max leven per level);
+  0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level, krachten (geen cijfers van worpen).
+- **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
+  zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
+  naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen
+  (`traits` undefined) vragen de verteller eenmalig alles aan te vullen wat het verhaal al gaf (aanleiding: wind- en
+  schaduwkrachten die niet op het heldenscherm stonden).
 
 ## Beelden (`src/pictures.tsx`, `src/services/images.ts`, `src/services/files.ts`)
 - De app roept Joshua's eigen Cloudflare Worker `claudia-image-mcp` (= zijn Images-koppeling) direct aan via JSON-RPC

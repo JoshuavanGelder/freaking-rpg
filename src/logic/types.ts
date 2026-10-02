@@ -39,6 +39,9 @@ export type Attribute = { name: string; value: number };
 export type CastMember = { name: string; look: string }; // look: Engels, met leeftijd
 export type Quest = { title: string; detail: string; done: boolean };
 
+/** Kracht of zwakte die de held in het verhaal kreeg (zichtbaar, zonder cijfers). */
+export type Trait = { name: string; kind: 'kracht' | 'zwakte'; detail: string };
+
 /** Staat van het spel. Alles behalve leven, goud en level blijft voor de speler onzichtbaar. */
 export type GameState = {
   hp: number;
@@ -50,6 +53,8 @@ export type GameState = {
   attributes: Attribute[]; // verborgen, door Claude gemaakt bij de start
   inventory: string[];
   quests: Quest[];
+  /** In het verhaal gekregen krachten en zwaktes. undefined = avontuur van vóór deze lijst. */
+  traits?: Trait[];
 };
 
 export type Turn = {
@@ -110,6 +115,8 @@ export type Answer = {
     addQuests: { title: string; detail: string }[];
     completeQuests: string[];
     location: string;
+    addTraits: Trait[];
+    removeTraits: string[];
   };
   summary: string;
   gameOver: boolean;

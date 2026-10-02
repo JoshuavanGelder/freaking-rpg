@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Attribute, CastMember, GameState, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Attribute, CastMember, GameState, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -23,6 +23,8 @@ export const START_GOLD = 10;
 export const XP_PER_LEVEL = 100;
 const MAX_INVENTORY = 30;
 const MAX_QUESTS = 30;
+const MAX_TRAITS = 20;
+const MAX_ATTRIBUTES = 8;
 const RECENT_TURNS = 6;
 const MAX_CAST = 24;
 const EARLIER_PICTURES = 12;
@@ -68,7 +70,7 @@ export function rollD20(rand: () => number = Math.random): number {
 }
 
 export function initialState(): GameState {
-  return { hp: START_HP, maxHp: START_HP, gold: START_GOLD, xp: 0, level: 1, location: '', attributes: [], inventory: [], quests: [] };
+  return { hp: START_HP, maxHp: START_HP, gold: START_GOLD, xp: 0, level: 1, location: '', attributes: [], inventory: [], quests: [], traits: [] };
 }
 
 export function newAdventure(world: World, hero: Hero, now = Date.now(), id = newId(now)): Adventure {
@@ -190,6 +192,17 @@ export function parseAnswer(raw: unknown): Answer | null {
         : [],
       completeQuests: strList(ch.completeQuests, 5, 60),
       location: str(ch.location, 60),
+      addTraits: Array.isArray(ch.addTraits)
+        ? ch.addTraits
+            .map((t: any): Trait => ({
+              name: str(t?.name, 40),
+              kind: /^(zwakte|weakness)$/i.test(str(t?.kind, 20)) ? 'zwakte' : 'kracht',
+              detail: str(t?.detail, 140),
+            }))
+            .filter((t: Trait) => t.name)
+            .slice(0, 4)
+        : [],
+      removeTraits: strList(ch.removeTraits, 4, 40),
     },
     summary: typeof a.summary === 'string' ? a.summary.trim().slice(0, 1500) : '',
     gameOver: !!a.gameOver,
@@ -266,8 +279,30 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   const location = c.location || s.location;
   if (c.location && !same(c.location, s.location)) notes.push(`Locatie: ${c.location}`);
 
-  // Verborgen eigenschappen: alleen bij de start (of als ze nog ontbreken).
-  const attributes = s.attributes.length ? s.attributes : answer.attributes;
+  // Verborgen eigenschappen: bij de start gemaakt; later alleen nieuwe erbij (bv. bij een nieuwe kracht), bestaande blijven.
+  const attributes = s.attributes.length
+    ? [...s.attributes, ...answer.attributes.filter((a, i, all) => !s.attributes.some((x) => same(x.name, a.name)) && all.findIndex((y) => same(y.name, a.name)) === i)].slice(0, MAX_ATTRIBUTES)
+    : answer.attributes;
+
+  // Krachten en zwaktes die het verhaal geeft of afneemt (zichtbaar op het heldenscherm).
+  let traits = (s.traits ?? []).map((t) => ({ ...t }));
+  for (const name of c.removeTraits) {
+    const i = traits.findIndex((t) => same(t.name, name));
+    if (i >= 0) {
+      notes.push(`${traits[i].kind === 'zwakte' ? 'Zwakte' : 'Kracht'} kwijt: ${traits[i].name}`);
+      traits.splice(i, 1);
+    }
+  }
+  for (const t of c.addTraits) {
+    const i = traits.findIndex((x) => same(x.name, t.name));
+    if (i >= 0) {
+      traits[i] = t; // zelfde naam: beschrijving bijwerken (kracht groeit), geen melding
+      continue;
+    }
+    traits.push(t);
+    notes.push(`${t.kind === 'zwakte' ? 'Nieuwe zwakte' : 'Nieuwe kracht'}: ${t.name}`);
+  }
+  traits = traits.slice(-MAX_TRAITS);
 
   const ended = answer.gameOver || hp <= 0;
   if (ended) hp = Math.max(0, hp);
@@ -292,7 +327,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
       ? newPicture(`${adv.id}-portret`, { kind: 'portrait', prompt: portraitPrompt, fallback: `head and shoulders portrait of ${hero.heroLook || 'a person in a casual jacket'}, calm expression, plain softly lit background` }, now)
       : adv.portrait;
 
-  const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests };
+  const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests, traits };
   return {
     ...adv,
     hero,

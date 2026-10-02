@@ -253,3 +253,27 @@ test('verzoek: cast, beeldprompts bij recente beurten en eenmalig eerdere beelde
   assert.equal(r3.recent[r3.recent.length - 1].picture, 'A rooftop at night.');
   assert.equal(r3.recent[0].picture, undefined);
 });
+
+test('krachten en zwaktes uit het verhaal: erbij, bijwerken, kwijt; nieuwe eigenschap alleen als die nieuw is', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-traits');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  assert.deepEqual(adv.state.traits, []);
+  const ch = (over: Record<string, any>) => ({ hp: 0, gold: 0, xp: 0, addItems: [], removeItems: [], addQuests: [], completeQuests: [], location: '', ...over });
+  adv = applyAnswer(
+    adv,
+    makePending('turn', 'Ik raak de steen aan', 4),
+    parseAnswer(raw({
+      attributes: [{ name: 'Windbeheersing', value: 2 }, { name: 'snelheid', value: 0 }],
+      changes: ch({ addTraits: [{ name: 'Windkracht', kind: 'kracht', detail: 'Je stuurt windstoten.' }, { name: 'Schaduwvrees', kind: 'weakness', detail: 'Donker maakt je bang.' }, { name: '', kind: 'kracht', detail: 'x' }] }),
+    }))!,
+    5,
+  );
+  assert.deepEqual(adv.state.traits!.map((t) => `${t.kind}:${t.name}`), ['kracht:Windkracht', 'zwakte:Schaduwvrees']);
+  assert.deepEqual(adv.state.attributes.map((a) => `${a.name} ${a.value}`), ['Snelheid 5', 'Uithoudingsvermogen 5', 'Windbeheersing 2']);
+  assert.ok(adv.turns[1].notes.includes('Nieuwe kracht: Windkracht'));
+  assert.ok(adv.turns[1].notes.includes('Nieuwe zwakte: Schaduwvrees'));
+  adv = applyAnswer(adv, makePending('turn', 'Oefenen', 6), parseAnswer(raw({ changes: ch({ addTraits: [{ name: 'windkracht', kind: 'kracht', detail: 'Je kunt nu ook vliegen.' }], removeTraits: ['SCHADUWVREES'] }) }))!, 7);
+  assert.equal(adv.state.traits!.length, 1);
+  assert.equal(adv.state.traits![0].detail, 'Je kunt nu ook vliegen.');
+  assert.deepEqual(adv.turns[2].notes, ['Zwakte kwijt: Schaduwvrees']);
+});

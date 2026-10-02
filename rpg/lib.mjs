@@ -42,6 +42,15 @@ export function renderRequest(r) {
   const attrs = (s.attributes ?? []).map((a) => `${clean(a.name, 40)} ${a.value}`).join(', ');
   lines.push(`- attributes: ${attrs || 'none yet'}`);
   lines.push(`- inventory: ${(s.inventory ?? []).map((x) => clean(x, 60)).join(', ') || 'empty'}`);
+  if (r.kind !== 'start') {
+    const traits = Array.isArray(s.traits) ? s.traits.filter((t) => clean(t?.name, 60)) : null;
+    if (!traits) {
+      lines.push('- powers and weaknesses gained in the story: not recorded yet (older adventure: add every power or weakness the story already gave the hero in addTraits now)');
+    } else {
+      const fmt = (t) => `${clean(t.name, 60)} (${t.kind === 'zwakte' ? 'weakness' : 'power'}${clean(t.detail, 160) ? `: ${clean(t.detail, 160)}` : ''})`;
+      lines.push(`- powers and weaknesses gained in the story: ${traits.length ? traits.map(fmt).join('; ') : 'none'}`);
+    }
+  }
   const open = (s.quests ?? []).filter((q) => !q.done);
   lines.push(`- open quests: ${open.length ? open.map((q) => `"${clean(q.title, 80)}" (${clean(q.detail, 120)})`).join('; ') : 'none'}`);
   lines.push('');

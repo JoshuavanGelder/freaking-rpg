@@ -46,7 +46,7 @@
     },
     "attributes": {
       "type": "array",
-      "description": "Only on the start turn: 4-6 hidden attributes that fit this hero. Empty on other turns.",
+      "description": "Start turn: 4-6 hidden attributes that fit this hero. Later turns: only a NEW attribute for a newly gained power that no existing attribute covers (rare). Otherwise empty.",
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -123,6 +123,43 @@
         "location": {
           "type": "string",
           "description": "Where the hero is now (short Dutch name), or empty string when unchanged."
+        },
+        "addTraits": {
+          "type": "array",
+          "description": "Powers or weaknesses the hero gains in the story this turn (not the ones in the player's own words). Same name again = updated description. Usually empty.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Short Dutch name, e.g. 'Windkracht', 'Schaduwstap', 'Bang voor vuur'."
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "kracht",
+                  "zwakte"
+                ]
+              },
+              "detail": {
+                "type": "string",
+                "description": "One short Dutch sentence what it does, max 15 words. No numbers."
+              }
+            },
+            "required": [
+              "name",
+              "kind",
+              "detail"
+            ]
+          }
+        },
+        "removeTraits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Exact names of gained powers or weaknesses the hero loses. Usually empty."
         }
       },
       "required": [
@@ -133,7 +170,9 @@
         "removeItems",
         "addQuests",
         "completeQuests",
-        "location"
+        "location",
+        "addTraits",
+        "removeTraits"
       ]
     },
     "summary": {
@@ -202,7 +241,10 @@
             "description": "English, 15-35 words, always starting with age and gender (e.g. 'elderly woman in her seventies'), then build, face, hair, clothes. No costume, emblem, cape or mask."
           }
         },
-        "required": ["name", "look"]
+        "required": [
+          "name",
+          "look"
+        ]
       }
     }
   },

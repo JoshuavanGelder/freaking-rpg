@@ -9,7 +9,7 @@ import { PictureBox } from '../picture-view';
 import { usePictures } from '../pictures';
 import { XP_PER_LEVEL, picturesOf, worldLabel } from '../logic/game';
 
-/** Je held: leven, goud, level, tas en quests. Verborgen eigenschappen blijven verborgen. */
+/** Je held: leven, goud, level, krachten, tas en quests. Verborgen eigenschappen blijven verborgen. */
 export function SheetScreen({ id }: { id: string }) {
   const adv = useAdventure(id);
   const nav = useNav();
@@ -27,6 +27,8 @@ export function SheetScreen({ id }: { id: string }) {
   const open = s.quests.filter((q) => !q.done);
   const done = s.quests.filter((q) => q.done);
   const xpInLevel = s.xp % XP_PER_LEVEL;
+  // Krachten eerst, dan zwaktes; elk in de volgorde waarin ze kwamen.
+  const traits = [...(s.traits ?? [])].sort((a, b) => (a.kind === b.kind ? 0 : a.kind === 'kracht' ? -1 : 1));
 
   return (
     <Screen gap={22}>
@@ -97,12 +99,44 @@ export function SheetScreen({ id }: { id: string }) {
         />
       ) : null}
 
-      {h.powers ? (
+      {h.powers || traits.length ? (
         <View style={{ gap: 10 }}>
           <Label>Krachten en zwaktes</Label>
-          <T size={15} color={C.ink} style={{ lineHeight: 22 }}>
-            {h.powers}
-          </T>
+          {h.powers ? (
+            <T size={15} color={C.ink} style={{ lineHeight: 22 }}>
+              {h.powers}
+            </T>
+          ) : null}
+          {traits.length ? (
+            <View style={{ borderRadius: 14, backgroundColor: C.card }}>
+              {traits.map((t, i) => (
+                <View key={t.name} style={{ paddingHorizontal: 16, paddingVertical: 12, gap: 4, borderTopWidth: i ? 1 : 0, borderTopColor: C.line }}>
+                  <Row style={{ gap: 8 }}>
+                    <View
+                      style={{
+                        paddingHorizontal: 8,
+                        paddingVertical: 2,
+                        borderRadius: 6,
+                        backgroundColor: t.kind === 'zwakte' ? C.hpTint : C.accentTint,
+                      }}
+                    >
+                      <T size={11} weight="bold" color={t.kind === 'zwakte' ? C.hp : C.accent} style={{ letterSpacing: 0.6, textTransform: 'uppercase' }}>
+                        {t.kind === 'zwakte' ? 'Zwakte' : 'Kracht'}
+                      </T>
+                    </View>
+                    <T size={15} weight="semibold" style={{ flex: 1 }}>
+                      {t.name}
+                    </T>
+                  </Row>
+                  {t.detail ? (
+                    <T size={13} color={C.muted} style={{ lineHeight: 18 }}>
+                      {t.detail}
+                    </T>
+                  ) : null}
+                </View>
+              ))}
+            </View>
+          ) : null}
         </View>
       ) : null}
 

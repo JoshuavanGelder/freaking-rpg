@@ -112,3 +112,12 @@ test('cast en beelden gaan mee in het beurt-verzoek', () => {
   assert.match(old, /Earlier pictures[^\n]*\n- An elderly woman at a well\./);
   assert.doesNotMatch(renderRequest({ kind: 'start', world, hero }), /## Cast/);
 });
+
+test('gekregen krachten gaan mee; oud avontuur vraagt om aanvullen', () => {
+  const base = { kind: 'turn', world, hero, summary: 's', action: 'a', roll: 5 };
+  const t = renderRequest({ ...base, state: { traits: [{ name: 'Windkracht', kind: 'kracht', detail: 'Windstoten' }, { name: 'Bang', kind: 'zwakte', detail: '' }] } });
+  assert.match(t, /gained in the story: Windkracht \(power: Windstoten\); Bang \(weakness\)/);
+  assert.match(renderRequest({ ...base, state: {} }), /not recorded yet \(older adventure/);
+  assert.match(renderRequest({ ...base, state: { traits: [] } }), /gained in the story: none/);
+  assert.doesNotMatch(renderRequest({ kind: 'start', world, hero, state: {} }), /gained in the story/);
+});
