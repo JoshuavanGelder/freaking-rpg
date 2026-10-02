@@ -72,6 +72,6 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - `src/turns.tsx`: lopende beurten (versturen, warme verteller, pollen, toepassen), hervat na herstart.
 - `src/services/github.ts`: branch `rpg-data`, workflow `rpg.yml`. `src/services/status.ts`: statuspagina Claude.
 - `src/pictures.tsx`: beeldenwachtrij; `src/picture-view.tsx`: beeldvak + volledig scherm.
-- Story: de 3 keuzes zijn ingeklapt achter een knop met chevron en gaan bij elke nieuwe beurt weer dicht.
+- Story: het beeld van een beurt staat onder de verteltekst; de 3 keuzes zijn ingeklapt achter een knop met chevron en gaan bij elke nieuwe beurt weer dicht.
 - `src/screens/`: Home, New (wereld en toon), Hero (personage), Story (verhaal + wachtstand + beelden), Sheet (held + portret),
   Gallery, Settings.

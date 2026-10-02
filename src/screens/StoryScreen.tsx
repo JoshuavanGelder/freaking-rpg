@@ -105,12 +105,13 @@ function TurnView({ turn, onRetryImage }: { turn: Turn; onRetryImage: () => void
   return (
     <View style={{ gap: 16 }}>
       {turn.action ? <Bubble text={turn.action} /> : null}
-      {turn.image ? <PictureBox pic={turn.image} onRetry={onRetryImage} /> : null}
       {paragraphs(turn.narration).map((p, i) => (
         <T key={i} weight="story" size={17} selectable style={{ lineHeight: 27 }}>
           {p}
         </T>
       ))}
+      {/* Beeld onder de tekst: je leest eerst wat er gebeurt, en het beeld is meestal pas daarna klaar. */}
+      {turn.image ? <PictureBox pic={turn.image} onRetry={onRetryImage} /> : null}
       {turn.notes.length ? (
         <Row style={{ flexWrap: 'wrap', gap: 8 }}>
           {turn.notes.map((n) => (
