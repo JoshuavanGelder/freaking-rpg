@@ -1,0 +1,80 @@
+{
+ "id": "muqoeny4-fdatz",
+ "createdAt": "2026-10-02T08:03:15.772Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Absurd"
+  ],
+  "toneText": "",
+  "wishes": "Kort vehaal"
+ },
+ "hero": {
+  "name": "Barry Allen",
+  "className": "Speedster",
+  "powers": "Een echte speedster met bijna geen zwaktes.",
+  "looks": "Zoals in de flash new 53 comics",
+  "heroLook": "Young man with short messy blond-brown hair, athletic build, red jacket on chest, gold boots and wrist bands, sunglasses-free, determined friendly face."
+ },
+ "state": {
+  "hp": 18,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 10,
+  "level": 1,
+  "location": "Pretpark van Verloren Sokken",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 5
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 4
+   },
+   {
+    "name": "Vindingrijkheid",
+    "value": 3
+   },
+   {
+    "name": "Geduld",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Rode speedsterpak"
+  ],
+  "quests": [
+   {
+    "title": "Vind de gestolen maandag",
+    "detail": "Zoek de dief in het Pretpark van Verloren Sokken.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Barry Allen zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape (adviseur) vertelde dat een Sokkenfluisteraar de maandag stal met een gigantische gestreepte sok. Barry rende naar het Pretpark van Verloren Sokken, botste onderweg tegen een bevroren paraplu, en staat nu bij de poort. Een kaartjesverkoper in sokkenpak wacht hem op.",
+ "recent": [
+  {
+   "action": null,
+   "narration": "Het is 07:00 's ochtends in Central City, en Barry Allen heeft al driemaal ontbeten, de krant gelezen en de was gedaan. Het is nog steeds 07:00. Dat is het probleem.\n\nBuiten staat de hele stad stil. Een duif hangt roerloos in de lucht met een half broodkruimeltje in zijn snavel. Een voetganger heeft zijn paraplu halverwege opengeklapt, en hij kijkt verrassend tevreden.\n\nDan hoor je een klein, beleefd kuchje. Op je vensterbank zit een sprekende bureaulamp met een kleine cape.\n\n\"Meneer Allen. Iemand heeft de maandag gestolen. Alle zeven uur, ook de lunch. Zonder maandag kan de dinsdag niet beginnen en dan wordt het een hele rommel. De verdachte vluchtte naar het Pretpark van Verloren Sokken.\"\n\nJe spieren tintelen. Je schoenen roken al een beetje van ongeduld."
+  },
+  {
+   "action": "Ik vraag aan de lamp. Hoezo kan jij praten. Waarom een cape? En hoe is de maandag gestolen. Wat voor dief kan dat?",
+   "narration": "De lamp zucht, wat bij een lamp vooral klinkt als een zoemend gesnuif.\n\n\"Praten? Iedereen praat, meneer Allen. Jij luistert alleen zelden. Ik ben tweehonderd jaar bureaulamp geweest en heb alles gehoord. Dat wordt vanzelf spraakzaam.\"\n\n\"De cape? Een lamp zonder cape is gewoon meubilair. Met cape ben ik een adviseur. Het is ook lekker tochtvrij.\"\n\nHij schraapt zijn fitting en fluistert: \"De maandag is gestolen met een gigantische, gestreepte sok. De dief hield die open als een zak, en ssst, alle uren gleden erin. Het was een Sokkenfluisteraar. Hij steelt wat mensen kwijtraken. Meestal alleen linkersokken. Dit keer ging hij voor het grote werk.\"\n\nBuiten valt een blaadje uit de lucht. Het blijft precies halverwege hangen, alsof het twijfelt.\n\n\"Ga nu,\" zegt de lamp. \"Voor ik mijn cape kwijtraak.\""
+  },
+  {
+   "action": "Ren meteen naar het pretpark",
+   "narration": "Je schiet het raam uit, en de stad blijft staan om je te zien gaan. Nou ja, ze stond al stil.\n\nJe zigzagt tussen bevroren fietsers, een duif en een hond die midden in een niesbui hangt. Dan merk je de paraplu van de voetganger te laat. Hij staat halfopen, precies op kophoogte. Boing! Je stuitert er met je voorhoofd tegenaan en tolt drie keer om je as.\n\nDe voetganger kijkt nog steeds tevreden.\n\nJe krabbelt overeind, wrijft over je hoofd en rent door. Aan de horizon rijst een reuzenrad op, versierd met honderden wapperende sokken. Een bord boven de poort zegt: PRETPARK VAN VERLOREN SOKKEN. Het draait zachtjes mee in een wind die er niet is. Een kaartjesverkoper in een sokkenpak steekt zijn hand op."
+  }
+ ],
+ "action": "Vraag de kaartjesverkoper naar de dief",
+ "roll": 15
+}
