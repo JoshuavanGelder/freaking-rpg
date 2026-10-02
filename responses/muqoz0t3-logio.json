@@ -1,0 +1,54 @@
+{
+ "id": "muqoz0t3-logio",
+ "finishedAt": "2026-10-02T08:19:18.775Z",
+ "durationMs": 11286,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je draait je om en rent tegen de zuigkracht in. Je benen worden een waas. De machine trekt, jij trekt harder. Je loopt zo snel achteruit door de tijd dat de trommel ineens begint te draaien in de andere richting. Hij schrikt er zelf van.\n\nMet een hik spuugt de Wasmachine alles weer uit: honderd sokken, een badeend, de zeepbel en de MAANDAG. Het blaadje zweeft recht in je hand. Het voelt zwaar en vertrouwd, en het ruikt naar wekkers.\n\nDe Sokkenfluisteraar staat te knipperen in zijn mist. \"Dat... staat niet in de gebruiksaanwijzing.\" De grote zeepbel zweeft naast je en klapt zachtjes. \"Indrukwekkend. Nog steeds onbeleefd, maar indrukwekkend.\"\n\nDan merk je dat de klok boven het pretpark, die al eeuwen op 07:00 stond, een tik verder springt. 07:01. De Sokkenfluisteraar lost langzaam op in een wolk stofpluis. \"Ik heb nog meer dagen,\" fluistert hij. \"Dinsdag, bijvoorbeeld.\"",
+  "choices": [
+   "Achtervolg de mist naar dinsdag",
+   "Vraag de zeepbel om hulp",
+   "Stop de maandag veilig in je jas"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Snelheid",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [
+    "Gloeiend kalenderblad MAANDAG"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Zoek de gestolen dinsdag",
+     "detail": "De Sokkenfluisteraar heeft nog meer dagen."
+    }
+   ],
+   "completeQuests": [
+    "Vind de gestolen maandag"
+   ],
+   "location": ""
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 in het Pretpark van Verloren Sokken. Hij betaalde Wol met zijn plakkerige sok. Bij de Wasmachine van het Noodlot rende hij tegen de draairichting in en kreeg het kalenderblad MAANDAG terug van de Sokkenfluisteraar. De klok sprong naar 07:01. De Sokkenfluisteraar loste op en dreigde met nog meer gestolen dagen, zoals dinsdag. Een beledigde maar nu onder de indruk zijnde zeepbel volgt Barry.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Young man with short messy blond-brown hair, athletic build, red jacket, gold boots and wrist bands, running backwards at blurring speed against a giant spinning washing machine drum, socks and soap bubbles flying out, glowing calendar page in his hand, motion streaks, funny amusement park",
+   "fallback": "A giant whirling washing machine in a surreal amusement park, colorful socks and huge soap bubbles floating through the air, clotheslines overhead, warm glowing light."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
