@@ -31,18 +31,21 @@ export function renderRequest(r) {
   if (clean(h.looks)) lines.push(`- appearance (player's words): ${clean(h.looks)}`);
   if (clean(h.heroLook)) lines.push(`- heroLook for pictures (reuse it): ${clean(h.heroLook)}`);
   lines.push('');
+  // De staat gaat altijd mee, ook bij de start: anders verzint de verteller zelf hoeveel geld de held heeft.
+  lines.push(r.kind === 'start'
+    ? '## Starting state (the truth; never show numbers to the player)'
+    : '## Hidden state (the truth; never show numbers to the player)');
+  lines.push(`- hit points: ${s.hp ?? '?'} of ${s.maxHp ?? '?'}`);
+  lines.push(`- gold: ${s.gold ?? 0}`);
+  lines.push(`- level: ${s.level ?? 1}`);
+  lines.push(`- location: ${clean(s.location, 120) || 'unknown'}`);
+  const attrs = (s.attributes ?? []).map((a) => `${clean(a.name, 40)} ${a.value}`).join(', ');
+  lines.push(`- attributes: ${attrs || 'none yet'}`);
+  lines.push(`- inventory: ${(s.inventory ?? []).map((x) => clean(x, 60)).join(', ') || 'empty'}`);
+  const open = (s.quests ?? []).filter((q) => !q.done);
+  lines.push(`- open quests: ${open.length ? open.map((q) => `"${clean(q.title, 80)}" (${clean(q.detail, 120)})`).join('; ') : 'none'}`);
+  lines.push('');
   if (r.kind !== 'start') {
-    lines.push('## Hidden state (never show numbers to the player)');
-    lines.push(`- hit points: ${s.hp ?? '?'} of ${s.maxHp ?? '?'}`);
-    lines.push(`- gold: ${s.gold ?? 0}`);
-    lines.push(`- level: ${s.level ?? 1}`);
-    lines.push(`- location: ${clean(s.location, 120) || 'unknown'}`);
-    const attrs = (s.attributes ?? []).map((a) => `${clean(a.name, 40)} ${a.value}`).join(', ');
-    lines.push(`- attributes: ${attrs || 'none yet'}`);
-    lines.push(`- inventory: ${(s.inventory ?? []).map((x) => clean(x, 60)).join(', ') || 'empty'}`);
-    const open = (s.quests ?? []).filter((q) => !q.done);
-    lines.push(`- open quests: ${open.length ? open.map((q) => `"${clean(q.title, 80)}" (${clean(q.detail, 120)})`).join('; ') : 'none'}`);
-    lines.push('');
     lines.push('## Story so far');
     lines.push(clean(r.summary, 2000) || '(nothing yet)');
     lines.push('');

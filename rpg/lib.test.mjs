@@ -5,8 +5,9 @@ import { classify, extractJson, parseCliOutput, pendingIds, renderRequest, valid
 const world = { setting: 'Superhelden', tones: ['Humoristisch', 'Rauw'], wishes: 'geen spinnen' };
 const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger', heroLook: 'lanky teen in a red hoodie' };
 
-test('start-verzoek: wereld en held, geen staat of actie', () => {
-  const t = renderRequest({ kind: 'start', world, hero, roll: 7 });
+test('start-verzoek: wereld, held en beginstaat, geen verhaal of actie', () => {
+  const state = { hp: 20, maxHp: 20, gold: 10, level: 1, location: '', attributes: [], inventory: [], quests: [] };
+  const t = renderRequest({ kind: 'start', world, hero, state, roll: 7 });
   assert.match(t, /Turn type: start/);
   assert.match(t, /Superhelden/);
   assert.match(t, /Humoristisch \+ Rauw/);
@@ -14,7 +15,10 @@ test('start-verzoek: wereld en held, geen staat of actie', () => {
   assert.match(t, /supersnel, maar altijd honger/);
   assert.match(t, /heroLook for pictures \(reuse it\): lanky teen in a red hoodie/);
   assert.match(t, /d20 roll for this turn: 7/);
-  assert.doesNotMatch(t, /Hidden state/);
+  assert.match(t, /Starting state/);
+  assert.match(t, /- gold: 10/);
+  assert.match(t, /- inventory: empty/);
+  assert.doesNotMatch(t, /Story so far/);
   assert.doesNotMatch(t, /The player does now/);
 });
 
