@@ -1,0 +1,46 @@
+{
+ "id": "murd23su-w9otj",
+ "finishedAt": "2026-10-02T19:33:47.193Z",
+ "durationMs": 10957,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je trekt je laarzen aan en sluipt het marktplein op. De geur van warm brood trekt aan je maag als een haak. Kooplui zetten kramen op, een slager hangt worsten aan een balk, en een oude vrouw stapelt appels in een mandje.\n\nJe telt je geld: twaalf koperstukken. Genoeg voor een brood, misschien twee. Maar de kraai op het dak is meegevlogen en zit nu boven de broodkraam, met één glanzend oog op jou.\n\nJe probeert een warm brood van de plank te pakken, onopvallend, zoals de schaduw je leerde. Maar je handen trillen van de honger. De bakker, een breed gebouwde man met meel tot aan zijn ellebogen, grijpt je pols. \"Dief!\" bromt hij. Twee voorbijgangers kijken om. Je moet snel iets verzinnen, want soldaten lopen hier vast niet ver vandaan.\n\nDe steen in je zak fluistert: \"Betaal hem. Of maak hem blind voor je. Jouw keuze.\"",
+  "choices": [
+   "Betaal de bakker eerlijk met mijn munten",
+   "Laat de schaduw de bakker afleiden",
+   "Trek los en ren het steegje in"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 2,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Marktplein"
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij ontsnapte met Maren en liet haar slapend achter om haar te beschermen. Nu op het marktplein, uitgehongerd, betrapt door een bakker bij een mislukte broodroof. Een kraai volgt hem. Soldaten zoeken in de stad.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, wrist grabbed by a broad floury baker at a morning market bread stall, a crow watching from a rooftop, misty dawn light",
+   "fallback": "A medieval market square at dawn with a bread stall, warm loaves, wooden carts and a crow perched on a rooftop in grey mist."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
