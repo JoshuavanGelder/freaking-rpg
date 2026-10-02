@@ -1,0 +1,45 @@
+{
+ "id": "mur9sg6k-la4f8",
+ "finishedAt": "2026-10-02T18:02:07.951Z",
+ "durationMs": 15464,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je springt. Maren schreeuwt je naam, maar haar stem wordt meteen kleiner. De wind slaat omhoog, scheurt aan je kleren en rukt de adem uit je longen.\n\nJe valt langer dan een val hoort te duren. De glimmende punten komen op je af en worden ogen, en dan snavels. Honderden zwarte vormen vliegen om je heen. Ze pikken niet, ze duwen. Ze draaien je rond, als een blad in een draaikolk.\n\n\"Te vroeg,\" sist de steen, en voor het eerst klinkt hij bang. \"Ik zei één stap. Geen sprong.\"\n\nJe landt niet op steen maar op iets glads en kouds, als bevroren glas. De klap perst alle lucht uit je longen. Je ribben schreeuwen en je mond vult zich met ijzer. Je schouder brandt, en de wereld flikkert.\n\nAls je je ogen opent, lig je op een zwarte glazen vloer. Boven je is de put een klein rond oog van rood licht. Om je heen zitten kraaien in stille kring, honderden, en elke kraai heeft een menselijk oog.\n\n\"Joshua,\" kraakt de stem, nu vlakbij. \"Je bent gevallen. Prachtig. Nu kunnen we praten.\"",
+  "choices": [
+   "Vraag wie er spreekt",
+   "Probeer wind op te roepen",
+   "Kruip overeind en zoek een uitweg"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Diepte van de Kraaienkelk"
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar, opende hij het kraaienreliëf en blies Orde-mannen weg met rode wind. In de ronde zaal lag de Kraaienkelk, een put waarin de Orde eeuwen geleden magiërs liet verdwijnen. Een kraakstem riep zijn naam en Joshua sprong erin. Hij viel hard op een zwarte glazen vloer, omringd door kraaien met mensenogen. De steen is bang. Maren en de terugkerende Orde-mannen zijn boven achtergebleven.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, lying on a black glass floor, surrounded by a circle of hundreds of crows with human eyes, a small red light far above.",
+   "fallback": "A vast dark chamber with a polished black glass floor, a tiny round red light far above, and shadowy perches in the gloom."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
