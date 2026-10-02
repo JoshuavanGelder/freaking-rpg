@@ -1,0 +1,45 @@
+{
+ "id": "mur9nple-17l3t",
+ "finishedAt": "2026-10-02T17:58:22.710Z",
+ "durationMs": 10309,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je duwt jezelf van de muur en schuifelt naar de rand van de put. Je enkel protesteert bij elke stap. Maren pakt even je mouw, maar laat los. Ze zegt niets.\n\nDe rand is glad en koud, als de rand van een oog. Je kijkt omlaag. Er is geen bodem, alleen zwart dat beweegt, en daarin duizenden kleine glimmende punten die allemaal tegelijk naar je opkijken.\n\n\"Daar,\" fluistert de steen, en zijn stem trilt van verlangen. \"Zie je ze? Dat zijn de eersten. Ze hebben op je gewacht.\"\n\nJe hoofd wordt licht. Een koude wind blaast omhoog uit de diepte, geurend naar oud ijzer en natte veren. Hij trekt aan je kleren, aan je haar, aan iets diep in je. Je merkt dat je tenen over de rand steken.\n\nDan klinkt een stem uit de put, niet die van de steen. Een droge, kraakstem, als een oude kraai die een mensenwoord leert: \"Joshua.\"\n\nAchter je klinken de laarzen weer, vlakbij de bocht.",
+  "choices": [
+   "Antwoord de stem uit de put",
+   "Stap terug en wacht de mannen op",
+   "Laat een beetje wind in de put waaien"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar, opende hij het kraaienreliëf, liet de kracht even door zich heen stromen en blies twee Orde-mannen weg met wind. In de ronde zaal ligt de Kraaienkelk, een put waarin de Orde eeuwen geleden magiërs liet verdwijnen. Joshua staat nu aan de rand; een kraakstem uit de diepte riep zijn naam. De Orde-mannen komen terug.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, standing at the edge of a huge black well in a round stone chamber, red light, black feathers rising from the depths, glowing points in the darkness below, epic dark fantasy",
+   "fallback": "A round ancient stone chamber with a huge black well in the middle, red light on carved crow reliefs, black feathers drifting upward in the gloom."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
