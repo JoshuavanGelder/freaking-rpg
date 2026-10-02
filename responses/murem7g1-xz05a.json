@@ -1,0 +1,53 @@
+{
+ "id": "murem7g1-xz05a",
+ "finishedAt": "2026-10-02T20:17:10.804Z",
+ "durationMs": 10877,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Leer van de spreukenmaker",
+     "detail": "Ontdek welke prijs hij voor zijn lessen vraagt."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Accepteer zijn voorwaarde en stap in de cirkel",
+   "Vraag eerst wat hij zelf wil hebben",
+   "Laat de rode wind dreigend in je handen opvlammen"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A cramped candlelit workshop with crooked bookshelves, jars and dried herbs, a glowing chalk circle on the floor, a crow silhouette on the doorstep."
+  },
+  "narration": "\"Leer me wat je weet,\" zeg je. Het klinkt minder als een vraag dan je bedoelde. \"Nu. Ik heb geen tijd om te wachten.\"\n\nJe stem trilt, maar je wijkt niet. De tekens in de krijtcirkel flakkeren op, en even lijkt de lucht in het hok zwaarder te worden. De steen in je zak blijft stil, alsof hij meeluistert.\n\nDe oude man kijkt je lang aan met zijn goede oog. Dan lacht hij zacht. \"Eisen. Een jongen zonder schoenzolen die eisen stelt aan de laatste spreukenmaker van Velmoor.\" Hij schuift op zijn knieën naar de rand van de cirkel. \"Goed. Wilskracht heb je, dat is meer dan de meeste leerlingen die ik betaald kreeg. Maar kennis is geen brood. Je krijgt het niet zomaar in je handen gestopt.\"\n\nHij tikt tegen de krijtlijn. Een dunne rode draad kruipt uit jouw vingers naar zijn hand, trilt, en breekt weer af.\n\n\"Ik leer je de eerste knoop,\" zegt hij. \"Maar daarna wil ik iets terug. Ik zeg nog niet wat.\"\n\nOp de dorpel hipt de kraai nog een stap dichterbij.",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij ontsnapte aan soldaten; looiers wezen hem af. In het hok van de oude spreukenmaker (wit oog), die hem verwachtte, noemde die het pact dom. Joshua eiste nu dat hij hem leert. De man stemt in met een eerste les, de 'eerste knoop', maar wil later een nog onbekende wwedergave. De kraai luistert op de dorpel.",
+  "title": "\"\"",
+  "portrait": "\"\""
+ },
+ "model": "sonnet"
+}
