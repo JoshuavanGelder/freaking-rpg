@@ -1,0 +1,78 @@
+{
+ "id": "murdt125-7frgd",
+ "finishedAt": "2026-10-02T19:54:41.077Z",
+ "durationMs": 21366,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [
+   {
+    "name": "Maren",
+    "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+   },
+   {
+    "name": "De bakker",
+    "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Poort van de leerlooiers",
+   "addTraits": [
+    {
+     "name": "Schaduwstap",
+     "kind": "kracht",
+     "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+    },
+    {
+     "name": "Rode windstoot",
+     "kind": "kracht",
+     "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+    },
+    {
+     "name": "Kraaienpact",
+     "kind": "zwakte",
+     "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+    },
+    {
+     "name": "Zwak lichaam",
+     "kind": "zwakte",
+     "detail": "Honger en uitputting treffen je harder dan andere mensen."
+    }
+   ],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag een leerlooier om werk en onderdak",
+   "Onderzoek wat de steen hier voelt",
+   "Wacht verborgen en kijk of de kraai volgt"
+  ],
+  "gameOver": false,
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined.",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, walking toward a stone city gate beside tanning vats and hanging hides, morning haze, a crow on a roof behind him",
+   "fallback": "A stone city gate beside rows of tanning vats and hanging leather hides, morning haze, damp cobbles, grey light."
+  },
+  "narration": "Je volgt het gefluister van de steen door steeds smallere straten. De geur komt je al tegemoet voor je iets ziet: scherp, zuur, als rottend vlees en natte as. Je ogen tranen. Dan opent de straat zich naar een grauwe poort, omringd door kuipen vol bruin water en rekken met stijve huiden die als gevilde schimmen in de wind hangen.\n\nHier loopt geen soldaat. Een paar leerlooiers met zwarte armen tot de ellebogen kijken je kort aan en gaan weer door met schrapen. Niemand vraagt wat een magere jongen hier zoekt.\n\n\"Goed,\" mompelt de steen. \"De stank wist zelfs mijn geur uit. Maar kijk omhoog.\"\n\nOp de poortboog landt een kraai. Dezelfde. Hij kijkt je aan, kantelt zijn kop en blijft zitten, alsof hij wacht. Onder de boog staat een deur half open, en daarachter brandt een klein lantaarnlicht.",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter. Hij betaalde de bakker eerlijk, at en ontsnapte aan soldaten. Nu staat hij bij de stinkende poort van de leerlooiers; een kraai volgt hem nog en wacht op de poortboog. Een deur met lantaarnlicht staat half open.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
