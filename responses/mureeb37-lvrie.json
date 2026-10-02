@@ -1,0 +1,48 @@
+{
+ "id": "mureeb37-lvrie",
+ "finishedAt": "2026-10-02T20:11:02.210Z",
+ "durationMs": 11383,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag wat hij met de steen wil",
+   "Vraag naar de kraaienkamer",
+   "Bied aan als leerling te werken"
+  ],
+  "gameOver": false,
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined.",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe, sitting in a glowing chalk circle in a cramped workshop, lantern light, a crow on the doorstep",
+   "fallback": "A cramped workshop with crooked bookshelves, jars and dried herbs, a chalk circle with faintly glowing runes on the floor, warm lantern light."
+  },
+  "narration": "\"Wie ik ben?\" De oude man snuift, alsof je naar het weer vraagt. \"Men noemde mij ooit de spreukenmaker van Velmoor. Nu noemen ze mij niets meer, en dat bevalt me best.\" Hij tikt met een zwarte vinger op de krijtlijn. De tekens flakkeren op. \"Ik schrijf wat andere magiërs vergeten: de kleine banden, de sloten, de bezweringen die niemand betaalt. En ik wacht. Op jou, om precies te zijn.\"\n\nJe voelt de tinteling in je huid sterker worden. De steen blijft zwijgen, zelfs als je hem door de stof van je zak vastklemt.\n\n\"Hij is bang van mij,\" zegt de man zacht. \"Of van wat ik weet. Ik heb deze steen eerder gezien, jongen, in handen die sterker waren dan de jouwe. Geen van hen eindigde goed.\" Zijn melkwitte oog draait traag naar de dorpel, waar de kraai zit. \"En jij hebt een vogel die je volgt. Dat betekent dat je al een prijs hebt beloofd. Dom. Maar interessant.\"",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij betaalde de bakker eerlijk, ontsnapte aan soldaten; looiers wezen hem af. Hij vond een hok bij de poort van de oude spreukenmaker (wit oog), die hem verwachtte, de steen kent, het kraaienpact doorziet en zegt dat eerdere steendragers slecht eindigden. De steen zwijgt. Een kraai zit op de dorpel.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
