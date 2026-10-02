@@ -1,0 +1,45 @@
+{
+ "id": "murbv35p-0j4f6",
+ "finishedAt": "2026-10-02T19:00:13.541Z",
+ "durationMs": 19009,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Rand van de Kraaienkelk"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Laat de kraaien de Orde aanvallen",
+   "Gooi de steen naar de Orde",
+   "Grijp Maren en vlucht de nacht in"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, rising from a well edge holding a glowing whispering stone, black crows swirling, grey-robed hooded men laughing at him, torchlight, night",
+   "fallback": "Stone well rim at night, torches flickering, black feathers drifting in the air, cobbled square, dark ominous mood."
+  },
+  "narration": "Je landt op de rand van de put, half op handen en knieën, en de kraaien storten zich als zwarte rook over de stenen. Je voelt de fakkelhitte op je gezicht. Zes mannen in grijze gewaden wijken één stap achteruit. Dan nog één stap, maar dan lachen ze.\n\nJe hand klauwt in je gewaad en trekt de fluisterende steen eruit. Je houdt hem omhoog, alsof hij een bliksemschicht is. \"Eén stap nog,\" hijg je, \"en hij maakt jullie af.\"\n\nHet klinkt veel dapperder dan je eruitziet. Je stem breekt, je arm trilt, en je knieën knikken zichtbaar. Een lange man met een zilveren kraaienspeld glimlacht dun. \"Een bedelaar met een kiezel,\" zegt hij. \"Hij is bijna dood. Pak hem.\"\n\nDe steen blijft koud en stil in je hand. \"Ik ben geen wapen,\" fluistert hij beschaamd. \"Nog niet, althans.\" Een van de mannen trekt Maren overeind en drukt een mes onder haar kin. Ze kijkt je aan, woedend en doodsbang. De kraaien rond je cirkelen en wachten op jouw bevel.",
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. In de Kraaienkelk koos hij als prijs een dienst aan de kroonkraai (eenmaal blind gehoorzamen) en kreeg een kraaienteken en Kraaienzegel. Kraaien droegen hem omhoog. Aan de rand bedreigde hij de Orde met de steen, maar ze lachten erom. Een leider met zilveren kraaienspeld beveelt zijn gevangenneming; Maren heeft een mes onder haar kin. Joshua is bijna dood, de kraaien wachten op zijn bevel.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
