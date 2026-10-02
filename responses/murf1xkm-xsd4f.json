@@ -1,0 +1,48 @@
+{
+ "id": "murf1xkm-xsd4f",
+ "finishedAt": "2026-10-02T20:29:24.356Z",
+ "durationMs": 10329,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Accepteer en begin met de eerste knoop",
+   "Eis dat hij ook eerst iets geeft",
+   "Vraag hem wat de kraai zou kiezen"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A cramped candlelit workshop with crooked bookshelves, a glowing chalk circle on the floor, a crow perched on the doorstep."
+  },
+  "narration": "\"Vaste voorwaarden,\" herhaal je. \"Jij noemde het zelf dom. Dus geen onbepaalde schuld meer. Zeg wat je wilt, hoeveel, en wanneer. Of er is geen les.\"\n\nDe oude man zwijgt. De tekens in de cirkel doven bijna, en je hoort hoe de kraai op de dorpel zijn veren schudt. Je knieën trillen, maar je blijft staan.\n\nDan begint hij te lachen, dun en kraakend. \"Dom was de belofte, jongen. Jij niet. Misschien.\" Hij strijkt met een zwarte vinger over het krijt. \"Goed. Drie regels. Eén: wat ik je geef, vraag ik nooit terug in leven of bloed. Twee: mijn prijs noem ik voor de derde les, niet erna. Drie: je mag weigeren, maar dan eindigt de leer, en wat ik je gaf blijft van mij.\"\n\nZijn melkwitte oog glinstert. \"Dat is eerlijker dan de kraai ooit was.\"\n\nDe steen in je zak blijft stil. Maar op de dorpel hipt de kraai juist een stap terug, alsof hij iets geroken heeft dat hem niet bevalt.",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). In het hok van de oude spreukenmaker (wit oog) eiste hij les. De man stemde in met de eerste knoop. Joshua eiste vaste voorwaarden: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. De kraai op de dorpel deinst achteruit.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
