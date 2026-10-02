@@ -1,0 +1,47 @@
+{
+ "id": "muqweiu6-g7u9z",
+ "finishedAt": "2026-10-02T11:47:18.938Z",
+ "durationMs": 10484,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je duikt naar voren en je vingers sluiten zich om de steen. Hij is ijskoud, en dan ineens gloeiend heet. De fluistering zwelt aan tot een stem in je schedel: \"Ren, Joshua. Links.\"\n\nJe gehoorzaamt zonder na te denken. Achter je vloekt een man, en een mes fluit langs je oor en slaat vonken uit de bakstenen. Je glijdt uit door de modder, vangt jezelf op met één hand en schiet een smalle zijsteeg in die naar rotte vis stinkt.\n\nDe laarzen dreunen achter je aan. Dan voel je het: het kooltje in je borst vlamt op. Je steekt zonder te weten hoe je hand achterwaarts uit, en een golf van lucht slaat een stapel kratten om. De achtervolgers struikelen vloekend over het hout.\n\nJe adem brandt. Voor je ligt een kruispunt: een open markt vol late kooplui, een donkere trap naar de riolen, en een hoge muur met een wankel dak erachter.\n\n\"Sneller,\" fluistert de steen. \"Of ze krijgen mij.\"",
+  "choices": [
+   "Verdwijn tussen de marktkramen",
+   "Duik de rioolgang in",
+   "Klim over de muur naar het dak"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [
+    "Fluisterende steen"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Velmoor, zijsteeg"
+  },
+  "summary": "Joshua, straatarme magiër met twee koperen munten, vond in Velmoor een zwarte steen met rode aderen die zijn naam fluistert. Twee mannen van de Orde van de Kraai eisen hem op. Joshua greep de steen en vluchtte; hij sloeg per ongeluk een windstoot los die de achtervolgers vertraagde. Hij staat nu op een kruispunt: markt, riool of muur.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, clutching a glowing black stone with red veins, running down a rainy narrow alley, a gust of magical wind toppling crates behind him, night, lantern light",
+   "fallback": "A narrow rainy medieval alley at night with toppled wooden crates, wet cobblestones and a dim lantern glow."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
