@@ -1,0 +1,45 @@
+{
+ "id": "mur9lb42-hggbo",
+ "finishedAt": "2026-10-02T17:56:29.736Z",
+ "durationMs": 9644,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Maren,\" zeg je hijgend. \"Wat is dit?\"\n\nZe antwoordt niet meteen. Ze loopt langzaam naar de rand van de put en kijkt omlaag, alsof ze een oude vijand herkent. Het rode licht draait over haar grijze haren.\n\n\"Toen ik nog kluizenaar was, vertelden de oudsten over de Kraaienkelk,\" zegt ze zacht. \"Een put waarin de Orde zijn eerste magiërs liet verdwijnen. Wie erin valt, komt niet dood terug. Hij komt terug als iets anders. Ze zeiden dat het een sprookje was.\"\n\nHet gekras zwelt aan. Zwarte veren dwarrelen omhoog uit de diepte, en op de rand van de put verschijnt even een snavel, glanzend als nat glas.\n\n\"Maar jouw steen kent deze plek,\" gaat ze door. \"Hij wil hierheen. Ik denk dat hij hier geboren is.\"\n\nIn je buik trilt de steen, bijna blij. \"Dichterbij,\" fluistert hij. \"Eén stap maar. Dan weet je alles.\"\n\nAchter jullie, ver in de gang, klinkt weer gestommel. De mannen komen terug.",
+  "choices": [
+   "Stap naar de rand van de put",
+   "Vraag de steen wat hij verbergt",
+   "Zoek een andere uitgang in de zaal"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar van de Orde, opende hij het kraaienreliëf en vluchtte door de rode gang. Hij blies met gerichte wind twee Orde-mannen weg. In de ronde zaal vertelt Maren over de Kraaienkelk, een put waarin de Orde eeuwen geleden magiërs liet verdwijnen. De steen lijkt hier geboren en wil dat Joshua dichterbij komt. De Orde-mannen komen terug.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A round stone chamber lit by red glow, a black pit in the center with dark feathers drifting upward, carved crows on the walls."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
