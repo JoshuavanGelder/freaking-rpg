@@ -1,0 +1,47 @@
+{
+ "id": "muqp7m8h-vf2cz",
+ "finishedAt": "2026-10-02T08:25:58.478Z",
+ "durationMs": 10543,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [
+    "Gloeiend kalenderblad MAANDAG"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Pretpark van Verloren Sokken"
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Rust even uit op een bankje",
+   "Zoek meteen naar dinsdag",
+   "Neem de zeepbel mee naar huis"
+  ],
+  "gameOver": true,
+  "heroLook": "\"",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A young man with short messy blond-brown hair, athletic build, red jacket, gold boots and wrist bands, tucking a glowing calendar page into his jacket in an amusement park at sunrise, a huge friendly soap bubble floating beside him, socks drifting in the air.",
+   "fallback": "An empty whimsical amusement park at sunrise, laundry lines with colorful socks, a giant soap bubble floating over the path, a clock tower showing a new morning."
+  },
+  "narration": "Je vouwt het gloeiende blaadje MAANDAG netjes dubbel en stopt het in je binnenzak. Het kriebelt even, als een kat die zich nestelt, en wordt dan stil. Je jas ruikt nu licht naar koffie. Dat is een verbetering.\n\nBoven het pretpark tikt de klok verder. 07:02. Dan 07:03. Ergens in de verte ploft een wekker open, en er klinkt het gejuich van honderd sokken die eindelijk naar hun andere helft mogen.\n\nDe zeepbel zweeft naast je. \"Ik vind je nog steeds onbeleefd,\" zegt hij. \"Maar je mag me best Bob noemen.\" Je knikt. Dinsdag is nog zoek, en de Sokkenfluisteraar heeft vast een hele kast vol dagen. Maar dat is een probleem voor een andere ochtend.\n\nVoor nu is het maandag. Het is weer gewoon maandag. En voor het eerst in eeuwen heeft niemand er zin in, wat precies zo hoort.\n\nJe glimlacht, schudt het sop uit je laarzen en rent met Bob in je kielzog de uitgang uit, de nieuwe dag in.",
+  "summary": "Barry Allen versloeg de Sokkenfluisteraar in de Wasmachine van het Noodlot door tegen de draairichting in te rennen. Hij stopte het kalenderblad MAANDAG in zijn jas, de klok loopt weer, en de zeepbel Bob volgt hem. Dinsdag blijft gestolen, maar het verhaal eindigt hier, kort en tevreden.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
