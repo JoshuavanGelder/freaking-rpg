@@ -1,0 +1,89 @@
+{
+ "id": "muqokr6z-yy8ks",
+ "createdAt": "2026-10-02T08:07:59.915Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Absurd"
+  ],
+  "toneText": "",
+  "wishes": "Kort vehaal"
+ },
+ "hero": {
+  "name": "Barry Allen",
+  "className": "Speedster",
+  "powers": "Een echte speedster met bijna geen zwaktes.",
+  "looks": "Zoals in de flash new 53 comics",
+  "heroLook": "Young man with short messy blond-brown hair, athletic build, red jacket on chest, gold boots and wrist bands, sunglasses-free, determined friendly face."
+ },
+ "state": {
+  "hp": 17,
+  "maxHp": 20,
+  "gold": 8,
+  "xp": 20,
+  "level": 1,
+  "location": "Pretpark van Verloren Sokken",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 5
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 4
+   },
+   {
+    "name": "Vindingrijkheid",
+    "value": 3
+   },
+   {
+    "name": "Geduld",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Rode speedsterpak",
+   "Plakkerige sok"
+  ],
+  "quests": [
+   {
+    "title": "Vind de gestolen maandag",
+    "detail": "Zoek de dief in het Pretpark van Verloren Sokken.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Barry Allen zit vast in een eeuwige 07:00. Een sprekende lamp met cape stuurde hem op zoek naar de gestolen maandag, gestolen door een Sokkenfluisteraar met een gigantische gestreepte sok. In het Pretpark van Verloren Sokken vertelde kaartjesverkoper Wol dat de dief (lange man, jas van gebreide mist) naar de Wasmachine van het Noodlot ging. Barry probeerde langs Wol te rennen, botste op het draaihek en kreeg een boete van twee munten plus een plakkerige sok. Een kaartje kost tien munten.",
+ "recent": [
+  {
+   "action": null,
+   "narration": "Het is 07:00 's ochtends in Central City, en Barry Allen heeft al driemaal ontbeten, de krant gelezen en de was gedaan. Het is nog steeds 07:00. Dat is het probleem.\n\nBuiten staat de hele stad stil. Een duif hangt roerloos in de lucht met een half broodkruimeltje in zijn snavel. Een voetganger heeft zijn paraplu halverwege opengeklapt, en hij kijkt verrassend tevreden.\n\nDan hoor je een klein, beleefd kuchje. Op je vensterbank zit een sprekende bureaulamp met een kleine cape.\n\n\"Meneer Allen. Iemand heeft de maandag gestolen. Alle zeven uur, ook de lunch. Zonder maandag kan de dinsdag niet beginnen en dan wordt het een hele rommel. De verdachte vluchtte naar het Pretpark van Verloren Sokken.\"\n\nJe spieren tintelen. Je schoenen roken al een beetje van ongeduld."
+  },
+  {
+   "action": "Ik vraag aan de lamp. Hoezo kan jij praten. Waarom een cape? En hoe is de maandag gestolen. Wat voor dief kan dat?",
+   "narration": "De lamp zucht, wat bij een lamp vooral klinkt als een zoemend gesnuif.\n\n\"Praten? Iedereen praat, meneer Allen. Jij luistert alleen zelden. Ik ben tweehonderd jaar bureaulamp geweest en heb alles gehoord. Dat wordt vanzelf spraakzaam.\"\n\n\"De cape? Een lamp zonder cape is gewoon meubilair. Met cape ben ik een adviseur. Het is ook lekker tochtvrij.\"\n\nHij schraapt zijn fitting en fluistert: \"De maandag is gestolen met een gigantische, gestreepte sok. De dief hield die open als een zak, en ssst, alle uren gleden erin. Het was een Sokkenfluisteraar. Hij steelt wat mensen kwijtraken. Meestal alleen linkersokken. Dit keer ging hij voor het grote werk.\"\n\nBuiten valt een blaadje uit de lucht. Het blijft precies halverwege hangen, alsof het twijfelt.\n\n\"Ga nu,\" zegt de lamp. \"Voor ik mijn cape kwijtraak.\""
+  },
+  {
+   "action": "Ren meteen naar het pretpark",
+   "narration": "Je schiet het raam uit, en de stad blijft staan om je te zien gaan. Nou ja, ze stond al stil.\n\nJe zigzagt tussen bevroren fietsers, een duif en een hond die midden in een niesbui hangt. Dan merk je de paraplu van de voetganger te laat. Hij staat halfopen, precies op kophoogte. Boing! Je stuitert er met je voorhoofd tegenaan en tolt drie keer om je as.\n\nDe voetganger kijkt nog steeds tevreden.\n\nJe krabbelt overeind, wrijft over je hoofd en rent door. Aan de horizon rijst een reuzenrad op, versierd met honderden wapperende sokken. Een bord boven de poort zegt: PRETPARK VAN VERLOREN SOKKEN. Het draait zachtjes mee in een wind die er niet is. Een kaartjesverkoper in een sokkenpak steekt zijn hand op."
+  },
+  {
+   "action": "Vraag de kaartjesverkoper naar de dief",
+   "narration": "De kaartjesverkoper kijkt je aan met twee kraalogen die precies op zijn sokkenpak zijn genaaid. Zijn naam is Wol, staat op zijn badge, en hij heeft duidelijk al een lange maandag gehad. Of juist niet.\n\n\"Een dief?\" fluistert hij. \"Ja hoor, die kwam hier langs. Lange man, jas van gebreide mist, droeg een sok zo groot als een slaapzak. Hij betaalde met een losse knoop en een zucht. Ik heb hem gewoon binnengelaten.\"\n\nHij leunt naar je toe en zijn pluisjes kietelen je neus. \"Hij ging richting de Wasmachine van het Noodlot. Daar verdwijnt alles. Maar voor jou kost het een kaartje. Dat is tien munten.\"\n\nAchter hem draait het reuzenrad piepend rond. Er hangt een sok in elke gondel, en een paar lijken naar je te zwaaien."
+  },
+  {
+   "action": "Ren zomaar langs hem heen naar binnen",
+   "narration": "Je trekt een streep langs Wol, sneller dan hij kan knipperen. Dat dacht je tenminste. Wol blijkt een sok met reflexen. Een pluizige arm schiet uit zijn pak en pakt je bij je jaskraag.\n\n\"Zonder kaartje? In MIJN park?\" piept hij.\n\nJe rem is er niet op berekend. Je snelheid draait je om je as, en je knalt met je neus in het draaihek. Het hek zegt vrolijk \"DING!\" en spuugt een rij losse sokken over je heen. Een daarvan blijft op je hoofd plakken, als een hoedje.\n\nWol schudt zijn hoofd. \"Dat is een boete van twee munten. Plus de sok. Die is nu van jou, hij heeft een band met je opgebouwd.\"\n\nAchter hem wijst een bordje met een pijl naar de Wasmachine van het Noodlot. Het hele pad ernaartoe is bezaaid met zeepbellen zo groot als ballonnen."
+  }
+ ],
+ "action": "Betaal de boete en het kaartje",
+ "roll": 6
+}
