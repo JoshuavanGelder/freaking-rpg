@@ -1,0 +1,106 @@
+{
+ "id": "mur3zwtk-7a6gd",
+ "createdAt": "2026-10-02T15:19:41.288Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 10,
+  "maxHp": 20,
+  "gold": 12,
+  "xp": 90,
+  "level": 1,
+  "location": "Rode gang onder Velmoor",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar van de Orde, vluchtte hij de wijnkelders in en opende het kraaienreliëf; de kracht was te groot en verwondde hem. De steen zegt dat hij nog te klein is. Nu vlucht hij met Maren door de rode gang, gewond na een val, met twee Orde-mannen vlak achter zich. Voor hen ligt een ronde zaal met een zwarte put.",
+ "recent": [
+  {
+   "action": "Vraag wie ze is en wat ze wil",
+   "narration": "\"Wie ben je? Wat wil je van mij?\" fluister je, terwijl je pols in haar greep bijna gevoelloos wordt. Haar vingers zijn dun, maar sterk als ijzerdraad.\n\n\"Vragen, vragen,\" sist ze. \"Net als de vorige die hem droeg. Die stelde ook vragen, tot de kraaien hem vonden.\" Ze trekt je half overeind. \"Ik ben Maren. Ik was ooit kluizenaar van de Orde, tot ik begreep wat ze met zulke stenen doen. Ik wil niet dat ze die van jou krijgen. En eerlijk, jongen: ik wil zien wat hij van jou maakt.\"\n\nDe steen kloppen tegen je buik, en zijn fluistering klinkt bijna spottend: \"Ze liegt niet. Maar ze vertelt niet alles.\"\n\nAchter je schraapt staal over steen. Een lantaarn wordt met een vonk opnieuw ontstoken, nog geen twintig passen verder. Maren knikt naar een lage deur achter de kar met olie. \"Daar. Nu, of nooit.\""
+  },
+  {
+   "action": "Volg Maren door de lage deur",
+   "narration": "Je bukt en glipt achter Maren aan door de lage deur. Het hout schraapt over je schouder, precies over de snee, en je bijt op je tong om niet te kreunen. Achter je valt de deur met een doffe klap dicht. Maren schuift een roestige grendel dicht, net op tijd.\n\nDan is er alleen nog duisternis, en de geur van natte steen en oude wijn. Buiten bonst een vuist op het hout. \"Open! In naam van de Orde!\" Het hout kreunt, maar houdt stand.\n\n\"Dat houdt ze een minuut tegen,\" mompelt Maren. Ze strijkt een lucifer af en een flauw vlammetje onthult een smalle trap die naar beneden draait, de wijnkelders in. Aan de muur hangen oude kraaienveren, vastgespijkerd, vergeeld.\n\nDe steen kloppen tegen je buik. \"Niet alles hier is leeg,\" fluistert hij. \"Beneden is iets wat mij kent.\"\n\nMaren kijkt je aan, haar ogen glinsteren in het vuur. \"Je hoort het ook, nietwaar? Dan weet je dat we niet alleen zijn.\""
+  },
+  {
+   "action": "Laat de steen je vooruit leiden",
+   "narration": "Je laat de steen los in je gedachten en hij trekt je als een hond aan een lijn. Je voeten vinden de treden vanzelf. Maren volgt met het lucifervlammetje, haar schaduw dansend over de natte muren.\n\nBeneden strekt zich een kelder uit vol enorme wijnvaten, groen van schimmel. De fluistering wordt zachter, bijna teder. \"Links. Achter de tonnen. Dichterbij, Joshua.\"\n\nBoven je breekt het hout van de deur met een droge krak. Laarzen stommelen op de trap, nog ver weg.\n\nJe loopt tussen de vaten door tot de muur achter een bult van oude kratten. Daar, in de stenen, zit een rond reliëf van een kraai met uitgespreide vleugels, en in het midden een holte precies zo groot als jouw steen. De rode aderen gloeien op, heet tegen je buik. Maren houdt haar adem in.\n\n\"Dat is geen gewoon slot,\" fluistert ze. \"Zet je hem erin, dan gebeurt er iets wat de Orde al eeuwen wil zien. En er is geen weg terug.\"\n\nDe laarzen komen sneller naar beneden."
+  },
+  {
+   "action": "Druk de steen in de holte",
+   "narration": "Je drukt de steen in de holte. Hij past alsof hij er al eeuwen op wachtte.\n\nEven gebeurt er niets. Dan slaat een kou door je armen heen, en de rode aderen schieten als bliksem over het reliëf. De kraai lijkt zijn vleugels te spreiden. Je probeert je hand terug te trekken, maar de steen houdt je vast, en iets groots en ouds stroomt je lichaam in. Je knieën knikken, je tanden klapperen, en je ziet het even door de ogen van een vogel: een stad, een berg, een troon van zwart glas.\n\n\"Ja,\" zucht de stem, nu helder als een klok. \"Eindelijk.\"\n\nJe hebt de kracht niet kunnen beheersen. Ze beheerst jou, een heartbeat lang, en een schokgolf slingert je tegen een wijnvat. Je ribben schreeuwen. Maren staat bleek, de lucifer dooft in haar vingers.\n\nAchter de tonnen klinken de laarzen, nu vlakbij. In de muur schuift het reliëf kreunend open, en daarachter gaapt een smalle gang vol rood licht."
+  },
+  {
+   "action": "Geef je over en laat alles stromen",
+   "narration": "Je geeft het verzet op en laat de kracht door je heen stromen als een rivier door een gebroken dam.\n\nHet is te veel. Je ziet de zwarte glazen troon, een hemel vol kraaien, en je eigen naam, uitgesproken door duizend snavels. Je botten zingen. Je mond opent zich en er komt geen schreeuw uit maar een windstoot, rood en snijdend. De wijnvaten rondom je barsten open. Schimmelige wijn spat over de muren en de kratten spatten uiteen.\n\nDan slaat de kracht terug. Het voelt alsof een gloeiende hand je borstkas dichtknijpt. Je zakt op je knieën en proeft ijzer. Je lichaam is te zwak voor wat erin woont.\n\n\"Genoeg,\" hijgt de steen, bijna verontschuldigend. \"Nog niet. Je bent nog te klein voor mij.\"\n\nMaren trekt je overeind. Haar ogen zijn groot, maar ze lacht zacht. \"Gek jongetje. Je hebt de kamer wakker gemaakt.\" Tussen de omgevallen vaten staan twee mannen in zwarte mantels. Ze zijn doorweekt en duizelig, maar hun messen glimmen. Achter je gloeit de rode gang, warm en uitnodigend."
+  },
+  {
+   "action": "Vlucht de rode gang in met Maren",
+   "narration": "Je grijpt Marens mouw en duikt de rode gang in. Het licht kleurt alles als warm ijzer. Achter je schreeuwt een van de mannen, en laarzen plassen door de wijn.\n\nDan gaat het mis. Je voet haakt achter een uitstekende steen, je enkel draait weg, en je valt hard met je schouder op de vloer. De pijn knalt door je heen. De steen in je gewaad schreeuwt in je hoofd, en even is alles wit.\n\nEen mes suist langs je oor en slaat vonkend tegen de muur. Maren trekt je met een grauw omhoog. \"Sta op, jongen. Ik ben te oud om je te dragen.\"\n\nJe strompelt verder, mank en hijgend. De gang loopt schuin omlaag, en op de wanden verschijnen kraaien in de steen, honderden, allemaal met hun kop naar jou gedraaid. Voor je opent de gang zich naar een ronde zaal met een zwarte put in het midden. Achter je klinken de laarzen, nu dichtbij. Maren blijft staan. \"Dit,\" fluistert ze, \"had ik niet verwacht.\""
+  }
+ ],
+ "action": "Gebruik zo veel mogelijk wind om de mannen uit de gang te blazen",
+ "roll": 18
+}
