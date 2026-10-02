@@ -1,0 +1,45 @@
+{
+ "id": "muqnzdc7-tayf3",
+ "finishedAt": "2026-10-02T07:51:36.192Z",
+ "durationMs": 12006,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je schiet het raam uit, en de stad blijft staan om je te zien gaan. Nou ja, ze stond al stil.\n\nJe zigzagt tussen bevroren fietsers, een duif en een hond die midden in een niesbui hangt. Dan merk je de paraplu van de voetganger te laat. Hij staat halfopen, precies op kophoogte. Boing! Je stuitert er met je voorhoofd tegenaan en tolt drie keer om je as.\n\nDe voetganger kijkt nog steeds tevreden.\n\nJe krabbelt overeind, wrijft over je hoofd en rent door. Aan de horizon rijst een reuzenrad op, versierd met honderden wapperende sokken. Een bord boven de poort zegt: PRETPARK VAN VERLOREN SOKKEN. Het draait zachtjes mee in een wind die er niet is. Een kaartjesverkoper in een sokkenpak steekt zijn hand op.",
+  "choices": [
+   "Spring over het hek heen",
+   "Vraag de kaartjesverkoper naar de dief",
+   "Koop een kaartje met je tien munten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Pretpark van Verloren Sokken"
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape (adviseur) vertelde dat een Sokkenfluisteraar de maandag stal met een gigantische gestreepte sok. Barry rende naar het Pretpark van Verloren Sokken, botste onderweg tegen een bevroren paraplu, en staat nu bij de poort. Een kaartjesverkoper in sokkenpak wacht hem op.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A young man with short messy blond-brown hair, athletic build, red jacket, gold boots and wrist bands, standing at the gate of a whimsical amusement park decorated with hundreds of hanging socks, giant ferris wheel behind, motion streaks behind him, morning light",
+   "fallback": "Entrance gate of a whimsical amusement park with a ferris wheel decorated with hundreds of colorful hanging socks, soft morning light, empty quiet street."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
