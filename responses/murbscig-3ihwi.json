@@ -1,0 +1,45 @@
+{
+ "id": "murbscig-3ihwi",
+ "finishedAt": "2026-10-02T18:57:57.405Z",
+ "durationMs": 10313,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Doe dan wat, kraai!\" Je stem is een rauwe fluistering, maar hij klinkt als een bevel. \"Ik laat haar niet achter!\"\n\nDe kroonkraai kantelt zijn kop. \"Een bevel van een stervende,\" kraakt hij. \"Toch... brutaal genoeg om te belonen. Eén vleugelslag, zei ik. Gebruik hem goed.\"\n\nHij slaat zijn vleugels open en de honderden kraaien antwoorden als één lichaam. De veren onder je rug worden een zwarte golf. Je voelt de steen in je gewaad gloeien, en het kraaienteken op je hand brandt koud. Dit keer probeer je niets te dwingen. Je laat los, en vertrouwt.\n\nDe golf tilt je omhoog, sneller dan een val omgekeerd. Het zwarte glas schiet langs je heen, het rode oog van de put zwelt tot een vuur van fakkels. Je ziet laarzen, een grijs gewaad met een kraaienembleem, en Maren, geknield, een arm op haar rug gedraaid.\n\nDe kraaien storten zich over de rand, en jij met hen. Je ademt nauwelijks, je lichaam is gebroken, maar je handen gloeien nog.",
+  "choices": [
+   "Slinger een schaduw naar de mannen",
+   "Grijp Maren en roep de kraaien",
+   "Wijs de fluisterende steen aan als dreiging"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Rand van de Kraaienkelk"
+  },
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk en koos als prijs een dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon. Hij kreeg een kraaienteken en Kraaienzegel. Schaduw- en windpogingen mislukten; hij is bijna dood. Op zijn bevel droegen de kraaien hem omhoog uit de put. Hij bereikt nu de rand, waar Ordeleden Maren vasthouden.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, carried upward by a storm of black crows bursting out of a glowing well at night, torchlit robed men below, dramatic low angle",
+   "fallback": "A dark stone well at night with a swirling cloud of black feathers rising from it, torchlight flickering on wet cobblestones."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
