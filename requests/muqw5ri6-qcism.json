@@ -1,0 +1,37 @@
+{
+ "id": "muqw5ri6-qcism",
+ "createdAt": "2026-10-02T11:40:17.406Z",
+ "kind": "start",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak"
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "",
+  "attributes": [],
+  "inventory": [],
+  "quests": []
+ },
+ "summary": "",
+ "recent": [],
+ "action": null,
+ "roll": 19
+}
