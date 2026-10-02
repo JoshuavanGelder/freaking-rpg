@@ -1,0 +1,45 @@
+{
+ "id": "murc729r-yfd19",
+ "finishedAt": "2026-10-02T19:09:30.938Z",
+ "durationMs": 15947,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Rand van de Kraaienkelk"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Vraag Maren wat ze in haar mouw heeft",
+   "Roep alle kraaien in één klap op de Orde",
+   "Spring met Maren de put weer in"
+  ],
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. In de Kraaienkelk koos hij als prijs één dienst aan de kroonkraai en kreeg kraaienteken en Kraaienzegel. Met kraaien en schaduw bevrijdde hij Maren van de Orde. Nu heeft hij de steen weer, maar hij is bijna dood. De Orde sluit de rand af; de lange leider met zilveren kraaienspeld, met krabben op zijn wang, wil de steen terug. Maren heeft nog iets in haar mouw.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man in torn patched brown robes clutching a glowing grey stone, supported by a girl, cornered at a well rim by men in grey robes, crows circling, torchlight at night",
+   "fallback": "A dark stone well rim at night with scattered torches, black feathers drifting in the air, crows circling above."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "title": "",
+  "narration": "Je werpt je naar rechts. Je knieën schampen over de stenen en je vingers sluiten om de fluisterende steen. Hij is ijskoud en trilt als een bang vogeltje. \"Eindelijk,\" fluistert hij. \"Vlug nu.\"\n\nMaren trekt je overeind, haar arm om je middel. Jullie strompelen twee stappen, drie, richting de donkere steeg achter de put. Je benen willen niet meer. Het zijn natte touwen, en ze zakken onder je weg.\n\nDan klinkt er een koud, kalm bevel: \"Sluit de rand af.\" Twee mannen in grijs snijden jullie de weg af. Een derde trapt de vallende fakkels uit, en plots is de schaduw die je net riep weg, als een hond die geen baas meer vindt. De kraaien krijsen boven jullie hoofd, maar ze durven niet dichterbij.\n\nDe lange man met de zilveren speld bloedt uit drie dunne krabben op zijn wang. Hij veegt ze weg en kijkt naar de steen in je hand. \"Dat ding is van ons,\" zegt hij. Achter jullie gaapt de put. Voor jullie sluit de Orde zich als een tang.\n\n\"Joshua,\" fluistert Maren in je oor, \"ik heb nog een ding in mijn mouw. Zeg maar wanneer.\""
+ },
+ "model": "sonnet"
+}
