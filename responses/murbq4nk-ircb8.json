@@ -1,0 +1,45 @@
+{
+ "id": "murbq4nk-ircb8",
+ "finishedAt": "2026-10-02T18:56:14.989Z",
+ "durationMs": 10456,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Maren, vlucht!\" Je stem breekt halverwege, maar de put geeft hem terug, tien keer, honderd keer. \"Ik heb te veel gevraagd van mijn krachten. Ik ben te zwak om je te redden. Ren!\"\n\nEven is het stil boven. Dan hoor je haar, dichterbij de rand dan je zou willen: \"Ik laat je niet in de steek, idioot!\" Een mannenstem snauwt, laarzen schuren, en Maren schreeuwt kort. Het licht van de fakkel schudt heen en weer.\n\nJe knieën geven mee. Het zwarte glas voelt koud tegen je wang, en je ziet de wereld krimpen tot een rood oog van licht. Je ademt vlak, bang dat elke teug je laatste is.\n\nDe kroonkraai komt naast je staan. Zijn glazen kroon weerkaatst het fakkellicht in duizend scherven. \"Eerlijk,\" kraakt hij zacht. \"Dat was het eerste verstandige wat je zei. En het eerste wat je liegt, want je bent niet te zwak. Je bent alleen te vroeg.\"\n\nDe veren onder je rug spannen zich. Wachtend. Op jou.",
+  "choices": [
+   "Vraag de kraaien je naar boven te dragen",
+   "Pers nog één kleine schaduw uit het teken",
+   "Vraag de steen om raad"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk en koos als prijs een dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon. Hij kreeg een kraaienteken en Kraaienzegel. Schaduw- en windpogingen mislukten; hij is bijna dood. Hij riep Maren te vluchten, maar zij weigert; boven wordt gevochten. De kraaien wachten onder hem op zijn teken.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A thin young man in torn brown robes lying on black glass in a deep pit, a giant crow with a broken glass crown standing over him, torchlight far above",
+   "fallback": "A deep pit of black glass floor, hundreds of crow feathers drifting, a small red torchlight glowing far above in the dark."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
