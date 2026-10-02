@@ -1,0 +1,48 @@
+{
+ "id": "murgdm3n-1cjvd",
+ "finishedAt": "2026-10-02T21:06:28.077Z",
+ "durationMs": 10352,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Zonder omwegen is geen antwoord,\" zeg je. \"Wat houdt die prijs écht in? Wat gebeurt er met de eerste meester als jij zijn naam hebt?\"\n\nDe oude man zwijgt lang. Zijn vastgeknoopte hand ligt zwaar op de vloer. Je voelt de tweede knoop nog aan je vingers trekken, en je gebruikt hem zoals hij is bedoeld: als vraag, niet als greep. \"Zeg me de waarheid,\" zeg je zacht. \"Ik vraag het als gunst.\"\n\nHet grijze lijntje trilt. De spreukenmaker slikt. \"Hij was mijn meester,\" kraakt hij. \"Hij bond mijn naam aan de Orde, jaren geleden. Met zijn naam in mijn hand kan ik die band snijden. Dat is alles. Geen wraak op jou, geen vloek. Maar hij is niet dood, jongen. Hij slaapt in de steen. Wie zijn naam kent, kan hem wekken of voorgoed laten rusten.\"\n\nOp de dorpel buigt de kraai zijn kop, alsof hij dit al wist. In je zak klopt de steen als een hart dat luistert.\n\n\"Nu weet je het,\" zegt de oude man. \"Accepteer, of ga weg met wat je hebt.\"",
+  "choices": [
+   "Accepteer de prijs en begin de derde les",
+   "Weiger, maar behoud wat je geleerd hebt",
+   "Eis dat hij zweert de meester nooit te wekken"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels. Joshua leerde de eerste en tweede knoop; de hand van de oude man is vastgeknoopt. De prijs voor de derde les: de naam die de steen fluistert, die van de eerste meester van de Orde, ooit de meester van de spreukenmaker en slapend in de steen. Hij wil zijn eigen band met de Orde snijden. Joshua moet kiezen: accepteren of weigeren. De kraai kijkt mee.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A dim cramped spellmaker's workshop with a chalk circle on the floor, a hissing lantern, and a doorway with dusk light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
