@@ -1,0 +1,163 @@
+{
+ "id": "murg7by3-lk7t0",
+ "createdAt": "2026-10-02T21:01:22.875Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 18,
+  "maxHp": 28,
+  "gold": 8,
+  "xp": 414,
+  "level": 5,
+  "location": "Werkplaats van de spreukenmaker",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua slaagde kalm in de eerste knoop. In de tweede les (knopen om andermans wil, naam of belofte) mislukte hij: de knoop gleed weg en de terugslag deed pijn. De spreukenmaker zegt dat hij de belofte moet vragen, niet grijpen. De kraai kijkt mee.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Eis dat hij je leert wat hij weet",
+   "narration": "\"Leer me wat je weet,\" zeg je. Het klinkt minder als een vraag dan je bedoelde. \"Nu. Ik heb geen tijd om te wachten.\"\n\nJe stem trilt, maar je wijkt niet. De tekens in de krijtcirkel flakkeren op, en even lijkt de lucht in het hok zwaarder te worden. De steen in je zak blijft stil, alsof hij meeluistert.\n\nDe oude man kijkt je lang aan met zijn goede oog. Dan lacht hij zacht. \"Eisen. Een jongen zonder schoenzolen die eisen stelt aan de laatste spreukenmaker van Velmoor.\" Hij schuift op zijn knieën naar de rand van de cirkel. \"Goed. Wilskracht heb je, dat is meer dan de meeste leerlingen die ik betaald kreeg. Maar kennis is geen brood. Je krijgt het niet zomaar in je handen gestopt.\"\n\nHij tikt tegen de krijtlijn. Een dunne rode draad kruipt uit jouw vingers naar zijn hand, trilt, en breekt weer af.\n\n\"Ik leer je de eerste knoop,\" zegt hij. \"Maar daarna wil ik iets terug. Ik zeg nog niet wat.\"\n\nOp de dorpel hipt de kraai nog een stap dichterbij."
+  },
+  {
+   "action": "Jij zei zelf dat het dom was om iets onbepaalds te beloven. Ik wil vaste voorwaarden",
+   "narration": "\"Vaste voorwaarden,\" herhaal je. \"Jij noemde het zelf dom. Dus geen onbepaalde schuld meer. Zeg wat je wilt, hoeveel, en wanneer. Of er is geen les.\"\n\nDe oude man zwijgt. De tekens in de cirkel doven bijna, en je hoort hoe de kraai op de dorpel zijn veren schudt. Je knieën trillen, maar je blijft staan.\n\nDan begint hij te lachen, dun en kraakend. \"Dom was de belofte, jongen. Jij niet. Misschien.\" Hij strijkt met een zwarte vinger over het krijt. \"Goed. Drie regels. Eén: wat ik je geef, vraag ik nooit terug in leven of bloed. Twee: mijn prijs noem ik voor de derde les, niet erna. Drie: je mag weigeren, maar dan eindigt de leer, en wat ik je gaf blijft van mij.\"\n\nZijn melkwitte oog glinstert. \"Dat is eerlijker dan de kraai ooit was.\"\n\nDe steen in je zak blijft stil. Maar op de dorpel hipt de kraai juist een stap terug, alsof hij iets geroken heeft dat hem niet bevalt."
+  },
+  {
+   "action": "Accepteer en begin met de eerste knoop",
+   "narration": "\"Akkoord,\" zeg je. \"Drie regels. Begin.\"\n\nDe oude man knikt en schuift een stuk touw uit zijn sjaal, grijs, vezelig en stijf van de inkt. Hij legt het in de krijtcirkel. \"De eerste knoop bindt niets vast,\" kraakt hij. \"Hij houdt vast wat al wil breken. Voel je wind of woede, dan leg je er een lus omheen en trek je aan.\"\n\nJe knielt. Het krijt kraakt onder je knieën. Je roept de rode zweem op en laat hem langs je vingers kruipen. Hij is warm en wild, en hij wil niet in een lus. Je legt hem om het touw, trekt aan, en voor een tel hangt er een glanzende knoop in de lucht.\n\nDan schiet hij los. De rode draad zweept terug over je hand en brandt een striem over je knokkels. Je bijt op je tong en valt achterover. De tekens in de cirkel flakkeren schel.\n\n\"Bijna,\" zegt de spreukenmaker, en hij klinkt tevreden. \"Je trok uit woede, niet uit wil. Nog eens.\" Op de dorpel houdt de kraai zijn kop scheef, stil en aandachtig."
+  },
+  {
+   "action": "Probeer het nog eens, kalm en geconcentreerd",
+   "narration": "Je sluit je ogen en laat je adem zakken. De pijn op je knokkels klopt nog, maar je laat hem zitten als een gast die je niet wegjaagt. De spreukenmaker zegt niets. Alleen het zachte kraken van het krijt en het gesis van de lantaarn vullen het hok.\n\nJe roept de rode zweem op, niet als vuist maar als draad. Hij kruipt langzaam langs je vingers, nog steeds warm, nog steeds ongeduldig. Je volgt hem. Je duwt hem niet. Je legt de lus om het touw, en wanneer hij trekt, trek je mee, in zijn eigen tempo.\n\nDe knoop sluit. Een glanzende, rode knoop hangt boven het touw en trilt als een kleine hartslag. Hij houdt.\n\n\"Hm,\" zegt de oude man. Zijn melkwitte oog glimt. \"Dat is de eerste keer dat ik iemand zie knopen zonder te vechten.\" Hij klinkt bijna trots, en dat maakt hem onrustiger dan zijn spot.\n\nOp de dorpel strekt de kraai zijn nek. In je zak roert de steen zich, voor het eerst sinds je binnenkwam, als een kat die ontwaakt."
+  },
+  {
+   "action": "Vraag wat de tweede les is",
+   "narration": "\"En de tweede les?\" vraag je. De rode knoop hangt nog boven het touw en trilt zachtjes mee met je hartslag. \"Ik wil weten wat ik hierna leer.\"\n\nDe oude man bekijkt de knoop alsof het een vreemd dier is dat hij zelf heeft grootgebracht. Dan pakt hij het touw met twee zwarte vingers en laat de knoop in zijn handpalm zakken. Hij dooft uit als een kooltje in water.\n\n\"De tweede les is de wet van de kraai,\" zegt hij. \"Een knoop houdt vast wat van jou is. De tweede les leert je een knoop leggen om wat van een ander is. Een wil, een naam, een belofte.\" Zijn goede oog vernauwt zich. \"Dat is gevaarlijker. En ja, jongen, daar begint de prijs te tellen. Na de derde les noem ik hem niet meer. Ik noem hem ervoor. Zo hebben we het afgesproken.\"\n\nOp de dorpel spert de kraai zijn snavel open, maar er komt geen geluid. In je zak wordt de steen warm, bijna gretig.\n\n\"Ik kan nu beginnen,\" zegt de spreukenmaker. \"Of je rust eerst. Je handen trillen.\""
+  },
+  {
+   "action": "Begin meteen met de tweede les",
+   "narration": "\"Nu meteen,\" zeg je. Je handen trillen nog, maar je verstopt ze niet.\n\nDe oude man trekt een scheve glimlach. \"Ongeduld. Dat smaakt naar de kraai.\" Hij legt het touw terug in de cirkel en steekt zijn eigen knokige hand uit. \"Ik beloof je dat ik mijn hand niet van de grond til. Een kleine belofte, zo klein dat ze bijna niets weegt. Leg er een knoop omheen.\"\n\nJe roept de rode zweem op. Hij kruipt gewillig naar je toe, maar zodra hij de belofte van de oude man raakt, voelt hij vreemd aan: glad, koud en vol van iemand anders. Je legt de lus. Je trekt. Even trilt de lucht, en dan glijdt de knoop weg als nat touw tussen je vingers.\n\nDe terugslag klapt door je armen en steekt achter je ogen. Je valt op je zij, het krijt kraakt onder je schouder en je proeft bloed op je tong. In de cirkel flakkeren de tekens schel.\n\n\"Je greep naar zijn wil,\" zegt de spreukenmaker zacht. Zijn hand ligt nog roerloos op de vloer. \"Je moest zijn belofte vragen. Dat is het verschil tussen een dief en een knoper.\" Op de dorpel klapwiekt de kraai, bijna als gelach."
+  }
+ ],
+ "action": "Sta op en probeer het meteen opnieuw",
+ "roll": 14
+}
