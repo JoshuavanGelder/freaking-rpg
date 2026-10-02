@@ -1,0 +1,53 @@
+{
+ "id": "murgajdd-m6m71",
+ "finishedAt": "2026-10-02T21:04:05.169Z",
+ "durationMs": 10131,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Beslis over de prijs van de spreukenmaker",
+     "detail": "Accepteer of weiger zijn prijs voor de derde les."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Accepteer de prijs en eis de derde les",
+   "Onderhandel: vraag wat de prijs écht inhoudt",
+   "Weiger en ga weg met wat je kent"
+  ],
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua leerde de eerste en tweede knoop; de hand van de oude man is vastgeknoopt. Nu eist Joshua meteen de prijs te horen. De kraai kijkt mee.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A dim cramped spell workshop, chalk circle glowing faintly, lantern light, a crow on the threshold",
+   "fallback": "A dim cramped workshop with a chalk circle on the floor, a hissing lantern, and a dark doorway."
+  },
+  "narration": "\"De prijs,\" zeg je. \"Nu. Voor de derde les, zoals afgesproken.\"\n\nDe oude man kijkt naar zijn vastgeknoopte hand. Hij trekt er niet meer aan. Het grijze lijntje boven zijn knokkels trilt zacht, als een snaar.\n\n\"Eerlijk is eerlijk,\" kraakt hij. \"Je hebt me goed gebonden, en dus hoor je het zonder omwegen.\" Zijn melkwitte oog draait naar je zak, waar de steen gretig gloeit. \"Ik wil een naam. Niet de jouwe. De naam die de steen draagt, de naam die hij fluistert als je slaapt. Je leert hem pas kennen in de derde les. Dan schrijf ik hem op, en dan is hij van mij.\"\n\nHij laat zijn stem zakken. \"Geen bloed. Geen leven. Mijn regels. Maar wie een naam kent die de steen noemt, kent ook de eerste meester van de Orde. Ik wil hem terug, jongen. Wat ik ermee doe, vertel ik je niet.\"\n\nOp de dorpel zet de kraai een stap naar binnen. Zijn zwarte oog staat strak op jou.",
+  "heroLook": "",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet"
+}
