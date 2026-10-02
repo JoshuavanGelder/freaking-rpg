@@ -1,0 +1,45 @@
+{
+ "id": "muqxqlxg-qgi0g",
+ "finishedAt": "2026-10-02T12:24:44.873Z",
+ "durationMs": 12154,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en laat het kooltje in je borst los. De steen trilt tegen je ribben, en een golf koude lucht rolt over het plein. Eén voor één doven de olielantaarns met een zacht gesis, alsof iemand de markt de adem ontneemt.\n\nDuisternis valt als een deken neer. Kooplui vloeken, een kind begint te huilen, ergens valt een stapel potten rinkelend om. \"Licht! Wie heeft het licht gedoofd?\" brult de man van de Orde, maar zijn stem klinkt nu onzeker en ver weg.\n\nJe kruipt langs de wagen, je schouder klopt pijnlijk. De steen gloeit zwak rood tussen je vingers, dus je drukt hem tegen je buik onder je gewaad. Dan voel je een rimpelige hand om je pols sluiten.\n\n\"Stil, jongen,\" sist de oude vrouw, vlak bij je oor. Ze ruikt naar kruiden en rook. \"Ik weet wat je draagt. Volg mij, of sterf hier tussen de vaten.\" Achter je klinken laarzen, steeds dichterbij, en het schrapen van staal.",
+  "choices": [
+   "Volg de oude vrouw door de duisternis",
+   "Rukt je los en ren alleen verder",
+   "Vraag wie ze is en wat ze wil"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen met rode aderen. Twee mannen van de Orde van de Kraai jagen hem na. Op de markt raakte hij licht gewond door een mes. Hij doofde met een windstoot alle olielantaarns. In het donker greep een oude vrouw zijn pols; ze weet van de steen en wil dat hij haar volgt. De Orde komt dichterbij.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, thrusting a hand out as a gust of wind snuffs hanging lanterns across a dark medieval market at night, a glowing red-veined stone at his belt, an old woman gripping his wrist",
+   "fallback": "A dark medieval market square at night, hanging oil lanterns just extinguished, wisps of smoke, market stalls and barrels in shadow, rain on cobblestones."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
