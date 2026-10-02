@@ -1,0 +1,45 @@
+{
+ "id": "mura2jl7-8fivr",
+ "finishedAt": "2026-10-02T18:09:54.323Z",
+ "durationMs": 10671,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je woorden galmen over het zwarte glas, harder dan je bedoelde. Je stem trilt, maar je blijft rechtop, ook al schreeuwen je ribben van protest.\n\nEven blijft het stil. Dan beginnen de kraaien te bewegen. Eén voor één draaien ze hun mensenogen naar jou, en het kraken van veren klinkt als gefluisterd gelach.\n\n\"Gesprongen,\" herhaalt de kraakstem langzaam, alsof hij het woord proeft. \"Duizend jaar heeft niemand dat gezegd. Ze vielen, ze smeekten, ze verdwenen. Jij springt.\" Uit de kring van vogels stapt iets groters naar voren, een kraai zo hoog als een man, met een kroon van gebroken glas op zijn kop. Zijn ogen zijn grijs, scherp, en ze lijken op de jouwe.\n\n\"Angst is niet nodig,\" zegt hij. \"Maar moed zonder kracht is slechts een mooie manier om te sterven.\" De steen in je gewaad trilt en zwijgt, bijna eerbiedig.\n\n\"Ik bied je een ruil, kleine magiër. Een gift van de eersten. Maar elke gift heeft een prijs.\"",
+  "choices": [
+   "Vraag wat de gift is",
+   "Vraag wie hij werkelijk is",
+   "Eis kracht zonder prijs"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren opende hij het kraaienreliëf en blies Orde-mannen weg met rode wind. Hij sprong in de Kraaienkelk en landde gewond op een zwarte glazen vloer tussen kraaien met mensenogen. Joshua riep dat hij gesprongen was, niet gevallen. Een grote kraai met een kroon van glas en grijze ogen biedt hem een gift met een prijs. De steen zwijgt eerbiedig. Maren en de Orde-mannen zijn boven.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A giant crow as tall as a man wearing a crown of broken black glass, grey human eyes, standing before a thin young man in torn brown robes on a black glass floor, circle of crows around, dim red light from above",
+   "fallback": "A round chamber with a black glass floor, a small circle of red light high above, silhouettes of crows in a ring, dark misty atmosphere."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
