@@ -1,0 +1,48 @@
+{
+ "id": "murfznhn-xvl4g",
+ "finishedAt": "2026-10-02T20:55:36.522Z",
+ "durationMs": 9834,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"En de tweede les?\" vraag je. De rode knoop hangt nog boven het touw en trilt zachtjes mee met je hartslag. \"Ik wil weten wat ik hierna leer.\"\n\nDe oude man bekijkt de knoop alsof het een vreemd dier is dat hij zelf heeft grootgebracht. Dan pakt hij het touw met twee zwarte vingers en laat de knoop in zijn handpalm zakken. Hij dooft uit als een kooltje in water.\n\n\"De tweede les is de wet van de kraai,\" zegt hij. \"Een knoop houdt vast wat van jou is. De tweede les leert je een knoop leggen om wat van een ander is. Een wil, een naam, een belofte.\" Zijn goede oog vernauwt zich. \"Dat is gevaarlijker. En ja, jongen, daar begint de prijs te tellen. Na de derde les noem ik hem niet meer. Ik noem hem ervoor. Zo hebben we het afgesproken.\"\n\nOp de dorpel spert de kraai zijn snavel open, maar er komt geen geluid. In je zak wordt de steen warm, bijna gretig.\n\n\"Ik kan nu beginnen,\" zegt de spreukenmaker. \"Of je rust eerst. Je handen trillen.\"",
+  "choices": [
+   "Begin meteen met de tweede les",
+   "Rust eerst even uit",
+   "Vraag naar de prijs voor de derde les"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua slaagde kalm in de eerste knoop. De tweede les gaat over knopen om andermans wil, naam of belofte: gevaarlijker. De steen is gretig warm; de kraai kijkt mee vanaf de dorpel.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A cramped spell-maker's workshop lit by a hissing lantern, chalk circle with glowing signs on the floor, a grey inked rope, a dark doorway."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
