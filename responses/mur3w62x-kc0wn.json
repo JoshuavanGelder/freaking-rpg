@@ -1,0 +1,45 @@
+{
+ "id": "mur3w62x-kc0wn",
+ "finishedAt": "2026-10-02T15:17:00.724Z",
+ "durationMs": 11704,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je grijpt Marens mouw en duikt de rode gang in. Het licht kleurt alles als warm ijzer. Achter je schreeuwt een van de mannen, en laarzen plassen door de wijn.\n\nDan gaat het mis. Je voet haakt achter een uitstekende steen, je enkel draait weg, en je valt hard met je schouder op de vloer. De pijn knalt door je heen. De steen in je gewaad schreeuwt in je hoofd, en even is alles wit.\n\nEen mes suist langs je oor en slaat vonkend tegen de muur. Maren trekt je met een grauw omhoog. \"Sta op, jongen. Ik ben te oud om je te dragen.\"\n\nJe strompelt verder, mank en hijgend. De gang loopt schuin omlaag, en op de wanden verschijnen kraaien in de steen, honderden, allemaal met hun kop naar jou gedraaid. Voor je opent de gang zich naar een ronde zaal met een zwarte put in het midden. Achter je klinken de laarzen, nu dichtbij. Maren blijft staan. \"Dit,\" fluistert ze, \"had ik niet verwacht.\"",
+  "choices": [
+   "Spring over de rand van de put",
+   "Draai je om en gebruik de steen",
+   "Vraag Maren wat dit voor plek is"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lichaamskracht",
+   "dc": 10,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Rode gang onder Velmoor"
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar van de Orde, vluchtte hij de wijnkelders in en opende het kraaienreliëf; de kracht was te groot en verwondde hem. De steen zegt dat hij nog te klein is. Nu vlucht hij met Maren door de rode gang, gewond na een val, met twee Orde-mannen vlak achter zich. Voor hen ligt een ronde zaal met een zwarte put.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A round underground chamber lit by red glow, walls carved with hundreds of crows, a black pit in the center, a thin young man in torn patched brown robes and an old woman at the entrance, dramatic lighting",
+   "fallback": "A round ancient stone chamber with red light, walls carved with crows, a dark pit in the center."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
