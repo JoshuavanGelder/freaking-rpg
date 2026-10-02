@@ -1,0 +1,45 @@
+{
+ "id": "mur9kyhz-uyrb4",
+ "finishedAt": "2026-10-02T17:56:14.437Z",
+ "durationMs": 11588,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je veegt het bloed van je lip en wijst naar de put. \"Wat is dit, Maren? En wat had je niet verwacht?\"\n\nMaren antwoordt niet meteen. Ze loopt langzaam naar de rand en kijkt omlaag, haar gezicht grauw in het rode licht. Het gekras zwelt aan en ebt weer weg, als ademhaling.\n\n\"In de Orde noemden we het de Kraaienkeel,\" zegt ze eindelijk. \"Een sprookje voor novicen. Elke magiër die de Orde ooit verraadde, of die te sterk werd, zou erin verdwijnen. Zijn naam, zijn kracht, zijn stem. Alles werd gevoed aan de put.\" Ze slikt. \"Ik dacht dat het een verhaal was om kinderen bang te maken.\"\n\nDe steen trilt tegen je buik. \"Geen verhaal,\" fluistert hij. \"Daar liggen mijn broers. Zwakke, hongerige echo's van wat ooit groot was.\"\n\nMaren kijkt je aan, haar stem zacht. \"De Orde wil jou niet doden, Joshua. Ze willen je hier. Dit is het einde van hun jacht, en het begin van iets veel ergers.\" Uit de diepte schuift een zwarte veer omhoog en blijft zweven.",
+  "choices": [
+   "Pak de zwevende veer vast",
+   "Vraag de steen wat zijn broers willen",
+   "Zoek met Maren een andere uitgang"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar van de Orde, opende hij het kraaienreliëf en blies twee Orde-mannen weg met gerichte wind. In een ronde zaal ligt de Kraaienkeel, een zwarte put waarin de Orde verraders en te sterke magiërs voedde. Maren zegt dat de Orde Joshua hier wil hebben. Een zwarte veer zweeft uit de put omhoog.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A round stone chamber with a black pit in the center, a single black feather floating up out of it, an old woman and a thin young man in torn brown robes at the edge, red light on walls carved with hundreds of crows",
+   "fallback": "A round ancient stone chamber with a dark pit in the middle, walls carved with crows, dim red light, a black feather floating in the air."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
