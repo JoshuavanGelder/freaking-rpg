@@ -1,0 +1,45 @@
+{
+ "id": "muqotmfr-dq998",
+ "finishedAt": "2026-10-02T08:15:05.972Z",
+ "durationMs": 10823,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sprint op hem af, zo snel dat de waslijnen achter je gaan trillen als harpsnaren. Je grijpt de jas van gebreide mist. Dat is het plan.\n\nMist blijkt niet vast te pakken. Je vingers glijden erdoorheen, en je vliegt zonder tegenstand dwars door de Sokkenfluisteraar heen. Hij ruikt naar warme was en oud verdriet. \"Geef de maandag terug!\" brul je, tegen een wasknijper.\n\nJe remt, tolt om en landt met je neus tegen de Wasmachine van het Noodlot. De trommel bromt verontwaardigd en spuugt je een natte sok in je gezicht.\n\nDe Sokkenfluisteraar draait zich langzaam om. Zijn gezicht is een gat met een kraag. \"Ah,\" fluistert hij. \"De held van zeven uur. Je bent te vroeg.\" Hij zwaait met zijn gigantische gestreepte sok, en daarin zie je iets gloeien: een kalender met één blaadje, MAANDAG.\n\nAchter je schuift de beledigde zeepbel de waslijnen in.",
+  "choices": [
+   "Grijp de gloeiende sok, niet de jas",
+   "Vraag waarom hij de maandag stal",
+   "Gebruik de zeepbel als schild"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Wasmachine van het Noodlot"
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 en jaagt op de gestolen maandag. Hij betaalde kaartverkoper Wol met zijn plakkerige sok. Een beledigde zeepbel volgt hem. Bij de Wasmachine van het Noodlot greep Barry mis: de Sokkenfluisteraar (jas van mist, gigantische gestreepte sok) is ongrijpbaar. In de sok gloeit een kalenderblad MAANDAG.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A tall figure in a coat of knitted grey mist holding a giant striped sock with a glowing calendar page inside, in front of a huge humming washing machine among washing lines, a young man in a red jacket and gold boots skidding past in a blur",
+   "fallback": "A giant humming washing machine surrounded by hanging washing lines and floating soap bubbles in a misty funfair, soft light."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
