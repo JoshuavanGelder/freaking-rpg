@@ -1,0 +1,45 @@
+{
+ "id": "murcxsqr-r14po",
+ "finishedAt": "2026-10-02T19:30:21.483Z",
+ "durationMs": 19560,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Slaap nu maar,\" zeg je zacht. Maren protesteert nog even, maar haar hoofd zakt tegen de kist en haar mes glijdt uit haar vingers. Binnen een minuut ademt ze diep en gelijkmatig.\n\nJe kijkt lang naar haar. Ze heeft een reep van haar eigen mouw om je pols gebonden. Niemand anders heeft dat ooit voor je gedaan. Je legt je laatste korst brood naast haar hand, en het voelt als een zwakke betaling.\n\nDan sta je op. Je beweegt stil, met de kalmte die de schaduw je leerde. De steen fluistert: \"Sentimenteel. Maar goed, de Orde jaagt op mij, dus op jou.\"\n\nJe schuift de kist een handbreedte opzij en glipt door de opening, de laarzen in je hand. De steeg is nat en grijs. Aan het einde ligt een marktplein waar de eerste karren al rammelen. Hoog op een dak zit een kraai die je volgt met één glanzend oog.\n\nJe hebt Maren veilig achtergelaten. Nu moet je kiezen waarheen je gaat.",
+  "choices": [
+   "Sluip naar de markt en zoek werk",
+   "Vraag de kraai de stad uit te verkennen",
+   "Verlaat Velmoor via de oude stadsmuur"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 10,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 2,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Steeg bij de markt"
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai, geleid door een lange man met zilveren kraaienspeld, jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Met Maren ontsnapte hij en rustte in een kelderhok. Nu is hij stiekem vertrokken terwijl Maren slaapt, om haar te beschermen. Een kraai volgt hem. Soldaten zoeken nog in de stad.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair in patched brown robes sneaking barefoot down a grey wet alley at dawn, boots in hand, a crow watching from a rooftop",
+   "fallback": "A narrow wet alley at dawn leading to a medieval market square, grey light, a single crow on a rooftop."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
