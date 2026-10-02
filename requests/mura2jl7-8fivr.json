@@ -1,0 +1,106 @@
+{
+ "id": "mura2jl7-8fivr",
+ "createdAt": "2026-10-02T18:09:41.803Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 6,
+  "maxHp": 22,
+  "gold": 12,
+  "xp": 130,
+  "level": 2,
+  "location": "Diepte van de Kraaienkelk",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar, opende hij het kraaienreliëf en blies Orde-mannen weg met rode wind. In de ronde zaal lag de Kraaienkelk, een put waarin de Orde eeuwen geleden magiërs liet verdwijnen. Een kraakstem riep zijn naam en Joshua sprong erin. Hij viel hard op een zwarte glazen vloer, omringd door kraaien met mensenogen. De steen is bang. Maren en de terugkerende Orde-mannen zijn boven achtergebleven.",
+ "recent": [
+  {
+   "action": "Geef je over en laat alles stromen",
+   "narration": "Je geeft het verzet op en laat de kracht door je heen stromen als een rivier door een gebroken dam.\n\nHet is te veel. Je ziet de zwarte glazen troon, een hemel vol kraaien, en je eigen naam, uitgesproken door duizend snavels. Je botten zingen. Je mond opent zich en er komt geen schreeuw uit maar een windstoot, rood en snijdend. De wijnvaten rondom je barsten open. Schimmelige wijn spat over de muren en de kratten spatten uiteen.\n\nDan slaat de kracht terug. Het voelt alsof een gloeiende hand je borstkas dichtknijpt. Je zakt op je knieën en proeft ijzer. Je lichaam is te zwak voor wat erin woont.\n\n\"Genoeg,\" hijgt de steen, bijna verontschuldigend. \"Nog niet. Je bent nog te klein voor mij.\"\n\nMaren trekt je overeind. Haar ogen zijn groot, maar ze lacht zacht. \"Gek jongetje. Je hebt de kamer wakker gemaakt.\" Tussen de omgevallen vaten staan twee mannen in zwarte mantels. Ze zijn doorweekt en duizelig, maar hun messen glimmen. Achter je gloeit de rode gang, warm en uitnodigend."
+  },
+  {
+   "action": "Vlucht de rode gang in met Maren",
+   "narration": "Je grijpt Marens mouw en duikt de rode gang in. Het licht kleurt alles als warm ijzer. Achter je schreeuwt een van de mannen, en laarzen plassen door de wijn.\n\nDan gaat het mis. Je voet haakt achter een uitstekende steen, je enkel draait weg, en je valt hard met je schouder op de vloer. De pijn knalt door je heen. De steen in je gewaad schreeuwt in je hoofd, en even is alles wit.\n\nEen mes suist langs je oor en slaat vonkend tegen de muur. Maren trekt je met een grauw omhoog. \"Sta op, jongen. Ik ben te oud om je te dragen.\"\n\nJe strompelt verder, mank en hijgend. De gang loopt schuin omlaag, en op de wanden verschijnen kraaien in de steen, honderden, allemaal met hun kop naar jou gedraaid. Voor je opent de gang zich naar een ronde zaal met een zwarte put in het midden. Achter je klinken de laarzen, nu dichtbij. Maren blijft staan. \"Dit,\" fluistert ze, \"had ik niet verwacht.\""
+  },
+  {
+   "action": "Gebruik zo veel mogelijk wind om de mannen uit de gang te blazen",
+   "narration": "Je draait je om, ruggengraat tegen de koude muur, en steekt beide handen naar de gang. Je denkt niet aan de pijn. Je denkt aan de windstoot in de wijnkelder, aan de rivier door de gebroken dam, en dit keer houd je de dam zelf vast.\n\n\"Nu,\" fluistert de steen. \"Smal. Scherp. Als een lans.\"\n\nDe wind komt op je bevel. Rood en huilend raast hij door de gang, rukt de lantaarn uit de hand van de eerste man en slaat beide mannen van hun voeten. Hun mantels klapperen als zwarte vleugels. Ze glijden achteruit over de natte stenen, schreeuwend, tot de bocht hen opslokt. Ergens klinkt een doffe klap en dan stilte.\n\nJe knieën geven mee en je leunt hijgend tegen de muur. Je neus bloedt een beetje, maar je lacht. Het was jouw kracht, en jij bepaalde de richting.\n\nMaren kijkt je aan, voor het eerst zonder spot. \"Dat deed je zelf,\" zegt ze zacht. Achter haar gloeit de zwarte put, en uit de diepte klinkt iets als gekras van duizend snavels."
+  },
+  {
+   "action": "Vraag Maren wat dit is",
+   "narration": "\"Maren,\" zeg je hijgend. \"Wat is dit?\"\n\nZe antwoordt niet meteen. Ze loopt langzaam naar de rand van de put en kijkt omlaag, alsof ze een oude vijand herkent. Het rode licht draait over haar grijze haren.\n\n\"Toen ik nog kluizenaar was, vertelden de oudsten over de Kraaienkelk,\" zegt ze zacht. \"Een put waarin de Orde zijn eerste magiërs liet verdwijnen. Wie erin valt, komt niet dood terug. Hij komt terug als iets anders. Ze zeiden dat het een sprookje was.\"\n\nHet gekras zwelt aan. Zwarte veren dwarrelen omhoog uit de diepte, en op de rand van de put verschijnt even een snavel, glanzend als nat glas.\n\n\"Maar jouw steen kent deze plek,\" gaat ze door. \"Hij wil hierheen. Ik denk dat hij hier geboren is.\"\n\nIn je buik trilt de steen, bijna blij. \"Dichterbij,\" fluistert hij. \"Eén stap maar. Dan weet je alles.\"\n\nAchter jullie, ver in de gang, klinkt weer gestommel. De mannen komen terug."
+  },
+  {
+   "action": "Stap naar de rand van de put",
+   "narration": "Je duwt jezelf van de muur en schuifelt naar de rand van de put. Je enkel protesteert bij elke stap. Maren pakt even je mouw, maar laat los. Ze zegt niets.\n\nDe rand is glad en koud, als de rand van een oog. Je kijkt omlaag. Er is geen bodem, alleen zwart dat beweegt, en daarin duizenden kleine glimmende punten die allemaal tegelijk naar je opkijken.\n\n\"Daar,\" fluistert de steen, en zijn stem trilt van verlangen. \"Zie je ze? Dat zijn de eersten. Ze hebben op je gewacht.\"\n\nJe hoofd wordt licht. Een koude wind blaast omhoog uit de diepte, geurend naar oud ijzer en natte veren. Hij trekt aan je kleren, aan je haar, aan iets diep in je. Je merkt dat je tenen over de rand steken.\n\nDan klinkt een stem uit de put, niet die van de steen. Een droge, kraakstem, als een oude kraai die een mensenwoord leert: \"Joshua.\"\n\nAchter je klinken de laarzen weer, vlakbij de bocht."
+  },
+  {
+   "action": "Ik spring in de put",
+   "narration": "Je springt. Maren schreeuwt je naam, maar haar stem wordt meteen kleiner. De wind slaat omhoog, scheurt aan je kleren en rukt de adem uit je longen.\n\nJe valt langer dan een val hoort te duren. De glimmende punten komen op je af en worden ogen, en dan snavels. Honderden zwarte vormen vliegen om je heen. Ze pikken niet, ze duwen. Ze draaien je rond, als een blad in een draaikolk.\n\n\"Te vroeg,\" sist de steen, en voor het eerst klinkt hij bang. \"Ik zei één stap. Geen sprong.\"\n\nJe landt niet op steen maar op iets glads en kouds, als bevroren glas. De klap perst alle lucht uit je longen. Je ribben schreeuwen en je mond vult zich met ijzer. Je schouder brandt, en de wereld flikkert.\n\nAls je je ogen opent, lig je op een zwarte glazen vloer. Boven je is de put een klein rond oog van rood licht. Om je heen zitten kraaien in stille kring, honderden, en elke kraai heeft een menselijk oog.\n\n\"Joshua,\" kraakt de stem, nu vlakbij. \"Je bent gevallen. Prachtig. Nu kunnen we praten.\""
+  }
+ ],
+ "action": "Ik roep: \"Ik ben niet gevallen. Ik ben gesprongen! Geen angst\"",
+ "roll": 13
+}
