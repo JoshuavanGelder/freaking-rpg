@@ -1,0 +1,50 @@
+{
+ "id": "murbkcar-v48tl",
+ "finishedAt": "2026-10-02T18:51:43.809Z",
+ "durationMs": 10233,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ik heb geen tijd,\" zeg je. Je draait je om naar het kleine rode oog van de put, ver boven je. \"Maren is daar nog. Ik laat haar niet achter.\"\n\nDe kroonkraai kantelt zijn kop. \"Haast,\" kraakt hij. \"Dat is nieuw hier. Een vleugelslag, kleine... Joshua. Meer geef ik niet. De rest moet je zelf doen.\"\n\nJe strekt je hand uit, en het zwarte kraaienteken gloeit. Een schaduw rolt uit je vingers, onhandig en te wild. Je probeert hem omhoog te sturen, naar de rand, maar je kracht is nieuw en je lichaam is gebroken. De schaduw spat uit elkaar als inkt in water. Een scheut pijn schiet door je ribben en je zakt hijgend op één knie.\n\nHonderden kraaien klapwieken tegelijk op. Een zwarte storm tilt de lucht om je heen. Je voelt hun veren langs je gezicht, en ze trekken aan je gewaad, omhoog, alsof ze je willen dragen. Of grijpen.\n\nBoven je klinkt Marens stem, scherp en bang. Dan een mannenstem: \"Daar beneden! Licht erin!\"",
+  "choices": [
+   "Laat de kraaien je omhoog dragen",
+   "Vraag de steen om hulp",
+   "Probeer de schaduw opnieuw te sturen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 13,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Red Maren boven de put",
+     "detail": "Kom boven voordat de Orde haar te pakken krijgt."
+    }
+   ],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk. Hij koos de prijs van de dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon. Hij kreeg zwart licht, een kraaienteken en een Kraaienzegel. Nu wil hij Maren redden, die boven met de Orde-mannen is. Zijn eerste schaduwspreuk mislukte; de kraaien tillen hem op in een storm van veren.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A vast black glass floor under a deep well, a small red light far above, swirling black feathers in the dark air."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
