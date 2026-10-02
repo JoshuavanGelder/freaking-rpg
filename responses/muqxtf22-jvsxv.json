@@ -1,0 +1,45 @@
+{
+ "id": "muqxtf22-jvsxv",
+ "finishedAt": "2026-10-02T12:26:53.733Z",
+ "durationMs": 11415,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Wie ben je? Wat wil je van mij?\" fluister je, terwijl je pols in haar greep bijna gevoelloos wordt. Haar vingers zijn dun, maar sterk als ijzerdraad.\n\n\"Vragen, vragen,\" sist ze. \"Net als de vorige die hem droeg. Die stelde ook vragen, tot de kraaien hem vonden.\" Ze trekt je half overeind. \"Ik ben Maren. Ik was ooit kluizenaar van de Orde, tot ik begreep wat ze met zulke stenen doen. Ik wil niet dat ze die van jou krijgen. En eerlijk, jongen: ik wil zien wat hij van jou maakt.\"\n\nDe steen kloppen tegen je buik, en zijn fluistering klinkt bijna spottend: \"Ze liegt niet. Maar ze vertelt niet alles.\"\n\nAchter je schraapt staal over steen. Een lantaarn wordt met een vonk opnieuw ontstoken, nog geen twintig passen verder. Maren knikt naar een lage deur achter de kar met olie. \"Daar. Nu, of nooit.\"",
+  "choices": [
+   "Volg Maren door de lage deur",
+   "Gooi de olie om als valstrik",
+   "Vertrouw haar niet en ren alleen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen met rode aderen. Twee mannen van de Orde van de Kraai jagen hem na. Op de markt raakte hij licht gewond. Hij doofde met wind alle lantaarns. De oude vrouw Maren, ex-kluizenaar van de Orde, greep hem vast, wil de steen uit de Orde's handen houden en nieuwsgierig zien wat hij van Joshua maakt. Ze wijst naar een lage deur achter een olie-kar. De Orde steekt lantaarns weer aan en komt dichterbij.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A dark rainy market square at night with extinguished lanterns, a cart of oil jugs and a low wooden door in a stone wall, faint torchlight in the distance."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
