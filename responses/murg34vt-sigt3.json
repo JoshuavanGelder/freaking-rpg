@@ -1,0 +1,48 @@
+{
+ "id": "murg34vt-sigt3",
+ "finishedAt": "2026-10-02T20:58:26.923Z",
+ "durationMs": 18360,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Nu meteen,\" zeg je. Je handen trillen nog, maar je verstopt ze niet.\n\nDe oude man trekt een scheve glimlach. \"Ongeduld. Dat smaakt naar de kraai.\" Hij legt het touw terug in de cirkel en steekt zijn eigen knokige hand uit. \"Ik beloof je dat ik mijn hand niet van de grond til. Een kleine belofte, zo klein dat ze bijna niets weegt. Leg er een knoop omheen.\"\n\nJe roept de rode zweem op. Hij kruipt gewillig naar je toe, maar zodra hij de belofte van de oude man raakt, voelt hij vreemd aan: glad, koud en vol van iemand anders. Je legt de lus. Je trekt. Even trilt de lucht, en dan glijdt de knoop weg als nat touw tussen je vingers.\n\nDe terugslag klapt door je armen en steekt achter je ogen. Je valt op je zij, het krijt kraakt onder je schouder en je proeft bloed op je tong. In de cirkel flakkeren de tekens schel.\n\n\"Je greep naar zijn wil,\" zegt de spreukenmaker zacht. Zijn hand ligt nog roerloos op de vloer. \"Je moest zijn belofte vragen. Dat is het verschil tussen een dief en een knoper.\" Op de dorpel klapwiekt de kraai, bijna als gelach.",
+  "choices": [
+   "Sta op en probeer het meteen opnieuw",
+   "Vraag hoe je een belofte 'vraagt'",
+   "Rust even uit en kom op adem"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua slaagde kalm in de eerste knoop. In de tweede les (knopen om andermans wil, naam of belofte) mislukte hij: de knoop gleed weg en de terugslag deed pijn. De spreukenmaker zegt dat hij de belofte moet vragen, niet grijpen. De kraai kijkt mee.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A young ragged mage lying on a chalk circle in a cramped workshop, red wisps fading from his hands, an elderly frail man with wild white hair and milky eye watching, a crow on the doorstep, lantern light",
+   "fallback": "A cramped dim workshop with a chalk circle on the floor, a grey rope, a hissing lantern and a crow silhouette on the doorstep."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
