@@ -1,0 +1,61 @@
+{
+ "id": "murgg210-aoit6",
+ "finishedAt": "2026-10-02T21:08:23.139Z",
+ "durationMs": 11986,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Wek of laat de eerste meester rusten",
+     "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt."
+    }
+   ],
+   "completeQuests": [
+    "Beslis over de prijs van de spreukenmaker"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Derde knoop",
+     "kind": "kracht",
+     "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+    }
+   ],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "choices": [
+   "Spreek de naam hardop uit",
+   "Fluister de naam alleen tegen de steen",
+   "Weiger de naam aan de oude man te geven"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A ragged young mage in torn poor clothes sitting in a glowing chalk circle in a dim workshop, a whispering stone in his hand pulsing red, a thread of dark light forming a knot around a written name, frail elderly man with wild white hair and milky left eye watching, a crow on the threshold, lantern light",
+   "fallback": "A dim cramped workshop with a chalk circle on the floor, a hissing lantern, a coil of rope and a dark doorway at night."
+  },
+  "narration": "\"Ik accepteer,\" zeg je. De woorden voelen zwaarder dan je verwachtte, alsof je er iets mee ondertekent dat nooit meer wegspoelt. De oude man knikt langzaam. Hij pakt met zijn vrije hand een stuk krijt en zet het naast je knie. \"De derde les is de naam,\" zegt hij. \"Een knoop om een naam is geen knoop meer. Het is een sleutel.\"\n\nJe haalt de fluisterende steen uit je zak. Hij is heet, bijna levend. De lantaarn dooft tot een bleke vlam. Je sluit je hand om de steen en roept de rode zweem, en nu komt hij niet als draad maar als stem. Hij fluistert, eerst onverstaanbaar, dan helder, lettergreep voor lettergreep. Je legt een lus om elk geluid, zoals je geleerd hebt, trekt mee, laat niet los.\n\nHet kost je veel. Je neus bloedt, je knieën trillen en je hoort iets in de steen ademen. Dan sluit de knoop. De naam hangt in de lucht, donker en kil, en past precies in je geheugen.\n\nDe oude man staart naar je. Op de dorpel zet de kraai nog een stap naar binnen, zijn snavel half open.",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De oude spreukenmaker (wit oog) leerde hem de eerste en tweede knoop; zijn hand is vastgeknoopt. Joshua accepteerde de prijs en leerde de derde knoop: de naam van de eerste meester van de Orde, slapend in de steen, nu in zijn geheugen. De spreukenmaker wil die naam om zijn band met de Orde te snijden. De kraai komt naderbij en kijkt mee. Joshua moet bepalen wat hij met de naam doet.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
