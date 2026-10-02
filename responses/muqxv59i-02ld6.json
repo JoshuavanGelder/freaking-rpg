@@ -1,0 +1,45 @@
+{
+ "id": "muqxv59i-02ld6",
+ "finishedAt": "2026-10-02T12:28:16.791Z",
+ "durationMs": 12401,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Onder de markt van Velmoor"
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag Maren wat de steen eigenlijk is",
+   "Laat de steen je vooruit leiden",
+   "Blokkeer de deur met een windstoot"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, following an old hooded woman through a low wooden door into a dark damp stone tunnel, faint red glow from under his robe, lantern light behind them",
+   "fallback": "A low wooden door open onto a dark damp stone passage beneath a market, faint red glow, cobwebs, flickering distant lantern light."
+  },
+  "narration": "Je bukt en glipt achter Maren aan door de lage deur. Het hout schraapt over je schouder, precies over de snee, en je bijt op je tong om niet te kreunen. Achter je valt de deur met een doffe klap dicht. Maren schuift een roestige grendel dicht, net op tijd.\n\nDan is er alleen nog duisternis, en de geur van natte steen en oude wijn. Buiten bonst een vuist op het hout. \"Open! In naam van de Orde!\" Het hout kreunt, maar houdt stand.\n\n\"Dat houdt ze een minuut tegen,\" mompelt Maren. Ze strijkt een lucifer af en een flauw vlammetje onthult een smalle trap die naar beneden draait, de wijnkelders in. Aan de muur hangen oude kraaienveren, vastgespijkerd, vergeeld.\n\nDe steen kloppen tegen je buik. \"Niet alles hier is leeg,\" fluistert hij. \"Beneden is iets wat mij kent.\"\n\nMaren kijkt je aan, haar ogen glinsteren in het vuur. \"Je hoort het ook, nietwaar? Dan weet je dat we niet alleen zijn.\"",
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen met rode aderen. Twee mannen van de Orde van de Kraai jagen hem na. Hij doofde met wind de lantaarns op de markt en raakte licht gewond. De oude Maren, ex-kluizenaar van de Orde, wil de steen uit de Orde's handen houden en zien wat hij van Joshua maakt. Ze vluchtten door een lage deur de wijnkelders onder de markt in en grendelden hem. De Orde bonst op de deur. Beneden voelt de steen iets dat hem kent.",
+  "title": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
