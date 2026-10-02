@@ -1,0 +1,45 @@
+{
+ "id": "murbmuzt-j0mit",
+ "finishedAt": "2026-10-02T18:53:41.855Z",
+ "durationMs": 9778,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Laat de kraaien je dragen",
+   "Roep Maren dat ze moet vluchten",
+   "Gebruik de steen om te sturen"
+  ],
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk en koos als prijs een dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon. Hij kreeg een kraaienteken en Kraaienzegel. Zijn schaduwspreuk en windpoging mislukten; hij is zwaargewond. De kraaien tillen hem omhoog, Orde-mannen lichten de put bij. Maren is boven in gevaar.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A deep dark well with a black glass floor, a small red light far above, swirling black feathers in the air."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "title": "",
+  "narration": "Je spreidt je handen en roept de wind. Hij komt, maar niet zoals je wilde. Een windvlaag rukt uit je vingers, wild en ongetemd, en in plaats van omhoog slingert hij je zijwaarts tegen de gladde wand van de put.\n\nJe schouder slaat tegen het glas. Een scherpe pijn trekt door je arm en even wordt alles wit. Je glijdt omlaag, hijgend, met zwarte vlekken voor je ogen.\n\n\"Dom,\" fluistert de steen, maar zijn stem is zacht. \"Je kracht is een jong paard, Joshua. Je rijdt het nog niet, je hangt eraan.\"\n\nDe kraaien om je heen stoten een rauw, gonzend geluid uit. De kroonkraai kijkt toe, onbewogen, met zijn grijze ogen. De veren tillen je weer een handbreedte op, aarzelend, alsof ze wachten op een teken.\n\nBoven je zwaait een fakkellicht over de rand. \"Ik zie iets bewegen!\" roept een man. En dan Maren, schel: \"Joshua! Niet naar boven komen! Het is een val!\""
+ },
+ "model": "sonnet"
+}
