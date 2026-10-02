@@ -1,0 +1,135 @@
+{
+ "id": "murdt125-7frgd",
+ "createdAt": "2026-10-02T19:54:16.349Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 21,
+  "maxHp": 26,
+  "gold": 8,
+  "xp": 317,
+  "level": 4,
+  "location": "Marktplein",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter om haar te beschermen. Op het marktplein betaalde hij de bakker eerlijk voor brood, at het op en ontsnapte ongezien aan twee soldaten. De steen raadt de poort van de leerlooiers aan. Een kraai volgt hem nog.",
+ "cast": [],
+ "recent": [
+  {
+   "action": "Zoek een schuilplek om te rusten",
+   "narration": "Maren sleurt je door een kronkelende steeg, langs natte muren en stinkende vaten. Achter jullie sterft het kraaiengekrijs langzaam weg. Je telt je stappen niet meer. Je voelt alleen nog de steen, die zacht in je hand zoemt als een kat.\n\n\"Links,\" hijgt Maren. \"Daar.\" Ze wijst naar een smalle opening onder een scheve houten trap, half verborgen achter opgestapelde kisten. Jullie kruipen erdoor. Erachter ligt een vergeten kelderhok vol stro, kapotte manden en de zoete geur van oud appelhout. Het is klein, droog en donker.\n\nMaren schuift een kist voor de opening en luistert lang met haar oor tegen het hout. Dan zakt ze naast je neer. \"Niemand volgt ons. Voorlopig.\"\n\nZe scheurt een reep van haar mouw en bindt hem om je bloedende pols. Je ogen vallen bijna dicht. Het kraaienteken op je hand is warm geworden, bijna als een slapende vogel.\n\n\"Slaap,\" fluistert de steen. \"Ik hou de wacht. Een beetje.\"\n\nMaren kijkt je aan, uitgeput maar wakker. \"Eén van ons moet de eerste wacht nemen.\"",
+   "picture": "A small dim cellar nook under a wooden staircase, straw on the floor, crates blocking the entrance, a thin and ragged young man with messy dark hair in torn brown robes resting beside a young woman keeping watch, a faint glowing stone in his hand, warm dim light"
+  },
+  {
+   "action": "Ik heb geen kracht meer over ik moet nu echt rusten.",
+   "narration": "\"Slaap maar,\" zegt Maren zacht. \"Ik neem de wacht.\" Je wilt iets terugzeggen, maar je tong is al te zwaar. Je zakt weg in het stro, de steen warm tegen je borst.\n\nJe slaap is diep en vreemd. Je droomt van een zwarte zee, en daarin zwemt iets met kraaienogen. Het kijkt je lang aan, zoals een koopman naar een paard kijkt. \"Eén dienst,\" fluistert het. \"Nog niet. Groei eerst.\"\n\nDan trekt het weg en laat alleen rust achter.\n\nJe wordt wakker van grijs licht tussen de kistplanken. Je lichaam doet overal pijn, maar het is de pijn van leven, niet van sterven. Je vingers kunnen weer samenknijpen. Maren zit tegen de kist, met haar mes op haar knieën en rode ogen. Ze is niet in slaap gevallen.\n\nBuiten klinken laarzen, heel traag, en een stem die bevelen mompelt. Dan zijn ze weer weg. De steen fluistert: \"Ze zoeken. Maar ze weten het nog niet.\""
+  },
+  {
+   "action": "Ik laat Maren slapen en sluip daarna stiekem weg. Ik wil haar niet langer meetrekken in mijn ellende",
+   "narration": "\"Slaap nu maar,\" zeg je zacht. Maren protesteert nog even, maar haar hoofd zakt tegen de kist en haar mes glijdt uit haar vingers. Binnen een minuut ademt ze diep en gelijkmatig.\n\nJe kijkt lang naar haar. Ze heeft een reep van haar eigen mouw om je pols gebonden. Niemand anders heeft dat ooit voor je gedaan. Je legt je laatste korst brood naast haar hand, en het voelt als een zwakke betaling.\n\nDan sta je op. Je beweegt stil, met de kalmte die de schaduw je leerde. De steen fluistert: \"Sentimenteel. Maar goed, de Orde jaagt op mij, dus op jou.\"\n\nJe schuift de kist een handbreedte opzij en glipt door de opening, de laarzen in je hand. De steeg is nat en grijs. Aan het einde ligt een marktplein waar de eerste karren al rammelen. Hoog op een dak zit een kraai die je volgt met één glanzend oog.\n\nJe hebt Maren veilig achtergelaten. Nu moet je kiezen waarheen je gaat."
+  },
+  {
+   "action": "Ik heb ongelofelijke honger. Ik ga kijken of ik wat eten ergens kan halen.",
+   "narration": "Je trekt je laarzen aan en sluipt het marktplein op. De geur van warm brood trekt aan je maag als een haak. Kooplui zetten kramen op, een slager hangt worsten aan een balk, en een oude vrouw stapelt appels in een mandje.\n\nJe telt je geld: twaalf koperstukken. Genoeg voor een brood, misschien twee. Maar de kraai op het dak is meegevlogen en zit nu boven de broodkraam, met één glanzend oog op jou.\n\nJe probeert een warm brood van de plank te pakken, onopvallend, zoals de schaduw je leerde. Maar je handen trillen van de honger. De bakker, een breed gebouwde man met meel tot aan zijn ellebogen, grijpt je pols. \"Dief!\" bromt hij. Twee voorbijgangers kijken om. Je moet snel iets verzinnen, want soldaten lopen hier vast niet ver vandaan.\n\nDe steen in je zak fluistert: \"Betaal hem. Of maak hem blind voor je. Jouw keuze.\"",
+   "picture": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, wrist grabbed by a broad floury baker at a morning market bread stall, a crow watching from a rooftop, misty dawn light"
+  },
+  {
+   "action": "Betaal de bakker eerlijk met mijn munten",
+   "narration": "\"Wacht,\" zeg je, en je graait in je zak. Je legt vier koperstukken op de plank, één voor één, en schuift ze naar hem toe. Je stem trilt, maar je blik niet.\n\nDe bakker kijkt naar het geld, dan naar je kapotte mouwen, je ingevallen wangen. Zijn greep op je pols verslapt. \"Vier voor een brood,\" bromt hij. \"Had dat meteen gezegd, jongen. Ik bijt geen bedelaars, alleen dieven.\"\n\nHij pakt het warmste brood van de plank, breekt er een korst af en drukt het in je handen. De hitte brandt prettig in je koude vingers. De voorbijgangers verliezen hun interesse.\n\nIn je zak mompelt de steen: \"Hmm. Eerlijkheid. Wat een vreemde munt.\" Maar hij klinkt bijna geamuseerd.\n\nBoven je schuift de kraai een stukje over de dakrand. Aan de overkant van het plein rinkelt een harnas. Twee soldaten slenteren tussen de kramen door, en hun ogen glijden langzaam over de gezichten.",
+   "picture": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, handing coins to a broad middle-aged baker with flour on his arms, bald, grey-streaked beard, white apron, at a morning market stall, a crow watching from the roof, warm light"
+  },
+  {
+   "action": "Eet snel en verdwijn in de menigte",
+   "narration": "Je scheurt het brood in grote happen en slikt ze bijna zonder kauwen door. De warmte zakt als een kleine zon in je maag. Je trekt je kap over je haar en laat je meedrijven met een stroom kooplui en kruiers.\n\nDe soldaten komen dichterbij. Eén van hen blijft staan bij de broodkraam en kijkt de bakker aan. Je duikt weg achter een kar vol vaten, kruipt langs een kraam met gedroogde vis en schuift tussen twee dikke vrouwen door die luid over de prijs van eieren kibbelen. Je hart bonkt, maar je stap blijft rustig, zoals de schaduw je leerde.\n\nOp het dak spreidt de kraai zijn vleugels. Heel even denk je dat hij gaat schreeuwen. Dan blijft hij stil, alsof de kroonkraai hem iets heeft ingefluisterd.\n\n\"Links,\" mompelt de steen. \"Naar de poort van de leerlooiers. Daar stinkt het zo erg dat geen soldaat blijft staan.\"\n\nAchter je hoor je de bakker zeggen: \"Een magere jongen? Nee, heer, niemand gezien.\" Je glimlacht scheef en glipt de menigte uit."
+  }
+ ],
+ "earlierPictures": [
+  "Thin young man with messy dark hair, hollow cheeks, torn patched brown robes, turning in a red-lit stone corridor, unleashing a roaring red wind from his hands, two cloaked men blown backwards, carved crows on the walls, dramatic sparks",
+  "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, standing at the edge of a huge black well in a round stone chamber, red light, black feathers rising from the depths, glowing points in the darkness below, epic dark fantasy",
+  "A thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, lying on a black glass floor, surrounded by a circle of hundreds of crows with human eyes, a small red light far above.",
+  "A giant crow as tall as a man wearing a crown of broken black glass, grey human eyes, standing before a thin young man in torn brown robes on a black glass floor, circle of crows around, dim red light from above",
+  "A thin young man with messy dark hair in torn patched brown robes stands defiant on a black glass floor, facing a man-sized crow wearing a crown of broken glass, hundreds of crows with human eyes around them, red light from above",
+  "A man-sized crow with a crown of broken glass and sharp grey eyes bending toward a thin young man in torn brown robes on a black glass floor, hundreds of crows watching, faint red light from above, dark epic mood",
+  "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, kneeling on black glass floor as a giant crow with a broken glass crown spreads its wings, black light flowing into his chest, hundreds of crows watching, red light far above",
+  "A thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, carried upward by a storm of black crows bursting out of a glowing well at night, torchlit robed men below, dramatic low angle",
+  "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, rising from a well edge holding a glowing whispering stone, black crows swirling, grey-robed hooded men laughing at him, torchlight, night",
+  "A thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, pinned to stone by a boot at a pit's edge, a swarm of black crows swirling around grey-robed men with torches, night, dramatic firelight.",
+  "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, hand outstretched as a ribbon of black shadow whips around a knife-wielding man's wrist at a stone well rim, circling crows, torchlight, night, dramatic",
+  "A thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, supported by a young woman, fleeing into a dark alley while a huge storm of black crows swarms over men in grey robes behind them, torchlight and yellow smoke"
+ ],
+ "action": "Volg de steen naar de leerlooiers",
+ "roll": 6
+}
