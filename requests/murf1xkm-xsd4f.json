@@ -1,0 +1,160 @@
+{
+ "id": "murf1xkm-xsd4f",
+ "createdAt": "2026-10-02T20:29:11.350Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 21,
+  "maxHp": 26,
+  "gold": 8,
+  "xp": 365,
+  "level": 4,
+  "location": "Werkplaats van de spreukenmaker",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij ontsnapte aan soldaten; looiers wezen hem af. In het hok van de oude spreukenmaker (wit oog), die hem verwachtte, noemde die het pact dom. Joshua eiste nu dat hij hem leert. De man stemt in met een eerste les, de 'eerste knoop', maar wil later een nog onbekende wwedergave. De kraai luistert op de dorpel.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Volg de steen naar de leerlooiers",
+   "narration": "Je volgt het gefluister van de steen door steeds smallere straten. De geur komt je al tegemoet voor je iets ziet: scherp, zuur, als rottend vlees en natte as. Je ogen tranen. Dan opent de straat zich naar een grauwe poort, omringd door kuipen vol bruin water en rekken met stijve huiden die als gevilde schimmen in de wind hangen.\n\nHier loopt geen soldaat. Een paar leerlooiers met zwarte armen tot de ellebogen kijken je kort aan en gaan weer door met schrapen. Niemand vraagt wat een magere jongen hier zoekt.\n\n\"Goed,\" mompelt de steen. \"De stank wist zelfs mijn geur uit. Maar kijk omhoog.\"\n\nOp de poortboog landt een kraai. Dezelfde. Hij kijkt je aan, kantelt zijn kop en blijft zitten, alsof hij wacht. Onder de boog staat een deur half open, en daarachter brandt een klein lantaarnlicht.",
+   "picture": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, walking toward a stone city gate beside tanning vats and hanging hides, morning haze, a crow on a roof behind him"
+  },
+  {
+   "action": "Vraag een leerlooier om werk en onderdak",
+   "narration": "Je stapt naar de dichtstbijzijnde leerlooier, een gedrongen man met armen zo zwart als houtskool. Hij schraapt een huid zonder op te kijken.\n\n\"Werk?\" Hij spuugt in de kuip. \"Kijk naar jezelf. Je kunt nauwelijks een emmer tillen, jongen. Jij valt nog om in mijn kalkbad, en dan mag ik de stadswacht uitleggen waarom er een dode bedelaar in mijn leer ligt.\"\n\nDe anderen lachen schamper. Eén van hen duwt je met zijn schraper achteruit, niet hard, maar genoeg om je knieën te laten knikken. Je zwakke lichaam weigert even dienst, en je grijpt naar de rand van een rek om niet te vallen.\n\nBoven op de poortboog klikt de kraai met zijn snavel, bijna als gelach.\n\n\"Kom,\" fluistert de steen. \"Hier ben je niets waard. Maar die deur met het lantaarnlicht stond niet toevallig open.\"\n\nAchter de half open deur beweegt een schaduw. Een rafelige stem mompelt iets, en het klinkt als een spreuk."
+  },
+  {
+   "action": "Duw de deur open en kijk binnen",
+   "narration": "Je duwt de deur open. De scharnieren kreunen, maar de stem binnen stopt niet.\n\nDe ruimte is een krap hok, volgestouwd met scheve boekenrekken, kruikjes en bundels gedroogd kruid. Aan een haak hangt de lantaarn die je van buiten zag. Op de vloer is met krijt een cirkel getekend, en de tekens daarin gloeien zwak, als sintels onder as.\n\nIn het midden zit een oude man met woest wit haar en een melkwit linkeroog. Zijn inktzwarte vingers volgen de krijtlijnen terwijl hij mompelt. Je voelt iets aan je huid trekken, een zachte tinteling, alsof de lucht naar je reikt.\n\nDan stopt hij. Zijn goede oog draait naar je toe, en hij glimlacht zonder tanden. \"Je bent laat, jongen,\" kraakt hij. \"De steen in je zak maakte zoveel lawaai dat ik er hoofdpijn van kreeg.\"\n\nIn je zak blijft de steen opvallend stil.\n\nBoven de deur hoor je vleugels. De kraai heeft zich op de dorpel gezet.",
+   "picture": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, standing in a doorway of a cramped candlelit workshop; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe, murmuring a spell over glowing runes on the floor, warm lantern light, dust in the air"
+  },
+  {
+   "action": "Ik vraag wie hij is en wat hij hier doet",
+   "narration": "\"Wie ik ben?\" De oude man snuift, alsof je naar het weer vraagt. \"Men noemde mij ooit de spreukenmaker van Velmoor. Nu noemen ze mij niets meer, en dat bevalt me best.\" Hij tikt met een zwarte vinger op de krijtlijn. De tekens flakkeren op. \"Ik schrijf wat andere magiërs vergeten: de kleine banden, de sloten, de bezweringen die niemand betaalt. En ik wacht. Op jou, om precies te zijn.\"\n\nJe voelt de tinteling in je huid sterker worden. De steen blijft zwijgen, zelfs als je hem door de stof van je zak vastklemt.\n\n\"Hij is bang van mij,\" zegt de man zacht. \"Of van wat ik weet. Ik heb deze steen eerder gezien, jongen, in handen die sterker waren dan de jouwe. Geen van hen eindigde goed.\" Zijn melkwitte oog draait traag naar de dorpel, waar de kraai zit. \"En jij hebt een vogel die je volgt. Dat betekent dat je al een prijs hebt beloofd. Dom. Maar interessant.\""
+  },
+  {
+   "action": "Dom!?! Wat nou dom. Je weet wat de andere opties waren. Ik had geen keus!",
+   "narration": "\"Geen keus,\" herhaalt de oude man. Hij lacht, een droog geluid als bladeren over steen. \"Dat zeggen ze allemaal, jongen. Het is de mooiste leugen die er bestaat, want hij is half waar.\"\n\nJe ballen je vuisten. De honger, de soldaten, de steen die als een hete kool in je zak brandde: je weet precies hoe smal die weg was. De tekens in de krijtcirkel flakkeren mee met je woede, en een warme rode zweem kruipt langs je vingers voor je hem kunt tegenhouden.\n\nDe spreukenmaker kijkt ernaar en knikt langzaam. \"Daar. Dát bedoel ik. Boos zijn mag. Het is brandstof.\" Zijn goede oog wordt zacht, bijna vriendelijk. \"Ik noemde het dom omdat de kroonkraai nooit vraagt wat je kunt missen. Hij vraagt wat je het hardst nodig zult hebben. Maar een schuld is ook een touw, en aan touwen kun je trekken.\"\n\nOp de dorpel schuift de kraai een stap dichterbij. Hij luistert mee."
+  },
+  {
+   "action": "Eis dat hij je leert wat hij weet",
+   "narration": "\"Leer me wat je weet,\" zeg je. Het klinkt minder als een vraag dan je bedoelde. \"Nu. Ik heb geen tijd om te wachten.\"\n\nJe stem trilt, maar je wijkt niet. De tekens in de krijtcirkel flakkeren op, en even lijkt de lucht in het hok zwaarder te worden. De steen in je zak blijft stil, alsof hij meeluistert.\n\nDe oude man kijkt je lang aan met zijn goede oog. Dan lacht hij zacht. \"Eisen. Een jongen zonder schoenzolen die eisen stelt aan de laatste spreukenmaker van Velmoor.\" Hij schuift op zijn knieën naar de rand van de cirkel. \"Goed. Wilskracht heb je, dat is meer dan de meeste leerlingen die ik betaald kreeg. Maar kennis is geen brood. Je krijgt het niet zomaar in je handen gestopt.\"\n\nHij tikt tegen de krijtlijn. Een dunne rode draad kruipt uit jouw vingers naar zijn hand, trilt, en breekt weer af.\n\n\"Ik leer je de eerste knoop,\" zegt hij. \"Maar daarna wil ik iets terug. Ik zeg nog niet wat.\"\n\nOp de dorpel hipt de kraai nog een stap dichterbij."
+  }
+ ],
+ "action": "Jij zei zelf dat het dom was om iets onbepaalds te beloven. Ik wil vaste voorwaarden",
+ "roll": 11
+}
