@@ -81,7 +81,7 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
         let attempts = 0;
         // Volgorde: de echte prompt; bij het filter de rustige versie (alleen de plek). Valt de verbinding weg
         // (app even op de achtergrond), dan dezelfde prompt nog twee keer, telkens als de app weer voorop staat.
-        const prompts = promptAttempts(pic);
+        const prompts = promptAttempts(pic, adv.world.setting, adv.state.location);
         let p = 0;
         let netTries = 0;
         while (p < prompts.length && !result) {

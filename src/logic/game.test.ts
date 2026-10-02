@@ -213,6 +213,10 @@ test('superheldenwoorden worden uit beeldprompts gehaald', () => {
 });
 
 test('beeldpogingen: geen dubbele prompts', () => {
-  assert.deepEqual(promptAttempts({ prompt: 'A quiet rooftop.', fallback: 'A quiet rooftop.' }), ['A quiet rooftop.']);
-  assert.equal(promptAttempts({ prompt: 'A speedster on a roof.', fallback: 'A roof.' }).length, 3);
+  assert.deepEqual(promptAttempts({ kind: 'portrait', prompt: 'A quiet rooftop.', fallback: 'A quiet rooftop.' }), ['A quiet rooftop.']);
+  const tries = promptAttempts({ kind: 'action', prompt: 'A speedster on a roof.', fallback: 'A roof.' }, 'superhelden', 'Dak van het stadhuis');
+  assert.equal(tries.length, 4); // de prompt + 3 andere
+  assert.match(tries[3], /Dak van het stadhuis, in a modern big city, empty, no people/);
+  // Bij een portret geen sfeerbeeld van de plek.
+  assert.equal(promptAttempts({ kind: 'portrait', prompt: 'A speedster.', fallback: 'A calm face.' }).length, 3);
 });

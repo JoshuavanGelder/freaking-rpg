@@ -37,5 +37,6 @@ Open op je Android-telefoon de nieuwste [release](../../releases/latest) en tik 
 - De verteller beschrijft elk moment voor een beeld en kiest zelf wanneer het de moeite waard is: de opening,
   een nieuwe plek, een belangrijk personage of een actiemoment (gooi je een vuurbal, dan zie je die vuurbal).
   Met de beeldknop bovenin ("Toon scène") vraag je zelf een beeld van het huidige moment.
-- Weigert het filter van Cloudflare een beeld, dan probeert de app automatisch een rustige versie van hetzelfde moment.
+- Weigert het filter van Cloudflare een beeld, dan probeert de app automatisch nog 3 andere beschrijvingen: zonder
+  kostuumwoorden, alleen de plek, en een sfeerbeeld van waar je bent. Het filter zelf is niet in te stellen.
 - Bij de start maakt de app ook een portret van je held. Alle beelden staan in de galerij (via je held).

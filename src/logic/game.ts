@@ -336,10 +336,32 @@ export function defuse(prompt: string): string {
     .trim();
 }
 
-/** Volgorde van pogingen: de prompt, de opgeschoonde prompt, de opgeschoonde reserve (alleen de plek). */
-export function promptAttempts(pic: { prompt: string; fallback: string }): string[] {
-  const list = [pic.prompt, defuse(pic.prompt), defuse(pic.fallback)].map((x) => x.trim()).filter(Boolean);
-  return list.filter((x, i) => list.indexOf(x) === i);
+const PLACE_WORLD: Record<string, string> = {
+  fantasy: 'a medieval fantasy world',
+  superhelden: 'a modern big city',
+  scifi: 'a futuristic sci-fi world',
+  horror: 'an eerie, quiet town',
+  apocalyps: 'a ruined post-apocalyptic land',
+  noir: 'a rainy 1940s city',
+  modern: 'a modern town',
+  eigen: 'a storybook world',
+};
+
+/** Laatste vangnet: een sfeerbeeld van de plek, zonder personen. Komt vrijwel altijd door het filter. */
+export function placePrompt(setting: string, location: string): string {
+  const where = location.trim() ? `${location.trim()}, ` : '';
+  return `Atmospheric wide establishing shot of ${where}in ${PLACE_WORLD[setting] ?? PLACE_WORLD.eigen}, empty, no people, soft light`;
+}
+
+/**
+ * Volgorde van pogingen als het filter weigert: de prompt zelf, dan maximaal 3 andere:
+ * de opgeschoonde prompt, de opgeschoonde reserve (alleen de plek), en een sfeerbeeld van de plek.
+ */
+export function promptAttempts(pic: { kind?: string; prompt: string; fallback: string }, setting = 'eigen', location = ''): string[] {
+  const list = [pic.prompt, defuse(pic.prompt), defuse(pic.fallback)];
+  if (pic.kind !== 'portrait') list.push(placePrompt(setting, location));
+  const clean = list.map((x) => x.trim()).filter(Boolean);
+  return clean.filter((x, i) => clean.indexOf(x) === i);
 }
 
 export function styledPrompt(setting: string, prompt: string): string {
