@@ -1,0 +1,48 @@
+{
+ "id": "murdxz14-osmpq",
+ "finishedAt": "2026-10-02T19:58:25.733Z",
+ "durationMs": 15615,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je stapt naar de dichtstbijzijnde leerlooier, een gedrongen man met armen zo zwart als houtskool. Hij schraapt een huid zonder op te kijken.\n\n\"Werk?\" Hij spuugt in de kuip. \"Kijk naar jezelf. Je kunt nauwelijks een emmer tillen, jongen. Jij valt nog om in mijn kalkbad, en dan mag ik de stadswacht uitleggen waarom er een dode bedelaar in mijn leer ligt.\"\n\nDe anderen lachen schamper. Eén van hen duwt je met zijn schraper achteruit, niet hard, maar genoeg om je knieën te laten knikken. Je zwakke lichaam weigert even dienst, en je grijpt naar de rand van een rek om niet te vallen.\n\nBoven op de poortboog klikt de kraai met zijn snavel, bijna als gelach.\n\n\"Kom,\" fluistert de steen. \"Hier ben je niets waard. Maar die deur met het lantaarnlicht stond niet toevallig open.\"\n\nAchter de half open deur beweegt een schaduw. Een rafelige stem mompelt iets, en het klinkt als een spreuk.",
+  "choices": [
+   "Duw de deur open en kijk binnen",
+   "Klop beleefd aan en stel me voor",
+   "Vraag de steen wie daarbinnen woont"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 11,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter, betaalde de bakker eerlijk en ontsnapte aan soldaten. Bij de poort van de leerlooiers wezen de looiers hem af als te zwak. Een kraai volgt hem nog. Uit een half open deur met lantaarnlicht klinkt een mompelende stem, als een spreuk.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, worn boots, gripping a hide rack near tanners laughing, stinking tanning yard, crow on gate arch, grey morning",
+   "fallback": "A grey tannery gate with vats of brown water, hanging hides, and a half open door with lantern light beneath a stone arch."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
