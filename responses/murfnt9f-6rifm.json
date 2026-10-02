@@ -1,0 +1,54 @@
+{
+ "id": "murfnt9f-6rifm",
+ "finishedAt": "2026-10-02T20:46:26.607Z",
+ "durationMs": 11930,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en laat je adem zakken. De pijn op je knokkels klopt nog, maar je laat hem zitten als een gast die je niet wegjaagt. De spreukenmaker zegt niets. Alleen het zachte kraken van het krijt en het gesis van de lantaarn vullen het hok.\n\nJe roept de rode zweem op, niet als vuist maar als draad. Hij kruipt langzaam langs je vingers, nog steeds warm, nog steeds ongeduldig. Je volgt hem. Je duwt hem niet. Je legt de lus om het touw, en wanneer hij trekt, trek je mee, in zijn eigen tempo.\n\nDe knoop sluit. Een glanzende, rode knoop hangt boven het touw en trilt als een kleine hartslag. Hij houdt.\n\n\"Hm,\" zegt de oude man. Zijn melkwitte oog glimt. \"Dat is de eerste keer dat ik iemand zie knopen zonder te vechten.\" Hij klinkt bijna trots, en dat maakt hem onrustiger dan zijn spot.\n\nOp de dorpel strekt de kraai zijn nek. In je zak roert de steen zich, voor het eerst sinds je binnenkwam, als een kat die ontwaakt.",
+  "choices": [
+   "Vraag wat de tweede les is",
+   "Haal de fluisterende steen tevoorschijn",
+   "Vraag wat de prijs gaat worden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Eerste knoop",
+     "kind": "kracht",
+     "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Na een mislukte poging uit woede slaagde Joshua kalm in de eerste knoop. De steen roert zich weer. De kraai kijkt mee vanaf de dorpel.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A glowing red knot hovering above a grey inked rope in a chalk circle, cramped candlelit workshop, crow on the doorway, warm lantern light",
+   "fallback": "A cramped candlelit workshop with a chalk circle on the floor and a faintly glowing red knot of light above a rope."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
