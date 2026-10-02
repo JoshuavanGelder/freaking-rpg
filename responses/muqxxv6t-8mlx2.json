@@ -1,0 +1,45 @@
+{
+ "id": "muqxxv6t-8mlx2",
+ "finishedAt": "2026-10-02T12:30:20.835Z",
+ "durationMs": 10260,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de steen los in je gedachten en hij trekt je als een hond aan een lijn. Je voeten vinden de treden vanzelf. Maren volgt met het lucifervlammetje, haar schaduw dansend over de natte muren.\n\nBeneden strekt zich een kelder uit vol enorme wijnvaten, groen van schimmel. De fluistering wordt zachter, bijna teder. \"Links. Achter de tonnen. Dichterbij, Joshua.\"\n\nBoven je breekt het hout van de deur met een droge krak. Laarzen stommelen op de trap, nog ver weg.\n\nJe loopt tussen de vaten door tot de muur achter een bult van oude kratten. Daar, in de stenen, zit een rond reliëf van een kraai met uitgespreide vleugels, en in het midden een holte precies zo groot als jouw steen. De rode aderen gloeien op, heet tegen je buik. Maren houdt haar adem in.\n\n\"Dat is geen gewoon slot,\" fluistert ze. \"Zet je hem erin, dan gebeurt er iets wat de Orde al eeuwen wil zien. En er is geen weg terug.\"\n\nDe laarzen komen sneller naar beneden.",
+  "choices": [
+   "Druk de steen in de holte",
+   "Vraag Maren wat er gebeurt",
+   "Blokkeer de trap met wind en kratten"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Wijnkelders van Velmoor"
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. Twee mannen van de Orde van de Kraai jagen hem na. Hij doofde met wind de lantaarns en raakte licht gewond. De oude Maren, ex-kluizenaar van de Orde, leidde hem door een lage deur de wijnkelders in. De steen leidde hem naar een muurreliëf van een kraai met een holte voor de steen. Maren waarschuwt: er is geen weg terug. De Orde breekt de deur en komt de trap af.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, holding a glowing black stone with red veins before a stone wall relief of a crow in a damp wine cellar, an old woman beside him with a match flame, dim eerie light",
+   "fallback": "A damp underground wine cellar with huge mossy barrels and a stone wall carved with a crow relief, faint red glow, dark mood."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
