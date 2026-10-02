@@ -1,0 +1,53 @@
+{
+ "id": "murd4tzu-c3abk",
+ "finishedAt": "2026-10-02T19:35:40.750Z",
+ "durationMs": 11160,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [
+   {
+    "name": "de bakker",
+    "look": "middle-aged man, broad and heavy build, flour up to his elbows, round weathered face, short grey-streaked beard, bald head, white apron over rough brown shirt"
+   }
+  ],
+  "changes": {
+   "hp": 2,
+   "gold": -4,
+   "xp": 10,
+   "addItems": [
+    "Warm brood"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Marktplein"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 8,
+   "success": true
+  },
+  "choices": [
+   "Eet snel en verdwijn in de menigte",
+   "Vraag de bakker naar nieuws over de Orde",
+   "Volg de kraai en kijk waar hij heen wil"
+  ],
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter om haar te beschermen. Op het marktplein betrapte de bakker hem bij broodroof; Joshua betaalde eerlijk vier koperstukken en kreeg warm brood. Een kraai volgt hem nog. Soldaten zoeken in de stad.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, handing coins to a broad middle-aged baker with flour on his arms, bald, grey-streaked beard, white apron, at a morning market stall, a crow watching from the roof, warm light",
+   "fallback": "A morning market square stall with fresh loaves of bread on a wooden shelf, a crow perched on the roof, soft golden light."
+  },
+  "heroLook": "",
+  "narration": "\"Wacht,\" zeg je, en je graait in je zak. Je legt vier koperstukken op de plank, één voor één, en schuift ze naar hem toe. Je stem trilt, maar je blik niet.\n\nDe bakker kijkt naar het geld, dan naar je kapotte mouwen, je ingevallen wangen. Zijn greep op je pols verslapt. \"Vier voor een brood,\" bromt hij. \"Had dat meteen gezegd, jongen. Ik bijt geen bedelaars, alleen dieven.\"\n\nHij pakt het warmste brood van de plank, breekt er een korst af en drukt het in je handen. De hitte brandt prettig in je koude vingers. De voorbijgangers verliezen hun interesse.\n\nIn je zak mompelt de steen: \"Hmm. Eerlijkheid. Wat een vreemde munt.\" Maar hij klinkt bijna geamuseerd.\n\nBoven je schuift de kraai een stukje over de dakrand. Aan de overkant van het plein rinkelt een harnas. Twee soldaten slenteren tussen de kramen door, en hun ogen glijden langzaam over de gezichten.",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet"
+}
