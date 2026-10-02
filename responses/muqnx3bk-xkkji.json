@@ -1,0 +1,45 @@
+{
+ "id": "muqnx3bk-xkkji",
+ "finishedAt": "2026-10-02T07:49:48.604Z",
+ "durationMs": 11201,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Ren meteen naar het pretpark",
+   "Vraag de lamp mee te komen",
+   "Onderzoek eerst het lege maandagslot"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A small desk lamp wearing a tiny cape on a windowsill, frozen city outside at dawn",
+   "fallback": "A sunny windowsill with a small desk lamp, frozen city street outside at early morning light."
+  },
+  "narration": "De lamp zucht, wat bij een lamp vooral klinkt als een zoemend gesnuif.\n\n\"Praten? Iedereen praat, meneer Allen. Jij luistert alleen zelden. Ik ben tweehonderd jaar bureaulamp geweest en heb alles gehoord. Dat wordt vanzelf spraakzaam.\"\n\n\"De cape? Een lamp zonder cape is gewoon meubilair. Met cape ben ik een adviseur. Het is ook lekker tochtvrij.\"\n\nHij schraapt zijn fitting en fluistert: \"De maandag is gestolen met een gigantische, gestreepte sok. De dief hield die open als een zak, en ssst, alle uren gleden erin. Het was een Sokkenfluisteraar. Hij steelt wat mensen kwijtraken. Meestal alleen linkersokken. Dit keer ging hij voor het grote werk.\"\n\nBuiten valt een blaadje uit de lucht. Het blijft precies halverwege hangen, alsof het twijfelt.\n\n\"Ga nu,\" zegt de lamp. \"Voor ik mijn cape kwijtraak.\"",
+  "portrait": "",
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape (tweehonderd jaar oud, adviseur) vertelt dat een Sokkenfluisteraar de maandag stal met een gigantische gestreepte sok en naar het Pretpark van Verloren Sokken vluchtte. Barry moet de maandag terugvinden.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
