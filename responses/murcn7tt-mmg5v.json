@@ -1,0 +1,45 @@
+{
+ "id": "murcn7tt-mmg5v",
+ "finishedAt": "2026-10-02T19:22:04.375Z",
+ "durationMs": 17218,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Slaap maar,\" zegt Maren zacht. \"Ik neem de wacht.\" Je wilt iets terugzeggen, maar je tong is al te zwaar. Je zakt weg in het stro, de steen warm tegen je borst.\n\nJe slaap is diep en vreemd. Je droomt van een zwarte zee, en daarin zwemt iets met kraaienogen. Het kijkt je lang aan, zoals een koopman naar een paard kijkt. \"Eén dienst,\" fluistert het. \"Nog niet. Groei eerst.\"\n\nDan trekt het weg en laat alleen rust achter.\n\nJe wordt wakker van grijs licht tussen de kistplanken. Je lichaam doet overal pijn, maar het is de pijn van leven, niet van sterven. Je vingers kunnen weer samenknijpen. Maren zit tegen de kist, met haar mes op haar knieën en rode ogen. Ze is niet in slaap gevallen.\n\nBuiten klinken laarzen, heel traag, en een stem die bevelen mompelt. Dan zijn ze weer weg. De steen fluistert: \"Ze zoeken. Maar ze weten het nog niet.\"",
+  "choices": [
+   "Laat Maren slapen en neem de wacht",
+   "Vraag de steen hoe je sterker wordt",
+   "Sluip naar buiten om de stad te verkennen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 12,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, vond een fluisterende steen. De Orde van de Kraai jaagt hem op; de lange leider met zilveren kraaienspeld wil de steen. Joshua sloot een pact met de kroonkraai (één dienst verschuldigd) en kreeg kraaienteken en Kraaienzegel. Met Maren ontsnapte hij via kraaien en gele poeder. Ze schuilen in een kelderhok onder een trap. Joshua sliep en is deels hersteld. Maren hield de wacht; Orde-soldaten zoeken buiten.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair asleep in straw in a small cellar nook, a young woman keeping watch with a knife, grey dawn light through crate planks",
+   "fallback": "A small dusty cellar nook with straw and broken baskets, grey dawn light through wooden planks."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
