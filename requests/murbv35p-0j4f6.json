@@ -1,0 +1,117 @@
+{
+ "id": "murbv35p-0j4f6",
+ "createdAt": "2026-10-02T18:59:53.149Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 3,
+  "maxHp": 24,
+  "gold": 12,
+  "xp": 210,
+  "level": 3,
+  "location": "Rand van de Kraaienkelk",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Met Maren sprong hij in de Kraaienkelk en koos als prijs een dienst: eenmaal blind gehoorzamen aan de kroonkraai met glazen kroon. Hij kreeg een kraaienteken en Kraaienzegel. Schaduw- en windpogingen mislukten; hij is bijna dood. Op zijn bevel droegen de kraaien hem omhoog uit de put. Hij bereikt nu de rand, waar Ordeleden Maren vasthouden.",
+ "recent": [
+  {
+   "action": "Vraag wat de prijs van de gift is",
+   "narration": "\"En wat is die prijs?\" vraag je. Je stem klinkt dunner dan daarnet, maar je houdt zijn blik vast.\n\nDe kroonkraai komt dichterbij. Zijn klauwen tikken op het zwarte glas, en onder je voeten zie je iets bewegen: gezichten, diep onder het oppervlak, allemaal met grijze ogen.\n\n\"Eerlijk is eerlijk,\" kraakt hij. \"Ik noem er drie. Kies er één, dan weet je wat de gift je kost.\"\n\nHij tilt een vleugel. Een veer dwarrelt neer en wordt een vlam van zwart licht.\n\n\"Eén: je naam. Je wordt machtig, maar de wereld vergeet wie Joshua was. Twee: je herinnering aan wie je liefhad. Je houdt de kracht, maar niet het gezicht van wie je het voor deed. Drie: een dienst. Eén keer, op een dag die ik kies, doe je wat ik vraag. Zonder te vragen waarom.\"\n\nDe steen in je gewaad zwijgt. Voor het eerst lijkt hij te wachten op jouw keuze, niet op de zijne.\n\nBoven je, heel ver weg, klinkt een echo van laarzen en Marens stem."
+  },
+  {
+   "action": "Kies de dienst: één keer gehoorzamen",
+   "narration": "\"Drie,\" zeg je. \"Een dienst.\"\n\nJe zegt het snel, want als je nadenkt, durf je niet meer. De kroonkraai blijft doodstil. Dan klinkt er een zacht gekraak, bijna teleurgesteld, bijna tevreden.\n\n\"De meesten kiezen hun naam,\" kraakt hij. \"Ze denken dat een naam niets weegt. Jij kiest wat je het langst kunt vergeten. Een schuld die je zelf nog niet kent.\"\n\nHij spreidt zijn vleugels. De zwarte vlam uit de veer schiet naar je borst en brandt zich erin, koud als winterijzer. Je schreeuwt. Je knieën slaan op het glas, en iets duisters stroomt door je aderen. Je voelt je botten zingen, je handen gloeien, de wereld wordt scherper en luider.\n\nOp je hand blijft een zwart kraaienteken achter, en in je zak ligt ineens een koud, glazen zegel.\n\n\"Het is gedaan,\" zegt de kroonkraai. \"Je bent van mij, eenmaal. Totdat ik roep.\"\n\nDe steen fluistert zacht: \"Wat heb je gedaan?\" Boven je klinken laarzen aan de rand van de put."
+  },
+  {
+   "action": "Ik moet Maren redden! Heb geen tijd om hier verder rond te hangen.",
+   "narration": "\"Ik heb geen tijd,\" zeg je. Je draait je om naar het kleine rode oog van de put, ver boven je. \"Maren is daar nog. Ik laat haar niet achter.\"\n\nDe kroonkraai kantelt zijn kop. \"Haast,\" kraakt hij. \"Dat is nieuw hier. Een vleugelslag, kleine... Joshua. Meer geef ik niet. De rest moet je zelf doen.\"\n\nJe strekt je hand uit, en het zwarte kraaienteken gloeit. Een schaduw rolt uit je vingers, onhandig en te wild. Je probeert hem omhoog te sturen, naar de rand, maar je kracht is nieuw en je lichaam is gebroken. De schaduw spat uit elkaar als inkt in water. Een scheut pijn schiet door je ribben en je zakt hijgend op één knie.\n\nHonderden kraaien klapwieken tegelijk op. Een zwarte storm tilt de lucht om je heen. Je voelt hun veren langs je gezicht, en ze trekken aan je gewaad, omhoog, alsof ze je willen dragen. Of grijpen.\n\nBoven je klinkt Marens stem, scherp en bang. Dan een mannenstem: \"Daar beneden! Licht erin!\""
+  },
+  {
+   "action": "Ik probeer mijn wind te gebruiken om mijn omhoog te stuwen",
+   "narration": "Je spreidt je handen en roept de wind. Hij komt, maar niet zoals je wilde. Een windvlaag rukt uit je vingers, wild en ongetemd, en in plaats van omhoog slingert hij je zijwaarts tegen de gladde wand van de put.\n\nJe schouder slaat tegen het glas. Een scherpe pijn trekt door je arm en even wordt alles wit. Je glijdt omlaag, hijgend, met zwarte vlekken voor je ogen.\n\n\"Dom,\" fluistert de steen, maar zijn stem is zacht. \"Je kracht is een jong paard, Joshua. Je rijdt het nog niet, je hangt eraan.\"\n\nDe kraaien om je heen stoten een rauw, gonzend geluid uit. De kroonkraai kijkt toe, onbewogen, met zijn grijze ogen. De veren tillen je weer een handbreedte op, aarzelend, alsof ze wachten op een teken.\n\nBoven je zwaait een fakkellicht over de rand. \"Ik zie iets bewegen!\" roept een man. En dan Maren, schel: \"Joshua! Niet naar boven komen! Het is een val!\""
+  },
+  {
+   "action": "Ik roep naar Maren: Vlucht snel! Ik heb krachten gebruikt die ik niet aankon en ben te zwak om je te redden!",
+   "narration": "\"Maren, vlucht!\" Je stem breekt halverwege, maar de put geeft hem terug, tien keer, honderd keer. \"Ik heb te veel gevraagd van mijn krachten. Ik ben te zwak om je te redden. Ren!\"\n\nEven is het stil boven. Dan hoor je haar, dichterbij de rand dan je zou willen: \"Ik laat je niet in de steek, idioot!\" Een mannenstem snauwt, laarzen schuren, en Maren schreeuwt kort. Het licht van de fakkel schudt heen en weer.\n\nJe knieën geven mee. Het zwarte glas voelt koud tegen je wang, en je ziet de wereld krimpen tot een rood oog van licht. Je ademt vlak, bang dat elke teug je laatste is.\n\nDe kroonkraai komt naast je staan. Zijn glazen kroon weerkaatst het fakkellicht in duizend scherven. \"Eerlijk,\" kraakt hij zacht. \"Dat was het eerste verstandige wat je zei. En het eerste wat je liegt, want je bent niet te zwak. Je bent alleen te vroeg.\"\n\nDe veren onder je rug spannen zich. Wachtend. Op jou."
+  },
+  {
+   "action": "Doe dan wat kraai! Je kan Maren niet aan haar lot overlaten!",
+   "narration": "\"Doe dan wat, kraai!\" Je stem is een rauwe fluistering, maar hij klinkt als een bevel. \"Ik laat haar niet achter!\"\n\nDe kroonkraai kantelt zijn kop. \"Een bevel van een stervende,\" kraakt hij. \"Toch... brutaal genoeg om te belonen. Eén vleugelslag, zei ik. Gebruik hem goed.\"\n\nHij slaat zijn vleugels open en de honderden kraaien antwoorden als één lichaam. De veren onder je rug worden een zwarte golf. Je voelt de steen in je gewaad gloeien, en het kraaienteken op je hand brandt koud. Dit keer probeer je niets te dwingen. Je laat los, en vertrouwt.\n\nDe golf tilt je omhoog, sneller dan een val omgekeerd. Het zwarte glas schiet langs je heen, het rode oog van de put zwelt tot een vuur van fakkels. Je ziet laarzen, een grijs gewaad met een kraaienembleem, en Maren, geknield, een arm op haar rug gedraaid.\n\nDe kraaien storten zich over de rand, en jij met hen. Je ademt nauwelijks, je lichaam is gebroken, maar je handen gloeien nog."
+  }
+ ],
+ "action": "Wijs de fluisterende steen aan als dreiging",
+ "roll": 1
+}
