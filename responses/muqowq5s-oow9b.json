@@ -1,0 +1,47 @@
+{
+ "id": "muqowq5s-oow9b",
+ "finishedAt": "2026-10-02T08:17:36.856Z",
+ "durationMs": 16593,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de mist met rust en duikt op de sok. Je vingers sluiten om gebreide wol, warm en vreemd trillend, als een kat die net wakker wordt.\n\nDe Sokkenfluisteraar zucht. \"Niet de sok. Iedereen pakt altijd de jas.\"\n\nHij grijpt nog, maar jij bent sneller. Veel sneller. Je rukt de sok uit zijn handen. Het gloeiende kalenderblad MAANDAG fladdert eruit en blijft boven je hand hangen. Het ruikt naar koude koffie en wekkers.\n\nDan begint de Wasmachine van het Noodlot te draaien. De trommel slaat open als een bek en een zuigkracht trekt aan het blaadje, aan de sok en aan jou. Je hakken schrapen over de grond. Achter je roept de zeepbel: \"Ik zei toch dat het onbeleefd was!\"\n\nDe Sokkenfluisteraar glimlacht met zijn gat. \"Zeven uur duurt zo lang als ik wil.\"",
+  "choices": [
+   "Spring met de sok in de trommel",
+   "Ren tegen de draairichting in",
+   "Gooi de sok naar de zeepbel"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [
+    "Gloeiende sok"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 en jaagt op de gestolen maandag in het Pretpark van Verloren Sokken. Hij gaf Wol zijn plakkerige sok als betaling. Een beledigde zeepbel volgt hem. Bij de Wasmachine van het Noodlot griste Barry de gloeiende sok met het kalenderblad MAANDAG van de Sokkenfluisteraar. Nu zuigt de machine alles naar binnen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A young man with short messy blond-brown hair, athletic build, red jacket, gold boots and wrist bands, snatching a glowing striped giant sock from a misty figure beside a huge humming washing machine, glowing calendar page floating, motion streaks, laundry lines",
+   "fallback": "A giant old washing machine with an open swirling drum in a whimsical amusement park, laundry lines, soap bubbles, glowing warm light."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
