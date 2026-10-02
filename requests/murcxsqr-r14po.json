@@ -1,0 +1,117 @@
+{
+ "id": "murcxsqr-r14po",
+ "createdAt": "2026-10-02T19:29:59.235Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined."
+ },
+ "state": {
+  "hp": 13,
+  "maxHp": 24,
+  "gold": 12,
+  "xp": 285,
+  "level": 3,
+  "location": "Kelderhok onder de trap",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, vond een fluisterende steen. De Orde van de Kraai jaagt hem op; de lange leider met zilveren kraaienspeld wil de steen. Joshua sloot een pact met de kroonkraai (één dienst verschuldigd) en kreeg kraaienteken en Kraaienzegel. Met Maren ontsnapte hij via kraaien en gele poeder. Ze schuilen in een kelderhok onder een trap. Joshua sliep en is deels hersteld. Maren hield de wacht; Orde-soldaten zoeken buiten.",
+ "recent": [
+  {
+   "action": "Laat de kraaien de Orde afleiden terwijl ik met Maren weg probeer te komen",
+   "narration": "Je roept de kraaien, en ze gehoorzamen. Een zwarte wolk slaat in het gezicht van de Orde, met veren, klauwen en een oorverdovend gekrijs. Fakkels vallen en vonken rollen over de stenen. Twee mannen slaan blind om zich heen.\n\nJe grijpt naar Marens hand, maar je benen zijn van water. Je struikelt na twee stappen.\n\nDe man met het mes laat zich niet afleiden. Hij draait Maren weg van de kraaien en drukt het lemmet strakker tegen haar keel. \"Stop!\" brult hij. De lange man met de zilveren speld komt kalm door de chaos op je af. Een kraai klauwt langs zijn wang, maar hij knippert niet eens. Zijn laars trapt op je pols. De fluisterende steen schiet uit je vingers en tolt over de stenen, net buiten bereik.\n\n\"Rustig maar, bedelaar,\" zegt hij zacht. \"Roep ze terug. Of zij betaalt.\"\n\nMaren schudt woedend haar hoofd. Boven je cirkelen de kraaien en wachten onrustig. Je hart bonst zwak in je borst, en het kraaienteken brandt koud."
+  },
+  {
+   "action": "\"Ik heb niks meer te verliezen\" en ik probeer weer de schaduw te gebruiken",
+   "narration": "\"Ik heb niks meer te verliezen,\" fluister je. Het is de waarheid, en dat maakt je kalm.\n\nDit keer dwing je niets. Je laat het kraaienteken koud over je hand kruipen en je roept de schaduw die onder de laarzen van de lange man ligt. Fakkellicht, vallende veren en de put erachter: overal zijn schaduwen, en ze luisteren.\n\nZe komen. Een zwarte inktgolf rijst uit de stenen, glad en gehoorzaam, en slaat als een zweep om de pols van de man met het mes. Het lemmet schiet van Marens keel en kletterend over de rand. Een tweede strook schaduw rukt de laars van je pols.\n\nDe lange man wankelt en zijn glimlach verdwijnt voor het eerst. \"Wat ben jij?\" sist hij.\n\nMaren rukt zich los en stort naar je toe. Je ziet zwarte vlekken, en je lichaam trilt als een bijna gedoofd vuur. Ver rechts glimt de fluisterende steen tussen de stenen. De Orde komt weer overeind."
+  },
+  {
+   "action": "Grijp de steen en vlucht met Maren",
+   "narration": "Je werpt je naar rechts. Je knieën schampen over de stenen en je vingers sluiten om de fluisterende steen. Hij is ijskoud en trilt als een bang vogeltje. \"Eindelijk,\" fluistert hij. \"Vlug nu.\"\n\nMaren trekt je overeind, haar arm om je middel. Jullie strompelen twee stappen, drie, richting de donkere steeg achter de put. Je benen willen niet meer. Het zijn natte touwen, en ze zakken onder je weg.\n\nDan klinkt er een koud, kalm bevel: \"Sluit de rand af.\" Twee mannen in grijs snijden jullie de weg af. Een derde trapt de vallende fakkels uit, en plots is de schaduw die je net riep weg, als een hond die geen baas meer vindt. De kraaien krijsen boven jullie hoofd, maar ze durven niet dichterbij.\n\nDe lange man met de zilveren speld bloedt uit drie dunne krabben op zijn wang. Hij veegt ze weg en kijkt naar de steen in je hand. \"Dat ding is van ons,\" zegt hij. Achter jullie gaapt de put. Voor jullie sluit de Orde zich als een tang.\n\n\"Joshua,\" fluistert Maren in je oor, \"ik heb nog een ding in mijn mouw. Zeg maar wanneer.\""
+  },
+  {
+   "action": "Roep de kraaien in een klap op de orde en geef Maren het teken",
+   "narration": "\"Nu,\" fluister je, en je ademt het woord meer dan dat je het zegt.\n\nDe kraaien horen het. Alle honderden tegelijk storten ze zich naar beneden, een zwarte storm die de rand van de put overspoelt. Fakkels doven, gewaden worden gegrepen en mannen vallen schreeuwend op hun knieën. Het gekrijs klinkt als scheurend metaal. De lange man met de zilveren speld slaat zijn mantel voor zijn gezicht en brult bevelen die niemand meer hoort.\n\nMaren grijnst wild. Uit haar mouw trekt ze een klein glazen flesje, vol gele poeder. \"Houd je adem in,\" zegt ze, en ze gooit het voor de voeten van de twee mannen die jullie de weg versperren. Het springt open met een droge plof. Een bijtende gele wolk rolt omhoog. Ze hoesten, grijpen naar hun ogen en strompelen weg.\n\n\"Loop!\" Maren sleurt je de steeg in. Je voeten volgen vanzelf, en achter je klinkt de kraaienstorm als een stervende donder. De steen in je hand fluistert tevreden: \"Dat was al beter.\""
+  },
+  {
+   "action": "Zoek een schuilplek om te rusten",
+   "narration": "Maren sleurt je door een kronkelende steeg, langs natte muren en stinkende vaten. Achter jullie sterft het kraaiengekrijs langzaam weg. Je telt je stappen niet meer. Je voelt alleen nog de steen, die zacht in je hand zoemt als een kat.\n\n\"Links,\" hijgt Maren. \"Daar.\" Ze wijst naar een smalle opening onder een scheve houten trap, half verborgen achter opgestapelde kisten. Jullie kruipen erdoor. Erachter ligt een vergeten kelderhok vol stro, kapotte manden en de zoete geur van oud appelhout. Het is klein, droog en donker.\n\nMaren schuift een kist voor de opening en luistert lang met haar oor tegen het hout. Dan zakt ze naast je neer. \"Niemand volgt ons. Voorlopig.\"\n\nZe scheurt een reep van haar mouw en bindt hem om je bloedende pols. Je ogen vallen bijna dicht. Het kraaienteken op je hand is warm geworden, bijna als een slapende vogel.\n\n\"Slaap,\" fluistert de steen. \"Ik hou de wacht. Een beetje.\"\n\nMaren kijkt je aan, uitgeput maar wakker. \"Eén van ons moet de eerste wacht nemen.\""
+  },
+  {
+   "action": "Ik heb geen kracht meer over ik moet nu echt rusten.",
+   "narration": "\"Slaap maar,\" zegt Maren zacht. \"Ik neem de wacht.\" Je wilt iets terugzeggen, maar je tong is al te zwaar. Je zakt weg in het stro, de steen warm tegen je borst.\n\nJe slaap is diep en vreemd. Je droomt van een zwarte zee, en daarin zwemt iets met kraaienogen. Het kijkt je lang aan, zoals een koopman naar een paard kijkt. \"Eén dienst,\" fluistert het. \"Nog niet. Groei eerst.\"\n\nDan trekt het weg en laat alleen rust achter.\n\nJe wordt wakker van grijs licht tussen de kistplanken. Je lichaam doet overal pijn, maar het is de pijn van leven, niet van sterven. Je vingers kunnen weer samenknijpen. Maren zit tegen de kist, met haar mes op haar knieën en rode ogen. Ze is niet in slaap gevallen.\n\nBuiten klinken laarzen, heel traag, en een stem die bevelen mompelt. Dan zijn ze weer weg. De steen fluistert: \"Ze zoeken. Maar ze weten het nog niet.\""
+  }
+ ],
+ "action": "Ik laat Maren slapen en sluip daarna stiekem weg. Ik wil haar niet langer meetrekken in mijn ellende",
+ "roll": 16
+}
