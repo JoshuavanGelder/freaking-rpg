@@ -1,0 +1,54 @@
+{
+ "id": "murg7by3-lk7t0",
+ "finishedAt": "2026-10-02T21:01:41.596Z",
+ "durationMs": 16811,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je komt overeind. Je knieën protesteren en je mond smaakt naar ijzer. Toch ga je meteen terug in de cirkel zitten, voor je angst de kans krijgt om te groeien.\n\n\"Te snel,\" mompelt de oude man. \"Je bent nog scheef van de terugslag.\"\n\n\"Dan ga ik scheef door,\" zeg je. Je haalt diep adem en laat de rode zweem niet grijpen, maar wachten. Je kijkt naar zijn roerloze hand. \"Geef me je belofte, oude man. Niet als buit. Als gunst.\"\n\nZijn melkwitte oog flikkert. \"Ik beloof dat mijn hand blijft liggen.\"\n\nDit keer glijdt de rode draad niet naar de belofte toe, maar langs de rand ervan. Hij raakt hem aan zoals je een slapend dier aanraakt. De belofte wordt zichtbaar, een dun, grijs lijntje boven zijn knokkels. Je legt de lus, zacht, en trekt mee. De knoop sluit met een bijna hoorbare klik.\n\nDe hand van de spreukenmaker blijft liggen, zwaar als steen, hoe hij ook trekt. Op de dorpel verstijft de kraai.\n\n\"Zo,\" fluistert de oude man. Hij glimlacht niet meer. \"Nu moet ik de prijs noemen. De derde les is gevaarlijk.\"",
+  "choices": [
+   "Vraag meteen naar de prijs",
+   "Vraag eerst wat de derde les inhoudt",
+   "Laat de knoop los en rust uit"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Tweede knoop",
+     "kind": "kracht",
+     "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). De oude spreukenmaker (wit oog) leert hem onder drie regels: geen leven of bloed als prijs, prijs genoemd vóór de derde les, weigeren mag maar dan blijft het geleerde van hem. Joshua leerde de eerste knoop en slaagde na een mislukking in de tweede: hij vroeg de belofte in plaats van te grijpen en knoopte de roerloze hand van de spreukenmaker vast. Nu moet de oude man zijn prijs noemen. De kraai kijkt mee.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A ragged young mage in torn poor clothes kneeling in a chalk circle in a dim workshop, a glowing red knot of light binding a grey thread above the hand of a frail elderly man with wild white hair and a milky left eye, a crow watching from the doorway, lantern light",
+   "fallback": "A dim cramped workshop with a chalk circle on the floor, glowing red thread of light, a lantern and a crow perched on the threshold."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
