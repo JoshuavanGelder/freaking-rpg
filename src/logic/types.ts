@@ -34,6 +34,9 @@ export type Picture = {
 export type Scene = { kind: PictureKind; prompt: string; fallback: string };
 
 export type Attribute = { name: string; value: number };
+
+/** Vast uiterlijk van een terugkerend personage (niet de held), zodat beelden en verhaal kloppen. */
+export type CastMember = { name: string; look: string }; // look: Engels, met leeftijd
 export type Quest = { title: string; detail: string; done: boolean };
 
 /** Staat van het spel. Alles behalve leven, goud en level blijft voor de speler onzichtbaar. */
@@ -87,6 +90,8 @@ export type Adventure = {
   error: TurnError | null;
   ended: boolean;
   portrait?: Picture;
+  /** Bijpersonen met een vast uiterlijk. undefined = avontuur van vóór de cast (nog nooit aangevuld). */
+  cast?: CastMember[];
 };
 
 /** Het antwoord van de verteller (zie rpg/schema.json). */
@@ -111,6 +116,7 @@ export type Answer = {
   image: { show: boolean; kind: 'scene' | 'action' | 'character'; prompt: string; fallback: string };
   heroLook: string;
   portrait: string;
+  cast: CastMember[]; // nieuwe of veranderde bijpersonen deze beurt
 };
 
 /** Wat de workflow terugzet in responses/<id>.json. */
@@ -135,7 +141,10 @@ export type TurnRequest = {
   hero: Hero;
   state: GameState;
   summary: string;
-  recent: { action: string | null; narration: string }[];
+  cast: CastMember[];
+  recent: { action: string | null; narration: string; picture?: string }[];
+  /** Alleen bij oude avonturen zonder cast: eerdere beeldprompts, zodat de verteller de looks kan vastleggen. */
+  earlierPictures?: string[];
   action: string | null;
   roll: number;
 };

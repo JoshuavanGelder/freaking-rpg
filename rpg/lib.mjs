@@ -46,6 +46,17 @@ export function renderRequest(r) {
   lines.push(`- open quests: ${open.length ? open.map((q) => `"${clean(q.title, 80)}" (${clean(q.detail, 120)})`).join('; ') : 'none'}`);
   lines.push('');
   if (r.kind !== 'start') {
+    const cast = (r.cast ?? []).filter((c) => clean(c?.name, 60) && clean(c?.look));
+    lines.push('## Cast (fixed looks of recurring characters; reuse word for word in pictures, keep the narration consistent)');
+    if (cast.length) for (const c of cast) lines.push(`- ${clean(c.name, 60)}: ${clean(c.look, 400)}`);
+    else lines.push('- nobody yet');
+    lines.push('');
+    const earlier = (r.earlierPictures ?? []).map((p) => clean(p, 600)).filter(Boolean);
+    if (earlier.length) {
+      lines.push('## Earlier pictures (oldest first; this adventure has no cast yet, build it now)');
+      for (const p of earlier) lines.push(`- ${p}`);
+      lines.push('');
+    }
     lines.push('## Story so far');
     lines.push(clean(r.summary, 2000) || '(nothing yet)');
     lines.push('');
@@ -55,6 +66,7 @@ export function renderRequest(r) {
       for (const t of recent) {
         if (clean(t.action)) lines.push(`Player: ${clean(t.action)}`);
         lines.push(`Narrator: ${clean(t.narration, 1500)}`);
+        if (clean(t.picture)) lines.push(`Picture shown: ${clean(t.picture)}`);
         lines.push('');
       }
     }

@@ -34,7 +34,12 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   geen tools, `--effort low` (niet voor haiku), lege werkmap. Schrijft `responses/<id>.json` met `status`
   ok | limiet | token | fout.
 - De verteller onthoudt niets: elk verzoek bevat wereld, held, staat, samenvatting (≤120 woorden, door Claude
-  bijgewerkt), de laatste 6 beurten, de actie en een verborgen d20-worp van de app.
+  bijgewerkt), de laatste 6 beurten (met de prompt van het beeld als er een gemaakt is), de cast, de actie en een
+  verborgen d20-worp van de app.
+- **Cast** (`adv.cast`): vast Engels uiterlijk (met leeftijd) van terugkerende bijpersonen, zoals `heroLook` voor de held.
+  De verteller geeft nieuwe/veranderde personen terug in `cast`; `mergeCast` voegt samen (zelfde naam = bijwerken, held
+  niet, max. 24). Oude avonturen (`cast` undefined) sturen eenmalig `earlierPictures` mee (max. 12 eerdere beeldprompts)
+  zodat de verteller de looks vastlegt; eerste beschrijving wint (aanleiding: Maren werd van oud vrouwtje ineens jong).
 
 ## Spellogica (`src/logic/game.ts`, getest)
 - `parseAnswer` maakt het antwoord veilig (grenzen: leven ±10 per beurt, xp 0–30, max 6 eigenschappen 0–5).
@@ -67,5 +72,6 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - `src/turns.tsx`: lopende beurten (versturen, warme verteller, pollen, toepassen), hervat na herstart.
 - `src/services/github.ts`: branch `rpg-data`, workflow `rpg.yml`. `src/services/status.ts`: statuspagina Claude.
 - `src/pictures.tsx`: beeldenwachtrij; `src/picture-view.tsx`: beeldvak + volledig scherm.
+- Story: de 3 keuzes zijn ingeklapt achter een knop met chevron en gaan bij elke nieuwe beurt weer dicht.
 - `src/screens/`: Home, New (wereld en toon), Hero (personage), Story (verhaal + wachtstand + beelden), Sheet (held + portret),
   Gallery, Settings.

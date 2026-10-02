@@ -250,14 +250,42 @@ function ActionBar({ adv, disabled, bottom }: { adv: Adventure; disabled: boolea
   const [text, setText] = useDraft<string>(`actie-${adv.id}`, '');
   const last = adv.turns[adv.turns.length - 1];
   const choices = !disabled && last ? last.choices : [];
+  // Keuzes zijn eerst verstopt (eerst het verhaal lezen); bij elke nieuwe beurt weer dicht.
+  const [openFor, setOpenFor] = useState<string | null>(null);
+  const open = !!last && openFor === last.id;
   const send = (t: string) => {
     if (disabled || !t.trim()) return;
     act(adv.id, t);
     setText('');
+    setOpenFor(null);
   };
   return (
-    <View style={{ paddingHorizontal: 16, paddingTop: 12, paddingBottom: 12 + bottom, gap: 8, borderTopWidth: 1, borderTopColor: C.line, backgroundColor: C.bg }}>
-      {choices.map((c) => (
+    <View style={{ paddingHorizontal: 16, paddingTop: 10, paddingBottom: 12 + bottom, gap: 8, borderTopWidth: 1, borderTopColor: C.line, backgroundColor: C.bg }}>
+      {choices.length ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityState={{ expanded: open }}
+          accessibilityLabel={open ? 'Verberg keuzes' : `Toon ${choices.length} keuzes`}
+          onPress={() => setOpenFor(open ? null : last!.id)}
+          hitSlop={6}
+          style={({ pressed }) => ({
+            alignSelf: 'center',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 6,
+            minHeight: 36,
+            paddingHorizontal: 14,
+            borderRadius: 18,
+            backgroundColor: pressed ? C.cardHi : 'transparent',
+          })}
+        >
+          <T size={14} weight="semibold" color={C.muted}>
+            {open ? 'Verberg keuzes' : `${choices.length} keuzes`}
+          </T>
+          <Icon name={open ? 'chevronUp' : 'chevronDown'} size={18} color={C.muted} strokeWidth={2.25} />
+        </Pressable>
+      ) : null}
+      {(open ? choices : []).map((c) => (
         <Pressable
           key={c}
           accessibilityRole="button"
@@ -278,7 +306,7 @@ function ActionBar({ adv, disabled, bottom }: { adv: Adventure; disabled: boolea
           </T>
         </Pressable>
       ))}
-      <Row style={{ gap: 8, marginTop: choices.length ? 4 : 0 }}>
+      <Row style={{ gap: 8, marginTop: open && choices.length ? 4 : 0 }}>
         <TextInput
           accessibilityLabel="Wat doe je?"
           value={text}

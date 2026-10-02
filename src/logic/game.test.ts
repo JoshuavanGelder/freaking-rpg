@@ -13,6 +13,7 @@ import {
   buildRequest,
   heroProblem,
   makePending,
+  mergeCast,
   newAdventure,
   paragraphs,
   parseAnswer,
@@ -219,4 +220,36 @@ test('beeldpogingen: geen dubbele prompts', () => {
   assert.match(tries[3], /Dak van het stadhuis, in a modern big city, empty, no people/);
   // Bij een portret geen sfeerbeeld van de plek.
   assert.equal(promptAttempts({ kind: 'portrait', prompt: 'A speedster.', fallback: 'A calm face.' }).length, 3);
+});
+
+test('cast: nieuwe bijpersonen bewaard, zelfde naam bijgewerkt, held niet', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-cast');
+  assert.equal(adv.cast, undefined);
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw({ cast: [{ name: 'Maren', look: 'elderly woman in her seventies, hunched, grey braid' }, { name: 'Bliksem Bas', look: 'x' }, { name: '', look: 'y' }] }))!, 3);
+  assert.deepEqual(adv.cast, [{ name: 'Maren', look: 'elderly woman in her seventies, hunched, grey braid' }]);
+  adv = applyAnswer(adv, makePending('turn', 'Ik praat', 4), parseAnswer(raw({ cast: [{ name: 'maren', look: 'elderly woman in her seventies, grey braid, black mourning shawl' }] }))!, 5);
+  assert.equal(adv.cast!.length, 1);
+  assert.equal(adv.cast![0].name, 'Maren');
+  assert.match(adv.cast![0].look, /mourning shawl/);
+  adv = applyAnswer(adv, makePending('turn', 'Ik loop', 6), parseAnswer(raw())!, 7);
+  assert.equal(adv.cast!.length, 1);
+  assert.equal(mergeCast([], Array.from({ length: 30 }, (_, i) => ({ name: `P${i}`, look: 'l' }))).length, 24);
+});
+
+test('verzoek: cast, beeldprompts bij recente beurten en eenmalig eerdere beelden', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-req');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw({ image: { show: true, kind: 'character', prompt: 'An elderly woman with a grey braid at a well.', fallback: 'A well.' } }))!, 3, true);
+  for (let i = 0; i < 7; i++) adv = applyAnswer(adv, makePending('turn', `Actie ${i}`, 10 + i), parseAnswer(raw({ image: { show: false, kind: 'scene', prompt: 'x', fallback: 'y' } }))!, 20 + i, true);
+  // Oud avontuur nabootsen: nog nooit een cast gehad.
+  const old = { ...adv, cast: undefined };
+  const r1 = buildRequest(old, makePending('turn', 'Ik zoek Maren', 30), 'sonnet');
+  assert.deepEqual(r1.cast, []);
+  assert.deepEqual(r1.earlierPictures, ['An elderly woman with a grey braid at a well.']);
+  const r2 = buildRequest({ ...adv, cast: [{ name: 'Maren', look: 'elderly woman in a superhero costume' }] }, makePending('turn', 'Ik zoek Maren', 30), 'sonnet');
+  assert.equal(r2.earlierPictures, undefined);
+  assert.doesNotMatch(r2.cast[0].look, /costume/);
+  const withPic = applyAnswer(adv, makePending('turn', 'Kijk', 40), parseAnswer(raw())!, 41, true);
+  const r3 = buildRequest(withPic, makePending('turn', 'Verder', 42), 'sonnet');
+  assert.equal(r3.recent[r3.recent.length - 1].picture, 'A rooftop at night.');
+  assert.equal(r3.recent[0].picture, undefined);
 });

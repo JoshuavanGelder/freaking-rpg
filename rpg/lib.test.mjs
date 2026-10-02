@@ -95,3 +95,20 @@ test('validId en pendingIds', () => {
   ];
   assert.deepEqual(pendingIds(reqs, new Set(['klaar']), now), ['aa-1', 'bb-2']);
 });
+
+test('cast en beelden gaan mee in het beurt-verzoek', () => {
+  const base = { kind: 'turn', world, hero, state: { hp: 10, maxHp: 20 }, summary: 's', action: 'a', roll: 5 };
+  const t = renderRequest({
+    ...base,
+    cast: [{ name: 'Maren', look: 'elderly woman in her seventies' }],
+    recent: [{ action: 'Ik kijk', narration: 'Je kijkt.', picture: 'An old woman by the fire.' }],
+  });
+  assert.match(t, /## Cast/);
+  assert.match(t, /- Maren: elderly woman in her seventies/);
+  assert.match(t, /Picture shown: An old woman by the fire\./);
+  assert.doesNotMatch(t, /Earlier pictures/);
+  const old = renderRequest({ ...base, cast: [], earlierPictures: ['An elderly woman at a well.'] });
+  assert.match(old, /- nobody yet/);
+  assert.match(old, /Earlier pictures[^\n]*\n- An elderly woman at a well\./);
+  assert.doesNotMatch(renderRequest({ kind: 'start', world, hero }), /## Cast/);
+});

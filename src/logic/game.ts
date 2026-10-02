@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Attribute, GameState, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Attribute, CastMember, GameState, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -24,6 +24,8 @@ export const XP_PER_LEVEL = 100;
 const MAX_INVENTORY = 30;
 const MAX_QUESTS = 30;
 const RECENT_TURNS = 6;
+const MAX_CAST = 24;
+const EARLIER_PICTURES = 12;
 
 export function settingOf(id: string): Setting {
   return SETTINGS.find((s) => s.id === id) ?? SETTINGS[SETTINGS.length - 1];
@@ -115,10 +117,38 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     hero: adv.hero.heroLook ? { ...adv.hero, heroLook: defuse(adv.hero.heroLook) } : adv.hero,
     state: adv.state,
     summary: adv.summary,
-    recent: adv.turns.slice(-RECENT_TURNS).map((t) => ({ action: t.action, narration: t.narration })),
+    cast: (adv.cast ?? []).map((c) => ({ name: c.name, look: defuse(c.look) })),
+    recent: adv.turns.slice(-RECENT_TURNS).map((t) => {
+      const picture = drawnPrompt(t);
+      return picture ? { action: t.action, narration: t.narration, picture } : { action: t.action, narration: t.narration };
+    }),
+    ...(adv.cast === undefined && pending.kind === 'turn' ? { earlierPictures: earlierPictures(adv) } : {}),
     action: pending.action,
     roll: pending.roll,
   };
+}
+
+/** De prompt van het beeld dat bij een beurt echt gemaakt is (of wordt). */
+function drawnPrompt(t: Turn): string {
+  return t.image && t.image.status !== 'failed' ? t.image.prompt : '';
+}
+
+/** Beeldprompts van vóór de laatste beurten (oudste eerst), voor oude avonturen zonder cast. */
+function earlierPictures(adv: Adventure): string[] {
+  const older = adv.turns.slice(0, Math.max(0, adv.turns.length - RECENT_TURNS));
+  return older.map(drawnPrompt).filter(Boolean).slice(-EARLIER_PICTURES);
+}
+
+/** Voegt nieuwe of veranderde bijpersonen samen met de bestaande cast (zelfde naam = bijwerken). */
+export function mergeCast(cast: CastMember[], updates: CastMember[], heroName = ''): CastMember[] {
+  const list = cast.map((c) => ({ ...c }));
+  for (const u of updates) {
+    if (heroName && same(u.name, heroName)) continue;
+    const i = list.findIndex((c) => same(c.name, u.name));
+    if (i >= 0) list[i] = { name: list[i].name, look: u.look };
+    else list.push(u);
+  }
+  return list.slice(-MAX_CAST);
 }
 
 const str = (v: unknown, max: number): string => (typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().slice(0, max) : '');
@@ -166,11 +196,17 @@ export function parseAnswer(raw: unknown): Answer | null {
     image: {
       show: !!img.show,
       kind: img.kind === 'action' || img.kind === 'character' ? img.kind : 'scene',
-      prompt: str(img.prompt, 600),
+      prompt: str(img.prompt, 800),
       fallback: str(img.fallback, 400),
     },
     heroLook: str(a.heroLook, 400),
     portrait: str(a.portrait, 600),
+    cast: Array.isArray(a.cast)
+      ? a.cast
+          .map((x: any): CastMember => ({ name: str(x?.name, 40), look: str(x?.look, 300) }))
+          .filter((x: CastMember) => x.name && x.look)
+          .slice(0, 8)
+      : [],
   };
 }
 
@@ -265,6 +301,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     state,
     summary: answer.summary || adv.summary,
     turns: [...adv.turns, turn],
+    cast: mergeCast(adv.cast ?? [], answer.cast, hero.name),
     pending: null,
     error: null,
     ended,

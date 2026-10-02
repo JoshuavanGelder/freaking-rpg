@@ -20,7 +20,9 @@ export type IconName =
   | 'trash'
   | 'pending'
   | 'close'
-  | 'grid';
+  | 'grid'
+  | 'chevronDown'
+  | 'chevronUp';
 
 type Props = { name: IconName; size?: number; color: string; strokeWidth?: number };
 
@@ -30,6 +32,12 @@ export function Icon({ name, size = 22, color, strokeWidth = 2 }: Props) {
   switch (name) {
     case 'back':
       body = <Path {...c} d="M15 18l-6-6 6-6" />;
+      break;
+    case 'chevronDown':
+      body = <Path {...c} d="M6 9l6 6 6-6" />;
+      break;
+    case 'chevronUp':
+      body = <Path {...c} d="M18 15l-6-6-6 6" />;
       break;
     case 'settings':
       body = (

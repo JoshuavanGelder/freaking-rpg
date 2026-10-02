@@ -164,7 +164,7 @@
         },
         "prompt": {
           "type": "string",
-          "description": "English image prompt for this exact moment, 25-60 words. Concrete subject, action, setting, lighting, composition. No text, no names of real people or existing franchise characters, nothing graphic."
+          "description": "English image prompt for this exact moment, 25-80 words. Include heroLook and cast looks of everyone visible. Concrete subject, action, setting, lighting, composition. No text, no names of real people or existing franchise characters, nothing graphic."
         },
         "fallback": {
           "type": "string",
@@ -185,6 +185,25 @@
     "portrait": {
       "type": "string",
       "description": "Only on the start turn: English portrait prompt of the hero (head and shoulders, 25-50 words). Otherwise empty string."
+    },
+    "cast": {
+      "type": "array",
+      "description": "Recurring characters (not the hero) that are new this turn, missing from the cast, or whose look really changed. Empty when nothing changed.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The character's name as used in the story (or a short Dutch label like 'de waard')."
+          },
+          "look": {
+            "type": "string",
+            "description": "English, 15-35 words, always starting with age and gender (e.g. 'elderly woman in her seventies'), then build, face, hair, clothes. No costume, emblem, cape or mask."
+          }
+        },
+        "required": ["name", "look"]
+      }
     }
   },
   "required": [
@@ -198,6 +217,7 @@
     "gameOver",
     "image",
     "heroLook",
-    "portrait"
+    "portrait",
+    "cast"
   ]
 }
