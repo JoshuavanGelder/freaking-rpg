@@ -1,0 +1,45 @@
+{
+ "id": "murbdaac-2iygg",
+ "finishedAt": "2026-10-02T18:46:15.191Z",
+ "durationMs": 10209,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"En wat is die prijs?\" vraag je. Je stem klinkt dunner dan daarnet, maar je houdt zijn blik vast.\n\nDe kroonkraai komt dichterbij. Zijn klauwen tikken op het zwarte glas, en onder je voeten zie je iets bewegen: gezichten, diep onder het oppervlak, allemaal met grijze ogen.\n\n\"Eerlijk is eerlijk,\" kraakt hij. \"Ik noem er drie. Kies er één, dan weet je wat de gift je kost.\"\n\nHij tilt een vleugel. Een veer dwarrelt neer en wordt een vlam van zwart licht.\n\n\"Eén: je naam. Je wordt machtig, maar de wereld vergeet wie Joshua was. Twee: je herinnering aan wie je liefhad. Je houdt de kracht, maar niet het gezicht van wie je het voor deed. Drie: een dienst. Eén keer, op een dag die ik kies, doe je wat ik vraag. Zonder te vragen waarom.\"\n\nDe steen in je gewaad zwijgt. Voor het eerst lijkt hij te wachten op jouw keuze, niet op de zijne.\n\nBoven je, heel ver weg, klinkt een echo van laarzen en Marens stem.",
+  "choices": [
+   "Kies de dienst: één keer gehoorzamen",
+   "Vraag of er een vierde prijs bestaat",
+   "Weiger de gift en vraag de steen om raad"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren blies hij Orde-mannen weg met rode wind en sprong in de Kraaienkelk, waar hij gewond landde tussen kraaien met mensenogen. De kroonkraai met glazen kroon en grijze ogen biedt een gift van de eersten. Prijs: óf zijn naam, óf zijn herinnering aan wie hij liefheeft, óf eenmaal een blinde dienst. De steen zwijgt. Maren en de Orde-mannen zijn boven.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A man-sized crow with a crown of broken glass and sharp grey eyes bending toward a thin young man in torn brown robes on a black glass floor, hundreds of crows watching, faint red light from above, dark epic mood",
+   "fallback": "A vast cavern with a black glass floor, a small round red light high above, silhouettes of many crows in a silent circle, dark mist."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
