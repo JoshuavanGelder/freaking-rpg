@@ -1,0 +1,45 @@
+{
+ "id": "mur3zwtk-7a6gd",
+ "finishedAt": "2026-10-02T15:19:57.509Z",
+ "durationMs": 10751,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Ronde zaal met zwarte put"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 13,
+   "success": true
+  },
+  "choices": [
+   "Spring in de zwarte put",
+   "Onderzoek de put met de steen",
+   "Vraag Maren wat dit is"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, torn patched brown robes, turning in a red-lit stone corridor, unleashing a roaring red wind from his hands, two cloaked men blown backwards, carved crows on the walls, dramatic sparks",
+   "fallback": "A red-lit stone corridor carved with hundreds of crows, leading to a round chamber with a black well, swirling dust in warm glowing light."
+  },
+  "narration": "Je draait je om, ruggengraat tegen de koude muur, en steekt beide handen naar de gang. Je denkt niet aan de pijn. Je denkt aan de windstoot in de wijnkelder, aan de rivier door de gebroken dam, en dit keer houd je de dam zelf vast.\n\n\"Nu,\" fluistert de steen. \"Smal. Scherp. Als een lans.\"\n\nDe wind komt op je bevel. Rood en huilend raast hij door de gang, rukt de lantaarn uit de hand van de eerste man en slaat beide mannen van hun voeten. Hun mantels klapperen als zwarte vleugels. Ze glijden achteruit over de natte stenen, schreeuwend, tot de bocht hen opslokt. Ergens klinkt een doffe klap en dan stilte.\n\nJe knieën geven mee en je leunt hijgend tegen de muur. Je neus bloedt een beetje, maar je lacht. Het was jouw kracht, en jij bepaalde de richting.\n\nMaren kijkt je aan, voor het eerst zonder spot. \"Dat deed je zelf,\" zegt ze zacht. Achter haar gloeit de zwarte put, en uit de diepte klinkt iets als gekras van duizend snavels.",
+  "portrait": "",
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. De Orde van de Kraai jaagt hem op. Met Maren, ex-kluizenaar van de Orde, opende hij het kraaienreliëf in de wijnkelders en raakte gewond. Op de vlucht door de rode gang blies hij voor het eerst bewust met gerichte wind twee Orde-mannen weg. Nu staan ze in een ronde zaal met een zwarte put waaruit gekras klinkt. Maren verwachtte dit niet.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
