@@ -1,0 +1,45 @@
+{
+ "id": "muqxnw59-07pxe",
+ "finishedAt": "2026-10-02T12:22:43.477Z",
+ "durationMs": 18355,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je werpt jezelf de markt op, tussen kraampjes vol natte kool, hangende hammen en geschreeuw. Lantaarns zwaaien in de wind. Je duikt onder een zeil door en probeert een gewoon mens te lijken, maar met je gescheurde gewaad en de gloeiende steen onder je arm val je op als een kraai tussen duiven.\n\n\"Hé, dief!\" brult een visverkoper wanneer je zijn tafel raakt. Een bak glibberige palingen klettert over de keien. Je glijdt weg, de steen klopt hard tegen je ribben, en achter je klinkt de stem van een van de mannen, nu dichtbij: \"Sluit de uitgang van de markt!\"\n\nEen mes scheert langs je schouder en snijdt een reep stof uit je mouw. Het brandt, warm en nat. Je struikelt tussen twee kraampjes, en daar ben je half verborgen achter een wagen vol lege vaten.\n\n\"Ze zien je,\" fluistert de steen, bijna vrolijk. \"Maar ze zien mij nog niet. Gebruik de wind weer, Joshua.\"\n\nVlakbij zie je een kar met kruiken olie, en op de rand van het plein een oude vrouw die je met scherpe ogen aanstaart.",
+  "choices": [
+   "Blaas de olielantaarns om met wind",
+   "Verberg je in de lege vaten",
+   "Smeek de oude vrouw om hulp"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Markt van Velmoor"
+  },
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een zwarte steen met rode aderen die fluistert. Twee mannen van de Orde van de Kraai jagen op hem. Hij ontketende een windstoot. Op de markt werd hij gezien na een ongelukje bij een visverkoper en raakte licht gewond door een mes. Hij zit verscholen achter een wagen; een oude vrouw kijkt hem aan.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks, sharp grey eyes, torn patched brown robes, crouching behind a cart of barrels in a rainy crowded medieval market at dusk, clutching a black stone with glowing red veins, lantern light",
+   "fallback": "A rainy medieval market square at dusk with stalls, hanging lanterns, wet cobblestones and a cart of barrels."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
