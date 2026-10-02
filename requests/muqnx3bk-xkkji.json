@@ -1,0 +1,72 @@
+{
+ "id": "muqnx3bk-xkkji",
+ "createdAt": "2026-10-02T07:49:35.888Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Absurd"
+  ],
+  "toneText": "",
+  "wishes": "Kort vehaal"
+ },
+ "hero": {
+  "name": "Barry Allen",
+  "className": "Speedster",
+  "powers": "Een echte speedster met bijna geen zwaktes.",
+  "looks": "Zoals in de flash new 53 comics",
+  "heroLook": "Young man with short messy blond-brown hair, athletic build, red jacket on chest, gold boots and wrist bands, sunglasses-free, determined friendly face."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "Central City, appartement",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 5
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 4
+   },
+   {
+    "name": "Vindingrijkheid",
+    "value": 3
+   },
+   {
+    "name": "Geduld",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Rode speedsterpak"
+  ],
+  "quests": [
+   {
+    "title": "Vind de gestolen maandag",
+    "detail": "Zoek de dief in het Pretpark van Verloren Sokken.",
+    "done": false
+   }
+  ]
+ },
+ "summary": "Barry Allen, speedster, zit vast in een eeuwige 07:00 in Central City. Een sprekende bureaulamp met cape meldt dat iemand de maandag heeft gestolen en naar het Pretpark van Verloren Sokken is gevlucht. Barry moet de maandag terugvinden.",
+ "recent": [
+  {
+   "action": null,
+   "narration": "Het is 07:00 's ochtends in Central City, en Barry Allen heeft al driemaal ontbeten, de krant gelezen en de was gedaan. Het is nog steeds 07:00. Dat is het probleem.\n\nBuiten staat de hele stad stil. Een duif hangt roerloos in de lucht met een half broodkruimeltje in zijn snavel. Een voetganger heeft zijn paraplu halverwege opengeklapt, en hij kijkt verrassend tevreden.\n\nDan hoor je een klein, beleefd kuchje. Op je vensterbank zit een sprekende bureaulamp met een kleine cape.\n\n\"Meneer Allen. Iemand heeft de maandag gestolen. Alle zeven uur, ook de lunch. Zonder maandag kan de dinsdag niet beginnen en dan wordt het een hele rommel. De verdachte vluchtte naar het Pretpark van Verloren Sokken.\"\n\nJe spieren tintelen. Je schoenen roken al een beetje van ongeduld."
+  }
+ ],
+ "action": "Ik vraag aan de lamp. Hoezo kan jij praten. Waarom een cape? En hoe is de maandag gestolen. Wat voor dief kan dat?",
+ "roll": 6
+}
