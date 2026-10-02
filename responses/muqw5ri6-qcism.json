@@ -1,0 +1,79 @@
+{
+ "id": "muqw5ri6-qcism",
+ "finishedAt": "2026-10-02T11:40:33.388Z",
+ "durationMs": 13501,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "De Askroon van Joshua",
+  "narration": "Regen druipt door de gescheurde mouwen van je gewaad terwijl je door de modder van Velmoor strompelt, een stad van scheve daken en rokende schoorstenen. In je zak rammelen twee koperen munten. Meer heb je niet.\n\nJe maag knort. Toch voel je het soms, diep in je borst: een zwak, warm gloeien, als een kooltje dat wacht op wind. Niemand in deze stad heeft ooit in je geloofd. Dat gaat veranderen.\n\nOnder een gebroken lantaarn, in een steegje vol afval, ligt iets te schitteren. Een zwarte steen, zo groot als een vuist, met rode aderen die pulseren als een hartslag. Als je dichterbij komt, fluistert hij je naam.\n\nAchter je klinken laarzen. Twee mannen in zwarte mantels, met een zilveren kraai op hun borst, komen de steeg in. \"Daar,\" zegt de ene zacht. \"Die steen is van de Orde. Weg ermee, bedelaar.\"",
+  "choices": [
+   "Grijp de steen en ren weg",
+   "Laat de steen met magie naar je toe vliegen",
+   "Praat met de mannen en bluf"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "gold": 2,
+   "xp": 0,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontsnap aan de Orde van de Kraai",
+     "detail": "Kom levend weg met de fluisterende steen."
+    },
+    {
+     "title": "Word de sterkste magiër",
+     "detail": "Groei in kracht tot niemand je kan stoppen."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Velmoor, achterstraatje"
+  },
+  "summary": "Joshua, straatarme magiër in gescheurde kleren met twee koperen munten, vindt in een steegje van Velmoor een zwarte steen met rode aderen die zijn naam fluistert. Twee mannen van de Orde van de Kraai eisen de steen op. Joshua voelt verborgen, enorme magische potentie.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A ragged young man in torn brown robes with messy dark hair stands in a rainy dark alley, staring at a glowing black stone with pulsing red veins on the ground, two hooded men in black cloaks approaching behind him, moody lantern light",
+   "fallback": "A rainy medieval alley at night with a broken lantern, puddles, and a black stone with glowing red veins on wet cobblestones."
+  },
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined.",
+  "portrait": "Head and shoulders portrait of a thin young man with messy dark hair, sharp grey eyes, hollow cheeks, torn patched brown robes, faint red glow reflected on his face, rainy medieval city background at dusk."
+ },
+ "model": "sonnet"
+}
