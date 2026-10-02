@@ -1,0 +1,48 @@
+{
+ "id": "murd6non-0rcki",
+ "finishedAt": "2026-10-02T19:37:09.414Z",
+ "durationMs": 14500,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je scheurt het brood in grote happen en slikt ze bijna zonder kauwen door. De warmte zakt als een kleine zon in je maag. Je trekt je kap over je haar en laat je meedrijven met een stroom kooplui en kruiers.\n\nDe soldaten komen dichterbij. Eén van hen blijft staan bij de broodkraam en kijkt de bakker aan. Je duikt weg achter een kar vol vaten, kruipt langs een kraam met gedroogde vis en schuift tussen twee dikke vrouwen door die luid over de prijs van eieren kibbelen. Je hart bonkt, maar je stap blijft rustig, zoals de schaduw je leerde.\n\nOp het dak spreidt de kraai zijn vleugels. Heel even denk je dat hij gaat schreeuwen. Dan blijft hij stil, alsof de kroonkraai hem iets heeft ingefluisterd.\n\n\"Links,\" mompelt de steen. \"Naar de poort van de leerlooiers. Daar stinkt het zo erg dat geen soldaat blijft staan.\"\n\nAchter je hoor je de bakker zeggen: \"Een magere jongen? Nee, heer, niemand gezien.\" Je glimlacht scheef en glipt de menigte uit.",
+  "choices": [
+   "Volg de steen naar de leerlooiers",
+   "Zoek een magiër die je kan onderwijzen",
+   "Probeer de kraai te vragen wat hij wil"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 2,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [
+    "Warm brood"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Marktplein"
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider: lange man met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij liet Maren slapend achter om haar te beschermen. Op het marktplein betaalde hij de bakker eerlijk voor brood, at het op en ontsnapte ongezien aan twee soldaten. De steen raadt de poort van de leerlooiers aan. Een kraai volgt hem nog.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, torn patched brown robes, slipping through a crowded medieval market at dawn, soldiers in background, a crow on a rooftop",
+   "fallback": "Busy medieval market square at dawn with stalls, carts and a crow on a rooftop, grey morning light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
