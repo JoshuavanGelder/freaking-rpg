@@ -1,0 +1,45 @@
+{
+ "id": "muqor63t-857sg",
+ "finishedAt": "2026-10-02T08:13:10.792Z",
+ "durationMs": 10187,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je draait je om en schiet onder de grote bel door. Dat is het plan. Reflexen genoeg, maar je zeepvoeten niet: het sop in je schoenen maakt van je laars een schaats. Je glijdt met een lange, elegante boog de waslijnen in.\n\nEen natte onderbroek klapt tegen je gezicht. Een hemd slaat om je schouders als een omhelzing. Je worstelt je los, en de bel zweeft ondertussen hoffelijk langs, alsof hij je een plezier doet. \"Graag gedaan,\" mompelt hij.\n\nJe stoot je elleboog tegen een wasknijper zo groot als een krokodil. Au. Die knijpt terug.\n\nDan zie je door de waslijnen heen een lange gestalte in een jas van gebreide mist. Hij staat bij de brommende Wasmachine en trekt een gigantische gestreepte sok achter zich aan. Hij heeft je nog niet gezien. Of hij doet alsof.",
+  "choices": [
+   "Sprint op de Sokkenfluisteraar af",
+   "Sluip rustig tussen de waslijnen door",
+   "Roep: 'Geef die maandag terug!'"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Waslijnenboog"
+  },
+  "summary": "Barry Allen zit vast in een eeuwige 07:00 en jaagt op de gestolen maandag, gestolen door een Sokkenfluisteraar (jas van gebreide mist, gigantische gestreepte sok). Een sprekende lamp met cape stuurde hem. Barry betaalde kaartverkoper Wol met zijn plakkerige sok. Een beledigde grote zeepbel volgt hem. Barry gleed door de waslijnen en ziet de Sokkenfluisteraar bij de brommende Wasmachine van het Noodlot, nog onbewust van hem.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Young man with short messy blond-brown hair, athletic build, red jacket, gold boots, tangled in colorful laundry lines, spotting a tall figure in a coat of knitted mist beside a huge humming washing machine, giant soap bubbles floating, funfair background",
+   "fallback": "A surreal amusement park path with laundry lines, giant floating soap bubbles and a huge old washing machine in the distance, soft morning light."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
