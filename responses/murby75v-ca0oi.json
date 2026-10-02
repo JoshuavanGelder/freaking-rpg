@@ -1,0 +1,45 @@
+{
+ "id": "murby75v-ca0oi",
+ "finishedAt": "2026-10-02T19:02:43.753Z",
+ "durationMs": 24314,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": ""
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": false
+  },
+  "choices": [
+   "Roep de kraaien terug om Maren te sparen",
+   "Roep de steen naar je toe met wind",
+   "Val de man met het mes aan"
+  ],
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. In de Kraaienkelk koos hij als prijs een dienst aan de kroonkraai (eenmaal gehoorzamen) en kreeg een kraaienteken en Kraaienzegel. Kraaien droegen hem omhoog. Aan de rand liet hij de kraaien de Orde aanvallen, maar de man met het mes houdt Maren vast. De leider met zilveren kraaienspeld staat op Joshua's pols; de steen rolde net buiten bereik. Joshua is bijna dood.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A thin young man with messy dark hair, hollow cheeks and sharp grey eyes, in torn patched brown robes, pinned to stone by a boot at a pit's edge, a swarm of black crows swirling around grey-robed men with torches, night, dramatic firelight.",
+   "fallback": "A stone rim of a deep pit at night, torches fallen and flickering on the ground, black feathers drifting in the air, dark dramatic mood."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "title": "",
+  "narration": "Je roept de kraaien, en ze gehoorzamen. Een zwarte wolk slaat in het gezicht van de Orde, met veren, klauwen en een oorverdovend gekrijs. Fakkels vallen en vonken rollen over de stenen. Twee mannen slaan blind om zich heen.\n\nJe grijpt naar Marens hand, maar je benen zijn van water. Je struikelt na twee stappen.\n\nDe man met het mes laat zich niet afleiden. Hij draait Maren weg van de kraaien en drukt het lemmet strakker tegen haar keel. \"Stop!\" brult hij. De lange man met de zilveren speld komt kalm door de chaos op je af. Een kraai klauwt langs zijn wang, maar hij knippert niet eens. Zijn laars trapt op je pols. De fluisterende steen schiet uit je vingers en tolt over de stenen, net buiten bereik.\n\n\"Rustig maar, bedelaar,\" zegt hij zacht. \"Roep ze terug. Of zij betaalt.\"\n\nMaren schudt woedend haar hoofd. Boven je cirkelen de kraaien en wachten onrustig. Je hart bonst zwak in je borst, en het kraaienteken brandt koud."
+ },
+ "model": "sonnet"
+}
