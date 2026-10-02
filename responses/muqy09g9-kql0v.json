@@ -1,0 +1,50 @@
+{
+ "id": "muqy09g9-kql0v",
+ "finishedAt": "2026-10-02T12:32:13.363Z",
+ "durationMs": 11909,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontdek het geheim van de kraaienkamer",
+     "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Kraaienkamer onder Velmoor"
+  },
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Rem de steen af en vecht tegen de kracht",
+   "Geef je over en laat alles stromen",
+   "Roep Maren om de Orde tegen te houden"
+  ],
+  "gameOver": false,
+  "heroLook": "Thin young man with messy dark hair, hollow cheeks and sharp grey eyes, wearing torn, patched brown robes and worn-out boots, dirty hands, underfed but determined.",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man with messy dark hair and torn patched brown robes pressing a glowing black stone with red veins into a carved crow relief in a damp wine cellar, red light flooding outward, old barrels around, dramatic shadows",
+   "fallback": "A damp stone wine cellar with huge mossy barrels and a carved crow relief on the wall glowing with faint red light."
+  },
+  "narration": "Je drukt de steen in de holte. Hij past alsof hij er al eeuwen op wachtte.\n\nEven gebeurt er niets. Dan slaat een kou door je armen heen, en de rode aderen schieten als bliksem over het reliëf. De kraai lijkt zijn vleugels te spreiden. Je probeert je hand terug te trekken, maar de steen houdt je vast, en iets groots en ouds stroomt je lichaam in. Je knieën knikken, je tanden klapperen, en je ziet het even door de ogen van een vogel: een stad, een berg, een troon van zwart glas.\n\n\"Ja,\" zucht de stem, nu helder als een klok. \"Eindelijk.\"\n\nJe hebt de kracht niet kunnen beheersen. Ze beheerst jou, een heartbeat lang, en een schokgolf slingert je tegen een wijnvat. Je ribben schreeuwen. Maren staat bleek, de lucifer dooft in haar vingers.\n\nAchter de tonnen klinken de laarzen, nu vlakbij. In de muur schuift het reliëf kreunend open, en daarachter gaapt een smalle gang vol rood licht.",
+  "portrait": "\"\"",
+  "summary": "Joshua, straatarme magiër met twaalf munten, vond in Velmoor een fluisterende zwarte steen. Twee mannen van de Orde van de Kraai jagen hem na. Met de oude Maren, ex-kluizenaar van de Orde, vluchtte hij de wijnkelders in. Hij drukte de steen in het kraaienreliëf; een oude kracht overspoelde hem en gooide hem tegen een vat. Een geheime rode gang opent zich. De Orde is vlakbij.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
