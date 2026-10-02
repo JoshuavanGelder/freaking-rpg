@@ -1,0 +1,47 @@
+{
+ "id": "murce241-gx5nq",
+ "finishedAt": "2026-10-02T19:14:52.048Z",
+ "durationMs": 11511,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Maren sleurt je door een kronkelende steeg, langs natte muren en stinkende vaten. Achter jullie sterft het kraaiengekrijs langzaam weg. Je telt je stappen niet meer. Je voelt alleen nog de steen, die zacht in je hand zoemt als een kat.\n\n\"Links,\" hijgt Maren. \"Daar.\" Ze wijst naar een smalle opening onder een scheve houten trap, half verborgen achter opgestapelde kisten. Jullie kruipen erdoor. Erachter ligt een vergeten kelderhok vol stro, kapotte manden en de zoete geur van oud appelhout. Het is klein, droog en donker.\n\nMaren schuift een kist voor de opening en luistert lang met haar oor tegen het hout. Dan zakt ze naast je neer. \"Niemand volgt ons. Voorlopig.\"\n\nZe scheurt een reep van haar mouw en bindt hem om je bloedende pols. Je ogen vallen bijna dicht. Het kraaienteken op je hand is warm geworden, bijna als een slapende vogel.\n\n\"Slaap,\" fluistert de steen. \"Ik hou de wacht. Een beetje.\"\n\nMaren kijkt je aan, uitgeput maar wakker. \"Eén van ons moet de eerste wacht nemen.\"",
+  "choices": [
+   "Neem zelf de eerste wacht",
+   "Laat Maren waken en slaap",
+   "Vraag Maren wat ze nog meer weet"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 2,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Red Maren boven de put"
+   ],
+   "location": "Kelderhok onder de trap"
+  },
+  "summary": "Joshua, straatarme magiër, vond in Velmoor een fluisterende steen. De Orde van de Kraai jaagt hem op. Hij sloot een pact met de kroonkraai (één dienst verschuldigd) en kreeg kraaienteken en Kraaienzegel. Hij bevrijdde Maren. Met kraaien en Marens gele poeder ontsnapten ze de Orde; de lange leider met zilveren kraaienspeld en krabben op zijn wang wil de steen terug. Nu schuilen ze in een kelderhok onder een trap, Joshua zwaar gewond.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A small dim cellar nook under a wooden staircase, straw on the floor, crates blocking the entrance, a thin and ragged young man with messy dark hair in torn brown robes resting beside a young woman keeping watch, a faint glowing stone in his hand, warm dim light",
+   "fallback": "A small dim cellar nook under a wooden staircase with straw, old baskets and stacked crates, faint warm light through the cracks."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet"
+}
