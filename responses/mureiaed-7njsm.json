@@ -1,0 +1,48 @@
+{
+ "id": "mureiaed-7njsm",
+ "finishedAt": "2026-10-02T20:14:07.553Z",
+ "durationMs": 10442,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag hem de pactschuld te breken",
+   "Vraag wat de steen werkelijk is",
+   "Eis dat hij je leert wat hij weet"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A cramped candlelit workshop with crooked bookshelves, jars of dried herbs and a glowing chalk circle on the floor, a crow silhouette in the doorway."
+  },
+  "narration": "\"Geen keus,\" herhaalt de oude man. Hij lacht, een droog geluid als bladeren over steen. \"Dat zeggen ze allemaal, jongen. Het is de mooiste leugen die er bestaat, want hij is half waar.\"\n\nJe ballen je vuisten. De honger, de soldaten, de steen die als een hete kool in je zak brandde: je weet precies hoe smal die weg was. De tekens in de krijtcirkel flakkeren mee met je woede, en een warme rode zweem kruipt langs je vingers voor je hem kunt tegenhouden.\n\nDe spreukenmaker kijkt ernaar en knikt langzaam. \"Daar. Dát bedoel ik. Boos zijn mag. Het is brandstof.\" Zijn goede oog wordt zacht, bijna vriendelijk. \"Ik noemde het dom omdat de kroonkraai nooit vraagt wat je kunt missen. Hij vraagt wat je het hardst nodig zult hebben. Maar een schuld is ook een touw, en aan touwen kun je trekken.\"\n\nOp de dorpel schuift de kraai een stap dichterbij. Hij luistert mee.",
+  "portrait": "\"\"",
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai (leider met zilveren kraaienspeld) jaagt op hem. Hij sloot een pact met de kroonkraai (één dienst verschuldigd). Hij betaalde de bakker eerlijk, ontsnapte aan soldaten; looiers wezen hem af. Hij vond het hok van de oude spreukenmaker (wit oog), die hem verwachtte, de steen kent en zegt dat eerdere dragers slecht eindigden. Hij noemde het pact dom; Joshua verdedigde zich boos, rode magie flikkerde. De man zegt dat een schuld ook een touw is waaraan je kunt trekken. De kraai luistert op de dorpel.",
+  "title": "\"\""
+ },
+ "model": "sonnet"
+}
