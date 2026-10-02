@@ -1,0 +1,49 @@
+{
+ "id": "muqokr6z-yy8ks",
+ "finishedAt": "2026-10-02T08:08:24.638Z",
+ "durationMs": 22776,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "narration": "Je graait in je zak en telt je munten uit op de toonbank. Acht. Wol telt mee met zijn pluizige vingers en schudt treurig zijn hoofd. \"De boete had je al betaald, jongen. Het kaartje kost tien. Je zit twee munten te kort.\"\n\nJe staart naar de munten. De munten staren terug. Dan kijkt Wol naar de plakkerige sok in je hand. Zijn kraaloogjes glimmen. \"Die sok... echt topkwaliteit. Heel plakkerig. Geef hem aan mij, dan reken ik hem als twee munten.\"\n\nJe geeft hem de sok. Wol drukt hem ontroerd tegen zijn borst. Hij stempelt een kaartje met een sokvormig gaatje en schuift het over de toonbank. \"Fijne dag. Pas op voor de zeepbellen. Ze hebben meningen.\"\n\nHet draaihek zegt \"DING!\" en laat je nu netjes door. Voor je rolt een zeepbel zo groot als een auto over het pad. Hij kijkt je recht aan, voor zover een bel dat kan.",
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": -8,
+   "xp": 10,
+   "addItems": [
+    "Pretparkkaartje"
+   ],
+   "removeItems": [
+    "Plakkerige sok"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Pretpark van Verloren Sokken"
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Spring in de grote zeepbel",
+   "Ren er razendsnel omheen",
+   "Vraag de zeepbel naar zijn mening"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Young man with short messy blond-brown hair in a red jacket and gold boots facing a giant floating soap bubble on a path in an amusement park decorated with socks, bright colors",
+   "fallback": "A colorful amusement park path lined with hanging socks, giant soap bubbles floating in the air, a Ferris wheel in the distance, soft morning light."
+  },
+  "portrait": "",
+  "summary": "Barry Allen zit vast in een eeuwige 07:00. Een sprekende lamp met cape stuurde hem op zoek naar de gestolen maandag, gestolen door een Sokkenfluisteraar met een gigantische gestreepte sok. In het Pretpark van Verloren Sokken vertelde kaartjesverkoper Wol dat de dief (lange man, jas van gebreide mist) naar de Wasmachine van het Noodlot ging. Barry kreeg een boete, betaalde het kaartje met zijn laatste munten en de plakkerige sok. Nu staat hij binnen, voor een enorme zeepbel op het pad naar de Wasmachine.",
+  "title": ""
+ },
+ "model": "sonnet"
+}
