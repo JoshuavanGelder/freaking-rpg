@@ -1,0 +1,48 @@
+{
+ "id": "musef4mm-vk70a",
+ "finishedAt": "2026-10-03T12:59:27.211Z",
+ "durationMs": 12547,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je opent je mond en spreekt de naam uit. Niet fluisterend, maar luid, alsof je hem in de muren wilt kerven.\n\nHet is een vergissing. Je voelt het al bij de tweede lettergreep. De naam is geen woord, het is een deur, en je hebt hem van binnenuit opengetrapt. De lantaarn dooft helemaal. De krijtcirkel schreeuwt rood op, en de fluisterende steen in je vuist brandt door je huid heen.\n\nEen stem die niet de jouwe is, ademt door je keel: \"Wie roept mij?\" De oude spreukenmaker schreeuwt iets, zijn vastgeknoopte hand rukt aan de vloer, zijn melkwitte oog wijd open. De kraai schiet met een rauwe kreet naar binnen en slaat zijn vleugels om de steen, alsof hij een vuur wil smoren.\n\nDe knoop om de naam scheurt half los. Je knieën geven mee en een koude greep trekt je van binnenuit omlaag. Je hebt nog een ogenblik om te kiezen voor hij je volledig opent.",
+  "choices": [
+   "Houd de knoop vast met pure wilskracht",
+   "Smijt de steen naar de kraai",
+   "Vraag de spreukenmaker om hulp"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De oude spreukenmaker (wit oog) leerde hem drie knopen; zijn hand is vastgeknoopt. Joshua accepteerde de prijs: de naam van de eerste meester van de Orde, slapend in de steen. Hij sprak de naam hardop uit en de knoop scheurt half los; een vreemde stem ademt door hem. De kraai slaat zijn vleugels om de steen. Joshua moet nu kiezen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A ragged young mage in torn poor clothes on his knees in a chalk circle blazing red, clutching a glowing stone, a black crow wrapping its wings around it, frail elderly man with wild white hair and milky left eye shouting, dark workshop, red light",
+   "fallback": "A dim stone workshop with a chalk circle on the floor glowing red, an extinguished lantern, shadows swirling in the air."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
