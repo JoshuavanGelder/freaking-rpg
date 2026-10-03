@@ -1,0 +1,54 @@
+{
+ "id": "musxwn3t-fdfe3",
+ "finishedAt": "2026-10-03T22:05:01.332Z",
+ "durationMs": 14237,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Is dit goed?\" vraag je hees. \"En wat bedoel je met de rest?\"\n\nDe oude man trekt met trillende hand een nieuwe cirkel om je heen, kleiner, strakker. \"Goed? Je leeft nog, jongen. Dat is meer dan de meesten die die naam ooit uitspraken.\" Hij tikt met zijn inktvinger op je borst, precies waar het koude tikken zit. \"Hij zit nog in je. Niet heel. Een splinter. De naam ligt half geknoopt in je hoofd, half open.\"\n\nHij schuift de fluisterende steen naar je toe. Hij is nu stil, zwart als natte kool.\n\n\"De rest is kiezen,\" kraakt hij. \"Je kunt de knoop afmaken en hem terugduwen in de steen, voorgoed laten slapen. Of je laat de splinter in je, en leert hem te dragen. Dat maakt je sterk. Gevaarlijk sterk. Maar hij zal blijven fluisteren.\"\n\nDe kraai hipt dichterbij, zijn smeulende veren rokend. Hij kijkt je aan alsof hij al weet wat je kiest.\n\nIn je borst tikt het. Geduldig. Wachtend.",
+  "choices": [
+   "Duw de meester terug in de steen",
+   "Houd de splinter en leer hem dragen",
+   "Vraag de kraai wat hij wil"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 1,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Splinter van de meester",
+     "kind": "zwakte",
+     "detail": "Een koude stem van de eerste meester tikt en fluistert in je borst."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Joshua sprak de naam hardop uit; een splinter van de meester zit nu koud tikkend in zijn borst. Hij maakte de belofte-knoop los: de spreukenmaker is vrij en helpt. Nu moet Joshua kiezen: de meester terugduwen in de steen, of de splinter houden voor gevaarlijke kracht.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A ragged young man in torn poor clothes sitting exhausted in a small chalk circle in a dim workshop, a frail elderly man in his seventies with wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe tapping his chest, black stone on the floor, smoking crow nearby, faint lantern light",
+   "fallback": "A dim cluttered workshop with a chalk circle on wooden floor, a black stone lying in its center, faint lantern glow, scattered parchment and ink pots"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
