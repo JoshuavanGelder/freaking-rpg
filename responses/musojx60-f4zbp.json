@@ -1,0 +1,48 @@
+{
+ "id": "musojx60-f4zbp",
+ "finishedAt": "2026-10-03T17:43:11.356Z",
+ "durationMs": 15548,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de zweep los. Dat is het moeilijkste. De rode zweem wil razen, maar je ademt in, telt tot de stem in je borst zwijgt en laat de zweem zacht door je zwarte vingers lekken, als water door een spleet.\n\nNu zie je het. De knoop is geen kluwen. Het is een gewone lus met een tweede lus eronder, en je hebt hem zelf gelegd, dus je weet waar je hand begon. Je volgt hem terug. Door je mond fluistert iets spottend: \"Langzamer, kind.\" Je antwoordt niet.\n\nJe tilt het eerste uiteinde op. Je geeft de belofte terug in plaats van hem te breken. \"Ik laat je gaan,\" zeg je. \"Je bent vrij.\"\n\nDe grijze lijn boven de knokkels van de oude man lost op in as. Hij trekt zijn hand terug en wrijft over zijn rode pols. De kraai laat de steen los, smeulend en hijgend. Je zwarte nagels worden langzaam bleek, maar in je borst blijft iets koud tikken, als een tweede hartslag.\n\n\"Goed,\" kraakt de spreukenmaker, en hij reikt naar zijn krijt. \"Nu de rest.\"",
+  "choices": [
+   "Vraag hem de stem in je borst te bedwingen",
+   "Vraag wat de kraai nu zal doen",
+   "Pak de steen en vlucht via schaduwstap"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Joshua sprak de naam hardop uit en een vreemde stem ademt nu door hem. Na een mislukte poging lukte het hem rustig de belofte-knoop los te maken: de spreukenmaker is vrij en wil helpen. De kraai laat de steen los. De koude stem tikt nog in Joshua's borst.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A ragged young mage in torn poor clothes kneeling, gently unpicking a glowing grey thread of light from the wrist of a frail elderly man with wild white hair and milky left eye, thread dissolving into ash, dim workshop, red embers, black crow nearby, chalk circle fading",
+   "fallback": "A dim wizard's workshop with a fading chalk circle on the floor, drifting ash and faint red embers, lantern light flickering."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
