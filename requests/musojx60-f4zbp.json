@@ -1,0 +1,185 @@
+{
+ "id": "musojx60-f4zbp",
+ "createdAt": "2026-10-03T17:42:53.352Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 6,
+  "maxHp": 30,
+  "gold": 8,
+  "xp": 509,
+  "level": 6,
+  "location": "Werkplaats van de spreukenmaker",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": false
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De oude spreukenmaker leerde hem drie knopen; Joshua accepteerde als prijs de naam van de eerste meester, slapend in de steen. Hij sprak de naam hardop uit en een vreemde stem ademt door hem. De spreukenmaker zit vastgeknoopt door Joshua's belofte en biedt hulp als hij losgemaakt wordt. Joshua's poging de knoop los te maken mislukte: de knoop werd strakker en hij raakte gewond. De kraai klemt de steen.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Vraag meteen naar de prijs",
+   "narration": "\"De prijs,\" zeg je. \"Nu. Voor de derde les, zoals afgesproken.\"\n\nDe oude man kijkt naar zijn vastgeknoopte hand. Hij trekt er niet meer aan. Het grijze lijntje boven zijn knokkels trilt zacht, als een snaar.\n\n\"Eerlijk is eerlijk,\" kraakt hij. \"Je hebt me goed gebonden, en dus hoor je het zonder omwegen.\" Zijn melkwitte oog draait naar je zak, waar de steen gretig gloeit. \"Ik wil een naam. Niet de jouwe. De naam die de steen draagt, de naam die hij fluistert als je slaapt. Je leert hem pas kennen in de derde les. Dan schrijf ik hem op, en dan is hij van mij.\"\n\nHij laat zijn stem zakken. \"Geen bloed. Geen leven. Mijn regels. Maar wie een naam kent die de steen noemt, kent ook de eerste meester van de Orde. Ik wil hem terug, jongen. Wat ik ermee doe, vertel ik je niet.\"\n\nOp de dorpel zet de kraai een stap naar binnen. Zijn zwarte oog staat strak op jou."
+  },
+  {
+   "action": "Onderhandel: vraag wat de prijs écht inhoudt",
+   "narration": "\"Zonder omwegen is geen antwoord,\" zeg je. \"Wat houdt die prijs écht in? Wat gebeurt er met de eerste meester als jij zijn naam hebt?\"\n\nDe oude man zwijgt lang. Zijn vastgeknoopte hand ligt zwaar op de vloer. Je voelt de tweede knoop nog aan je vingers trekken, en je gebruikt hem zoals hij is bedoeld: als vraag, niet als greep. \"Zeg me de waarheid,\" zeg je zacht. \"Ik vraag het als gunst.\"\n\nHet grijze lijntje trilt. De spreukenmaker slikt. \"Hij was mijn meester,\" kraakt hij. \"Hij bond mijn naam aan de Orde, jaren geleden. Met zijn naam in mijn hand kan ik die band snijden. Dat is alles. Geen wraak op jou, geen vloek. Maar hij is niet dood, jongen. Hij slaapt in de steen. Wie zijn naam kent, kan hem wekken of voorgoed laten rusten.\"\n\nOp de dorpel buigt de kraai zijn kop, alsof hij dit al wist. In je zak klopt de steen als een hart dat luistert.\n\n\"Nu weet je het,\" zegt de oude man. \"Accepteer, of ga weg met wat je hebt.\""
+  },
+  {
+   "action": "Accepteer de prijs en begin de derde les",
+   "narration": "\"Ik accepteer,\" zeg je. De woorden voelen zwaarder dan je verwachtte, alsof je er iets mee ondertekent dat nooit meer wegspoelt. De oude man knikt langzaam. Hij pakt met zijn vrije hand een stuk krijt en zet het naast je knie. \"De derde les is de naam,\" zegt hij. \"Een knoop om een naam is geen knoop meer. Het is een sleutel.\"\n\nJe haalt de fluisterende steen uit je zak. Hij is heet, bijna levend. De lantaarn dooft tot een bleke vlam. Je sluit je hand om de steen en roept de rode zweem, en nu komt hij niet als draad maar als stem. Hij fluistert, eerst onverstaanbaar, dan helder, lettergreep voor lettergreep. Je legt een lus om elk geluid, zoals je geleerd hebt, trekt mee, laat niet los.\n\nHet kost je veel. Je neus bloedt, je knieën trillen en je hoort iets in de steen ademen. Dan sluit de knoop. De naam hangt in de lucht, donker en kil, en past precies in je geheugen.\n\nDe oude man staart naar je. Op de dorpel zet de kraai nog een stap naar binnen, zijn snavel half open.",
+   "picture": "A ragged young mage in torn poor clothes sitting in a glowing chalk circle in a dim workshop, a whispering stone in his hand pulsing red, a thread of dark light forming a knot around a written name, frail elderly man with wild white hair and milky left eye watching, a crow on the threshold, lantern light"
+  },
+  {
+   "action": "Spreek de naam hardop uit",
+   "narration": "Je opent je mond en spreekt de naam uit. Niet fluisterend, maar luid, alsof je hem in de muren wilt kerven.\n\nHet is een vergissing. Je voelt het al bij de tweede lettergreep. De naam is geen woord, het is een deur, en je hebt hem van binnenuit opengetrapt. De lantaarn dooft helemaal. De krijtcirkel schreeuwt rood op, en de fluisterende steen in je vuist brandt door je huid heen.\n\nEen stem die niet de jouwe is, ademt door je keel: \"Wie roept mij?\" De oude spreukenmaker schreeuwt iets, zijn vastgeknoopte hand rukt aan de vloer, zijn melkwitte oog wijd open. De kraai schiet met een rauwe kreet naar binnen en slaat zijn vleugels om de steen, alsof hij een vuur wil smoren.\n\nDe knoop om de naam scheurt half los. Je knieën geven mee en een koude greep trekt je van binnenuit omlaag. Je hebt nog een ogenblik om te kiezen voor hij je volledig opent.",
+   "picture": "A ragged young mage in torn poor clothes on his knees in a chalk circle blazing red, clutching a glowing stone, a black crow wrapping its wings around it, frail elderly man with wild white hair and milky left eye shouting, dark workshop, red light"
+  },
+  {
+   "action": "Vraag de spreukenmaker om hulp",
+   "narration": "\"Oude man!\" gil je. De stem in je keel snijdt je woorden doormidden, maar je krijgt er genoeg uit. \"Help me!\"\n\nDe spreukenmaker kijkt je aan met zijn melkwitte oog. Hij rukt aan zijn vastgeknoopte hand, en de knoop die jij legde houdt hem onverbiddelijk vast. Je belofte is sterker dan zijn angst. Hij kan niet bij je komen.\n\n\"Ik kan niet!\" brult hij. \"Jij hebt mijn hand gebonden, jongen!\"\n\nJe hebt geen tijd voor spijt. De koude greep zakt dieper, tot in je borst. Je ziet je eigen handen donker worden, de nagels zwart als kraaienveren. De kraai klampt zich om de steen en krijst, zijn vleugels beven.\n\nDe oude man hijgt. Hij kijkt naar de grijze lijn boven zijn knokkels, dan naar jou. \"Maak me los, dan help ik je. Maar de knoop zit niet meer scheef, jongen. Je hebt hem zelf gelegd. Ontknoop hem, snel, of vecht alleen!\"\n\nAchter je ogen dreunt de naam als een gong."
+  },
+  {
+   "action": "Ontknoop de belofte van de oude man",
+   "narration": "Je grijpt naar de grijze lijn boven de knokkels van de oude man. Het is je eigen knoop, dus je kent hem. Dat denk je. Maar de vreemde stem in je borst kent hem beter.\n\nJe zoekt de lus. Je vingers zijn zwart en traag, en de rode zweem komt niet als draad, maar als een brandende zweep. Je trekt aan het verkeerde einde.\n\nDe knoop trekt strakker. De spreukenmaker schreeuwt en zijn vastgeknoopte hand knarst tegen de vloer. Het grijze lijntje snijdt een rode streep om zijn pols. Door je eigen mond lacht iets zacht: \"Goed geprobeerd, kind.\"\n\nDe terugslag slaat je tegen de grond. Je hoofd dreunt, je lippen smaken naar bloed. De kraai krijst en klemt zich om de steen, zijn veren smeulen. De oude man hijgt en kijkt je aan, grijs in zijn gezicht.\n\n\"Nog één keer,\" fluistert hij, \"en dan rustiger. Of de naam neemt je helemaal.\""
+  }
+ ],
+ "action": "Probeer de knoop rustig opnieuw los te maken",
+ "roll": 10
+}
