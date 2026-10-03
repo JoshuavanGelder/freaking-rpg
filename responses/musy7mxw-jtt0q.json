@@ -1,0 +1,54 @@
+{
+ "id": "musy7mxw-jtt0q",
+ "finishedAt": "2026-10-03T22:13:32.894Z",
+ "durationMs": 15223,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je kruipt op je knieën naar de rand van de nieuwe cirkel en houdt je linkerhand boven het krijt. De zwarte vlam flakkert, koud als een winternacht in een kelder.\n\n\"Voorzichtig,\" kraakt de spreukenmaker. \"Krijt is geen hout, jongen. Krijt is een belofte.\"\n\nJe laat de vlam zakken. Hij brandt niet. Hij eet. De witte lijn wordt grijs, dan zwart, dan is hij weg, en de magie die erin zat stroomt koud je pols in. Je voelt je even minder leeg. Minder hongerig.\n\nIn je borst zucht iets tevreden. \"Zie je wel,\" fluistert de meester. \"Wij hoeven niets te maken. Wij nemen.\"\n\nJe trekt je hand terug voor de vlam verder kruipt. Het lukt, net. Er zit een gat in de cirkel, zo breed als een vinger.\n\nDe oude man staart naar het gat. De kraai krijst en vliegt naar de deur. \"Die cirkel,\" zegt de spreukenmaker zacht, \"hield hém vast. Niet jou.\"",
+  "choices": [
+   "Herstel de cirkel snel met krijt",
+   "Vraag wat de vlam precies is",
+   "Laat de vlam de hele cirkel opeten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 2,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Zwarte vlam",
+     "kind": "kracht",
+     "detail": "Je linkerhand roept een koude vlam op die magie opeet en je voedt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Joshua sprak de naam uit, een splinter van de meester drong in hem. Hij liet de spreukenmaker vrij en hield de splinter, die in zijn linkerhand zit en een koude zwarte vlam geeft. Die vlam eet magie en voedt Joshua. Hij testte hem op de krijtcirkel en brandde een gat in de cirkel die de meester vasthield. De meester fluistert: 'Wij nemen.'",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling, his left hand holding a lightless black flame that devours a white chalk line on a stone floor, elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe staring, dim workshop",
+   "fallback": "Dim cluttered spellmaker's workshop, stone floor with a white chalk circle broken by a small blackened gap, a dead lantern, ink pots and scrolls on a crooked table"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
