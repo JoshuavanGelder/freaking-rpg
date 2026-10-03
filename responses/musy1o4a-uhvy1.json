@@ -1,0 +1,61 @@
+{
+ "id": "musy1o4a-uhvy1",
+ "finishedAt": "2026-10-03T22:09:00.465Z",
+ "durationMs": 20965,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ik houd hem,\" zeg je.\n\nDe oude man sluit zijn goede oog. \"Dan leer je dragen. Adem met hem mee, niet tegen hem in.\"\n\nJe probeert het. Je ademt in, en het koude tikken ademt mee. Even voelt het als een tweede hart dat in de maat slaat. Dan glijdt het uit de maat. De splinter grijpt de opening en kruipt omhoog, langs je ribben, naar je keel. Je ziet de werkplaats door twee paar ogen: de jouwe, en een paar ouder, kouder, hongerig.\n\n\"Wat een mager huis heb je, kind,\" fluistert hij. \"Ik zal het inrichten.\"\n\nJe slaat met je vuist op de vloer tot de pijn je terugtrekt. Het werkt. Half. Je ligt hijgend op het krijt, bloed op je lip, je linkerhand nog koud tot aan de pols. In die hand flakkert iets zwarts, als een vlam die geen licht geeft.\n\nDe kraai schuift weg van je. De spreukenmaker kijkt naar je hand. \"Hij heeft een plek gevonden,\" zegt hij zacht. \"Nu moet je hem daar houden.\"",
+  "choices": [
+   "Knoop de splinter vast in je hand",
+   "Vraag de meester wat hij wil",
+   "Test de zwarte vlam op het krijt"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Wek of laat de eerste meester rusten"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Zwarte vlam",
+     "kind": "kracht",
+     "detail": "Je linkerhand kan een koude, lichtloze vlam van de meester oproepen."
+    },
+    {
+     "name": "Splinter van de meester",
+     "kind": "zwakte",
+     "detail": "De meester zit in je linkerhand en grijpt elke zwakte om meer te nemen."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Joshua sprak de naam uit, een splinter van de meester drong in hem. Hij liet de spreukenmaker vrij. Joshua koos de splinter te houden; die nestelde zich in zijn linkerhand, die nu een koude zwarte vlam kan oproepen. De meester spot en wil zijn 'huis inrichten'. De spreukenmaker zegt dat Joshua hem daar moet vasthouden.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A thin ragged young man in torn patched clothes lying gasping in a chalk circle, his left hand frost-pale holding a flickering lightless black flame, frail elderly man in his seventies with wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over patched woolen robe watching, a smoldering crow stepping back, dim workshop",
+   "fallback": "A dim cluttered workshop with a smudged chalk circle on the floor, a dark stone, a guttering lantern and scattered ink pots in cold shadow"
+  },
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
