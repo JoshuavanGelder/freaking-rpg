@@ -1,0 +1,48 @@
+{
+ "id": "musehchp-84qqi",
+ "finishedAt": "2026-10-03T13:01:09.787Z",
+ "durationMs": 10635,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Oude man!\" gil je. De stem in je keel snijdt je woorden doormidden, maar je krijgt er genoeg uit. \"Help me!\"\n\nDe spreukenmaker kijkt je aan met zijn melkwitte oog. Hij rukt aan zijn vastgeknoopte hand, en de knoop die jij legde houdt hem onverbiddelijk vast. Je belofte is sterker dan zijn angst. Hij kan niet bij je komen.\n\n\"Ik kan niet!\" brult hij. \"Jij hebt mijn hand gebonden, jongen!\"\n\nJe hebt geen tijd voor spijt. De koude greep zakt dieper, tot in je borst. Je ziet je eigen handen donker worden, de nagels zwart als kraaienveren. De kraai klampt zich om de steen en krijst, zijn vleugels beven.\n\nDe oude man hijgt. Hij kijkt naar de grijze lijn boven zijn knokkels, dan naar jou. \"Maak me los, dan help ik je. Maar de knoop zit niet meer scheef, jongen. Je hebt hem zelf gelegd. Ontknoop hem, snel, of vecht alleen!\"\n\nAchter je ogen dreunt de naam als een gong.",
+  "choices": [
+   "Ontknoop de belofte van de oude man",
+   "Vecht zelf tegen de stem",
+   "Vraag de kraai om zijn dienst nu"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De oude spreukenmaker (wit oog) leerde hem drie knopen. Joshua accepteerde de prijs: de naam van de eerste meester van de Orde, slapend in de steen. Hij sprak de naam hardop uit; de knoop scheurt half los en een vreemde stem ademt door hem. De kraai omklemt de steen. De spreukenmaker kan niet helpen: Joshua's knoop houdt zijn hand vast. Hij biedt hulp als Joshua hem losmaakt.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A dim workshop with a chalk circle glowing red on the floor, a snuffed lantern, dark shadows and swirling dust."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
