@@ -1,0 +1,48 @@
+{
+ "id": "musgzsy7-vo0xv",
+ "finishedAt": "2026-10-03T14:11:28.909Z",
+ "durationMs": 10098,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": false
+  },
+  "title": "",
+  "narration": "Je grijpt naar de grijze lijn boven de knokkels van de oude man. Het is je eigen knoop, dus je kent hem. Dat denk je. Maar de vreemde stem in je borst kent hem beter.\n\nJe zoekt de lus. Je vingers zijn zwart en traag, en de rode zweem komt niet als draad, maar als een brandende zweep. Je trekt aan het verkeerde einde.\n\nDe knoop trekt strakker. De spreukenmaker schreeuwt en zijn vastgeknoopte hand knarst tegen de vloer. Het grijze lijntje snijdt een rode streep om zijn pols. Door je eigen mond lacht iets zacht: \"Goed geprobeerd, kind.\"\n\nDe terugslag slaat je tegen de grond. Je hoofd dreunt, je lippen smaken naar bloed. De kraai krijst en klemt zich om de steen, zijn veren smeulen. De oude man hijgt en kijkt je aan, grijs in zijn gezicht.\n\n\"Nog één keer,\" fluistert hij, \"en dan rustiger. Of de naam neemt je helemaal.\"",
+  "choices": [
+   "Probeer de knoop rustig opnieuw los te maken",
+   "Laat de kraai de steen dichtklemmen",
+   "Sla terug met de rode windstoot"
+  ],
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De oude spreukenmaker leerde hem drie knopen; Joshua accepteerde als prijs de naam van de eerste meester, slapend in de steen. Hij sprak de naam hardop uit en een vreemde stem ademt door hem. De spreukenmaker zit vastgeknoopt door Joshua's belofte en biedt hulp als hij losgemaakt wordt. Joshua's poging de knoop los te maken mislukte: de knoop werd strakker en hij raakte gewond. De kraai klemt de steen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "dim workshop, red chalk circle flickering, a crow with smoldering feathers clutching a glowing stone",
+   "fallback": "A dim workshop with a glowing red chalk circle on the floor and flickering lantern light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "sonnet"
+}
