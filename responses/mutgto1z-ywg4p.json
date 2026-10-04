@@ -1,0 +1,54 @@
+{
+ "id": "mutgto1z-ywg4p",
+ "finishedAt": "2026-10-04T06:54:50.634Z",
+ "durationMs": 30511,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Dit is wat er gebeurt als je mij niet gehoorzaamt!\" Je stem knalt tegen de stenen gewelven.\n\nJe strekt je hand naar Garrel uit en roept de oude magie op. Ze komt. Dik, zwart, gulzig. Maar er is niets meer in je om haar te sturen. Je borst is leeg, je benen zijn water, en de magie voelt het.\n\nZe draait zich om.\n\nHet zwart slaat terug door je arm, heet als gesmolten lood. Je schreeuwt. De straal schiet scheef weg, mist Garrel op een handbreedte en vreet een gat in de buitenmuur. Steen spat weg. Koude nachtlucht stroomt de troonzaal in.\n\nGarrel ziet zijn kans. Kreunend sleept hij zich naar het gat en laat zich vallen, de duisternis in.\n\nJe zakt terug in de troon. Je hand trilt en ruikt naar as. De leerlingen staren. Ilse kijkt naar de grond. Maar de Abt glimlacht weer.\n\nErgens buiten slaan duizend kraaienvleugels.",
+  "choices": [
+   "Volg Garrel door de ogen van kraaien",
+   "Stuur Vorrin om Garrel te jagen",
+   "Laat de Abt je wond genezen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Verschroeide hand",
+     "kind": "zwakte",
+     "detail": "Je hand is verbrand door teruggeslagen oude magie en trilt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Ilse zou hem doden, Vorrin jagen, de Abt hem tot stilte genezen. De leerlingen knielden. Garrel weigerde, heeft geen verborgen naam en werd geveld. Ilses knoop zit nu om haar wil; ze is bang. Joshua wilde Garrel doden, maar de uitgeputte oude magie sloeg terug, verschroeide zijn hand en blies een gat in de muur. Garrel vluchtte gewond de nacht in. De Abt glimlacht weer.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cold stone throne hall in a dark tower at night, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, ragged grey shawl, recoiling on a black crow-carved throne as black smoky magic lashes back up his arm, a fresh jagged hole blasted in the outer wall showing night sky, dust and rubble flying, apprentices shielding their faces.",
+   "fallback": "Cold stone throne hall in a dark tower at night, black crow-carved throne, jagged hole in the outer wall open to a starry sky, scattered rubble and dust, flickering candles."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
