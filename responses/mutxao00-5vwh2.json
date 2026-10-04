@@ -1,0 +1,57 @@
+{
+ "id": "mutxao00-5vwh2",
+ "finishedAt": "2026-10-04T14:35:42.141Z",
+ "durationMs": 16448,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Je hebt je troon terug, ouwe man,\" zeg je. \"Maak de akkers weer warm. En doe niemand kwaad.\"\n\nDe dubbele knoop trekt aan. De Zonnevorst verstijft, zijn gouden ogen vechten even tegen je bevel. Dan buigt hij. Zijn grauwe handen openen zich om de lichtknoop en het vuur stroomt naar buiten, honderden draden die tegelijk gaan zingen.\n\nDoor de ogen van je kraaien zie je het. De gouden schijven op de paaltjes gloeien op, één voor één, tot aan de horizon. De rijp op de korenaren smelt tot druppels. Ergens juicht een boer.\n\nMaar in je borst slaat zijn hart sneller, en zieker. Elke draad die hij geeft, kost hem iets. Zijn huid wordt nog grauwer.\n\n\"Tevreden?\" fluistert hij. \"Zo sterf ik sneller. En dan breek jij je eed.\"\n\nVorrin kijkt je aan. \"Moeder Veen,\" zegt hij zacht. \"Nu.\"",
+  "choices": [
+   "Ga meteen naar Moeder Veen",
+   "Deel jouw troonvuur met zijn hart",
+   "Ondervraag de Vorst over zijn ziekte"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Genees het hart van de Zonnevorst",
+     "detail": "Zijn sterven breekt je eed; zoek genezing voor zijn hart."
+    }
+   ],
+   "completeQuests": [
+    "Red de oogst van de vorst"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. De zonnetroon koos Joshua. In de grot zwoer Joshua de Zonnevorst nooit te doden en legde een dubbele knoop: de Vorst moet gehoorzamen. Een verborgen lus bindt de eed aan het stervende hart van de Vorst. De lotschaar faalde. Joshua beval de Vorst de akkers te verwarmen zonder kwaad: de oogst is gered, maar het geven versnelt het sterven van de Vorst. Sterft hij, dan breekt Joshua's eed. Vorrin wil direct naar Moeder Veen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark cave, a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes, releasing a blazing knot of golden threads that stream out of the cave; before him a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, hand raised commanding; beside him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes. Warm golden light.",
+   "fallback": "Dark rocky cave with hundreds of glowing golden threads streaming out of the entrance toward warm sunlit fields, melting frost on the stones, golden light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
