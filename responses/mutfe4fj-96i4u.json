@@ -1,0 +1,64 @@
+{
+ "id": "mutfe4fj-96i4u",
+ "finishedAt": "2026-10-04T06:14:33.853Z",
+ "durationMs": 18267,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je haalt de fluisterende steen uit je zak. Hij gloeit nu, dofrood, als een kooltje dat wakker wordt.\n\n\"Kind,\" fluistert de meester. \"Doe dit niet. Ik heb je alles gegeven.\"\n\n\"Je gaf me niets,\" zeg je. \"Ik heb het genomen.\" Je drukt de steen tegen je borst en spreekt zijn naam. \"Aurek Valdemoor. Naar binnen.\"\n\nHet voelt alsof iemand een vishaak door je ribben trekt. Hij klauwt, hij krijst, hij grijpt zich vast aan elke ader. Je knieën knikken. Maar je wil is ijzer, en de knoop om zijn naam trekt mee. Dan ineens: stilte. Echte stilte. Voor het eerst in weken hoor je alleen je eigen hart.\n\nDe steen is zwaar en zwart geworden. Diep binnenin beweegt iets.\n\nDe oude magie blijft. Ze stroomt nog door je, maar nu is ze van jou alleen.\n\nOp de troon buigt de kroonkraai zijn kop tot zijn snavel het hout raakt. Langs de wanden volgen honderden kraaien, golf na golf. Ilse buigt. De Abt buigt dieper.\n\nDe zwarte troon staat leeg. Hij wacht.",
+  "choices": [
+   "Ga op de troon zitten",
+   "Vraag de kraai wat de troon geeft",
+   "Beveel de Abt zijn geheimen te vertellen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Neem de troon van kraaien in",
+     "detail": "Ga zitten en laat Velmoor buigen."
+    }
+   ],
+   "completeQuests": [
+    "Beslis over de troon van kraaien"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Naam van de meester",
+     "kind": "kracht",
+     "detail": "De meester zit opgesloten in de steen en moet je gehoorzamen."
+    }
+   ],
+   "removeTraits": [
+    "Splinter van de meester",
+    "Laatste knoop"
+   ]
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, die nu van hem alleen is. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de ware naam van de eerste meester, Aurek Valdemoor. In de kraaienkamer sloot hij de meester op in de steen; de stem in zijn borst zwijgt eindelijk. De kroonkraai, honderden kraaien, Ilse en de Abt buigen voor hem. De zwarte troon wacht. Garrel haat hem nog. Vorrin Grauwveer wil hem dood en is nog vrij. De Abt waarschuwde dat Joshua niet weet wat hij losliet.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Vast round underground candlelit chamber, hundreds of crows bowing on stone ledges. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, pressing a glowing black stone to his chest, red light swirling into it. An unusually large black crow with silver leg ring bows on an empty black wooden throne.",
+   "fallback": "Vast round underground chamber lit by candles, empty stone ledges along the walls, an empty black wooden throne in the center, a dark stone glowing faintly red on the floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
