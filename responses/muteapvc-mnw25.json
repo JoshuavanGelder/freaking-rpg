@@ -1,0 +1,55 @@
+{
+ "id": "muteapvc-mnw25",
+ "finishedAt": "2026-10-04T05:43:54.937Z",
+ "durationMs": 18274,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je schuift het boek terug onder de losse plank en duwt hem dicht met je hiel. De grijze shawl sla je om je schouders. Hij ruikt nog naar pijptabak.\n\nDan word je stil. Je adem, je voeten, zelfs je hartslag lijken zachter te worden. Je glipt naar het achterraam, zwaait een been over de vensterbank en laat je in de steeg zakken. De kasseien voelen koud onder je dunne zolen.\n\nTwee stappen kom je ver.\n\nDan klinkt er een zacht getik, als een nagel tegen glas. Een zilveren draad schiet uit de schaduw en slaat om je enkel. Je smakt tegen de natte stenen. Je ribben kraken en even zie je alleen witte vonken.\n\nIlse van de Toren komt kalm de hoek om. Haar zilveren kraaienbroche glanst in het maanlicht. \"Mensen die vluchten, nemen altijd het achterraam,\" zegt ze. \"Ik ken deze steeg al twintig jaar, Joshua.\"\n\nIn je borst grinnikt de meester. \"Ze is maar met z'n tweeën hier, kind. Zij en haar trots.\"",
+  "choices": [
+   "Verbrand haar draad met de zwarte vlam",
+   "Vraag wat de Orde van je wil",
+   "Knoop haar naam vast"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 13,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [
+    "Knopenboek van de spreukenmaker"
+   ],
+   "addQuests": [
+    {
+     "title": "Haal het knopenboek terug",
+     "detail": "Verstopt onder de werkbank van de spreukenmaker."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Steeg achter de werkplaats",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en gaf hem een zwarte vlam die magie eet. Hij offerde de spreukenmaker voor zijn arm en diens oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin Grauwveer, Ilse van de Toren, de Blinde Abt. De kraaienkamer leidt naar de troon van de meester; daaronder staat diens ware naam, waarmee Joshua de kroon zonder ketting kan dragen. Joshua verstopte het knopenboek onder de werkbank, vluchtte door het achterraam, maar Ilse ving hem in de steeg met een zilveren draad om zijn enkel.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Night alley behind a soot-stained workshop, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl over his shoulders, sprawled on the stones, a glowing silver thread around his ankle. Standing over him: woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch.",
+   "fallback": "Narrow night alley behind an old workshop, wet cobblestones gleaming in moonlight, an open back window with faint candlelight, mist drifting low."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
