@@ -1,0 +1,54 @@
+{
+ "id": "mutgpwor-a9v9a",
+ "finishedAt": "2026-10-04T06:52:05.672Z",
+ "durationMs": 29390,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Ilses glimlach is nog niet van haar gezicht of je grijpt de knoop. Niet met je handen. Met alles wat je hebt.\n\nIets in je borst brandt wit. De oude magie van de spreukenmaker stroomt door je aderen, dik en zwart als teer, en je trekt. De knoop klapt dicht. Strakker dan eerst. Strakker dan ooit.\n\nIlse slaakt een kreet en valt op beide knieën. Haar vlecht schiet los en het zilveren kraaienspeldje tikt over de stenen. Ze kijkt naar je op, en de woede in haar grijze ogen is weg. Er zit nu iets anders in. Angst.\n\nJe voelt het verschil. Haar knoop zit niet meer om haar naam. Hij zit dieper, om haar wil zelf. Hij zal nooit meer een haar wegglijden.\n\nVorrin slikt hoorbaar. De Abt draait zijn blinde gezicht naar je toe en houdt op met glimlachen.\n\nOp de vloer kreunt Garrel. Hij probeert zich op te drukken. De leerlingen kijken van hem naar jou.",
+  "choices": [
+   "Laat Ilse Garrel in de kerker gooien",
+   "Bied Garrel een plek als je zwaard",
+   "Vraag de Abt je lichaam te genezen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Ilses knoop",
+     "kind": "kracht",
+     "detail": "Ilses knoop zit nu om haar wil zelf en glijdt nooit los."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Ilse zou hem doden, Vorrin jagen, de Abt hem tot stilte genezen. De leerlingen knielden. Garrel weigerde en heeft geen verborgen naam; de drie meesters velden hem op Joshua's bevel, hij leeft nog. Ilses knoop gleed even los, maar Joshua trok hem met oude magie dieper dicht, om haar wil zelf. Nu is Ilse bang. Joshua is uitgeput.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cold stone throne hall in a dark tower, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, ragged grey shawl, gripping a black crow-carved throne, black threads of light pulling taut from his hand. Before him a woman in her forties, tall, stern face, grey eyes, dark hair coming loose from its braid, long dark grey robe, kneeling in fear. Candlelight.",
+   "fallback": "Cold stone throne hall in a dark tower, black wooden throne carved with crows, a silver crow brooch lying on the stone floor, flickering candlelight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
