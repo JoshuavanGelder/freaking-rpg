@@ -2,6 +2,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   applyAnswer,
+  dropTraitByHand,
+  finishQuestByHand,
+  matchIndex,
   canMakeImage,
   defuse,
   promptAttempts,
@@ -276,4 +279,53 @@ test('krachten en zwaktes uit het verhaal: erbij, bijwerken, kwijt; nieuwe eigen
   assert.equal(adv.state.traits!.length, 1);
   assert.equal(adv.state.traits![0].detail, 'Je kunt nu ook vliegen.');
   assert.deepEqual(adv.turns[2].notes, ['Zwakte kwijt: Schaduwvrees']);
+});
+
+test('matchIndex: herkent bijna-gelijke namen, maar niet bij twijfel', () => {
+  const names = ['Zwarte vlam van de askroon', 'Windkracht', 'Bang voor vuur'];
+  assert.equal(matchIndex(names, 'zwarte vlam van de askroon'), 0);
+  assert.equal(matchIndex(names, 'Zwarte Vlam'), 0);
+  assert.equal(matchIndex(names, 'De zwarte vlam van de Askroon!'), 0);
+  assert.equal(matchIndex(names, 'Wind-kracht'), -1);
+  assert.equal(matchIndex(names, 'Vuurvrees'), -1);
+  assert.equal(matchIndex(['Vind de sleutel', 'Vind de kroon'], 'Vind de'), -1);
+  assert.equal(matchIndex(names, ''), -1);
+});
+
+test('quest en kracht worden ook afgenomen/afgerond bij een licht afwijkende naam', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-match');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  const ch = (over: Record<string, any>) => ({ hp: 0, gold: 0, xp: 0, addItems: [], removeItems: [], addQuests: [], completeQuests: [], location: '', ...over });
+  adv = applyAnswer(
+    adv,
+    makePending('turn', 'Ik pak de kroon', 4),
+    parseAnswer(raw({ changes: ch({
+      addQuests: [{ title: 'Vind de askroon', detail: 'Zoek hem in de ruïne.' }],
+      addTraits: [{ name: 'Zwarte vlam van de askroon', kind: 'kracht', detail: 'Zwarte vuren volgen jou.' }],
+    }) }))!,
+    5,
+  );
+  adv = applyAnswer(
+    adv,
+    makePending('turn', 'Ik zet de kroon op', 6),
+    parseAnswer(raw({ changes: ch({ completeQuests: ['De askroon vinden'], removeTraits: ['Zwarte vlam'] }) }))!,
+    7,
+  );
+  assert.equal(adv.state.quests.find((q) => q.title === 'Vind de askroon')!.done, true); // gedeeld kernwoord, enige open quest
+  assert.equal(adv.state.traits!.length, 0);
+});
+
+test('met de hand: quest afvinken en kracht weghalen', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-hand');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  const ch = (over: Record<string, any>) => ({ hp: 0, gold: 0, xp: 0, addItems: [], removeItems: [], addQuests: [], completeQuests: [], location: '', ...over });
+  adv = applyAnswer(adv, makePending('turn', 'Ik kijk rond', 4), parseAnswer(raw({ changes: ch({
+    addQuests: [{ title: 'Vind de askroon', detail: '' }],
+    addTraits: [{ name: 'Windkracht', kind: 'kracht', detail: '' }],
+  }) }))!, 5);
+  adv = finishQuestByHand(adv, 'vind de askroon', 9);
+  adv = dropTraitByHand(adv, 'WINDKRACHT', 10);
+  assert.equal(adv.state.quests.find((q) => q.title === 'Vind de askroon')!.done, true);
+  assert.deepEqual(adv.state.traits, []);
+  assert.equal(finishQuestByHand(adv, 'bestaat niet'), adv);
 });

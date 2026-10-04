@@ -1,19 +1,20 @@
 import React from 'react';
-import { Pressable, View } from 'react-native';
-import { useAdventure } from '../store';
+import { Alert, Pressable, View } from 'react-native';
+import { useAdventure, useApp } from '../store';
 import { useNav } from '../nav';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Bar, Button, Card, Label, Row, Screen, T, TopBar } from '../ui';
 import { PictureBox } from '../picture-view';
 import { usePictures } from '../pictures';
-import { XP_PER_LEVEL, picturesOf, worldLabel } from '../logic/game';
+import { XP_PER_LEVEL, dropTraitByHand, finishQuestByHand, picturesOf, worldLabel } from '../logic/game';
 
 /** Je held: leven, goud, level, krachten, tas en quests. Verborgen eigenschappen blijven verborgen. */
 export function SheetScreen({ id }: { id: string }) {
   const adv = useAdventure(id);
   const nav = useNav();
   const { retryPortrait } = usePictures();
+  const { patchAdventure } = useApp();
   if (!adv) {
     return (
       <Screen>
@@ -127,6 +128,20 @@ export function SheetScreen({ id }: { id: string }) {
                     <T size={15} weight="semibold" style={{ flex: 1 }}>
                       {t.name}
                     </T>
+                    <Pressable
+                      accessibilityRole="button"
+                      accessibilityLabel={`${t.kind === 'zwakte' ? 'Zwakte' : 'Kracht'} ${t.name} weghalen`}
+                      hitSlop={10}
+                      onPress={() =>
+                        Alert.alert(`${t.name} weghalen?`, 'Haal dit alleen weg als je het verhaal deze kracht of zwakte heeft zien verliezen.', [
+                          { text: 'Annuleer', style: 'cancel' },
+                          { text: 'Weghalen', style: 'destructive', onPress: () => patchAdventure(adv.id, (a) => dropTraitByHand(a, t.name)) },
+                        ])
+                      }
+                      style={{ width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' }}
+                    >
+                      <Icon name="close" size={16} color={C.muted} strokeWidth={2} />
+                    </Pressable>
                   </Row>
                   {t.detail ? (
                     <T size={13} color={C.muted} style={{ lineHeight: 18 }}>
@@ -178,6 +193,20 @@ export function SheetScreen({ id }: { id: string }) {
                   </T>
                 ) : null}
               </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`Quest ${q.title} afvinken`}
+                hitSlop={10}
+                onPress={() =>
+                  Alert.alert(`${q.title} afvinken?`, 'Vink een quest alleen af als je hem in het verhaal hebt afgerond.', [
+                    { text: 'Annuleer', style: 'cancel' },
+                    { text: 'Afvinken', onPress: () => patchAdventure(adv.id, (a) => finishQuestByHand(a, q.title)) },
+                  ])
+                }
+                style={{ width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: C.cardHi }}
+              >
+                <Icon name="check" size={16} color={C.good} strokeWidth={2.5} />
+              </Pressable>
             </Row>
           ))
         ) : (

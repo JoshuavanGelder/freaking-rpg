@@ -52,6 +52,8 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   (`traits` undefined) vragen de verteller eenmalig alles aan te vullen wat het verhaal al gaf (aanleiding: wind- en
   schaduwkrachten die niet op het heldenscherm stonden).
 
+- **Afronden en kwijtraken** (`matchIndex` in game.ts): `completeQuests` en `removeTraits` matchen niet meer alleen letterlijk maar ook op bijna-gelijke tekst (leestekens/accenten negeren, de ene tekst in de andere, genoeg gedeelde woorden; bij twijfel tussen twee geen match). De verteller moet elke beurt open quests en krachten naast het verhaal leggen (prompt: Bookkeeping check). Op het heldenscherm kan Joshua met de hand een quest afvinken (`finishQuestByHand`) en een kracht/zwakte weghalen (`dropTraitByHand`), met bevestiging. Aanleiding: quest niet afgevinkt en 'Zwarte vlam' bleef staan in het askroon-verhaal.
+
 ## Beelden (`src/pictures.tsx`, `src/services/images.ts`, `src/services/files.ts`)
 - De app roept Joshua's eigen Cloudflare Worker `claudia-image-mcp` (= zijn Images-koppeling) direct aan via JSON-RPC
   `tools/call generate_image` met `model: klein`, 512×512. URL (`…workers.dev/mcp/<SECRET>`) in SecureStore; testen

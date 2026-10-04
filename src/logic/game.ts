@@ -225,6 +225,59 @@ export function parseAnswer(raw: unknown): Answer | null {
 
 const same = (a: string, b: string) => a.trim().toLowerCase() === b.trim().toLowerCase();
 
+const squash = (s: string) =>
+  s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const words = (s: string) => squash(s).split(' ').filter((w) => w.length > 2);
+
+/**
+ * Zoekt welk item van de lijst de verteller bedoelt. Eerst letterlijk (hoofdletters, leestekens en accenten tellen niet),
+ * dan "de ene tekst zit in de andere", dan genoeg gedeelde woorden. Bij twijfel (twee even goede) geen match.
+ */
+export function matchIndex(names: string[], target: string): number {
+  const t = squash(target);
+  if (!t) return -1;
+  const sq = names.map(squash);
+  const exact = sq.findIndex((n) => n === t);
+  if (exact >= 0) return exact;
+  const inside = sq.map((n, i) => (n.length >= 4 && (n.includes(t) || t.includes(n)) ? i : -1)).filter((i) => i >= 0);
+  if (inside.length === 1) return inside[0];
+  if (inside.length > 1) return -1; // meerdere kandidaten: liever niets doen dan de verkeerde afvinken
+  const tw = words(target);
+  if (!tw.length) return -1;
+  const scored = names
+    .map((n, i) => {
+      const nw = words(n);
+      if (!nw.length) return { i, score: 0 };
+      const shared = tw.filter((w) => nw.includes(w)).length;
+      return { i, score: shared / Math.max(tw.length, nw.length) };
+    })
+    .filter((x) => x.score >= 0.5)
+    .sort((a, b) => b.score - a.score);
+  if (!scored.length) return -1;
+  return scored.length === 1 || scored[0].score > scored[1].score ? scored[0].i : -1;
+}
+
+/** Quest met de hand afvinken (zelfde gevolgen als wanneer de verteller hem afrondt). */
+export function finishQuestByHand(adv: Adventure, title: string, now = Date.now()): Adventure {
+  if (!adv.state.quests.some((q) => !q.done && same(q.title, title))) return adv;
+  const quests = adv.state.quests.map((q) => (!q.done && same(q.title, title) ? { ...q, done: true } : q));
+  return { ...adv, state: { ...adv.state, quests }, updatedAt: now };
+}
+
+/** Kracht of zwakte met de hand weghalen van het heldenscherm. */
+export function dropTraitByHand(adv: Adventure, name: string, now = Date.now()): Adventure {
+  const traits = adv.state.traits ?? [];
+  if (!traits.some((t) => same(t.name, name))) return adv;
+  return { ...adv, state: { ...adv.state, traits: traits.filter((t) => !same(t.name, name)) }, updatedAt: now };
+}
+
 /** Past het antwoord toe op het avontuur. De app bewaakt de grenzen. images = mogen er beelden gemaakt worden? */
 export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, now = Date.now(), images = false): Adventure {
   const s = adv.state;
@@ -258,8 +311,10 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   // Quests.
   let quests = s.quests.map((q) => ({ ...q }));
   for (const title of c.completeQuests) {
-    const q = quests.find((x) => !x.done && same(x.title, title));
-    if (q) {
+    const openIdx = quests.map((x, i) => (x.done ? -1 : i)).filter((i) => i >= 0);
+    const k = matchIndex(openIdx.map((i) => quests[i].title), title);
+    if (k >= 0) {
+      const q = quests[openIdx[k]];
       q.done = true;
       notes.push(`Quest voltooid: ${q.title}`);
     }
@@ -287,7 +342,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   // Krachten en zwaktes die het verhaal geeft of afneemt (zichtbaar op het heldenscherm).
   let traits = (s.traits ?? []).map((t) => ({ ...t }));
   for (const name of c.removeTraits) {
-    const i = traits.findIndex((t) => same(t.name, name));
+    const i = matchIndex(traits.map((t) => t.name), name);
     if (i >= 0) {
       notes.push(`${traits[i].kind === 'zwakte' ? 'Zwakte' : 'Kracht'} kwijt: ${traits[i].name}`);
       traits.splice(i, 1);

@@ -118,7 +118,7 @@
           "items": {
             "type": "string"
           },
-          "description": "Exact titles of open quests that are now done."
+          "description": "Titles of open quests that are done this turn, copied exactly as written in the state. Required whenever the story finishes one."
         },
         "location": {
           "type": "string",
@@ -159,7 +159,7 @@
           "items": {
             "type": "string"
           },
-          "description": "Exact names of gained powers or weaknesses the hero loses. Usually empty."
+          "description": "Names of gained powers or weaknesses the hero loses this turn, copied exactly as written in the state. Required whenever the story takes one away."
         }
       },
       "required": [
