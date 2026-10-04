@@ -1,0 +1,58 @@
+{
+ "id": "mutn0hcc-g6fmb",
+ "finishedAt": "2026-10-04T09:48:05.077Z",
+ "durationMs": 30500,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je legt twee vingers op de gele Geeststeen op je borst en kijkt de schaduw recht in de stadionogen. Een gouden draad van licht schiet door de scheur en slaat vast in iets dat ergens tussen gedachte en vlees zit.\n\nDe klauw verstijft. De stem, die net nog door je botten rommelde, klinkt opeens gesmoord, alsof hij tegen zijn wil praat.\n\n'Ik ben Vorath... Leegte-eter... Hoeder van de Gedoofde Sterren.' Elk woord kost hem moeite. 'De Raad stuurde mij. Zes stenen zijn ontsnapt... naar deze kleine wereld. Ik moest ze terughalen. Mijn vloot moest jullie kust branden tot iemand ze afgaf.'\n\nJe drukt harder. Het goud gloeit fel. 'De Raad,' gromt hij, 'zit achter de laatste ster... aan het einde van alles. Zij wachten. Als ik faal... komen zij zelf.'\n\nIn je oortje fluistert Mara Valk: 'Professor... wij horen hem ook. Iedereen hoort hem.'\n\nDe klauw trilt. Vorath probeert zich los te rukken. De scheur knettert, wankel, alsof ze alleen open blijft zolang hij hier is.",
+  "choices": [
+   "Duw Vorath terug en sluit de scheur",
+   "Laat Vorath de weg naar de Raad tonen",
+   "Maak Vorath met de Geeststeen tot bondgenoot"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Steenbeheersing",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontmasker de Raad der Gedoofde Sterren",
+     "detail": "De Raad stuurde Vorath voor de stenen."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen. Directeur Mara Valk van het Europees Ruimteagentschap vroeg zijn hulp tegen een violette scheur boven de Noordzee. Hij werd rijk via de Werkelijkheidssteen en bouwde een donker pak met de stenen, dat alleen hij kan aanraken. Hij vernietigde met de Krachtsteen een zwarte vloot op weg naar Den Helder. Met de Geeststeen dwong hij de kolossale schaduw te spreken: Vorath de Leegte-eter, gestuurd door de Raad der Gedoofde Sterren achter de laatste ster, om de ontsnapte stenen terug te halen. Faalt hij, dan komt de Raad zelf. Iedereen op aarde hoorde het. De scheur is nog open en hangt aan Vorath.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, a golden beam of light from his chest binding a colossal shadowy titan with stadium-sized glowing eyes and a ship-sized claw reaching through a crackling violet rift, epic wide shot.",
+   "fallback": "A crackling violet rift in a stormy sky above a grey North Sea, golden light threads shimmering across the clouds, dramatic epic atmosphere."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Vorath",
+    "look": "ancient male cosmic titan of immeasurable age, colossal shadowy body of smoke and darkness, enormous glowing violet eyes the size of stadiums, a giant black claw as large as a cargo ship."
+   }
+  ]
+ },
+ "model": "opus"
+}
