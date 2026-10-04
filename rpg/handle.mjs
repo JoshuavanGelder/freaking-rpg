@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { MODELS, classify, parseCliOutput, renderRequest, validId } from './lib.mjs';
+import { MODELS, classify, effortFor, parseCliOutput, pickUsage, renderRequest, validId } from './lib.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
@@ -60,8 +60,10 @@ export async function handleRequest(id, dataDir) {
     '--max-turns', '3',
     '--no-session-persistence',
   ];
-  // Korter nadenken = sneller antwoord.
-  if (model !== 'haiku') args.push('--effort', 'low');
+  // Korter nadenken = sneller antwoord en minder verbruik. De opening (wereld, held, eigenschappen, verhaalplan) mag
+  // wel wat dieper nadenken; dat is één keer per avontuur.
+  const effort = effortFor(model, request.kind);
+  if (effort) args.push('--effort', effort);
 
   // Op de telefoon gekopieerde tokens bevatten vaak een regeleinde of spatie (het token loopt over twee
   // regels). Claude weigert dat als ongeldig, dus eerst opschonen.
@@ -97,7 +99,9 @@ export async function handleRequest(id, dataDir) {
         const said = String((out && out.result) || stderr || stdout || '').replace(/sk-ant-[A-Za-z0-9_-]+/g, '[token]');
         console.log(`::warning title=claude::${res.status}: ${said.replace(/\s+/g, ' ').slice(0, 400)}`);
       }
-      finish({ ...res, model });
+      const usage = pickUsage(out);
+      if (usage) console.log(`::notice title=verbruik::${request.kind} ${model}/${effort ?? 'standaard'}: ${usage.input + usage.cacheRead + usage.cacheWrite} in, ${usage.output} uit${usage.costUsd !== null ? `, ca. $${usage.costUsd}` : ''}`);
+      finish({ ...res, model, effort, usage });
     });
     child.on('error', (err) => {
       clearTimeout(timer);

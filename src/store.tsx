@@ -3,6 +3,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Adventure, TurnResponse } from './logic/types';
 import { DEFAULT_IMAGE_LIMIT, type ImageCounter } from './logic/game';
+import type { UsageEntry } from './logic/usage';
 import { loadDrafts } from './drafts';
 
 export type Model = 'sonnet' | 'haiku' | 'opus';
@@ -23,6 +24,8 @@ export type AppState = {
   settings: Settings;
   lastResponse: TurnResponse | null;
   imageCounter: ImageCounter | null;
+  /** Verbruik van de laatste beurten (tokens, nadenkstand), voor het overzicht bij Instellingen. Ontbreekt in oude opslag. */
+  usageLog?: UsageEntry[];
 };
 
 export const DEFAULT_SETTINGS: Settings = {

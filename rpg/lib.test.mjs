@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { classify, extractJson, parseCliOutput, pendingIds, renderRequest, validId } from './lib.mjs';
+import { classify, effortFor, extractJson, parseCliOutput, pendingIds, pickUsage, renderRequest, validId } from './lib.mjs';
 
 const world = { setting: 'Superhelden', tones: ['Humoristisch', 'Rauw'], wishes: 'geen spinnen' };
 const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger', heroLook: 'lanky teen in a red hoodie' };
@@ -172,4 +172,43 @@ test('gekregen krachten gaan mee; oud avontuur vraagt om aanvullen', () => {
   assert.match(renderRequest({ ...base, state: {} }), /not recorded yet \(older adventure/);
   assert.match(renderRequest({ ...base, state: { traits: [] } }), /gained in the story: none/);
   assert.doesNotMatch(renderRequest({ kind: 'start', world, hero, state: {} }), /gained in the story/);
+});
+
+test('canon in het verzoek: doden zonder uiterlijk, plekken, feiten en tijd; zonder canon vraagt het om opbouwen', () => {
+  const base = { kind: 'turn', world, hero, state: {}, summary: 's', action: 'a', roll: 5 };
+  const t = renderRequest({
+    ...base,
+    cast: [
+      { name: 'Maren', look: 'elderly woman in her seventies', home: 'de molen', role: 'molenaarster', companion: true },
+      { name: 'Pieter', look: 'old man', status: 'dood', home: 'rood huis aan de rivier', note: 'verdronken bij de brug' },
+      { name: 'Kees', look: '', status: 'vermist' },
+    ],
+    canon: { places: [{ name: 'De molen', detail: 'verweerde molen op de heuvel' }], facts: ['Bas schuldt de graaf een gunst'], time: 'avond, tweede dag' },
+  });
+  assert.match(t, /- Maren: elderly woman in her seventies \| status: alive \| role: molenaarster \| home: de molen \| travels with the hero/);
+  assert.match(t, /- Pieter: DEAD, stays dead \| home: rood huis aan de rivier \| note: verdronken bij de brug/);
+  assert.doesNotMatch(t, /old man/); // een dode krijgt geen uiterlijk mee
+  assert.match(t, /- Kees: \(look not described yet[^)]*\) \| status: missing/);
+  assert.match(t, /## Places[^\n]*\n- De molen: verweerde molen op de heuvel/);
+  assert.match(t, /## Lasting facts[^\n]*\n- Bas schuldt de graaf een gunst/);
+  assert.match(t, /## Time\n- avond, tweede dag/);
+  assert.doesNotMatch(t, /Canon not recorded yet/);
+  const old = renderRequest({ ...base, cast: [] });
+  assert.match(old, /## Canon not recorded yet/);
+  assert.doesNotMatch(old, /## Places/);
+  assert.doesNotMatch(renderRequest({ kind: 'start', world, hero, state: {} }), /Canon not recorded/);
+});
+
+test('verbruik en nadenkstand', () => {
+  assert.equal(pickUsage(null), null);
+  assert.equal(pickUsage({ result: 'x' }), null);
+  assert.deepEqual(
+    pickUsage({ usage: { input_tokens: 120, output_tokens: 900, cache_read_input_tokens: 8000, cache_creation_input_tokens: 40 }, total_cost_usd: 0.0123456, duration_api_ms: 14000, num_turns: 1 }),
+    { input: 120, output: 900, cacheRead: 8000, cacheWrite: 40, costUsd: 0.0123, apiMs: 14000, numTurns: 1 },
+  );
+  assert.equal(pickUsage({ usage: { input_tokens: 'x' } }).input, 0);
+  assert.equal(effortFor('sonnet', 'start'), 'medium');
+  assert.equal(effortFor('opus', 'start'), 'medium');
+  assert.equal(effortFor('sonnet', 'turn'), 'low');
+  assert.equal(effortFor('haiku', 'start'), null);
 });

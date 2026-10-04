@@ -6,6 +6,7 @@ import { useApp } from './store';
 import * as gh from './services/github';
 import { fetchClaudeStatus } from './services/status';
 import { responseHealth, type ClaudeHealth } from './logic/status';
+import { addUsage } from './logic/usage';
 import { RESUME_ACTION, applyAnswer, buildRequest, makePending, newAdventure, parseAnswer, resumeStory } from './logic/game';
 import type { Adventure, Hero, Pending, TurnError, TurnErrorKind, TurnResponse, World } from './logic/types';
 
@@ -170,7 +171,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
         await sleep(2000);
       }
 
-      update((s) => ({ ...s, lastResponse: response }));
+      update((s) => ({ ...s, lastResponse: response, usageLog: addUsage(s.usageLog, response, p.kind) }));
       if (response.status !== 'ok') {
         throw new TurnFail(response.status, response.message || 'De verteller gaf geen antwoord.', response.resetAt, runUrl);
       }

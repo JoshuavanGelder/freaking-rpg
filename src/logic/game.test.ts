@@ -20,6 +20,8 @@ import {
   healAmount,
   heroProblem,
   makePending,
+  matchName,
+  mergeCanon,
   mergeCast,
   newAdventure,
   paragraphs,
@@ -445,7 +447,99 @@ test('cast: nieuwe bijpersonen bewaard, zelfde naam bijgewerkt, held niet', () =
   assert.match(adv.cast![0].look, /mourning shawl/);
   adv = applyAnswer(adv, makePending('turn', 'Ik loop', 6), parseAnswer(raw())!, 7);
   assert.equal(adv.cast!.length, 1);
-  assert.equal(mergeCast([], Array.from({ length: 30 }, (_, i) => ({ name: `P${i}`, look: 'l' }))).length, 24);
+  assert.equal(mergeCast([], Array.from({ length: 50 }, (_, i) => ({ name: `Persoon${i}`, look: 'l' }))).length, 40);
+});
+
+test('cast: een dode blijft staan (zonder uiterlijk), wie net veranderde komt achteraan, de langst ongenoemde valt eerst af', () => {
+  const dead = mergeCast([], [{ name: 'Pieter', status: 'dood', home: 'rood huis aan de rivier', note: 'gestorven bij de brug' }]);
+  assert.deepEqual(dead, [{ name: 'Pieter', look: '', status: 'dood', home: 'rood huis aan de rivier', note: 'gestorven bij de brug' }]);
+  const many = mergeCast(dead, Array.from({ length: 45 }, (_, i) => ({ name: `Voorbijganger${i}`, look: 'l' })));
+  assert.equal(many.length, 40);
+  assert.equal(many[0].name, 'Pieter'); // de dode valt niet af
+  assert.equal(many.some((c) => c.name === 'Voorbijganger0'), false);
+  assert.equal(many[many.length - 1].name, 'Voorbijganger44');
+});
+
+test('cast: lege velden laten het oude staan, levend haalt de status weg, een dode reist niet mee', () => {
+  let cast = mergeCast([], [{ name: 'Maren', look: 'elderly woman', home: 'de molen', role: 'molenaarster', companion: 'ja' }]);
+  assert.equal(cast[0].companion, true);
+  cast = mergeCast(cast, [{ name: 'Maren', look: '', status: '', home: '', note: 'bang voor de graaf' }]);
+  assert.deepEqual(cast[0], { name: 'Maren', look: 'elderly woman', home: 'de molen', role: 'molenaarster', companion: true, note: 'bang voor de graaf' });
+  cast = mergeCast(cast, [{ name: 'Maren', status: 'dood', note: 'door de graaf gedood' }]);
+  assert.equal(cast[0].status, 'dood');
+  assert.equal(cast[0].companion, undefined);
+  cast = mergeCast(cast, [{ name: 'Maren', status: 'levend', note: 'teruggekeerd als spook' }]);
+  assert.equal(cast[0].status, undefined); // levend is de standaard
+  assert.equal(cast[0].note, 'teruggekeerd als spook');
+});
+
+test('naamherkenning: hele woorden, nooit een stuk van een woord, bij twijfel geen match', () => {
+  const names = ['Bram de waard', 'Anna', 'Annabel', 'Kees de smid', 'Roestig zwaard'];
+  assert.equal(matchName(names, 'de waard'), 0);
+  assert.equal(matchName(names, 'BRAM'), 0);
+  assert.equal(matchName(names, 'anna'), 1);
+  assert.equal(matchName(names, 'Annabel'), 2);
+  assert.equal(matchName(names, 'Ann'), -1);
+  assert.equal(matchName(names, 'zwaard'), 4);
+  assert.equal(matchName(names, 'de'), -1);
+  assert.equal(matchName(['Bram de waard', 'Bram de smid'], 'Bram'), -1); // twee kandidaten
+  assert.equal(matchName(['Plek 10'], 'Plek 1'), -1);
+  assert.equal(matchName([], 'x'), -1);
+});
+
+test('cast: bijna-gelijke naam is dezelfde persoon, geen dubbele', () => {
+  let cast = mergeCast([], [{ name: 'Bram de waard', look: 'stocky man in his fifties', home: 'De Gouden Os' }]);
+  cast = mergeCast(cast, [{ name: 'de waard', status: 'dood', note: 'neergestoken in de kelder' }]);
+  assert.equal(cast.length, 1);
+  assert.equal(cast[0].name, 'Bram de waard');
+  assert.equal(cast[0].status, 'dood');
+  assert.equal(cast[0].look, 'stocky man in his fifties');
+});
+
+test('canon: plekken bijwerken, feiten erbij en weg, tijd alleen als hij verandert', () => {
+  let c = mergeCanon(undefined, { places: [{ name: 'Huis van Pieter', detail: 'rood huis aan de rivier' }], facts: ['Bas schuldt de graaf een gunst'], forgetFacts: [], time: 'avond, eerste dag' });
+  assert.deepEqual(c, { places: [{ name: 'Huis van Pieter', detail: 'rood huis aan de rivier' }], facts: ['Bas schuldt de graaf een gunst'], time: 'avond, eerste dag' });
+  c = mergeCanon(c, { places: [{ name: 'huis van pieter', detail: 'rood huis aan de rivier, nu leeg' }], facts: ['bas schuldt de graaf een gunst', 'De smid weet van het geheim'], forgetFacts: [], time: '' });
+  assert.equal(c.places.length, 1);
+  assert.equal(c.places[0].name, 'Huis van Pieter');
+  assert.match(c.places[0].detail, /nu leeg/);
+  assert.deepEqual(c.facts, ['Bas schuldt de graaf een gunst', 'De smid weet van het geheim']); // zelfde feit niet dubbel
+  assert.equal(c.time, 'avond, eerste dag');
+  c = mergeCanon(c, { places: [], facts: [], forgetFacts: ['Bas schuldt de graaf een gunst.'], time: 'ochtend, tweede dag' });
+  assert.deepEqual(c.facts, ['De smid weet van het geheim']);
+  assert.equal(c.time, 'ochtend, tweede dag');
+  assert.equal(mergeCanon(c, { places: Array.from({ length: 40 }, (_, i) => ({ name: `Plek ${i}`, detail: 'd' })), facts: [], forgetFacts: [], time: '' }).places.length, 30);
+});
+
+test('antwoord: status en canon veilig gelezen, onzin genegeerd', () => {
+  const a = parseAnswer(raw({
+    cast: [{ name: 'Pieter', look: '', status: 'DOOD', home: ' rood huis ', role: '', note: '', companion: 'Ja' }, { name: 'Kees', look: '', status: 'zombie', home: '', role: '', note: '', companion: '' }],
+    canon: { places: [{ name: 'Brug', detail: 'oude stenen brug' }, { name: 'Zonder detail', detail: '' }], facts: ['  Een belofte  ', ''], forgetFacts: ['x'], time: ' nacht ' },
+  }))!;
+  assert.deepEqual(a.cast.map((c) => [c.name, c.status, c.home, c.companion]), [['Pieter', 'dood', 'rood huis', 'ja']]); // Kees heeft niets bruikbaars
+  assert.deepEqual(a.canon, { places: [{ name: 'Brug', detail: 'oude stenen brug' }], facts: ['Een belofte'], forgetFacts: ['x'], time: 'nacht' });
+  assert.deepEqual(parseAnswer(raw())!.canon, { places: [], facts: [], forgetFacts: [], time: '' });
+});
+
+test('spullen kwijtraken: ook als de verteller een kortere naam gebruikt', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-items');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw({ changes: { hp: 0, gold: 0, xp: 0, addItems: ['Roestig zwaard', 'Brood'], removeItems: [], addQuests: [], completeQuests: [], location: '' } }))!, 3);
+  adv = applyAnswer(adv, makePending('turn', 'Ik geef het zwaard weg', 4), parseAnswer(raw({ changes: { hp: 0, gold: 0, xp: 0, addItems: [], removeItems: ['zwaard'], addQuests: [], completeQuests: [], location: '' } }))!, 5);
+  assert.deepEqual(adv.state.inventory, ['Brood']);
+});
+
+test('canon gaat mee in het verzoek en wordt na elk antwoord bijgehouden; oud avontuur heeft het nog niet', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-canon');
+  assert.equal(adv.canon, undefined);
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw({ canon: { places: [{ name: 'Markt', detail: 'drukke markt' }], facts: [], forgetFacts: [], time: 'ochtend' }, cast: [{ name: 'Pieter', look: 'old man', status: '', home: 'rood huis', role: 'visser', note: '', companion: '' }] }))!, 3);
+  assert.deepEqual(adv.canon, { places: [{ name: 'Markt', detail: 'drukke markt' }], facts: [], time: 'ochtend' });
+  const r1 = buildRequest(adv, makePending('turn', 'Ik loop', 10), 'sonnet');
+  assert.deepEqual(r1.canon, adv.canon);
+  assert.equal(r1.cast[0].home, 'rood huis');
+  adv = applyAnswer(adv, makePending('turn', 'Ik vecht', 11), parseAnswer(raw({ cast: [{ name: 'Pieter', look: '', status: 'dood', home: '', role: '', note: 'verdronken', companion: '' }] }))!, 12);
+  assert.equal(buildRequest(adv, makePending('turn', 'Ik kijk', 13), 'sonnet').cast[0].status, 'dood');
+  const old = { ...adv, canon: undefined };
+  assert.equal('canon' in buildRequest(old, makePending('turn', 'Ik kijk', 14), 'sonnet'), false);
 });
 
 test('verzoek: cast, beeldprompts bij recente beurten en eenmalig eerdere beelden', () => {

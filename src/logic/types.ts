@@ -48,8 +48,42 @@ export type Scene = { kind: PictureKind; prompt: string; fallback: string };
 
 export type Attribute = { name: string; value: number };
 
-/** Vast uiterlijk van een terugkerend personage (niet de held), zodat beelden en verhaal kloppen. */
-export type CastMember = { name: string; look: string }; // look: Engels, met leeftijd
+/** Is een personage in leven? Een dode blijft dood, tenzij het verhaal de terugkeer zelf duidelijk maakt. */
+export type PersonStatus = 'levend' | 'dood' | 'vermist';
+
+/**
+ * Terugkerend personage (niet de held): vast uiterlijk voor de beelden, plus wat het verhaal niet mag vergeten.
+ * Optionele velden ontbreken zolang ze niet bekend zijn (status ontbreekt = levend).
+ */
+export type CastMember = {
+  name: string;
+  look: string; // Engels, met leeftijd; leeg zolang het uiterlijk nog niet beschreven is
+  status?: PersonStatus;
+  home?: string; // Nederlands: waar deze persoon woont of verblijft
+  role?: string; // Nederlands: wie het is, kort
+  note?: string; // Nederlands: wat onthouden moet worden (hoe iemand stierf, een belofte)
+  companion?: boolean; // reist nu met de held mee
+};
+
+/** Wijziging van een personage zoals de verteller die teruggeeft: lege tekst = ongewijzigd. */
+export type CastUpdate = {
+  name: string;
+  look?: string;
+  status?: '' | PersonStatus;
+  home?: string;
+  role?: string;
+  note?: string;
+  companion?: '' | 'ja' | 'nee';
+};
+
+/** Vaste plek in de wereld (een huis, winkel, schuilplaats), zodat die elke keer hetzelfde is. */
+export type Place = { name: string; detail: string };
+
+/** Wat het verhaal nooit mag vergeten naast de personen: plekken, blijvende feiten en het moment van de dag. */
+export type Canon = { places: Place[]; facts: string[]; time: string };
+
+/** Wijzigingen aan het canon-blad, zoals de verteller ze teruggeeft. */
+export type CanonUpdate = { places: Place[]; facts: string[]; forgetFacts: string[]; time: string };
 export type Quest = { title: string; detail: string; done: boolean };
 
 /** Kracht of zwakte die de held in het verhaal kreeg (zichtbaar, zonder cijfers). */
@@ -116,8 +150,10 @@ export type Adventure = {
   error: TurnError | null;
   ended: boolean;
   portrait?: Picture;
-  /** Bijpersonen met een vast uiterlijk. undefined = avontuur van vóór de cast (nog nooit aangevuld). */
+  /** Bijpersonen met een vast uiterlijk en hun status. undefined = avontuur van vóór de cast (nog nooit aangevuld). */
   cast?: CastMember[];
+  /** Plekken, blijvende feiten en tijd. undefined = avontuur van vóór het canon-blad (de verteller vult het eenmalig aan). */
+  canon?: Canon;
   /** Einde dat de speler tijdens het spelen koos. undefined = de lengte van het startscherm geldt. */
   endPlan?: EndPlan;
   /** De speler ging door nadat het verhaal klaar was: na hoeveel beurten, en was de held toen gevallen? */
@@ -150,7 +186,8 @@ export type Answer = {
   image: { show: boolean; kind: 'scene' | 'action' | 'character'; prompt: string; fallback: string };
   heroLook: string;
   portrait: string;
-  cast: CastMember[]; // nieuwe of veranderde bijpersonen deze beurt
+  cast: CastUpdate[]; // nieuwe of veranderde bijpersonen deze beurt
+  canon: CanonUpdate; // nieuwe of veranderde plekken, feiten en tijd deze beurt
 };
 
 /** Wat de workflow terugzet in responses/<id>.json. */
@@ -163,7 +200,13 @@ export type TurnResponse = {
   finishedAt: string;
   durationMs?: number;
   model?: string;
+  /** Hoe hard de verteller nadacht (low, medium) en wat de beurt aan tokens kostte, voor het overzicht bij Instellingen. */
+  effort?: string | null;
+  usage?: Usage | null;
 };
+
+/** Verbruik van één beurt, zoals Claude Code het teruggeeft (output telt het nadenken mee). */
+export type Usage = { input: number; output: number; cacheRead: number; cacheWrite: number; costUsd: number | null; apiMs: number; numTurns: number };
 
 /** Wat de app in requests/<id>.json zet. */
 export type TurnRequest = {
@@ -176,6 +219,8 @@ export type TurnRequest = {
   state: GameState;
   summary: string;
   cast: CastMember[];
+  /** Ontbreekt bij oude avonturen: dan vraagt het verzoek de verteller het canon-blad eenmalig op te bouwen. */
+  canon?: Canon;
   recent: { action: string | null; narration: string; picture?: string }[];
   /** Alleen bij oude avonturen zonder cast: eerdere beeldprompts, zodat de verteller de looks kan vastleggen. */
   earlierPictures?: string[];

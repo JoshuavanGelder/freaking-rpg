@@ -8,7 +8,7 @@
     },
     "narration": {
       "type": "string",
-      "description": "Dutch narration, 80-170 words, short paragraphs separated by a blank line. No numbers or game terms."
+      "description": "Dutch narration at the length the request gives under 'narration length per turn', short paragraphs separated by a blank line. No numbers or game terms."
     },
     "choices": {
       "type": "array",
@@ -199,7 +199,7 @@
     },
     "summary": {
       "type": "string",
-      "description": "The whole story so far in at most 120 Dutch words."
+      "description": "The plot so far in at most 120 Dutch words: the main thread, open threads and turning points. People, places and lasting facts live in cast and canon, so do not repeat them here."
     },
     "gameOver": {
       "type": "boolean",
@@ -249,25 +249,114 @@
     },
     "cast": {
       "type": "array",
-      "description": "Recurring characters (not the hero) that are new this turn, missing from the cast, or whose look really changed. Empty when nothing changed.",
+      "description": "Recurring characters (not the hero) that are new this turn, missing from the cast, or whose look, status, home, role or note really changed. Empty when nothing changed. Empty string in a field = unchanged. Always return a character whose status changes (e.g. dies) or who moves house, even if their look is not known.",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "name": {
             "type": "string",
-            "description": "The character's name as used in the story (or a short Dutch label like 'de waard')."
+            "description": "The character's name as used in the story (or a short Dutch label like 'de waard'). Use the name exactly as in the cast when they are already in it."
           },
           "look": {
             "type": "string",
-            "description": "English, 15-35 words, always starting with age and gender (e.g. 'elderly woman in her seventies'), then build, face, hair, clothes. No costume, emblem, cape or mask."
+            "description": "English, 15-35 words, always starting with age and gender (e.g. 'elderly woman in her seventies'), then build, face, hair, clothes. No costume, emblem, cape or mask. Empty string when unchanged or not known yet."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "",
+              "levend",
+              "dood",
+              "vermist"
+            ],
+            "description": "levend = alive, dood = dead, vermist = missing or fate unknown. 'dood' the same turn someone dies or is found dead. Empty string = unchanged."
+          },
+          "home": {
+            "type": "string",
+            "description": "Short Dutch: where this person lives or stays (e.g. 'rood huis aan de rivier'). Give it when it first becomes known and whenever it changes. Empty string = unchanged."
+          },
+          "role": {
+            "type": "string",
+            "description": "Short Dutch: who this is to the hero or in the story (e.g. 'waard van De Gouden Os', 'oude vijand'). Empty string = unchanged."
+          },
+          "note": {
+            "type": "string",
+            "description": "Short Dutch (max 15 words): what must be remembered, e.g. how and where they died, a promise, a grudge. Empty string = unchanged."
+          },
+          "companion": {
+            "type": "string",
+            "enum": [
+              "",
+              "ja",
+              "nee"
+            ],
+            "description": "ja = travels with the hero now, nee = no longer with the hero. Empty string = unchanged."
           }
         },
         "required": [
           "name",
-          "look"
+          "look",
+          "status",
+          "home",
+          "role",
+          "note",
+          "companion"
         ]
       }
+    },
+    "canon": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Changes to the canon sheet: fixed facts the story must never drift from. Only what is new or changed this turn.",
+      "properties": {
+        "places": {
+          "type": "array",
+          "description": "Places that become established or change (a home, shop, base, hideout, district). Same name again = update. Empty when nothing changed.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Short Dutch name of the place."
+              },
+              "detail": {
+                "type": "string",
+                "description": "One short Dutch sentence: what it looks like, where it is, who lives or works there."
+              }
+            },
+            "required": [
+              "name",
+              "detail"
+            ]
+          }
+        },
+        "facts": {
+          "type": "array",
+          "description": "New lasting facts: promises, debts, secrets (and who knows them), enemies, deals, curses. One short Dutch sentence each, max 20 words. Empty when none.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forgetFacts": {
+          "type": "array",
+          "description": "Lasting facts that are resolved or no longer true this turn, copied exactly as written in the request. Empty when none.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "time": {
+          "type": "string",
+          "description": "Short Dutch marker of the moment, e.g. 'avond, tweede dag' or 'vroege ochtend'. Update it whenever time passes (a night's rest, a journey). Empty string when unchanged."
+        }
+      },
+      "required": [
+        "places",
+        "facts",
+        "forgetFacts",
+        "time"
+      ]
     }
   },
   "required": [
@@ -282,6 +371,7 @@
     "image",
     "heroLook",
     "portrait",
-    "cast"
+    "cast",
+    "canon"
   ]
 }

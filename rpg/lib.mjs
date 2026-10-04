@@ -43,6 +43,21 @@ export function pacingLines(r) {
   return lines;
 }
 
+/** Eén personage voor de verteller: wie het is, of die leeft, waar die woont. Doden krijgen geen uiterlijk (kost tokens en hoeft niet). */
+function castLine(c) {
+  const dead = c.status === 'dood';
+  const parts = [];
+  if (dead) parts.push('DEAD, stays dead');
+  else if (c.status === 'vermist') parts.push('status: missing');
+  else parts.push('status: alive');
+  if (clean(c.role, 80)) parts.push(`role: ${clean(c.role, 80)}`);
+  if (clean(c.home, 80)) parts.push(`home: ${clean(c.home, 80)}`);
+  if (clean(c.note, 160)) parts.push(`note: ${clean(c.note, 160)}`);
+  if (c.companion && !dead) parts.push('travels with the hero');
+  const look = dead ? '' : clean(c.look, 400) || '(look not described yet: give one when they appear in a picture)';
+  return `- ${clean(c.name, 60)}: ${look ? `${look} | ` : ''}${parts.join(' | ')}`;
+}
+
 /** Maakt van het verzoek (JSON van de app) een leesbaar bericht voor Claude. */
 export function renderRequest(r) {
   const w = r.world ?? {};
@@ -99,11 +114,30 @@ export function renderRequest(r) {
     lines.push('');
   }
   if (r.kind !== 'start') {
-    const cast = (r.cast ?? []).filter((c) => clean(c?.name, 60) && clean(c?.look));
-    lines.push('## Cast (fixed looks of recurring characters; reuse word for word in pictures, keep the narration consistent)');
-    if (cast.length) for (const c of cast) lines.push(`- ${clean(c.name, 60)}: ${clean(c.look, 400)}`);
+    const cast = (r.cast ?? []).filter((c) => clean(c?.name, 60));
+    lines.push('## Cast (recurring characters: fixed look, status, home. Reuse looks word for word in pictures, keep the narration consistent)');
+    if (cast.length) for (const c of cast) lines.push(castLine(c));
     else lines.push('- nobody yet');
     lines.push('');
+    if (r.canon) {
+      const places = (r.canon.places ?? []).filter((p) => clean(p?.name, 60));
+      lines.push('## Places (fixed facts about recurring places: keep every description consistent)');
+      if (places.length) for (const p of places) lines.push(`- ${clean(p.name, 60)}: ${clean(p.detail, 200)}`);
+      else lines.push('- none yet');
+      lines.push('');
+      const facts = (r.canon.facts ?? []).map((f) => clean(f, 200)).filter(Boolean);
+      lines.push('## Lasting facts (promises, debts, secrets, enemies, deals: do not forget or contradict)');
+      if (facts.length) for (const f of facts) lines.push(`- ${f}`);
+      else lines.push('- none yet');
+      lines.push('');
+      lines.push('## Time');
+      lines.push(`- ${clean(r.canon.time, 80) || 'not set yet'}`);
+      lines.push('');
+    } else {
+      lines.push('## Canon not recorded yet (older adventure: build it now)');
+      lines.push('- Fill `cast` with every recurring character from the summary and recent turns (also those who died, with status "dood" and how), their homes and roles, `canon.places` with the places that matter (homes, bases), `canon.facts` with lasting promises, debts and enemies, and `canon.time`. First description wins.');
+      lines.push('');
+    }
     const earlier = (r.earlierPictures ?? []).map((p) => clean(p, 600)).filter(Boolean);
     if (earlier.length) {
       lines.push('## Earlier pictures (oldest first; this adventure has no cast yet, build it now)');
@@ -183,6 +217,30 @@ export function classify(out, raw, code) {
 
 function isAnswer(o) {
   return !!o && typeof o === 'object' && typeof o.narration === 'string' && o.narration.trim().length > 0;
+}
+
+/** Verbruik van één beurt uit de JSON-uitvoer van `claude -p` (tokens; de kosten zijn een schatting tegen API-prijzen). */
+export function pickUsage(out) {
+  if (!out || typeof out !== 'object') return null;
+  const u = out.usage && typeof out.usage === 'object' ? out.usage : null;
+  if (!u) return null;
+  const n = (v) => (Number.isFinite(Number(v)) ? Math.max(0, Math.round(Number(v))) : 0);
+  const cost = Number(out.total_cost_usd);
+  return {
+    input: n(u.input_tokens),
+    output: n(u.output_tokens),
+    cacheRead: n(u.cache_read_input_tokens),
+    cacheWrite: n(u.cache_creation_input_tokens),
+    costUsd: Number.isFinite(cost) ? Math.round(cost * 10000) / 10000 : null,
+    apiMs: n(out.duration_api_ms),
+    numTurns: n(out.num_turns),
+  };
+}
+
+/** Hoe hard de verteller nadenkt: de opening maakt de wereld (medium), gewone beurten zijn kort (low). Haiku kent het niet. */
+export function effortFor(model, kind) {
+  if (model === 'haiku') return null;
+  return kind === 'start' ? 'medium' : 'low';
 }
 
 /** Haalt het eerste JSON-object uit een tekst (fallback als er geen structured_output is). */

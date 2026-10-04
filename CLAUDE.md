@@ -31,21 +31,35 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   (workflow_dispatch, run-name `RPG <id>`). Warme verteller: `request_id=standby` (run-name `RPG standby`),
   `rpg/standby.mjs` blijft 10 min na de laatste beurt klaarstaan. Vangnet in de app: na 75 s alsnog een losse run.
 - `rpg/handle.mjs` draait `claude -p` met `rpg/prompt.md` als systeemprompt en `rpg/schema.json` als `--json-schema`,
-  geen tools, `--effort low` (niet voor haiku), lege werkmap. Schrijft `responses/<id>.json` met `status`
+  geen tools, `--effort low` (opening: medium; niet voor haiku), lege werkmap. Schrijft `responses/<id>.json` met `status`
   ok | limiet | token | fout.
 - De verteller onthoudt niets: elk verzoek bevat wereld, held, staat, samenvatting (≤120 woorden, door Claude
-  bijgewerkt), de laatste 6 beurten (met de prompt van het beeld als er een gemaakt is), de cast, de actie en een
+  bijgewerkt), de laatste 6 beurten (met de prompt van het beeld als er een gemaakt is), de cast en het canon-blad, de actie en een
   verborgen d20-worp van de app.
-- **Cast** (`adv.cast`): vast Engels uiterlijk (met leeftijd) van terugkerende bijpersonen, zoals `heroLook` voor de held.
-  De verteller geeft nieuwe/veranderde personen terug in `cast`; `mergeCast` voegt samen (zelfde naam = bijwerken, held
-  niet, max. 24). Oude avonturen (`cast` undefined) sturen eenmalig `earlierPictures` mee (max. 12 eerdere beeldprompts)
-  zodat de verteller de looks vastlegt; eerste beschrijving wint (aanleiding: Maren werd van oud vrouwtje ineens jong).
+- **Cast** (`adv.cast`): terugkerende bijpersonen: vast Engels uiterlijk (met leeftijd, zoals `heroLook` voor de held) plus wat het
+  verhaal niet mag vergeten: `status` (levend = ontbreekt, dood, vermist), `home`, `role`, `note`, `companion`. De verteller
+  geeft nieuwe/veranderde personen terug in `cast` (lege tekst = ongewijzigd); `mergeCast` voegt samen op naam (`matchName`: hele
+  woorden, "de waard" = "Bram de waard", nooit "Anna" = "Annabel"; held niet), zet wie net veranderde achteraan en laat bij meer dan 40
+  eerst de langst ongenoemde vallen (doden en metgezellen het laatst). Doden krijgen geen uiterlijk in het verzoek. Oude avonturen
+  (`cast` undefined) sturen eenmalig `earlierPictures` mee (max. 12 eerdere beeldprompts) zodat de verteller de looks vastlegt;
+  eerste beschrijving wint (aanleiding: Maren werd van oud vrouwtje ineens jong).
+- **Canon-blad** (`adv.canon {places, facts, time}`, `mergeCanon`): vaste plekken (naam + één zin: uiterlijk, wie er woont), blijvende
+  feiten (beloftes, schulden, geheimen, vijanden; `forgetFacts` haalt er weer een weg) en het moment van de dag. Samen met de cast
+  gaat het in elk verzoek mee en wint het van de samenvatting (die alleen nog de verhaallijn bevat, ≤120 woorden). Prompt: "The dead
+  stay dead" (een terugkeer alleen als wereld en toon het toelaten én het verhaal er een duidelijke gebeurtenis van maakt),
+  woonplaatsen blijven vast tot het verhaal iemand verhuist, de tijd van de dag moet kloppen. Oude avonturen (`canon` undefined) laten
+  de verteller het blad eenmalig opbouwen uit samenvatting en recente beurten. Aanleiding: een dode man stond ineens weer op en een
+  personage woonde ineens in een ander huis.
+- **Nadenkstand en verbruik**: `effortFor` in `rpg/lib.mjs`: de opening draait op `--effort medium` (wereld, eigenschappen, verhaalplan,
+  eerste canon; één keer per avontuur), gewone beurten op `low`, haiku zonder instelling. `handle.mjs` zet `effort` en `usage`
+  (tokens uit `claude -p`, kosten = schatting tegen API-prijzen) in het antwoord en als `::notice` in de workflow. De app bewaart de
+  laatste 40 (`usageLog`, `src/logic/usage.ts`) en toont gemiddelden per soort beurt bij Instellingen → Verbruik per beurt.
 
 ## Spellogica (`src/logic/game.ts`, getest)
 - `parseAnswer` maakt het antwoord veilig (grenzen: leven ±10 per beurt, xp 0–30, max 6 eigenschappen 0–5, goud ±1 miljard per beurt
   en max. 9.999.999.999 in totaal; `formatGold` toont bedragen met punten). Aanleiding: een miljoen in een modern verhaal werd
   afgekapt op 9999. De prompt laat het geldbedrag meeschalen met de wereld (munten in fantasy, euro's in modern).
-- `applyAnswer`: de app past toe; eigenschappen bij de start, later alleen nieuwe erbij (max. 8, bestaande nooit anders);
+- `applyAnswer`: de app past toe; spullen kwijtraken gaat via `matchName` ("zwaard" haalt "Roestig zwaard" weg); eigenschappen bij de start, later alleen nieuwe erbij (max. 8, bestaande nooit anders);
   level = 1 + xp/100 (+2 max leven per level);
   0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level, krachten (geen cijfers van worpen).
 - **Heling** (`changes.heal`, `healAmount` in game.ts): de verteller kiest een maat, de app rekent het leven uit

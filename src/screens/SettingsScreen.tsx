@@ -4,6 +4,7 @@ import { useApp, type Model } from '../store';
 import { useNav } from '../nav';
 import * as gh from '../services/github';
 import * as img from '../services/images';
+import { formatTokens, summarizeUsage } from '../logic/usage';
 import { C } from '../theme';
 import { Button, Card, Chip, Field, Label, Notice, Row, Screen, T, TopBar } from '../ui';
 
@@ -67,6 +68,7 @@ export function SettingsScreen() {
   };
 
   const model = MODELS.find((m) => m.id === st.model) ?? MODELS[0];
+  const usage = summarizeUsage(state.usageLog);
 
   return (
     <Screen gap={24}>
@@ -81,6 +83,31 @@ export function SettingsScreen() {
         </Row>
         <T size={13} color={C.muted}>
           {model.hint}
+        </T>
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>Verbruik per beurt</Label>
+        {usage.length ? (
+          <Card>
+            {usage.map((g) => (
+              <View key={g.key} style={{ gap: 2 }}>
+                <T size={14} weight="semibold">
+                  {g.label} ({g.count}×)
+                </T>
+                <T size={13} color={C.muted}>
+                  {formatTokens(g.avgIn)} gelezen · {formatTokens(g.avgOut)} geschreven · {g.avgSecs} s{g.avgCost !== null ? ` · ca. $${String(g.avgCost).replace('.', ',')}` : ''}
+                </T>
+              </View>
+            ))}
+          </Card>
+        ) : (
+          <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+            Nog niets gemeten. Na je volgende beurt staat hier wat een opening en een gewone beurt kosten.
+          </T>
+        )}
+        <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+          Gemiddelde van je laatste 40 beurten. Geschreven is de tekst plus het nadenken van de verteller; de opening denkt dieper na dan een gewone beurt. De kosten zijn een schatting tegen API-prijzen: je betaalt niets extra, maar het laat zien wat een beurt van je limiet gebruikt.
         </T>
       </View>
 

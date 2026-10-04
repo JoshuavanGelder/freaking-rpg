@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Arc, Attribute, CastMember, GameState, Heal, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Arc, Attribute, CanonUpdate, Canon, CastMember, CastUpdate, GameState, Heal, PersonStatus, Place, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -87,7 +87,9 @@ const MAX_QUESTS = 30;
 const MAX_TRAITS = 20;
 const MAX_ATTRIBUTES = 8;
 const RECENT_TURNS = 6;
-const MAX_CAST = 24;
+const MAX_CAST = 40;
+const MAX_PLACES = 30;
+const MAX_FACTS = 30;
 const EARLIER_PICTURES = 12;
 
 /** Heling als deel van het maximale leven (minstens 1 en nooit meer dan het maximum). */
@@ -213,7 +215,8 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     hero: adv.hero.heroLook ? { ...adv.hero, heroLook: defuse(adv.hero.heroLook) } : adv.hero,
     state: adv.state,
     summary: adv.summary,
-    cast: (adv.cast ?? []).map((c) => ({ name: c.name, look: defuse(c.look) })),
+    cast: (adv.cast ?? []).map((c) => ({ ...c, look: defuse(c.look) })),
+    ...(adv.canon ? { canon: adv.canon } : {}),
     recent: adv.turns.slice(-RECENT_TURNS).map((t) => {
       const picture = drawnPrompt(t);
       return picture ? { action: t.action, narration: t.narration, picture } : { action: t.action, narration: t.narration };
@@ -238,16 +241,64 @@ function earlierPictures(adv: Adventure): string[] {
   return older.map(drawnPrompt).filter(Boolean).slice(-EARLIER_PICTURES);
 }
 
-/** Voegt nieuwe of veranderde bijpersonen samen met de bestaande cast (zelfde naam = bijwerken). */
-export function mergeCast(cast: CastMember[], updates: CastMember[], heroName = ''): CastMember[] {
+const statusOf = (v: unknown): '' | PersonStatus => {
+  const x = typeof v === 'string' ? v.trim().toLowerCase() : '';
+  return x === 'levend' || x === 'dood' || x === 'vermist' ? x : '';
+};
+const yesNo = (v: unknown): '' | 'ja' | 'nee' => {
+  const x = typeof v === 'string' ? v.trim().toLowerCase() : '';
+  return /^(ja|yes|true)$/.test(x) ? 'ja' : /^(nee|no|false)$/.test(x) ? 'nee' : '';
+};
+
+/**
+ * Voegt nieuwe of veranderde bijpersonen samen met de bestaande cast. Zelfde naam (ook "de waard" =
+ * "Bram de waard", zie matchName) = bijwerken; een lege tekst laat het oude staan. Wie net veranderd is komt achteraan, zodat bij
+ * een volle lijst de langst ongenoemde valt; doden en metgezellen blijven zo lang mogelijk staan.
+ */
+export function mergeCast(cast: CastMember[], updates: CastUpdate[], heroName = ''): CastMember[] {
   const list = cast.map((c) => ({ ...c }));
   for (const u of updates) {
-    if (heroName && same(u.name, heroName)) continue;
-    const i = list.findIndex((c) => same(c.name, u.name));
-    if (i >= 0) list[i] = { name: list[i].name, look: u.look };
-    else list.push(u);
+    const name = u.name.trim();
+    if (!name || (heroName && same(name, heroName))) continue;
+    const i = matchName(list.map((c) => c.name), name);
+    const next: CastMember = i >= 0 ? { ...list[i] } : { name, look: '' };
+    if (u.look?.trim()) next.look = u.look.trim();
+    const status = statusOf(u.status);
+    if (status === 'levend') delete next.status;
+    else if (status) next.status = status;
+    if (u.home?.trim()) next.home = u.home.trim();
+    if (u.role?.trim()) next.role = u.role.trim();
+    if (u.note?.trim()) next.note = u.note.trim();
+    const mee = yesNo(u.companion);
+    if (mee === 'ja') next.companion = true;
+    else if (mee === 'nee') delete next.companion;
+    if (next.status === 'dood') delete next.companion; // een dode reist niet mee
+    if (i >= 0) list.splice(i, 1);
+    list.push(next);
   }
-  return list.slice(-MAX_CAST);
+  while (list.length > MAX_CAST) {
+    const drop = list.findIndex((c) => c.status !== 'dood' && !c.companion);
+    list.splice(drop >= 0 ? drop : 0, 1);
+  }
+  return list;
+}
+
+/** Voegt de wijzigingen van de verteller toe aan het canon-blad (plekken en feiten, tijd van de dag). */
+export function mergeCanon(canon: Canon | undefined, u: CanonUpdate): Canon {
+  const places = (canon?.places ?? []).map((p) => ({ ...p }));
+  for (const p of u.places) {
+    const i = matchName(places.map((x) => x.name), p.name);
+    const name = i >= 0 ? places[i].name : p.name;
+    if (i >= 0) places.splice(i, 1);
+    places.push({ name, detail: p.detail });
+  }
+  const facts = [...(canon?.facts ?? [])];
+  for (const f of u.forgetFacts) {
+    const i = matchIndex(facts, f);
+    if (i >= 0) facts.splice(i, 1);
+  }
+  for (const f of u.facts) if (!facts.some((x) => squash(x) === squash(f))) facts.push(f);
+  return { places: places.slice(-MAX_PLACES), facts: facts.slice(-MAX_FACTS), time: u.time || canon?.time || '' };
 }
 
 const str = (v: unknown, max: number): string => (typeof v === 'string' ? v.replace(/\s+/g, ' ').trim().slice(0, max) : '');
@@ -267,6 +318,7 @@ export function parseAnswer(raw: unknown): Answer | null {
   const ch = a.changes && typeof a.changes === 'object' ? a.changes : {};
   const check = a.check && typeof a.check === 'object' ? a.check : {};
   const img = a.image && typeof a.image === 'object' ? a.image : {};
+  const cn = a.canon && typeof a.canon === 'object' ? a.canon : {};
   return {
     title: str(a.title, 60),
     narration,
@@ -315,10 +367,29 @@ export function parseAnswer(raw: unknown): Answer | null {
     portrait: str(a.portrait, 600),
     cast: Array.isArray(a.cast)
       ? a.cast
-          .map((x: any): CastMember => ({ name: str(x?.name, 40), look: str(x?.look, 300) }))
-          .filter((x: CastMember) => x.name && x.look)
-          .slice(0, 8)
+          .map((x: any): CastUpdate => ({
+            name: str(x?.name, 40),
+            look: str(x?.look, 300),
+            status: statusOf(x?.status),
+            home: str(x?.home, 60),
+            role: str(x?.role, 60),
+            note: str(x?.note, 120),
+            companion: yesNo(x?.companion),
+          }))
+          .filter((x: CastUpdate) => x.name && (x.look || x.status || x.home || x.role || x.note || x.companion))
+          .slice(0, 20)
       : [],
+    canon: {
+      places: Array.isArray(cn.places)
+        ? cn.places
+            .map((p: any): Place => ({ name: str(p?.name, 50), detail: str(p?.detail, 160) }))
+            .filter((p: Place) => p.name && p.detail)
+            .slice(0, 12)
+        : [],
+      facts: strList(cn.facts, 8, 160),
+      forgetFacts: strList(cn.forgetFacts, 8, 160),
+      time: str(cn.time, 60),
+    },
   };
 }
 
@@ -363,6 +434,30 @@ export function matchIndex(names: string[], target: string): number {
   return scored.length === 1 || scored[0].score > scored[1].score ? scored[0].i : -1;
 }
 
+const NAME_STOP = new Set(['de', 'het', 'een', 'van', 'der', 'den', 'ter', 'te', 'op']);
+const nameTokens = (s: string) => squash(s).split(' ').filter((w) => w && !NAME_STOP.has(w));
+
+/**
+ * Zoekt dezelfde persoon, plek of spullen in een lijst: letterlijk (hoofdletters, leestekens en accenten tellen niet),
+ * anders als alle woorden van de ene naam in de andere zitten ("de waard" in "Bram de waard", "zwaard" in "Roestig zwaard").
+ * Een stuk van een woord telt nooit ("Anna" is niet "Annabel", "Plek 1" niet "Plek 10"). Bij twijfel (meer kandidaten) geen match.
+ */
+export function matchName(names: string[], target: string): number {
+  const t = squash(target);
+  if (!t) return -1;
+  const exact = names.findIndex((n) => squash(n) === t);
+  if (exact >= 0) return exact;
+  const tt = nameTokens(target);
+  if (!tt.length) return -1;
+  const hits = names
+    .map((n, i) => {
+      const nt = nameTokens(n);
+      return nt.length && (tt.every((w) => nt.includes(w)) || nt.every((w) => tt.includes(w))) ? i : -1;
+    })
+    .filter((i) => i >= 0);
+  return hits.length === 1 ? hits[0] : -1;
+}
+
 /** Quest met de hand afvinken (zelfde gevolgen als wanneer de verteller hem afrondt). */
 export function finishQuestByHand(adv: Adventure, title: string, now = Date.now()): Adventure {
   if (!adv.state.quests.some((q) => !q.done && same(q.title, title))) return adv;
@@ -403,7 +498,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   // Spullen.
   let inventory = [...s.inventory];
   for (const item of c.removeItems) {
-    const i = inventory.findIndex((x) => same(x, item));
+    const i = matchName(inventory, item); // ook "zwaard" voor "Roestig zwaard": anders blijft de tas vol met kwijte spullen
     if (i >= 0) {
       notes.push(`− ${inventory[i]}`);
       inventory.splice(i, 1);
@@ -499,6 +594,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     summary: answer.summary || adv.summary,
     turns: [...adv.turns, turn],
     cast: mergeCast(adv.cast ?? [], answer.cast, hero.name),
+    canon: mergeCanon(adv.canon, answer.canon),
     pending: null,
     error: null,
     ended,
