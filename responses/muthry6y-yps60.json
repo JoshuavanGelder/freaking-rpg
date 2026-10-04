@@ -1,0 +1,48 @@
+{
+ "id": "muthry6y-yps60",
+ "finishedAt": "2026-10-04T07:21:31.981Z",
+ "durationMs": 32446,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je trekt aan de knoop in je borst die Tevin Aslo heet. Ergens beneden in de Toren verstijft Vorrin Grauwveer. Even later staat hij voor je, zijn grijze sjaal strak om zijn hals, zijn bleke ogen vol haat die hij niet mag tonen.\n\n\"Haal haar,\" zeg je. \"De vrouw uit de smidse. Levend.\"\n\nHij buigt. Hij kan niet anders.\n\nJe volgt hem door de ogen van de kraaien. Hij loopt de looiersbuurt in en rukt de rode draden met blote handen kapot. Ze schroeien zijn vingers, maar jouw bevel is sterker dan de pijn. In de smidse zit zij bij het vuur. Ze vlucht niet.\n\nTegen middernacht gaan de deuren van de troonzaal open. Vorrin duwt een klein, gebogen vrouwtje naar binnen, haar polsen gebonden met zijn eigen sjaal. Ze kijkt rond alsof de zaal van haar is.\n\n\"Je had zelf moeten komen, jongen,\" zegt ze. Haar zwarte ogen glinsteren. \"Nu weet ik hoe je knopen voelen. Vorrins knoop is van slecht touw.\"\n\nOm haar vingers draait ze nog één rood draadje.",
+  "choices": [
+   "Pak haar ware naam met de Derde knoop",
+   "Vraag wie zij is en wat ze wil",
+   "Laat haar rode draad afpakken en verbranden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is nu magiër op de kraaientroon van de Toren in Velmoor, gekleed in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen, offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; Velmoor is bang. Een oude Knoopmoeder uit het veen verzette zich in de looiersbuurt met rode geknoopte draden, ving tientallen kraaien en deed Joshua pijn; de looiersbuurt betaalt nog niet. Joshua stuurde Vorrin, die haar draden brak en haar gebonden naar de troonzaal bracht. Ze is niet bang, zegt dat Vorrins knoop zwak is en houdt nog één rood draadje vast.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Midnight in a cold stone throne hall lit by candles, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated on a black crow-carved throne; before him an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, wrists bound with an ash-grey scarf, twirling a red thread; behind her a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, dark clothes.",
+   "fallback": "Cold stone throne hall at midnight, black crow-carved throne, flickering candles, long shadows on stone floor, a single red thread lying on the steps."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
