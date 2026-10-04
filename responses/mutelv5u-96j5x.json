@@ -1,0 +1,54 @@
+{
+ "id": "mutelv5u-96j5x",
+ "finishedAt": "2026-10-04T05:52:33.916Z",
+ "durationMs": 16477,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Genees me,\" zeg je. Het is nauwelijks meer dan een zucht.\n\nDe rode draad trilt. Ilse verzet zich, je ziet het aan haar kaak, aan haar vingers die zich in de natte stenen klauwen. Dan buigt ze zich naar je toe, alsof iemand anders haar armen beweegt.\n\nHaar koele handen rusten op je ribben. Zilver licht kruipt onder je huid. Je botten schuiven knarsend terug op hun plek, de ijzersmaak verdwijnt van je tong. Je hart vindt zijn ritme weer. Je kunt ademen. Diep, voor het eerst in uren.\n\n\"Dit is wat hij met ons deed,\" fluistert ze. \"Precies dit.\"\n\nGarrel staat nog steeds halverwege de steeg. Het blauwe licht in zijn handen is gedoofd, maar zijn vuisten niet. \"Vrouwe,\" gromt hij. \"Zeg het, en ik breek hem.\"\n\n\"Ze zegt niets meer zonder jou,\" spint de meester. \"Twee dienaren voor de prijs van één, kind. Of één lijk minder om je zorgen over te maken.\"\n\nBoven de daken krast de kraai.",
+  "choices": [
+   "Laat Ilse Garrel bevelen te knielen",
+   "Vraag Garrel om zich bij je aan te sluiten",
+   "Laat Ilse je naar de kraaienkamer brengen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 22,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Ilses knoop",
+     "kind": "kracht",
+     "detail": "Ilse van de Toren moet je bevelen gehoorzamen, tegen haar wil in."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en zwijgt nooit. Hij offerde de spreukenmaker voor oude magie. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren, de Blinde Abt (wil de steen). Ware naam meester onder de troon in de kraaienkamer; knopenboek onder de werkbank. In de steeg knoopte Joshua Ilses naam vast: zij gehoorzaamt hem nu, met tegenzin, en genas zijn wonden. Haar reus Garrel staat nog in de steeg en wacht op een bevel om Joshua te breken.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Night alley, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, lying while a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, heals his ribs with soft silver light. Behind, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, fists clenched.",
+   "fallback": "Narrow night alley behind a soot-stained workshop, wet cobblestones gleaming in moonlight, a crow perched on a rooftop, faint silver glow in the mist."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
