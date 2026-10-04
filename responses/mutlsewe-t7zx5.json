@@ -1,0 +1,48 @@
+{
+ "id": "mutlsewe-t7zx5",
+ "finishedAt": "2026-10-04T09:13:34.752Z",
+ "durationMs": 15165,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je haalt de fluisterende steen uit je zak. Hij is warm en klopt zacht, als een tweede hart. \"Uitleggen,\" zeg je. \"Wat ging er mis?\"\n\nAurek lacht niet meer. \"Je duwde als een bedelaar die eindelijk mag eten, jongen. Alles tegelijk. Oude magie zoekt geen kracht, ze zoekt ruimte. Vorrins draad is smal en strak. Daar past maar weinig in. De rest vond de weg terug, naar jou.\"\n\nVorrin blijft in de deuropening staan en luistert, zijn armen over elkaar.\n\n\"Je moet de draad eerst wijder maken,\" fluistert de steen. \"Met toestemming. Een gegeven knoop is breed als een rivier. Een gestolen knoop is een rietje.\" Een stilte. \"Zo werkte hij ook. De Zonnevorst. Alleen vroeg hij nooit. Daarom rafelt zijn draad.\"\n\nJe ribben bonzen. Beneden, in de hal, klinkt iets wat geen mens kan zijn: een lange, natte zucht.\n\nVorrin kijkt naar je. \"Het geschenk wacht nog steeds.\"",
+  "choices": [
+   "Ga naar beneden, bekijk het geschenk",
+   "Vraag Vorrin om toestemming voor zijn draad",
+   "Vraag Aurek hoe de Zonnevorst te verslaan"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen; zij leert pas weer iets als hij haar iets nieuws toont. De Zonnevorst, een onsterfelijke spreukenmaker met rafelende lotdraad, wil Joshua als knopenmaker en steekt bij volle maan de rivier over. Velmoor is voorbereid. Joshua duwde oude magie door Vorrins draad; het sloeg terug, Vorrin is boos. Aurek legde uit: oude magie werkt alleen goed door draden die met toestemming wijd gemaakt zijn; de Zonnevorst vroeg nooit, daarom rafelt hij. Een ademend 'geschenk' van de Zonnevorst wacht beneden.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark tower chamber lit by a single relit candle, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, holding a faintly glowing whispering stone; in the doorway a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, arms crossed",
+   "fallback": "Dark stone tower chamber, one candle burning, open old book on the floor, faint glow from a small stone, open wooden door to a spiral staircase"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
