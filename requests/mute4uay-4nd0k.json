@@ -1,0 +1,216 @@
+{
+ "id": "mute4uay-4nd0k",
+ "createdAt": "2026-10-04T05:38:59.818Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots"
+ },
+ "state": {
+  "hp": 6,
+  "maxHp": 32,
+  "gold": 8,
+  "xp": 609,
+  "level": 7,
+  "location": "Werkplaats van de spreukenmaker",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel",
+   "Grijze shawl van de spreukenmaker"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de eis van de meester",
+    "detail": "De meester wil de spreukenmaker, of hij neemt meer.",
+    "done": true
+   },
+   {
+    "title": "Knoop de drie leiders van de Orde",
+    "detail": "Vorrin Grauwveer, Ilse van de Toren en de Blinde Abt.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   },
+   {
+    "name": "Splinter van de meester",
+    "kind": "zwakte",
+    "detail": "Je arm is vrij, maar de meester woont nu in je borst."
+   },
+   {
+    "name": "Zwarte vlam",
+    "kind": "kracht",
+    "detail": "Je linkerhand roept een koude vlam op die magie opeet en je voedt."
+   },
+   {
+    "name": "Laatste knoop",
+    "kind": "zwakte",
+    "detail": "De stem van de meester zwijgt nooit meer in je hoofd."
+   },
+   {
+    "name": "Oude magie",
+    "kind": "kracht",
+    "detail": "De dikke, oude magie van de spreukenmaker stroomt nu door je."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is één dienst schuldig aan de gewonde kroonkraai. Een splinter van de eerste meester, die een kroon en de wereld wil, gaf hem een zwarte vlam die magie eet. Joshua accepteerde het bod van de meester en offerde de spreukenmaker: hij kreeg zijn arm terug en diens oude magie, maar de stervende man legde een knoop om zijn hart zodat de meester nooit meer zwijgt. De meester woont nu in zijn borst. Namen van de Orde-leiders: Vorrin Grauwveer, Ilse van de Toren, de Blinde Abt. De kraaienkamer is een deur naar de troon van de meester. De kraai houdt afstand.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Test de zwarte vlam op het krijt",
+   "narration": "Je kruipt op je knieën naar de rand van de nieuwe cirkel en houdt je linkerhand boven het krijt. De zwarte vlam flakkert, koud als een winternacht in een kelder.\n\n\"Voorzichtig,\" kraakt de spreukenmaker. \"Krijt is geen hout, jongen. Krijt is een belofte.\"\n\nJe laat de vlam zakken. Hij brandt niet. Hij eet. De witte lijn wordt grijs, dan zwart, dan is hij weg, en de magie die erin zat stroomt koud je pols in. Je voelt je even minder leeg. Minder hongerig.\n\nIn je borst zucht iets tevreden. \"Zie je wel,\" fluistert de meester. \"Wij hoeven niets te maken. Wij nemen.\"\n\nJe trekt je hand terug voor de vlam verder kruipt. Het lukt, net. Er zit een gat in de cirkel, zo breed als een vinger.\n\nDe oude man staart naar het gat. De kraai krijst en vliegt naar de deur. \"Die cirkel,\" zegt de spreukenmaker zacht, \"hield hém vast. Niet jou.\""
+  },
+  {
+   "action": "Laat de vlam de hele cirkel opeten",
+   "narration": "Je laat de vlam zakken. Helemaal.\n\n\"Nee, jongen!\" De spreukenmaker grijpt naar je schouder, maar het is te laat. De zwarte vlam stort zich op het krijt als een uitgehongerde hond. Lijn na lijn wordt grijs, dan zwart, dan niets. De magie stroomt je pols in, koud en zwaar, en voor het eerst in maanden voel je je niet hongerig. Je botten voelen voller. Je adem dieper.\n\nMaar je kunt niet meer stoppen.\n\nJe wilt je hand terugtrekken en je hand wil niet. De kou kruipt langs je onderarm omhoog, tot voorbij je elleboog. Je huid wordt grauw, de aderen zwart als inkt. In je hoofd lacht de meester, nu niet meer fluisterend. \"Dank je, kind. Geen hek meer.\"\n\nVan de cirkel is alleen een kring van roet over.\n\nDe oude man deinst terug tegen zijn werkbank, zijn melkwitte oog wijd open. De kraai bij de deur krijst één keer, scherp, als een waarschuwing. Je linkerarm trilt. Hij heeft nog steeds honger.",
+   "picture": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling as a lightless black flame devours a chalk circle, his left arm grey with ink-black veins to the elbow; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe recoiling against a workbench; crow shrieking by the door, dim workshop"
+  },
+  {
+   "action": "Leg een knoop om je eigen elleboog",
+   "narration": "Je klemt je tanden op elkaar en trekt met je rechterhand een rode draad uit de lucht. Eerste lus om je elleboog, precies op de grens waar grauwe huid overgaat in de jouwe. Tweede lus eronder.\n\n\"Een hek van touw,\" grinnikt de meester. \"Wat lief.\"\n\nJe trekt aan. Even houdt het. De kou stuit op de knoop als water tegen een dam. Dan voel je het: hij wacht niet, hij duwt. De draad kreunt, rafelt, en knapt met een geluid als een zweep. Het losse einde slaat terug over je gezicht. Een brandende streep van wang tot kin.\n\nDe kou schiet omhoog, tot halverwege je bovenarm, en stopt daar. Niet omdat jij hem tegenhoudt. Omdat hij het zo wil.\n\n\"Rustig, kind. Ik heb tijd.\"\n\nDe spreukenmaker kruipt naar je toe met een stuk krijt in zijn bevende hand. \"Een knoop alleen houdt hem niet,\" hijgt hij. \"Je moet hem iets geven om vast te houden. Of iemand.\" Bij de deur slaat de kraai met smeulende vleugels."
+  },
+  {
+   "action": "Vraag de meester wat hij wil",
+   "narration": "Je sluit je ogen. Niet tegen hem in, maar naar hem toe.\n\n\"Wat wil je?\" vraag je, binnenin, waar het koud tikt.\n\nHet tikken stopt. Even is het zo stil dat je de spreukenmaker hoort hijgen en de kraai hoort schrapen met zijn klauwen. Dan antwoordt de meester, en zijn stem is geen gefluister meer. Hij klinkt als iemand die eindelijk aan tafel mag.\n\n\"Wat ik altijd wilde, kind. Een kroon. Velmoor eerst. Dan de rest.\" Je ziet beelden die niet van jou zijn: een stad van zwart glas, mensen die knielen, kraaien op elke toren. \"Jij wilt sterk zijn. Ik wil een lichaam dat lang meegaat. Wij willen hetzelfde, alleen in een andere volgorde.\"\n\nHij laat even stilte vallen.\n\n\"Geef me de oude man. Zijn magie is dik en oud. Dan laat ik je arm los tot aan de pols. Weiger, en ik neem elke nacht een beetje meer.\"\n\nJe opent je ogen. De spreukenmaker kijkt je aan. Hij weet het al."
+  },
+  {
+   "action": "Onderhandel: wat krijg ik nog meer?",
+   "narration": "\"En wat krijg ik nog meer?\" vraag je, binnenin. \"Een pols is weinig voor een oude man.\"\n\nDe meester lacht. Dan stopt het lachen, want je duwt terug. Niet met een knoop, niet met vlam. Met iets kouds en hards dat van jou is. Je voelt hem aarzelen, en in die aarzeling zie je het: een herinnering die hij niet wilde laten zien. Een lichaam van vroeger, grauw en rottend, omdat het genomen was en niet gegeven.\n\n\"Je hebt mijn ja nodig,\" zeg je hardop. \"Anders rot je mee.\"\n\nLange stilte. Dan, bijna beledigd: \"Slim kind.\"\n\nZijn nieuwe bod komt snel. De arm terug tot de vingertoppen. Het geheim van de kraaienkamer. En de namen van de drie magiërs die de Orde van de Kraai leiden, zodat jij ze kunt knopen zoals hij ooit geknoopt werd.\n\n\"Alleen de oude man,\" fluistert hij. \"Meer vraag ik niet.\"\n\nDe spreukenmaker heeft het krijt laten vallen. Zijn melkwitte oog staart je aan. \"Hij liegt nooit helemaal, jongen,\" zegt hij zacht. \"Dat maakt hem zo gevaarlijk.\""
+  },
+  {
+   "action": "Accepteer het bod en offer de spreukenmaker",
+   "narration": "\"Ja,\" zeg je. Eén woord, en het is het zwaarste dat je ooit hebt opgetild.\n\nDe spreukenmaker knikt alsof hij het al jaren wist. Hij probeert niet te vluchten. Hij raapt alleen zijn krijt op.\n\nJe linkerhand komt omhoog zonder dat jij hem optilt. De zwarte vlam vindt de oude man zoals hij het krijt vond: stil, hongerig, grondig. Zijn magie stroomt in je, dik als honing, oud als de stad zelf. Je hart slaat harder dan ooit. Je arm wordt warm, roze, de jouwe, tot in je vingertoppen.\n\nMaar je wil wankelt in de stroom, en de oude man ziet het. Met zijn laatste adem trekt hij een draad uit de lucht en legt een knoop om je hart. \"Je zult hem altijd horen,\" fluistert hij. \"Zodat je nooit vergeet wat dit kostte.\" Dan is er alleen een grijze shawl op de vloer.\n\nIn je hoofd fluistert de meester drie namen: Vorrin Grauwveer. Ilse van de Toren. De Blinde Abt. \"En de kraaienkamer, kind, is een deur. Naar mijn troon.\"\n\nBij de deur kijkt de kraai je aan. Hij komt niet dichterbij.",
+   "picture": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, standing in a dim soot-stained workshop, his left hand raised and wreathed in a lightless black flame, an empty ragged grey shawl drifting to the floor before him, a faint red thread glowing over his chest, a crow watching warily by the door, cold candlelight"
+  }
+ ],
+ "action": "Doorzoek de werkplaats naar zijn boeken",
+ "roll": 12
+}
