@@ -1,0 +1,49 @@
+{
+ "id": "mutut0a0-q87y6",
+ "finishedAt": "2026-10-04T13:26:10.730Z",
+ "durationMs": 28472,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je legt je hand op de gele steen en opent je hart voor de Wachter. Hij ziet alles: het kind dat sterren telde, de man die de Duisternis temde zonder haar te doden, het bevel dat goede harten met rust laat.\n\nDe zilveren reus buigt diep. 'Geen bezitter,' zegt hij. 'Een hoeder.' De mist wijkt, en je twee soldaten ontwaken stralend.\n\nVer weg voelt de Koningin het. Haar kroon van dode sterren barst open, en uit elke gedoofde ster springt weer licht. Ze knielt. De Raad der Gedoofde Sterren bestaat niet meer.\n\nOver het hele heelal gaan banieren van zes kleuren omhoog. Geen stelsel buigt uit angst, allemaal uit hoop.\n\nTerug op aarde wacht Mara Valk met haar headset in de hand. 'Klaar?' vraagt ze.\n\nJe glimlacht. 'Voor nu.'",
+  "choices": [],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Ontmasker de Raad der Gedoofde Sterren",
+    "Verover het hele universum"
+   ],
+   "location": "Aarde",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, droeg alle zes Oneindigheidsstenen. Voor ESA-directeur Mara Valk versloeg hij een zwarte vloot, ontmaskerde titan Vorath, bedwong de Eerste Duisternis en werd alwetend. Zijn leger van sterrenlicht veroverde het heelal en raakte alleen slechte harten. Vorath verwaaide tot as. Aan de rand toonde hij de Wachter van de Rand zijn hart; de Wachter erkende hem als hoeder. De Koningin knielde, haar dode sterren ontbrandden opnieuw en de Raad der Gedoofde Sterren viel. Het hele heelal erkent hem uit hoop. Hij keerde terug naar Mara op aarde.",
+  "gameOver": true,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, standing at the edge of the universe as an ageless male cosmic giant, face both old and young, colossal body of soft silver light, calm luminous white eyes, long flowing silver hair, robes of pearl-white mist bows before him; galaxies igniting with light behind them, epic wide shot.",
+   "fallback": "The edge of the universe, a wall of pearl-white mist parting to reveal countless galaxies blazing with renewed light, serene and majestic, epic wide view."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
