@@ -1,0 +1,48 @@
+{
+ "id": "mutofrpg-bp0n1",
+ "finishedAt": "2026-10-04T10:27:57.648Z",
+ "durationMs": 29574,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Lirre,\" hijg je. Het vuur zit al in je keel. \"Zeg het tegen hem. Niet tegen een haak. Tegen hém.\"\n\nZe kijkt omhoog naar de gestalte van wit vuur. Haar blote voeten staan nog in de as van haar kooi, Vorrins sjaal hangt tot op haar enkels. Ze is klein. Ze trilt. Dan stapt ze naar voren en legt haar hand op jouw knoop, precies waar zijn vuur naar binnen kruipt.\n\n\"Nee,\" zegt ze.\n\nHet is geen kinderstem meer. Het klinkt alsof elke naam die ze vandaag teruggaf het met haar meezegt. Het woord rolt langs je draden als koud water: door Vorrin, door Ilse, door de Abt. Overal waar het komt, sist het witte vuur en trekt zich terug.\n\nDe Zonnevorst wankelt. Zijn hand laat de slag los. Voor het eerst zie je iets op dat vurige gezicht dat op schrik lijkt.\n\n\"Jij,\" sist hij naar Lirre. \"Jij was van mij.\"\n\n\"Nooit,\" zegt ze.\n\nJe borst brandt nog, maar je web is weer van jou. Hij staat open, één hartslag lang.",
+  "choices": [
+   "Sla nu toe met een windspeer",
+   "Knoop zijn naam vast met Lirre",
+   "Vraag hem wat hij werkelijk wil"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo), die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Met Lirre maakte hij alle gestolen lotdraden los; ze is vrij, met bruine ogen en Vorrins sjaal. De Zonnevorst, een gestalte van wit vuur, kwam zelf naar de hal en kroop met zijn vuur langs Joshua's knopen het web in. Lirre zei 'nee' tegen hem en dreef zijn vuur overal terug. De Zonnevorst wankelt, geschrokken, en staat even open.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark stone hall, a small thin girl about ten, pale ordinary skin, warm brown eyes, tangled pale hair, simple white shift, a long ash-grey scarf around her shoulders, raising her hand as a wave of cool silver light pushes back a towering figure of white fire in a western doorway; beside her a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling, crows above.",
+   "fallback": "A dark stone hall with an open western doorway glowing with white light, grey ash on the floor, silver light shimmering through the air, crows perched on high windows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
