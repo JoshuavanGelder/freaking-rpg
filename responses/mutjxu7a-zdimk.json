@@ -1,0 +1,58 @@
+{
+ "id": "mutjxu7a-zdimk",
+ "finishedAt": "2026-10-04T08:22:06.594Z",
+ "durationMs": 33366,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Knip hem door,\" zeg je. \"Alsjeblieft.\"\n\nMoeder Veen lacht zacht, een droog geluid als knappende takjes. \"Ik? Nee, jongen. Jij gaat knippen. Ik houd alleen je hand vast.\"\n\nZe opent het lood. Het rode flesje ligt erin en klopt, precies op jouw hartslag. Uit de hals loopt een draad die alleen jullie twee kunnen zien, dun en gloeiend, naar het zuiden, dwars door de muur van de smidse.\n\nHaar koude, kromme vingers sluiten zich om de jouwe. Je pakt de draad. Hij brandt als een hete naald. Ergens ver weg voel je iets terugdeinzen: een hand vol ringen, verbaasd.\n\n\"Nu,\" fluistert Veen.\n\nJe buigt de draad tot hij knikt, zoals je het geleerd hebt. Dan verder. Nog verder. Hij knapt met het geluid van een snaar.\n\nHet flesje wordt grijs en stil. Gewoon glas met stof erin.\n\nHijgend zak je tegen het aambeeld. Moeder Veen klopt op je knie. \"Goed gedaan. Maar zij weet nu dat je het kunt. En ik wil er iets voor terug.\"",
+  "choices": [
+   "Vraag wat ze ervoor wil",
+   "Beloof haar iets, zonder knoop",
+   "Ga meteen naar Saria in de kerker"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [
+    "Dood koortsflesje"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Het ultimatum van de volle maan"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Lotschaar",
+     "kind": "kracht",
+     "detail": "Je kunt een lotdraad buigen tot hij knapt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en een loden kistje met de fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin, en trainde zijn lichaam taaier. Garrel is dood; het volk haat Joshua. Saria van Kesh zit in de kerker. De Zonnevorst dreigde Velmoor met koorts vóór de volle maan, maar met hulp van Moeder Veen knipte Joshua in de oude smidse de lotdraad van het koortsflesje door; het flesje is dood. De Zonnevorst weet nu wat hij kan. Moeder Veen wil iets terug voor haar hulp.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cold dark abandoned forge at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, snapping a glowing red thread of light in his hands, guided by elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, sparks flying, open lead box on anvil",
+   "fallback": "Cold dark abandoned forge at night, old anvil with an open small lead box and a grey glass vial, dead hearth, faint red sparks drifting in the gloom"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
