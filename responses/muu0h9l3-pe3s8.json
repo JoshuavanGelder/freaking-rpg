@@ -1,0 +1,54 @@
+{
+ "id": "muu0h9l3-pe3s8",
+ "finishedAt": "2026-10-04T16:05:05.358Z",
+ "durationMs": 31348,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je haalt de fluisterende steen uit je mantel. \"Jij draagt het, meester.\"\n\nAureks stem krijst in je hoofd. Nee! Niet dat rot, jongen, niet in mijn cel! Maar zijn naam zit in jouw knoop, en hij moet gehoorzamen.\n\nJe legt je hand op de borst van de Vorst en trekt. De ziekte is koud en kleverig, als zwarte teer aan zijn draden. Je knoopt haar draad voor draad los en duwt haar de steen in. Je vingers bevriezen, je wil kraakt bijna. Toch houd je vast.\n\nDe steen wordt zwart. Een dun barstje loopt over het oppervlak.\n\nIn je borst slaat het vreemde hart rustiger. De Vorst ademt diep. \"Het is weg,\" fluistert hij verbaasd.\n\nUit de steen klinkt gekreun. En nog iets: een tweede stem, zacht en hongerig.",
+  "choices": [
+   "Haast je met het vuur naar Veen",
+   "Vraag de steen wie daar fluistert",
+   "Leg een beschermknoop om de barst"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Zwarte gebarsten steen"
+   ],
+   "removeItems": [
+    "Fluisterende steen"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek. Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; diens hart klopt in Joshua's borst. De akkers zijn weer warm. Onder de zonnetroon ving Joshua het eerste vuur in Veens zwarte potje. Hij bond de ziekte van de Vorst in de steen van meester Aurek; de steen werd zwart en barstte, en er fluistert nu een tweede, hongerige stem in. De Vorst ademt weer. Het vuur moet nog naar Moeder Veen voor de echte genezing.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, holding a cracked black stone as dark mist flows into it from a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes, dim red glow.",
+   "fallback": "Dark cave beneath an empty golden throne, a cracked black stone lying on the rock floor, faint red glow, drifting dark mist."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
