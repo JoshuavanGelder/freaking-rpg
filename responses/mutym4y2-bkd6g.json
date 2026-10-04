@@ -1,0 +1,50 @@
+{
+ "id": "mutym4y2-bkd6g",
+ "finishedAt": "2026-10-04T15:12:38.601Z",
+ "durationMs": 16361,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je schuift je armen onder zijn knieën en zijn rug. Hij weegt bijna niets, als een bundel verbrande takken. Toch trillen je benen, je zwakke lijf protesteert.\n\nHalverwege glijdt je voet weg op de gladde gouden treden. Je valt op één knie, de Vorst tegen je borst. Zijn gloeiende vingers graaien naar de zetel en raken die. Een vonkenregen spat op, en de hitte schroeit door je mouw tot op je huid.\n\nVorrin vangt de Vorst op voor hij de grond raakt. \"Ik heb hem.\"\n\nDan hoor je het: een diep, droog geknetter. De spleet onder de lege troon gaapt open. Het rode licht kruipt omhoog, langs de treden, en voelt naar jou. Het klopt sneller. Het weet dat je hier bent.\n\nIn je handen wordt het zwarte potje ijskoud.",
+  "choices": [
+   "Steek het potje meteen in de spleet",
+   "Spreek het oude vuur eerbiedig toe",
+   "Leg een eerste knoop om het licht"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lichaamskracht",
+   "dc": 10,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; een verborgen lus bindt de eed aan diens stervende hart, dat in Joshua's borst klopt. De akkers zijn weer warm. Moeder Veen gaf hem een zwart potje voor het eerste vuur onder de zonnetroon; iemand moet de ziekte dragen, dat moet Joshua nog beslissen. In de grot tilde Joshua de Vorst van de troon, struikelde en brandde zich; Vorrin houdt de Vorst vast. Het eerste vuur kruipt nu uit de spleet naar Joshua toe.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Glowing cave, empty golden sun throne with a cracked rock beneath spilling creeping red light up the steps; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling holding a small black clay pot; beside him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, holding a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes. Sparks drifting.",
+   "fallback": "Glowing cave with an empty golden sun throne on steps, a crack in the rock beneath pulsing with red light, drifting sparks, warm dramatic shadows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
