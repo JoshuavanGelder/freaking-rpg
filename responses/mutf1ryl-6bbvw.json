@@ -1,0 +1,48 @@
+{
+ "id": "mutf1ryl-6bbvw",
+ "finishedAt": "2026-10-04T06:05:05.973Z",
+ "durationMs": 16186,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je trekt één keer aan de rode draad. Ilse stapt naar voren, tussen jou en de troon.\n\n\"Vader,\" zegt ze, en haar stem klinkt zoals vroeger, kalm en eerbiedig. \"Vorrin heeft ons verraden. Hij wil de steen voor zichzelf. Ik heb bewijs.\" Ze spreidt haar handen en praat door, snel en vol details die je niet kent. Namen, data, een brief.\n\nDe Abt draait zijn dichtgenaaide gezicht naar haar toe. Zijn hand glijdt van de leuning. \"Vertel,\" zegt hij zacht.\n\nJe zet een schaduwstap. Je voeten maken geen geluid op de stenen. Honderden kraaien kijken je na, maar geen enkele krast. Je hurkt achter de troon en tast onder de zitting. Je vingers vinden groeven in het hout. Letters, diep gekrast, oud als de stad.\n\nIn je borst houdt de meester zijn adem in. \"Lees het, kind. Lees het hardop en ik ben van jou. Of ik van jou...\"\n\nAchter je stopt Ilse halverwege een zin. De Abt glimlacht. \"Jongen,\" zegt hij vriendelijk, zonder zich om te draaien. \"Wat zoek je onder mijn stoel?\"",
+  "choices": [
+   "Lees de ware naam hardop",
+   "Knoop meteen de naam van de Abt",
+   "Laat Garrel de Abt grijpen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen en het knopenboek met de kroonknoop. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor oude magie. Ilse van de Toren is door een knoop aan hem gebonden; haar reus Garrel knielde maar haat Joshua. Vorrin wil hem dood. De kroonkraai eist: knoop de Blinde Abt, de troon moet leeg blijven; de meester zegt dat de kraai liegt. In de kraaienkamer leidde Ilse de Abt af met verhalen over Vorrins verraad, terwijl Joshua achter de zwarte troon sloop en de gekraste ware naam van de meester vond. Maar de Abt merkt hem op.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Round underground chamber with hundreds of crows on stone ledges, candlelight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, crouching behind a black wooden throne, fingers on carved letters underneath. Before the throne an elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe.",
+   "fallback": "Round underground stone chamber lit by candles, empty black wooden throne in the center, stone ledges along the walls, old worn stairs, dim mysterious atmosphere."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
