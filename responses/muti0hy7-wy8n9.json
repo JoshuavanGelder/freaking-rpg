@@ -1,0 +1,48 @@
+{
+ "id": "muti0hy7-wy8n9",
+ "finishedAt": "2026-10-04T07:27:54.773Z",
+ "durationMs": 16437,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je drukt de fluisterende steen tegen je borst. \"Waar staat ze, meester? Precies.\"\n\nDe steen wordt warm, dan heet. De schorre stem van Aurek Valdemoor kruipt door je ribben. \"Ach. Nu heb je me nodig.\" Een droog gegrinnik. \"Drie passen links van de troon. Bij de tweede pilaar. Ze ademt niet, maar de veenaarde onder haar voeten wel. Kijk naar het stof.\"\n\nJe kijkt. Bij de tweede pilaar ligt het kaarslicht vreemd op de vloer, alsof iemand het opzij duwt. Een dun spoor zwarte aarde loopt erheen. En stopt.\n\nVorrin volgt je blik. Zijn verbrande vingers trillen.\n\n\"Ze hoort ons, jongen,\" fluistert de meester. \"Ze wacht tot je slaapt. Ze wil míj. Laat me even naar buiten, één tel maar, en ik ruk haar uit haar schaduw.\"\n\nDe steen bonkt als een tweede hart. Bij de pilaar kraakt heel zacht een vloertegel.",
+  "choices": [
+   "Laat een rode windstoot op de pilaar los",
+   "Bevel Vorrin haar met de sjaal te grijpen",
+   "Laat de meester één tel vrij"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen (met meester Aurek Valdemoor), offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; Velmoor is bang. De looiersbuurt betaalt geen belasting. Moeder Veen, een oude Knoopmoeder uit het veen, wilde de steen. Ze draaide Joshua's belofteknoop om: hij draagt een rood touwtje om zijn pols en mag de looiersbuurt niet aanraken. Ze is onzichtbaar maar staat volgens de meester bij de tweede pilaar van de troonzaal en wacht tot Joshua slaapt. De meester smeekt om even vrijgelaten te worden om haar te grijpen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Candlelit stone throne hall at midnight, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, clutching a glowing stone, staring at a trail of black peat soil ending at a pillar where candlelight bends strangely; man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, watching.",
+   "fallback": "Candlelit stone throne hall at midnight, black crow-carved throne, a thin trail of dark peat soil on the floor ending at a stone pillar where light bends strangely."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
