@@ -1,0 +1,50 @@
+{
+ "id": "muu0ma6z-et999",
+ "finishedAt": "2026-10-04T16:08:54.195Z",
+ "durationMs": 27201,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de Vorst achter bij een klein vuur dat Vorrin voor hem stookt. Zelf ga je alleen verder, sneller dan goed voor je is. Het potje klopt warm tegen je buik. De steen in je mantel is ijskoud.\n\nDe tweede nacht slaap je niet. De hongerige stem fluistert zacht en geduldig. Dat vuur is van jou, koning. Waarom zou je het weggeven? Aan de rand van het moeras geven je benen het op. Je valt met je gezicht in het koude riet en blijft liggen tot de ochtend.\n\nDaar vindt Moeder Veen je. Ze trekt je overeind en ruikt aan het potje, dan aan je mantel. Haar zwarte ogen worden smal.\n\n\"Je hebt het vuur,\" zegt ze. \"Maar wat zit er in die steen? Dat is niet alleen ziekte, jongen. Er is iets mee naar binnen gekropen.\"",
+  "choices": [
+   "Geef haar het vuur, zwijg over steen",
+   "Laat Veen de steen onderzoeken",
+   "Vraag de hongerige stem wie hij is"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Het huisje van Moeder Veen",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua was ooit straatarm en is nu magiër op de kraaientroon van Velmoor, met zijn knopenboek. Hij knoopte Ilse, de Blinde Abt en Vorrin. Hij heeft een belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; diens hart klopt in Joshua's borst. Hij ving het eerste vuur in Veens zwarte potje en bond de ziekte van de Vorst in de steen van meester Aurek. De steen werd zwart en barstte. Er fluistert nu een tweede, hongerige stem in, die Joshua verleidt het vuur te houden. Vorrin bleef bij de Vorst. Joshua haastte zich uitgeput naar Moeder Veen. Zij ziet het vuur, maar merkt dat er iets vreemds in de steen is gekropen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Misty swamp edge at dawn among reeds; an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, helping up a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, clutching a warm glowing black clay pot.",
+   "fallback": "Misty swamp at dawn, tall wet reeds, a crooked hut in the distance with smoke rising from its chimney, pale grey light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
