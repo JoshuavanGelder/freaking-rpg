@@ -43,6 +43,7 @@ test('beurt-verzoek: staat, recente beurten en actie', () => {
     roll: 18,
   });
   assert.match(t, /hit points: 14 of 20/);
+  assert.match(t, /regen\): none/);
   assert.match(t, /Snelheid 5/);
   assert.match(t, /Energiereep/);
   assert.match(t, /"Vind de dief"/);

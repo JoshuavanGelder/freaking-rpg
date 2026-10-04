@@ -72,7 +72,27 @@
       "properties": {
         "hp": {
           "type": "integer",
-          "description": "Change in hit points this turn (negative = damage)."
+          "description": "Damage this turn as a negative number (0 when none). Never use this for healing: use heal."
+        },
+        "heal": {
+          "type": "string",
+          "enum": [
+            "",
+            "klein",
+            "groot",
+            "volledig"
+          ],
+          "description": "Healing this turn, as a size. The app turns it into hit points. Empty string when the hero is not healed."
+        },
+        "regen": {
+          "type": "string",
+          "enum": [
+            "",
+            "geen",
+            "traag",
+            "snel"
+          ],
+          "description": "The hero's natural self-healing. Empty string = unchanged (almost always). Only set it when the hero gains or loses a self-healing power."
         },
         "gold": {
           "type": "integer",
@@ -164,6 +184,8 @@
       },
       "required": [
         "hp",
+        "heal",
+        "regen",
         "gold",
         "xp",
         "addItems",

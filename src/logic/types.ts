@@ -55,7 +55,15 @@ export type GameState = {
   quests: Quest[];
   /** In het verhaal gekregen krachten en zwaktes. undefined = avontuur van vóór deze lijst. */
   traits?: Trait[];
+  /** Natuurlijk zelfherstel van deze held (alleen als het bij het verhaal past). undefined = geen. */
+  regen?: Regen;
 };
+
+/** Hoeveel een held vanzelf herstelt op een beurt zonder schade. */
+export type Regen = 'traag' | 'snel';
+
+/** Grootte van een heling: een deel van het maximale leven, door de app uitgerekend. */
+export type Heal = '' | 'klein' | 'groot' | 'volledig';
 
 export type Turn = {
   id: string;
@@ -108,6 +116,8 @@ export type Answer = {
   attributes: Attribute[];
   changes: {
     hp: number;
+    heal: Heal; // heling als maat (klein/groot/volledig); de app rekent het getal uit
+    regen: '' | 'geen' | Regen; // '' = ongewijzigd
     gold: number;
     xp: number;
     addItems: string[];

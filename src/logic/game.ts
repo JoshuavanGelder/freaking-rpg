@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Attribute, CastMember, GameState, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Attribute, CastMember, GameState, Heal, Regen, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -28,6 +28,31 @@ const MAX_ATTRIBUTES = 8;
 const RECENT_TURNS = 6;
 const MAX_CAST = 24;
 const EARLIER_PICTURES = 12;
+
+/** Heling als deel van het maximale leven (minstens 1 en nooit meer dan het maximum). */
+const HEAL_SHARE: Record<Exclude<Heal, ''>, number> = { klein: 0.25, groot: 0.6, volledig: 1 };
+/** Zelfherstel per beurt zonder schade, als deel van het maximale leven. */
+const REGEN_SHARE: Record<Regen, number> = { traag: 0.1, snel: 0.25 };
+
+/** Hoeveel leven een heling oplevert bij dit maximum. */
+export function healAmount(heal: Heal, maxHp: number): number {
+  if (!heal) return 0;
+  return heal === 'volledig' ? maxHp : Math.max(1, Math.ceil(maxHp * HEAL_SHARE[heal]));
+}
+
+/** Hoeveel leven het zelfherstel van een held per rustige beurt oplevert. */
+export function regenAmount(regen: Regen | undefined, maxHp: number): number {
+  return regen ? Math.max(1, Math.round(maxHp * REGEN_SHARE[regen])) : 0;
+}
+
+const healOf = (v: unknown): Heal => {
+  const s = typeof v === 'string' ? v.trim().toLowerCase() : '';
+  return s === 'klein' || s === 'groot' || s === 'volledig' ? s : '';
+};
+const regenOf = (v: unknown): '' | 'geen' | Regen => {
+  const s = typeof v === 'string' ? v.trim().toLowerCase() : '';
+  return s === 'geen' || s === 'traag' || s === 'snel' ? s : '';
+};
 
 export function settingOf(id: string): Setting {
   return SETTINGS.find((s) => s.id === id) ?? SETTINGS[SETTINGS.length - 1];
@@ -183,6 +208,8 @@ export function parseAnswer(raw: unknown): Answer | null {
       : [],
     changes: {
       hp: int(ch.hp, -10, 10),
+      heal: healOf(ch.heal),
+      regen: regenOf(ch.regen),
       gold: int(ch.gold, -9999, 9999),
       xp: int(ch.xp, 0, 30),
       addItems: strList(ch.addItems, 6, 40),
@@ -289,7 +316,15 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   const level = 1 + Math.floor(xp / XP_PER_LEVEL);
   const levelsUp = Math.max(0, level - s.level);
   const maxHp = s.maxHp + levelsUp * 2;
-  let hp = Math.min(maxHp, Math.max(0, s.hp + c.hp + levelsUp * 2));
+  // Schade en heling: een heling is een maat (klein/groot/volledig) die de app zelf uitrekent, zodat herstel niet
+  // afhangt van het getal dat de verteller kiest. Een heling vervangt een positieve hp-wijziging; schade telt gewoon mee.
+  const regen: Regen | undefined = c.regen === 'geen' ? undefined : c.regen === 'traag' || c.regen === 'snel' ? c.regen : s.regen;
+  const damage = c.heal ? Math.min(c.hp, 0) : c.hp;
+  let hp = Math.min(maxHp, Math.max(0, s.hp + damage) + levelsUp * 2 + healAmount(c.heal, maxHp));
+  // Zelfherstel van de held: alleen op een beurt zonder schade of heling, niet bij de start en niet als het verhaal klaar is.
+  if (regen && pending.kind === 'turn' && !c.heal && c.hp >= 0 && hp > 0 && !answer.gameOver) {
+    hp = Math.min(maxHp, hp + regenAmount(regen, maxHp));
+  }
   if (levelsUp) notes.push(`Level ${level}`);
   const gold = Math.max(0, s.gold + c.gold);
 
@@ -382,7 +417,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
       ? newPicture(`${adv.id}-portret`, { kind: 'portrait', prompt: portraitPrompt, fallback: `head and shoulders portrait of ${hero.heroLook || 'a person in a casual jacket'}, calm expression, plain softly lit background` }, now)
       : adv.portrait;
 
-  const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests, traits };
+  const state: GameState = { hp, maxHp, gold, xp, level, location, attributes, inventory, quests, traits, ...(regen ? { regen } : {}) };
   return {
     ...adv,
     hero,

@@ -46,6 +46,14 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - `applyAnswer`: de app past toe; eigenschappen bij de start, later alleen nieuwe erbij (max. 8, bestaande nooit anders);
   level = 1 + xp/100 (+2 max leven per level);
   0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level, krachten (geen cijfers van worpen).
+- **Heling** (`changes.heal`, `healAmount` in game.ts): de verteller kiest een maat, de app rekent het leven uit
+  (klein 25%, groot 60%, volledig 100% van max-leven). `changes.hp` is alleen nog schade. Veilig rusten of een echte
+  genezer = volledig. Aanleiding: de verteller koos zelf kleine getallen, waardoor je zelden volledig herstelde.
+  Een heling vervangt een positieve hp; schade in dezelfde beurt telt eerst (op 0 geklemd, daarna heling).
+- **Zelfherstel** (`changes.regen` → `state.regen`, `regenAmount`): optioneel per held, alleen als het verhaal het
+  rechtvaardigt (regenererende held, trol, vampier, helende magie). `traag` = 10%, `snel` = 25% van max-leven per beurt
+  zonder schade of heling; niet bij de start, niet bij game over. `geen` haalt het weg. Staat in het verzoek als
+  `natural regeneration (regen)`.
 - **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
   zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
   naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen

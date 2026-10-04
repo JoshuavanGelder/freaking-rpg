@@ -14,12 +14,14 @@ import {
   styledPrompt,
   updatePicture,
   buildRequest,
+  healAmount,
   heroProblem,
   makePending,
   mergeCast,
   newAdventure,
   paragraphs,
   parseAnswer,
+  regenAmount,
   rollD20,
   toggleTone,
   worldLabel,
@@ -139,6 +141,84 @@ test('level omhoog geeft meer maximaal leven', () => {
   assert.equal(next.state.maxHp, 22);
   assert.equal(next.state.hp, 12);
   assert.ok(next.turns[0].notes.includes('Level 2'));
+});
+
+const withChanges = (over: Record<string, any>) =>
+  parseAnswer(raw({ changes: { hp: 0, gold: 0, xp: 0, addItems: [], removeItems: [], addQuests: [], completeQuests: [], location: '', ...over } }))!;
+
+test('heling is een maat: klein, groot en volledig rekent de app uit', () => {
+  const base = newAdventure(world, hero, 1, 'adv-heal');
+  const hurt = (hp: number) => ({ ...base, state: { ...base.state, hp } });
+  const run = (hp: number, heal: string) => applyAnswer(hurt(hp), makePending('turn', 'x', 2), withChanges({ heal }), 3).state.hp;
+  assert.equal(run(4, 'klein'), 9); // 25% van 20 = 5
+  assert.equal(run(4, 'groot'), 16); // 60% van 20 = 12
+  assert.equal(run(4, 'volledig'), 20);
+  assert.equal(run(15, 'groot'), 20); // nooit boven het maximum
+  assert.equal(run(4, ''), 4);
+  assert.equal(run(4, 'onzin'), 4); // onbekende maat telt niet
+});
+
+test('heling gaat voor een positieve hp-wijziging, schade telt wel mee', () => {
+  const base = newAdventure(world, hero, 1, 'adv-heal-2');
+  const adv = { ...base, state: { ...base.state, hp: 10 } };
+  // De verteller zet per ongeluk hp op +10 én heal: alleen de maat telt.
+  assert.equal(applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ hp: 10, heal: 'klein' }), 3).state.hp, 15);
+  // Schade en heling in dezelfde beurt: eerst de klap, dan de heling.
+  assert.equal(applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ hp: -6, heal: 'klein' }), 3).state.hp, 9);
+});
+
+test('volledig herstel na schade in dezelfde beurt', () => {
+  const base = newAdventure(world, hero, 1, 'adv-heal-3');
+  const adv = { ...base, state: { ...base.state, hp: 2 } };
+  const next = applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ hp: -8, heal: 'volledig' }), 3);
+  assert.equal(next.state.hp, 20);
+  assert.equal(next.ended, false);
+});
+
+test('healAmount en regenAmount', () => {
+  assert.equal(healAmount('', 20), 0);
+  assert.equal(healAmount('klein', 20), 5);
+  assert.equal(healAmount('klein', 3), 1);
+  assert.equal(healAmount('groot', 22), 14);
+  assert.equal(healAmount('volledig', 22), 22);
+  assert.equal(regenAmount(undefined, 20), 0);
+  assert.equal(regenAmount('traag', 20), 2);
+  assert.equal(regenAmount('snel', 20), 5);
+  assert.equal(regenAmount('traag', 4), 1);
+});
+
+test('zelfherstel: alleen als het verhaal het geeft, en alleen op rustige beurten', () => {
+  const base = newAdventure(world, hero, 1, 'adv-regen');
+  const adv = { ...base, state: { ...base.state, hp: 10 } };
+  // Zonder regen verandert er niets.
+  assert.equal(applyAnswer(adv, makePending('turn', 'x', 2), withChanges({}), 3).state.hp, 10);
+  // De verteller geeft de held zelfherstel (bv. een trol) en het blijft bewaard in de staat.
+  const gained = applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ regen: 'snel' }), 3);
+  assert.equal(gained.state.regen, 'snel');
+  assert.equal(gained.state.hp, 15);
+  // Volgende rustige beurt: nog eens, begrensd op het maximum.
+  const calm = applyAnswer(gained, makePending('turn', 'x', 4), withChanges({}), 5);
+  assert.equal(calm.state.hp, 20);
+  assert.equal(calm.state.regen, 'snel');
+  // Op een beurt met schade geen zelfherstel.
+  const hit = applyAnswer(gained, makePending('turn', 'x', 4), withChanges({ hp: -3 }), 5);
+  assert.equal(hit.state.hp, 12);
+  // Bij de start telt het niet mee.
+  const start = applyAnswer(base, makePending('start', null, 2), withChanges({ regen: 'traag' }), 3);
+  assert.equal(start.state.hp, 20);
+  assert.equal(start.state.regen, 'traag');
+  // 'geen' haalt het weer weg.
+  const lost = applyAnswer(gained, makePending('turn', 'x', 4), withChanges({ regen: 'geen' }), 5);
+  assert.equal(lost.state.regen, undefined);
+  assert.equal(lost.state.hp, 15); // geen zelfherstel meer op deze beurt
+});
+
+test('zelfherstel haalt je niet terug uit de dood', () => {
+  const base = newAdventure(world, hero, 1, 'adv-regen-2');
+  const adv = { ...base, state: { ...base.state, hp: 3, regen: 'snel' as const } };
+  const next = applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ hp: -8 }), 3);
+  assert.equal(next.state.hp, 0);
+  assert.equal(next.ended, true);
 });
 
 test('op 0 leven is het verhaal klaar', () => {

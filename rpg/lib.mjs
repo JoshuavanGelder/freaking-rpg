@@ -36,6 +36,7 @@ export function renderRequest(r) {
     ? '## Starting state (the truth; never show numbers to the player)'
     : '## Hidden state (the truth; never show numbers to the player)');
   lines.push(`- hit points: ${s.hp ?? '?'} of ${s.maxHp ?? '?'}`);
+  lines.push(`- natural regeneration (regen): ${s.regen === 'traag' || s.regen === 'snel' ? s.regen : 'none'}`);
   lines.push(`- gold: ${s.gold ?? 0}`);
   lines.push(`- level: ${s.level ?? 1}`);
   lines.push(`- location: ${clean(s.location, 120) || 'unknown'}`);
