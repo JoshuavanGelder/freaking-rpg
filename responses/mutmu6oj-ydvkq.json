@@ -1,0 +1,48 @@
+{
+ "id": "mutmu6oj-ydvkq",
+ "finishedAt": "2026-10-04T09:42:56.537Z",
+ "durationMs": 15613,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De voorste schepen vuren. Violette stralen schieten op je af, maar je heft alleen je rechterarm. De paarse Krachtsteen in je mouw ontwaakt met een diepe dreun die je in je borst voelt, alsof de oceaan zelf ademhaalt.\n\nJe balt je vuist en duwt.\n\nEen golf van paars licht rolt over de hemel, breder dan de horizon. Hij raakt de vloot en de zwarte schepen spatten uiteen als glas tegen een rotswand. Scherven obsidiaan dwarrelen sissend in de golven. Tientallen schepen, binnen één hartslag verdwenen. Beneden kolkt de Noordzee wit van het schuim.\n\nIn je oortje blijft het even stil. Dan Mara Valk, zachter dan je haar ooit hoorde: 'De radar is leeg. Helemaal leeg. Professor... Den Helder is veilig.'\n\nMaar de scheur sluit niet. Ze knettert feller. Uit het violette licht schuift een klauw naar buiten, zo groot als een vrachtschip. De schaduw met de stadionogen kijkt nu alleen naar jou. Een stem rommelt door je botten: 'Wie draagt mijn stenen?'",
+  "choices": [
+   "Val de reus frontaal aan",
+   "Dicht de scheur met Ruimte en Tijd",
+   "Vraag de schaduw wie hij is"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen. Directeur Mara Valk van het Europees Ruimteagentschap vroeg zijn hulp tegen een violette scheur boven de Noordzee. Hij werd rijk via de Werkelijkheidssteen en bouwde een donker pak met de zes stenen, dat alleen hij kan aanraken. Hij teleporteerde naar de scheur en vernietigde met één golf van de Krachtsteen de hele zwarte vloot die op Den Helder afkwam. Nu steekt een kolossale schaduw met reusachtige ogen een klauw door de scheur en vraagt dreigend wie 'zijn stenen' draagt. De scheur is nog open.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, thrusting his fist forward as a vast wave of purple light shatters dozens of angular black obsidian ships into glittering shards, violet rift behind, epic wide shot.",
+   "fallback": "A stormy grey North Sea under a violet sky, a huge crackling glowing rift in the clouds, black glassy shards drifting down into white foaming waves."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
