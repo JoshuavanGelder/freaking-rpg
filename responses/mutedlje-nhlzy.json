@@ -1,0 +1,48 @@
+{
+ "id": "mutedlje-nhlzy",
+ "finishedAt": "2026-10-04T05:46:05.222Z",
+ "durationMs": 13957,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je blijft liggen. Opstaan kost meer dan je hebt. \"Wat wil de Orde van mij?\" vraag je, en je stem schuurt over de natte stenen.\n\nIlse kijkt je lang aan. Dan hurkt ze neer, haar grijze ogen op gelijke hoogte met de jouwe. Dat had je niet verwacht.\n\n\"Vorrin wil je dood. De Abt wil de steen.\" Ze tikt tegen de zilveren draad en hij wordt wat losser. \"Ik wil weten wat er in je borst woont. Want ik hoor het tikken, Joshua. Ik hoor het al sinds je de straat in kwam.\"\n\nZe laat haar blik over de grijze shawl glijden en iets in haar gezicht verstrakt. \"Hij was mijn leraar, lang geleden. Wat heb je met hem gedaan?\"\n\nIn je borst wordt de meester heel stil. Dan fluistert hij: \"Zij is de eerste naam, kind. Zo dichtbij. Eén knoop.\"\n\nAchter Ilse, aan het einde van de steeg, wacht een tweede gestalte in het donker. Hij zegt niets.",
+  "choices": [
+   "Leg een knoop om Ilses naam",
+   "Vertel Ilse de waarheid over de meester",
+   "Bied haar een ruil aan"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en gaf hem een zwarte vlam. Hij offerde de spreukenmaker voor zijn arm en oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren (wil weten wat in zijn borst woont; de spreukenmaker was haar leraar), de Blinde Abt (wil de steen). Onder de troon in de kraaienkamer staat de ware naam van de meester. Knopenboek ligt onder de werkbank. Ilse heeft Joshua gewond in de steeg gevangen met zilveren draad; een zwijgende tweede gestalte wacht.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Night alley, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, lying on the stones; crouching beside him a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, silver thread glowing.",
+   "fallback": "Narrow night alley behind a workshop, wet cobblestones gleaming in moonlight, a thin silver thread glinting on the stones, deep shadows at the far end."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
