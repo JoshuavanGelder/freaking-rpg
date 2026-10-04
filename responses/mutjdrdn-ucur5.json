@@ -1,0 +1,48 @@
+{
+ "id": "mutjdrdn-ucur5",
+ "finishedAt": "2026-10-04T08:06:26.543Z",
+ "durationMs": 31242,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen, en Velmoor gaat open als een boek. Honderd kraaienogen tegelijk: daken, goten, natte pannen. Daar. Een vlek zandkleur die over de nok van de leerlooierij rent, zijn arm tegen zijn borst geklemd.\n\nJe stapt de schaduw van de vensterbank in. Het licht verdwijnt, de wereld wordt koud en stil, en je komt eruit in de schaduw van een schoorsteen, drie straten verder. Nog een stap. Nog een. Je arm klopt bij elke sprong en je adem schuurt in je longen, maar de kraaien wijzen je de weg.\n\nBij de zuidmuur haalt hij de laatste dakrand. Daar stap je uit het donker, recht voor hem.\n\nHij remt zo hard dat de pannen onder zijn laarzen wegglijden. Boven jullie sluiten de kraaien een zwarte kring. Hij kijkt naar de muur, naar jou, naar het kromzwaard in zijn bevende hand.\n\n\"Ze zal je toch vinden,\" hijgt hij. \"De koorts vergeet niets.\"\n\nAchter hem gaapt de diepte van de stadsmuur.",
+  "choices": [
+   "Smijt hem met rode wind van de muur",
+   "Leg een knoop om zijn naam",
+   "Ondervraag hem over de Zonnevorst"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De zuidmuur van Velmoor",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje, waarin nu ook het koortsflesje van de Zonnevorst zit, dat Joshua's hartslag kent. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad; meer alleen zonder dwang. Gezant Saria van Kesh zit in de kerker. Eén wachter is gedood; de ander verwondde Joshua's arm en vluchtte. Met kraaienogen en schaduwstap heeft Joshua hem nu op de zuidmuur klemgezet.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Rooftop atop a city wall at grey midday, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, stepping out of a swirl of shadow, facing a panting guard in a sand-colored mantle with a curved sword, ring of black crows circling overhead, dark city roofs below",
+   "fallback": "Wet slate rooftops and a high stone city wall under a grey sky, chimneys and gutters, a steep drop beyond the wall, crows circling in the distance"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
