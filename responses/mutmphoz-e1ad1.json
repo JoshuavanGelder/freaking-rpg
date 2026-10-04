@@ -1,0 +1,48 @@
+{
+ "id": "mutmphoz-e1ad1",
+ "finishedAt": "2026-10-04T09:39:16.472Z",
+ "durationMs": 14993,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je raakt de blauwe Ruimtesteen op je pols aan. De wereld vouwt dicht als een boek, en een hartslag later sta je in de lucht boven de Noordzee, hoog boven grijze golven.\n\nDe scheur is gigantisch. Een violette wond in de hemel, kilometers lang, met randen die knetteren als bliksem. Erdoorheen glijden schepen: zwart en hoekig, als scherven obsidiaan, in strakke formatie richting de Nederlandse kust. Achter hen, diep in het licht, beweegt iets enorms. Een schaduw met ogen zo groot als stadions.\n\nIn je oortje kraakt Mara Valk. 'Professor, we zien u op de radar! Hoe bent u daar zo snel... Laat maar. De vloot is twintig minuten van Den Helder.'\n\nDe voorste schepen draaien bij. Hun boegen gloeien op. Ze hebben je gezien.\n\nJe pak zoemt. Zes stenen wachten op je bevel. Achter de scheur opent de schaduw langzaam zijn ogen.",
+  "choices": [
+   "Vaag de vloot weg met de Krachtsteen",
+   "Lees de gedachten van de schaduw",
+   "Spoel de tijd van de scheur terug"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Boven de Noordzee",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen. Directeur Mara Valk van het Europees Ruimteagentschap vroeg zijn hulp tegen een violette scheur boven de Noordzee. Hij werd rijk via de Werkelijkheidssteen en bouwde een donker pak met de zes stenen, dat alleen hij kan aanraken. Hij teleporteerde naar de scheur: tientallen zwarte obsidiaanachtige schepen vliegen richting Den Helder (twintig minuten weg) en hebben hem gezien. Achter de scheur opent een kolossale schaduw met reusachtige ogen zich.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering in the sky above a grey stormy North Sea, facing a gigantic crackling violet rift from which angular black obsidian-like ships emerge in formation, a colossal shadow with huge glowing eyes behind the light, epic wide shot.",
+   "fallback": "A gigantic crackling violet rift in a stormy sky above the grey North Sea, lightning along its edges, dark waves below, dramatic epic wide view."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
