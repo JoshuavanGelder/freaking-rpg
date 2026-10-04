@@ -1,0 +1,53 @@
+{
+ "id": "mutgikuw-osya8",
+ "finishedAt": "2026-10-04T06:46:11.073Z",
+ "durationMs": 28664,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je staat op. Je benen trillen, maar je laat het niet zien. De kroonkraai spreidt zijn vleugels op de leuning, groot en zwart, alsof hij jouw schaduw is.\n\n\"Kijk goed,\" zeg je. Je stem is schor, maar de zaal draagt hem. \"Jullie meesters knielen. Niet omdat ik rijk ben. Niet omdat ik geboren ben in een toren. Omdat ik sterker ben.\"\n\nJe trekt aan de knopen. Ilse, de Abt en Vorrin zakken tegelijk op één knie. Een golf van gefluister gaat door de leerlingen.\n\n\"Wie mij dient, leert wat zij jullie nooit leerden. Wie tegen me is, kan nu gaan. Door de deur, of door het raam.\"\n\nHet is stil. Dan knielt een meisje met inkt op haar vingers. Een jongen. Nog drie. Als dominostenen gaan ze neer, tot alleen Garrel nog rechtop staat, enorm in de deuropening.\n\nZijn blauwe licht brandt feller. Zijn kaak maalt.\n\n\"Een bedelaar,\" zegt hij zacht. \"Ik buig niet voor een bedelaar.\"",
+  "choices": [
+   "Laat de drie meesters Garrel bedwingen",
+   "Bied Garrel een plek als rechterhand",
+   "Zoek via de kraaien Garrels zwakke plek"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Breek of win Garrel",
+     "detail": "Garrel weigert als enige te knielen voor jou."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (ware naam Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Eerlijk gedwongen: Ilse zou hem doden, Vorrin zou hem jagen, de Abt zou hem tot stilte genezen. Joshua sprak de leerlingen toe als nieuwe heer; ze knielden allemaal. Alleen Garrel, die Joshua haat, weigert en staat met gloeiende handen in de deuropening. De stad weet het.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Cold stone throne hall in a dark tower, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, ragged grey shawl, standing before a black crow-carved throne, unusually large black crow with silver leg ring spreading wings beside him. Grey-robed apprentices kneeling across the hall. In the doorway a man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light, standing defiant. Candlelight.",
+   "fallback": "Cold stone throne hall in a dark tower, black wooden throne carved with crows, flickering candles, open heavy doors, shadows on the walls."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
