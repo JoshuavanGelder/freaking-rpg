@@ -60,6 +60,10 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   (`NARRATION`, `pacingLines`); het verzoek bevat `pacing {turn, total}` (opening = 0). Bij beurt ≥ total zegt het
   verzoek "THE END IS DUE" en eindigt de verteller met `gameOver: true`; bij onbeperkt rondt hij nooit zelf af.
   Oude avonturen (zonder `arc`) zijn onbeperkt en krijgen normale tekstlengte. Aanleiding: verhalen voelden langdradig.
+  **Einde tijdens het spelen** (`adv.endPlan {total, from}`, `setTurnsLeft`, `turnsLeft`, `endTotal` in game.ts): onder de
+  levensbalk in Story staat "Einde: nog N beurten"; tikken opent een paneel (Afsluiten = volgende beurt is het einde,
+  3/5/10/20, stepper, Onbeperkt; bewust zonder tekstveld). Overschrijft de lengte van het startscherm, werkt ook bij
+  onbeperkte of oude avonturen. `pacing.from` laat de verteller vanaf dat moment een slotstuk bouwen (geen reset).
 - **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
   zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
   naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen

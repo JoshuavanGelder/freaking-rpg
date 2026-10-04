@@ -75,6 +75,20 @@ test('lengte van het avontuur: opening, onderweg, laatste beurten en het einde',
   assert.match(turn(15), /THE END IS DUE/); // te laat: het einde blijft "nu"
 });
 
+test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => {
+  const turn = (n, total, from) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total, from }, action: 'x' });
+  // Bij beurt 40 gekozen: nog 20 beurten. Direct daarna is het verhaal nog niet "in het laatste derde".
+  const t = turn(41, 60, 40);
+  assert.match(t, /decided at turn 40 that the story should end at turn 60/);
+  assert.match(t, /turn 41 of about 60/);
+  assert.doesNotMatch(t, /last third|THE END IS DUE/);
+  assert.match(turn(52, 60, 40), /last third/); // 12 van 20 beurten gespeeld
+  assert.match(turn(58, 60, 40), /2 turns left after this one/);
+  assert.match(turn(60, 60, 40), /THE END IS DUE/);
+  // Vanaf de start (from 0) geen "decided"-regel.
+  assert.doesNotMatch(turn(5, 12, 0), /decided at turn/);
+});
+
 test('onbeperkt avontuur (of oud avontuur): de verteller rondt zelf niets af', () => {
   const t = renderRequest({ kind: 'turn', world, hero, pacing: { turn: 40, total: null }, action: 'x' });
   assert.match(t, /no fixed length/);

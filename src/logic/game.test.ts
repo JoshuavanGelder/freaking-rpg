@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   applyAnswer,
   arcTurns,
+  endTotal,
   dropTraitByHand,
   finishQuestByHand,
   matchIndex,
@@ -24,7 +25,9 @@ import {
   parseAnswer,
   regenAmount,
   rollD20,
+  setTurnsLeft,
   toggleTone,
+  turnsLeft,
   worldLabel,
   worldProblem,
 } from './game.ts';
@@ -239,15 +242,50 @@ test('lengte van tekst en avontuur: standaard bij een nieuw avontuur, onbeperkt 
 test('verzoek bevat waar het verhaal staat', () => {
   let adv = newAdventure({ ...world, arc: 'kort' }, hero, 1, 'adv-pace');
   const start = buildRequest(adv, makePending('start', null, 2), 'sonnet');
-  assert.deepEqual(start.pacing, { turn: 0, total: 12 });
+  assert.deepEqual(start.pacing, { turn: 0, total: 12, from: 0 });
   assert.equal(start.world.textLength, 'normaal');
   adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
-  assert.deepEqual(buildRequest(adv, makePending('turn', 'a', 4), 'sonnet').pacing, { turn: 1, total: 12 });
+  assert.deepEqual(buildRequest(adv, makePending('turn', 'a', 4), 'sonnet').pacing, { turn: 1, total: 12, from: 0 });
   adv = applyAnswer(adv, makePending('turn', 'a', 4), parseAnswer(raw())!, 5);
-  assert.deepEqual(buildRequest(adv, makePending('turn', 'b', 6), 'sonnet').pacing, { turn: 2, total: 12 });
+  assert.deepEqual(buildRequest(adv, makePending('turn', 'b', 6), 'sonnet').pacing, { turn: 2, total: 12, from: 0 });
   // Oud avontuur zonder keuze: onbeperkt.
   const old = { ...adv, world: { ...adv.world, arc: undefined, textLength: undefined } };
-  assert.deepEqual(buildRequest(old, makePending('turn', 'c', 6), 'sonnet').pacing, { turn: 2, total: null });
+  assert.deepEqual(buildRequest(old, makePending('turn', 'c', 6), 'sonnet').pacing, { turn: 2, total: null, from: 0 });
+});
+
+test('de speler kiest het einde tijdens het spelen: nog N beurten', () => {
+  let adv = newAdventure({ ...world, arc: 'onbeperkt' }, hero, 1, 'adv-plan');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  for (let i = 0; i < 4; i++) adv = applyAnswer(adv, makePending('turn', `a${i}`, 4 + i), parseAnswer(raw())!, 5 + i);
+  assert.equal(turnsLeft(adv), null); // onbeperkt
+  const planned = setTurnsLeft(adv, 10, 99);
+  assert.deepEqual(planned.endPlan, { total: 14, from: 4 }); // 4 gespeeld + 10 erbij
+  assert.equal(endTotal(planned), 14);
+  assert.equal(turnsLeft(planned), 10);
+  assert.deepEqual(buildRequest(planned, makePending('turn', 'x', 9), 'sonnet').pacing, { turn: 5, total: 14, from: 4 });
+  // Na een gespeelde beurt is er één minder over.
+  const next = applyAnswer(planned, makePending('turn', 'x', 9), parseAnswer(raw())!, 10);
+  assert.equal(turnsLeft(next), 9);
+  assert.deepEqual(next.endPlan, planned.endPlan); // blijft bewaard bij het toepassen van een beurt
+  // 1 = de volgende beurt is het einde.
+  const last = setTurnsLeft(next, 1);
+  assert.equal(buildRequest(last, makePending('turn', 'y', 11), 'sonnet').pacing.turn, endTotal(last));
+  // Terug naar onbeperkt, ook als het startscherm een lengte had.
+  const open = setTurnsLeft(setTurnsLeft(adv, 3), null);
+  assert.equal(endTotal(open), null);
+  assert.equal(turnsLeft(open), null);
+  // Grenzen: minstens 1, hooguit 99.
+  assert.equal(turnsLeft(setTurnsLeft(adv, 0)), 1);
+  assert.equal(turnsLeft(setTurnsLeft(adv, 500)), 99);
+});
+
+test('de speler kan een avontuur met vaste lengte inkorten of verlengen', () => {
+  let adv = newAdventure({ ...world, arc: 'kort' }, hero, 1, 'adv-plan-2'); // 12 beurten
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  for (let i = 0; i < 2; i++) adv = applyAnswer(adv, makePending('turn', `a${i}`, 4 + i), parseAnswer(raw())!, 5 + i);
+  assert.equal(turnsLeft(adv), 10);
+  assert.equal(turnsLeft(setTurnsLeft(adv, 3)), 3); // inkorten
+  assert.equal(turnsLeft(setTurnsLeft(adv, 30)), 30); // verlengen
 });
 
 test('op 0 leven is het verhaal klaar', () => {

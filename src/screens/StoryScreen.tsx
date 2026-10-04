@@ -9,8 +9,8 @@ import { useDraft } from '../drafts';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
-import { Bar, Button, IconButton, Row, T, TopBar } from '../ui';
-import { paragraphs, worldLabel } from '../logic/game';
+import { Bar, Button, Chip, IconButton, Row, T, TopBar } from '../ui';
+import { MAX_TURNS_MORE, paragraphs, setTurnsLeft, turnsLeft, worldLabel } from '../logic/game';
 import type { Adventure, Turn } from '../logic/types';
 
 export function StoryScreen({ id }: { id: string }) {
@@ -78,6 +78,7 @@ export function StoryScreen({ id }: { id: string }) {
             </T>
           </Row>
         ) : null}
+        {adv.turns.length && !adv.ended ? <EndPlan adv={adv} /> : null}
       </View>
 
       <ScrollView
@@ -225,6 +226,103 @@ function ErrorCard({ adv }: { adv: Adventure }) {
       ) : null}
       <Button label="Opnieuw proberen" icon="refresh" onPress={() => retry(adv.id)} />
       {adv.turns.length ? <Button label="Iets anders doen" variant="ghost" onPress={() => dismiss(adv.id)} /> : null}
+    </View>
+  );
+}
+
+const END_PRESETS: { label: string; value: number | null }[] = [
+  { label: 'Afsluiten', value: 1 },
+  { label: '3', value: 3 },
+  { label: '5', value: 5 },
+  { label: '10', value: 10 },
+  { label: '20', value: 20 },
+  { label: 'Onbeperkt', value: null },
+];
+
+function endLabel(left: number | null): string {
+  if (left === null) return 'Einde: onbeperkt';
+  if (left <= 0) return 'Einde: de volgende beurt';
+  return left === 1 ? 'Einde: nog 1 beurt' : `Einde: nog ${left} beurten`;
+}
+
+/** Regel onder de levensbalk met het einde van het verhaal; tikken opent een paneel om het aantal beurten te kiezen. */
+function EndPlan({ adv }: { adv: Adventure }) {
+  const { patchAdventure } = useApp();
+  const left = turnsLeft(adv);
+  const [open, setOpen] = useState(false);
+  const [n, setN] = useState<number | null>(10);
+  const toggle = () => {
+    if (!open) setN(left === null ? 10 : Math.min(MAX_TURNS_MORE, Math.max(1, left)));
+    setOpen(!open);
+  };
+  const step = (d: number) => setN((v) => Math.min(MAX_TURNS_MORE, Math.max(1, (v ?? 10) + d)));
+  return (
+    <View style={{ gap: 10 }}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityState={{ expanded: open }}
+        accessibilityLabel={`${endLabel(left)}. Tik om aan te passen`}
+        onPress={toggle}
+        hitSlop={6}
+        style={{ flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 28, alignSelf: 'flex-start' }}
+      >
+        <Icon name="scroll" size={15} color={C.muted} />
+        <T size={13} weight="semibold" color={C.muted}>
+          {endLabel(left)}
+        </T>
+        <Icon name={open ? 'chevronUp' : 'chevronDown'} size={16} color={C.muted} strokeWidth={2.25} />
+      </Pressable>
+      {open ? (
+        <View style={{ padding: 14, borderRadius: 16, backgroundColor: C.card, gap: 12 }}>
+          <T size={15} weight="bold">
+            Hoeveel beurten wil je nog spelen?
+          </T>
+          <Row style={{ flexWrap: 'wrap', gap: 8 }}>
+            {END_PRESETS.map((p) => (
+              <Chip key={p.label} label={p.label} selected={n === p.value} onPress={() => setN(p.value)} />
+            ))}
+          </Row>
+          {n !== null ? (
+            <Row style={{ gap: 12, alignSelf: 'flex-start' }}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Een beurt minder"
+                onPress={() => step(-1)}
+                style={({ pressed }) => ({ width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: C.border, backgroundColor: pressed ? C.cardHi : C.bg })}
+              >
+                <T size={22} weight="bold">
+                  −
+                </T>
+              </Pressable>
+              <T size={16} weight="bold" style={{ minWidth: 96, textAlign: 'center' }}>
+                {n === 1 ? '1 beurt' : `${n} beurten`}
+              </T>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Een beurt meer"
+                onPress={() => step(1)}
+                style={({ pressed }) => ({ width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: C.border, backgroundColor: pressed ? C.cardHi : C.bg })}
+              >
+                <Icon name="plus" size={20} color={C.ink} strokeWidth={2.5} />
+              </Pressable>
+            </Row>
+          ) : null}
+          <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+            {n === null
+              ? 'Het verhaal gaat door tot jij stopt (of je held het niet overleeft).'
+              : n === 1
+                ? 'De verteller sluit het verhaal in de volgende beurt af.'
+                : 'De verteller werkt hier naartoe en sluit het verhaal dan af. Wat je doet bepaalt hoe het afloopt.'}
+          </T>
+          <Button
+            label={n === null ? 'Onbeperkt maken' : n === 1 ? 'Nu afsluiten' : `Einde over ${n} beurten`}
+            onPress={() => {
+              patchAdventure(adv.id, (a) => setTurnsLeft(a, n));
+              setOpen(false);
+            }}
+          />
+        </View>
+      ) : null}
     </View>
   );
 }

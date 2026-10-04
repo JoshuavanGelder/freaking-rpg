@@ -40,6 +40,27 @@ export function arcTurns(arc: Arc | undefined): number | null {
   return ARCS.find((a) => a.id === arc)?.turns ?? null;
 }
 
+/** Nummer van de beurt waarop het einde komt: eerst wat de speler tijdens het spelen koos, anders de lengte van het startscherm. */
+export function endTotal(adv: Adventure): number | null {
+  return adv.endPlan ? adv.endPlan.total : arcTurns(adv.world.arc);
+}
+
+/** Hoeveel beurten er nog te spelen zijn, de eindbeurt meegeteld (0 = het einde is nu aan de beurt). null = onbeperkt. */
+export function turnsLeft(adv: Adventure): number | null {
+  const total = endTotal(adv);
+  return total === null ? null : Math.max(0, total - turnCount(adv));
+}
+
+export const MAX_TURNS_MORE = 99;
+
+/** De speler kiest hoeveel beurten hij nog wil spelen (1 = de volgende beurt is het einde). null = onbeperkt. */
+export function setTurnsLeft(adv: Adventure, more: number | null, now = Date.now()): Adventure {
+  const from = turnCount(adv);
+  if (more === null) return { ...adv, endPlan: { total: null, from }, updatedAt: now };
+  const n = Math.min(MAX_TURNS_MORE, Math.max(1, Math.round(more)));
+  return { ...adv, endPlan: { total: from + n, from }, updatedAt: now };
+}
+
 export const START_HP = 20;
 export const START_GOLD = 10;
 export const XP_PER_LEVEL = 100;
@@ -177,7 +198,7 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     action: pending.action,
     roll: pending.roll,
     // Beurt die nu geschreven wordt (de opening is 0) en de gekozen lengte, zodat de verteller naar een einde kan toewerken.
-    pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: arcTurns(w.arc) },
+    pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: endTotal(adv), from: adv.endPlan?.from ?? 0 },
   };
 }
 
