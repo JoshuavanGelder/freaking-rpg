@@ -1,0 +1,48 @@
+{
+ "id": "mutgfz95-tt0uv",
+ "finishedAt": "2026-10-04T06:44:10.499Z",
+ "durationMs": 30166,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Geef je over,\" zeg je, \"en ik laat de knopen los.\" Je trekt zacht aan alle drie tegelijk. \"Maar zeg de waarheid.\"\n\nDe knopen dwingen het eruit. Dat had je niet goed bedacht.\n\nIlse spreekt eerst, haar stem vlak als ijs. \"Als je me loslaat, ben je dood voor de zon opkomt. Ik zou het met mijn eigen handen doen. Langzaam.\"\n\nVorrin kijkt niet op. \"Ik zou vluchten. En terugkomen. Elke nacht, tot ik je slapend vind.\"\n\nDan glimlacht de Abt. \"Ik zou blijven, kind. Jij bent het eerste interessante dat Velmoor in honderd jaar heeft gezien. En ik zou wachten tot je me vraagt je te genezen, en dan niet meer ophouden.\"\n\nDe zaal wordt koud. De kroonkraai krast één keer, scherp.\n\nOp dat moment knalt de deur open. Garrel staat in de opening, enorm, zijn handen gloeiend van zwaar blauw licht. Achter hem dringen leerlingen samen. Hij kijkt naar de drie meesters voor de troon, en dan naar jou.\n\n\"Dus het is waar,\" gromt hij.",
+  "choices": [
+   "Knoop Garrel ter plekke vast",
+   "Beveel Ilse Garrel tegen te houden",
+   "Spreek de leerlingen toe als nieuwe heer"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (ware naam Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Hij bood de drie leiders vrijheid bij overgave; de knopen dwongen eerlijke antwoorden: Ilse zou hem doden, Vorrin zou vluchten en hem jagen, de Abt zou blijven maar hem bij heling tot stilte genezen. Garrel, die Joshua haat, is met leerlingen de troonzaal binnengestormd met gloeiende handen. De stad weet het.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Cold stone throne hall in a dark tower, doors burst open, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light, standing in the doorway with frightened apprentices behind him. On a black crow-carved throne sits a thin young man around twenty, gaunt pale face, messy dark hair, torn patched brown tunic, ragged grey shawl, large black crow on armrest.",
+   "fallback": "Cold stone throne hall in a dark tower, black wooden throne carved with crows, heavy doors thrown open, blue light spilling across the flagstones, candles flickering."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
