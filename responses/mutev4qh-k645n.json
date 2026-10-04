@@ -1,0 +1,53 @@
+{
+ "id": "mutev4qh-k645n",
+ "finishedAt": "2026-10-04T05:59:44.153Z",
+ "durationMs": 16134,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Welke dienst?\" vraag je. Je houdt het boek tegen je borst gedrukt, alsof dat iets uitmaakt.\n\nDe kroonkraai stapt van de vensterbank op de werkbank. Zijn klauwen tikken op het hout, langs de inktpotten, tot hij vlak voor je staat. Zo dichtbij ruikt hij naar regen en oude graven.\n\n\"De Blinde Abt,\" kraast hij. \"Vannacht daalt hij af naar de kraaienkamer. Hij wil zitten op wat niet van hem is.\" Zijn ogen glanzen als natte kolen. \"Jij gaat ook. Je knoopt zijn naam. En de troon blijft leeg. Voor mij.\"\n\nIn je borst wordt het ijskoud. Voor het eerst klinkt de meester niet spottend. \"Hij liegt, kind. Die vogel zat ooit op mijn schouder. Hij wil niet dat de troon leeg blijft. Hij wil dat ík er nooit meer op kom.\"\n\nDe kraai houdt zijn kop schuin, alsof hij het tikken hoort.\n\n\"Een pact breek je niet,\" zegt hij zacht. \"Je betaalt. Of het betaalt zichzelf.\"\n\nBuiten in de steeg schraapt Garrel met zijn laars over de stenen.",
+  "choices": [
+   "Aanvaard de dienst en ga vannacht",
+   "Vraag wat hij écht met de troon wil",
+   "Vraag Ilse wat ze over de Abt weet"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Knoop de Blinde Abt in de kraaienkamer",
+     "detail": "De kraai eist het vannacht; de troon moet leeg blijven."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor oude magie. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren (door een knoop aan Joshua gebonden), de Blinde Abt (wil de steen en daalt vannacht af naar de troon in de kraaienkamer). Garrel, Ilses reus, knielde maar haat Joshua; beiden wachten in de steeg. Joshua heeft het knopenboek met de kroonknoop. Ware naam meester ligt onder de troon. De kroonkraai eist zijn dienst: vannacht de Abt knopen zodat de troon leeg blijft. De meester zegt dat de kraai liegt en hem van de troon wil weren.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dim cluttered workshop at night, candlelight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, clutching a black leather book to his chest, facing an ancient unusually large black crow with glossy feathers, sharp grey beak, piercing intelligent eyes, silver ring around one leg, standing on the workbench among ink pots.",
+   "fallback": "Dim cluttered workshop at night, ink pots and candle stubs on a wooden workbench, moonlit window, scattered parchment and black feathers."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
