@@ -1,0 +1,58 @@
+{
+ "id": "mutv6wzh-uumzt",
+ "finishedAt": "2026-10-04T13:36:57.080Z",
+ "durationMs": 25456,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De priesters houden hun adem in als je de treden op loopt. De lucht trilt van de hitte. Je mantel begint te smeulen aan de zoom.\n\nJe gaat zitten.\n\nHet vuur slaat omhoog, wit en hongerig, en zoekt je licht. Je hebt geen licht. Je hebt draden. Dus geef je het die: honderden knopen, je hele web, strak als een net. Het vuur loopt erin vast. Het wringt, het sist. Dan stroomt het door je knopen naar binnen, niet als vlam maar als warmte.\n\nDe laatste verschroeide naden in je borst sluiten zich. Je voelt je heel, voor het eerst in weken.\n\nDe priesterleider valt op zijn knieën. Achter hem volgen de anderen.\n\nVer weg, in de heuvels, schreeuwt iets in een grot. De Zonnevorst voelt dat zijn troon een ander heeft gekozen.",
+  "choices": [
+   "Jaag nu meteen op de Zonnevorst",
+   "Ondervraag de priesters over het troonvuur",
+   "Spreek de geknielde boeren en raad toe"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 17,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "volledig",
+   "regen": "",
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Neem de lege troon van de Zonnevorst"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Troonvuur",
+     "kind": "kracht",
+     "detail": "Het vuur van de zonnetroon stroomt warm door je knopen."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin, die vrij zijn kant koos. Belofteknoop met Moeder Veen. Lirre is vrij, met Vorrins sjaal. Joshua verwondde de Zonnevorst, die vluchtte naar een grot in de heuvels. Met de raad stak Joshua de rivier over; boeren knielen. In het gouden paleis ging hij op de gloeiende troon zitten: hij ving het vuur in zijn knopenweb, de troon koos hem en heelde hem volledig. De witte priesters knielen. De Zonnevorst voelde het verlies en schreeuwt in zijn grot.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Golden throne hall, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated on a blazing golden throne, white fire flowing into a glowing web of silver threads around him, priests in white robes kneeling below, warm dramatic light.",
+   "fallback": "Vast golden throne hall with a glowing empty throne on high steps, white flames softly rising, tall columns, warm golden light through high windows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
