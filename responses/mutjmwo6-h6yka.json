@@ -1,0 +1,57 @@
+{
+ "id": "mutjmwo6-h6yka",
+ "finishedAt": "2026-10-04T08:13:32.504Z",
+ "durationMs": 29944,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je duwt je duim tegen de rode was. Hij is warm, en bij de eerste barst kruipt er iets omhoog langs je vingers: een dunne hitte die je pols zoekt, je hartslag, je naam.\n\nJe klemt je kaken op elkaar. Je wil wordt koud en hard als ijzer. De hitte botst ertegen, sist, en sterft weg als een kaars in de regen. Het zegel brokkelt tot rood stof.\n\nBinnenin zit een strook perkament, dun als huid. Het handschrift is sierlijk en loopt schuin, alsof het haast had.\n\n\"Aan de kraaienjongen van Velmoor. Je hebt iets van mij. Straks heb ik iets van jou. Laat mijn gezant gaan voor de volle maan, en de koorts blijft slapen. Houd haar vast, en Velmoor brandt van binnenuit, huis na huis, tot alleen jij nog warm bent.\"\n\nOnderaan staat geen naam. Er is alleen een oog getekend.\n\nIlse leest over je schouder mee. Haar gezicht verstrakt. Onder je bed klopt het loden kistje. Sneller.\n\n\"De volle maan,\" zegt ze zacht. \"Dat is over drie nachten.\"",
+  "choices": [
+   "Ondervraag Saria in de kerker",
+   "Open het loden kistje en kijk",
+   "Stuur kraaien zuidwaarts naar de Zonnevorst"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [
+    "Brief van de Zonnevorst"
+   ],
+   "removeItems": [
+    "Verzegeld koperen kokertje"
+   ],
+   "addQuests": [
+    {
+     "title": "Het ultimatum van de volle maan",
+     "detail": "Laat Saria vrij of Velmoor brandt van de koorts."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje, samen met het koortsflesje van de Zonnevorst, dat zijn hartslag kent; het kistje klopt steeds sneller. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad. Gezant Saria van Kesh zit in de kerker; haar wachters zijn dood. Een brief van de Zonnevorst eist: laat Saria vrij vóór de volle maan, over drie nachten, anders brandt Velmoor van de koorts.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark tower throne room by candlelight, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated on a crow-carved throne reading a thin parchment, red wax dust on his fingers, beside him a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch",
+   "fallback": "Dark stone throne room with a crow-carved throne, candlelight flickering, a small broken copper tube and crumbs of red wax on the armrest, crows perched in tall windows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
