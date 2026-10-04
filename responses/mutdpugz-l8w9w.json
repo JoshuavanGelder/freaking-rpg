@@ -1,0 +1,48 @@
+{
+ "id": "mutdpugz-l8w9w",
+ "finishedAt": "2026-10-04T05:27:51.549Z",
+ "durationMs": 29281,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"En wat krijg ik nog meer?\" vraag je, binnenin. \"Een pols is weinig voor een oude man.\"\n\nDe meester lacht. Dan stopt het lachen, want je duwt terug. Niet met een knoop, niet met vlam. Met iets kouds en hards dat van jou is. Je voelt hem aarzelen, en in die aarzeling zie je het: een herinnering die hij niet wilde laten zien. Een lichaam van vroeger, grauw en rottend, omdat het genomen was en niet gegeven.\n\n\"Je hebt mijn ja nodig,\" zeg je hardop. \"Anders rot je mee.\"\n\nLange stilte. Dan, bijna beledigd: \"Slim kind.\"\n\nZijn nieuwe bod komt snel. De arm terug tot de vingertoppen. Het geheim van de kraaienkamer. En de namen van de drie magiërs die de Orde van de Kraai leiden, zodat jij ze kunt knopen zoals hij ooit geknoopt werd.\n\n\"Alleen de oude man,\" fluistert hij. \"Meer vraag ik niet.\"\n\nDe spreukenmaker heeft het krijt laten vallen. Zijn melkwitte oog staart je aan. \"Hij liegt nooit helemaal, jongen,\" zegt hij zacht. \"Dat maakt hem zo gevaarlijk.\"",
+  "choices": [
+   "Accepteer het bod en offer de spreukenmaker",
+   "Eis het bod zonder de oude man",
+   "Vraag de spreukenmaker om een tegenbod"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd; de kraai is gewond. De spreukenmaker leerde hem drie knopen. Een splinter van de eerste meester zit in Joshua's linkerarm (tot halverwege bovenarm) en geeft een koude zwarte vlam die magie eet. De meester wil een kroon, Velmoor en de wereld, met Joshua als lichaam. Joshua ontdekte dat de meester zijn instemming nodig heeft, anders rot het lichaam. Nieuw bod: voor de magie van de spreukenmaker krijgt Joshua zijn hele arm terug, het geheim van de kraaienkamer en de namen van de drie leiders van de Orde. De spreukenmaker weet het.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling in a ring of soot, left arm grey with ink-black veins, staring intently; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe, chalk dropped at his feet, dim candlelit workshop",
+   "fallback": "Dim candlelit workshop with a cluttered workbench, a ring of black soot on a stone floor, a dropped piece of chalk, shadows on the walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
