@@ -1,0 +1,53 @@
+{
+ "id": "mutnqqwv-b88gt",
+ "finishedAt": "2026-10-04T10:08:18.084Z",
+ "durationMs": 17783,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "'Ik ben niet gekomen om iets te brengen,' zeg je kalm. 'Ik ben gekomen om jullie iets te leren.'\n\nJe heft je hand. De rode Werkelijkheidssteen en de paarse Krachtsteen ontwaken tegelijk, en het zwarte glas onder je voeten zingt. Je wijst naar de meest linkse troon, waar een gestalte met een sikkel van koud licht al half overeind komt.\n\nEén gedachte. Eén regel van de werkelijkheid, herschreven.\n\nDe gestalte verstijft. Zijn grijze gloed dooft als een kaars in de wind, en dan valt hij uiteen: een zacht ruisende waterval van as die over de treden van zijn troon glijdt. Een windvlaag die er niet hoort te zijn, blaast het stof weg tot achter de laatste ster.\n\nZes tronen nog. Doodse stilte.\n\nVorath, naast je, buigt zijn kop nog dieper. De Koningin staart naar de lege troon. Voor het eerst trilt er iets in haar koude gezicht.\n\n'Je weet niet,' fluistert ze, 'wat je zojuist hebt wakker gemaakt. Hij hield de deur dicht.'\n\nAchter haar begint de laatste ster te flakkeren.",
+  "choices": [
+   "Eis dat de Koningin alles vertelt",
+   "Onderzoek de flakkerende ster met de Tijdsteen",
+   "Laat Vorath vrij en vraag zijn kant"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Steenbeheersing",
+   "dc": 8,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontdek welke deur de Raad dichthield",
+     "detail": "De verwoeste raadsheer hield iets achter de laatste ster tegen."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Op verzoek van ESA-directeur Mara Valk vernietigde hij een zwarte vloot boven de Noordzee en dwong titan Vorath de Leegte-eter te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Hij teleporteerde met de geknielde Vorath naar de Raad achter de laatste ster, op een zwarte glasvlakte met zeven tronen van as. Daar veranderde hij één raadslid in as. De geschokte Koningin met de kroon van dode sterren waarschuwt dat die raadsheer 'de deur dichthield'. De laatste ster begint te flakkeren; er dreigt iets wakker te worden.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, pointing his hand with red and purple light at an ash throne where a grey starlight figure dissolves into drifting ash, a tall ageless woman with cold grey glowing skin, long ash-white hair, crown of dark extinguished stars and flowing grey robes staring in shock, black glass plain, one flickering star above, epic wide shot.",
+   "fallback": "A vast plain of black glass at the end of the universe, seven thrones made of ash, one empty and dusted with drifting grey ash, a single faint flickering star in the dark sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
