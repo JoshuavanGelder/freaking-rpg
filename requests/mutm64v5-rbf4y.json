@@ -1,0 +1,38 @@
+{
+ "id": "mutm64v5-rbf4y",
+ "createdAt": "2026-10-04T09:23:57.089Z",
+ "kind": "start",
+ "model": "opus",
+ "world": {
+  "setting": "Modern",
+  "settingText": "",
+  "tones": [
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "Makkelijk. Alles gaat goed wat ik probeer. Ook heel veel geluk. Ook heb ik the infinity Stones van marvel allemaal in bezit en kan ik ze gebruiken"
+ },
+ "hero": {
+  "name": "Einstein De Tweede",
+  "className": "Wetenschapper/engineer",
+  "powers": "Extreem slim en extreem sterk sterkste en slimste van de wereld.",
+  "looks": "Extreem knap"
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "",
+  "attributes": [],
+  "inventory": [],
+  "quests": [],
+  "traits": []
+ },
+ "summary": "",
+ "cast": [],
+ "recent": [],
+ "action": null,
+ "roll": 10
+}
