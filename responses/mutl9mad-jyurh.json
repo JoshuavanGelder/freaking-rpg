@@ -1,0 +1,48 @@
+{
+ "id": "mutl9mad-jyurh",
+ "finishedAt": "2026-10-04T08:59:13.917Z",
+ "durationMs": 31161,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en duwt je wil naar buiten. Honderd zwarte vleugels slaan tegelijk uit. De kraaien van Velmoor stijgen op van daken en galgen en vliegen naar het zuiden, en jij vliegt met ze mee.\n\nDoor hun ogen zie je het. Een dorp aan de rivier, half verkoold. Geen soldaten die plunderen. Alleen rode vlaggen met een gouden zon, en een rij ruiters die stil wachten. Midden in hun kamp staat een tent van karmijn. Iets daarbinnen kijkt omhoog, recht naar de kraaien. Je trekt je terug voordat het jou vindt.\n\nHijgend loop je naar de rand van de stad. De kraaien keren om, ver voor de smidse, zoals je beloofd hebt.\n\nBinnen is het koud. Saria zit op de grond, haar gouden muntjes stil, haar gezicht grauw. Moeder Veen veegt haar handen af aan haar sjaal.\n\n\"Ze heeft geantwoord,\" zegt Veen. \"En dat antwoord gaat jou ook aan, kraaienjongen. De Zonnevorst wil Saria niet terug. Hij wil jóú.\"",
+  "choices": [
+   "Eis dat Saria alles vertelt",
+   "Vraag Veen wat ze nu weet",
+   "Stuur een boodschap naar de rode tent"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De oude smidse",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Met Moeder Veen knipte hij de lotdraad van het koortsflesje van de Zonnevorst door. Wederzijdse belofteknoop met Veen: geen kraaien bij haar smidse, één nacht alleen met Saria. Veen leert pas weer iets als hij haar iets nieuws toont. Via kraaien zag Joshua in het zuiden een verbrand dorp en een kamp met rode zonnevlaggen; uit een karmijnen tent keek iets terug. In de smidse zegt Veen dat Saria antwoordde: de Zonnevorst wil Saria niet terug, hij wil Joshua. Nog één nacht tot de volle maan.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Bird's-eye view from a flying crow over a half-burned riverside village at dawn, thin smoke rising, a military camp with red banners bearing a golden sun, rows of silent riders, a large crimson tent in the center, flock of black crows in the foreground, dark epic mood",
+   "fallback": "Half-burned riverside village at dawn seen from above, thin smoke rising, red banners with golden sun over an empty camp, a large crimson tent, misty fields"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
