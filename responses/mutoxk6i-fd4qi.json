@@ -1,0 +1,53 @@
+{
+ "id": "mutoxk6i-fd4qi",
+ "finishedAt": "2026-10-04T10:41:33.952Z",
+ "durationMs": 15422,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je kijkt uit over de eindeloze rijen. 'Luister,' zeg je, en je stem draagt tot de rand van het heelal. 'Ga naar elk sterrenstelsel. Raak alleen wie een slecht hart heeft. Laat de rest met rust.'\n\nJe raakt de Geeststeen aan, en in elke soldaat ontsteekt een klein geel vonkje: het vermogen om in een hart te kijken. Dan barst het leger uiteen als vuurwerk. Miljoenen lichtstrepen schieten tussen de sterren door.\n\nMet de Tijdsteen zie je het gebeuren. Tirannen op verre planeten zien hun kastelen omringd door stil licht. Slavenhandelaars leggen hun ketens neer. Op duizenden werelden kijken gewone mensen verbaasd omhoog naar soldaten die hen voorbijlopen en vriendelijk knikken. Hier en daar gaan banieren omlaag, en jouw teken van zes kleuren gaat omhoog.\n\nVorath gromt tevreden. Maar de Koningin glimlacht dun. 'En als je leger een hart vindt dat het niet kan lezen?' Ver weg, aan de rand van alles, stopt één lichtstreep plotseling.",
+  "choices": [
+   "Spring zelf naar de gestopte soldaat",
+   "Dwing de Koningin te vertellen wat ze weet",
+   "Kijk met de Tijdsteen naar de rand"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Onderzoek de stilte aan de rand",
+     "detail": "Eén soldaat stopte aan de rand van het heelal."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Voor ESA-directeur Mara Valk versloeg hij een zwarte vloot en dwong titan Vorath te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Achter de laatste ster veranderde hij een raadslid in as, bedwong de ontwaakte Eerste Duisternis tot een zwart vlammetje en werd alwetend. Vorath en vier raadsleden bogen. Zijn leger van miljoenen sterrenlichtsoldaten verovert nu het heelal, maar valt alleen mensen met een slecht hart aan; tirannen geven zich over. De Koningin, niet geknield, waarschuwt voor iets buiten het heelal. Aan de rand stopte plots één soldaat.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, standing on a black glass plain as millions of streaks of starlight shoot outward into a sky full of galaxies, bright star above, epic wide shot.",
+   "fallback": "A vast black glass plain under a brilliant star, countless streaks of light racing outward into a sky full of swirling galaxies."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
