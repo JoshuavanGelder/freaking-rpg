@@ -1,0 +1,54 @@
+{
+ "id": "mutmkunq-hgwbm",
+ "finishedAt": "2026-10-04T09:35:57.802Z",
+ "durationMs": 18581,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en volgt de brede draad naar binnen. Daar, tussen het gouden kluwen, hangt het zilveren draadje van Lirre. Het is zo dun als een haar, en de gestolen knopen knijpen het van alle kanten dicht.\n\nJe trekt niet. Dat heb je geleerd. Je vraagt. \"Lirre, ik ga om jou heen knopen. Niet om hen. Alleen om jou.\"\n\nZe knikt, haar vingers nog tegen de jouwe.\n\nJe legt een knoop. Geen strop, maar een ring, wijd en zacht, als een hand om een kaarsvlam. De gouden draden voelen het en slaan toe. Ze schuren langs je wil, heet als gesmolten metaal. Je kaak klemt, je ribben branden, iets in je neus knapt. Maar je houdt vast. De ring sluit.\n\nHet zilveren draadje ademt. Echt. Lirre hapt naar lucht alsof ze uit diep water komt, en voor het eerst kleurt een van haar ogen half bruin.\n\nOver de rivier gromt iemand. De gouden draden kronkelen, onrustig, zoekend naar een nieuwe greep.\n\nVorrin knielt naast je. \"Hij voelt dat zijn deur een slot heeft gekregen,\" zegt hij. \"Wat nu?\"",
+  "choices": [
+   "Maak de eerste gestolen draad voorzichtig los",
+   "Open de kooi en neem Lirre mee",
+   "Vraag Vorrin wat hij van zijn moeder weet"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Beschermknoop",
+     "kind": "kracht",
+     "detail": "Je legt met toestemming een zachte ring die een eigen draad beschermt."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin weigert zijn draad te verbreden tot Joshua bewijst anders te zijn dan de Zonnevorst. Oude magie werkt alleen goed via draden met toestemming. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over; Lirre, een meisje van tien vol gestolen lotdraden, is zijn deur. Lirre gaf vrijwillig een brede draad. Joshua legde een beschermende ring om haar eigen zilveren draad; ze ademt weer en één oog wordt half bruin. De Zonnevorst voelde het en gromde; zijn gouden draden zoeken nieuwe grip. Vorrin staat naast Joshua.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Torchlit stone hall, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling with eyes closed weaving a soft ring of silver light around a thin silver thread inside a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift, in a white-gold cage; writhing golden threads around them",
+   "fallback": "Torchlit stone hall with a white-gold cage, a crimson cloth on the floor, faint silver and golden light drifting in the air, cold stone walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
