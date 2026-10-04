@@ -1,0 +1,54 @@
+{
+ "id": "mutdh5wg-q5gd1",
+ "finishedAt": "2026-10-04T05:21:08.131Z",
+ "durationMs": 30711,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de vlam zakken. Helemaal.\n\n\"Nee, jongen!\" De spreukenmaker grijpt naar je schouder, maar het is te laat. De zwarte vlam stort zich op het krijt als een uitgehongerde hond. Lijn na lijn wordt grijs, dan zwart, dan niets. De magie stroomt je pols in, koud en zwaar, en voor het eerst in maanden voel je je niet hongerig. Je botten voelen voller. Je adem dieper.\n\nMaar je kunt niet meer stoppen.\n\nJe wilt je hand terugtrekken en je hand wil niet. De kou kruipt langs je onderarm omhoog, tot voorbij je elleboog. Je huid wordt grauw, de aderen zwart als inkt. In je hoofd lacht de meester, nu niet meer fluisterend. \"Dank je, kind. Geen hek meer.\"\n\nVan de cirkel is alleen een kring van roet over.\n\nDe oude man deinst terug tegen zijn werkbank, zijn melkwitte oog wijd open. De kraai bij de deur krijst één keer, scherp, als een waarschuwing. Je linkerarm trilt. Hij heeft nog steeds honger.",
+  "choices": [
+   "Sla je arm tegen de vloer",
+   "Leg een knoop om je eigen elleboog",
+   "Vraag de meester wat hij werkelijk wil"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 3,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Splinter van de meester",
+     "kind": "zwakte",
+     "detail": "De meester beheerst je linkerarm tot de elleboog en wil meer."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Joshua sprak de naam uit; een splinter van de meester zit nu in zijn linkerarm en geeft een koude zwarte vlam die magie eet en hem voedt. Joshua liet de vlam de hele krijtcirkel opeten die de meester vasthield. Hij voelt zich sterker, maar de meester beheerst nu zijn arm tot voorbij de elleboog en lacht vrij in zijn hoofd. De spreukenmaker is doodsbang, de kraai waarschuwt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling as a lightless black flame devours a chalk circle, his left arm grey with ink-black veins to the elbow; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe recoiling against a workbench; crow shrieking by the door, dim workshop",
+   "fallback": "Dim cluttered workshop with a ring of black soot on a stone floor, scattered chalk, ink pots on a workbench, cold grey light from a half-open door"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
