@@ -1,0 +1,48 @@
+{
+ "id": "muti3j1f-6yl5j",
+ "finishedAt": "2026-10-04T07:30:14.830Z",
+ "durationMs": 15861,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en graaft naar binnen, voorbij het fluweel, voorbij je ribben, naar de plek waar de oude magie van de spreukenmaker slaapt. Ze is dik en traag als stroop. Je trekt eraan. Ze komt.\n\nGrijs licht kruipt over de vloer naar de tweede pilaar. Het stof wervelt op. Heel even zie je haar: een kleine, gebogen schim in een bruine kap, haar zwarte ogen recht op jou gericht.\n\nDan lacht ze.\n\nDe oude magie herkent haar. Ze is ouder dan die magie. Het grijze licht buigt om haar heen als water om een steen en slaat terug, door het rode touwtje om je pols, je arm in. Je schreeuwt. Je vingers worden wit en gevoelloos. Je knieën raken de treden van de troon.\n\nWaar zij stond, staat niets meer. Alleen een tweede spoor veenaarde, nu naar de deur van je slaapvertrek.\n\n\"Dom,\" fluistert de meester. \"Laat mij.\"\n\nVorrin kijkt naar je, op de grond. Iets in zijn bleke ogen lijkt op hoop.",
+  "choices": [
+   "Laat de meester één tel vrij",
+   "Volg het spoor naar je slaapvertrek",
+   "Beveel Vorrin te knielen en te zwijgen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen (met meester Aurek Valdemoor), offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort. De looiersbuurt betaalt geen belasting. Moeder Veen, een oude Knoopmoeder, wil de steen; ze draaide Joshua's belofteknoop om: rood touwtje om zijn pols, looiersbuurt verboden. Ze is onzichtbaar. Joshua viel haar aan met de oude magie, maar die sloeg terug via het touwtje en verwondde zijn arm. Haar spoor veenaarde leidt nu naar zijn slaapvertrek. De meester smeekt vrijgelaten te worden; Vorrin kijkt hoopvol naar Joshua's zwakte.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Candlelit stone throne hall, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, fallen to his knees on throne steps, grey light recoiling up his arm from a red thread at his wrist; near a pillar a faint shimmering trail of dark peat soil.",
+   "fallback": "Dark stone throne hall at night, black crow-carved throne, flickering candles, tall pillars, a trail of dark peat soil across the floor toward a wooden door."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
