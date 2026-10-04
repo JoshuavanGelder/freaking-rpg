@@ -1,0 +1,55 @@
+{
+ "id": "mutva7pj-cgm3g",
+ "finishedAt": "2026-10-04T13:39:22.072Z",
+ "durationMs": 15629,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je staat op van de troon. Het vuur zakt achter je weg tot een zachte gloed. Beneden zie je ze: boeren in de deuropening, de raad van Velmoor bij de pilaren, de priesters nog op hun knieën.\n\n\"Er is geen vorst meer die jullie licht steelt,\" zeg je. \"Vanaf nu...\"\n\nJe stem breekt. Ze is te dun voor deze zaal. Achterin begint iemand te mompelen.\n\nDan stapt een boer naar voren, een grote man met aarde onder zijn nagels. \"Mooie woorden. Maar zijn vuur hield onze velden warm. Zonder hem bevriest de oogst over drie nachten. Wat doe jíj daaraan, jongen?\"\n\nDe zaal wordt stil. De raad kijkt naar de grond. Ilse kijkt naar jou.",
+  "choices": [
+   "Laat het troonvuur over de velden stromen",
+   "Stuur kraaien om te zien wat bevriest",
+   "Vraag de priesters hoe het vuur werkte"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Red de oogst van de vorst",
+     "detail": "Zonder het zonnevuur bevriezen de velden binnen drie nachten."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin, die vrij zijn kant koos. Belofteknoop met Moeder Veen. Lirre is vrij, met Vorrins sjaal. Joshua verwondde de Zonnevorst, die vluchtte naar een grot in de heuvels. Met de raad stak hij de rivier over; in het gouden paleis koos de zonnetroon hem en heelde hem. De witte priesters knielen. Zijn toespraak haperde; een boer daagde hem uit: zonder het vuur van de Zonnevorst bevriest de oogst over drie nachten. Iedereen wacht op zijn antwoord.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Golden throne hall, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, standing before a softly glowing throne, a big farmer with dirty hands confronting him, kneeling white priests and councillors watching, warm low light.",
+   "fallback": "Vast golden throne hall with a softly glowing empty throne, tall pillars, open doors showing cold fields at dusk."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
