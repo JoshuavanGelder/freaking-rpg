@@ -1,0 +1,48 @@
+{
+ "id": "mutgvzqf-3guz0",
+ "finishedAt": "2026-10-04T06:56:25.562Z",
+ "durationMs": 17450,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Abt,\" zeg je hees. \"Genees me. Helemaal.\"\n\nDe zaal houdt haar adem in. De Blinde Abt staat op, langzaam, alsof hij al honderd jaar op deze woorden wacht. Zijn glimlach wordt breder. \"Natuurlijk, kind.\"\n\nHij legt zijn koele vingers op je verschroeide hand. Warmte stroomt in je, zacht als melk. De pijn in je borst lost op. Je rug houdt op met kraken. Je ademt diep, voor het eerst in uren.\n\nMaar hij stopt niet.\n\nDe warmte zakt verder. Naar je hart. Naar je gedachten. Ze worden traag, wit, rustig. Je wilt niets meer. Niet de troon, niet Garrel, niet de wereld. Alleen stil zitten. Voor altijd. Je knoop om hem voelt ver weg, als een touw in een droom.\n\n\"Zo is het goed,\" fluistert de Abt. \"Geen honger meer. Geen strijd.\"\n\nVaag zie je Ilse naar je kijken. Ze beweegt niet om te helpen. Vorrin doet een stap achteruit. De kroonkraai krast, ver weg, alsof hij onder water roept.",
+  "choices": [
+   "Ruk met al je wil aan zijn knoop",
+   "Beveel de kroonkraai de Abt aan te vallen",
+   "Fluister zijn ware naam: Cassian Morr"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 18,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. De leerlingen knielden. Garrel weigerde, heeft geen verborgen naam, en vluchtte gewond door een gat dat Joshua's teruggeslagen magie in de muur blies; Joshua's hand is verschroeid. Ilses knoop zit om haar wil; ze is bang. Joshua vroeg de Abt hem volledig te genezen. De Abt genas zijn lichaam, maar gaat door en trekt hem weg in een witte, willoze stilte. Ilse en Vorrin helpen niet.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cold stone throne hall at night, elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe, laying glowing white hands on a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic, ragged grey shawl, slumped dazed on a black crow-carved throne, soft milky light.",
+   "fallback": "Empty cold stone throne hall at night, black crow-carved throne, soft white glow in the air, candles flickering, a jagged hole in the wall showing night sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
