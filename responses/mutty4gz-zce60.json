@@ -1,22 +1,22 @@
 {
  "id": "mutty4gz-zce60",
- "finishedAt": "2026-10-04T13:01:58.393Z",
- "durationMs": 14636,
+ "finishedAt": "2026-10-04T13:16:11.384Z",
+ "durationMs": 15685,
  "status": "ok",
  "message": "Klaar",
  "resetAt": null,
  "answer": {
   "title": "",
-  "narration": "Bij het eerste licht steken jullie over. Vissersboten, een veerpont, een raad die zich vastklampt aan de reling. Vorrin staat voorin, Ilse naast je, Lirre op de pont met de sjaal tot over haar oren. De kraaien vliegen vooruit als een zwarte vlag.\n\nAan de overkant wacht niemand met zwaarden. Boeren staan langs de weg, hun mutsen in hun handen. Een oude vrouw zakt door haar knieën als je langsloopt.\n\nBij de poort van het gouden paleis komen de witte priesters naar buiten. Hun leider, een magere man met as op zijn voorhoofd, heft zijn handen.\n\n\"De troon kiest zelf,\" zegt hij. \"Wie erop gaat zitten zonder licht, verbrandt. Dat was zijn zegen. Of zijn vloek.\"\n\nAchter hem gloeit de lege stoel zacht na, als een kool die nog niet dood is.",
+  "narration": "De raad volgt je, mopperend en bang, met lantaarns en bontmantels. Vorrin vindt platte schuiten bij de kade. Lirre wil niet achterblijven en gaat voorin zitten, met de sjaal tot aan haar kin.\n\nDe rivier is grijs en stil. Halverwege trekt de stroming aan de boten alsof iets onder water niet wil dat je oversteekt. Je legt één hand op het water en knoopt de stroming vast. Ze wordt glad als glas.\n\nAan de overkant staan de boeren al te wachten, met hun mutsen in de hand. Niemand vecht. Ze kijken naar de kraaien boven je hoofd en knielen.\n\nHet gouden paleis ligt een uur verderop. Ilse wijst naar de heuvels erachter. \"Hij kruipt daar nog rond. Gewond.\"\n\nVorrin bromt: \"De priesters in de troonzaal bidden niet voor niets. Er zit iets op die stoel dat wij niet zien.\"",
   "choices": [
-   "Ga op de gloeiende troon zitten",
-   "Knoop eerst de naam van de troon",
-   "Laat de priesters voor je knielen"
+   "Loop het paleis binnen en neem de troon",
+   "Jaag eerst de Zonnevorst op in de grot",
+   "Spreek de knielende boeren toe"
   ],
   "check": {
-   "used": false,
-   "attribute": "",
-   "dc": 0,
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
    "success": true
   },
   "attributes": [],
@@ -25,22 +25,22 @@
    "heal": "",
    "regen": "",
    "gold": 0,
-   "xp": 8,
+   "xp": 10,
    "addItems": [],
    "removeItems": [],
    "addQuests": [],
    "completeQuests": [],
-   "location": "Het gouden paleis",
+   "location": "De overkant van de rivier",
    "addTraits": [],
    "removeTraits": []
   },
-  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin, die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Lirre is vrij, met Vorrins sjaal. Joshua verwondde de Zonnevorst, die vluchtte naar een grot in de heuvels. De Abt heelde hem grotendeels; de rest vraagt tijd of een sterkere bron. Met de raad van Velmoor stak Joshua de rivier over; boeren knielen. Bij het gouden paleis waarschuwt de priesterleider: de gloeiende lege troon verbrandt wie erop zit zonder licht.",
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo), die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Lirre is vrij, met bruine ogen en Vorrins sjaal. Joshua verwondde de Zonnevorst, die vluchtte naar een grot in de heuvels. De Abt heelde hem grotendeels. Met de raad van Velmoor, Ilse, Vorrin en Lirre stak hij de rivier over; hij temde de stroming. Boeren knielen zonder strijd. Het gouden paleis ligt open, met witte priesters biddend voor een lege troon; Vorrin vermoedt dat er iets onzichtbaars op die troon zit.",
   "gameOver": false,
   "image": {
    "show": true,
    "kind": "scene",
-   "prompt": "Open gates of a golden palace at dawn, gaunt priest with ash on his forehead in white robes raising his hands; facing him a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, beside a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch; crows overhead, a faintly glowing empty throne visible inside.",
-   "fallback": "Open gates of a golden palace at dawn, melted seals on marble steps, an empty throne glowing softly in a vast hall, crows circling above."
+   "prompt": "Flat boats crossing a glassy grey river at dawn, crows swirling overhead, peasants kneeling on the far bank, a distant golden palace beyond; in front a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, hand on the water, beside a girl about ten years old, small and thin, pale ordinary skin, warm brown eyes, tangled pale hair, simple white shift, ash-grey scarf.",
+   "fallback": "A wide grey river at dawn, mirror-smooth water, empty flat boats at a muddy bank, farmland and a distant golden palace beneath misty hills."
   },
   "heroLook": "",
   "portrait": "",
