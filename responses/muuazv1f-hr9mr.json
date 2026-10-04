@@ -1,0 +1,113 @@
+{
+ "id": "muuazv1f-hr9mr",
+ "finishedAt": "2026-10-04T20:59:36.612Z",
+ "durationMs": 38284,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Moeder Veen wikkelt de steen in natte doeken en loopt voor je uit naar het zwartste water achter haar huisje. \"Modder eet alles,\" mompelt ze. \"Zelfs honger.\"\n\nZe gooit. De steen verdwijnt met een plof.\n\nEven is het stil. Dan begint het water te sissen. Bellen borrelen op, eerst traag, dan kokend. Stoom kruipt over het riet. Diep onder het oppervlak gloeit een rode vlek. Uit de barst kronkelt een dunne draad van licht omhoog, als een wortel die naar de zon zoekt.\n\nMaar hij zoekt niet de zon. Hij zoekt jou. Het potje tegen je buik klopt sneller.\n\n\"Het moeras is te zwak,\" zegt Veen hees. \"Hij eet de kou zelf op.\"",
+  "choices": [
+   "Hak de lichtdraad door met je lotschaar",
+   "Ren met het vuur naar de Vorst",
+   "Knoop de vreter vast aan Aureks naam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [
+    "Zwarte gebarsten steen"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Moeras bij het huisje van Moeder Veen",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. Hij ving het eerste vuur in Veens potje en bond de ziekte van de Vorst in Aureks steen. Daarin bleek een vuurvretend wezen te zitten, de oorsprong van de ziekte. Veen gooide de steen in het moeras, maar de vreter kookt het water en strekt een lichtdraad naar het eerste vuur. Het vuur moet vanavond naar het hart van de Vorst, die bij Vorrin in de zonnegrot wacht.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Dark misty swamp at dawn, black water boiling with steam, a red glow deep beneath the surface and a thin twisting thread of red light rising toward the shore; on the bank a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, clutching a small black clay pot; beside him an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf.",
+   "fallback": "Dark misty swamp at dawn, black water bubbling with steam among tall reeds, a faint red glow beneath the surface, a small crooked hut in the background."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Moeder Veen",
+    "look": "",
+    "status": "levend",
+    "home": "huisje aan de rand van het moeras",
+    "role": "oude lotweefster, leermeester",
+    "note": "Belofteknoop met Joshua; gooide de vreterssteen in het moeras.",
+    "companion": ""
+   },
+   {
+    "name": "De Zonnevorst",
+    "look": "",
+    "status": "levend",
+    "home": "zonnegrot onder de zonnetroon",
+    "role": "zieke vorst, aan Joshua gebonden",
+    "note": "Wacht met Vorrin op het eerste vuur voor zijn hart.",
+    "companion": ""
+   },
+   {
+    "name": "Vorrin Grauwveer",
+    "look": "",
+    "status": "levend",
+    "home": "",
+    "role": "geknoopte bondgenoot",
+    "note": "Waakt bij de Zonnevorst in de grot.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Huisje van Moeder Veen",
+     "detail": "Scheef huisje aan de rand van het moeras, waar Moeder Veen woont."
+    },
+    {
+     "name": "Zonnegrot",
+     "detail": "Gloeiende grot met de gouden zonnetroon; het vuur eronder is nu weg."
+    },
+    {
+     "name": "Kraaientroon van Velmoor",
+     "detail": "Joshua's zetel van macht in Velmoor."
+    }
+   ],
+   "facts": [
+    "Joshua zwoer de Zonnevorst nooit te doden.",
+    "Het eerste vuur moet vanavond in het hart van de Zonnevorst.",
+    "De vuurvreter zit in Aureks steen in het moeras en jaagt op het eerste vuur."
+   ],
+   "forgetFacts": [],
+   "time": "ochtend, na de terugreis"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 4452,
+  "cacheRead": 17701,
+  "cacheWrite": 19381,
+  "costUsd": 0.2476,
+  "apiMs": 37237,
+  "numTurns": 3
+ }
+}
