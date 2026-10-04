@@ -1,0 +1,48 @@
+{
+ "id": "mutfz2vb-u9p3u",
+ "finishedAt": "2026-10-04T06:30:51.287Z",
+ "durationMs": 18455,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Waarom begroef je je naam?\" vraag je. Je stem trilt. \"Was je bang dat iemand zoals ik zou komen?\"\n\nVorrin lacht niet. Hij luistert ook niet. Hij leest je, zoals een visser het water leest. \"Je praat om tijd te winnen,\" zegt hij. \"Je trekt aan iets, ver weg. Ik voel het touw trillen.\"\n\nZijn hand gaat omhoog. Grijze veren van licht spreiden zich uit als een waaier. Je gooit een rode windvlaag ertegen, maar die is dun nu, uitgeput. De veren snijden erdoorheen. Eén slaat in je dij. Je valt tegen een deur, je adem ijzig wit in de lucht. Je lichaam schreeuwt dat het genoeg is geweest.\n\nVorrin komt dichterbij, rustig, stap voor stap. \"Het boek,\" zegt hij. \"Geef het me, en je mag sterven als een bedelaar in plaats van als een dief.\"\n\nDan klinkt aan het eind van de straat een stem, koel en helder. \"Vorrin.\"\n\nIlse van de Toren staat daar, haar vlecht strak, zilver glanzend op haar borst. Achter haar schuifelt een witte gestalte met dichtgenaaide ogen.",
+  "choices": [
+   "Beveel Ilse en de Abt aan te vallen",
+   "Knoop zijn belofte terwijl hij afgeleid is",
+   "Vlucht naar de wilg bij de Toren"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu opgesloten in de steen. Joshua zit op de zwarte kraaientroon en ziet door kraaienogen. Garrel knielde onder dwang en haat hem. Vorrin Grauwveer wil het knopenboek; zijn ware naam ligt begraven onder de oude wilg bij de Toren. Joshua verjoeg Vorrins mannen met rode wind en kraaien, maar raakte zwaargewond toen hij Vorrin probeerde op te houden. Net op tijd verschijnen Ilse en de Abt in de straat bij de kapel.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Narrow wet cobblestone street at night, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, slumped against a door. Man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, turning toward a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, beside an elderly gaunt man, pale bald head, eyes sewn shut with silver thread, plain white monk's robe.",
+   "fallback": "Narrow wet cobblestone street at night in an old city, a wooden door, crows perched on rooftops, faint grey light glimmering in the misty air."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
