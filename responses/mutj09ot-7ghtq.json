@@ -1,0 +1,48 @@
+{
+ "id": "mutj09ot-7ghtq",
+ "finishedAt": "2026-10-04T07:55:43.732Z",
+ "durationMs": 17047,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de tafelrand los en kijkt opnieuw. Niet met je ogen, maar met de oude magie, die nog nagromt in je borst.\n\nHet rode spul is geen gif. Het is honger. Duizend kleine koortsen die aan elkaar zijn gevlochten, gevoed met de haat van verre steden. Je proeft het: een vloek die zich hecht aan wat mensen voelen. In een stad die jou haat, zou het groeien als vuur in droog stro. En nu kent het jouw hartslag. Het zou de weg naar jou vinden, door elke straat, door elke muur.\n\nMaar je ziet nog iets. Waar het glas het licht vangt, deinst het spul terug van de dunne loden rand van de stop. Lood. Het kan niet door lood heen. Net als de stem van je meester.\n\nSaria ziet je kijken. Haar vingers sluiten zich om het flesje. \"Nieuwsgierig,\" zegt ze. \"Gevaarlijk, voor een man van uw leeftijd.\"\n\nAchter je tikt de kraai met zijn snavel tegen het raam.",
+  "choices": [
+   "Gris het flesje met een rode windstoot",
+   "Bied aan haar flesje te kopen",
+   "Haal ongezien het loden kistje met schaduwstap"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Leergierigheid",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen ruilde: looiersbuurt vrij, Joshua leerde één lotdraad; meer alleen zonder dwang. Saria van Kesh, gezant van de Zonnevorst, stelde een ultimatum: buig of haar levend rood flesje gaat open als vloek. Joshua's knoop gleed los; het spul kent nu zijn hartslag. Hij ontdekte: het is een koortsvloek die groeit op haat en hem zou opsporen, maar het kan niet door lood.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Close-up of a small glass vial of pulsing dark red liquid with a lead stopper, held by a woman in her thirties, tall and elegant, dark brown skin, long black braids threaded with gold coins, crimson and sand-colored silk robes, in a stone hall, morning light, black crow at window",
+   "fallback": "Stone waiting hall in a dark tower, morning light through a tall window, a heavy wooden table, a small glass vial with a lead stopper glowing faint red"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
