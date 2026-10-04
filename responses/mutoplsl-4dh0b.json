@@ -1,0 +1,48 @@
+{
+ "id": "mutoplsl-4dh0b",
+ "finishedAt": "2026-10-04T10:35:22.608Z",
+ "durationMs": 15921,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Ze brengen je naar de kraaientroon, want nergens anders in de hal is het nog warm. Lirre gaat op de onderste trede zitten, Vorrins sjaal om zich heen, en laat je arm niet los.\n\nDe Blinde Abt komt zonder haast. Zijn zilveren steken glanzen in het kaarslicht. Hij legt twee koele vingers op je borst, precies waar het witte vuur naar binnen kroop.\n\n\"Stil maar,\" zegt hij vriendelijk. \"Er zitten nog vonken in je draden. Die moeten eruit voor ze wortel schieten.\"\n\nJe voelt hoe hij ze één voor één vindt. Elke vonk die hij eruit trekt, steekt als een naald. Dan komt de kou, zacht als sneeuw, en je adem gaat weer dieper. Je hart klopt rustig. Je kunt staan. Bijna.\n\nBuiten krassen de kraaien. Door hun ogen zie je de overkant van de rivier: lege wachttorens, een poort die openstaat, en in de verte rook boven een gouden paleis.\n\nIlse komt de trap op. \"De raad van Velmoor wil weten wat je nu gaat doen,\" zegt ze.",
+  "choices": [
+   "Steek meteen de rivier over",
+   "Spreek de raad van Velmoor toe",
+   "Vraag Moeder Veen om raad"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 30,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo), die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Met Lirre bevrijdde hij alle gestolen lotdraden; ze is vrij, met bruine ogen en Vorrins sjaal. Joshua doorboorde de Zonnevorst met een windspeer; die vluchtte zwaar gewond over de rivier. De Abt heelde Joshua en haalde de vonken uit zijn web. Door kraaienogen ziet Joshua het rijk van de Zonnevorst openliggen: lege torens, open poort, rook boven een gouden paleis. De raad van Velmoor wil weten wat Joshua nu doet.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark stone hall lit by candles, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, resting on a crow throne while elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe, touches his chest with cool pale light.",
+   "fallback": "A dark stone hall with a carved crow throne, flickering candles, scattered grey ash on the floor, an open western door showing a moonlit river."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
