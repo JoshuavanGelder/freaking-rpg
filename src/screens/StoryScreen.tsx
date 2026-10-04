@@ -10,7 +10,7 @@ import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
 import { Bar, Button, Chip, IconButton, Row, T, TopBar } from '../ui';
-import { MAX_TURNS_MORE, paragraphs, setTurnsLeft, turnsLeft, worldLabel } from '../logic/game';
+import { MAX_TURNS_MORE, formatGold, paragraphs, setTurnsLeft, turnsLeft, worldLabel } from '../logic/game';
 import type { Adventure, Turn } from '../logic/types';
 
 export function StoryScreen({ id }: { id: string }) {
@@ -70,7 +70,7 @@ export function StoryScreen({ id }: { id: string }) {
             <Row style={{ gap: 6 }}>
               <Icon name="coin" size={16} color={C.gold} />
               <T size={13} weight="bold">
-                {s.gold}
+                {formatGold(s.gold)}
               </T>
             </Row>
             <T size={13} weight="bold" color={C.muted}>

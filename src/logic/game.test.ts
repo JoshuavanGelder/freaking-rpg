@@ -4,6 +4,7 @@ import {
   applyAnswer,
   arcTurns,
   endTotal,
+  formatGold,
   dropTraitByHand,
   finishQuestByHand,
   matchIndex,
@@ -321,6 +322,32 @@ test('afgesloten verhaal toch voortzetten: gevallen held komt terug met de helft
   assert.equal(back.ended, false);
   assert.deepEqual(back.resumed, { at: 1, died: true });
   assert.deepEqual(buildRequest(back, makePending('turn', RESUME_ACTION, 4), 'sonnet').resumed, { died: true });
+});
+
+test('grote bedragen: een miljoen komt volledig aan', () => {
+  let adv = newAdventure({ ...world, setting: 'modern' }, hero, 1, 'adv-rich');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  const a = withChanges({ gold: 1_000_000 });
+  assert.equal(a.changes.gold, 1_000_000); // niet meer afgekapt op 9999
+  const rich = applyAnswer(adv, makePending('turn', 'Ik pak de prijs', 4), a, 5);
+  assert.equal(rich.state.gold, 1_000_010); // 10 startgoud + 1 miljoen
+  // Betalen kan ook voor grote bedragen, en je kunt nooit onder nul.
+  assert.equal(applyAnswer(rich, makePending('turn', 'x', 6), withChanges({ gold: -400_000 }), 7).state.gold, 600_010);
+  assert.equal(applyAnswer(rich, makePending('turn', 'x', 6), withChanges({ gold: -5_000_000 }), 7).state.gold, 0);
+  // Absurde waardes blijven begrensd.
+  assert.equal(withChanges({ gold: 9e15 }).changes.gold, 1_000_000_000);
+  const capped = applyAnswer({ ...rich, state: { ...rich.state, gold: 9_999_999_000 } }, makePending('turn', 'x', 6), withChanges({ gold: 1_000_000 }), 7);
+  assert.equal(capped.state.gold, 9_999_999_999);
+});
+
+test('bedragen met punten als duizendtalscheiding', () => {
+  assert.equal(formatGold(0), '0');
+  assert.equal(formatGold(12), '12');
+  assert.equal(formatGold(1000), '1.000');
+  assert.equal(formatGold(1_000_010), '1.000.010');
+  assert.equal(formatGold(9_999_999_999), '9.999.999.999');
+  assert.equal(formatGold(-2500), '-2.500');
+  assert.equal(formatGold(Number.NaN), '0');
 });
 
 test('op 0 leven is het verhaal klaar', () => {

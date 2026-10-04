@@ -79,6 +79,9 @@ export function setTurnsLeft(adv: Adventure, more: number | null, now = Date.now
 export const START_HP = 20;
 export const START_GOLD = 10;
 export const XP_PER_LEVEL = 100;
+/** Goud per beurt en in totaal: ruim genoeg voor een loterijwinst of een schat, maar nog veilig te tellen en te tonen. */
+export const MAX_GOLD_CHANGE = 1_000_000_000;
+export const MAX_GOLD = 9_999_999_999;
 const MAX_INVENTORY = 30;
 const MAX_QUESTS = 30;
 const MAX_TRAITS = 20;
@@ -111,6 +114,12 @@ const regenOf = (v: unknown): '' | 'geen' | Regen => {
   const s = typeof v === 'string' ? v.trim().toLowerCase() : '';
   return s === 'geen' || s === 'traag' || s === 'snel' ? s : '';
 };
+
+/** Bedrag met punten als duizendtalscheiding: 1000000 -> "1.000.000". */
+export function formatGold(n: number): string {
+  const v = Math.round(Number.isFinite(n) ? n : 0);
+  return String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, '.').replace(/^/, v < 0 ? '-' : '');
+}
 
 export function settingOf(id: string): Setting {
   return SETTINGS.find((s) => s.id === id) ?? SETTINGS[SETTINGS.length - 1];
@@ -273,7 +282,7 @@ export function parseAnswer(raw: unknown): Answer | null {
       hp: int(ch.hp, -10, 10),
       heal: healOf(ch.heal),
       regen: regenOf(ch.regen),
-      gold: int(ch.gold, -9999, 9999),
+      gold: int(ch.gold, -MAX_GOLD_CHANGE, MAX_GOLD_CHANGE),
       xp: int(ch.xp, 0, 30),
       addItems: strList(ch.addItems, 6, 40),
       removeItems: strList(ch.removeItems, 6, 40),
@@ -389,7 +398,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     hp = Math.min(maxHp, hp + regenAmount(regen, maxHp));
   }
   if (levelsUp) notes.push(`Level ${level}`);
-  const gold = Math.max(0, s.gold + c.gold);
+  const gold = Math.min(MAX_GOLD, Math.max(0, s.gold + c.gold));
 
   // Spullen.
   let inventory = [...s.inventory];

@@ -7,7 +7,7 @@ import { Icon } from '../icons';
 import { Bar, Button, Card, Label, Row, Screen, T, TopBar } from '../ui';
 import { PictureBox } from '../picture-view';
 import { usePictures } from '../pictures';
-import { XP_PER_LEVEL, dropTraitByHand, finishQuestByHand, picturesOf, worldLabel } from '../logic/game';
+import { XP_PER_LEVEL, dropTraitByHand, finishQuestByHand, formatGold, picturesOf, worldLabel } from '../logic/game';
 
 /** Je held: leven, goud, level, krachten, tas en quests. Verborgen eigenschappen blijven verborgen. */
 export function SheetScreen({ id }: { id: string }) {
@@ -86,7 +86,7 @@ export function SheetScreen({ id }: { id: string }) {
             Goud
           </T>
           <T weight="display" size={24} color={C.gold}>
-            {s.gold}
+            {formatGold(s.gold)}
           </T>
         </Card>
       </Row>

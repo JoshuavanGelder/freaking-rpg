@@ -96,7 +96,7 @@
         },
         "gold": {
           "type": "integer",
-          "description": "Change in gold this turn."
+          "description": "Exact change in money this turn, in the world's currency (negative = paying). Any size up to a billion, never rounded down."
         },
         "xp": {
           "type": "integer",

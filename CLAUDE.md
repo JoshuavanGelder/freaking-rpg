@@ -42,7 +42,9 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   zodat de verteller de looks vastlegt; eerste beschrijving wint (aanleiding: Maren werd van oud vrouwtje ineens jong).
 
 ## Spellogica (`src/logic/game.ts`, getest)
-- `parseAnswer` maakt het antwoord veilig (grenzen: leven ±10 per beurt, xp 0–30, max 6 eigenschappen 0–5).
+- `parseAnswer` maakt het antwoord veilig (grenzen: leven ±10 per beurt, xp 0–30, max 6 eigenschappen 0–5, goud ±1 miljard per beurt
+  en max. 9.999.999.999 in totaal; `formatGold` toont bedragen met punten). Aanleiding: een miljoen in een modern verhaal werd
+  afgekapt op 9999. De prompt laat het geldbedrag meeschalen met de wereld (munten in fantasy, euro's in modern).
 - `applyAnswer`: de app past toe; eigenschappen bij de start, later alleen nieuwe erbij (max. 8, bestaande nooit anders);
   level = 1 + xp/100 (+2 max leven per level);
   0 leven of `gameOver` = einde. Zichtbare notities: spullen, quests, locatie, level, krachten (geen cijfers van worpen).
