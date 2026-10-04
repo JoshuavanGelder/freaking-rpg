@@ -1,0 +1,48 @@
+{
+ "id": "mutgcvyx-saxyl",
+ "finishedAt": "2026-10-04T06:41:31.937Z",
+ "durationMs": 15941,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Sta op,\" zeg je. \"Alle drie. We gaan naar binnen.\"\n\nZe volgen je door de zware deuren van de Toren, de trap op, langs grijze leerlingen die tegen de muren wegkruipen. Niemand durft iets te zeggen. Een jongen laat een kaars vallen en raapt hem niet op.\n\nDe troonzaal is koud. De kraaientroon staat er nog, zwart hout vol snavels en veren, en de kroonkraai zit op de leuning alsof hij op je heeft gewacht. Je laat je erin zakken. Je knieën trillen nog, je maag knaagt, maar je zit.\n\nVoor je staan ze. Ilse, kaarsrecht, haar grijze ogen vol ingehouden woede. De Abt, glimlachend, blind en geduldig. Vorrin, modder tot aan zijn ellebogen, die naar de vloer staart.\n\nBeneden klinken stemmen. Garrel. Hij brult dat hij het wil zien, dat hij het niet gelooft.\n\nDe kroonkraai buigt zich naar je oor. Door duizend ogen voel je de stad wakker worden. Velmoor weet het. Nu moet je zeggen wat er gebeurt.",
+  "choices": [
+   "Roep de hele Orde bijeen in de zaal",
+   "Geef Vorrin een eerste, harde opdracht",
+   "Laat Garrel boven komen en knielen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De troonzaal van de Toren",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (ware naam Tevin Aslo, uit een loden kistje onder de wilg). Hij ziet door kraaienogen. Nu zit hij op de kraaientroon in de Toren met de drie leiders van de Orde voor zich. Garrel, die hem haat, brult beneden dat hij het wil zien. De stad weet het. Vorrin smeekt niet aan een touw te leven; de Abt waarschuwde zijn heling niet te lang te vragen. Ilse is woedend maar gehoorzaamt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Cold stone throne hall in a dark tower, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, seated on a black wooden throne carved with crows, an unusually large black crow with silver leg ring on the armrest. Before him stand a tall woman in her forties with tight dark braid and dark grey robe with silver crow brooch, an elderly gaunt bald man with eyes sewn shut in white monk's robe, and a lean man in his fifties with short grey beard, ash-grey scarf, muddy hands, head bowed. Candlelight.",
+   "fallback": "Cold stone throne hall in a dark tower at night, a black wooden throne carved with crows and feathers, flickering candles, tall narrow windows, shadows on grey walls."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
