@@ -1,0 +1,53 @@
+{
+ "id": "mutp2b41-k32u1",
+ "finishedAt": "2026-10-04T10:45:16.862Z",
+ "durationMs": 16775,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je loopt de trap af, Ilse naast je. Bij elke stap voel je de koele naden die de Abt in je borst heeft gelegd. De raadszaal van Velmoor ruikt naar was en angst. Twaalf oude mannen en vrouwen staan op als je binnenkomt. Niemand durft als eerste te gaan zitten.\n\n\"Zet je stoelen bij het raam,\" zeg je. \"Kijk mee.\"\n\nJe sluit je ogen en roept. Van de daken, uit de torenspitsen en de goten stijgen de kraaien op, een zwarte rivier boven de echte. Je stuurt ze naar de overkant. Door honderd ogen tegelijk zie je het: lege wachttorens, verlaten kazernes, akkers waar boeren onzeker omhoog kijken.\n\nEn dan het gouden paleis. De poort staat open. Op de trappen liggen gesmolten zegels. In de troonzaal zit geen vorst, maar wel een rij priesters in witte gewaden die knielen voor een lege stoel. Ze bidden. Achter het paleis, in de heuvels, sleept een grauwe gestalte zich langzaam een grot in.\n\nDe raad fluistert. Ilse kijkt je aan. \"Ze wachten op een bevel.\"",
+  "choices": [
+   "Trek met de raad de rivier over",
+   "Laat de kraaien de wonde vorst volgen",
+   "Stuur Vorrin vooruit als gezant"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 4,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Vind de schuilplaats van de Zonnevorst",
+     "detail": "Hij kroop gewond een grot in de heuvels in."
+    }
+   ],
+   "completeQuests": [],
+   "location": "De raadszaal van Velmoor",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo), die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Lirre is vrij, met bruine ogen en Vorrins sjaal. Joshua verwondde de Zonnevorst, die over de rivier vluchtte. De Abt heelde hem grotendeels; de rest vraagt tijd of een sterkere bron. In de raadszaal liet Joshua de raad via kraaien zien: het rijk van de Zonnevorst ligt leeg, witte priesters knielen voor een lege troon in het gouden paleis, en de gewonde vorst kroop een grot in de heuvels in. De raad wacht op zijn bevel.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Candlelit council chamber with tall windows, elderly councillors in robes staring out as a vast flock of crows streams over a wide river at dawn toward a distant golden palace; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, eyes closed, beside a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch.",
+   "fallback": "Candlelit stone council chamber with tall windows overlooking a wide river at dawn, a distant golden palace on the far shore, empty wooden chairs."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
