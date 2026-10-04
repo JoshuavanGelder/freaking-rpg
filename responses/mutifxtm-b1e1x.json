@@ -1,0 +1,50 @@
+{
+ "id": "mutifxtm-b1e1x",
+ "finishedAt": "2026-10-04T07:40:07.195Z",
+ "durationMs": 28731,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je draait je langzaam om. Het bloed klopt nog na in je arm, maar je stem is koud en vast.\n\n\"Tevin Aslo.\"\n\nVorrin verstijft. Zijn ware naam, hardop uitgesproken in de troonzaal, trekt de knoop om hem strak. Zijn knieën raken de stenen vloer voordat hij het zelf besluit.\n\n\"Ik heb niet toegegeven. Ik heb gekozen. Een draad van het lot voor een stinkende buurt vol looiers. Als jij dat zwakte noemt, zie jij niet wat hier vanavond gebeurd is.\" Je buigt je over hem heen. \"Het volk hoort wat ík wil dat het hoort. En jij zorgt daarvoor.\"\n\nHij slikt. Zijn verbrande vingers klemmen zich om de grijze sjaal. \"Ja, heer.\"\n\n\"Nog één keer zo'n toon, en ik knoop je tong vast.\"\n\nHij buigt zijn hoofd tot op de vloer. Hoog in de nok krast de kroonkraai, alsof hij het met je eens is. Door de ogen van de kraaien zie je de stad: lantaarns in de looiersbuurt, mensen op straat die fluisteren.",
+  "choices": [
+   "Laat Vorrin een verhaal over je verspreiden",
+   "Bekijk met kraaienogen wat de stad fluistert",
+   "Rust en laat je wonden genezen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Laat de looiersbuurt belasting betalen"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor, die even vrij was en wilde ontsnappen. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort. Moeder Veen ruilde: de looiersbuurt is voor altijd vrij van de Toren, en Joshua leerde één draad lotmagie; meer alleen zonder dwang. Vorrin noemde dat zwak; Joshua zette hem met zijn ware naam op de knieën en beval hem te zorgen dat het volk alleen hoort wat Joshua wil. In de stad wordt gefluisterd.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Candlelit stone throne hall at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, standing over a kneeling man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, a large crow watching from the rafters",
+   "fallback": "Candlelit stone throne hall at night, dark crow-shaped throne, tall pillars, scattered dark soil on the floor, shadows in the rafters"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
