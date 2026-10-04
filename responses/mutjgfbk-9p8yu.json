@@ -1,0 +1,50 @@
+{
+ "id": "mutjgfbk-9p8yu",
+ "finishedAt": "2026-10-04T08:08:28.404Z",
+ "durationMs": 27944,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je zegt niets. Je opent alleen je hand.\n\nDe oude magie brult omhoog uit je borst, en de rode wind slaat als een vuist tegen zijn borstkas. Hij heft nog zijn kromzwaard, alsof staal wind kan snijden. Dan tillen zijn laarzen van de pannen. Zijn zandkleurige mantel klappert, zijn mond gaat open, maar de wind neemt zijn schreeuw mee.\n\nHij valt. Lang. Een doffe klap, diep beneden in de droge gracht. Dan alleen nog de kraaien, die als zwarte as naar beneden dwarrelen om te kijken.\n\nJe knieën geven half mee. Je arm brandt, je hart bonkt te snel, en heel even denk je aan het rode spul in het lood, dat dat ritme nu kent.\n\nDoor de ogen van een kraai zie je hem liggen. Uit zijn gordel is een klein koperen kokertje gerold, verzegeld met rode was.\n\nAchter je, op de muur, klinken laarzen. Stadswachters. Ze hebben het gezien. Ze blijven op afstand staan, hun speren omlaag, hun gezichten wit van angst en haat.",
+  "choices": [
+   "Stap de schaduw in, pak het kokertje",
+   "Beveel de stadswachters te knielen",
+   "Laat de kraaien het kokertje brengen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Vang de gevluchte wachter van Kesh"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje, waarin ook het koortsflesje van de Zonnevorst zit, dat Joshua's hartslag kent. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad; meer alleen zonder dwang. Gezant Saria van Kesh zit in de kerker. Beide wachters van Kesh zijn dood: de laatste smeet Joshua met rode wind van de zuidmuur. Bij het lijk ligt een verzegeld koperen kokertje. Bange, vijandige stadswachters kijken toe.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Atop a grey stone city wall at overcast midday, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, blasting a roaring red wind from his open hand, a guard in a sand-colored mantle flung backward off the wall edge, black crows swirling, dramatic low angle",
+   "fallback": "Top of a grey stone city wall under an overcast sky, wet roof tiles, a dry moat far below, black feathers drifting in the wind over dark city roofs"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
