@@ -1,0 +1,50 @@
+{
+ "id": "mutxg2r8-hmn7z",
+ "finishedAt": "2026-10-04T14:39:53.929Z",
+ "durationMs": 14574,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Jullie laten de Zonnevorst achter in zijn gloeiende grot. Je hoort zijn hart nog in je borst, traag, als een klok die moe wordt.\n\nVorrin kent de weg. Twee dagen door natte heuvels, met de akkers onder je weer warm en goudgeel. Jij wordt kouder. 's Nachts rillen je vingers, alsof je warmte langzaam naar het zuiden wegloopt.\n\nHet huisje van Moeder Veen staat scheef in het moeras, rook kringelt uit de schoorsteen. Ze zit al op de drempel, klein en krom onder haar bruine kap, haar zwarte ogen fel.\n\n\"Je ruikt naar as, jongen,\" zegt ze. \"En naar een eed die je niet had moeten zweren.\" Ze tikt op je borst. \"Twee harten in één lijf. Wil je dat ik het zijne genees, of het jouwe redt?\"",
+  "choices": [
+   "Vraag haar zijn hart te genezen",
+   "Vraag of beide harten te redden zijn",
+   "Bied haar een nieuwe belofte aan"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Het huisje van Moeder Veen",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. In de grot zwoer Joshua de Zonnevorst nooit te doden en legde een dubbele knoop: de Vorst gehoorzaamt. Een verborgen lus bindt de eed aan het stervende hart van de Vorst; dat hart klopt nu in Joshua's borst en trekt zijn warmte weg. De akkers zijn weer warm, maar de Vorst sterft sneller. Joshua en Vorrin reisden naar het moerashuisje van Moeder Veen. Zij vraagt: zijn hart genezen, of het jouwe redden?",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Crooked hut in a misty swamp at dusk, smoke curling from chimney; on the doorstep an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, touching the chest of a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots; behind him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes.",
+   "fallback": "A crooked wooden hut in a misty swamp at dusk, smoke curling from the chimney, reeds and dark water around it, warm light in the window."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
