@@ -1,0 +1,119 @@
+{
+ "id": "mutnlu1l-v1e7v",
+ "createdAt": "2026-10-04T10:04:09.177Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Modern",
+  "settingText": "",
+  "tones": [
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "Makkelijk. Alles gaat goed wat ik probeer. Ook heel veel geluk. Ook heb ik the infinity Stones van marvel allemaal in bezit en kan ik ze gebruiken"
+ },
+ "hero": {
+  "name": "Einstein De Tweede",
+  "className": "Wetenschapper/engineer",
+  "powers": "Extreem slim en extreem sterk sterkste en slimste van de wereld.",
+  "looks": "Extreem knap",
+  "heroLook": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10009,
+  "xp": 60,
+  "level": 1,
+  "location": "Boven de Noordzee",
+  "attributes": [
+   {
+    "name": "Intelligentie",
+    "value": 5
+   },
+   {
+    "name": "Kracht",
+    "value": 5
+   },
+   {
+    "name": "Charisma",
+    "value": 5
+   },
+   {
+    "name": "Geluk",
+    "value": 5
+   },
+   {
+    "name": "Steenbeheersing",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Zes Oneindigheidsstenen",
+   "Stenenpak"
+  ],
+  "quests": [
+   {
+    "title": "Sluit de scheur boven de Noordzee",
+    "detail": "Ontdek wat erdoorheen komt en stop het.",
+    "done": false
+   },
+   {
+    "title": "Ontmasker de Raad der Gedoofde Sterren",
+    "detail": "De Raad stuurde Vorath voor de stenen.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Stenenpak",
+    "kind": "kracht",
+    "detail": "Draagt alle stenen veilig; niemand anders kan ze aanraken."
+   }
+  ]
+ },
+ "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen. Directeur Mara Valk van het Europees Ruimteagentschap vroeg zijn hulp tegen een violette scheur boven de Noordzee. Hij werd rijk via de Werkelijkheidssteen en bouwde een donker pak met de stenen, dat alleen hij kan aanraken. Hij vernietigde met de Krachtsteen een zwarte vloot op weg naar Den Helder. Met de Geeststeen dwong hij de kolossale schaduw te spreken: Vorath de Leegte-eter, gestuurd door de Raad der Gedoofde Sterren achter de laatste ster, om de ontsnapte stenen terug te halen. Faalt hij, dan komt de Raad zelf. Iedereen op aarde hoorde het. De scheur is nog open en hangt aan Vorath.",
+ "cast": [
+  {
+   "name": "Mara Valk",
+   "look": "middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset."
+  },
+  {
+   "name": "Vorath",
+   "look": "ancient male cosmic titan of immeasurable age, colossal shadowy body of smoke and darkness, enormous glowing violet eyes the size of stadiums, a giant black claw as large as a cargo ship."
+  }
+ ],
+ "recent": [
+  {
+   "action": null,
+   "narration": "Amsterdam slaapt nog als jij, Einstein De Tweede, de deur van je laboratorium aan de IJ-oever openduwt. Je lichaam voelt als staal, je hoofd zoemt van formules die niemand anders op aarde zou begrijpen. In je zak rinkelen precies tien euro, genoeg voor koffie en een broodje.\n\nOp je werkbank liggen ze: zes stenen, gloeiend in blauw, rood, paars, geel, groen en oranje. Ruimte, Werkelijkheid, Kracht, Geest, Tijd en Ziel. Ze zoemen alsof ze je herkennen.\n\nDan begint je telefoon te trillen. Een onbekend nummer. Een kalme vrouwenstem: 'Professor, hier spreekt directeur Mara Valk van het Europees Ruimteagentschap. Boven de Noordzee is een scheur in de lucht verschenen. Iets komt erdoorheen. Wij hebben de slimste en sterkste mens ter wereld nodig.'\n\nDoor het raam zie je het al: aan de horizon kleurt de hemel violet en trilt als water. De stenen gloeien feller.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers, standing in a high-tech waterfront lab at dawn, six glowing gemstones in blue, red, purple, yellow, green and orange floating above his workbench, through the window a violet rift shimmers on the horizon."
+  },
+  {
+   "action": "10 euro vind ik ten eerste niet genoeg ik gebruik eerst de stenen om miljoenen te krijgen",
+   "narration": "Je pakt de rode Werkelijkheidssteen van de werkbank. Hij voelt warm, bijna gretig. Je sluit je ogen en rekent het uit: geen vals geld, geen diefstal. Je herschrijft één regel van de werkelijkheid. Een vergeten patent op een supergeleider, jaren geleden ingediend onder jouw naam, en vannacht verkocht.\n\nJe telefoon piept. Een melding van je bank. Je kijkt en grijnst: een miljoen en tien euro. Alles keurig, alles legaal, alsof het altijd zo had moeten zijn.\n\nMeteen trilt het toestel opnieuw. Mara Valk, kalm maar dringend: 'Professor? De scheur groeit. Onze satellieten zien een vorm achter het licht. Iets groots. Het beweegt.'\n\nBuiten kleurt de hemel boven het IJ dieper violet. De Ruimtesteen gloeit blauw, alsof hij je uitnodigt. De Tijdsteen tikt zacht, groen, ongeduldig.\n\nMet een miljoen op je rekening en zes stenen binnen handbereik vraag je je af hoe je deze dag het beste begint."
+  },
+  {
+   "action": "Maak met de stenen een pak waar de stenen in passen zodat ik ze makkelijk kan meenemen en kan gebruiken zonder dat ze worden afgepakt",
+   "narration": "Je veegt je werkbank leeg en begint. Je handen bewegen sneller dan je gedachten kunnen bijhouden: titaniumvezels, een weefsel van grafeen, microcircuits zo fijn als haar. De Werkelijkheidssteen vult de gaten die geen fabriek op aarde kan maken.\n\nDan de laatste stap. Je houdt de paarse Krachtsteen boven het weefsel en de Ziel- en Geeststeen ernaast. Je laat ze één ding afspreken: alleen jij mag ze aanraken. Een golf van licht slaat door het lab, de ramen rinkelen, en dan is het stil.\n\nVoor je hangt een strak, donker pak, met zes kassen langs de mouwen en de borst. Eén voor één klikken de stenen op hun plek. Als je het aantrekt, voelt het als een tweede huid. Je balt je vuist en de lucht om je knokkels trilt.\n\nJe telefoon licht op. Mara Valk: 'Professor, er komt iets uit de scheur. Schepen. Tientallen. Ze vliegen richting de kust.'\n\nDe Ruimtesteen op je pols gloeit, klaar om je overal heen te brengen.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones in blue, red, purple, yellow, green and orange set along the sleeves and chest, clenching his fist in a high-tech waterfront lab, light rippling around his knuckles, violet sky through the windows."
+  },
+  {
+   "action": "Teleporteer direct naar de scheur",
+   "narration": "Je raakt de blauwe Ruimtesteen op je pols aan. De wereld vouwt dicht als een boek, en een hartslag later sta je in de lucht boven de Noordzee, hoog boven grijze golven.\n\nDe scheur is gigantisch. Een violette wond in de hemel, kilometers lang, met randen die knetteren als bliksem. Erdoorheen glijden schepen: zwart en hoekig, als scherven obsidiaan, in strakke formatie richting de Nederlandse kust. Achter hen, diep in het licht, beweegt iets enorms. Een schaduw met ogen zo groot als stadions.\n\nIn je oortje kraakt Mara Valk. 'Professor, we zien u op de radar! Hoe bent u daar zo snel... Laat maar. De vloot is twintig minuten van Den Helder.'\n\nDe voorste schepen draaien bij. Hun boegen gloeien op. Ze hebben je gezien.\n\nJe pak zoemt. Zes stenen wachten op je bevel. Achter de scheur opent de schaduw langzaam zijn ogen.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering in the sky above a grey stormy North Sea, facing a gigantic crackling violet rift from which angular black obsidian-like ships emerge in formation, a colossal shadow with huge glowing eyes behind the light, epic wide shot."
+  },
+  {
+   "action": "Vaag de vloot weg met de Krachtsteen",
+   "narration": "De voorste schepen vuren. Violette stralen schieten op je af, maar je heft alleen je rechterarm. De paarse Krachtsteen in je mouw ontwaakt met een diepe dreun die je in je borst voelt, alsof de oceaan zelf ademhaalt.\n\nJe balt je vuist en duwt.\n\nEen golf van paars licht rolt over de hemel, breder dan de horizon. Hij raakt de vloot en de zwarte schepen spatten uiteen als glas tegen een rotswand. Scherven obsidiaan dwarrelen sissend in de golven. Tientallen schepen, binnen één hartslag verdwenen. Beneden kolkt de Noordzee wit van het schuim.\n\nIn je oortje blijft het even stil. Dan Mara Valk, zachter dan je haar ooit hoorde: 'De radar is leeg. Helemaal leeg. Professor... Den Helder is veilig.'\n\nMaar de scheur sluit niet. Ze knettert feller. Uit het violette licht schuift een klauw naar buiten, zo groot als een vrachtschip. De schaduw met de stadionogen kijkt nu alleen naar jou. Een stem rommelt door je botten: 'Wie draagt mijn stenen?'",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, thrusting his fist forward as a vast wave of purple light shatters dozens of angular black obsidian ships into glittering shards, violet rift behind, epic wide shot."
+  },
+  {
+   "action": "Gebruik de stenen om die stem uit te laten leggen wat hij hier doet en wie hem stuur",
+   "narration": "Je legt twee vingers op de gele Geeststeen op je borst en kijkt de schaduw recht in de stadionogen. Een gouden draad van licht schiet door de scheur en slaat vast in iets dat ergens tussen gedachte en vlees zit.\n\nDe klauw verstijft. De stem, die net nog door je botten rommelde, klinkt opeens gesmoord, alsof hij tegen zijn wil praat.\n\n'Ik ben Vorath... Leegte-eter... Hoeder van de Gedoofde Sterren.' Elk woord kost hem moeite. 'De Raad stuurde mij. Zes stenen zijn ontsnapt... naar deze kleine wereld. Ik moest ze terughalen. Mijn vloot moest jullie kust branden tot iemand ze afgaf.'\n\nJe drukt harder. Het goud gloeit fel. 'De Raad,' gromt hij, 'zit achter de laatste ster... aan het einde van alles. Zij wachten. Als ik faal... komen zij zelf.'\n\nIn je oortje fluistert Mara Valk: 'Professor... wij horen hem ook. Iedereen hoort hem.'\n\nDe klauw trilt. Vorath probeert zich los te rukken. De scheur knettert, wankel, alsof ze alleen open blijft zolang hij hier is.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, a golden beam of light from his chest binding a colossal shadowy titan with stadium-sized glowing eyes and a ship-sized claw reaching through a crackling violet rift, epic wide shot."
+  }
+ ],
+ "action": "Gebruik de ruimte steen om naar de raad te gaan met Vorath naast me op zijn knieën",
+ "roll": 6
+}
