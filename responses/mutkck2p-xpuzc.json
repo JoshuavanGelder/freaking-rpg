@@ -1,0 +1,48 @@
+{
+ "id": "mutkck2p-xpuzc",
+ "finishedAt": "2026-10-04T08:33:14.596Z",
+ "durationMs": 15542,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Noem je prijs, vrouw.\"\n\nMoeder Veen kijkt je lang aan. Dan grinnikt ze, en het dode vuur naast haar knispert even, al ligt er geen kooltje meer in.\n\n\"Kort van stof. Dat mag ik wel.\" Ze pakt het grijze, dode flesje uit het lood en draait het tussen haar vingers. \"Drie dingen, kraaienjongen. Klein, middel en groot.\"\n\nZe steekt één kromme vinger op. \"Je laat de kraaien van Velmoor nooit meer naar deze smidse kijken. Wat hier gebeurt, is van mij.\"\n\nEen tweede vinger. \"Saria van Kesh. Je laat haar níét gaan. Je brengt haar hier, één nacht, met mij alleen. Ik heb een vraag voor haar die ze alleen in het donker beantwoordt.\"\n\nDe derde vinger blijft even in de lucht hangen.\n\n\"En op een dag vraag ik je één draad door te knippen. Je weet nog niet welke. Je zegt dan geen nee.\"\n\nBuiten valt de wind stil. Je voelt het knopenboek zwaar tegen je heup. Ze wil een belofte. Precies het soort ding dat jij zelf zou kunnen vastknopen.",
+  "choices": [
+   "Beloof alle drie, met een knoop",
+   "Onderhandel: alleen de eerste twee",
+   "Eis eerst te weten welke draad"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin, en trainde zijn lichaam taaier. Garrel is dood; het volk haat Joshua. Saria van Kesh zit in de kerker. Met Moeder Veen knipte Joshua de lotdraad van het koortsflesje van de Zonnevorst door; de Zonnevorst weet nu wat hij kan. Veen vraagt als prijs: nooit kraaien bij haar smidse, één nacht alleen met Saria, en later één draad knippen die zij kiest, zonder nee te zeggen. Joshua moet nog beslissen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cold dark abandoned forge at night, elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, holding up three crooked fingers, facing thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, dim grey light",
+   "fallback": "Cold dark abandoned forge at night, dead hearth, old anvil with an open lead box and a small grey glass vial, dim grey moonlight through a cracked window"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
