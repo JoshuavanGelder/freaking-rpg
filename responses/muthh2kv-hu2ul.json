@@ -1,0 +1,50 @@
+{
+ "id": "muthh2kv-hu2ul",
+ "finishedAt": "2026-10-04T07:13:02.143Z",
+ "durationMs": 29875,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Verbrand het,\" zeg je. \"En breng me kleren. Echte kleren.\"\n\nEen leerling rent de trap af met een fakkel. Door de ogen van een kraai op de poort zie je hem bukken. Het rode touwtje vat vlam. Maar de knoop brandt niet. De kruiden verschrompelen tot as, het touw wordt zwart, en de knoop blijft liggen. Heel. Gloeiend als een sintel. Dan sist hij één keer en lost op in de wind. Ver weg, in de richting van de looiersbuurt, ruik je heel even rook die niet van dit vuur komt.\n\nEen uur later staat Ilse voor je met de kleermaker van de Orde, een bevend mannetje met spelden in zijn mond. Ze kleden je in zwart fluweel, een hoge kraag met zilverdraad, een zware mantel van donkere wol en laarzen die niet lekken. Je oude tuniek gooien ze in het vuur.\n\nIn een gepolijst schild aan de muur kijkt een vreemde je aan. Bleek, mager, maar geen bedelaar meer.\n\n\"Heer,\" zegt Ilse zacht. \"Die knoop. Die is ouder dan uw boek.\"",
+  "choices": [
+   "Eis van Ilse alles over die knoop",
+   "Zoek de oude vrouw door kraaienogen",
+   "Spreek Velmoor toe vanaf de poort"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [
+    "Zwarte fluwelen mantel"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, nu magiër op de kraaientroon van de Toren in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie en knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). De Abt probeerde hem in willoze stilte te trekken; Joshua brak los. Garrel werd door de kraaien gedood en hangt aan de torenpoort; Velmoor is doodsbang. Een gekapte oude vrouw in de smidse zag Joshua door de kraaien. Haar kruidenbosje met knoop onder de poort werd verbrand; de knoop loste op, rook bij de looiersbuurt. Joshua draagt nu zwart fluweel en een zware mantel. Ilse zegt dat die knoop ouder is dan zijn boek.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Cold stone throne hall at dusk, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, wearing black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle and black boots, looking at himself in a polished shield; beside him a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, candlelight.",
+   "fallback": "Cold stone throne hall at dusk with a black crow-carved throne, a polished shield on the wall, candles flickering, a hole in the wall showing a darkening sky."
+  },
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
