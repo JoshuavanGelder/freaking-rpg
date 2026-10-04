@@ -1,0 +1,79 @@
+{
+ "id": "mutme8zq-o5cxh",
+ "createdAt": "2026-10-04T09:30:15.686Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Modern",
+  "settingText": "",
+  "tones": [
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "Makkelijk. Alles gaat goed wat ik probeer. Ook heel veel geluk. Ook heb ik the infinity Stones van marvel allemaal in bezit en kan ik ze gebruiken"
+ },
+ "hero": {
+  "name": "Einstein De Tweede",
+  "className": "Wetenschapper/engineer",
+  "powers": "Extreem slim en extreem sterk sterkste en slimste van de wereld.",
+  "looks": "Extreem knap",
+  "heroLook": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "Laboratorium aan het IJ",
+  "attributes": [
+   {
+    "name": "Intelligentie",
+    "value": 5
+   },
+   {
+    "name": "Kracht",
+    "value": 5
+   },
+   {
+    "name": "Charisma",
+    "value": 5
+   },
+   {
+    "name": "Geluk",
+    "value": 5
+   },
+   {
+    "name": "Steenbeheersing",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Zes Oneindigheidsstenen"
+  ],
+  "quests": [
+   {
+    "title": "Sluit de scheur boven de Noordzee",
+    "detail": "Ontdek wat erdoorheen komt en stop het.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen (Ruimte, Werkelijkheid, Kracht, Geest, Tijd, Ziel) in zijn laboratorium aan het IJ in Amsterdam. Directeur Mara Valk van het Europees Ruimteagentschap belt: boven de Noordzee is een violette scheur in de lucht verschenen waar iets doorheen komt. Zij vraagt zijn hulp.",
+ "cast": [
+  {
+   "name": "Mara Valk",
+   "look": "middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset."
+  }
+ ],
+ "recent": [
+  {
+   "action": null,
+   "narration": "Amsterdam slaapt nog als jij, Einstein De Tweede, de deur van je laboratorium aan de IJ-oever openduwt. Je lichaam voelt als staal, je hoofd zoemt van formules die niemand anders op aarde zou begrijpen. In je zak rinkelen precies tien euro, genoeg voor koffie en een broodje.\n\nOp je werkbank liggen ze: zes stenen, gloeiend in blauw, rood, paars, geel, groen en oranje. Ruimte, Werkelijkheid, Kracht, Geest, Tijd en Ziel. Ze zoemen alsof ze je herkennen.\n\nDan begint je telefoon te trillen. Een onbekend nummer. Een kalme vrouwenstem: 'Professor, hier spreekt directeur Mara Valk van het Europees Ruimteagentschap. Boven de Noordzee is een scheur in de lucht verschenen. Iets komt erdoorheen. Wij hebben de slimste en sterkste mens ter wereld nodig.'\n\nDoor het raam zie je het al: aan de horizon kleurt de hemel violet en trilt als water. De stenen gloeien feller.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers, standing in a high-tech waterfront lab at dawn, six glowing gemstones in blue, red, purple, yellow, green and orange floating above his workbench, through the window a violet rift shimmers on the horizon."
+  }
+ ],
+ "action": "10 euro vind ik ten eerste niet genoeg ik gebruik eerst de stenen om miljoenen te krijgen",
+ "roll": 19
+}
