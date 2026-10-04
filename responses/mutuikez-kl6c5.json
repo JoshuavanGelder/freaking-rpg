@@ -1,0 +1,50 @@
+{
+ "id": "mutuikez-kl6c5",
+ "finishedAt": "2026-10-04T13:18:05.439Z",
+ "durationMs": 28368,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je draait je naar Vorath. De Geeststeen gloeit geel, en je kijkt dwars door zijn rook heen, tot in zijn binnenste.\n\nDaar ligt geen trouw. Alleen een kil, geduldig plan: wachten tot je slaapt, en dan de stenen grijpen. Zijn hart is zwart als het glas onder je voeten.\n\n'Je boog,' zeg je zacht. 'Maar je meende het niet.'\n\nZijn stadionogen schieten open. Te laat. De rode steen flitst, en de titan die werelden verscheurde, valt uiteen. Een orkaan van as wervelt omhoog, langs de stralende ster, en waait weg in het niets.\n\nDe vier raadsleden deinzen terug. De Koningin kijkt naar de lege plek waar hij knielde.\n\n'Dan weet je nu wat ik weet,' fluistert ze. 'Wat aan de rand op je leger wacht, heeft óók een hart. En het zag zojuist wat je deed.'\n\nVer weg gaat een tweede lichtstreep uit.",
+  "choices": [
+   "Spring met de Ruimtesteen naar de rand",
+   "Lees het hart van de Koningin",
+   "Roep het hele leger terug naar je"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Voor ESA-directeur Mara Valk versloeg hij een zwarte vloot en dwong titan Vorath te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Achter de laatste ster veranderde hij een raadslid in as, bedwong de Eerste Duisternis tot een zwart vlammetje en werd alwetend. Zijn leger van sterrenlicht verovert het heelal en valt alleen slechte harten aan. Hij las Vorath's verraderlijke hart en liet hem tot as verwaaien. Vier raadsleden bogen; de Koningin niet. Zij waarschuwt dat iets aan de rand van het heelal, met een eigen hart, zijn soldaten uitdooft: al twee lichtstrepen zijn gestopt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, raising a hand glowing red as an ancient colossal shadowy titan of smoke with enormous glowing violet eyes and a giant black claw crumbles into a vast whirlwind of grey ash, black glass plain, brilliant star above, epic wide shot.",
+   "fallback": "A vast plain of black glass at the end of the universe, empty ash thrones, swirling grey dust drifting upward toward a single brilliant star in a dark sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
