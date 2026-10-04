@@ -1,0 +1,61 @@
+{
+ "id": "mutx0psn-qa4po",
+ "finishedAt": "2026-10-04T14:28:14.067Z",
+ "durationMs": 31558,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ik zweer het,\" zeg je. \"Ik zal je nooit doden.\"\n\nJe legt de knoop. Twee lussen, de jouwe en de zijne, strak in elkaar. Hij buigt zijn hoofd. Even voel je het: hij luistert. Buiten zoemen de gouden draden weer warm.\n\nDan trekt de knoop zich verder aan dan jij hem legde. Een derde lus, dun als haar, die je niet zag. Je adem stokt. Zijn hart klopt in jouw borst, traag en ziek.\n\n\"Je hebt beloofd dat je mij nooit doodt,\" fluistert hij. \"Ik ben stervende, kraaienjongen. Laat je mij sterven, dan breek je je eed.\"\n\nVorrin kijkt van hem naar jou, het mes half geheven. \"Wat heeft hij gedaan?\"\n\nJe warmte sijpelt al naar hem toe.",
+  "choices": [
+   "Snijd de verborgen lus met je lotschaar",
+   "Beveel hem de velden nu te verwarmen",
+   "Vraag meester Aurek om raad"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Eed aan de Zonnevorst",
+     "kind": "zwakte",
+     "detail": "Je mag hem nooit doden; zijn stervende hart trekt aan je warmte."
+    },
+    {
+     "name": "Knoop van de Zonnevorst",
+     "kind": "kracht",
+     "detail": "De Zonnevorst moet naar jou luisteren door jullie dubbele knoop."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. De zonnetroon koos Joshua. Zonder zonnevuur bevriest de oogst binnen drie nachten. In de grot zwoer Joshua de Zonnevorst nooit te doden en legde een dubbele knoop: de Vorst moet hem gehoorzamen. Maar de Vorst verstopte een derde lus: hij is stervende en trekt Joshua's warmte naar zich toe; laat Joshua hem sterven, dan breekt hij zijn eed. Vorrin staat met getrokken mes naast hem.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling, glowing golden double knot of light binding him to a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes; beside them a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, holding a knife.",
+   "fallback": "Dark rocky cave interior lit by a glowing knot of golden threads, frost creeping at the entrance, cold blue night outside."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
