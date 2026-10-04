@@ -1,0 +1,62 @@
+{
+ "id": "muth4oyv-1kg35",
+ "finishedAt": "2026-10-04T07:03:29.718Z",
+ "durationMs": 35794,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je blijft zitten. Je legt je handen op de koude kraaienkoppen van de leuning en geeft één bevel, zonder woorden.\n\nVer weg, achter de looiersbuurt, laten honderden kraaien tegelijk de dakgoot los.\n\nJe ziet het door al hun ogen. Een zwarte golf stort door de verroeste deur naar binnen. Garrel draait zich om en zijn handen laaien blauw op. Tien vogels vallen. Twintig. Maar er komen er altijd meer. Zijn licht flakkert, wordt flauw en dooft. Hij zakt bij het aambeeld in elkaar en ligt stil onder een deken van fladderende veren.\n\nDe gekapte gestalte doet niets om hem te helpen. Ze kijkt alleen omhoog, recht in de ogen van de kroonkraai, alsof ze jóu ziet.\n\n\"Daar is hij dan,\" zegt een oude, droge vrouwenstem. \"De jongen die de spreukenmaker heeft opgegeten.\"\n\nAls de dageraad grijs door het gat in de muur kruipt, slepen twintig kraaien een zware bundel in een grijze jas de troonzaal binnen. Ze leggen hem voor je voeten neer. Bovenop glinstert het zilveren kraaienspeldje.\n\nNiemand van de leerlingen zegt iets. Eén van hen huilt zachtjes.",
+  "choices": [
+   "Laat de bundel aan de poort hangen",
+   "Stuur de kraaien naar de oude vrouw",
+   "Spreek de leerlingen streng toe"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Garrels zilveren kraaienspeld"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontmasker de oude vrouw in de smidse",
+     "detail": "Een gekapte oude vrouw zag jou door de kraaien heen."
+    }
+   ],
+   "completeQuests": [
+    "Breek of win Garrel"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse (om haar wil, bang), de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij zit op de kraaientroon. De Abt probeerde hem in een willoze stilte te trekken, maar Joshua brak los. Garrel, de enige die weigerde te knielen, vluchtte naar een oude smidse; Joshua liet hem daar door zijn kraaien doden en zijn overblijfselen naar de troonzaal brengen. Een gekapte oude vrouw in de smidse greep niet in, keek dwars door de kraaien naar Joshua en noemde hem de jongen die de spreukenmaker opat. De leerlingen zijn doodsbang.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Grey dawn in a cold stone throne hall, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, ragged grey shawl, seated on a black crow-carved throne, many crows landing around a heavy bundle wrapped in a dark grey coat with a silver crow pin at his feet, frightened apprentices in shadow, pale light through a hole in the wall.",
+   "fallback": "Empty stone throne hall at dawn, black crow-carved throne, black feathers scattered on the floor, pale grey light streaming through a broken hole in the wall, candles burned low."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De oude vrouw in de smidse",
+    "look": "elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched cloak"
+   }
+  ]
+ },
+ "model": "opus"
+}
