@@ -1,0 +1,270 @@
+{
+ "id": "mutfkmk7-2uj2k",
+ "createdAt": "2026-10-04T06:19:15.895Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots"
+ },
+ "state": {
+  "hp": 14,
+  "maxHp": 36,
+  "gold": 8,
+  "xp": 836,
+  "level": 9,
+  "location": "De kraaienkamer",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel",
+   "Grijze shawl van de spreukenmaker",
+   "Knopenboek"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": true
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": true
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de eis van de meester",
+    "detail": "De meester wil de spreukenmaker, of hij neemt meer.",
+    "done": true
+   },
+   {
+    "title": "Knoop de drie leiders van de Orde",
+    "detail": "Vorrin Grauwveer, Ilse van de Toren en de Blinde Abt.",
+    "done": false
+   },
+   {
+    "title": "Ontcijfer het knopenboek",
+    "detail": "Waarom staat jouw naam op de laatste bladzijde?",
+    "done": true
+   },
+   {
+    "title": "Vind de ware naam van de meester",
+    "detail": "Hij staat gekrast onder de troon in de kraaienkamer.",
+    "done": true
+   },
+   {
+    "title": "Haal het knopenboek terug",
+    "detail": "Verstopt onder de werkbank van de spreukenmaker.",
+    "done": true
+   },
+   {
+    "title": "Knoop de Blinde Abt in de kraaienkamer",
+    "detail": "De kraai eist het vannacht; de troon moet leeg blijven.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de troon van kraaien",
+    "detail": "De kraai buigt als de meester in de steen gaat.",
+    "done": true
+   },
+   {
+    "title": "Neem de troon van kraaien in",
+    "detail": "Ga zitten en laat Velmoor buigen.",
+    "done": true
+   },
+   {
+    "title": "Versla Vorrin Grauwveer",
+    "detail": "Vorrin komt met zijn mannen op de kapel af.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   },
+   {
+    "name": "Oude magie",
+    "kind": "kracht",
+    "detail": "De dikke, oude magie van de spreukenmaker stroomt nu door je."
+   },
+   {
+    "name": "Ilses knoop",
+    "kind": "kracht",
+    "detail": "Ilse van de Toren moet je bevelen gehoorzamen, tegen haar wil in."
+   },
+   {
+    "name": "Naam van de meester",
+    "kind": "kracht",
+    "detail": "De meester zit opgesloten in de steen en moet je gehoorzamen."
+   },
+   {
+    "name": "Knoop van de Abt",
+    "kind": "kracht",
+    "detail": "De Blinde Abt is door zijn ware naam aan jou gebonden."
+   },
+   {
+    "name": "Kraaienogen",
+    "kind": "kracht",
+    "detail": "Je ziet door de ogen van alle kraaien van Velmoor."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, die nu opgesloten zit in de steen. Joshua zit op de zwarte kraaientroon; de kraaien van Velmoor buigen en hij ziet door hun ogen. Vorrin Grauwveer nadert de kapel met tien mannen. Garrel buigt niet en haat hem. De Abt waarschuwde dat Joshua niet weet wat hij losliet, en dat hij de stad nu moet houden.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  },
+  {
+   "name": "Ilse van de Toren",
+   "look": "woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch"
+  },
+  {
+   "name": "Garrel",
+   "look": "man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light"
+  },
+  {
+   "name": "De kroonkraai",
+   "look": "ancient male crow of unknown age, unusually large black bird, glossy black feathers, sharp grey beak, piercing intelligent eyes, silver ring around one leg"
+  },
+  {
+   "name": "De Blinde Abt",
+   "look": "elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Laat Ilse de Abt afleiden",
+   "narration": "Je trekt één keer aan de rode draad. Ilse stapt naar voren, tussen jou en de troon.\n\n\"Vader,\" zegt ze, en haar stem klinkt zoals vroeger, kalm en eerbiedig. \"Vorrin heeft ons verraden. Hij wil de steen voor zichzelf. Ik heb bewijs.\" Ze spreidt haar handen en praat door, snel en vol details die je niet kent. Namen, data, een brief.\n\nDe Abt draait zijn dichtgenaaide gezicht naar haar toe. Zijn hand glijdt van de leuning. \"Vertel,\" zegt hij zacht.\n\nJe zet een schaduwstap. Je voeten maken geen geluid op de stenen. Honderden kraaien kijken je na, maar geen enkele krast. Je hurkt achter de troon en tast onder de zitting. Je vingers vinden groeven in het hout. Letters, diep gekrast, oud als de stad.\n\nIn je borst houdt de meester zijn adem in. \"Lees het, kind. Lees het hardop en ik ben van jou. Of ik van jou...\"\n\nAchter je stopt Ilse halverwege een zin. De Abt glimlacht. \"Jongen,\" zegt hij vriendelijk, zonder zich om te draaien. \"Wat zoek je onder mijn stoel?\""
+  },
+  {
+   "action": "Lees de ware naam hardop",
+   "narration": "Je vingers volgen de groeven. De letters branden onder je huid, alsof iemand ze van binnenuit nog steeds uitsnijdt. Je opent je mond.\n\n\"Aurek Valdemoor.\"\n\nDe naam valt in de kamer als een steen in diep water. Honderden kraaien heffen tegelijk hun koppen. De kaarsen buigen naar je toe, allemaal, alsof een adem ze trekt.\n\nIn je borst schreeuwt de meester. Het is geen spot meer, geen gefluister. Het is een oude koning die voelt hoe een halsband zich om zijn keel sluit. Je voelt hem kronkelen achter je ribben en dan stil worden. Gebonden. Zijn kracht ligt opeens open voor je, een donkere put zonder bodem.\n\n\"Ja, meester,\" fluistert hij. Het woord smaakt hem bitter.\n\nDe Blinde Abt draait zich eindelijk om. Zijn glimlach is verdwenen. Het zilverdraad in zijn oogleden gloeit.\n\n\"Wat heb je gedaan, jongen,\" zegt hij zacht. \"Die naam heb ik vierhonderd jaar bewaakt.\"\n\nBoven je hoofd spreidt de kroonkraai zijn vleugels. Ilse staat roerloos te wachten op jouw bevel.",
+   "picture": "Vast round underground chamber, hundreds of crows raising their heads on stone ledges, candle flames bending toward a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, crouched behind a black wooden throne, dark red light glowing from his chest. An elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with glowing silver thread, plain white monk's robe, turning toward him."
+  },
+  {
+   "action": "Knoop nu de naam van de Abt",
+   "narration": "De Abt heft zijn hand. Het zilverdraad in zijn ogen spat vonken, en een koude druk slaat tegen je borst, alsof de lucht zelf je wil platdrukken. Je ribben kraken. Je proeft ijzer.\n\n\"Zijn naam, kind,\" sist de meester, gehoorzaam nu. \"Hij heette ooit Cassian Morr. Ik gaf hem die ogen.\"\n\nJe trekt de rode koord uit het knopenboek. Je vingers bewegen zonder te aarzelen: lus, draai, door het hart. \"Cassian Morr.\"\n\nDe knoop trekt zich strak. De Abt verstijft midden in zijn gebaar. Het zilverdraad dooft, draad voor draad, tot hij daar staat als een oude man in een witte pij. Klein. Trillend. Hij zakt op zijn knieën voor de lege troon.\n\n\"Je weet niet wat je loslaat,\" fluistert hij.\n\nBoven je hoofd daalt de kroonkraai neer op de leuning van de troon. Het pact in je borst valt weg als een doorgeknipte draad. Betaald.\n\nMaar de kraai kijkt niet naar jou. Hij kijkt naar je borst, naar wat daar woont. En honderden kraaien langs de wanden spreiden hun vleugels.",
+   "picture": "Vast round underground chamber lit by candles, hundreds of crows spreading their wings on stone ledges. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, pulling a glowing red cord into a knot. Before an empty black wooden throne kneels an elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, plain white monk's robe. An unusually large black crow with a silver leg ring perches on the throne."
+  },
+  {
+   "action": "Vraag de kraai of de troon nu voor mij is",
+   "narration": "\"Is de troon nu van mij?\" vraag je. Je stem trilt niet. Dat verbaast je zelf.\n\nDe kroonkraai draait zijn kop langzaam naar je toe. Honderden vleugels blijven gespreid, een zwarte muur die ritselt als dorre bladeren. Je voelt hun blikken op je huid, koud en zwaar, alsof ze willen zien of je breekt.\n\nJe breekt niet. Je kijkt terug.\n\nDe kraai klakt met zijn snavel. \"Je knoopte de vrouw. Je knoopte de blinde. En je knoopte de koning in je borst.\" Hij springt van de leuning op de zitting en krabt over het zwarte hout. \"Niemand deed dat ooit. Dus ja, kleine bedelaar. Hij kan van jou zijn.\"\n\n\"Kan,\" fluistert de meester in je ribben.\n\n\"Eén ding,\" kraast de kraai. \"Wie hier zit met dié in zijn borst, zit er niet alleen. Sluit hem op in de steen. Dan buig ik. Dan buigt de stad.\"\n\nDe fluisterende steen wordt warm in je zak. De meester zwijgt, en dat zwijgen klinkt als smeken."
+  },
+  {
+   "action": "Sluit de meester op in de steen",
+   "narration": "Je haalt de fluisterende steen uit je zak. Hij gloeit nu, dofrood, als een kooltje dat wakker wordt.\n\n\"Kind,\" fluistert de meester. \"Doe dit niet. Ik heb je alles gegeven.\"\n\n\"Je gaf me niets,\" zeg je. \"Ik heb het genomen.\" Je drukt de steen tegen je borst en spreekt zijn naam. \"Aurek Valdemoor. Naar binnen.\"\n\nHet voelt alsof iemand een vishaak door je ribben trekt. Hij klauwt, hij krijst, hij grijpt zich vast aan elke ader. Je knieën knikken. Maar je wil is ijzer, en de knoop om zijn naam trekt mee. Dan ineens: stilte. Echte stilte. Voor het eerst in weken hoor je alleen je eigen hart.\n\nDe steen is zwaar en zwart geworden. Diep binnenin beweegt iets.\n\nDe oude magie blijft. Ze stroomt nog door je, maar nu is ze van jou alleen.\n\nOp de troon buigt de kroonkraai zijn kop tot zijn snavel het hout raakt. Langs de wanden volgen honderden kraaien, golf na golf. Ilse buigt. De Abt buigt dieper.\n\nDe zwarte troon staat leeg. Hij wacht.",
+   "picture": "Vast round underground candlelit chamber, hundreds of crows bowing on stone ledges. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, pressing a glowing black stone to his chest, red light swirling into it. An unusually large black crow with silver leg ring bows on an empty black wooden throne."
+  },
+  {
+   "action": "Ga op de troon zitten",
+   "narration": "Je loopt naar de troon. Je blote laarzen tikken op de stenen, en elke kraai volgt je met zijn ogen. De kroonkraai springt opzij en landt op de leuning.\n\nJe gaat zitten.\n\nHet zwarte hout is koud, dan warm. Iets oud en hongerig ruikt aan je, proeft je, en buigt dan. Door de troon heen voel je de stad: elke kraai op elk dak van Velmoor, elke steeg, elke dakgoot. Duizenden ogen gaan tegelijk voor je open. Je ziet de markt, de rivier, de bakkerij in het donker.\n\nEn je ziet Vorrin Grauwveer. Hij staat op de muur van de Toren met tien mannen in grijze mantels. Ze kijken naar de kapel.\n\n\"Hij weet het,\" kraast de kroonkraai. \"De troon roept als hij een nieuwe meester krijgt.\"\n\nBij de trap staat Garrel. Zijn handen gloeien blauw. Hij buigt niet.\n\nDe Abt heft zijn blinde gezicht. \"Velmoor is van jou, jongen. Nu moet je haar houden.\"",
+   "picture": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, seated on a black wooden throne in a vast round candlelit underground chamber, eyes glowing faintly, hundreds of crows bowing on ledges. An unusually large black crow with silver leg ring on the armrest. By the stairs a man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing blue."
+  }
+ ],
+ "action": "Beveel Garrel te knielen",
+ "roll": 12
+}
