@@ -1,0 +1,48 @@
+{
+ "id": "mutnfc91-2chge",
+ "finishedAt": "2026-10-04T09:59:34.898Z",
+ "durationMs": 27286,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je gaat weer zitten, met je rug tegen het hete metaal. \"Ik ga niet weg,\" zeg je. \"We doen het hier. Samen.\"\n\nHet zegel zoemt. Jij negeert het. Lirre pakt je hand, en jullie beginnen.\n\nEen draad van een herderin. Ze zegt nee, jij maakt haar nee zwaar. Los. Een draad van een oude smid. Los. Een kind, nog jonger dan zij. Los. Elke keer rukt de Zonnevorst terug, en elke keer glijdt zijn haak weg langs haar weigering. Je neus bloedt, je handen trillen, maar je wil blijft staan als een paal in een rivier.\n\nDan merk je het. Bij elke draad die vertrekt, dooft er een stukje van het witte goud. De kooi is niet alleen het kozijn. Ze is gesponnen uit dezelfde gestolen draden.\n\nEen tralie wordt grijs. Dan nog een. Het oog in het zegel knippert, niet meer tevreden. Het knijpt zich samen.\n\n\"Knopenmaker,\" sist de stem over de rivier, voor het eerst gehaast. \"Stop. Of ik trek alles tegelijk.\"",
+  "choices": [
+   "Ga sneller door, voor hij alles trekt",
+   "Leg een knoop om het zegeloog",
+   "Onderhandel met de Zonnevorst om tijd"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin wil bewijs dat Joshua anders is dan de Zonnevorst. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over; Lirre, een meisje van tien vol gestolen lotdraden, is zijn deur. Joshua beschermde haar eigen draad met een ring. Door de tralies trekken mislukte. Samen maakten ze vele draden los; de kooi blijkt uit die draden gesponnen en wordt grijs. De Zonnevorst dreigt nu alle draden tegelijk te trekken.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Torchlit stone hall, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, holding hands with a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift, inside a white-gold cage whose bars fade to grey, golden threads drifting away",
+   "fallback": "Torchlit stone hall with a glowing white-gold cage, several bars faded to dull grey, a glowing seal on the bars, drifting threads of golden light"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
