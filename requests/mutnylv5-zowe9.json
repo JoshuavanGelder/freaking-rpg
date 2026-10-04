@@ -1,0 +1,129 @@
+{
+ "id": "mutnylv5-zowe9",
+ "createdAt": "2026-10-04T10:14:05.105Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Modern",
+  "settingText": "",
+  "tones": [
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "Makkelijk. Alles gaat goed wat ik probeer. Ook heel veel geluk. Ook heb ik the infinity Stones van marvel allemaal in bezit en kan ik ze gebruiken"
+ },
+ "hero": {
+  "name": "Einstein De Tweede",
+  "className": "Wetenschapper/engineer",
+  "powers": "Extreem slim en extreem sterk sterkste en slimste van de wereld.",
+  "looks": "Extreem knap",
+  "heroLook": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest."
+ },
+ "state": {
+  "hp": 22,
+  "maxHp": 22,
+  "gold": 10009,
+  "xp": 105,
+  "level": 2,
+  "location": "Achter de laatste ster",
+  "attributes": [
+   {
+    "name": "Intelligentie",
+    "value": 5
+   },
+   {
+    "name": "Kracht",
+    "value": 5
+   },
+   {
+    "name": "Charisma",
+    "value": 5
+   },
+   {
+    "name": "Geluk",
+    "value": 5
+   },
+   {
+    "name": "Steenbeheersing",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Zes Oneindigheidsstenen",
+   "Stenenpak"
+  ],
+  "quests": [
+   {
+    "title": "Sluit de scheur boven de Noordzee",
+    "detail": "Ontdek wat erdoorheen komt en stop het.",
+    "done": true
+   },
+   {
+    "title": "Ontmasker de Raad der Gedoofde Sterren",
+    "detail": "De Raad stuurde Vorath voor de stenen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek welke deur de Raad dichthield",
+    "detail": "De verwoeste raadsheer hield iets achter de laatste ster tegen.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Stenenpak",
+    "kind": "kracht",
+    "detail": "Draagt alle stenen veilig; niemand anders kan ze aanraken."
+   }
+  ]
+ },
+ "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Op verzoek van ESA-directeur Mara Valk vernietigde hij een zwarte vloot boven de Noordzee en dwong titan Vorath de Leegte-eter te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Hij teleporteerde met de geknielde Vorath naar de Raad achter de laatste ster, op een zwarte glasvlakte met zeven tronen van as. Daar veranderde hij één raadslid in as. De geschokte Koningin met de kroon van dode sterren waarschuwt dat die raadsheer 'de deur dichthield'. De laatste ster begint te flakkeren; er dreigt iets wakker te worden.",
+ "cast": [
+  {
+   "name": "Mara Valk",
+   "look": "middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset."
+  },
+  {
+   "name": "Vorath",
+   "look": "ancient male cosmic titan of immeasurable age, colossal shadowy body of smoke and darkness, enormous glowing violet eyes the size of stadiums, a giant black claw as large as a cargo ship."
+  },
+  {
+   "name": "Koningin van de Raad",
+   "look": "ageless cosmic woman appearing in her forties, very tall and gaunt, cold grey glowing skin like dead starlight, long ash-white hair, crown of dark extinguished stars, flowing grey robes."
+  }
+ ],
+ "recent": [
+  {
+   "action": "Maak met de stenen een pak waar de stenen in passen zodat ik ze makkelijk kan meenemen en kan gebruiken zonder dat ze worden afgepakt",
+   "narration": "Je veegt je werkbank leeg en begint. Je handen bewegen sneller dan je gedachten kunnen bijhouden: titaniumvezels, een weefsel van grafeen, microcircuits zo fijn als haar. De Werkelijkheidssteen vult de gaten die geen fabriek op aarde kan maken.\n\nDan de laatste stap. Je houdt de paarse Krachtsteen boven het weefsel en de Ziel- en Geeststeen ernaast. Je laat ze één ding afspreken: alleen jij mag ze aanraken. Een golf van licht slaat door het lab, de ramen rinkelen, en dan is het stil.\n\nVoor je hangt een strak, donker pak, met zes kassen langs de mouwen en de borst. Eén voor één klikken de stenen op hun plek. Als je het aantrekt, voelt het als een tweede huid. Je balt je vuist en de lucht om je knokkels trilt.\n\nJe telefoon licht op. Mara Valk: 'Professor, er komt iets uit de scheur. Schepen. Tientallen. Ze vliegen richting de kust.'\n\nDe Ruimtesteen op je pols gloeit, klaar om je overal heen te brengen.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones in blue, red, purple, yellow, green and orange set along the sleeves and chest, clenching his fist in a high-tech waterfront lab, light rippling around his knuckles, violet sky through the windows."
+  },
+  {
+   "action": "Teleporteer direct naar de scheur",
+   "narration": "Je raakt de blauwe Ruimtesteen op je pols aan. De wereld vouwt dicht als een boek, en een hartslag later sta je in de lucht boven de Noordzee, hoog boven grijze golven.\n\nDe scheur is gigantisch. Een violette wond in de hemel, kilometers lang, met randen die knetteren als bliksem. Erdoorheen glijden schepen: zwart en hoekig, als scherven obsidiaan, in strakke formatie richting de Nederlandse kust. Achter hen, diep in het licht, beweegt iets enorms. Een schaduw met ogen zo groot als stadions.\n\nIn je oortje kraakt Mara Valk. 'Professor, we zien u op de radar! Hoe bent u daar zo snel... Laat maar. De vloot is twintig minuten van Den Helder.'\n\nDe voorste schepen draaien bij. Hun boegen gloeien op. Ze hebben je gezien.\n\nJe pak zoemt. Zes stenen wachten op je bevel. Achter de scheur opent de schaduw langzaam zijn ogen.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering in the sky above a grey stormy North Sea, facing a gigantic crackling violet rift from which angular black obsidian-like ships emerge in formation, a colossal shadow with huge glowing eyes behind the light, epic wide shot."
+  },
+  {
+   "action": "Vaag de vloot weg met de Krachtsteen",
+   "narration": "De voorste schepen vuren. Violette stralen schieten op je af, maar je heft alleen je rechterarm. De paarse Krachtsteen in je mouw ontwaakt met een diepe dreun die je in je borst voelt, alsof de oceaan zelf ademhaalt.\n\nJe balt je vuist en duwt.\n\nEen golf van paars licht rolt over de hemel, breder dan de horizon. Hij raakt de vloot en de zwarte schepen spatten uiteen als glas tegen een rotswand. Scherven obsidiaan dwarrelen sissend in de golven. Tientallen schepen, binnen één hartslag verdwenen. Beneden kolkt de Noordzee wit van het schuim.\n\nIn je oortje blijft het even stil. Dan Mara Valk, zachter dan je haar ooit hoorde: 'De radar is leeg. Helemaal leeg. Professor... Den Helder is veilig.'\n\nMaar de scheur sluit niet. Ze knettert feller. Uit het violette licht schuift een klauw naar buiten, zo groot als een vrachtschip. De schaduw met de stadionogen kijkt nu alleen naar jou. Een stem rommelt door je botten: 'Wie draagt mijn stenen?'",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, thrusting his fist forward as a vast wave of purple light shatters dozens of angular black obsidian ships into glittering shards, violet rift behind, epic wide shot."
+  },
+  {
+   "action": "Gebruik de stenen om die stem uit te laten leggen wat hij hier doet en wie hem stuur",
+   "narration": "Je legt twee vingers op de gele Geeststeen op je borst en kijkt de schaduw recht in de stadionogen. Een gouden draad van licht schiet door de scheur en slaat vast in iets dat ergens tussen gedachte en vlees zit.\n\nDe klauw verstijft. De stem, die net nog door je botten rommelde, klinkt opeens gesmoord, alsof hij tegen zijn wil praat.\n\n'Ik ben Vorath... Leegte-eter... Hoeder van de Gedoofde Sterren.' Elk woord kost hem moeite. 'De Raad stuurde mij. Zes stenen zijn ontsnapt... naar deze kleine wereld. Ik moest ze terughalen. Mijn vloot moest jullie kust branden tot iemand ze afgaf.'\n\nJe drukt harder. Het goud gloeit fel. 'De Raad,' gromt hij, 'zit achter de laatste ster... aan het einde van alles. Zij wachten. Als ik faal... komen zij zelf.'\n\nIn je oortje fluistert Mara Valk: 'Professor... wij horen hem ook. Iedereen hoort hem.'\n\nDe klauw trilt. Vorath probeert zich los te rukken. De scheur knettert, wankel, alsof ze alleen open blijft zolang hij hier is.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, hovering above the stormy North Sea, a golden beam of light from his chest binding a colossal shadowy titan with stadium-sized glowing eyes and a ship-sized claw reaching through a crackling violet rift, epic wide shot."
+  },
+  {
+   "action": "Gebruik de ruimte steen om naar de raad te gaan met Vorath naast me op zijn knieën",
+   "narration": "Je houdt de gouden draad van de Geeststeen strak en legt je andere hand op de blauwe Ruimtesteen. 'Op je knieën,' zeg je. De kolossale schaduw zakt door zijn poten, gebonden en gebogen. Dan vouw je het heelal dicht.\n\nAchter je slaat de scheur boven de Noordzee met een donderklap dicht, als een deur die eindelijk in het slot valt. In je oortje juicht Mara Valk nog net: 'Hij is weg! De hemel is blauw!' Daarna alleen stilte.\n\nJe staat op een vlakte van zwart glas, aan het einde van alles. Boven je hangt één laatste ster, flakkerend en zwak. Vorath knielt naast je, zijn stadionogen neergeslagen.\n\nRondom verrijzen zeven tronen van as. Daarop zitten gestalten van gedoofd sterrenlicht, grijs en koud. De middelste, een lange vrouw met een kroon van dode sterren, buigt zich voorover.\n\n'Je brengt ons de stenen,' fluistert ze. 'En onze dienaar, geknield. Wie ben jij, sterveling, dat je dit durft?'",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, standing on a plain of black glass beside a kneeling colossal shadowy titan of smoke with enormous glowing violet eyes and a giant black claw, facing seven ash thrones with grey starlight figures, a tall ageless woman crowned with dead stars in the center, one faint star above, epic wide shot."
+  },
+  {
+   "action": "Ik ben hier niet om de stenen te brengen. Ik ben hier om jullie te laten leren wat ik er wel niet mee kan. Ik gebruik de stenen om 1 van de wezens op de tronen naar as te veranderen",
+   "narration": "'Ik ben niet gekomen om iets te brengen,' zeg je kalm. 'Ik ben gekomen om jullie iets te leren.'\n\nJe heft je hand. De rode Werkelijkheidssteen en de paarse Krachtsteen ontwaken tegelijk, en het zwarte glas onder je voeten zingt. Je wijst naar de meest linkse troon, waar een gestalte met een sikkel van koud licht al half overeind komt.\n\nEén gedachte. Eén regel van de werkelijkheid, herschreven.\n\nDe gestalte verstijft. Zijn grijze gloed dooft als een kaars in de wind, en dan valt hij uiteen: een zacht ruisende waterval van as die over de treden van zijn troon glijdt. Een windvlaag die er niet hoort te zijn, blaast het stof weg tot achter de laatste ster.\n\nZes tronen nog. Doodse stilte.\n\nVorath, naast je, buigt zijn kop nog dieper. De Koningin staart naar de lege troon. Voor het eerst trilt er iets in haar koude gezicht.\n\n'Je weet niet,' fluistert ze, 'wat je zojuist hebt wakker gemaakt. Hij hield de deur dicht.'\n\nAchter haar begint de laatste ster te flakkeren.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, pointing his hand with red and purple light at an ash throne where a grey starlight figure dissolves into drifting ash, a tall ageless woman with cold grey glowing skin, long ash-white hair, crown of dark extinguished stars and flowing grey robes staring in shock, black glass plain, one flickering star above, epic wide shot."
+  }
+ ],
+ "action": "Ik gebruik de stenen om alles in het universum te weten te komen. En begin met mijn conquest voor het hele universum",
+ "roll": 4
+}
