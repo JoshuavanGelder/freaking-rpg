@@ -1,0 +1,56 @@
+{
+ "id": "muto5mju-dgjko",
+ "finishedAt": "2026-10-04T10:20:04.901Z",
+ "durationMs": 29455,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Het witte vuur op de drempel sist waar het rivierwater op de stenen druppelt. Niemand beweegt. Jij draait je hoofd, niet naar de deur, maar naar Vorrin.\n\n\"Was dit genoeg?\" vraag je. Je stem is schor van het bloed in je keel. \"Heb je gezien wat je wilde zien?\"\n\nVorrin kijkt naar Lirre, naar haar gewone bruine ogen, naar de as om haar blote voeten. Zijn koude, bleke blik blijft daar lang hangen. Dan trekt hij langzaam zijn askleurige sjaal los en slaat hem om de schouders van het meisje.\n\n\"Hij zou haar opgebrand hebben om zichzelf te voeden,\" zegt hij zacht. \"Jij hebt jezelf opgebrand om haar terug te geven wat van haar was.\" Hij kijkt je recht aan. \"Tevin Aslo staat aan jouw kant, knopenmaker. Niet omdat de knoop het zegt. Omdat ik het zeg.\"\n\nDe knoop tussen jullie wordt warm, en iets breder.\n\nIn de deuropening lacht de Zonnevorst, een geluid als knetterend hout. \"Wat ontroerend,\" zegt hij. \"Een hal vol ketters. En wie van jullie gaat mij tegenhouden?\"",
+  "choices": [
+   "Stap naar voren en daag hem uit",
+   "Vraag Vorrin naar zijn zwakte",
+   "Breng Lirre eerst in veiligheid"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Verdien Vorrins vertrouwen"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Knoop van Vorrin",
+     "kind": "kracht",
+     "detail": "Vorrin is aan je gebonden en staat nu uit vrije wil naast je."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo). Belofteknoop met Moeder Veen. Met Lirre, een meisje van tien, maakte hij alle gestolen lotdraden los; de kooi viel tot as en Lirre is vrij, met bruine ogen. Garrel, Ilse, de kraaien en de Abt hielpen. Joshua brak het zegel met een speer van rode wind. Vorrin zag het en koos uit vrije wil Joshua's kant; hij gaf Lirre zijn sjaal. Nu staat de Zonnevorst zelf, een gestalte van wit vuur, spottend in de westelijke deur van de Toren.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark stone hall, man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, dark clothes, wrapping an ash-grey scarf around a girl about ten years old, small and thin, pale ordinary skin, warm brown eyes, tangled pale hair, simple white shift; beside them thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots; a towering white fire figure in the doorway.",
+   "fallback": "Dark stone hall with grey ash on the floor, an open western doorway glowing with white light, river water dripping on worn stones, crows perched on high beams."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
