@@ -1,0 +1,65 @@
+{
+ "id": "mutnylv5-zowe9",
+ "finishedAt": "2026-10-04T10:14:24.929Z",
+ "durationMs": 18461,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en legt je handpalmen tegen je borst. Alle zes stenen ontwaken tegelijk. De Geeststeen opent je gedachten, de Tijdsteen rolt het verleden en de toekomst uit als een kaart, en de Ruimtesteen trekt elke plek in het heelal tegelijk naar je toe.\n\nJe ziet alles. Miljarden sterrenstelsels, elke planeet, elke adem. Je ziet hoe de Raad ooit de sterren doofde om hun licht te eten. En je ziet de deur: een barst in het zwarte glas, recht onder de troon van as. Daarachter slaapt de Eerste Duisternis, ouder dan het licht zelf. De raadsheer was haar slot.\n\nJe opent je ogen. Ze gloeien goud.\n\n'Vanaf nu,' zeg je, en je stem rolt over de vlakte, 'gehoorzaamt dit heelal aan mij.'\n\nVorath buigt als eerste. Dan, trillend, nog vier gestalten op hun tronen. Alleen de Koningin blijft zitten. Onder het glas klinkt een geluid als een reusachtig hart dat begint te kloppen.",
+  "choices": [
+   "Sluit de deur voorgoed met de Werkelijkheidssteen",
+   "Eis dat de Koningin knielt",
+   "Open de deur en tem de Duisternis"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Verover het hele universum",
+     "detail": "Laat elk sterrenstelsel jouw heerschappij erkennen."
+    },
+    {
+     "title": "Bedwing de Eerste Duisternis",
+     "detail": "Iets ouder dan het licht ontwaakt onder de troon."
+    }
+   ],
+   "completeQuests": [
+    "Ontdek welke deur de Raad dichthield"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Kosmische alwetendheid",
+     "kind": "kracht",
+     "detail": "Je kunt alles in het heelal zien en weten."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Voor ESA-directeur Mara Valk vernietigde hij een zwarte vloot boven de Noordzee en dwong titan Vorath te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Achter de laatste ster veranderde hij één raadslid in as. Met de stenen leerde hij alles in het heelal kennen: de verwoeste raadsheer was het slot op een deur onder het glas, waarachter de Eerste Duisternis slaapt. Einstein riep zichzelf uit tot heerser van het universum; Vorath en vier raadsleden bogen, alleen de Koningin weigert. De Duisternis begint te ontwaken.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, eyes glowing gold, galaxies swirling around him, on a black glass plain; grey starlight figures bowing on ash thrones, a colossal shadowy titan of smoke with enormous glowing violet eyes kneeling, a tall ageless woman with cold grey glowing skin, long ash-white hair, crown of dark extinguished stars and flowing grey robes still seated, a glowing crack in the glass, epic wide shot.",
+   "fallback": "A vast plain of black glass at the end of the universe, seven thrones of ash, one empty, a faint flickering star above, a glowing crack in the glass, swirling distant galaxies."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
