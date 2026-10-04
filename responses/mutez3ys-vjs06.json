@@ -1,0 +1,53 @@
+{
+ "id": "mutez3ys-vjs06",
+ "finishedAt": "2026-10-04T06:02:49.472Z",
+ "durationMs": 15563,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Breng me naar de kraaienkamer,\" zeg je tegen Ilse. De rode draad trekt, en ze staat op zonder te protesteren.\n\nGarrel komt achter jullie aan. Niemand heeft het hem gevraagd en niemand durft hem weg te sturen. De kroonkraai vliegt over de daken mee, een zwarte vlek tegen de maan.\n\nIlse leidt je door de stegen naar een vervallen kapel aan de rivier. Achter het altaar ligt een trap, uitgesleten door eeuwen voetstappen. Beneden ruikt het naar was, veren en natte steen.\n\nDe kraaienkamer is rond en hoog. Langs de wanden zitten honderden kraaien roerloos op stenen richels. In het midden staat een troon van zwart hout, en daarvoor staat een magere man in een witte pij. Zijn ogen zijn dichtgenaaid met zilverdraad.\n\nDe Blinde Abt draait zijn hoofd naar je toe. \"Ilse,\" zegt hij vriendelijk. \"Je hebt de steen meegebracht. En de jongen die hem draagt.\"\n\nIn je borst bonst de meester. \"Zijn hand, kind. Kijk naar zijn hand op de leuning.\"",
+  "choices": [
+   "Knoop meteen de naam van de Abt",
+   "Laat Ilse de Abt afleiden",
+   "Schaduwstap naar de onderkant van de troon"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De kraaienkamer",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen en het knopenboek met de kroonknoop. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor oude magie. Ilse van de Toren is door een knoop aan hem gebonden en genas hem; haar reus Garrel knielde maar haat Joshua en volgt hen. Vorrin wil hem dood. De kroonkraai eist zijn dienst: de Blinde Abt knopen zodat de troon leeg blijft; de meester zegt dat de kraai liegt. Joshua is nu in de kraaienkamer onder een kapel aan de rivier, tegenover de Blinde Abt (dichtgenaaide ogen) bij de zwarte troon. De ware naam van de meester staat eronder gekrast.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Vast round underground chamber, hundreds of motionless crows on stone ledges, candlelight. A black wooden throne in the center; before it a gaunt old man in a white robe, eyes sewn shut with silver thread, hand on the armrest. Facing him a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, beside a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch.",
+   "fallback": "Vast round underground stone chamber lit by candles, empty stone ledges along high walls, a black wooden throne in the center, damp floor, eerie quiet mood."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De Blinde Abt",
+    "look": "elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe"
+   }
+  ]
+ },
+ "model": "opus"
+}
