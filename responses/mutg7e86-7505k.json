@@ -1,0 +1,52 @@
+{
+ "id": "mutg7e86-7505k",
+ "finishedAt": "2026-10-04T06:37:18.617Z",
+ "durationMs": 18246,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat de schaduwen weer over je heen vallen. Ze zijn dunner nu, rafelig, maar ze houden.\n\n\"Op hem,\" denk je naar de daken. De kraaien storten zich op de Toren als zwarte regen. Door hun ogen zie je Vorrin opspringen, zijn handen vol modder, grijze lichtveren schietend in een wolk van vleugels. Hij vloekt. Hij ruikt je niet, niet door al die stinkende vogels heen.\n\nJe glipt over de muur, door het natte gras, tot onder de hangende takken van de oude wilg. De kuil is ondiep. Tussen de wortels glanst iets: een klein loden kistje, omwikkeld met een grijze veer en een zwart lint.\n\nJe vingers sluiten zich eromheen. Het is ijskoud, en het fluistert. Een zachte klank, een vissersdorp, een moeder op een steiger.\n\nDan valt de laatste kraai krijsend uit de lucht. Vorrin draait zich om. Zijn bleke ogen vinden het kistje in jouw handen.\n\n\"Leg dat neer,\" zegt hij. Zijn stem breekt.",
+  "choices": [
+   "Open het kistje en knoop zijn naam",
+   "Stap terug de schaduwen in en vlucht",
+   "Dreig het kistje te vernietigen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Loden kistje met Vorrins naam"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Graaf Vorrins naam op onder de wilg"
+   ],
+   "location": "De oude wilg bij de Toren",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu in de steen. Hij zit op de zwarte kraaientroon en ziet door kraaienogen. Garrel knielde onder dwang en haat hem. Vorrin Grauwveer wil het knopenboek; Ilse en de Abt verdreven hem, de Abt heelde Joshua en waarschuwde hem het niet te lang te vragen. Terwijl kraaien Vorrin afleidden, sloop Joshua naar de oude wilg bij de Toren en pakte het loden kistje met Vorrins begraven ware naam. Vorrin staat nu tegenover hem en smeekt het neer te leggen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Under the drooping branches of an ancient willow beside a dark stone tower at night, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling by a muddy hole, holding a small lead box wrapped in a grey feather. Facing him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, muddy hands, crows swirling above.",
+   "fallback": "Ancient willow with drooping branches beside a dark stone tower at night, a freshly dug muddy hole among the roots, wet grass, moonlight, black feathers scattered on the ground."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
