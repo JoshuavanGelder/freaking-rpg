@@ -1,0 +1,50 @@
+{
+ "id": "mutiown8-1vf58",
+ "finishedAt": "2026-10-04T07:46:50.868Z",
+ "durationMs": 14819,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je opent je ogen, gooit de zware mantel om je schouders en loopt. Geen bode, geen Ilse voor je uit. De gangen van de Toren galmen onder je laarzen.\n\nDe deuren van de wachtzaal zwaaien open voordat je ze aanraakt. De wachters grijpen naar hun kromzwaarden. Saria steekt alleen één hand op, en ze verstijven.\n\n\"Snel,\" zegt ze. \"Dat waardeer ik.\" Ze bekijkt je van top tot teen: je magere gezicht, het fluweel, de kraai die achter je op de vensterbank landt. \"Jonger dan ik dacht. En hongeriger.\"\n\nZe zet het flesje op tafel. Het rode spul erin beweegt, tast tegen het glas, alsof het jou ruikt. Je voelt het in je borst: de oude magie trekt zich even samen, als een hond die gromt.\n\n\"De Zonnevorst biedt u een keuze,\" zegt ze zacht. \"Buig, en u houdt de Toren als zijn stadhouder. Weiger, en dit flesje gaat open in uw stad. Velmoor haat u al. Daarna zal het u vervloeken.\"\n\nZe glimlacht. Ze wacht.",
+  "choices": [
+   "Pak het flesje en lees de magie",
+   "Vraag wat de Zonnevorst werkelijk zoekt",
+   "Spreek haar ware naam te vinden"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Ontmoet de gezanten uit het zuiden"
+   ],
+   "location": "De wachtzaal van de Toren",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen ruilde: looiersbuurt voor altijd vrij, Joshua leerde één lotdraad; meer alleen zonder dwang. Joshua ontmoette Saria van Kesh, gezant van de Zonnevorst, in de wachtzaal. Ultimatum: buig en word stadhouder, of haar levende rode flesje gaat open in Velmoor als vloek. Het spul in het flesje reageert op Joshua's magie.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Stone waiting hall in a dark tower, morning light, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, facing a woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, a glass vial of swirling red liquid on the table between them",
+   "fallback": "Stone waiting hall in a dark tower, tall window with morning light, a wooden table holding a small glass vial of swirling red liquid, a crow on the windowsill"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
