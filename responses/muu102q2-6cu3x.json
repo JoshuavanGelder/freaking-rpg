@@ -1,0 +1,55 @@
+{
+ "id": "muu102q2-6cu3x",
+ "finishedAt": "2026-10-04T16:20:24.897Z",
+ "durationMs": 14823,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je legt de zwarte steen in haar open hand. Moeder Veen sist, alsof ze een gloeiende kool vasthoudt, maar ze laat niet los. Ze houdt hem tegen haar oor en luistert lang.\n\n\"Aurek jammert,\" mompelt ze. \"Dat ken ik. Maar die andere...\" Ze tikt met een kromme nagel op de barst. Iets tikt terug, van binnenuit.\n\n\"Dit is geen ziekte, jongen. Dit is waar de ziekte vandaan kwam. Een vreter van vuur. Hij zat al jaren in het hart van de Vorst en at hem langzaam op. Jij hebt hem verhuisd.\" Haar zwarte ogen boren in de jouwe. \"En nu ruikt hij het eerste vuur in je potje. Die barst wordt groter.\"\n\nZe legt de steen op tafel, tussen jullie in. \"Het vuur moet vanavond in het hart van de Vorst. Maar dit beest kan niet blijven waar het is.\"",
+  "choices": [
+   "Vraag de vreter om zijn naam",
+   "Laat Veen de steen in het moeras zinken",
+   "Bind de steen met een extra knoop"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "klein",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Bedwing de vreter in de steen",
+     "detail": "Een vuurvretend wezen zit in Aureks steen en wil ontsnappen."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua was ooit straatarm en is nu magiër op de kraaientroon van Velmoor, met zijn knopenboek. Hij knoopte Ilse, de Blinde Abt en Vorrin, en heeft een belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; diens hart klopt in Joshua's borst. Hij ving het eerste vuur in Veens zwarte potje en bond de ziekte van de Vorst in de steen van meester Aurek, die zwart werd en barstte. Veen ontdekte dat erin een vuurvretend wezen zit: de oorsprong van de ziekte, dat nu het eerste vuur ruikt en de barst vergroot. Het vuur moet vanavond naar het hart van de Vorst. Vorrin wacht bij de Vorst.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dim swamp hut by a fire, an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, holding a cracked black stone to her ear; across the table a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, watching tensely.",
+   "fallback": "Dim wooden swamp hut interior, small hearth fire, rough table with a cracked black stone and a small black clay pot glowing faintly red, herbs hanging from beams."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
