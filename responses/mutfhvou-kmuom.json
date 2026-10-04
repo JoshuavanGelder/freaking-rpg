@@ -1,0 +1,61 @@
+{
+ "id": "mutfhvou-kmuom",
+ "finishedAt": "2026-10-04T06:17:26.923Z",
+ "durationMs": 17312,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je loopt naar de troon. Je blote laarzen tikken op de stenen, en elke kraai volgt je met zijn ogen. De kroonkraai springt opzij en landt op de leuning.\n\nJe gaat zitten.\n\nHet zwarte hout is koud, dan warm. Iets oud en hongerig ruikt aan je, proeft je, en buigt dan. Door de troon heen voel je de stad: elke kraai op elk dak van Velmoor, elke steeg, elke dakgoot. Duizenden ogen gaan tegelijk voor je open. Je ziet de markt, de rivier, de bakkerij in het donker.\n\nEn je ziet Vorrin Grauwveer. Hij staat op de muur van de Toren met tien mannen in grijze mantels. Ze kijken naar de kapel.\n\n\"Hij weet het,\" kraast de kroonkraai. \"De troon roept als hij een nieuwe meester krijgt.\"\n\nBij de trap staat Garrel. Zijn handen gloeien blauw. Hij buigt niet.\n\nDe Abt heft zijn blinde gezicht. \"Velmoor is van jou, jongen. Nu moet je haar houden.\"",
+  "choices": [
+   "Stuur de kraaien op Vorrin af",
+   "Beveel Garrel te knielen",
+   "Vraag de Abt wat ik losliet"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 3,
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Versla Vorrin Grauwveer",
+     "detail": "Vorrin komt met zijn mannen op de kapel af."
+    }
+   ],
+   "completeQuests": [
+    "Neem de troon van kraaien in"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Kraaienogen",
+     "kind": "kracht",
+     "detail": "Je ziet door de ogen van alle kraaien van Velmoor."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, die nu opgesloten zit in de steen. Joshua zit op de zwarte kraaientroon; de kraaien van Velmoor buigen en hij ziet door hun ogen. Vorrin Grauwveer nadert de kapel met tien mannen. Garrel buigt niet en haat hem. De Abt waarschuwde dat Joshua niet weet wat hij losliet, en dat hij de stad nu moet houden.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, seated on a black wooden throne in a vast round candlelit underground chamber, eyes glowing faintly, hundreds of crows bowing on ledges. An unusually large black crow with silver leg ring on the armrest. By the stairs a man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing blue.",
+   "fallback": "Vast round underground chamber lit by candles, stone ledges along the walls, a black wooden throne in the center, worn stone stairs, dark moody light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
