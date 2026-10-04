@@ -1,0 +1,56 @@
+{
+ "id": "mutkxaop-wlyq4",
+ "finishedAt": "2026-10-04T08:49:51.716Z",
+ "durationMs": 33915,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je pakt haar koude hand niet meteen. Eerst sla je het knopenboek open. \"Beide kanten,\" zeg je. \"Jij krijgt wat je vraagt. En jouw woord zit net zo vast als het mijne.\"\n\nVeens ogen vernauwen. Dan knikt ze, langzaam.\n\nJe trekt twee draden uit het niets: één uit je eigen borst, warm en dun, en één uit haar, oud en taai als leer. Ze verzetten zich. De hare kronkelt, zoekt een uitweg. Je wil wordt ijzer. Je legt de knoop, strak en dubbel, en hij zakt brandend weg in jullie beider polsen.\n\n\"Zo,\" fluistert Veen, en ze wrijft over haar pols. \"Jij bent gevaarlijker dan je eruitziet.\"\n\nJe stuurt bericht naar de Toren. Tegen middernacht kraken laarzen op de drempel. Twee wachters duwen Saria van Kesh naar binnen, de gouden muntjes rinkelend in haar vlechten. Ze ziet het dode flesje op het aambeeld en verstijft.\n\nDan kijkt ze naar jou. \"Je weet niet wat je net hebt gedaan,\" zegt ze zacht.\n\nMoeder Veen glimlacht. De nacht begint.",
+  "choices": [
+   "Vertrek en laat ze alleen",
+   "Vraag Saria wat ze bedoelt",
+   "Laat een wachter buiten posten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Breng Saria één nacht naar Veen"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Belofteknoop met Veen",
+     "kind": "kracht",
+     "detail": "Jij en Moeder Veen zijn beiden aan jullie afspraak gebonden."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Met Moeder Veen knipte hij de lotdraad van het koortsflesje van de Zonnevorst door; die dreigt Velmoor te verbranden als Saria van Kesh niet vrijkomt voor de volle maan (over twee nachten). Joshua en Veen knoopten een wederzijdse belofte: geen kraaien bij haar smidse, één nacht alleen met Saria. Veen leert hem pas weer iets als hij haar iets nieuws toont. Saria is naar de smidse gebracht en waarschuwt dat Joshua niet weet wat hij heeft gedaan.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cold forge at midnight, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, watching woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, beside elderly woman in her eighties, very small and bent, bright black eyes, deep brown hood, by an anvil with a grey glass vial",
+   "fallback": "Cold abandoned forge at midnight, dead hearth, an anvil with a small grey glass vial on it, faint lantern light by the open door, deep shadows"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
