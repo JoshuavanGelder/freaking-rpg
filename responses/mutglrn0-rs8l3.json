@@ -1,0 +1,48 @@
+{
+ "id": "mutglrn0-rs8l3",
+ "finishedAt": "2026-10-04T06:48:29.451Z",
+ "durationMs": 18014,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Buig, Garrel,\" zeg je. \"Of ik vind je naam. En dan knoop ik hem vast, voor altijd. Dan buig je elke ochtend tot je sterft, zonder dat je het wilt.\"\n\nEven is het doodstil. Een paar leerlingen houden hun adem in. Dan lacht Garrel, laag en ruw, als stenen die over elkaar schuren.\n\n\"Mijn naam?\" Hij slaat zich op de borst. \"Ik heb geen kistje onder een wilg. Mijn moeder gaf me nooit een naam. Ik heb hem zelf gekozen, in de goot, net als jij. Zoek maar, bedelaar.\"\n\nHij ramt zijn gloeiende vuisten tegen de stenen vloer. Een golf van zwaar blauw licht rolt door de zaal. Leerlingen rollen opzij. De golf slaat tegen je benen en smijt je terug in de troon. Je rug kraakt tegen het zwarte hout, je tanden klappen op elkaar.\n\nDe kroonkraai krijst. Ilse, de Abt en Vorrin kijken naar je. Ze wachten op een bevel, en je ziet dat ze stiekem hopen dat je faalt.\n\nGarrel komt met zware stappen de zaal in.",
+  "choices": [
+   "Beveel de drie meesters Garrel te vellen",
+   "Lees zijn verleden door kraaienogen",
+   "Bied Garrel een plek naast de troon"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (ware naam Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Eerlijk gedwongen: Ilse zou hem doden, Vorrin zou hem jagen, de Abt zou hem tot stilte genezen. De leerlingen knielden voor Joshua. Alleen Garrel weigert; Joshua dreigde zijn naam te knopen, maar Garrel lachte: hij koos zijn naam zelf in de goot, er is geen verborgen naam. Hij sloeg Joshua met een golf blauw licht terug in de troon en komt nu op hem af. De meesters wachten op een bevel en hopen stiekem dat hij faalt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cold stone throne hall in a dark tower, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light, smashing fists into the floor sending a wave of blue light across the hall, apprentices tumbling aside. Thin young man around twenty, gaunt pale face, messy dark hair, torn patched brown tunic, ragged grey shawl, thrown back onto a black crow-carved throne, large black crow shrieking.",
+   "fallback": "Cold stone throne hall in a dark tower, a black wooden throne carved with crows, cracked flagstones glowing faintly blue, scattered candles, tall dark windows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
