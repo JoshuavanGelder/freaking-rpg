@@ -1,0 +1,50 @@
+{
+ "id": "muti5avb-u2b4l",
+ "finishedAt": "2026-10-04T07:31:51.682Z",
+ "durationMs": 30087,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je haalt de steen onder het fluweel vandaan. Hij bonkt in je gevoelloze hand. \"Eén tel,\" zeg je. \"Niet meer.\" Je trekt de knoop die zijn naam heet een vingerbreedte losser.\n\nZwarte rook gutst uit de steen. Een lange gestalte met holle ogen en klauwen van as schiet langs de pilaren, sneller dan gedachten. Hij duikt de deur van je slaapvertrek in. Een kreet. Dan sleept hij haar terug de zaal in: Moeder Veen, zichtbaar nu, haar bruine kap gescheurd, spartelend in zijn rook als een vis in een net.\n\n\"Nog even,\" sist de meester. \"Laat me nog even, en ik ben vrij.\"\n\nJe voelt de knoop glijden. Je zet je wil erachter als een schouder tegen een deur, en trekt. Hij gilt. De rook wordt de steen in gezogen, maar Moeder Veen blijft liggen, gevangen in een laatste sliert grijze as, haar zwarte ogen voor het eerst bang.\n\nJe hoofd bonst. Vorrin staat doodstil. Hij heeft alles gezien.",
+  "choices": [
+   "Dwing haar je het lot binden te leren",
+   "Laat haar het rode touwtje losmaken",
+   "Laat Vorrin haar in de kerker opsluiten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Ontmasker de oude vrouw in de smidse"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor, en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort. De looiersbuurt betaalt geen belasting. Moeder Veen, oude Knoopmoeder, draaide Joshua's belofte om: rood touwtje om zijn pols, looiersbuurt verboden. Ze werd onzichtbaar; de oude magie verwondde zijn arm. Joshua liet de meester één tel vrij: die sleepte Moeder Veen zichtbaar terug en probeerde te ontsnappen, maar Joshua dwong hem de steen weer in. Moeder Veen ligt nu bang en gevangen in grijze as. Vorrin zag dat de meester bijna vrijkwam.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Candlelit stone throne hall at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, holding up a glowing stone as swirling black smoke shaped like a tall ashen figure drags an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf across the floor",
+   "fallback": "A dark stone throne hall at night, candles flickering between tall pillars, a black crow-carved throne, swirling grey ash and black smoke over the floor"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
