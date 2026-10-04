@@ -1,0 +1,58 @@
+{
+ "id": "mutilon7-1tzoo",
+ "finishedAt": "2026-10-04T07:44:35.282Z",
+ "durationMs": 29455,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Laat ze wachten,\" zeg je door de deur. Ilses voetstappen verwijderen zich.\n\nJe sluit je ogen en glijdt in de kraaien. Een zwarte vogel op de vensterbank van de wachtzaal schuift dichterbij, zijn kop schuin.\n\nDrie gezanten. Twee wachters in zandkleurige mantels, kromzwaarden aan hun heup. En een vrouw: lang, donker, met een kring van gouden munten in haar zwarte vlechten. Ze heet Saria, hoor je een wachter fluisteren. Saria van Kesh.\n\nZe praten zacht, in een zuidelijke tongval. \"Hij heeft de reus aan de poort opgehangen,\" zegt een wachter. \"Het volk haat hem.\"\n\n\"Goed,\" zegt Saria. \"Gehate heren tekenen sneller.\" Ze draait een klein glazen flesje tussen haar vingers. Daarin kolkt iets donkerroods, traag, alsof het leeft. \"De Zonnevorst wil zijn toren. Met of zonder hem.\"\n\nDan kijkt ze op. Recht in de ogen van de kraai. Ze glimlacht.\n\n\"Goedemorgen, heer van de Toren,\" zegt ze. \"Komt u zelf, of stuurt u nog meer vogels?\"",
+  "choices": [
+   "Ga meteen zelf naar de wachtzaal",
+   "Laat de kraai haar flesje stelen",
+   "Stuur Ilse en Vorrin eerst vooruit"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontdek wat de Zonnevorst wil",
+     "detail": "Saria van Kesh draagt een levend rood flesje en dreigt."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor, opgesloten in een loden kistje. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen ruilde: looiersbuurt voor altijd vrij, Joshua leerde één lotdraad; meer alleen zonder dwang. Gezanten uit het zuiden wachten: Saria van Kesh met twee wachters, namens de Zonnevorst die de Toren wil, met of zonder Joshua. Ze heeft een levend rood flesje en merkte Joshua's spiedende kraai op.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Stone waiting hall in a dark tower, morning light through tall window, woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, holding a small glass vial of swirling dark red liquid, smiling at a black crow on the windowsill, two guards in sand-colored mantles with curved swords behind her",
+   "fallback": "Stone waiting hall in a dark tower, pale morning light through a tall window, an empty windowsill, carved benches and cold torches on the walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Saria van Kesh",
+    "look": "woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes"
+   }
+  ]
+ },
+ "model": "opus"
+}
