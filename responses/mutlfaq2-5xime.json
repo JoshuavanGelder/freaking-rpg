@@ -1,0 +1,55 @@
+{
+ "id": "mutlfaq2-5xime",
+ "finishedAt": "2026-10-04T09:03:35.476Z",
+ "durationMs": 29271,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Alles,\" zeg je. \"Nu.\" Je stem kaatst tegen het koude aambeeld. Je laat je wil zakken als een zwaar gewicht op haar schouders, en de muntjes in haar vlechten beginnen zacht te trillen.\n\nSaria kijkt op. Haar ogen zijn rood, maar ze buigt niet meteen. Dan lacht ze kort en bitter. \"Goed. Je hebt het verdiend, knipper.\"\n\n\"De Zonnevorst is geen man meer. Hij was ooit een spreukenmaker, net als jouw meester. Hij heeft zijn eigen lotdraad zo vaak gebogen dat hij niet meer kan sterven. Maar zijn draad rafelt. Hij heeft iemand nodig die een nieuwe draad aan hem vastknoopt.\" Ze wijst naar je pols, waar de knoop met Veen nog gloeit. \"Een knopenmaker. Jou.\"\n\n\"Morgen bij volle maan steekt hij de rivier over. Hij brengt het hele zuiden mee. Hij vraagt het één keer vriendelijk.\"\n\nIn de hoek grinnikt Moeder Veen. In je zak fluistert de steen van Aurek, opgewonden en hongerig.",
+  "choices": [
+   "Bereid Velmoor voor op oorlog",
+   "Vraag Aurek wat hij weet",
+   "Stuur Saria als boodschapper naar het zuiden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Weersta de Zonnevorst bij volle maan",
+     "detail": "Hij steekt de rivier over en wil jou als knopenmaker."
+    }
+   ],
+   "completeQuests": [
+    "Ontdek wat de Zonnevorst wil"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Met Moeder Veen knipte hij de lotdraad van het koortsflesje door; wederzijdse belofteknoop: geen kraaien bij haar smidse, één nacht alleen met Saria. Veen leert pas weer iets als hij haar iets nieuws toont. Saria bekende: de Zonnevorst is een onsterfelijke oude spreukenmaker wiens lotdraad rafelt; hij wil Joshua als knopenmaker om een nieuwe draad aan zich te knopen. Morgen bij volle maan steekt hij met het leger van het zuiden de rivier over. Uit zijn karmijnen tent keek iets terug naar Joshua's kraaien.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cold dark abandoned forge at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, standing over woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, sitting on the floor, faint candlelight",
+   "fallback": "Cold dark abandoned forge at night, old anvil with a grey glass vial on it, dead hearth, faint candlelight and deep shadows"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
