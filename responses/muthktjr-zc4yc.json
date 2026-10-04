@@ -1,0 +1,53 @@
+{
+ "id": "muthktjr-zc4yc",
+ "finishedAt": "2026-10-04T07:15:59.008Z",
+ "durationMs": 31869,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Ze brengen brood, zwart en warm, een kom linzensoep met spek en een kan donker bier. Je eet als de jongen uit de goot die je nog steeds bent. Je maag wordt zwaar en rustig.\n\nIlse blijft staan. \"Uw boek is een kopie, heer. Een kopie van een kopie. De eerste knopen zijn niet door magiërs gelegd, maar door de Knoopmoeders, vrouwen uit het veen, nog voor Velmoor bestond. Ze bonden geen namen. Ze bonden het lot. De Orde heeft hen eeuwen geleden verbrand. Dat dachten we tenminste.\"\n\nIntussen stuur je de belastinginners op pad, met kraaien boven hun hoofd. Tegen de avond komen ze terug met één buidel, half vol. De bakkers betaalden. De looiersbuurt hield de deuren dicht.\n\nEén inner staart bleek naar zijn pols. Daar zit een rood touwtje om, strak geknoopt.\n\n\"Ik heb niets gevoeld, heer,\" fluistert hij. \"Een oude vrouw pakte alleen even mijn hand.\"",
+  "choices": [
+   "Snijd het touwtje los met magie",
+   "Stuur kraaien naar de looiersbuurt",
+   "Lees het touwtje met het knopenboek"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 4,
+   "gold": 12,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Laat de looiersbuurt belasting betalen",
+     "detail": "De looiersbuurt weigerde te betalen aan de Toren."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is nu magiër op de kraaientroon van de Toren in Velmoor, gekleed in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen, offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). De kraaien doodden Garrel en hij hangt aan de poort; Velmoor is bang. Een gekapte oude vrouw in een smidse in de looiersbuurt zag Joshua door de kraaien. Volgens Ilse komen de oudste knopen van de Knoopmoeders uit het veen, die het lot bonden; de Orde dacht hen verbrand. De eerste belasting bracht weinig op: de bakkers betaalden, de looiersbuurt weigerde. Een oude vrouw knoopte een rood touwtje om de pols van een inner.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Candlelit stone throne hall at evening, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated on a black crow-carved throne with bread and soup, a pale tax collector holding up his wrist bound with a red knotted string.",
+   "fallback": "Candlelit stone throne hall at evening, black crow-carved throne, a tray of bread and soup, a half-full leather purse on the floor, a red string lying on stone."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
