@@ -1,0 +1,48 @@
+{
+ "id": "mutnixr9-rns28",
+ "finishedAt": "2026-10-04T10:02:26.651Z",
+ "durationMs": 30380,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Sneller,\" zeg je. \"Niet één. Meerdere tegelijk.\" Lirre knijpt in je hand.\n\nJe grijpt drie draden in één keer: een weduwe, een jongen met een kreupele voet, een wachter. Lirre zegt nee, drie keer, als een hart dat sneller gaat kloppen. Twee haken glijden weg. De derde niet.\n\nOp dat moment trekt de Zonnevorst alles.\n\nHet voelt alsof de hele hal kantelt. Elke gouden draad in Lirre rukt tegelijk naar het westen, en jouw wil, die ze alle drie vasthield, wordt mee de rivier over gesleurd. Je knieën slaan tegen de stenen. Iets in je borst scheurt, heet en nat. De wachterdraad brandt door je vingers.\n\nMaar je ring houdt. Lirres zilveren draadje blijft heel, en zij blijft hier. De helft van de kooi is grijs en brokkelt als oude as.\n\nVorrin trekt je half overeind. \"Hij trekt nog steeds,\" hijgt hij. \"Hij sleept haar met kooi en al naar de oever.\"\n\nOver de vloer schuift de kooi, centimeter voor centimeter, naar de westelijke deur.",
+  "choices": [
+   "Breek de grijze tralies met rode wind",
+   "Gebruik de lotschaar op zijn greep",
+   "Beveel Vorrin de kooi vast te houden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin wil bewijs dat Joshua anders is dan de Zonnevorst. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over; Lirre, een meisje van tien vol gestolen lotdraden, is zijn deur. Joshua beschermde haar eigen draad met een ring en maakte samen met haar vele draden los; de kooi, gesponnen uit die draden, is half grijs en brokkelt. De Zonnevorst trok alles tegelijk; Joshua raakte zwaargewond, de ring hield, maar de kooi schuift nu naar de westelijke deur.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling in a stone hall gripping glowing golden threads, beside a half-grey crumbling cage holding a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift; man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, pulling him up. Threads stream toward a western door, dramatic golden light.",
+   "fallback": "A dark stone tower hall with a half-crumbled cage of white gold and grey ash sliding toward a tall western door, golden light streaming through, dust in the air."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
