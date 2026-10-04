@@ -1,0 +1,83 @@
+{
+ "id": "mutmibey-584re",
+ "createdAt": "2026-10-04T09:33:25.450Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Modern",
+  "settingText": "",
+  "tones": [
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "Makkelijk. Alles gaat goed wat ik probeer. Ook heel veel geluk. Ook heb ik the infinity Stones van marvel allemaal in bezit en kan ik ze gebruiken"
+ },
+ "hero": {
+  "name": "Einstein De Tweede",
+  "className": "Wetenschapper/engineer",
+  "powers": "Extreem slim en extreem sterk sterkste en slimste van de wereld.",
+  "looks": "Extreem knap",
+  "heroLook": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10009,
+  "xp": 5,
+  "level": 1,
+  "location": "Laboratorium aan het IJ",
+  "attributes": [
+   {
+    "name": "Intelligentie",
+    "value": 5
+   },
+   {
+    "name": "Kracht",
+    "value": 5
+   },
+   {
+    "name": "Charisma",
+    "value": 5
+   },
+   {
+    "name": "Geluk",
+    "value": 5
+   },
+   {
+    "name": "Steenbeheersing",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Zes Oneindigheidsstenen"
+  ],
+  "quests": [
+   {
+    "title": "Sluit de scheur boven de Noordzee",
+    "detail": "Ontdek wat erdoorheen komt en stop het.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen in zijn laboratorium aan het IJ in Amsterdam. Directeur Mara Valk van het Europees Ruimteagentschap vraagt zijn hulp: boven de Noordzee is een violette scheur in de lucht waar iets doorheen komt. Met de Werkelijkheidssteen liet hij een oud patent verkopen en heeft nu ruim een miljoen euro. Mara meldt dat de scheur groeit en dat er een grote vorm achter beweegt.",
+ "cast": [
+  {
+   "name": "Mara Valk",
+   "look": "middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset."
+  }
+ ],
+ "recent": [
+  {
+   "action": null,
+   "narration": "Amsterdam slaapt nog als jij, Einstein De Tweede, de deur van je laboratorium aan de IJ-oever openduwt. Je lichaam voelt als staal, je hoofd zoemt van formules die niemand anders op aarde zou begrijpen. In je zak rinkelen precies tien euro, genoeg voor koffie en een broodje.\n\nOp je werkbank liggen ze: zes stenen, gloeiend in blauw, rood, paars, geel, groen en oranje. Ruimte, Werkelijkheid, Kracht, Geest, Tijd en Ziel. Ze zoemen alsof ze je herkennen.\n\nDan begint je telefoon te trillen. Een onbekend nummer. Een kalme vrouwenstem: 'Professor, hier spreekt directeur Mara Valk van het Europees Ruimteagentschap. Boven de Noordzee is een scheur in de lucht verschenen. Iets komt erdoorheen. Wij hebben de slimste en sterkste mens ter wereld nodig.'\n\nDoor het raam zie je het al: aan de horizon kleurt de hemel violet en trilt als water. De stenen gloeien feller.",
+   "picture": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers, standing in a high-tech waterfront lab at dawn, six glowing gemstones in blue, red, purple, yellow, green and orange floating above his workbench, through the window a violet rift shimmers on the horizon."
+  },
+  {
+   "action": "10 euro vind ik ten eerste niet genoeg ik gebruik eerst de stenen om miljoenen te krijgen",
+   "narration": "Je pakt de rode Werkelijkheidssteen van de werkbank. Hij voelt warm, bijna gretig. Je sluit je ogen en rekent het uit: geen vals geld, geen diefstal. Je herschrijft één regel van de werkelijkheid. Een vergeten patent op een supergeleider, jaren geleden ingediend onder jouw naam, en vannacht verkocht.\n\nJe telefoon piept. Een melding van je bank. Je kijkt en grijnst: een miljoen en tien euro. Alles keurig, alles legaal, alsof het altijd zo had moeten zijn.\n\nMeteen trilt het toestel opnieuw. Mara Valk, kalm maar dringend: 'Professor? De scheur groeit. Onze satellieten zien een vorm achter het licht. Iets groots. Het beweegt.'\n\nBuiten kleurt de hemel boven het IJ dieper violet. De Ruimtesteen gloeit blauw, alsof hij je uitnodigt. De Tijdsteen tikt zacht, groen, ongeduldig.\n\nMet een miljoen op je rekening en zes stenen binnen handbereik vraag je je af hoe je deze dag het beste begint."
+  }
+ ],
+ "action": "Maak met de stenen een pak waar de stenen in passen zodat ik ze makkelijk kan meenemen en kan gebruiken zonder dat ze worden afgepakt",
+ "roll": 5
+}
