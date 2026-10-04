@@ -1,0 +1,57 @@
+{
+ "id": "mutvz6gx-xsm7a",
+ "finishedAt": "2026-10-04T13:58:54.774Z",
+ "durationMs": 24034,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Jullie vertrekken nog voor de middag. Vorrin loopt zwijgend voor je uit, zijn grijze sjaal strak om zijn hals tegen de wind die steeds kouder wordt. Langs de weg kraakt rijp onder je laarzen. De gouden draden zoemen boven de akkers, allemaal op weg naar de heuvels.\n\nJe laat Schaduwstap over jullie beiden glijden. Twee keer flitst er wit licht boven een richel, en twee keer zien jullie het op tijd.\n\nBij de ingang van de grot blijft Vorrin staan. \"Ruik je dat?\" fluistert hij. Verbrand goud en oud bloed.\n\nBinnen zie je een zwak schijnsel. Honderden draden komen samen in één knoop van licht, en daar zit hij: de Zonnevorst, ingevallen en grauw, zijn handen om de knoop geklemd. Hij heeft je nog niet gezien.",
+  "choices": [
+   "Val hem direct aan met Rode windstoot",
+   "Knip de draden door met de Lotschaar",
+   "Spreek hem aan en eis zijn naam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Vind de schuilplaats van de Zonnevorst"
+   ],
+   "location": "De grot van de Zonnevorst",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. In het gouden paleis koos de zonnetroon Joshua; de priesters knielen. Zonder zonnevuur bevriest de oogst binnen drie nachten. De Zonnevorst trekt de warmte via gouden schijven en draden terug naar een grot in de heuvels. Joshua en Vorrin slopen ongezien naar de grot en vonden de verzwakte Zonnevorst, die alle draden in een lichtknoop vasthoudt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Dark cave interior, a gaunt grey ruined lord in tattered gold-white robes hunched over a glowing knot of hundreds of golden threads; at the cave mouth a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, beside a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, watching in shadow.",
+   "fallback": "Dark rocky cave with frost at the entrance, hundreds of thin glowing golden threads converging into a bright knot of light deep inside, cold blue daylight outside."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De Zonnevorst",
+    "look": "man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes"
+   }
+  ]
+ },
+ "model": "opus"
+}
