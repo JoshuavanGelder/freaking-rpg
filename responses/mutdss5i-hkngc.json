@@ -1,0 +1,74 @@
+{
+ "id": "mutdss5i-hkngc",
+ "finishedAt": "2026-10-04T05:30:07.683Z",
+ "durationMs": 28465,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ja,\" zeg je. Eén woord, en het is het zwaarste dat je ooit hebt opgetild.\n\nDe spreukenmaker knikt alsof hij het al jaren wist. Hij probeert niet te vluchten. Hij raapt alleen zijn krijt op.\n\nJe linkerhand komt omhoog zonder dat jij hem optilt. De zwarte vlam vindt de oude man zoals hij het krijt vond: stil, hongerig, grondig. Zijn magie stroomt in je, dik als honing, oud als de stad zelf. Je hart slaat harder dan ooit. Je arm wordt warm, roze, de jouwe, tot in je vingertoppen.\n\nMaar je wil wankelt in de stroom, en de oude man ziet het. Met zijn laatste adem trekt hij een draad uit de lucht en legt een knoop om je hart. \"Je zult hem altijd horen,\" fluistert hij. \"Zodat je nooit vergeet wat dit kostte.\" Dan is er alleen een grijze shawl op de vloer.\n\nIn je hoofd fluistert de meester drie namen: Vorrin Grauwveer. Ilse van de Toren. De Blinde Abt. \"En de kraaienkamer, kind, is een deur. Naar mijn troon.\"\n\nBij de deur kijkt de kraai je aan. Hij komt niet dichterbij.",
+  "choices": [
+   "Zoek de kraaienkamer op, nu meteen",
+   "Doorzoek de werkplaats naar zijn boeken",
+   "Vraag de meester wie de Blinde Abt is"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Grijze shawl van de spreukenmaker"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Knoop de drie leiders van de Orde",
+     "detail": "Vorrin Grauwveer, Ilse van de Toren en de Blinde Abt."
+    }
+   ],
+   "completeQuests": [
+    "Beslis over de eis van de meester",
+    "Leer van de spreukenmaker"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Splinter van de meester",
+     "kind": "zwakte",
+     "detail": "Je arm is vrij, maar de meester woont nu in je borst."
+    },
+    {
+     "name": "Laatste knoop",
+     "kind": "zwakte",
+     "detail": "De stem van de meester zwijgt nooit meer in je hoofd."
+    },
+    {
+     "name": "Oude magie",
+     "kind": "kracht",
+     "detail": "De dikke, oude magie van de spreukenmaker stroomt nu door je."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is één dienst schuldig aan de gewonde kroonkraai. Een splinter van de eerste meester, die een kroon en de wereld wil, gaf hem een zwarte vlam die magie eet. Joshua accepteerde het bod van de meester en offerde de spreukenmaker: hij kreeg zijn arm terug en diens oude magie, maar de stervende man legde een knoop om zijn hart zodat de meester nooit meer zwijgt. De meester woont nu in zijn borst. Namen van de Orde-leiders: Vorrin Grauwveer, Ilse van de Toren, de Blinde Abt. De kraaienkamer is een deur naar de troon van de meester. De kraai houdt afstand.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, standing in a dim soot-stained workshop, his left hand raised and wreathed in a lightless black flame, an empty ragged grey shawl drifting to the floor before him, a faint red thread glowing over his chest, a crow watching warily by the door, cold candlelight",
+   "fallback": "A dim cluttered magician's workshop with a ring of soot on the floor, an empty grey shawl lying beside fallen chalk, ink-stained workbench, cold candlelight and long shadows"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
