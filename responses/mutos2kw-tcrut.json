@@ -1,0 +1,54 @@
+{
+ "id": "mutos2kw-tcrut",
+ "finishedAt": "2026-10-04T10:37:18.385Z",
+ "durationMs": 15980,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je heft beide handen naar de stralende laatste ster. De Werkelijkheidssteen kleurt rood, de Ruimtesteen blauw, en samen weven ze iets dat er nooit eerder was. Uit het zwarte glas rijzen gestalten op, eerst tien, dan duizend, dan miljoenen. Soldaten van gestold sterrenlicht, met schilden als kleine zonnen en ogen die gloeien zoals de jouwe. Ze staan in rijen tot voorbij de horizon, en hun voetstappen klinken als één enkele donderslag.\n\nVorath komt overeind, en dit keer niet als gevangene. Hij brult, en zijn klauw wijst naar de sterren, als een generaal die wacht op een bevel. De vier raadsleden die bogen, zweven naast hun tronen, elk met een vaandel van licht.\n\nMet de Tijdsteen zie je het al voor je: stelsel na stelsel dat de vlag laat zakken.\n\nDan klinkt de stem van de Koningin, zacht maar scherp. 'Een leger van licht,' zegt ze. 'Indrukwekkend. Maar weet je wel wie er buiten dit heelal op je wacht?'\n\nHet zwarte vlammetje in je licht trilt.",
+  "choices": [
+   "Stuur het leger naar het eerste sterrenstelsel",
+   "Vraag de Koningin wat ze bedoelt",
+   "Sluit het zwarte vlammetje op in de Zielsteen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Leger van Sterrenlicht",
+     "kind": "kracht",
+     "detail": "Miljoenen soldaten van sterrenlicht gehoorzamen elk bevel van jou."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Voor ESA-directeur Mara Valk vernietigde hij een zwarte vloot boven de Noordzee en dwong titan Vorath te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Achter de laatste ster veranderde hij één raadslid in as, waardoor de Eerste Duisternis ontwaakte; hij bedwong haar tot een klein zwart vlammetje. Hij kent nu alles in het heelal en riep zich uit tot heerser; Vorath en vier raadsleden bogen. Hij schiep een leger van miljoenen sterrenlichtsoldaten om het universum te veroveren. De Koningin, nog niet geknield, waarschuwt dat iets buiten het heelal op hem wacht.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, arms raised on a black glass plain as millions of glowing soldiers of starlight with sun-bright shields rise in endless ranks; a colossal shadowy titan of smoke with enormous glowing violet eyes stands beside him, brilliant star above, epic wide shot.",
+   "fallback": "A vast plain of black glass stretching to the horizon under a single brilliant star, endless rows of glowing light, cosmic sky with distant galaxies, epic atmosphere."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
