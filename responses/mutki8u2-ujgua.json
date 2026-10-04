@@ -1,0 +1,53 @@
+{
+ "id": "mutki8u2-ujgua",
+ "finishedAt": "2026-10-04T08:37:42.369Z",
+ "durationMs": 18032,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Alleen de eerste twee,\" zeg je. \"Een draad die ik niet ken, knip ik niet blind voor jou.\"\n\nMoeder Veen zwijgt. De stilte in de smidse wordt dik, als roet dat neerdaalt. Je voelt haar blik langs je heen tasten, op zoek naar een barst, een plek waar je wil zacht is. Je houdt hem koud en hard, zoals bij het zegel.\n\nDan snuift ze. \"Je bent minder dom dan ik hoopte.\" Ze zet het dode flesje op het aambeeld. \"Goed. Twee dingen. Maar dan leer ik je niets meer van draden tot je me iets laat zien wat ik nog niet ken. Gratis is gratis, kraaienjongen.\"\n\nZe steekt haar kromme hand uit, de palm omhoog. \"Knoop het vast. Jij bent de knopenmaker. Ik wil voelen dat je het meent.\"\n\nHet knopenboek warmt tegen je heup. Een belofte vastknopen bindt ook jou. En ergens in de kerker van de Toren zit Saria van Kesh, met nog twee nachten tot de volle maan.",
+  "choices": [
+   "Leg de knoop om beide beloftes",
+   "Knoop alleen haar kant vast",
+   "Vraag eerst wat ze Saria wil vragen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Breng Saria één nacht naar Veen",
+     "detail": "Moeder Veen wil Saria één nacht alleen spreken in de smidse."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin, en trainde zijn lichaam taaier. Garrel is dood; het volk haat Joshua. Saria van Kesh zit in de kerker. Met Moeder Veen knipte Joshua de lotdraad van het koortsflesje van de Zonnevorst door; de Zonnevorst weet nu wat hij kan en dreigt Velmoor te verbranden als Saria niet vrijkomt voor de volle maan (over twee nachten). Joshua onderhandelde Veens prijs omlaag: geen kraaien bij haar smidse en één nacht alleen met Saria; de blinde draad vervalt, maar ze leert hem niets meer tot hij haar iets nieuws toont. Ze wil dat hij de belofte vastknoopt.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cold dark abandoned forge at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, facing elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, holding out her open palm, grey glass vial on the anvil",
+   "fallback": "Cold dark abandoned forge at night, dead hearth, old anvil with a small grey glass vial, soot-covered walls, faint moonlight through a cracked window"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
