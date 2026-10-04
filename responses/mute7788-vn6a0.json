@@ -1,0 +1,60 @@
+{
+ "id": "mute7788-vn6a0",
+ "finishedAt": "2026-10-04T05:41:09.377Z",
+ "durationMs": 18200,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je negeert de kou in je borst en slaat de laatste bladzijde open. Je naam staat er, in verse inkt. Maar als je ernaar kijkt, beweegt de inkt. Letters kruipen tevoorschijn, in het bevende handschrift van de oude man.\n\n\"Jongen. Als je dit leest, heb je gekozen. Ik wist dat je zou kiezen. De meester is geen gast, hij is een knoop die nooit is afgemaakt. Wie hem afmaakt, draagt zijn kroon zonder zijn ketting. Het laatste lusje legt men met zijn ware naam. Die staat niet in dit boek. Die staat in de kraaienkamer, gekrast onder de troon.\"\n\n\"Genoeg,\" sist de meester. Je vingers worden ijskoud, het boek glipt bijna weg. Je houdt het vast. Je wil is harder dan zijn kou, dit keer.\n\nBuiten stoppen de laarzen. Iemand klopt, drie keer, rustig. \"Joshua,\" zegt een vrouwenstem, kalm als een toren. \"Ilse van de Toren hier. Doe open, of we doen het voor je.\"",
+  "choices": [
+   "Verstop het boek en schaduwstap weg",
+   "Open de deur en spreek met Ilse",
+   "Bereid een knoop om haar naam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Vind de ware naam van de meester",
+     "detail": "Hij staat gekrast onder de troon in de kraaienkamer."
+    }
+   ],
+   "completeQuests": [
+    "Ontcijfer het knopenboek"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is één dienst schuldig aan de kroonkraai. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en gaf hem een zwarte vlam die magie eet. Joshua offerde de spreukenmaker voor zijn arm en diens oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin Grauwveer, Ilse van de Toren, de Blinde Abt. De kraaienkamer is een deur naar de troon van de meester. Het knopenboek onthult: wie de onafgemaakte knoop van de meester afmaakt met zijn ware naam, draagt zijn kroon zonder ketting. Die naam staat onder de troon. Ilse van de Toren staat nu met soldaten voor de deur.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, reading a cracked leather book whose ink glows and crawls, dim workshop, frost on his fingers, shadows of soldiers at the door, crow at the window",
+   "fallback": "Dim soot-stained workshop at night, cracked leather book open on a workbench, candlelight, frosted window with a crow silhouette, heavy wooden door"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Ilse van de Toren",
+    "look": "woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch"
+   }
+  ]
+ },
+ "model": "opus"
+}
