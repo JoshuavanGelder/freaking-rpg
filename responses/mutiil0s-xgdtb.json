@@ -1,0 +1,53 @@
+{
+ "id": "mutiil0s-xgdtb",
+ "finishedAt": "2026-10-04T07:41:56.485Z",
+ "durationMs": 14983,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je stuurt Vorrin weg en sluit de zware deuren van je slaapvertrek. Het ruikt er nog naar veenaarde. Je schuift de fluisterende steen in het loden kistje, draait het slot om en legt het onder je bed. Pas dan laat je jezelf vallen.\n\nJe slaapt als een steen. Geen dromen, alleen duisternis en heel ver weg het gekras van kraaien.\n\nAls je wakker wordt, staat er bleek ochtendlicht in de hoge ramen. Iemand heeft brood, harde kaas en warme wijn bij je bed gezet. Je eet alles op. Je arm voelt weer als jouw arm, je hoofd bonst niet meer, en de oude magie ligt rustig en vol in je borst, als een meer na de storm.\n\nDoor de ogen van de kraaien kijk je naar Velmoor. Op het marktplein staat een groepje mensen bij de poort, waar Garrel hangt. Ze wijzen. Een vrouw spuugt op de grond.\n\nDan wordt er geklopt. \"Heer,\" klinkt Ilses kalme stem. \"Er zijn gezanten uit het zuiden. Ze vragen naar de nieuwe heer van de Toren.\"",
+  "choices": [
+   "Ontvang de gezanten op de kraaientroon",
+   "Bespied de gezanten eerst door kraaienogen",
+   "Vraag Ilse wat het volk zegt"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 14,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontmoet de gezanten uit het zuiden",
+     "detail": "Gezanten vragen naar de nieuwe heer van de Toren."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor, die even vrij was en nu weer opgesloten zit. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk morrt. Moeder Veen ruilde: de looiersbuurt is voor altijd vrij, Joshua leerde één lotdraad; meer alleen zonder dwang. Joshua zette Vorrin op zijn knieën en beval hem het volk te sturen. Na een nacht rust is Joshua hersteld. Ilse meldt gezanten uit het zuiden die de nieuwe heer willen zien.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, sitting up in a dark stone bedchamber at dawn, pale light through tall windows, bread and wine beside the bed, crows outside.",
+   "fallback": "Dark stone bedchamber in a tower at dawn, pale light through tall narrow windows, simple bed, plate of bread and cheese, cup of wine, crows on the windowsill."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
