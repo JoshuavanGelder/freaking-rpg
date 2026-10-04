@@ -1,0 +1,55 @@
+{
+ "id": "mutnlu1l-v1e7v",
+ "finishedAt": "2026-10-04T10:04:44.864Z",
+ "durationMs": 33906,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je houdt de gouden draad van de Geeststeen strak en legt je andere hand op de blauwe Ruimtesteen. 'Op je knieën,' zeg je. De kolossale schaduw zakt door zijn poten, gebonden en gebogen. Dan vouw je het heelal dicht.\n\nAchter je slaat de scheur boven de Noordzee met een donderklap dicht, als een deur die eindelijk in het slot valt. In je oortje juicht Mara Valk nog net: 'Hij is weg! De hemel is blauw!' Daarna alleen stilte.\n\nJe staat op een vlakte van zwart glas, aan het einde van alles. Boven je hangt één laatste ster, flakkerend en zwak. Vorath knielt naast je, zijn stadionogen neergeslagen.\n\nRondom verrijzen zeven tronen van as. Daarop zitten gestalten van gedoofd sterrenlicht, grijs en koud. De middelste, een lange vrouw met een kroon van dode sterren, buigt zich voorover.\n\n'Je brengt ons de stenen,' fluistert ze. 'En onze dienaar, geknield. Wie ben jij, sterveling, dat je dit durft?'",
+  "choices": [
+   "Toon de Raad de kracht van alle stenen",
+   "Bied de Raad een slimme deal aan",
+   "Laat de Tijdsteen hun verleden onthullen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Steenbeheersing",
+   "dc": 10,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Sluit de scheur boven de Noordzee"
+   ],
+   "location": "Achter de laatste ster",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Op verzoek van ESA-directeur Mara Valk vernietigde hij een zwarte vloot boven de Noordzee en dwong met de Geeststeen de titan Vorath de Leegte-eter te bekennen dat de Raad der Gedoofde Sterren hem stuurde. Hij teleporteerde met de geknielde Vorath naar de Raad; de scheur boven de Noordzee sloot. Nu staat hij op een zwarte glasvlakte achter de laatste ster, voor zeven tronen van as. De Koningin van de Raad, met een kroon van dode sterren, vraagt wie hij is.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, standing on a plain of black glass beside a kneeling colossal shadowy titan of smoke with enormous glowing violet eyes and a giant black claw, facing seven ash thrones with grey starlight figures, a tall ageless woman crowned with dead stars in the center, one faint star above, epic wide shot.",
+   "fallback": "A vast plain of black glass at the end of the universe, seven thrones of grey ash in a circle, one faint flickering star in an empty dark sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Koningin van de Raad",
+    "look": "ageless cosmic woman appearing in her forties, very tall and gaunt, cold grey glowing skin like dead starlight, long ash-white hair, crown of dark extinguished stars, flowing grey robes."
+   }
+  ]
+ },
+ "model": "opus"
+}
