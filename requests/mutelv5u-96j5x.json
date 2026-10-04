@@ -1,0 +1,235 @@
+{
+ "id": "mutelv5u-96j5x",
+ "createdAt": "2026-10-04T05:52:14.082Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots"
+ },
+ "state": {
+  "hp": 2,
+  "maxHp": 32,
+  "gold": 8,
+  "xp": 669,
+  "level": 7,
+  "location": "Steeg achter de werkplaats",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel",
+   "Grijze shawl van de spreukenmaker"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": true
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de eis van de meester",
+    "detail": "De meester wil de spreukenmaker, of hij neemt meer.",
+    "done": true
+   },
+   {
+    "title": "Knoop de drie leiders van de Orde",
+    "detail": "Vorrin Grauwveer, Ilse van de Toren en de Blinde Abt.",
+    "done": false
+   },
+   {
+    "title": "Ontcijfer het knopenboek",
+    "detail": "Waarom staat jouw naam op de laatste bladzijde?",
+    "done": true
+   },
+   {
+    "title": "Vind de ware naam van de meester",
+    "detail": "Hij staat gekrast onder de troon in de kraaienkamer.",
+    "done": false
+   },
+   {
+    "title": "Haal het knopenboek terug",
+    "detail": "Verstopt onder de werkbank van de spreukenmaker.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   },
+   {
+    "name": "Splinter van de meester",
+    "kind": "zwakte",
+    "detail": "Je arm is vrij, maar de meester woont nu in je borst."
+   },
+   {
+    "name": "Laatste knoop",
+    "kind": "zwakte",
+    "detail": "De stem van de meester zwijgt nooit meer in je hoofd."
+   },
+   {
+    "name": "Oude magie",
+    "kind": "kracht",
+    "detail": "De dikke, oude magie van de spreukenmaker stroomt nu door je."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor zijn arm en oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren, de Blinde Abt (wil de steen). Ware naam meester onder de troon in de kraaienkamer; knopenboek onder de werkbank. In de steeg knoopte Joshua, zwaargewond, met al zijn wil Ilses naam vast: zij moet hem nu gehoorzamen. Haar reus Garrel staat aarzelend in de steeg.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  },
+  {
+   "name": "Ilse van de Toren",
+   "look": "woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch"
+  },
+  {
+   "name": "Garrel",
+   "look": "man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Doorzoek de werkplaats naar zijn boeken",
+   "narration": "De werkplaats ruikt nog naar zijn pijptabak. Je stapt over de grijze shawl heen en begint te zoeken.\n\nPlanken vol potjes, gedroogde wortels, krijtstompjes in alle kleuren. Geen boeken. \"Hij hield niet van papier,\" fluistert de meester. \"Papier verraadt.\"\n\nMaar je ogen zijn scherper dan vroeger. Onder de werkbank zie je een plank die net iets te nieuw is. Je wrikt hem los met je vingers, de jouwe weer, roze en warm. Daaronder ligt een dik boek in gebarsten leer, dichtgebonden met een rode draad. Zijn draad.\n\nJe bladert. Inkt in zijn bevende handschrift: knopen die je nog nooit zag. Een knoop om een stad. Een knoop om een kroon. En op de laatste bladzijde, met verse inkt, alleen jouw naam.\n\nIn je borst wordt het koud. \"Verbrand het,\" zegt de meester. Voor het eerst klinkt hij niet geamuseerd.\n\nBuiten, op straat, klinken laarzen. Veel laarzen. De kraai fladdert naar het raam en krast."
+  },
+  {
+   "action": "Lees de bladzijde met je naam",
+   "narration": "Je negeert de kou in je borst en slaat de laatste bladzijde open. Je naam staat er, in verse inkt. Maar als je ernaar kijkt, beweegt de inkt. Letters kruipen tevoorschijn, in het bevende handschrift van de oude man.\n\n\"Jongen. Als je dit leest, heb je gekozen. Ik wist dat je zou kiezen. De meester is geen gast, hij is een knoop die nooit is afgemaakt. Wie hem afmaakt, draagt zijn kroon zonder zijn ketting. Het laatste lusje legt men met zijn ware naam. Die staat niet in dit boek. Die staat in de kraaienkamer, gekrast onder de troon.\"\n\n\"Genoeg,\" sist de meester. Je vingers worden ijskoud, het boek glipt bijna weg. Je houdt het vast. Je wil is harder dan zijn kou, dit keer.\n\nBuiten stoppen de laarzen. Iemand klopt, drie keer, rustig. \"Joshua,\" zegt een vrouwenstem, kalm als een toren. \"Ilse van de Toren hier. Doe open, of we doen het voor je.\""
+  },
+  {
+   "action": "Verstop het boek en schaduwstap weg",
+   "narration": "Je schuift het boek terug onder de losse plank en duwt hem dicht met je hiel. De grijze shawl sla je om je schouders. Hij ruikt nog naar pijptabak.\n\nDan word je stil. Je adem, je voeten, zelfs je hartslag lijken zachter te worden. Je glipt naar het achterraam, zwaait een been over de vensterbank en laat je in de steeg zakken. De kasseien voelen koud onder je dunne zolen.\n\nTwee stappen kom je ver.\n\nDan klinkt er een zacht getik, als een nagel tegen glas. Een zilveren draad schiet uit de schaduw en slaat om je enkel. Je smakt tegen de natte stenen. Je ribben kraken en even zie je alleen witte vonken.\n\nIlse van de Toren komt kalm de hoek om. Haar zilveren kraaienbroche glanst in het maanlicht. \"Mensen die vluchten, nemen altijd het achterraam,\" zegt ze. \"Ik ken deze steeg al twintig jaar, Joshua.\"\n\nIn je borst grinnikt de meester. \"Ze is maar met z'n tweeën hier, kind. Zij en haar trots.\"",
+   "picture": "Night alley behind a soot-stained workshop, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl over his shoulders, sprawled on the stones, a glowing silver thread around his ankle. Standing over him: woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch."
+  },
+  {
+   "action": "Vraag wat de Orde van je wil",
+   "narration": "Je blijft liggen. Opstaan kost meer dan je hebt. \"Wat wil de Orde van mij?\" vraag je, en je stem schuurt over de natte stenen.\n\nIlse kijkt je lang aan. Dan hurkt ze neer, haar grijze ogen op gelijke hoogte met de jouwe. Dat had je niet verwacht.\n\n\"Vorrin wil je dood. De Abt wil de steen.\" Ze tikt tegen de zilveren draad en hij wordt wat losser. \"Ik wil weten wat er in je borst woont. Want ik hoor het tikken, Joshua. Ik hoor het al sinds je de straat in kwam.\"\n\nZe laat haar blik over de grijze shawl glijden en iets in haar gezicht verstrakt. \"Hij was mijn leraar, lang geleden. Wat heb je met hem gedaan?\"\n\nIn je borst wordt de meester heel stil. Dan fluistert hij: \"Zij is de eerste naam, kind. Zo dichtbij. Eén knoop.\"\n\nAchter Ilse, aan het einde van de steeg, wacht een tweede gestalte in het donker. Hij zegt niets."
+  },
+  {
+   "action": "Leg een knoop om Ilses naam",
+   "narration": "Je antwoordt niet. Je fluistert haar naam.\n\n\"Ilse van de Toren.\"\n\nEen draad, rood als een wond, glijdt uit je vingers en kronkelt door de lucht naar haar keel. Je voelt haar naam, zwaar en koel, als een steen in je handpalm. Je trekt het eerste lusje aan.\n\nMaar Ilse knippert niet eens. Haar grijze ogen worden smal. \"Zijn knoop,\" zegt ze zacht. \"Je gebruikt zíjn knoop.\"\n\nZe legt twee vingers tegen de rode draad en die trilt. Het lusje glijdt weg, half gelegd, half open. De terugslag slaat door je borst. Je hart hapert en je proeft ijzer. Even wordt alles wit.\n\n\"Bijna, kind,\" sist de meester. \"Haar naam hangt nu aan een rafel. Trek nog één keer.\"\n\nIlse staat op. Voor het eerst klinkt haar stem niet kalm. \"Garrel. Nu.\"\n\nAan het einde van de steeg zet de tweede gestalte een stap naar voren. Hij is enorm, en in zijn handen gloeit iets zwaars en blauws.",
+   "picture": "Night alley with wet cobblestones and moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling, a glowing red thread from his fingers toward a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, touching the thread. Behind, a huge hulking man with heavy blue glowing light in his hands."
+  },
+  {
+   "action": "Trek de rafel met al je wil",
+   "narration": "Je sluit je vuist om de rafel. Al het zwakke in je, de honger, de gebroken ribben, het bloed op je tong, duw je opzij. Er blijft maar één ding over: je wil.\n\nJe trekt.\n\nDe rode draad zingt als een gespannen snaar. Ilses hand schiet naar haar keel. Het lusje glijdt niet meer weg. Het sluit zich, strak en zeker, en je voelt haar naam in je handpalm vastklikken als een slot.\n\nZe zakt door één knie. Haar grijze ogen kijken je aan, niet woedend. Bang. \"Garrel,\" fluistert ze. \"Stop.\"\n\nDe reus blijft staan, halverwege de steeg. Het blauwe licht in zijn handen flakkert onzeker. Hij kijkt van haar naar jou en terug.\n\n\"Prachtig, kind,\" spint de meester in je borst. \"Zij gehoorzaamt nu. Zeg het woord en ze legt haar reus zelf neer. Of laat haar je naar de kraaienkamer brengen.\"\n\nJe hart bonkt traag en zwaar. Je weet niet hoe lang je nog overeind blijft.",
+   "picture": "Night alley, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling and pulling a blazing taut red thread with a clenched fist; it wraps the throat of a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, sinking to one knee. Behind, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light, frozen."
+  }
+ ],
+ "action": "Vraag Ilse om je te genezen",
+ "roll": 13
+}
