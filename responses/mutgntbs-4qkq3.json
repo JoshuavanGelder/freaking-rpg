@@ -1,0 +1,48 @@
+{
+ "id": "mutgntbs-4qkq3",
+ "finishedAt": "2026-10-04T06:50:05.648Z",
+ "durationMs": 17958,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Vel hem,\" zeg je. \"Alle drie.\"\n\nDe knopen trekken strak. Ilse heft haar handen en de lucht rond Garrel wordt zwaar als lood. Grijze lichtveren schieten uit Vorrins vingers en bijten in de enorme man. De Abt hoeft niet eens op te staan. Hij fluistert alleen een woord, en Garrels blauwe licht hapert als een kaars in de tocht.\n\nGarrel brult en valt op één knie. Dan op beide. Dan plat op de stenen.\n\nMaar drie knopen tegelijk zo hard aantrekken is te veel. Iets in je borst scheurt. De zaal draait, je hoofd bonkt, je maag keert om. Je grijpt de leuning van de troon vast.\n\nEn je voelt het. Ilses knoop glijdt een haar los. Ze kijkt over haar schouder naar je, en heel even zie je een glimlach.\n\nGarrel ligt hijgend op de vloer. Hij leeft nog. De drie meesters wachten. De leerlingen staren naar jou.",
+  "choices": [
+   "Laat Garrel doden voor iedereen",
+   "Trek Ilses knoop meteen weer strak",
+   "Bied Garrel een plek aan mijn zijde"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon. Ilse zou hem doden, Vorrin zou hem jagen, de Abt zou hem tot stilte genezen. De leerlingen knielden. Garrel weigerde, heeft geen verborgen naam, en sloeg Joshua terug in de troon. Joshua beval de drie meesters Garrel te vellen; dat lukte, Garrel ligt levend op de vloer. Maar de inspanning put Joshua uit en Ilses knoop is een beetje losgeraakt; ze glimlacht.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cold stone throne hall in a dark tower, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, lying on the floor, faint flickering blue light. Thin young man around twenty, gaunt pale face, messy dark hair, torn patched brown tunic, ragged grey shawl, clutching a black crow-carved throne, dizzy. Tall woman in her forties, tight dark braid, dark grey robe with silver crow brooch, glancing back with a faint smile.",
+   "fallback": "Cold stone throne hall in a dark tower, black crow-carved wooden throne, scattered candles, faint blue glow fading on the flagstones, heavy open doors."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
