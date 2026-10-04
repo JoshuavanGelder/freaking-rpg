@@ -1,0 +1,56 @@
+{
+ "id": "mutyo29u-0kq2k",
+ "finishedAt": "2026-10-04T15:14:18.782Z",
+ "durationMs": 26727,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je wacht niet. Je duikt naar voren en ramt het zwarte potje recht in de spleet.\n\nHet rode licht slaat omhoog als een beet. Hitte schiet door je arm tot in je schouder, en het zieke hart in je borst bonst zo hard dat je even niets ziet. Je klemt je kaken op elkaar en houdt vast.\n\nDan zuigt het potje. Het ijs in de klei vecht met het vuur, sist, kraakt. Het rode licht kronkelt, verzet zich, en glijdt er dan in, als een slang die eindelijk een hol vindt. Het potje wordt zwaar. En warm. Het klopt.\n\nDe grot wordt donker. Alleen de ogen van de Vorst gloeien nog, zwak.\n\n\"Je hebt het,\" hijgt Vorrin. \"Nu de vraag van Veen. Wie draagt zijn ziekte?\"",
+  "choices": [
+   "Ik draag de ziekte zelf",
+   "Laat de Abt de ziekte dragen",
+   "Bind de ziekte in de fluisterende steen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Potje met het eerste vuur"
+   ],
+   "removeItems": [
+    "Zwart aarden potje"
+   ],
+   "addQuests": [],
+   "completeQuests": [
+    "Haal het eerste vuur"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; een verborgen lus bindt de eed aan diens stervende hart, dat in Joshua's borst klopt. De akkers zijn weer warm. In de grot onder de zonnetroon ving Joshua met wilskracht het eerste vuur in Moeder Veens zwarte potje, zijn arm verbrand. Vorrin houdt de verzwakte Vorst vast. Nu moet Joshua beslissen wie de ziekte van de Vorst draagt tot Veen hem geneest.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark cave beneath an empty golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, thrusting a small black clay pot into a glowing rock crack as twisting red fire spirals into it, sparks flying, dramatic red light from below.",
+   "fallback": "Dark cave with an empty golden sun throne on stone steps, a cracked rock floor beneath it glowing faint red, drifting sparks in the gloom."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
