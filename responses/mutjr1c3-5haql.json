@@ -1,0 +1,54 @@
+{
+ "id": "mutjr1c3-5haql",
+ "finishedAt": "2026-10-04T08:16:46.555Z",
+ "durationMs": 31749,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat Ilse, Vorrin en de Blinde Abt naar de binnenplaats van de Toren komen. Ze komen door de knopen, zonder vragen.\n\nVorrin traint je met stokken tot je handen bloeden en je longen branden. Elke keer dat je valt, legt Ilse haar koele handen op je spieren en duwt grijs licht diep in de vezels, tot ze strakker weer aaneengroeien. De Abt zit erbij met zijn dichtgenaaide ogen en neuriet een oud gebed dat je hart dwingt rustig te blijven kloppen.\n\nJe wil blijft hard. Ook wanneer je overgeeft in de goot. Ook wanneer de oude magie in je borst gromt dat dit vlees haar niet waardig is.\n\nTegen de ochtend sta je nog. Je armen zijn niet dikker, maar ze trillen niet meer. Je adem draagt verder.\n\nDan zegt de Abt zacht: \"Het kistje, heer. Het klopt nu op úw nieuwe ritme. Het heeft geleerd, net als u.\" Nog twee nachten tot de volle maan.",
+  "choices": [
+   "Ondervraag Saria in de kerker",
+   "Open het loden kistje voorzichtig",
+   "Zoek Moeder Veen op voor raad"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 4,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Binnenplaats van de Toren",
+   "addTraits": [
+    {
+     "name": "Zwak lichaam",
+     "kind": "zwakte",
+     "detail": "Door magische training ben je taaier, maar nog snel uitgeput."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en een loden kistje met de fluisterende steen (meester Aurek Valdemoor) en het koortsflesje van de Zonnevorst, dat zijn hartslag kent en nu ook zijn nieuwe ritme leerde. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo), en trainde met hen zijn lichaam taaier. Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad. Gezant Saria van Kesh zit in de kerker; één wachter viel dood van de stadsmuur. De Zonnevorst eist Saria's vrijlating vóór de volle maan, over twee nachten, anders brandt Velmoor van de koorts.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Stone courtyard of a dark tower at dawn, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, exhausted holding a training staff, a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, hands glowing grey on his arm",
+   "fallback": "Empty stone courtyard of a dark tower at dawn, wooden training staffs leaning against a wall, grey mist, crows on the battlements"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
