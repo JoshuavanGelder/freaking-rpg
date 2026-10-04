@@ -1,0 +1,59 @@
+{
+ "id": "mutmb8uq-4nqne",
+ "finishedAt": "2026-10-04T09:28:15.519Z",
+ "durationMs": 18359,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je blijft op de stenen zitten. Je hand bloedt goud en rood. Je raakt de draden niet meer aan.\n\n\"Hoe heet je?\" vraag je zacht.\n\nHet meisje zwijgt lang. Dan fluistert ze: \"Lirre. Dat zei mijn moeder.\" Haar stem is dun, maar het is haar eigen stem.\n\n\"Lirre. Ik wil je niet nemen zoals hij deed. Ik vraag het je. Mag ik een draad naar jou leggen? Alleen als jij het wilt.\"\n\nZe kijkt naar je bloedende hand. Dan steekt ze haar vingers door de tralies en raakt de jouwe aan.\n\n\"Ja.\"\n\nHet is geen rietje. Het is een rivier. Een warme, brede draad schiet van jou naar haar, en in één klap zie je alles. Elke gestolen draad, elke grove knoop van de Zonnevorst, en midden daartussen één dun zilveren draadje: Lirre zelf, bijna gewurgd.\n\nDe gouden draden sissen. Ver weg, over de rivier, voel je iemand verstijven.\n\nVorrin, achter je, ademt hoorbaar uit. \"Zo,\" zegt hij zacht. \"Zo dus.\"",
+  "choices": [
+   "Snijd de knopen van de Zonnevorst door",
+   "Bescherm Lirres eigen draad eerst",
+   "Volg de gouden draden naar de Zonnevorst"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Knoop van Lirre",
+     "kind": "kracht",
+     "detail": "Lirre gaf je vrijwillig een brede draad; je ziet de gestolen knopen in haar."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin weigert zijn draad te verbreden tot Joshua bewijst anders te zijn dan de Zonnevorst. Oude magie werkt alleen goed door draden met toestemming. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over. Zijn geschenk: Lirre, een meisje van tien in een gouden kooi, vol gestolen lotdraden; zij is zijn deur. Joshua vroeg Lirre om toestemming en kreeg een brede, vrijwillige draad. Hij ziet nu haar eigen bijna gewurgde draad tussen de gestolen knopen. De Zonnevorst voelde het. Vorrin zag het, onder de indruk.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Torchlit stone hall, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, sitting on the floor touching fingers with a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift, through white-gold cage bars; a bright warm silver thread of light flows between them",
+   "fallback": "Torchlit stone hall with a white-gold cage, crimson cloth on the floor, warm silver light glowing between the bars, shadows on the walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Lirre (het gouden meisje)",
+    "look": "girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift"
+   }
+  ]
+ },
+ "model": "opus"
+}
