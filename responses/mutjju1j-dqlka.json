@@ -1,0 +1,50 @@
+{
+ "id": "mutjju1j-dqlka",
+ "finishedAt": "2026-10-04T08:10:55.181Z",
+ "durationMs": 15915,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je fluit niet eens. Je denkt het alleen, en beneden in de gracht stijgt een kraai op, het koperen kokertje in zijn snavel. Het rode zegel glimt als een druppel. Hij landt op je schouder en laat het in je hand vallen. Het is warm, alsof iemand het net nog vasthield.\n\nDe stadswachters wijken achteruit wanneer je langs ze loopt. Niemand zegt iets. Eén van hen spuugt op de stenen, maar pas nadat je hem voorbij bent.\n\nJe stapt de schaduwen in, en straat na straat glijdt koud langs je heen, tot je op de kraaientroon neerzakt. Ilse wacht al. Zonder een woord legt ze haar koele handen om je arm. Grijs licht sluit de snee, langzaam, en het branden zakt weg tot een doffe pijn. Je hart wordt rustig.\n\nOnder je bed klopt het loden kistje nog steeds. Sneller nu. Alsof het ergens op wacht.\n\nHet kokertje ligt in je schoot. Op het zegel: een zon met een oog in het midden.",
+  "choices": [
+   "Breek het zegel en lees de boodschap",
+   "Laat Vorrin het zegel onderzoeken",
+   "Breng het kokertje naar Saria in de kerker"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 10,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [
+    "Verzegeld koperen kokertje"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De kraaientroon",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje, waarin ook het koortsflesje van de Zonnevorst zit, dat Joshua's hartslag kent; het kistje klopt steeds sneller. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad; meer alleen zonder dwang. Gezant Saria van Kesh zit in de kerker. Beide wachters van Kesh zijn dood. Een kraai bracht Joshua een koperen kokertje met het zegel van een zon met een oog. Ilse heelde zijn arm op de troon.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark tower throne room with a crow-carved throne, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated holding a small copper tube with red wax seal, a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, healing his arm with grey light, candlelight",
+   "fallback": "Dark stone throne room with a throne carved with crows, flickering candles, tall narrow windows with grey light, a crow perched on the armrest"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
