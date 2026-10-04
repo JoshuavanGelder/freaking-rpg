@@ -1,0 +1,53 @@
+{
+ "id": "mutdnish-v0o3n",
+ "finishedAt": "2026-10-04T05:25:49.188Z",
+ "durationMs": 15837,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen. Niet tegen hem in, maar naar hem toe.\n\n\"Wat wil je?\" vraag je, binnenin, waar het koud tikt.\n\nHet tikken stopt. Even is het zo stil dat je de spreukenmaker hoort hijgen en de kraai hoort schrapen met zijn klauwen. Dan antwoordt de meester, en zijn stem is geen gefluister meer. Hij klinkt als iemand die eindelijk aan tafel mag.\n\n\"Wat ik altijd wilde, kind. Een kroon. Velmoor eerst. Dan de rest.\" Je ziet beelden die niet van jou zijn: een stad van zwart glas, mensen die knielen, kraaien op elke toren. \"Jij wilt sterk zijn. Ik wil een lichaam dat lang meegaat. Wij willen hetzelfde, alleen in een andere volgorde.\"\n\nHij laat even stilte vallen.\n\n\"Geef me de oude man. Zijn magie is dik en oud. Dan laat ik je arm los tot aan de pols. Weiger, en ik neem elke nacht een beetje meer.\"\n\nJe opent je ogen. De spreukenmaker kijkt je aan. Hij weet het al.",
+  "choices": [
+   "Weiger en bied hem de kraai aan",
+   "Onderhandel: wat krijg ik nog meer?",
+   "Waarschuw de spreukenmaker en vlucht samen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Beslis over de eis van de meester",
+     "detail": "De meester wil de spreukenmaker, of hij neemt meer."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Een splinter van de meester zit in Joshua's linkerarm (tot halverwege bovenarm) en geeft een koude zwarte vlam die magie eet. Joshua liet de vlam de cirkel opeten; zijn knoop brak. De meester onthulde zijn doel: een kroon, Velmoor en daarna de wereld, met Joshua als lichaam. Hij eist de magie van de spreukenmaker; dan laat hij de arm los tot de pols. Weigert Joshua, dan neemt hij elke nacht meer. De spreukenmaker vermoedt het. De kraai is gewond.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, eyes closed, left arm grey with black veins; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe staring at him warily, soot ring on floor, dim workshop, smoldering crow by door",
+   "fallback": "Dim cluttered workshop with a ring of soot on the stone floor, scattered chalk, a workbench with ink pots and candles, a smoky doorway"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
