@@ -1,0 +1,48 @@
+{
+ "id": "mutn6iyv-9qg83",
+ "finishedAt": "2026-10-04T09:52:45.936Z",
+ "durationMs": 28784,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je grijpt Lirres polsen. \"Kom, nu!\" Ze duwt zich naar je toe, en je trekt.\n\nDe tralies willen haar niet laten gaan. Het witte goud buigt mee, zacht als was, maar het zegel staart en het metaal sluit zich om haar schouders als vingers. Je trekt harder. Je zwakke armen trillen, je ribben schreeuwen. Lirre gilt, niet van angst maar van pijn: de gestolen draden zitten aan de kooi vastgeknoopt, en elke duim die jij trekt, trekt aan haar binnenste.\n\nJe laat los voor er iets in haar breekt. Je valt achterover en het hete metaal schroeit langs je onderarmen.\n\nHet oog in het zegel knippert, traag en tevreden. \"Ze is de deur, knopenmaker,\" fluistert de Zonnevorst. \"En de kooi is het kozijn. Je trekt een deur niet uit zijn kozijn zonder het huis te breken.\"\n\nVorrin trekt je overeind. Lirre klemt zich vast aan de tralies, haar halfbruine oog vol tranen. \"Niet weggaan,\" smeekt ze.\n\nHet zegel gloeit feller. De hele kooi begint te zoemen.",
+  "choices": [
+   "Leg een knoop om het zegel zelf",
+   "Stuur Vorrin naar Moeder Veen",
+   "Blijf bij Lirre en maak draden los"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin wil bewijs dat Joshua anders is dan de Zonnevorst en ontdooit langzaam. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over; Lirre, een meisje van tien vol gestolen lotdraden, is zijn deur. Joshua beschermde haar eigen draad met een ring; samen maakten ze de draden van een visser en een soldaat los. Toen het zegel van de witgouden kooi een oog opende, probeerde Joshua Lirre door de tralies te trekken, maar de draden zitten aan de kooi vast. De kooi zoemt steeds feller.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Torchlit stone hall, a glowing white-gold cage with a seal shaped like an open eye; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, fallen back on the floor; a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift, clinging to the bars",
+   "fallback": "Dark torchlit stone hall with a glowing white-gold cage in the center, a carved seal shaped like an eye shining on its bars, warm sparks drifting in the air"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
