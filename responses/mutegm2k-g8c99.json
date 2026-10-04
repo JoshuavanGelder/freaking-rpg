@@ -1,0 +1,53 @@
+{
+ "id": "mutegm2k-g8c99",
+ "finishedAt": "2026-10-04T05:48:28.897Z",
+ "durationMs": 18138,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je antwoordt niet. Je fluistert haar naam.\n\n\"Ilse van de Toren.\"\n\nEen draad, rood als een wond, glijdt uit je vingers en kronkelt door de lucht naar haar keel. Je voelt haar naam, zwaar en koel, als een steen in je handpalm. Je trekt het eerste lusje aan.\n\nMaar Ilse knippert niet eens. Haar grijze ogen worden smal. \"Zijn knoop,\" zegt ze zacht. \"Je gebruikt zíjn knoop.\"\n\nZe legt twee vingers tegen de rode draad en die trilt. Het lusje glijdt weg, half gelegd, half open. De terugslag slaat door je borst. Je hart hapert en je proeft ijzer. Even wordt alles wit.\n\n\"Bijna, kind,\" sist de meester. \"Haar naam hangt nu aan een rafel. Trek nog één keer.\"\n\nIlse staat op. Voor het eerst klinkt haar stem niet kalm. \"Garrel. Nu.\"\n\nAan het einde van de steeg zet de tweede gestalte een stap naar voren. Hij is enorm, en in zijn handen gloeit iets zwaars en blauws.",
+  "choices": [
+   "Trek de rafel met al je wil",
+   "Laat de zwarte vlam haar draad eten",
+   "Vertel Ilse eerlijk wat er gebeurde"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en gaf hem een zwarte vlam. Hij offerde de spreukenmaker voor zijn arm en oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren (oud-leerling van de spreukenmaker), de Blinde Abt (wil de steen). Ware naam meester onder de troon in de kraaienkamer; knopenboek onder de werkbank. In de steeg probeerde Joshua, zwaargewond, Ilses naam te knopen; de knoop hangt half aan een rafel. Ilse roept haar reus Garrel met blauw gloeiende magie.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Night alley with wet cobblestones and moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling, a glowing red thread from his fingers toward a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, touching the thread. Behind, a huge hulking man with heavy blue glowing light in his hands.",
+   "fallback": "Narrow night alley behind a soot-stained workshop, wet cobblestones gleaming in moonlight, a faint red thread of light hanging in the misty air, blue glow at the far end."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Garrel",
+    "look": "man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light"
+   }
+  ]
+ },
+ "model": "opus"
+}
