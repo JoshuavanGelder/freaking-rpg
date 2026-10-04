@@ -1,0 +1,57 @@
+{
+ "id": "mutuqbye-fr1r3",
+ "finishedAt": "2026-10-04T13:24:07.268Z",
+ "durationMs": 28161,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De blauwe steen flitst. De vlakte van zwart glas valt weg, en in één hartslag sta je aan de rand van alles.\n\nHier houdt het heelal op. Voor je hangt een muur van stille, parelwitte mist. Daarin drijven je twee gedoofde soldaten, niet kapot maar slapend, als kinderen in een wieg.\n\nUit de mist stapt een gestalte. Een reus van zacht zilverlicht, met een gezicht dat oud en jong tegelijk is. In zijn borst klopt een hart dat je Geeststeen niet kan lezen.\n\n'Ik ben de Wachter van de Rand,' zegt hij, met een stem als ruisende zee. 'Ik bewaak dit heelal tegen wie het wil bezitten. Jij doofde een titan zonder genade. Waarom zou ik jou de sterren laten houden?'\n\nDe zes stenen gloeien warm tegen je borst.",
+  "choices": [
+   "Val de Wachter aan met alle stenen",
+   "Toon hem je hart met de Geeststeen",
+   "Bied hem aan samen te heersen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Onderzoek de stilte aan de rand"
+   ],
+   "location": "De rand van het heelal",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen in een pak dat alleen hij kan aanraken. Voor ESA-directeur Mara Valk versloeg hij een zwarte vloot en ontmaskerde titan Vorath als dienaar van de Raad der Gedoofde Sterren. Achter de laatste ster veranderde hij een raadslid in as, bedwong de Eerste Duisternis tot een zwart vlammetje en werd alwetend. Zijn leger van sterrenlicht verovert het heelal en valt alleen slechte harten aan. Hij liet de verraderlijke Vorath tot as verwaaien. Vier raadsleden bogen; de Koningin niet. Aan de rand van het heelal vond hij twee slapende soldaten en de Wachter van de Rand, een zilveren reus wiens hart hij niet kan lezen en die twijfelt of Einstein het heelal mag bezitten.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, facing an ageless colossal giant of soft silver light emerging from a wall of pearl-white mist at the edge of the universe, two dim sleeping figures of starlight floating in the mist, epic wide shot.",
+   "fallback": "A vast wall of pearl-white mist at the edge of the universe, faint galaxies fading behind, soft silver glow, empty dark void, serene and epic."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Wachter van de Rand",
+    "look": "ageless male cosmic giant, face both old and young, colossal body of soft silver light, calm luminous white eyes, long flowing silver hair, robes of pearl-white mist."
+   }
+  ]
+ },
+ "model": "opus"
+}
