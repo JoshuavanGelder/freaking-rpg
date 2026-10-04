@@ -1,0 +1,55 @@
+{
+ "id": "mute4uay-4nd0k",
+ "finishedAt": "2026-10-04T05:39:18.880Z",
+ "durationMs": 17279,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De werkplaats ruikt nog naar zijn pijptabak. Je stapt over de grijze shawl heen en begint te zoeken.\n\nPlanken vol potjes, gedroogde wortels, krijtstompjes in alle kleuren. Geen boeken. \"Hij hield niet van papier,\" fluistert de meester. \"Papier verraadt.\"\n\nMaar je ogen zijn scherper dan vroeger. Onder de werkbank zie je een plank die net iets te nieuw is. Je wrikt hem los met je vingers, de jouwe weer, roze en warm. Daaronder ligt een dik boek in gebarsten leer, dichtgebonden met een rode draad. Zijn draad.\n\nJe bladert. Inkt in zijn bevende handschrift: knopen die je nog nooit zag. Een knoop om een stad. Een knoop om een kroon. En op de laatste bladzijde, met verse inkt, alleen jouw naam.\n\nIn je borst wordt het koud. \"Verbrand het,\" zegt de meester. Voor het eerst klinkt hij niet geamuseerd.\n\nBuiten, op straat, klinken laarzen. Veel laarzen. De kraai fladdert naar het raam en krast.",
+  "choices": [
+   "Lees de bladzijde met je naam",
+   "Verberg je met het boek via schaduwstap",
+   "Wacht de soldaten op met zwarte vlam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Leergierigheid",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [
+    "Knopenboek van de spreukenmaker"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Ontcijfer het knopenboek",
+     "detail": "Waarom staat jouw naam op de laatste bladzijde?"
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is één dienst schuldig aan de kroonkraai. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en gaf hem een zwarte vlam die magie eet. Joshua offerde de spreukenmaker voor zijn arm en diens oude magie; de stervende man legde een knoop om zijn hart zodat de meester nooit zwijgt. Namen van de Orde-leiders: Vorrin Grauwveer, Ilse van de Toren, de Blinde Abt. De kraaienkamer is een deur naar de troon van de meester. Onder de werkbank vond Joshua het verborgen knopenboek: knopen om steden en kronen, en op de laatste bladzijde zijn naam. De meester wil het verbranden. Laarzen naderen buiten.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling under a workbench holding an old cracked leather book bound with a glowing red thread, dim cluttered workshop, a crow at the window, candlelight",
+   "fallback": "Dim cluttered workshop with shelves of jars and chalk, a loose floorboard under a workbench, an old leather book bound with red thread, candlelight, window to a dark street"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
