@@ -1,0 +1,57 @@
+{
+ "id": "muteqvd0-2y04i",
+ "finishedAt": "2026-10-04T05:56:28.743Z",
+ "durationMs": 18094,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Blijf hier,\" zeg je tegen Ilse. \"Allebei.\" Ze knikt stijf. Garrel zegt niets, maar zijn ademhaling klinkt als een blaasbalg.\n\nJe klimt terug door het achterraam. De werkplaats ruikt naar inkt, pijptabak en iets kouders: de leegte die de spreukenmaker heeft achtergelaten. Je knielt bij de werkbank en wrikt de losse plank omhoog.\n\nHet knopenboek ligt er nog. Zwart leer, dichtgebonden met een rode koord die warm aanvoelt, alsof hij ademt. Zodra je vingers het raken, opent het zich vanzelf. Bladzijden vol knopen, getekend in bruine inkt. Op de laatste pagina staat er één die je niet kent: een knoop zonder begin of eind.\n\n\"Daar is hij,\" fluistert de meester gretig. \"De kroonknoop. Daarmee bind je geen mens, kind. Daarmee bind je een stad.\"\n\nOp de vensterbank landt iets zwaars. Zwarte veren, een zilveren ring om een poot. De kroonkraai houdt zijn kop schuin en kijkt naar het boek in je handen.\n\n\"Vandaag,\" kraast hij, \"is de dag.\"",
+  "choices": [
+   "Vraag de kraai welke dienst hij wil",
+   "Weiger en sla het boek dicht",
+   "Laat Ilse de kraai tegenhouden"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [
+    "Knopenboek"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Haal het knopenboek terug"
+   ],
+   "location": "Werkplaats van de spreukenmaker",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor oude magie. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren (nu door een knoop aan Joshua gebonden, genas hem, oud-leerling van de spreukenmaker), de Blinde Abt (wil de steen). Garrel, Ilses reus, knielde maar haat Joshua; beiden wachten in de steeg. Joshua haalde het knopenboek uit de werkplaats; daarin staat de kroonknoop, waarmee je een stad bindt. Ware naam meester ligt onder de troon in de kraaienkamer. Nu staat de kroonkraai op de vensterbank: vandaag eist hij zijn dienst.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Dim cluttered workshop at night, ink pots and candle stubs. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling by a workbench holding an open black leather book bound with a glowing red cord. A large black crow with a silver ring on its leg perches on the moonlit windowsill, watching him.",
+   "fallback": "Dim cluttered workshop at night, ink pots, candle stubs, a pried-up floorboard under a wooden workbench, moonlight through an open back window onto the sill."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De kroonkraai",
+    "look": "ancient male crow of unknown age, unusually large black bird, glossy black feathers, sharp grey beak, piercing intelligent eyes, silver ring around one leg"
+   }
+  ]
+ },
+ "model": "opus"
+}
