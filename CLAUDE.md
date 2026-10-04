@@ -54,6 +54,12 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   rechtvaardigt (regenererende held, trol, vampier, helende magie). `traag` = 10%, `snel` = 25% van max-leven per beurt
   zonder schade of heling; niet bij de start, niet bij game over. `geen` haalt het weg. Staat in het verzoek als
   `natural regeneration (regen)`.
+- **Lengte** (`world.textLength`, `world.arc`, gekozen op het startscherm, opgeslagen per avontuur): tekst per beurt kort
+  (30–70 woorden) / normaal (60–120, standaard) / uitgebreid (110–200); avontuur kort (±12 beurten) / middel (±25,
+  standaard) / lang (±50) / onbeperkt (de speler beslist). De woordaantallen en eindregels staan in `rpg/lib.mjs`
+  (`NARRATION`, `pacingLines`); het verzoek bevat `pacing {turn, total}` (opening = 0). Bij beurt ≥ total zegt het
+  verzoek "THE END IS DUE" en eindigt de verteller met `gameOver: true`; bij onbeperkt rondt hij nooit zelf af.
+  Oude avonturen (zonder `arc`) zijn onbeperkt en krijgen normale tekstlengte. Aanleiding: verhalen voelden langdradig.
 - **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
   zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
   naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen

@@ -1,6 +1,6 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
-import type { Adventure, Answer, Attribute, CastMember, GameState, Heal, Regen, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Arc, Attribute, CastMember, GameState, Heal, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -17,6 +17,28 @@ export const SETTINGS: Setting[] = [
 
 export const TONES = ['Humoristisch', 'Episch', 'Rauw', 'Duister', 'Absurd', 'Gezellig', 'Eigen toon'];
 export const OWN_TONE = 'Eigen toon';
+
+/** Lengte van de verteltekst per beurt. De woordaantallen staan in rpg/lib.mjs (daar wordt het verzoek geschreven). */
+export const TEXT_LENGTHS: { id: TextLength; label: string; hint: string }[] = [
+  { id: 'kort', label: 'Kort', hint: 'Een paar zinnen per beurt' },
+  { id: 'normaal', label: 'Normaal', hint: 'Een kort stukje per beurt' },
+  { id: 'uitgebreid', label: 'Uitgebreid', hint: 'Meer sfeer en uitleg per beurt' },
+];
+export const DEFAULT_TEXT_LENGTH: TextLength = 'normaal';
+
+/** Hoe lang een avontuur duurt (in beurten) voor de verteller toewerkt naar een einde. Onbeperkt = jij bepaalt. */
+export const ARCS: { id: Arc; label: string; hint: string; turns: number | null }[] = [
+  { id: 'kort', label: 'Kort', hint: 'Ongeveer 12 beurten', turns: 12 },
+  { id: 'middel', label: 'Middel', hint: 'Ongeveer 25 beurten', turns: 25 },
+  { id: 'lang', label: 'Lang', hint: 'Ongeveer 50 beurten', turns: 50 },
+  { id: 'onbeperkt', label: 'Onbeperkt', hint: 'Het verhaal stopt pas als jij dat wilt', turns: null },
+];
+export const DEFAULT_ARC: Arc = 'middel';
+
+/** Aantal beurten tot het einde, of null als het avontuur onbeperkt is (ook bij oude avonturen zonder keuze). */
+export function arcTurns(arc: Arc | undefined): number | null {
+  return ARCS.find((a) => a.id === arc)?.turns ?? null;
+}
 
 export const START_HP = 20;
 export const START_GOLD = 10;
@@ -110,6 +132,8 @@ export function newAdventure(world: World, hero: Hero, now = Date.now(), id = ne
       tones: [...world.tones],
       toneText: world.tones.includes(OWN_TONE) ? world.toneText.trim() : '',
       wishes: world.wishes.trim(),
+      textLength: world.textLength ?? DEFAULT_TEXT_LENGTH,
+      arc: world.arc ?? DEFAULT_ARC,
     },
     hero: { name: hero.name.trim(), className: hero.className.trim(), powers: hero.powers.trim(), looks: hero.looks.trim() },
     state: initialState(),
@@ -152,6 +176,8 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     ...(adv.cast === undefined && pending.kind === 'turn' ? { earlierPictures: earlierPictures(adv) } : {}),
     action: pending.action,
     roll: pending.roll,
+    // Beurt die nu geschreven wordt (de opening is 0) en de gekozen lengte, zodat de verteller naar een einde kan toewerken.
+    pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: arcTurns(w.arc) },
   };
 }
 

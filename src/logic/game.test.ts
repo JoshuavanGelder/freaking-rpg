@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   applyAnswer,
+  arcTurns,
   dropTraitByHand,
   finishQuestByHand,
   matchIndex,
@@ -219,6 +220,34 @@ test('zelfherstel haalt je niet terug uit de dood', () => {
   const next = applyAnswer(adv, makePending('turn', 'x', 2), withChanges({ hp: -8 }), 3);
   assert.equal(next.state.hp, 0);
   assert.equal(next.ended, true);
+});
+
+test('lengte van tekst en avontuur: standaard bij een nieuw avontuur, onbeperkt bij oude', () => {
+  const fresh = newAdventure(world, hero, 1, 'adv-len');
+  assert.equal(fresh.world.textLength, 'normaal');
+  assert.equal(fresh.world.arc, 'middel');
+  const chosen = newAdventure({ ...world, textLength: 'kort', arc: 'onbeperkt' }, hero, 1, 'adv-len-2');
+  assert.equal(chosen.world.textLength, 'kort');
+  assert.equal(chosen.world.arc, 'onbeperkt');
+  assert.equal(arcTurns('kort'), 12);
+  assert.equal(arcTurns('middel'), 25);
+  assert.equal(arcTurns('lang'), 50);
+  assert.equal(arcTurns('onbeperkt'), null);
+  assert.equal(arcTurns(undefined), null); // oud avontuur: geen einde opleggen
+});
+
+test('verzoek bevat waar het verhaal staat', () => {
+  let adv = newAdventure({ ...world, arc: 'kort' }, hero, 1, 'adv-pace');
+  const start = buildRequest(adv, makePending('start', null, 2), 'sonnet');
+  assert.deepEqual(start.pacing, { turn: 0, total: 12 });
+  assert.equal(start.world.textLength, 'normaal');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  assert.deepEqual(buildRequest(adv, makePending('turn', 'a', 4), 'sonnet').pacing, { turn: 1, total: 12 });
+  adv = applyAnswer(adv, makePending('turn', 'a', 4), parseAnswer(raw())!, 5);
+  assert.deepEqual(buildRequest(adv, makePending('turn', 'b', 6), 'sonnet').pacing, { turn: 2, total: 12 });
+  // Oud avontuur zonder keuze: onbeperkt.
+  const old = { ...adv, world: { ...adv.world, arc: undefined, textLength: undefined } };
+  assert.deepEqual(buildRequest(old, makePending('turn', 'c', 6), 'sonnet').pacing, { turn: 2, total: null });
 });
 
 test('op 0 leven is het verhaal klaar', () => {

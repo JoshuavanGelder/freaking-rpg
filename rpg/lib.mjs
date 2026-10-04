@@ -9,6 +9,36 @@ export function validId(id) {
 
 const clean = (v, max = 600) => String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
 
+/** Lengte van de verteltekst per beurt, zoals de speler hem kiest. */
+const NARRATION = {
+  kort: '30–70 words, one or two short paragraphs. Brief and punchy: what happens and what the player decides, nothing more',
+  normaal: '60–120 words',
+  uitgebreid: '110–200 words, room for atmosphere and detail',
+};
+
+/** Regels over de lengte van het avontuur: waar staan we en moet het einde nu komen? */
+export function pacingLines(r) {
+  const total = Number(r.pacing?.total);
+  const turn = Number.isInteger(r.pacing?.turn) ? r.pacing.turn : 0;
+  const lines = ['## Story length'];
+  if (!(total > 0)) {
+    lines.push('- no fixed length: the player decides when the story ends. Do not wrap the story up or end it on your own (unless the hero dies); keep opening new possibilities.');
+    return lines;
+  }
+  lines.push(`- the player chose a story of about ${total} turns, ending with a real conclusion.`);
+  if (r.kind === 'start') {
+    lines.push('- this is the opening. Plan the arc now (see "Story length and ending").');
+    return lines;
+  }
+  const left = total - turn;
+  lines.push(`- this is turn ${turn} of about ${total}.`);
+  if (left <= 0) lines.push('- THE END IS DUE: this turn must be the ending. Resolve the main thread, close the open quests, write a satisfying final scene in the tone and set gameOver to true. No new cliffhanger, no choices needed.');
+  else if (left === 1) lines.push('- ONE turn left after this one: this turn is the final confrontation or decision. The next turn is the ending.');
+  else if (left <= 3) lines.push(`- ${left} turns left after this one: you are in the climax. Wrap up open threads and head for the final confrontation; no new big threads.`);
+  else if (turn >= total * 0.6) lines.push(`- ${left} turns left: the story is in its last third. Escalate toward the climax and stop introducing new big threads.`);
+  return lines;
+}
+
 /** Maakt van het verzoek (JSON van de app) een leesbaar bericht voor Claude. */
 export function renderRequest(r) {
   const w = r.world ?? {};
@@ -23,6 +53,7 @@ export function renderRequest(r) {
   lines.push(`- tone(s): ${(w.tones ?? []).map((t) => clean(t, 60)).filter(Boolean).join(' + ') || 'free choice'}`);
   if (clean(w.toneText)) lines.push(`- the player's own tone description: ${clean(w.toneText)}`);
   if (clean(w.wishes)) lines.push(`- the player's wishes: ${clean(w.wishes)}`);
+  lines.push(`- narration length per turn: ${NARRATION[w.textLength] ?? NARRATION.normaal}`);
   lines.push('');
   lines.push('## Hero');
   lines.push(`- name: ${clean(h.name, 80) || 'onbekend'}`);
@@ -54,6 +85,8 @@ export function renderRequest(r) {
   }
   const open = (s.quests ?? []).filter((q) => !q.done);
   lines.push(`- open quests: ${open.length ? open.map((q) => `"${clean(q.title, 80)}" (${clean(q.detail, 120)})`).join('; ') : 'none'}`);
+  lines.push('');
+  lines.push(...pacingLines(r));
   lines.push('');
   if (r.kind !== 'start') {
     const cast = (r.cast ?? []).filter((c) => clean(c?.name, 60) && clean(c?.look));

@@ -5,17 +5,39 @@ import { useDraft } from '../drafts';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Button, Chip, Field, Label, Row, Screen, T, Tile, TopBar } from '../ui';
-import { OWN_TONE, SETTINGS, TONES, settingOf, toggleTone, worldProblem } from '../logic/game';
+import {
+  ARCS,
+  DEFAULT_ARC,
+  DEFAULT_TEXT_LENGTH,
+  OWN_TONE,
+  SETTINGS,
+  TEXT_LENGTHS,
+  TONES,
+  settingOf,
+  toggleTone,
+  worldProblem,
+} from '../logic/game';
 import type { World } from '../logic/types';
 
 /** Stap 1: wereld en toon kiezen. */
 export function NewScreen() {
   const nav = useNav();
   // Blijft bewaard als je naar stap 2 gaat en terugkomt (of de app tussendoor sluit).
-  const [world, setWorld] = useDraft<World>('new-world', { setting: 'fantasy', settingText: '', tones: ['Humoristisch'], toneText: '', wishes: '' });
+  const [world, setWorld] = useDraft<World>('new-world', {
+    setting: 'fantasy',
+    settingText: '',
+    tones: ['Humoristisch'],
+    toneText: '',
+    wishes: '',
+    textLength: DEFAULT_TEXT_LENGTH,
+    arc: DEFAULT_ARC,
+  });
   const [tried, setTried] = useState(false);
   const set = (patch: Partial<World>) => setWorld((w) => ({ ...w, ...patch }));
   const problem = worldProblem(world);
+  // Een bewaard concept van een oudere versie heeft deze keuzes nog niet.
+  const textLength = world.textLength ?? DEFAULT_TEXT_LENGTH;
+  const arc = world.arc ?? DEFAULT_ARC;
 
   const rows: (typeof SETTINGS)[] = [];
   for (let i = 0; i < SETTINGS.length; i += 2) rows.push(SETTINGS.slice(i, i + 2));
@@ -70,6 +92,31 @@ export function NewScreen() {
             placeholder="Bijv. als een natuurdocumentaire over goblins"
           />
         ) : null}
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>Lengte van de tekst</Label>
+        <Row style={{ flexWrap: 'wrap', gap: 8 }}>
+          {TEXT_LENGTHS.map((l) => (
+            <Chip key={l.id} label={l.label} selected={textLength === l.id} onPress={() => set({ textLength: l.id })} />
+          ))}
+        </Row>
+        <T size={13} color={C.muted}>
+          {TEXT_LENGTHS.find((l) => l.id === textLength)?.hint}
+        </T>
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>Lengte van het avontuur</Label>
+        <Row style={{ flexWrap: 'wrap', gap: 8 }}>
+          {ARCS.map((a) => (
+            <Chip key={a.id} label={a.label} selected={arc === a.id} onPress={() => set({ arc: a.id })} />
+          ))}
+        </Row>
+        <T size={13} color={C.muted}>
+          {ARCS.find((a) => a.id === arc)?.hint}
+          {arc === 'onbeperkt' ? '' : '. Daarna krijgt het verhaal een echt einde.'}
+        </T>
       </View>
 
       <Field

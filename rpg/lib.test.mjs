@@ -57,6 +57,31 @@ test('ongeldige worp wordt 10', () => {
   assert.match(renderRequest({ kind: 'start', world, hero }), /d20 roll for this turn: 10/);
 });
 
+test('lengte van de tekst: normaal is de standaard, kort en uitgebreid kloppen', () => {
+  assert.match(renderRequest({ kind: 'start', world, hero }), /narration length per turn: 60–120 words/);
+  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'kort' }, hero }), /narration length per turn: 30–70 words/);
+  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'uitgebreid' }, hero }), /narration length per turn: 110–200 words/);
+});
+
+test('lengte van het avontuur: opening, onderweg, laatste beurten en het einde', () => {
+  const turn = (n, total = 12) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total }, action: 'x' });
+  assert.match(renderRequest({ kind: 'start', world, hero, pacing: { turn: 0, total: 12 } }), /about 12 turns[\s\S]*this is the opening/);
+  assert.match(turn(3), /turn 3 of about 12/);
+  assert.doesNotMatch(turn(3), /THE END IS DUE|last third|turns left/);
+  assert.match(turn(8), /last third/);
+  assert.match(turn(10), /2 turns left after this one: you are in the climax/);
+  assert.match(turn(11), /ONE turn left/);
+  assert.match(turn(12), /THE END IS DUE/);
+  assert.match(turn(15), /THE END IS DUE/); // te laat: het einde blijft "nu"
+});
+
+test('onbeperkt avontuur (of oud avontuur): de verteller rondt zelf niets af', () => {
+  const t = renderRequest({ kind: 'turn', world, hero, pacing: { turn: 40, total: null }, action: 'x' });
+  assert.match(t, /no fixed length/);
+  assert.doesNotMatch(t, /THE END IS DUE/);
+  assert.match(renderRequest({ kind: 'turn', world, hero, action: 'x' }), /no fixed length/); // verzoek zonder pacing
+});
+
 const answer = { title: '', narration: 'Je rent.', choices: ['a', 'b', 'c'] };
 
 test('classify: structured output is ok', () => {

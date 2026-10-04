@@ -6,7 +6,14 @@ export type World = {
   tones: string[]; // 1 of 2 tonen
   toneText: string; // eigen toon in eigen woorden
   wishes: string; // extra wensen, bv. "geen spinnen"
+  /** Lengte van de verteltekst per beurt. undefined = avontuur van vóór deze keuze (normaal). */
+  textLength?: TextLength;
+  /** Hoe lang het avontuur duurt voor het een einde krijgt. undefined = avontuur van vóór deze keuze (onbeperkt). */
+  arc?: Arc;
 };
+
+export type TextLength = 'kort' | 'normaal' | 'uitgebreid';
+export type Arc = 'kort' | 'middel' | 'lang' | 'onbeperkt';
 
 export type Hero = {
   name: string;
@@ -164,4 +171,6 @@ export type TurnRequest = {
   earlierPictures?: string[];
   action: string | null;
   roll: number;
+  /** Waar het verhaal staat: nummer van de beurt die nu geschreven wordt (0 = opening) en de gekozen lengte (null = onbeperkt). */
+  pacing: { turn: number; total: number | null };
 };
