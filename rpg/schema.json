@@ -8,7 +8,7 @@
     },
     "narration": {
       "type": "string",
-      "description": "Dutch narration at the length the request gives under 'narration length per turn', short paragraphs separated by a blank line. No numbers or game terms."
+      "description": "Dutch narration, at most the ceiling the request gives under 'narration length per turn' and usually much shorter: one to three short sentences for a small action (eating, resting, looking around), a short paragraph or two for a normal action, the full ceiling only for big moments. Short paragraphs separated by a blank line. No numbers or game terms."
     },
     "choices": {
       "type": "array",

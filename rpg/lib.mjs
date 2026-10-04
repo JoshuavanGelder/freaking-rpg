@@ -11,9 +11,9 @@ const clean = (v, max = 600) => String(v ?? '').replace(/\s+/g, ' ').trim().slic
 
 /** Lengte van de verteltekst per beurt, zoals de speler hem kiest. */
 const NARRATION = {
-  kort: '30–70 words, one or two short paragraphs. Brief and punchy: what happens and what the player decides, nothing more',
-  normaal: '60–120 words',
-  uitgebreid: '110–200 words, room for atmosphere and detail',
+  kort: 'at most 70 words, one or two short paragraphs (the ceiling for big moments). Brief and punchy: what happens and what the player decides, nothing more',
+  normaal: 'at most 120 words (the ceiling for big moments)',
+  uitgebreid: 'at most 200 words (the ceiling for big moments), room for atmosphere and detail when the moment deserves it',
 };
 
 /** Regels over de lengte van het avontuur: waar staan we en moet het einde nu komen? */
@@ -73,6 +73,7 @@ export function renderRequest(r) {
   if (clean(w.toneText)) lines.push(`- the player's own tone description: ${clean(w.toneText)}`);
   if (clean(w.wishes)) lines.push(`- the player's wishes: ${clean(w.wishes)}`);
   lines.push(`- narration length per turn: ${NARRATION[w.textLength] ?? NARRATION.normaal}`);
+  lines.push('- that is a ceiling, not a target: small actions (eating, resting, looking around, a short exchange) get one to three short sentences (see "Size the text to the moment")');
   lines.push('');
   lines.push('## Hero');
   lines.push(`- name: ${clean(h.name, 80) || 'onbekend'}`);

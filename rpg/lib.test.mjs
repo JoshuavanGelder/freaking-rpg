@@ -22,6 +22,11 @@ test('start-verzoek: wereld, held en beginstaat, geen verhaal of actie', () => {
   assert.doesNotMatch(t, /The player does now/);
 });
 
+test('verzoek: de lengte is een plafond, kleine acties blijven kort', () => {
+  const t = renderRequest({ kind: 'start', world, hero });
+  assert.match(t, /ceiling, not a target: small actions \(eating, resting/);
+});
+
 test('beurt-verzoek: staat, recente beurten en actie', () => {
   const t = renderRequest({
     kind: 'turn',
@@ -58,9 +63,9 @@ test('ongeldige worp wordt 10', () => {
 });
 
 test('lengte van de tekst: normaal is de standaard, kort en uitgebreid kloppen', () => {
-  assert.match(renderRequest({ kind: 'start', world, hero }), /narration length per turn: 60–120 words/);
-  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'kort' }, hero }), /narration length per turn: 30–70 words/);
-  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'uitgebreid' }, hero }), /narration length per turn: 110–200 words/);
+  assert.match(renderRequest({ kind: 'start', world, hero }), /narration length per turn: at most 120 words/);
+  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'kort' }, hero }), /narration length per turn: at most 70 words/);
+  assert.match(renderRequest({ kind: 'start', world: { ...world, textLength: 'uitgebreid' }, hero }), /narration length per turn: at most 200 words/);
 });
 
 test('lengte van het avontuur: opening, onderweg, laatste beurten en het einde', () => {

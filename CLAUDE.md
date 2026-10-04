@@ -71,7 +71,8 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   zonder schade of heling; niet bij de start, niet bij game over. `geen` haalt het weg. Staat in het verzoek als
   `natural regeneration (regen)`.
 - **Lengte** (`world.textLength`, `world.arc`, gekozen op het startscherm, opgeslagen per avontuur): tekst per beurt kort
-  (30–70 woorden) / normaal (60–120, standaard) / uitgebreid (110–200); avontuur kort (±12 beurten) / middel (±25,
+  (max. 70 woorden) / normaal (max. 120, standaard) / uitgebreid (max. 200): een plafond, geen doel; kleine acties (eten, rusten,
+  rondkijken) krijgen 1–3 zinnen (prompt: Size the text to the moment, aanleiding: een hap eten kreeg een hele pagina); avontuur kort (±12 beurten) / middel (±25,
   standaard) / lang (±50) / onbeperkt (de speler beslist). De woordaantallen en eindregels staan in `rpg/lib.mjs`
   (`NARRATION`, `pacingLines`); het verzoek bevat `pacing {turn, total}` (opening = 0). Bij beurt ≥ total zegt het
   verzoek "THE END IS DUE" en eindigt de verteller met `gameOver: true`; bij onbeperkt rondt hij nooit zelf af.
