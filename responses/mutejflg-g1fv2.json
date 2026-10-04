@@ -1,0 +1,48 @@
+{
+ "id": "mutejflg-g1fv2",
+ "finishedAt": "2026-10-04T05:50:39.706Z",
+ "durationMs": 17869,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je vuist om de rafel. Al het zwakke in je, de honger, de gebroken ribben, het bloed op je tong, duw je opzij. Er blijft maar één ding over: je wil.\n\nJe trekt.\n\nDe rode draad zingt als een gespannen snaar. Ilses hand schiet naar haar keel. Het lusje glijdt niet meer weg. Het sluit zich, strak en zeker, en je voelt haar naam in je handpalm vastklikken als een slot.\n\nZe zakt door één knie. Haar grijze ogen kijken je aan, niet woedend. Bang. \"Garrel,\" fluistert ze. \"Stop.\"\n\nDe reus blijft staan, halverwege de steeg. Het blauwe licht in zijn handen flakkert onzeker. Hij kijkt van haar naar jou en terug.\n\n\"Prachtig, kind,\" spint de meester in je borst. \"Zij gehoorzaamt nu. Zeg het woord en ze legt haar reus zelf neer. Of laat haar je naar de kraaienkamer brengen.\"\n\nJe hart bonkt traag en zwaar. Je weet niet hoe lang je nog overeind blijft.",
+  "choices": [
+   "Beveel Ilse Garrel uit te schakelen",
+   "Laat Ilse je naar de kraaienkamer brengen",
+   "Vraag Ilse om je te genezen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst. Hij offerde de spreukenmaker voor zijn arm en oude magie; een knoop om zijn hart laat de meester nooit zwijgen. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren, de Blinde Abt (wil de steen). Ware naam meester onder de troon in de kraaienkamer; knopenboek onder de werkbank. In de steeg knoopte Joshua, zwaargewond, met al zijn wil Ilses naam vast: zij moet hem nu gehoorzamen. Haar reus Garrel staat aarzelend in de steeg.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Night alley, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling and pulling a blazing taut red thread with a clenched fist; it wraps the throat of a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, sinking to one knee. Behind, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light, frozen.",
+   "fallback": "Narrow night alley behind a soot-stained workshop, wet cobblestones gleaming in moonlight, a faint red glowing thread hanging in the misty air, dark open window above."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
