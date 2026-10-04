@@ -1,0 +1,48 @@
+{
+ "id": "muthup21-ij78d",
+ "finishedAt": "2026-10-04T07:23:21.722Z",
+ "durationMs": 14466,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Wie ben je?\" vraag je. \"En wat wil je van mij?\"\n\nZe lacht, een droog geluid als knappend riet. \"Namen geef ik niet weg, jongen. Dat heb ik van jou geleerd. Noem me maar Moeder Veen. De laatste die ze niet verbrand hebben.\"\n\nZe schuifelt een stap dichterbij. Vorrin trekt aan de sjaal, maar ze kijkt niet eens om.\n\n\"Wat ik wil? Jij hebt een boek gestolen dat van ons was. Jij bindt namen met knopen die mijn zusters bedachten. Slordig. Te strak. Ze gaan rotten.\" Ze tikt met het rode draadje tegen haar lip. \"Ik kan je leren hoe het echt moet. Het lot binden, niet alleen mensen. Dan buigt niet alleen Velmoor. Dan buigt alles.\"\n\nHaar zwarte ogen glinsteren. \"Maar ik wil iets terug. De looiersbuurt laat je met rust. En de steen. Die geef je aan mij.\"\n\nIn je borst trilt de fluisterende steen, alsof de meester daarbinnen schreeuwt.",
+  "choices": [
+   "Probeer haar ware naam af te dwingen",
+   "Onderhandel: les eerst, dan de prijs",
+   "Laat Vorrin haar laatste draad afpakken"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is nu magiër op de kraaientroon van de Toren in Velmoor, in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen (met meester Aurek Valdemoor), offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; Velmoor is bang. Een oude Knoopmoeder uit het veen, 'Moeder Veen', ving kraaien in de looiersbuurt; die betaalt nog niet. Vorrin bracht haar gebonden naar de troonzaal. Ze noemt Joshua's knopen slordig, biedt aan hem het lot te leren binden, maar eist dat hij de looiersbuurt met rust laat en haar de steen geeft. Ze houdt nog één rood draadje vast.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "character",
+   "prompt": "Candlelit stone throne hall at midnight, elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, holding a red thread to her lips, facing a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with high silver-embroidered collar, heavy dark wool mantle, on a crow-carved throne.",
+   "fallback": "Candlelit cold stone throne hall at midnight, black crow-carved throne, long shadows, a single red thread lying on the stone floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
