@@ -1,0 +1,48 @@
+{
+ "id": "muteojjs-mb5nz",
+ "finishedAt": "2026-10-04T05:54:38.184Z",
+ "durationMs": 16189,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Laat hem knielen,\" zeg je.\n\nJe hoeft niet hard te praten. De rode draad om Ilses keel trekt zich een fractie strakker. Ze sluit haar ogen, en als ze ze weer opent is haar stem kalm. Ijzig kalm.\n\n\"Garrel. Kniel.\"\n\nDe reus verroert zich niet. Zijn kaak maalt. Het blauwe licht flikkert terug in zijn vuisten, een zwaar gezoem dat de plassen op de kasseien doet rimpelen. \"Vrouwe, dit bent u niet.\"\n\n\"Kniel,\" herhaalt ze. Haar stem breekt even. \"Alsjeblieft.\"\n\nDat ene woord doet het. Langzaam, met een geluid als een vallende boom, zakt Garrel op zijn knieën. De stenen kraken onder zijn gewicht. Het blauwe licht dooft. Maar zijn ogen laten de jouwe niet los, en daarin brandt iets wat nooit zal knielen.\n\nIn je borst lacht de meester zacht. \"Zie je hoe makkelijk het gaat? Zo begint een koninkrijk, kind. Met één reus op zijn knieën.\"\n\nBoven de daken krast de kraai opnieuw, dichterbij nu.",
+  "choices": [
+   "Leg ook een knoop om Garrel",
+   "Laat Ilse je naar de kraaienkamer brengen",
+   "Haal eerst het knopenboek uit de werkplaats"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen; de Orde van de Kraai jaagt op hem. Hij is de kroonkraai één dienst schuldig. Een splinter van de eerste meester, die een kroon en de wereld wil, woont in zijn borst en zwijgt nooit. Hij offerde de spreukenmaker voor oude magie. Orde-leiders: Vorrin (wil hem dood), Ilse van de Toren, de Blinde Abt (wil de steen). Ware naam meester onder de troon in de kraaienkamer; knopenboek onder de werkbank. In de steeg knoopte Joshua Ilses naam vast: zij gehoorzaamt hem, genas hem, en liet haar reus Garrel knielen. Garrel gehoorzaamt Ilse, maar haat Joshua. De kraai cirkelt dichterbij.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Night alley, wet cobblestones, moonlight. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, standing tall holding a glowing red thread leading to a woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch. Before them kneels a man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, glaring. A crow on the rooftop.",
+   "fallback": "Narrow night alley behind a soot-stained workshop, wet cobblestones gleaming in moonlight, puddles, a lone crow silhouetted on the rooftop against a cloudy sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
