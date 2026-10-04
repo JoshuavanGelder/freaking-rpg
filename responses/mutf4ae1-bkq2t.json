@@ -1,0 +1,56 @@
+{
+ "id": "mutf4ae1-bkq2t",
+ "finishedAt": "2026-10-04T06:06:54.780Z",
+ "durationMs": 18605,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je vingers volgen de groeven. De letters branden onder je huid, alsof iemand ze van binnenuit nog steeds uitsnijdt. Je opent je mond.\n\n\"Aurek Valdemoor.\"\n\nDe naam valt in de kamer als een steen in diep water. Honderden kraaien heffen tegelijk hun koppen. De kaarsen buigen naar je toe, allemaal, alsof een adem ze trekt.\n\nIn je borst schreeuwt de meester. Het is geen spot meer, geen gefluister. Het is een oude koning die voelt hoe een halsband zich om zijn keel sluit. Je voelt hem kronkelen achter je ribben en dan stil worden. Gebonden. Zijn kracht ligt opeens open voor je, een donkere put zonder bodem.\n\n\"Ja, meester,\" fluistert hij. Het woord smaakt hem bitter.\n\nDe Blinde Abt draait zich eindelijk om. Zijn glimlach is verdwenen. Het zilverdraad in zijn oogleden gloeit.\n\n\"Wat heb je gedaan, jongen,\" zegt hij zacht. \"Die naam heb ik vierhonderd jaar bewaakt.\"\n\nBoven je hoofd spreidt de kroonkraai zijn vleugels. Ilse staat roerloos te wachten op jouw bevel.",
+  "choices": [
+   "Knoop nu de naam van de Abt",
+   "Beveel de meester de Abt te breken",
+   "Vraag de Abt wat hij bewaakte"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Vind de ware naam van de meester"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Naam van de meester",
+     "kind": "kracht",
+     "detail": "De meester in je borst moet je gehoorzamen en zijn kracht delen."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen en het knopenboek met de kroonknoop. Een splinter van de eerste meester woont in zijn borst. Hij offerde de spreukenmaker voor oude magie. Ilse van de Toren is door een knoop aan hem gebonden; haar reus Garrel knielde maar haat Joshua. Vorrin wil hem dood. De kroonkraai eist: knoop de Blinde Abt, de troon moet leeg blijven. In de kraaienkamer las Joshua de ware naam van de meester hardop: Aurek Valdemoor. Nu is de meester aan hem gebonden en moet hem gehoorzamen. De Blinde Abt, die de naam eeuwen bewaakte, keert zich vijandig naar hem; de kraai spreidt zijn vleugels.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Vast round underground chamber, hundreds of crows raising their heads on stone ledges, candle flames bending toward a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, crouched behind a black wooden throne, dark red light glowing from his chest. An elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with glowing silver thread, plain white monk's robe, turning toward him.",
+   "fallback": "Vast round underground chamber with a black wooden throne, hundreds of stone ledges, candle flames bending sideways, dark red glow, damp stone walls."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
