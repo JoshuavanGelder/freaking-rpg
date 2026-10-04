@@ -1,0 +1,48 @@
+{
+ "id": "mutg1xef-fa6cb",
+ "finishedAt": "2026-10-04T06:33:13.739Z",
+ "durationMs": 27636,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Val aan,\" fluister je. Je trekt aan beide knopen tegelijk, en ver in je borst voel je ze strak trekken als natte touwen.\n\nIlse heft haar hand. Zilver licht schiet uit haar broche, een kooi van dunne draden die om Vorrin heen slaat. De Abt zegt niets. Hij ademt alleen uit, en de straat wordt stil. Zo stil dat de grijze veren in Vorrins hand verdorren tot as.\n\nVorrin wankelt. Voor het eerst zie je angst in die bleke ogen. \"Ilse,\" sist hij. \"Jij ook? Aan een touw, als een hond?\"\n\n\"Ik heb geen keus,\" zegt ze vlak. Haar kaak trilt van woede, maar niet om hem.\n\nVorrin rukt zich los. De zilveren draden knappen, één snijdt over zijn wang. Hij springt achteruit, en zijn grijze mantel wordt een wolk van veren die opstijgt over de daken. Door de kraaienogen zie je waar hij heen vliegt: naar de Toren. Naar de oude wilg.\n\nJe zakt tegen de deur. Je benen willen niet meer.",
+  "choices": [
+   "Achtervolg hem naar de wilg, nu meteen",
+   "Stuur Ilse en de Abt achter hem aan",
+   "Laat de Abt eerst je wonden helen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu opgesloten in de steen. Joshua zit op de zwarte kraaientroon en ziet door kraaienogen. Garrel knielde onder dwang en haat hem. Vorrin Grauwveer wil het knopenboek; zijn ware naam ligt begraven onder de oude wilg bij de Toren. Joshua verjoeg Vorrins mannen maar raakte zwaargewond. Op zijn bevel vielen Ilse (die haar dwang haat) en de Abt Vorrin aan; Vorrin vluchtte als een wolk veren naar de Toren, naar de wilg met zijn naam. Joshua is uitgeput.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Narrow wet cobblestone street at night, woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, casting a cage of glowing silver threads around a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, who bursts into a cloud of grey feathers. Beside her an elderly man in his sixties, gaunt, pale bald head, eyes sewn shut with silver thread, plain white monk's robe. Crows on rooftops.",
+   "fallback": "Narrow wet cobblestone street at night, silver light glimmering between old houses, drifting grey feathers in the air, crows silhouetted on rooftops, a distant tower against the dark sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
