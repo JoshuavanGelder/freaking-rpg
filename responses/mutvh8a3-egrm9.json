@@ -1,0 +1,50 @@
+{
+ "id": "mutvh8a3-egrm9",
+ "finishedAt": "2026-10-04T13:44:54.834Z",
+ "durationMs": 21954,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Ik zal het je laten zien,\" zeg je tegen de boer. Je sluit je ogen.\n\nDe kraaien waaieren uit over de vlakte. Door hun ogen zie je rijp op de korenaren, al bij daglicht. Bij elke akker staat een paaltje met een gouden schijf erop, dof en koud. Zo stroomde zijn vuur dus over het land: door die schijven.\n\nDan zie je de lijnen. Dunne gouden draden lopen van de schijven naar de heuvels, naar de grot. Ze trillen. Iemand trekt eraan.\n\nEen kraai vliegt te dichtbij. Een witte flits, en het beeld is weg. Je voelt een steek achter je ogen en wankelt.\n\n\"Hij zuigt de laatste warmte terug,\" fluister je. De boer kijkt je aan, opeens bleek.",
+  "choices": [
+   "Knoop de gouden draden aan de troon",
+   "Trek met Vorrin naar de grot",
+   "Vraag de priesters naar de schijven"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. De gewonde Zonnevorst vluchtte naar een grot in de heuvels. In het gouden paleis koos de zonnetroon Joshua; de priesters knielen. Een boer waarschuwde: zonder zonnevuur bevriest de oogst over drie nachten. Via kraaien ontdekte Joshua gouden schijven bij de akkers, met draden naar de grot: de Zonnevorst trekt de laatste warmte terug. Een kraai werd door een witte flits geraakt.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Aerial view through a crow's eyes over frosted golden wheat fields at dawn, dull golden discs on wooden posts at each field, thin glowing golden threads stretching across the land toward a dark cave in distant hills, cold eerie light.",
+   "fallback": "Frosted wheat fields at dawn with golden discs on wooden posts, faint golden threads leading toward a cave in distant hills."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
