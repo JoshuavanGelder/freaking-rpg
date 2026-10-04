@@ -1,0 +1,50 @@
+{
+ "id": "mutwywee-bfmrq",
+ "finishedAt": "2026-10-04T14:26:35.656Z",
+ "durationMs": 16917,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je stapt uit de schaduw. De Zonnevorst schokt op, zijn gouden ogen branden in het grauwe gezicht.\n\n\"Je kunt blijven regeren,\" zeg je. \"Onder mij. Maar je luistert altijd naar mij. Dat leg ik vast met een knoop.\"\n\nHij lacht, droog als as. \"Een kraaienjongen die een zon wil temmen.\" Toch knikt hij. \"Leg je knoop.\"\n\nJe reikt naar zijn draad. Op dat moment rukt hij aan de lichtknoop. Een witte steek slaat door je web, je knopen gloeien heet en je knie raakt de stenen vloer. Vorrin trekt zijn mes.\n\n\"Een belofte bindt twee kanten,\" sist de Zonnevorst. \"Zweer dat jij mij nooit doodt, en ik buig. Weiger, en ik laat alle draden los. Dan sterft het land vannacht.\"\n\nBuiten kraakt de vorst.",
+  "choices": [
+   "Zweer het en leg de dubbele knoop",
+   "Grijp met de Lotschaar zijn lichtknoop",
+   "Laat Vorrin hem afleiden, bind dan zijn naam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. In het gouden paleis koos de zonnetroon Joshua. Zonder zonnevuur bevriest de oogst binnen drie nachten. In de grot bood Joshua de Zonnevorst aan onder hem te regeren, gebonden door een knoop. De Zonnevorst sloeg terug via de lichtknoop en eist nu een wederzijdse eed: Joshua mag hem nooit doden, anders laat hij alle draden los en sterft het land vannacht. Vorrin staat klaar met zijn mes.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave lit by a glowing knot of golden threads, a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes, gripping the knot; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, on one knee; behind him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, holding a knife.",
+   "fallback": "Dark rocky cave interior lit by a glowing knot of hundreds of golden threads, frost creeping in at the entrance, cold blue and gold light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
