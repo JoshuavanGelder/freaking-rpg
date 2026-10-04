@@ -1,0 +1,56 @@
+{
+ "id": "mutmibey-584re",
+ "finishedAt": "2026-10-04T09:33:45.283Z",
+ "durationMs": 17828,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je veegt je werkbank leeg en begint. Je handen bewegen sneller dan je gedachten kunnen bijhouden: titaniumvezels, een weefsel van grafeen, microcircuits zo fijn als haar. De Werkelijkheidssteen vult de gaten die geen fabriek op aarde kan maken.\n\nDan de laatste stap. Je houdt de paarse Krachtsteen boven het weefsel en de Ziel- en Geeststeen ernaast. Je laat ze één ding afspreken: alleen jij mag ze aanraken. Een golf van licht slaat door het lab, de ramen rinkelen, en dan is het stil.\n\nVoor je hangt een strak, donker pak, met zes kassen langs de mouwen en de borst. Eén voor één klikken de stenen op hun plek. Als je het aantrekt, voelt het als een tweede huid. Je balt je vuist en de lucht om je knokkels trilt.\n\nJe telefoon licht op. Mara Valk: 'Professor, er komt iets uit de scheur. Schepen. Tientallen. Ze vliegen richting de kust.'\n\nDe Ruimtesteen op je pols gloeit, klaar om je overal heen te brengen.",
+  "choices": [
+   "Teleporteer direct naar de scheur",
+   "Vlieg eerst naar Mara's commandocentrum",
+   "Gebruik de Tijdsteen om vooruit te kijken"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [
+    "Stenenpak"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Stenenpak",
+     "kind": "kracht",
+     "detail": "Draagt alle stenen veilig; niemand anders kan ze aanraken."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen in zijn lab aan het IJ in Amsterdam. Directeur Mara Valk van het Europees Ruimteagentschap vroeg zijn hulp: boven de Noordzee is een violette scheur in de lucht. Met de Werkelijkheidssteen liet hij een oud patent verkopen. Hij bouwde een strak donker pak waarin de zes stenen zitten; alleen hij kan ze aanraken. Mara meldt nu dat tientallen schepen uit de scheur komen en richting de kust vliegen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones in blue, red, purple, yellow, green and orange set along the sleeves and chest, clenching his fist in a high-tech waterfront lab, light rippling around his knuckles, violet sky through the windows.",
+   "fallback": "A high-tech waterfront laboratory at dawn, cluttered workbench with glowing tools and fibers, large windows showing a violet shimmering sky over calm water."
+  },
+  "heroLook": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest.",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
