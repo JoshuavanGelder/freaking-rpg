@@ -1,0 +1,58 @@
+{
+ "id": "mutlwlf4-tcpnp",
+ "finishedAt": "2026-10-04T09:16:49.924Z",
+ "durationMs": 16367,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je loopt de trap af, één hand tegen de koude muur. Elke trede steekt in je ribben. Vorrin volgt zwijgend.\n\nIn de hal hangt de geur van zout en zonverbrande huid. De wachters staan in een wijde kring, met getrokken zwaarden die niemand durft te gebruiken. In het midden staat een kooi van wit goud, met een doek van karmozijn erover.\n\nIets ademt eronder. Lang en nat.\n\nJe trekt de doek weg.\n\nEen meisje van een jaar of tien zit opgerold op de bodem. Haar huid is doorschijnend als was, en onder die huid lopen gouden draden die zacht gloeien. Het zijn lotdraden, ruw in haar vastgeknoopt, slordig, gestolen. Ze huilt zonder geluid, en toch vult haar zucht de hele hal.\n\nAan de tralies hangt een zegel van de Zonnevorst. Je ziet meteen wat het is. Een proeve. Een leerling. Zo maakt hij knopen.\n\n\"Wat moet ik met haar?\" fluistert een wachter.\n\nHet meisje kijkt op. Haar ogen zijn helemaal goud.",
+  "choices": [
+   "Maak de kooi open en spreek haar aan",
+   "Onderzoek de gestolen draden in haar",
+   "Vraag Aurek wat de Zonnevorst bedoelt"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Red het gouden meisje",
+     "detail": "Een kind vol gestolen lotdraden, geschenk van de Zonnevorst."
+    }
+   ],
+   "completeQuests": [],
+   "location": "De hal van de Toren",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (ware naam Tevin Aslo). Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen; zij leert pas weer iets als hij haar iets nieuws toont. De Zonnevorst, onsterfelijke spreukenmaker met rafelende lotdraad, wil Joshua als knopenmaker en steekt bij volle maan de rivier over. Oude magie werkt alleen goed door draden met toestemming. Vorrin weigert toestemming tot Joshua bewijst anders te zijn. Het 'geschenk' van de Zonnevorst is een meisje van tien in een gouden kooi, vol ruw ingeknoopte gestolen lotdraden, met gouden ogen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Torchlit stone hall, a white-gold cage with a crimson cloth pulled away, inside a ten-year-old girl with waxy translucent skin and glowing golden threads beneath it, fully golden eyes, curled up; before it a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots; guards in a wide circle",
+   "fallback": "Torchlit stone hall of a dark tower, an ornate white-gold cage in the center, crimson cloth on the floor, flickering shadows on the walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Het gouden meisje",
+    "look": "girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift"
+   }
+  ]
+ },
+ "model": "opus"
+}
