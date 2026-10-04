@@ -1,0 +1,349 @@
+{
+ "id": "mutjtotq-dc6rr",
+ "createdAt": "2026-10-04T08:18:17.198Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots"
+ },
+ "state": {
+  "hp": 37,
+  "maxHp": 46,
+  "gold": 26,
+  "xp": 1300,
+  "level": 14,
+  "location": "Binnenplaats van de Toren",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   },
+   {
+    "name": "Lotbinden",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel",
+   "Grijze shawl van de spreukenmaker",
+   "Knopenboek",
+   "Loden kistje met Vorrins naam",
+   "Garrels zilveren kraaienspeld",
+   "Zwarte fluwelen mantel",
+   "Brief van de Zonnevorst"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": true
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": true
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": true
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de eis van de meester",
+    "detail": "De meester wil de spreukenmaker, of hij neemt meer.",
+    "done": true
+   },
+   {
+    "title": "Knoop de drie leiders van de Orde",
+    "detail": "Vorrin Grauwveer, Ilse van de Toren en de Blinde Abt.",
+    "done": true
+   },
+   {
+    "title": "Ontcijfer het knopenboek",
+    "detail": "Waarom staat jouw naam op de laatste bladzijde?",
+    "done": true
+   },
+   {
+    "title": "Vind de ware naam van de meester",
+    "detail": "Hij staat gekrast onder de troon in de kraaienkamer.",
+    "done": true
+   },
+   {
+    "title": "Haal het knopenboek terug",
+    "detail": "Verstopt onder de werkbank van de spreukenmaker.",
+    "done": true
+   },
+   {
+    "title": "Knoop de Blinde Abt in de kraaienkamer",
+    "detail": "De kraai eist het vannacht; de troon moet leeg blijven.",
+    "done": true
+   },
+   {
+    "title": "Beslis over de troon van kraaien",
+    "detail": "De kraai buigt als de meester in de steen gaat.",
+    "done": true
+   },
+   {
+    "title": "Neem de troon van kraaien in",
+    "detail": "Ga zitten en laat Velmoor buigen.",
+    "done": true
+   },
+   {
+    "title": "Versla Vorrin Grauwveer",
+    "detail": "Vorrin komt met zijn mannen op de kapel af.",
+    "done": true
+   },
+   {
+    "title": "Graaf Vorrins naam op onder de wilg",
+    "detail": "Zijn ware naam ligt begraven onder de oude wilg bij de Toren.",
+    "done": true
+   },
+   {
+    "title": "Heers over de Orde en Velmoor",
+    "detail": "Maak van de Toren je zetel en regeer de stad.",
+    "done": true
+   },
+   {
+    "title": "Breek of win Garrel",
+    "detail": "Garrel weigert als enige te knielen voor jou.",
+    "done": true
+   },
+   {
+    "title": "Ontmasker de oude vrouw in de smidse",
+    "detail": "Een gekapte oude vrouw zag jou door de kraaien heen.",
+    "done": true
+   },
+   {
+    "title": "Laat de looiersbuurt belasting betalen",
+    "detail": "De looiersbuurt weigerde te betalen aan de Toren.",
+    "done": true
+   },
+   {
+    "title": "Leer meer lotdraden van Moeder Veen",
+    "detail": "Zij leert alleen wie haar zonder dwang benadert.",
+    "done": false
+   },
+   {
+    "title": "Ontmoet de gezanten uit het zuiden",
+    "detail": "Gezanten vragen naar de nieuwe heer van de Toren.",
+    "done": true
+   },
+   {
+    "title": "Ontdek wat de Zonnevorst wil",
+    "detail": "Saria van Kesh draagt een levend rood flesje en dreigt.",
+    "done": false
+   },
+   {
+    "title": "Vang de gevluchte wachter van Kesh",
+    "detail": "Hij rent naar de Zonnevorst met nieuws over jou.",
+    "done": true
+   },
+   {
+    "title": "Het ultimatum van de volle maan",
+    "detail": "Laat Saria vrij of Velmoor brandt van de koorts.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Door magische training ben je taaier, maar nog snel uitgeput."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   },
+   {
+    "name": "Oude magie",
+    "kind": "kracht",
+    "detail": "De dikke, oude magie van de spreukenmaker stroomt nu door je."
+   },
+   {
+    "name": "Ilses knoop",
+    "kind": "kracht",
+    "detail": "Ilses knoop zit nu om haar wil zelf en glijdt nooit los."
+   },
+   {
+    "name": "Naam van de meester",
+    "kind": "kracht",
+    "detail": "De meester zit opgesloten in de steen en moet je gehoorzamen."
+   },
+   {
+    "name": "Knoop van de Abt",
+    "kind": "kracht",
+    "detail": "De Blinde Abt is door zijn ware naam aan jou gebonden."
+   },
+   {
+    "name": "Kraaienogen",
+    "kind": "kracht",
+    "detail": "Je ziet door de ogen van alle kraaien van Velmoor."
+   },
+   {
+    "name": "Knoop van Vorrin",
+    "kind": "kracht",
+    "detail": "Vorrin Grauwveer is door zijn ware naam Tevin Aslo aan jou gebonden."
+   },
+   {
+    "name": "Eerste lotdraad",
+    "kind": "kracht",
+    "detail": "Je kunt één dunne draad van het lot een klein beetje buigen."
+   }
+  ]
+ },
+ "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en een loden kistje met de fluisterende steen (meester Aurek Valdemoor) en het koortsflesje van de Zonnevorst, dat zijn hartslag kent en nu ook zijn nieuwe ritme leerde. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo), en trainde met hen zijn lichaam taaier. Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad. Gezant Saria van Kesh zit in de kerker; één wachter viel dood van de stadsmuur. De Zonnevorst eist Saria's vrijlating vóór de volle maan, over twee nachten, anders brandt Velmoor van de koorts.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  },
+  {
+   "name": "Ilse van de Toren",
+   "look": "woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch"
+  },
+  {
+   "name": "Garrel",
+   "look": "man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with heavy blue light"
+  },
+  {
+   "name": "De kroonkraai",
+   "look": "ancient male crow of unknown age, unusually large black bird, glossy black feathers, sharp grey beak, piercing intelligent eyes, silver ring around one leg"
+  },
+  {
+   "name": "De Blinde Abt",
+   "look": "elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe"
+  },
+  {
+   "name": "Vorrin Grauwveer",
+   "look": "man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes"
+  },
+  {
+   "name": "De oude vrouw in de smidse",
+   "look": "elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf"
+  },
+  {
+   "name": "Saria van Kesh",
+   "look": "woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Sluit Saria op in de kerkers en excecuteer de wachter. Gebruik de leiders je eigen magie en de kraaien",
+   "narration": "\"Grijp haar,\" zeg je. Je trekt aan alle knopen tegelijk.\n\nIlse heft haar handen, en grijs licht slaat als een net om Saria heen. Door de deur stormt Vorrin binnen, zijn asgrijze sjaal wapperend, een mes al in zijn hand. Buiten krijsen honderd kraaien en storten zich door het open raam naar binnen.\n\nDe eerste wachter verdwijnt onder een zwarte wolk van vleugels. Je rode wind tilt hem op en smijt hem tegen de stenen muur. Hij staat niet meer op.\n\nMaar de tweede is sneller dan je dacht. Zijn kromzwaard flitst langs je arm, heet als vuur. Je wankelt; je zwakke lijf gehoorzaamt een tel te laat. Hij springt op de vensterbank, hakt twee kraaien uit de lucht en laat zich vallen, de daken over, naar het zuiden.\n\nSaria verzet zich niet eens in Ilses net. Ze lacht zacht terwijl Vorrin haar naar de kerkers sleurt.\n\n\"Hij rent naar de Zonnevorst, heer,\" roept ze over haar schouder. \"En nu weet die hoe u bloedt.\"",
+   "picture": "Stone waiting hall in a dark tower, a swarm of black crows pouring through a tall window, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, red wind swirling from his hand, clutching his arm, a guard in a sand-colored mantle leaping out of the window, dramatic morning light"
+  },
+  {
+   "action": "Achtervolg de wachter met de kraaien de schaduwstap",
+   "narration": "Je sluit je ogen, en Velmoor gaat open als een boek. Honderd kraaienogen tegelijk: daken, goten, natte pannen. Daar. Een vlek zandkleur die over de nok van de leerlooierij rent, zijn arm tegen zijn borst geklemd.\n\nJe stapt de schaduw van de vensterbank in. Het licht verdwijnt, de wereld wordt koud en stil, en je komt eruit in de schaduw van een schoorsteen, drie straten verder. Nog een stap. Nog een. Je arm klopt bij elke sprong en je adem schuurt in je longen, maar de kraaien wijzen je de weg.\n\nBij de zuidmuur haalt hij de laatste dakrand. Daar stap je uit het donker, recht voor hem.\n\nHij remt zo hard dat de pannen onder zijn laarzen wegglijden. Boven jullie sluiten de kraaien een zwarte kring. Hij kijkt naar de muur, naar jou, naar het kromzwaard in zijn bevende hand.\n\n\"Ze zal je toch vinden,\" hijgt hij. \"De koorts vergeet niets.\"\n\nAchter hem gaapt de diepte van de stadsmuur.",
+   "picture": "Rooftop atop a city wall at grey midday, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, stepping out of a swirl of shadow, facing a panting guard in a sand-colored mantle with a curved sword, ring of black crows circling overhead, dark city roofs below"
+  },
+  {
+   "action": "Smijt hem met rode wind van de muur",
+   "narration": "Je zegt niets. Je opent alleen je hand.\n\nDe oude magie brult omhoog uit je borst, en de rode wind slaat als een vuist tegen zijn borstkas. Hij heft nog zijn kromzwaard, alsof staal wind kan snijden. Dan tillen zijn laarzen van de pannen. Zijn zandkleurige mantel klappert, zijn mond gaat open, maar de wind neemt zijn schreeuw mee.\n\nHij valt. Lang. Een doffe klap, diep beneden in de droge gracht. Dan alleen nog de kraaien, die als zwarte as naar beneden dwarrelen om te kijken.\n\nJe knieën geven half mee. Je arm brandt, je hart bonkt te snel, en heel even denk je aan het rode spul in het lood, dat dat ritme nu kent.\n\nDoor de ogen van een kraai zie je hem liggen. Uit zijn gordel is een klein koperen kokertje gerold, verzegeld met rode was.\n\nAchter je, op de muur, klinken laarzen. Stadswachters. Ze hebben het gezien. Ze blijven op afstand staan, hun speren omlaag, hun gezichten wit van angst en haat.",
+   "picture": "Atop a grey stone city wall at overcast midday, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, blasting a roaring red wind from his open hand, a guard in a sand-colored mantle flung backward off the wall edge, black crows swirling, dramatic low angle"
+  },
+  {
+   "action": "Laat de kraaien de koker pakken en ga terug naar de troon om te helen",
+   "narration": "Je fluit niet eens. Je denkt het alleen, en beneden in de gracht stijgt een kraai op, het koperen kokertje in zijn snavel. Het rode zegel glimt als een druppel. Hij landt op je schouder en laat het in je hand vallen. Het is warm, alsof iemand het net nog vasthield.\n\nDe stadswachters wijken achteruit wanneer je langs ze loopt. Niemand zegt iets. Eén van hen spuugt op de stenen, maar pas nadat je hem voorbij bent.\n\nJe stapt de schaduwen in, en straat na straat glijdt koud langs je heen, tot je op de kraaientroon neerzakt. Ilse wacht al. Zonder een woord legt ze haar koele handen om je arm. Grijs licht sluit de snee, langzaam, en het branden zakt weg tot een doffe pijn. Je hart wordt rustig.\n\nOnder je bed klopt het loden kistje nog steeds. Sneller nu. Alsof het ergens op wacht.\n\nHet kokertje ligt in je schoot. Op het zegel: een zon met een oog in het midden."
+  },
+  {
+   "action": "Breek het zegel en lees de boodschap",
+   "narration": "Je duwt je duim tegen de rode was. Hij is warm, en bij de eerste barst kruipt er iets omhoog langs je vingers: een dunne hitte die je pols zoekt, je hartslag, je naam.\n\nJe klemt je kaken op elkaar. Je wil wordt koud en hard als ijzer. De hitte botst ertegen, sist, en sterft weg als een kaars in de regen. Het zegel brokkelt tot rood stof.\n\nBinnenin zit een strook perkament, dun als huid. Het handschrift is sierlijk en loopt schuin, alsof het haast had.\n\n\"Aan de kraaienjongen van Velmoor. Je hebt iets van mij. Straks heb ik iets van jou. Laat mijn gezant gaan voor de volle maan, en de koorts blijft slapen. Houd haar vast, en Velmoor brandt van binnenuit, huis na huis, tot alleen jij nog warm bent.\"\n\nOnderaan staat geen naam. Er is alleen een oog getekend.\n\nIlse leest over je schouder mee. Haar gezicht verstrakt. Onder je bed klopt het loden kistje. Sneller.\n\n\"De volle maan,\" zegt ze zacht. \"Dat is over drie nachten.\""
+  },
+  {
+   "action": "Om mijn zwakke lichaam te versterken ga ik mijn lichaam trainen. Met hulp van mijn magie en de magie van de leiders",
+   "narration": "Je laat Ilse, Vorrin en de Blinde Abt naar de binnenplaats van de Toren komen. Ze komen door de knopen, zonder vragen.\n\nVorrin traint je met stokken tot je handen bloeden en je longen branden. Elke keer dat je valt, legt Ilse haar koele handen op je spieren en duwt grijs licht diep in de vezels, tot ze strakker weer aaneengroeien. De Abt zit erbij met zijn dichtgenaaide ogen en neuriet een oud gebed dat je hart dwingt rustig te blijven kloppen.\n\nJe wil blijft hard. Ook wanneer je overgeeft in de goot. Ook wanneer de oude magie in je borst gromt dat dit vlees haar niet waardig is.\n\nTegen de ochtend sta je nog. Je armen zijn niet dikker, maar ze trillen niet meer. Je adem draagt verder.\n\nDan zegt de Abt zacht: \"Het kistje, heer. Het klopt nu op úw nieuwe ritme. Het heeft geleerd, net als u.\" Nog twee nachten tot de volle maan."
+  }
+ ],
+ "action": "Zoek Moeder Veen op voor raad",
+ "roll": 4
+}
