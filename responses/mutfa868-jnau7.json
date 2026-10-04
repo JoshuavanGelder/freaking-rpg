@@ -1,0 +1,53 @@
+{
+ "id": "mutfa868-jnau7",
+ "finishedAt": "2026-10-04T06:11:43.549Z",
+ "durationMs": 31404,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Is de troon nu van mij?\" vraag je. Je stem trilt niet. Dat verbaast je zelf.\n\nDe kroonkraai draait zijn kop langzaam naar je toe. Honderden vleugels blijven gespreid, een zwarte muur die ritselt als dorre bladeren. Je voelt hun blikken op je huid, koud en zwaar, alsof ze willen zien of je breekt.\n\nJe breekt niet. Je kijkt terug.\n\nDe kraai klakt met zijn snavel. \"Je knoopte de vrouw. Je knoopte de blinde. En je knoopte de koning in je borst.\" Hij springt van de leuning op de zitting en krabt over het zwarte hout. \"Niemand deed dat ooit. Dus ja, kleine bedelaar. Hij kan van jou zijn.\"\n\n\"Kan,\" fluistert de meester in je ribben.\n\n\"Eén ding,\" kraast de kraai. \"Wie hier zit met dié in zijn borst, zit er niet alleen. Sluit hem op in de steen. Dan buig ik. Dan buigt de stad.\"\n\nDe fluisterende steen wordt warm in je zak. De meester zwijgt, en dat zwijgen klinkt als smeken.",
+  "choices": [
+   "Sluit de meester op in de steen",
+   "Ga zitten met de meester erbij",
+   "Vraag de Abt wat de kraai verzwijgt"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Beslis over de troon van kraaien",
+     "detail": "De kraai buigt als de meester in de steen gaat."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen en het knopenboek met de kroonknoop. De eerste meester, Aurek Valdemoor, woont in zijn borst en moet hem gehoorzamen. Hij offerde de spreukenmaker voor oude magie. Ilse van de Toren is aan hem geknoopt; haar reus Garrel knielde maar haat hem. Vorrin Grauwveer wil hem dood en is nog vrij. In de kraaienkamer knoopte Joshua de Blinde Abt (Cassian Morr), die waarschuwt dat Joshua niet weet wat hij loslaat. Het pact met de kroonkraai is betaald. De kraai zegt dat de troon van Joshua kan zijn en dat de stad dan buigt, maar alleen als hij de meester opsluit in de fluisterende steen. De meester zwijgt smekend.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Vast round underground chamber lit by candles, hundreds of crows with spread wings on stone ledges. An unusually large black crow with glossy black feathers, sharp grey beak, piercing intelligent eyes, silver ring around one leg, perched on the seat of a black wooden throne, facing a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, faint warm glow from his pocket.",
+   "fallback": "Vast round underground chamber with stone ledges, flickering candles and an empty black wooden throne in the center, shadows and feathers on the floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
