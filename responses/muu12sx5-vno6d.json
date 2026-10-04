@@ -1,0 +1,48 @@
+{
+ "id": "muu12sx5-vno6d",
+ "finishedAt": "2026-10-04T16:21:41.840Z",
+ "durationMs": 22945,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je legt je handen op de zes stenen. Ze zingen, alsof ze hier al eeuwen op wachten. Je stuurt geen woorden terug, maar alles wat je bent: het licht van de sterren die weer branden, de hoop van elk stelsel, het hart dat de Wachter zag.\n\nHet signaal stopt. Zeven seconden stilte. Dan klinkt er een nieuw ritme, warm en zacht. Mara's wiskundigen staren naar hun schermen. 'Het is geen vraag meer,' fluistert ze. 'Het is een antwoord. Het zegt: welkom.'\n\nVer aan de rand opent de Wachter de mist. Daarachter gloeit een ander heelal, vol vreemde sterren, dat al eeuwen alleen was en vroeg of er nog iemand was.\n\nNu weet het dat er iemand is. Jij.\n\nMara legt haar headset neer en glimlacht. 'Koffie op het dak?' Je knikt. Boven jullie twinkelen twee heelallen, voor het eerst samen.",
+  "choices": [],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Het signaal van voorbij de rand"
+   ],
+   "location": "Dak van het ESA-gebouw",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld met alle zes Oneindigheidsstenen, versloeg voor ESA-directeur Mara Valk een zwarte vloot, Vorath en de Eerste Duisternis, werd alwetend en won het heelal met een leger van sterrenlicht dat alleen slechte harten raakte. De Wachter van de Rand erkende hem als hoeder, de Raad der Gedoofde Sterren viel. Daarna kwam een signaal van buiten het heelal: een eenzaam ander heelal dat vroeg of er iemand was. Einstein antwoordde met de stenen en zijn hart; het andere heelal zei welkom. Twee heelallen zijn nu verbonden. Einstein drinkt koffie met Mara op het dak. Einde.",
+  "gameOver": true,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, beside a middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset, on a rooftop at night holding coffee cups, gazing at a sky where two glowing universes of stars meet, epic wide shot.",
+   "fallback": "A quiet rooftop of a modern space agency building at night, two coffee cups on the ledge, a breathtaking sky where two vast glowing star fields meet in soft light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
