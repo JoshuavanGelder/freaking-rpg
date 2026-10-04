@@ -1,0 +1,50 @@
+{
+ "id": "mutgy82i-zda22",
+ "finishedAt": "2026-10-04T06:58:07.441Z",
+ "durationMs": 16259,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Ergens in het witte niets zit nog een splinter van jou. Een jongen in de goot. Een maag die knort. Een woede die nooit stil wilde zitten.\n\nJe grijpt die splinter vast. En daarmee de knoop.\n\nJe trekt. Het touw in de droom wordt echt, ruw en hard tussen je vingers. De witte stilte scheurt als natte stof. Je ademt in en de honger komt terug, heerlijk en scherp.\n\nDe Abt schokt achteruit. Zijn koele vingers glijden van je hand. Het zilveren draad in zijn oogleden trekt strak en hij valt op zijn knieën, zijn mond open in een stille kreet. \"Kind,\" hijgt hij. \"Ik wilde je alleen rust geven.\"\n\n\"Ik wil geen rust,\" zeg je.\n\nJe lichaam is heel. Je hand trilt niet meer. Je voelt je sterker dan in weken.\n\nIlse staart naar de grond, te snel. Vorrin staat nog steeds een stap achteruit, bij de deur. De leerlingen durven niet te ademen. Door het gat in de muur waait de nacht naar binnen, en daarbuiten, ergens, bloedt Garrel.",
+  "choices": [
+   "Straf de Abt voor zijn verraad",
+   "Vraag Vorrin waarom hij achteruit stapte",
+   "Stuur de kraaien achter Garrel aan"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 18,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": [
+    "Verschroeide hand"
+   ]
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse (nu om haar wil, ze is bang), de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij ziet door kraaienogen en zit op de kraaientroon; de leerlingen knielden. Garrel weigerde, heeft geen verborgen naam, en vluchtte gewond door een gat in de muur. De Abt genas Joshua volledig maar probeerde hem in een willoze witte stilte te trekken; Joshua rukte met zijn wil aan de knoop, brak los en zette de Abt op zijn knieën. Ilse en Vorrin hielpen niet en Vorrin trok zich terug.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cold stone throne hall at night, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, ragged grey shawl, rising from a black crow-carved throne pulling a glowing black thread; before him an elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, plain white monk's robe, collapsing to his knees, white mist tearing apart.",
+   "fallback": "Cold stone throne hall at night with a black crow-carved throne, a jagged hole in the wall showing night sky, flickering candles and drifting white mist."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
