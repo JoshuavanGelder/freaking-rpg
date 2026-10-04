@@ -1,0 +1,48 @@
+{
+ "id": "mutlpdqk-g5pmy",
+ "finishedAt": "2026-10-04T09:11:12.675Z",
+ "durationMs": 15549,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je zoekt Vorrins draad. Hij is grijs en koel, strak gespannen als een boogpees. Je legt er je wil tegenaan en duwt. Een beetje maar.\n\nMaar de oude magie wil geen beetje. Ze stort zich in de draad, dik en zwart, als een rivier die een dam vindt. Op de trap klinkt een schreeuw. Iets valt hard tegen de muur.\n\nJe rukt terug. Dat lukt half. Een deel van de stroom slaat terug in je eigen borst. Je ribben kraken, je proeft ijzer en de kaarsen doven allemaal tegelijk.\n\nDe deur zwaait open. Vorrin staat op de drempel, één hand tegen de deurpost. Zijn bleke ogen zijn helemaal zwart geworden, van rand tot rand. Langzaam trekt het zwart weg.\n\n\"Dat,\" zegt hij hees, \"doe je nooit meer zonder te vragen.\" Hij veegt over zijn mond. \"De gezant brengt een geschenk van de Zonnevorst. Het staat beneden. Het ademt.\"\n\nIn je zak lacht de steen zacht.",
+  "choices": [
+   "Ga meteen naar beneden naar het geschenk",
+   "Vraag Vorrin wat hij voelde",
+   "Laat Aurek uitleggen wat er misging"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen; zij leert pas weer iets als hij haar iets nieuws toont. De Zonnevorst, een onsterfelijke spreukenmaker met rafelende lotdraad, wil Joshua als knopenmaker en steekt bij volle maan de rivier over. Velmoor is voorbereid. Joshua testte oude magie door Vorrins draad; het liep uit de hand, Vorrins ogen werden zwart en Joshua raakte gewond. Vorrin is boos. De gezant bracht een levend 'geschenk' van de Zonnevorst dat beneden wacht.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark tower chamber, candles all snuffed out with smoke curling, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling on the floor clutching his chest with an open book, black swirling energy recoiling; in the doorway a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes turning pitch black, grey hair tied back, long ash-grey scarf over dark clothes",
+   "fallback": "A dark circular tower chamber at night, extinguished candles with thin smoke trails, an open old book on a stone floor, rattling wooden shutters, cold moonlight through a narrow window"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
