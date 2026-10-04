@@ -1,0 +1,54 @@
+{
+ "id": "mutnvxfe-c0fpc",
+ "finishedAt": "2026-10-04T10:12:29.278Z",
+ "durationMs": 27197,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Garrel, laat los!\" roep je.\n\nHij trekt zijn rokende handen terug, en jij staat al. Je voelt de rode wind in je onderarmen kolken, ruw en heet, en voor het eerst duw je hem niet alleen naar buiten. Je knoopt hem. Eén strakke knoop om het hart van de storm, zodat hij niet uitwaaiert maar smal wordt. Een speer van wind.\n\nJe laat los.\n\nDe rode stoot slaat recht in het oog van het zegel. Het witte goud krijst. Het oog knippert, probeert zich te sluiten, maar jouw knoop houdt de wind op die ene plek vast tot er een barst door de pupil loopt. Dan nog een. Het zegel springt uiteen in duizend splinters licht.\n\nDe kooi stopt met schuiven. De kraaien krassen in triomf.\n\nOver de rivier blijft het stil. Te stil. Dan voel je hoe iets zwaars het water raakt. Geen stem meer, geen draad.\n\nVoetstappen.\n\nLirre drukt haar gezicht tegen de tralies. \"Hij komt zelf,\" fluistert ze.",
+  "choices": [
+   "Maak de laatste draden snel los",
+   "Bereid de Toren voor op zijn komst",
+   "Stuur kraaien om hem te bespieden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Rode windstoot",
+     "kind": "kracht",
+     "detail": "Je kunt de rode wind knopen tot een smalle, doorborende speer."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin wil bewijs dat Joshua anders is dan de Zonnevorst. Belofteknoop met Moeder Veen. Lirre, een meisje van tien vol gestolen lotdraden, is de deur van de Zonnevorst. Samen maakten ze veel draden los; de kooi is half grijs. De Zonnevorst sleepte de kooi naar de westelijke deur; Garrel, Ilse en de kraaien hielden haar vast, de Abt heelde Joshua. Joshua brak het zegel met een geknoopte speer van rode wind. Nu steekt de Zonnevorst zelf de rivier over naar de Toren.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, hurling a narrow spear of swirling red wind into a glowing golden eye-shaped seal on a half-grey cage, the seal shattering into a thousand splinters of light, crows swirling in a dark stone hall.",
+   "fallback": "Dark stone hall with a half-grey crumbling golden cage near a western door, shards of golden light scattering through the air, black feathers drifting in dim candlelight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
