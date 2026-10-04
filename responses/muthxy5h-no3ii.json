@@ -1,0 +1,54 @@
+{
+ "id": "muthxy5h-no3ii",
+ "finishedAt": "2026-10-04T07:26:10.309Z",
+ "durationMs": 31989,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Beloof het,\" zeg je. \"Dat ik je nooit meer zie. Dat je me nooit meer last bezorgt.\" In gedachten sla je het boek open en leg je de tweede knoop om haar woorden.\n\nMoeder Veen glimlacht. \"Ik beloof het, jongen.\"\n\nDe knoop trekt dicht. En draait. Je voelt het meteen: haar rode draadje glijdt mee in jouw lus, soepel als een paling. De knoop sluit niet om háár belofte. Hij sluit om de jouwe.\n\nEen steek schiet door je borst. Je grijpt de leuning van de troon. Onder het fluweel brandt opeens een dun rood touwtje om je pols.\n\n\"Slordig,\" zegt ze zacht. \"Je wilde me nooit meer zien? Goed. Dan zie je me niet meer. Maar een belofte is een touw met twee einden. De looiersbuurt raak je niet meer aan. Dat heb je net zelf beloofd.\"\n\nVorrin houdt de lege sjaal vast. Waar zij stond, ligt alleen nog wat veenaarde op de vloer.\n\nUit de steen klinkt de schorre stem van de meester: \"Ze is nog in de zaal.\"",
+  "choices": [
+   "Laat een rode windstoot door de zaal razen",
+   "Vraag de meester waar ze precies staat",
+   "Snijd het rode touwtje van je pols"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Rode draad om je pols",
+     "kind": "zwakte",
+     "detail": "Een omgedraaide belofte verbiedt je de looiersbuurt aan te raken."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen (met meester Aurek Valdemoor), offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; Velmoor is bang. De looiersbuurt betaalt geen belasting. Moeder Veen, een oude Knoopmoeder uit het veen, werd door Vorrin gebracht en wilde de steen. Joshua bond haar belofte, maar zij draaide de knoop om: nu draagt hij een rood touwtje om zijn pols en mag hij de looiersbuurt niet aanraken. Ze is onzichtbaar geworden, maar volgens de meester nog in de troonzaal.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Candlelit stone throne hall at midnight, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, gripping a crow-carved throne, a glowing red thread around his wrist; nearby a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, holding an empty ash-grey scarf above dark peat soil on the floor.",
+   "fallback": "Candlelit stone throne hall at midnight, black crow-carved throne, a small pile of dark peat soil on the floor, an empty grey scarf lying beside it, deep shadows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
