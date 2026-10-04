@@ -1,0 +1,48 @@
+{
+ "id": "mutitjpv-hzk8o",
+ "finishedAt": "2026-10-04T07:50:47.054Z",
+ "durationMs": 32863,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je zegt niets. Je kijkt alleen naar het flesje, en in je hoofd begin je de eerste knoop te leggen. Een lus van wil, strak als een strop, om het rode spul heen.\n\nEven lukt het. Het kolken stopt. Saria's glimlach verstrakt.\n\nDan grijpt het rode spul de draad vast. Het trekt niet weg, het kruipt erlangs omhoog, naar jou toe, als een bloedzuiger die een warme arm vindt. Het smaakt naar roest en oude koorts. Je knoop wordt nat en glad en glijdt los. Een gloeiende steek schiet door je borst. Je wankelt en grijpt de rand van de tafel.\n\nIn het glas klopt het rode spul nu. Sneller. Als een hart dat jouw ritme heeft geleerd.\n\n\"Ah,\" zegt Saria zacht. Ze pakt het flesje op en houdt het tegen het licht. \"Dus zo smaakt u. Dank u, heer. Dat wilde de Zonnevorst al heel lang weten.\"\n\nHaar wachters lachen niet. Ze kijken naar de kraai op de vensterbank, die doodstil is gaan zitten.",
+  "choices": [
+   "Grijp het flesje uit haar hand",
+   "Vraag kalm wat het spul is",
+   "Beveel Ilse de poorten te sluiten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen ruilde: looiersbuurt voor altijd vrij, Joshua leerde één lotdraad; meer alleen zonder dwang. Saria van Kesh, gezant van de Zonnevorst, stelde een ultimatum: buig en word stadhouder, of haar levende rode flesje gaat open als vloek over Velmoor. Joshua probeerde er een knoop om te leggen; die gleed los, het spul proefde zijn magie en klopt nu op zijn ritme. Saria is tevreden.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Stone waiting hall in a dark tower, morning light, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, gripping a table in pain, facing a woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, holding up a glowing pulsing red vial",
+   "fallback": "Stone waiting hall in a dark tower, morning light through a tall window, oak table, a black crow sitting still on the windowsill, glowing red glass vial on the table"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
