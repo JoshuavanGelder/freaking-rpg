@@ -1,0 +1,57 @@
+{
+ "id": "mutxv0dl-0r1kq",
+ "finishedAt": "2026-10-04T14:51:31.625Z",
+ "durationMs": 15578,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Genees hem,\" zeg je. \"Ik haal het eerste vuur.\"\n\nMoeder Veen knikt langzaam, alsof ze dit antwoord al dagen kende. Ze drukt een zwart aarden potje in je handen, koud als ijs. \"Hierin, en nergens anders. Het vuur onder de troon is ouder dan de Vorst. Het herkent wie het steelt.\"\n\nDan pakt ze je pols. \"En onthoud: iemand draagt de ziekte. Beslis dat vóór je terugkomt.\"\n\nVorrin trekt zijn sjaal strakker. \"Ik ga mee.\"\n\nTwee dagen later sta je weer in de gloeiende grot. De Zonnevorst zit ineengezakt op de zonnetroon, te zwak om op te staan. Onder de zetel zie je een spleet in de rots, waar een rood licht klopt. In hetzelfde ritme als het zieke hart in je borst.\n\n\"Je wilt mijn vuur,\" hijgt hij. \"Dan moet ik van mijn troon af. Help me, of duw me.\"",
+  "choices": [
+   "Til de Vorst voorzichtig van de troon",
+   "Beveel hem via de knoop op te staan",
+   "Kruip met schaduwstap onder de troon"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [
+    "Zwart aarden potje"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Haal het eerste vuur",
+     "detail": "Vang het vuur onder de zonnetroon in Veens potje."
+    }
+   ],
+   "completeQuests": [],
+   "location": "De grot van de zonnetroon",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. Joshua zwoer de Zonnevorst nooit te doden; een verborgen lus bindt de eed aan diens stervende hart, dat in Joshua's borst klopt en zijn warmte wegtrekt. De akkers zijn warm. Joshua koos het hart te genezen. Moeder Veen gaf hem een zwart potje voor het eerste vuur onder de zonnetroon; iemand moet de ziekte dragen, dat moet Joshua nog beslissen. Met Vorrin staat hij nu in de grot; de zwakke Vorst zit op de troon boven het kloppende vuur.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Glowing cave, a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes, slumped on a golden sun throne; beneath it a rock crack pulsing red light. Facing him a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, holding a small black clay pot; beside him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes.",
+   "fallback": "Empty glowing cave with a golden sun throne, a crack in the rock beneath it pulsing with deep red light, warm shadows on stone walls."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
