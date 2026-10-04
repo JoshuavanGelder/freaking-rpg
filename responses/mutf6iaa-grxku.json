@@ -1,0 +1,59 @@
+{
+ "id": "mutf6iaa-grxku",
+ "finishedAt": "2026-10-04T06:08:55.082Z",
+ "durationMs": 36173,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De Abt heft zijn hand. Het zilverdraad in zijn ogen spat vonken, en een koude druk slaat tegen je borst, alsof de lucht zelf je wil platdrukken. Je ribben kraken. Je proeft ijzer.\n\n\"Zijn naam, kind,\" sist de meester, gehoorzaam nu. \"Hij heette ooit Cassian Morr. Ik gaf hem die ogen.\"\n\nJe trekt de rode koord uit het knopenboek. Je vingers bewegen zonder te aarzelen: lus, draai, door het hart. \"Cassian Morr.\"\n\nDe knoop trekt zich strak. De Abt verstijft midden in zijn gebaar. Het zilverdraad dooft, draad voor draad, tot hij daar staat als een oude man in een witte pij. Klein. Trillend. Hij zakt op zijn knieën voor de lege troon.\n\n\"Je weet niet wat je loslaat,\" fluistert hij.\n\nBoven je hoofd daalt de kroonkraai neer op de leuning van de troon. Het pact in je borst valt weg als een doorgeknipte draad. Betaald.\n\nMaar de kraai kijkt niet naar jou. Hij kijkt naar je borst, naar wat daar woont. En honderden kraaien langs de wanden spreiden hun vleugels.",
+  "choices": [
+   "Beveel de meester de kraai te verjagen",
+   "Vraag de Abt wat hij bedoelt",
+   "Ga zelf op de troon zitten"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Knoop de Blinde Abt in de kraaienkamer",
+    "Betaal de schuld aan de kroonkraai"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Knoop van de Abt",
+     "kind": "kracht",
+     "detail": "De Blinde Abt is door zijn ware naam aan jou gebonden."
+    }
+   ],
+   "removeTraits": [
+    "Kraaienpact"
+   ]
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen en het knopenboek met de kroonknoop. De eerste meester, Aurek Valdemoor, woont in zijn borst en moet hem gehoorzamen. Hij offerde de spreukenmaker voor oude magie. Ilse van de Toren is aan hem geknoopt; haar reus Garrel knielde maar haat hem. Vorrin Grauwveer wil hem dood en is nog vrij. In de kraaienkamer knoopte Joshua de Blinde Abt met zijn ware naam, Cassian Morr; de Abt knielt en waarschuwt dat Joshua niet weet wat hij loslaat. Het pact met de kroonkraai is betaald, maar de kraai en honderden kraaien keren zich nu dreigend naar de meester in Joshua's borst. De troon is nog leeg.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Vast round underground chamber lit by candles, hundreds of crows spreading their wings on stone ledges. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, pulling a glowing red cord into a knot. Before an empty black wooden throne kneels an elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, plain white monk's robe. An unusually large black crow with a silver leg ring perches on the throne.",
+   "fallback": "Vast round underground stone chamber, empty black wooden throne in the center, candlelight flickering, dark stone ledges along tall curved walls, scattered black feathers on the floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
