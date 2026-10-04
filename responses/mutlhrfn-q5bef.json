@@ -1,0 +1,48 @@
+{
+ "id": "mutlhrfn-q5bef",
+ "finishedAt": "2026-10-04T09:05:29.897Z",
+ "durationMs": 28254,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat Saria achter bij Veen en loopt terug door de grauwe ochtend. Velmoor haat je. Dat weet je. Maar haat kan ook werken.\n\nOp de trappen van de Toren geef je bevelen, en de geknoopten dragen ze uit. Vorrin jaagt de wachters naar de rivierpoort en laat palen in de ondiepten slaan. Ilse zet de leerlingen van de Toren op de muren, met grijs licht dat al flakkert in hun handen. De Blinde Abt opent de kloosterkelders: brood, pek, verband. Zijn kalme stem doet wat de jouwe niet kan. De mensen luisteren.\n\nJij bent overal tegelijk. Door de ogen van de kraaien zie je elke straat, elke zwakke plek in de muur, elke deserteur die naar het noorden sluipt. Je stuurt wachters achter ze aan, nog voor ze de poort halen.\n\nTegen de avond staat de stad. Bang, maar klaar.\n\nDan keert er een kraai uit het zuiden terug. In zijn ogen zie je een eenzame ruiter met een witte vlag. Een gezant. Hij vraagt naar jou.",
+  "choices": [
+   "Ontvang de gezant op de muur",
+   "Laat hem wachten, lees zijn lotdraad",
+   "Stuur Vorrin om hem te vangen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De rivierpoort van Velmoor",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen: geen kraaien bij haar smidse, één nacht met Saria (gedaan). Veen leert pas weer iets als hij haar iets nieuws toont. Saria bekende: de Zonnevorst is een onsterfelijke spreukenmaker met rafelende lotdraad die Joshua als knopenmaker wil. Bij volle maan steekt hij met het zuiden de rivier over. Joshua bereidde Velmoor voor: palen in de rivier, magiërs op de muren, kelders van de Abt open. Nu nadert een gezant van de Zonnevorst met witte vlag.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, standing on a city wall at dusk overlooking a river gate, guards hammering stakes into shallows, faint grey light glowing on the ramparts, crows circling, a lone rider with a white flag approaching in the distance",
+   "fallback": "Medieval city wall at dusk above a wide river gate, wooden stakes in the shallow water, torches on ramparts, crows circling a darkening sky"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
