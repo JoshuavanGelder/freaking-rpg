@@ -1,0 +1,54 @@
+{
+ "id": "mutl2ijq-9674g",
+ "finishedAt": "2026-10-04T08:53:38.372Z",
+ "durationMs": 28040,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je draait je om en laat de twee vrouwen achter in het donker. Achter je valt de deur van de smidse dicht. Je hoort geen stemmen meer, alleen een zacht gezoem, alsof er een draad wordt gesponnen.\n\nOp de binnenplaats van de Toren wachten Ilse, Vorrin en de Blinde Abt al. Deze keer geen stokken. Vorrin laat je rennen: de wenteltrap op, de muren langs, weer naar beneden. Steeds opnieuw. Ilse loopt naast je en duwt grijs licht in je longen als ze dichtklappen. De Abt telt je stappen hardop, eentonig als een klok.\n\nJe knie knikt. Je zicht wordt zwart aan de randen. Je gaat door.\n\nAls de dageraad de kantelen rood kleurt, sta je boven op de hoogste trap. Je hijgt, maar je valt niet. Je hart bonkt sterk en gelijk.\n\n\"Beter,\" zegt Vorrin koel. Dan wijst hij naar het zuiden. Aan de horizon hangt een dunne rookpluim. Nog één nacht tot de volle maan.",
+  "choices": [
+   "Stuur kraaien naar de rookpluim",
+   "Ga terug naar de smidse",
+   "Ondervraag Vorrin over het zuiden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De Toren",
+   "addTraits": [
+    {
+     "name": "Zwak lichaam",
+     "kind": "zwakte",
+     "detail": "Je houdt het langer vol, maar je lichaam blijft je zwakke plek."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek Valdemoor). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Met Moeder Veen knipte hij de lotdraad van het koortsflesje van de Zonnevorst door; die dreigt Velmoor te verbranden als Saria van Kesh niet vrijkomt voor de volle maan. Wederzijdse belofteknoop met Veen: geen kraaien bij haar smidse, één nacht alleen met Saria. Veen leert pas weer iets als hij haar iets nieuws toont. Saria zit nu bij Veen. Joshua trainde 's nachts zijn uithoudingsvermogen met de leiders. Bij dageraad: rookpluim in het zuiden. Nog één nacht tot de volle maan.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dawn on top of a dark stone tower battlement, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, panting, beside man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, pointing at a thin smoke plume on the southern horizon",
+   "fallback": "Stone tower battlements at red dawn, winding stairs below, a thin smoke plume rising on the distant southern horizon over rooftops"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
