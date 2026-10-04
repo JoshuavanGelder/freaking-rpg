@@ -1,0 +1,53 @@
+{
+ "id": "mutfs3lr-ygdbb",
+ "finishedAt": "2026-10-04T06:25:39.725Z",
+ "durationMs": 32190,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je duwt je wil omhoog, naar de daken. Zijn naam. Wie kent zijn naam?\n\nDuizend kraaien schudden hun veren. Hun antwoord komt als een storm van gefluister door je schedel: beelden, geuren, flarden. Een jongen in een vissersdorp. Een moeder die roept vanaf een steiger. Een naam die begint met een zachte klank en dan wegvalt, alsof iemand hem uit de lucht heeft gesneden.\n\n\"Hij heeft hem begraven,\" kraast de kroonkraai ergens boven je. \"Onder de oude wilg bij de Toren. Wij zagen het. Wij hoorden hem niet.\"\n\nTe lang. Je was te lang weg in je hoofd.\n\nVorrin stapt naar voren. Een tweede regen van grijze lichtveren slaat in je zij. Het ijs bijt door je tuniek tot op het bot. Je knieën raken de natte keien.\n\n\"Je kijkt omhoog naar de vogels,\" zegt Vorrin vriendelijk. \"Ik vroeg me al af wie ze bestuurde.\"\n\nZijn mannen sluiten de kring. Op de daken wachten de kraaien op een bevel.",
+  "choices": [
+   "Laat alle kraaien op hen neerduiken",
+   "Schaduwstap weg naar de oude wilg",
+   "Blaas de rode windstoot door de kring"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Graaf Vorrins naam op onder de wilg",
+     "detail": "Zijn ware naam ligt begraven onder de oude wilg bij de Toren."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu opgesloten in de steen. Joshua zit op de zwarte kraaientroon en ziet door de ogen van alle kraaien. Garrel knielde onder dwang en haat hem nog. Joshua sloop naar Vorrin Grauwveer, maar Vorrin rook de oude magie en verwondde hem twee keer met lichtveren. De kraaien weten dat Vorrin zijn ware naam begroef onder de oude wilg bij de Toren. Joshua ligt nu geknield, omsingeld door Vorrin en tien mannen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Narrow wet cobblestone street at night, a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, kneeling on the stones, encircled by men in grey cloaks with glowing staffs. A man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, smiling. Crows lining the rooftops.",
+   "fallback": "Narrow wet cobblestone street at night in an old city, dim lanterns, rows of crows silhouetted on the rooftops against a cloudy moonlit sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
