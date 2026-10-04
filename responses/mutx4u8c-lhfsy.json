@@ -1,0 +1,50 @@
+{
+ "id": "mutx4u8c-lhfsy",
+ "finishedAt": "2026-10-04T14:31:22.166Z",
+ "durationMs": 27872,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en zoekt de derde lus. Daar is hij: haardun, rood van zijn zieke hart, om jouw draad gewikkeld. Je buigt hem met je lotschaar, verder, verder, tot hij moet knappen.\n\nHij knapt niet.\n\nDe lus zit niet om jouw lot, maar om je eed. En een eed buig je niet. De schaar slaat terug. Een gloeiende steek trekt door je borst, je proeft as op je tong. De Zonnevorst kreunt mee. Even dooft het licht in de grot, en buiten verstomt het zoemen van de gouden draden.\n\n\"Dom,\" hijgt hij. \"Elke snee aan mij is een snee aan het land.\"\n\nVorrin grijpt je arm. \"Er moet een andere weg zijn. Wie kan een stervend hart genezen?\"\n\nJe denkt aan Moeder Veen. En aan de troon, die nog warm is.",
+  "choices": [
+   "Vraag Moeder Veen om raad",
+   "Geef hem troonvuur via je knopen",
+   "Dwing hem de schijven warm te houden"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Belofteknoop met Moeder Veen. Lirre is vrij. De zonnetroon koos Joshua. Zonder zonnevuur bevriest de oogst binnen drie nachten. In de grot zwoer Joshua de Zonnevorst nooit te doden en legde een dubbele knoop: de Vorst moet gehoorzamen. Een verborgen derde lus bindt Joshua's eed aan het stervende hart van de Vorst, dat Joshua's warmte trekt. Joshua probeerde de lus met zijn lotschaar te knippen, maar een eed buigt niet: het sloeg terug en verzwakte ook het land. Vorrin zoekt met hem een manier om het hart te genezen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling in pain as a red thread snaps back with sparks; man in his sixties, hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes groaning beside a dimming knot of golden light.",
+   "fallback": "Dark cave interior with a dim knot of golden threads glowing faintly, frost creeping over stone floor, cold shadows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
