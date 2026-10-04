@@ -1,0 +1,48 @@
+{
+ "id": "muth0k1i-pgmf0",
+ "finishedAt": "2026-10-04T06:59:56.338Z",
+ "durationMs": 16282,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en roept ze. Niet met je stem. Met de knoop die in je zit sinds de kroonkraai voor je boog.\n\nDuizend kraaien vliegen tegelijk op van de daken van Velmoor. Je ziet door al hun ogen tegelijk. Natte leien, rokende schoorstenen, de zwarte rivier. Het is te veel, een draaikolk van beelden, maar je houdt vol en zoekt één ding. Blauw licht.\n\nDaar. In de steeg achter de looiersbuurt. Een spoor van flauw blauw gloeiende druppels op de stenen. Garrel strompelt, één arm tegen de muur, zijn grijze jas gescheurd. Hij kijkt omhoog en ziet de kraaien op de dakgoten landen. Tientallen. Honderden.\n\n\"Dus je kijkt,\" gromt hij naar de vogels. \"Kom dan zelf, bedelaar.\"\n\nHij duwt een verroeste deur open. Een oude smidse. Binnen brandt nog een vuur, en bij dat vuur zit iemand op hem te wachten. Een kleine gestalte in een kap, die zijn hand naar Garrel uitsteekt.\n\nDe kraaien wachten op je bevel.",
+  "choices": [
+   "Laat de kraaien de smidse bestormen",
+   "Kijk stil verder wie daar wacht",
+   "Schaduwstap zelf naar de smidse"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse (nu om haar wil, ze is bang), de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij zit op de kraaientroon; de leerlingen knielden. Garrel weigerde, heeft geen verborgen naam en vluchtte gewond. De Abt probeerde Joshua in een willoze stilte te trekken; Joshua brak los en zette hem op zijn knieën. Ilse en Vorrin hielpen niet. Via de kraaien volgde Joshua Garrel naar een oude smidse achter de looiersbuurt, waar een kleine gekapte gestalte hem opwacht.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Night alley in a dark medieval city, seen from above through a crow's eyes, man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing with faint blue light, staggering into a rusty forge door, hundreds of crows on the gutters, inside a small hooded figure by a glowing fire.",
+   "fallback": "Narrow wet night alley behind tanneries in a dark medieval city, rusty open forge door with orange firelight, crows perched along slate roof gutters."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
