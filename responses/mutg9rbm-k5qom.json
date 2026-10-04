@@ -1,0 +1,62 @@
+{
+ "id": "mutg9rbm-k5qom",
+ "finishedAt": "2026-10-04T06:39:08.459Z",
+ "durationMs": 18654,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je duimnagel schuift onder het zwarte lint. De grijze veer valt in het gras. Vorrin springt naar voren, zijn hand vol grijs licht. Te laat.\n\nHet deksel klikt open. Er ligt niets in, alleen een ademtocht van zout en natte planken. En dan hoor je haar: een moeder op een steiger, die een jongen roept. \"Tevin! Tevin Aslo!\"\n\nJe fluistert de naam mee. Je vingers bewegen vanzelf, de derde knoop in de lucht, strak, kil, onbreekbaar. Ergens in je borst trekt hij dicht als een strop.\n\nVorrin blijft halverwege zijn sprong hangen. Het licht in zijn hand dooft. Hij valt op zijn knieën in de modder, zijn mond open, en voor het eerst in dertig jaar heeft iemand hem bij zijn naam genoemd.\n\n\"Niet zo,\" zegt hij hees. \"Alsjeblieft. Niet aan een touw.\"\n\nAchter je hoor je voetstappen in het gras. Ilse. De Abt. Ze zien het. Ze weten het. Alle drie de leiders van de Orde knielen nu voor een bedelaar in vodden.\n\nBoven de Toren kraaien duizend vogels tegelijk.",
+  "choices": [
+   "Laat Vorrin trouw zweren aan jou",
+   "Vraag Vorrin al zijn geheimen",
+   "Neem de Toren in als jouw zetel"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Heers over de Orde en Velmoor",
+     "detail": "Maak van de Toren je zetel en regeer de stad."
+    }
+   ],
+   "completeQuests": [
+    "Knoop de drie leiders van de Orde",
+    "Versla Vorrin Grauwveer"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Knoop van Vorrin",
+     "kind": "kracht",
+     "detail": "Vorrin Grauwveer is door zijn ware naam Tevin Aslo aan jou gebonden."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en meester Aurek Valdemoor (in de steen). Hij zit op de kraaientroon en ziet door kraaienogen. Garrel knielde onder dwang en haat hem. Vorrin Grauwveer wilde het boek; na een gevecht in de straten groef Joshua onder de oude wilg bij de Toren Vorrins begraven ware naam op: Tevin Aslo. Hij knoopte hem. Nu knielen alle drie de leiders van de Orde voor hem. Vorrin smeekt niet aan een touw te hoeven leven. De Abt waarschuwde Joshua zijn heling niet te lang te vragen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Under the drooping branches of an ancient willow beside a dark stone tower at night, thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, holding an open small lead box, glowing knot of dark light in the air before him. Kneeling in mud before him a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes. Hundreds of crows circling above.",
+   "fallback": "Ancient willow with drooping branches beside a dark stone tower at night, a muddy hole among the roots, a grey feather on wet grass, crows circling in a cloudy sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
