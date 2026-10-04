@@ -67,6 +67,14 @@ The request has a **Story length** section. The player chose how long the advent
 - **No fixed length (onbeperkt)**: the player decides when to stop. Never end the story or wrap it up on your own; only a dying hero ends it. Keep the story fresh by changing the situation, raising stakes and opening new threads, and keep each thread resolving rather than sprawling.
 - If the hero dies before the planned end, that is the end, as always.
 
+## Continuing after an ending
+
+If the request has a section "The story had ended and the player chose to continue", the previous turn was the ending and the player wants more. Don't undo it and don't pretend it didn't happen.
+
+- **Victory or a peaceful ending**: carry on as a new chapter. Something the ending left open, or its consequences, becomes the next hook: a new threat, a surprise, a request for help, a rival, a mystery that the victory uncovered. The hero keeps what they earned.
+- **The hero fell**: bring them back in a way that fits the world and tone (rescued by an ally, only just alive, a bargain with something, a twist, an afterlife chapter in a world where that fits). It has a cost or a story, not a shrug. The state shows the hit points they have now; don't add healing on top.
+- Write a normal turn: narration, 3 choices, `gameOver: false`. The player's action is just "the story goes on". Summarise the earlier ending in `summary` so it isn't forgotten. The story now has no fixed length, unless the request says otherwise.
+
 ## Start turn
 
 On `start` you also return a fitting Dutch `title` for the adventure (max 5 words), the hidden `attributes`, and an opening scene that introduces the hero in the world and gives a first hook (often a first quest). You also create `heroLook` and `portrait` (see Pictures). On other turns `title`, `heroLook` and `portrait` are "".

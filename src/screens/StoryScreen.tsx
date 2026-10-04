@@ -94,7 +94,7 @@ export function StoryScreen({ id }: { id: string }) {
         {adv.pending ? <PendingAction text={adv.pending.action} /> : null}
         {waiting ? <Waiting adv={adv} /> : null}
         {adv.error ? <ErrorCard adv={adv} /> : null}
-        {adv.ended ? <EndCard /> : null}
+        {adv.ended ? <EndCard adv={adv} /> : null}
       </ScrollView>
 
       {!adv.ended && !adv.error ? <ActionBar adv={adv} disabled={waiting} bottom={insets.bottom} /> : null}
@@ -327,8 +327,9 @@ function EndPlan({ adv }: { adv: Adventure }) {
   );
 }
 
-function EndCard() {
+function EndCard({ adv }: { adv: Adventure }) {
   const nav = useNav();
+  const { resume } = useTurns();
   return (
     <View style={{ padding: 18, borderRadius: 16, borderWidth: 1.5, borderColor: C.border, gap: 12, alignItems: 'center' }}>
       <Icon name="scroll" size={28} color={C.accent} strokeWidth={1.75} />
@@ -336,9 +337,10 @@ function EndCard() {
         Einde
       </T>
       <T size={14} color={C.muted} style={{ textAlign: 'center', lineHeight: 20 }}>
-        Dit verhaal is uit. Je kunt het teruglezen wanneer je wilt.
+        Dit verhaal is uit. Toch nog niet klaar? Dan gaat het door zonder vast einde; je kunt later zelf weer een einde kiezen.
       </T>
-      <Button label="Nieuw avontuur" icon="arrow" onPress={() => nav.replace({ name: 'new' })} style={{ alignSelf: 'stretch' }} />
+      <Button label="Toch doorgaan" icon="arrow" onPress={() => resume(adv.id)} style={{ alignSelf: 'stretch' }} />
+      <Button label="Nieuw avontuur" variant="outline" onPress={() => nav.replace({ name: 'new' })} style={{ alignSelf: 'stretch' }} />
     </View>
   );
 }

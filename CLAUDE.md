@@ -64,6 +64,9 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   levensbalk in Story staat "Einde: nog N beurten"; tikken opent een paneel (Afsluiten = volgende beurt is het einde,
   3/5/10/20, stepper, Onbeperkt; bewust zonder tekstveld). Overschrijft de lengte van het startscherm, werkt ook bij
   onbeperkte of oude avonturen. `pacing.from` laat de verteller vanaf dat moment een slotstuk bouwen (geen reset).
+  **Toch doorgaan** (`resumeStory`, `resume` in turns.tsx): op de eindkaart; zet `ended` terug, geen vast einde meer
+  (`endPlan` onbeperkt), een gevallen held (0 leven) komt terug met half leven, en de app start meteen een beurt met
+  `RESUME_ACTION`. Alleen die eerste beurt krijgt `resumed {died}` in het verzoek (prompt: Continuing after an ending).
 - **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
   zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
   naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen

@@ -89,6 +89,18 @@ test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => 
   assert.doesNotMatch(turn(5, 12, 0), /decided at turn/);
 });
 
+test('verhaal hervat na het einde: aparte instructie, ook bij een gevallen held', () => {
+  const base = { kind: 'turn', world, hero, pacing: { turn: 6, total: null, from: 5 }, action: 'Het verhaal gaat toch door.' };
+  const won = renderRequest({ ...base, resumed: { died: false } });
+  assert.match(won, /The story had ended and the player chose to continue/);
+  assert.match(won, /The last turn below was the ending\./);
+  assert.doesNotMatch(won, /hero fell/);
+  const died = renderRequest({ ...base, resumed: { died: true } });
+  assert.match(died, /the hero fell/);
+  assert.match(died, /alive again/);
+  assert.doesNotMatch(renderRequest(base), /chose to continue/);
+});
+
 test('onbeperkt avontuur (of oud avontuur): de verteller rondt zelf niets af', () => {
   const t = renderRequest({ kind: 'turn', world, hero, pacing: { turn: 40, total: null }, action: 'x' });
   assert.match(t, /no fixed length/);

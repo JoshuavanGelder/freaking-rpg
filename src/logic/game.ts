@@ -53,6 +53,21 @@ export function turnsLeft(adv: Adventure): number | null {
 
 export const MAX_TURNS_MORE = 99;
 
+/** De actie die de app zelf verstuurt als de speler een afgesloten verhaal toch voortzet. */
+export const RESUME_ACTION = 'Het verhaal gaat toch door.';
+
+/**
+ * Een afgesloten verhaal toch voortzetten: zonder vast einde (de speler kan er later weer een kiezen).
+ * Een gevallen held komt terug met de helft van zijn leven; de verteller bedenkt hoe dat in het verhaal kan.
+ */
+export function resumeStory(adv: Adventure, now = Date.now()): Adventure {
+  if (!adv.ended) return adv;
+  const died = adv.state.hp <= 0;
+  const at = turnCount(adv);
+  const hp = died ? Math.max(1, Math.ceil(adv.state.maxHp / 2)) : adv.state.hp;
+  return { ...adv, ended: false, state: { ...adv.state, hp }, endPlan: { total: null, from: at }, resumed: { at, died }, error: null, updatedAt: now };
+}
+
 /** De speler kiest hoeveel beurten hij nog wil spelen (1 = de volgende beurt is het einde). null = onbeperkt. */
 export function setTurnsLeft(adv: Adventure, more: number | null, now = Date.now()): Adventure {
   const from = turnCount(adv);
@@ -199,6 +214,7 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string): T
     roll: pending.roll,
     // Beurt die nu geschreven wordt (de opening is 0) en de gekozen lengte, zodat de verteller naar een einde kan toewerken.
     pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: endTotal(adv), from: adv.endPlan?.from ?? 0 },
+    ...(pending.kind === 'turn' && adv.resumed && adv.resumed.at === turnCount(adv) ? { resumed: { died: adv.resumed.died } } : {}),
   };
 }
 

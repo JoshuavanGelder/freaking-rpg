@@ -120,6 +120,8 @@ export type Adventure = {
   cast?: CastMember[];
   /** Einde dat de speler tijdens het spelen koos. undefined = de lengte van het startscherm geldt. */
   endPlan?: EndPlan;
+  /** De speler ging door nadat het verhaal klaar was: na hoeveel beurten, en was de held toen gevallen? */
+  resumed?: { at: number; died: boolean };
 };
 
 /** Het antwoord van de verteller (zie rpg/schema.json). */
@@ -181,4 +183,6 @@ export type TurnRequest = {
   roll: number;
   /** Waar het verhaal staat: nummer van de beurt die nu geschreven wordt (0 = opening), de beurt van het einde (null = onbeperkt) en vanaf welke beurt de speler het einde koos (0 = bij de start). */
   pacing: { turn: number; total: number | null; from: number };
+  /** Alleen bij de eerste beurt nadat de speler een afgesloten verhaal toch voortzette. */
+  resumed?: { died: boolean };
 };

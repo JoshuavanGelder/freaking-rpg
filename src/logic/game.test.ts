@@ -24,6 +24,8 @@ import {
   paragraphs,
   parseAnswer,
   regenAmount,
+  resumeStory,
+  RESUME_ACTION,
   rollD20,
   setTurnsLeft,
   toggleTone,
@@ -286,6 +288,39 @@ test('de speler kan een avontuur met vaste lengte inkorten of verlengen', () => 
   assert.equal(turnsLeft(adv), 10);
   assert.equal(turnsLeft(setTurnsLeft(adv, 3)), 3); // inkorten
   assert.equal(turnsLeft(setTurnsLeft(adv, 30)), 30); // verlengen
+});
+
+test('afgesloten verhaal toch voortzetten: overwinning', () => {
+  let adv = newAdventure({ ...world, arc: 'kort' }, hero, 1, 'adv-resume');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  adv = applyAnswer(adv, makePending('turn', 'a', 4), parseAnswer(raw({ gameOver: true }))!, 5);
+  assert.equal(adv.ended, true);
+  const hpBefore = adv.state.hp;
+  const back = resumeStory(adv, 9);
+  assert.equal(back.ended, false);
+  assert.equal(back.state.hp, hpBefore); // levend: leven blijft
+  assert.equal(endTotal(back), null); // geen vast einde meer
+  assert.deepEqual(back.resumed, { at: 1, died: false });
+  // Alleen de eerste beurt erna meldt dat het verhaal hervat is.
+  const req = buildRequest({ ...back, pending: null }, makePending('turn', RESUME_ACTION, 10), 'sonnet');
+  assert.deepEqual(req.resumed, { died: false });
+  const later = applyAnswer(back, makePending('turn', RESUME_ACTION, 10), parseAnswer(raw())!, 11);
+  assert.equal(buildRequest(later, makePending('turn', 'b', 12), 'sonnet').resumed, undefined);
+  // Een verhaal dat niet af is blijft ongemoeid.
+  assert.equal(resumeStory(later), later);
+});
+
+test('afgesloten verhaal toch voortzetten: gevallen held komt terug met de helft', () => {
+  let adv = newAdventure(world, hero, 1, 'adv-resume-2');
+  adv = { ...adv, state: { ...adv.state, hp: 3 } };
+  adv = applyAnswer(adv, makePending('turn', 'Ik spring', 2), withChanges({ hp: -8 }), 3);
+  assert.equal(adv.ended, true);
+  assert.equal(adv.state.hp, 0);
+  const back = resumeStory(adv);
+  assert.equal(back.state.hp, 10); // helft van 20
+  assert.equal(back.ended, false);
+  assert.deepEqual(back.resumed, { at: 1, died: true });
+  assert.deepEqual(buildRequest(back, makePending('turn', RESUME_ACTION, 4), 'sonnet').resumed, { died: true });
 });
 
 test('op 0 leven is het verhaal klaar', () => {

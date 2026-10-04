@@ -92,6 +92,12 @@ export function renderRequest(r) {
   lines.push('');
   lines.push(...pacingLines(r));
   lines.push('');
+  if (r.resumed) {
+    lines.push('## The story had ended and the player chose to continue');
+    lines.push(`- The last turn below was the ending${r.resumed.died ? ', and the hero fell' : ''}. The player does not want the story to stop there. Continue it now (see "Continuing after an ending").`);
+    if (r.resumed.died) lines.push('- The hero is alive again in the state (hit points are what they have now). Explain in the story how they got back.');
+    lines.push('');
+  }
   if (r.kind !== 'start') {
     const cast = (r.cast ?? []).filter((c) => clean(c?.name, 60) && clean(c?.look));
     lines.push('## Cast (fixed looks of recurring characters; reuse word for word in pictures, keep the narration consistent)');
