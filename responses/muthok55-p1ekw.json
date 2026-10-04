@@ -1,0 +1,48 @@
+{
+ "id": "muthok55-p1ekw",
+ "finishedAt": "2026-10-04T07:18:52.023Z",
+ "durationMs": 31486,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je legt je handen op de kraaienkoppen van de troon. \"Neem het,\" fluister je. \"Dubbel.\"\n\nBoven de looiersbuurt verduistert de lucht. Kraaien storten door schoorstenen, rukken luiken open, pikken munten uit potten onder vloerplanken. Mensen gillen. Een looier slaat met een natte huid om zich heen. Door honderd ogen zie je zilver glinsteren in zwarte snavels.\n\nDan voel je het. Een trek. Klein, als een vishaak in je borst.\n\nIn de stegen hangen rode touwtjes tussen de daken, dun als spinrag. De kraaien vliegen er recht doorheen. En blijven hangen. Eén na één verdwijnen hun ogen uit je hoofd, alsof iemand kaarsen uitknijpt. Tientallen. Je ziet nog net een gebogen gestalte in een bruine kap die een touwtje strak trekt.\n\nJe hoest. Iets rood bevlekt je fluwelen mouw.\n\nDe kraaien die terugkomen leggen een handvol munten op de trap. Veel minder dan dubbel.\n\n\"Heer,\" zegt Ilse zacht, \"ze vangt uw kraaien. En daarmee vangt ze stukjes van ú.\"",
+  "choices": [
+   "Ga zelf naar de smidse in de looiersbuurt",
+   "Zoek in het knopenboek naar tegenknopen",
+   "Stuur Vorrin om de oude vrouw te halen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 6,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is nu magiër op de kraaientroon van de Toren in Velmoor, gekleed in zwart fluweel. Hij bezit het knopenboek en de fluisterende steen, offerde de spreukenmaker en knoopte Ilse, de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; Velmoor is bang. Een gekapte oude vrouw in een smidse in de looiersbuurt, vermoedelijk een Knoopmoeder uit het veen, verzet zich met rode geknoopte touwtjes. De looiersbuurt weigerde belasting; Joshua's kraaien plunderden hen, maar zij ving tientallen kraaien in rode draden, wat Joshua zelf pijn deed. Er kwam maar weinig geld binnen. Een inner draagt een rood touwtje om zijn pols.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dusk over a dark medieval tanners' quarter, a black storm of crows diving through chimneys and shutters, thin red threads strung between rooftops catching many crows, below in an alley an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, pulling a red thread taut.",
+   "fallback": "Dusk over crowded medieval rooftops of a tanners' quarter, thin red threads strung between chimneys, hanging hides in narrow alleys, smoky orange sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
