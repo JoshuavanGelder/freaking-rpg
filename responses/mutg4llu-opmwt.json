@@ -1,0 +1,48 @@
+{
+ "id": "mutg4llu-opmwt",
+ "finishedAt": "2026-10-04T06:35:08.474Z",
+ "durationMs": 19250,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Heel me,\" zeg je. Het klinkt meer als een smeekbede dan als een bevel, maar de knoop trekt toch.\n\nDe Abt knielt naast je neer in de natte goot. Zijn koele vingers vinden de wonden zonder te zoeken: je schouder, je zij, je dij. Hij ademt uit, en weer wordt alles stil. Het ijs in je vlees smelt niet, het wordt gewoon vergeten. Alsof je lichaam nooit heeft geleerd dat het pijn deed.\n\n\"Stilte geneest alles, kind,\" zegt hij met die vriendelijke glimlach. \"Ook het hart dat klopt. Vraag me nooit te lang door te gaan.\"\n\nJe kunt weer staan. Je benen trillen nog, je maag knaagt, maar het bloed stroomt warm.\n\nIlse kijkt niet naar je. Ze kijkt naar de daken, waar de kraaien onrustig worden. Door hun ogen zie je het ook: bij de Toren, onder de oude wilg, knielt een grijze gestalte. Hij graaft met zijn blote handen.\n\n\"Hij haalt zijn naam op,\" zegt Ilse koel. \"Als hij hem verplaatst, vind je hem nooit meer.\"",
+  "choices": [
+   "Schaduwstap meteen naar de wilg",
+   "Stuur alle kraaien om hem te verjagen",
+   "Beveel Ilse ons naar de Toren te brengen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 14,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu in de steen. Joshua zit op de zwarte kraaientroon en ziet door kraaienogen. Garrel knielde onder dwang en haat hem. Vorrin Grauwveer wil het knopenboek. Na een gevecht in de straten verdreven Ilse en de Abt Vorrin op Joshua's bevel. De Abt heelde Joshua met zijn kille stilte en waarschuwde hem het niet te lang te vragen. Nu graaft Vorrin onder de oude wilg bij de Toren zijn begraven ware naam op om hem te verplaatsen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Narrow wet cobblestone street at night, an elderly man in his sixties, gaunt and thin, pale bald head, eyes sewn shut with silver thread, calm friendly smile, plain white monk's robe, kneeling and laying cool hands on a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, slumped against a door. Woman in her forties, tall, dark braid, long dark grey robe with silver crow brooch, watching the rooftops full of crows.",
+   "fallback": "Narrow wet cobblestone street at night, closed wooden door, scattered black feathers on the stones, crows silhouetted on rooftops under a cold moon."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
