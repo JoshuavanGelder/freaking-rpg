@@ -1,0 +1,48 @@
+{
+ "id": "mutm1sxn-meh0v",
+ "finishedAt": "2026-10-04T09:21:05.518Z",
+ "durationMs": 28904,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je knielt bij de kooi. \"Rustig,\" zeg je zacht. \"Ik wil alleen kijken.\" Het meisje verroert zich niet. Alleen haar gouden ogen volgen je.\n\nJe laat je blik zakken, voorbij haar huid, naar de draden. Het zijn er tientallen. Elke draad hoort bij iemand anders. Je ziet flarden: een visser die verdrinkt, een vrouw die een kind baart, een soldaat die nooit thuiskomt. Gestolen levens, met grove knopen in haar vastgesnoerd.\n\nJe reikt naar één draad, de dunste. Hij is heet.\n\nDan rukt hij terug. Alle draden trekken tegelijk strak, en een gouden zweepslag snijdt door je hand. Je valt achterover op de stenen. Het meisje gilt nu wél, en in die gil hoor je een tweede stem, oud en droog en geamuseerd.\n\n\"Je kijkt naar mijn werk, knopenmaker,\" zegt de Zonnevorst door haar mond. \"Mooi, nietwaar? Ze is een deur. Bij volle maan loop ik erdoor.\"\n\nHaar ogen worden weer gewoon goud. Ze huilt.",
+  "choices": [
+   "Snij de deurdraad door met de lotschaar",
+   "Vraag het meisje zelf om toestemming",
+   "Laat Aurek de knopen lezen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin weigert zijn draad te verbreden tot Joshua bewijst anders te zijn dan de Zonnevorst. Oude magie werkt alleen goed door draden met toestemming. Belofteknoop met Moeder Veen. Velmoor is klaar voor oorlog. De Zonnevorst steekt bij volle maan de rivier over. Zijn geschenk is een meisje van tien in een gouden kooi, vol gestolen lotdraden van anderen. Toen Joshua ze onderzocht, sneden ze zijn hand; de Zonnevorst sprak door haar mond: zij is een deur waardoor hij bij volle maan binnenkomt.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Torchlit stone hall, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, fallen backwards clutching his hand, before a white-gold cage where a ten-year-old girl with waxy translucent skin and glowing golden threads, fully golden eyes, tangled pale hair, simple white shift, screams as golden threads lash outward",
+   "fallback": "Torchlit stone hall with a white-gold cage in the center, crimson cloth on the floor, faint golden glow spilling across cold flagstones"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
