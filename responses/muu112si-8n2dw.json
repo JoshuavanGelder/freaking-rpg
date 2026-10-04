@@ -1,0 +1,55 @@
+{
+ "id": "muu112si-8n2dw",
+ "finishedAt": "2026-10-04T16:20:23.061Z",
+ "durationMs": 13511,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Drie weken van rust. Je repareert een satelliet met je blote handen en drinkt koffie op het dak van het ESA-gebouw.\n\nDan, midden in de nacht, belt Mara Valk. 'Kom naar de controlekamer. Nu.'\n\nOp het grote scherm hangt een signaal. Geen ster, geen schip. Een ritme. Het komt van voorbij de rand, van buiten het heelal dat de Wachter bewaakt.\n\n'Het herhaalt zich elke zeven seconden,' zegt Mara. Haar grijze ogen zijn scherp, maar haar stem trilt. 'Onze wiskundigen zeggen dat het een vraag is.'\n\nJe kijkt beter. Je alwetendheid reikt tot aan de rand, en daar houdt ze op. Voor het eerst weet jij iets níet.\n\nDe zes stenen tegen je borst gloeien onrustig, alsof ze het signaal herkennen.",
+  "choices": [
+   "Ontcijfer het signaal met je verstand",
+   "Spring naar de Wachter van de Rand",
+   "Stuur een antwoord met de stenen"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Het signaal van voorbij de rand",
+     "detail": "Ontdek wie of wat van buiten het heelal roept."
+    }
+   ],
+   "completeQuests": [],
+   "location": "ESA-controlekamer",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, draagt alle zes Oneindigheidsstenen. Voor ESA-directeur Mara Valk versloeg hij een zwarte vloot, ontmaskerde titan Vorath (nu as), bedwong de Eerste Duisternis en werd alwetend. Zijn leger van sterrenlicht veroverde het heelal en raakte alleen slechte harten. De Wachter van de Rand erkende hem als hoeder; de Koningin knielde en de Raad der Gedoofde Sterren viel. Het heelal volgt hem uit hoop. Nieuw hoofdstuk: na drie weken rust ontvangt ESA een zich herhalend signaal van buiten het heelal, een soort vraag. Zijn alwetendheid reikt daar niet; de stenen reageren onrustig.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a sleek dark armored jacket and trousers with six glowing gemstones set along the sleeves and chest, beside a middle-aged woman in her fifties, slim and upright, sharp grey eyes, short silver hair, wearing a dark navy blazer, white blouse and a headset, in a dark space control room staring at a huge screen with a pulsing strange signal, blue screen glow, night.",
+   "fallback": "A dark space agency control room at night, rows of consoles, a huge wall screen showing a pulsing mysterious waveform, cool blue glow."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
