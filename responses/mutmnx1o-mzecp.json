@@ -1,0 +1,48 @@
+{
+ "id": "mutmnx1o-mzecp",
+ "finishedAt": "2026-10-04T09:38:16.093Z",
+ "durationMs": 28079,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je kiest de draad van de visser. Hij is het slordigst geknoopt. Je volgt de grove knoop met je wil, lus voor lus, zoals de spreukenmaker je ooit leerde een visnet te ontwarren.\n\nHalverwege voel je het. De knoop is geen knoop. Het is een haak.\n\nDe draad schiet door je vingers als een vislijn waar iets groots aan hangt. Van over de rivier trekt iets terug, met een kracht die je botten laat zingen. Je wordt voorover gerukt, met je voorhoofd tegen de witgouden tralies. Je proeft ijzer. Je ribben kraken opnieuw.\n\n\"Voorzichtig,\" fluistert de Zonnevorst, ergens achter je ogen. \"Elke draad die je losmaakt, knoop ik op een andere plek weer vast.\"\n\nLirre gilt. Maar je ring houdt. Haar zilveren draadje blijft heel, en ademt.\n\nVorrin grijpt je schouder en trekt je terug. De visserdraad hangt nu half los, flapperend als een zeil in de storm, en Lirre klemt je hand steeds steviger vast.",
+  "choices": [
+   "Trek de visserdraad met al je wil los",
+   "Vraag Aurek hoe je een haak opent",
+   "Laat Lirre zelf helpen met losmaken"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin weigert zijn draad te verbreden tot Joshua bewijst anders te zijn dan de Zonnevorst. Oude magie werkt goed via draden met toestemming. Belofteknoop met Moeder Veen. De Zonnevorst steekt bij volle maan de rivier over; Lirre, een meisje van tien vol gestolen lotdraden, is zijn deur. Lirre gaf vrijwillig een brede draad; Joshua beschermde haar eigen zilveren draad met een ring. Bij het losmaken van de visserdraad bleek de knoop een haak: de Zonnevorst trok terug en verwondde Joshua. De draad hangt half los.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Torchlit stone hall, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, pulled against white-gold cage bars by a taut glowing golden thread, holding hands with a girl about ten years old, small and thin, waxy translucent skin with faint glowing golden threads beneath, fully golden eyes, tangled pale hair, simple white shift; a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, gripping his shoulder",
+   "fallback": "Torchlit stone hall with a white-gold cage in the center, a crimson cloth on the floor, loose glowing golden threads drifting in the air, cold stone walls"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
