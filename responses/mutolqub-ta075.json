@@ -1,0 +1,61 @@
+{
+ "id": "mutolqub-ta075",
+ "finishedAt": "2026-10-04T10:32:41.667Z",
+ "durationMs": 35084,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Eén hartslag. Meer heb je niet nodig.\n\nJe komt overeind, je borst nog vol vuur, en grijpt de rode wind. Je trekt hem niet zomaar uit je armen. Je trekt hem uit het hele web: uit Vorrins grijze storm, uit Ilses kraaien, uit de koele stilte van de Abt. Eén knoop. Strak. Smal als een naald.\n\nDe windspeer schiet door de hal en slaat dwars door de borst van de Zonnevorst.\n\nHij brult. Het witte vuur scheurt open rond de wond, en voor het eerst zie je wat erachter zit: een man, oud en grauw, die zich al eeuwen aan andermans licht warm houdt. Het vuur flakkert. Krimpt. Hij struikelt achteruit over de drempel, de nacht in, en de kraaien jagen krijsend achter hem aan.\n\nJe hoort hem in de rivier vallen. Je hoort hem zwemmen. Weg.\n\nJe knieën geven het op. Lirre vangt je arm. Vorrin, nog grauw van pijn, kijkt naar de rokende deuropening. \"Hij is gewond,\" zegt hij. \"Een gewonde vorst is gevaarlijk. Maar zijn troon staat nu leeg.\"",
+  "choices": [
+   "Achtervolg hem over de rivier",
+   "Laat de kraaien hem volgen",
+   "Rust en laat de Abt je helen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Neem de lege troon van de Zonnevorst",
+     "detail": "Zijn rijk over de rivier staat open nu hij vlucht."
+    }
+   ],
+   "completeQuests": [
+    "Weersta de Zonnevorst bij volle maan"
+   ],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Rode windstoot",
+     "kind": "kracht",
+     "detail": "Je knoopt wind uit je hele web tot één doorborende speer."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo), die uit vrije wil zijn kant koos. Belofteknoop met Moeder Veen. Met Lirre bevrijdde hij alle gestolen lotdraden; ze is vrij, met bruine ogen en Vorrins sjaal. De Zonnevorst kwam zelf naar de hal; Lirre dreef zijn vuur uit Joshua's web. Joshua doorboorde hem met een windspeer uit zijn hele web. De Zonnevorst vluchtte zwaar gewond over de rivier, achtervolgd door kraaien. Zijn troon staat leeg; Joshua is zelf uitgeput en gewond.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark stone hall, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, hurling a needle-thin spear of red wind straight through a towering figure of white fire in an open western doorway, the flames tearing apart, crows swirling, river glinting outside at night.",
+   "fallback": "Dark stone hall with an open western doorway, smoke curling over the threshold, a moonlit river beyond, crows circling in the night sky, scattered grey ash on the floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
