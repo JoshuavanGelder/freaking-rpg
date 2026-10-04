@@ -1,0 +1,48 @@
+{
+ "id": "muthdfsq-zd1ge",
+ "finishedAt": "2026-10-04T07:09:57.180Z",
+ "durationMs": 15600,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Hang hem aan de poort,\" zeg je. \"Zodat heel Velmoor het ziet.\"\n\nNiemand beweegt. Dan knikt Ilse, stijf, en wijst twee leerlingen aan. Ze tillen de bundel op zonder te kijken. Een van hen struikelt op de trap.\n\nJe volgt het door de ogen van de kraaien. De grijze jas aan ijzeren haken boven de torenpoort, wapperend in de ochtendwind. Het zilveren speldje vangt het eerste licht. Beneden op het plein blijven mensen staan. Een vrouw trekt haar kind weg. Een marskramer laat zijn kar achter en rent. Tegen de middag is de straat voor de Toren leeg.\n\nVelmoor fluistert je naam. Niet met liefde.\n\nDan, tegen de schemering, ziet een kraai op de stadsmuur iets vreemds. Op de drempel van de poort, recht onder de jas, ligt een klein bosje gedroogde kruiden, vastgebonden met een rood touwtje. Gelegd door niemand die de kraaien zagen komen.\n\nHet touwtje is geknoopt. Een knoop die je herkent uit je eigen boek.",
+  "choices": [
+   "Laat het kruidenbosje direct verbranden",
+   "Bestudeer de knoop in het knopenboek",
+   "Stuur Vorrin naar de oude smidse"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie, knoopte Ilse (om haar wil, bang), de Blinde Abt (Cassian Morr), meester Aurek Valdemoor (in de steen) en Vorrin Grauwveer (Tevin Aslo). Hij zit op de kraaientroon. De Abt probeerde hem in willoze stilte te trekken; Joshua brak los. Garrel weigerde te knielen, vluchtte naar een oude smidse en werd door Joshua's kraaien gedood. Zijn lichaam hangt nu aan de torenpoort; Velmoor is doodsbang en de straten zijn leeg. Een gekapte oude vrouw in de smidse zag Joshua door de kraaien heen. Onder de poort ligt nu een kruidenbosje met een rood touwtje, geknoopt met een knoop uit Joshua's eigen boek.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dusk at the gate of a dark stone tower in a medieval city, a heavy dark grey coat with a silver crow pin hanging from iron hooks above the gate, empty square, crows on the walls, a small bundle of dried herbs tied with red string on the threshold.",
+   "fallback": "Dusk at the gate of a dark stone tower in a medieval city, empty cobbled square, crows on the walls, a small bundle of dried herbs tied with red string on the threshold."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
