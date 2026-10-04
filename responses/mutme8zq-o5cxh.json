@@ -1,0 +1,48 @@
+{
+ "id": "mutme8zq-o5cxh",
+ "finishedAt": "2026-10-04T09:30:32.903Z",
+ "durationMs": 14564,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je pakt de rode Werkelijkheidssteen van de werkbank. Hij voelt warm, bijna gretig. Je sluit je ogen en rekent het uit: geen vals geld, geen diefstal. Je herschrijft één regel van de werkelijkheid. Een vergeten patent op een supergeleider, jaren geleden ingediend onder jouw naam, en vannacht verkocht.\n\nJe telefoon piept. Een melding van je bank. Je kijkt en grijnst: een miljoen en tien euro. Alles keurig, alles legaal, alsof het altijd zo had moeten zijn.\n\nMeteen trilt het toestel opnieuw. Mara Valk, kalm maar dringend: 'Professor? De scheur groeit. Onze satellieten zien een vorm achter het licht. Iets groots. Het beweegt.'\n\nBuiten kleurt de hemel boven het IJ dieper violet. De Ruimtesteen gloeit blauw, alsof hij je uitnodigt. De Tijdsteen tikt zacht, groen, ongeduldig.\n\nMet een miljoen op je rekening en zes stenen binnen handbereik vraag je je af hoe je deze dag het beste begint.",
+  "choices": [
+   "Teleporteer direct naar de scheur",
+   "Kijk met de Tijdsteen vooruit",
+   "Vraag Mara om alle satellietbeelden"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 1000000,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Einstein De Tweede, slimste en sterkste mens ter wereld, bezit alle zes Oneindigheidsstenen in zijn laboratorium aan het IJ in Amsterdam. Directeur Mara Valk van het Europees Ruimteagentschap vraagt zijn hulp: boven de Noordzee is een violette scheur in de lucht waar iets doorheen komt. Met de Werkelijkheidssteen liet hij een oud patent verkopen en heeft nu ruim een miljoen euro. Mara meldt dat de scheur groeit en dat er een grote vorm achter beweegt.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A strikingly handsome man in his thirties, tall and muscular, sharp jawline, swept dark hair, light stubble, wearing a white lab coat over a black turtleneck and dark trousers, holding a glowing red gemstone and smiling at his phone in a waterfront lab, violet sky through the window.",
+   "fallback": "A high-tech waterfront laboratory at dawn, glowing gemstones on a workbench, violet shimmering sky over the water outside the window."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
