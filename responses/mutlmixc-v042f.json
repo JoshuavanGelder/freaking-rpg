@@ -1,0 +1,54 @@
+{
+ "id": "mutlmixc-v042f",
+ "finishedAt": "2026-10-04T09:09:12.913Z",
+ "durationMs": 28932,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Laat Ilse, Vorrin en de Abt hem ontvangen,\" zeg je tegen de wachter. \"Ze vertellen me elk woord.\"\n\nJe klimt naar de hoogste kamer van de Toren en sluit de deur. Je gaat op de koude vloer zitten, met het knopenboek open op je knieën.\n\nDaar laat je de oude magie los, een klein beetje maar. Ze stroomt dik en traag door je aderen, als zwarte honing die te lang heeft gestaan. Eerst wil ze alle kanten op. De kaarsvlammen buigen plat en de luiken rammelen. Maar je knoopt haar niet vast. Je luistert ernaar.\n\nDan voel je het. De oude magie heeft geen vorm, ze zoekt een vorm. Ze stroomt de knopen in die je al gelegd hebt: de draad van de Abt, van Vorrin, van Ilse. Je kunt door die draden heen duwen en je kracht in hen gieten.\n\nIn je zak sist de steen van Aurek. \"Voorzichtig, jongen. Zo begon hij ook.\"\n\nOnder je schraapt een deur. Vorrins stem klinkt op de trap. De gezant is uitgesproken.",
+  "choices": [
+   "Laat Vorrin direct verslag doen",
+   "Duw kracht door Vorrins draad als test",
+   "Vraag Aurek wat hij bedoelt"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "De hoogste kamer van de Toren",
+   "addTraits": [
+    {
+     "name": "Oude magie",
+     "kind": "kracht",
+     "detail": "De oude magie stroomt door je en via je knopen naar je geknoopten."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin. Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen; zij leert pas weer iets als hij haar iets nieuws toont. Saria bekende: de Zonnevorst is een onsterfelijke spreukenmaker met rafelende lotdraad die Joshua als knopenmaker wil. Bij volle maan steekt hij de rivier over. Velmoor is voorbereid. Een gezant met witte vlag sprak met de drie geknoopte leiders. Joshua ontdekte dat hij oude magie via zijn knopen in zijn geknoopten kan gieten; Aurek waarschuwt: zo begon de Zonnevorst ook.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, sitting cross-legged on a cold stone tower floor, open book on his knees, candle flames bent flat, dark swirling magic like thick smoke flowing through glowing threads, night",
+   "fallback": "Bare top chamber of a stone tower at night, candles with flickering flames, rattling wooden shutters, an open old book on the floor, dark heavy atmosphere"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
