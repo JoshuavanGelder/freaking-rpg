@@ -1,0 +1,48 @@
+{
+ "id": "mutj3djg-1ikcm",
+ "finishedAt": "2026-10-04T07:58:21.466Z",
+ "durationMs": 30180,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat Saria praten en zoekt intussen in gedachten de knoop om Ilse. Je trekt er zacht aan. Het loden kistje. Onder mijn bed. Ongezien.\n\nVer weg in de Toren voel je haar gehoorzamen. Even later gaan de zijdeuren open. Ilse komt binnen met een dienblad met wijn, alsof ze de gasten bedient. Onder de doek ligt iets zwaars en vierkants.\n\nMaar het lood zingt. Diep vanbinnen, gedempt, fluistert de steen van je meester, en het rode spul in het flesje hoort het. Het kolkt fel en drukt zich plat tegen de andere kant van het glas, weg van het dienblad.\n\nSaria's ogen schieten naar Ilse. Dan naar jou. Haar glimlach wordt dun.\n\n\"Lood,\" zegt ze. \"Slim. Te laat, maar slim.\" Ze schuift het flesje in een plooi van haar rode zijde. \"Wat zit er al in dat kistje, heer? Iets dat ook niet naar buiten mag?\"\n\nHaar wachters trekken hun kromzwaarden een handbreed uit de schede.",
+  "choices": [
+   "Gris het flesje met een rode windstoot",
+   "Bied Saria een ruil aan",
+   "Dreig met wat er in het kistje zit"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor in een loden kistje. Hij knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort; het volk haat Joshua. Moeder Veen leerde hem één lotdraad; meer alleen zonder dwang. Saria van Kesh, gezant van de Zonnevorst, eist dat hij buigt, anders opent ze haar flesje: een koortsvloek die groeit op haat, Joshua's hartslag kent, maar niet door lood kan. Ilse bracht stiekem het loden kistje, maar Saria merkte het en vermoedt wat erin zit; ze verborg het flesje in haar gewaad. Haar wachters trekken hun zwaarden.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Stone waiting hall in a dark tower, morning light, woman in her forties, tall and straight-backed, stern calm face, grey eyes, dark hair in a tight braid, long dark grey robe with silver crow brooch, carrying a covered tray; woman in her thirties, tall and elegant, dark brown skin, sharp knowing eyes, long black braids threaded with gold coins, flowing crimson and sand-colored silk robes, hiding a red vial; guards half-drawing curved swords",
+   "fallback": "Stone waiting hall in a dark tower, morning light through tall windows, a long wooden table, a silver tray with wine cups, a black crow silhouette on the windowsill"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
