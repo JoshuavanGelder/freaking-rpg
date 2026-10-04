@@ -1,0 +1,53 @@
+{
+ "id": "mutfox20-ua54l",
+ "finishedAt": "2026-10-04T06:22:57.651Z",
+ "durationMs": 19446,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je staat op van de troon en laat de schaduwen over je heen vallen. De trap op, de kapel uit, de nacht in. Je voeten maken geen geluid op de natte keien. Door de ogen van de kraaien zie je precies waar Vorrin loopt: twee straten verder, voorop, zijn grauwe mantel wapperend.\n\nJe glipt door een steeg en komt achter zijn mannen uit. Nog tien passen. Vijf. Het rode koord ligt al tussen je vingers.\n\nDan blijft Vorrin staan. Hij draait zich niet om. Hij snuift alleen, als een hond.\n\n\"Oude magie,\" zegt hij. \"Die stinkt, jongen. Hoe stil je ook loopt.\"\n\nHij gooit zijn hand naar achteren. Grijze veren van licht snijden door de lucht. Eén ervan schampt je schouder en brandt als ijs. Je schaduw scheurt van je af. Tien mannen draaien zich om, staven gloeiend.\n\nJe weet zijn ware naam niet. En hij staat recht voor je, glimlachend.",
+  "choices": [
+   "Sla ze weg met de rode windstoot",
+   "Vraag de kraaien naar zijn ware naam",
+   "Vlucht terug naar de troon"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Straten bij de kapel",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, nu opgesloten in de steen. Joshua zit op de zwarte kraaientroon en ziet door de ogen van alle kraaien. Garrel knielde onder dwang voor de troon, haat hem nog. Joshua sloop met schaduwstap naar Vorrin Grauwveer om zijn naam te knopen, maar Vorrin rook de oude magie, verwondde hem met lichtveren en staat nu met tien mannen tegenover hem in de straten. Joshua kent Vorrins ware naam niet.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Narrow wet cobblestone street at night, a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, long ash-grey cloak, turning with a cruel smile, glowing grey feathers of light flying from his hand. Behind him men in grey cloaks with glowing staffs. Facing him a thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, holding a red cord, crows on rooftops.",
+   "fallback": "Narrow wet cobblestone street at night in an old dark city, crooked houses, crows perched on rooftops, faint grey mist and lantern glow."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Vorrin Grauwveer",
+    "look": "man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey cloak over dark clothes"
+   }
+  ]
+ },
+ "model": "opus"
+}
