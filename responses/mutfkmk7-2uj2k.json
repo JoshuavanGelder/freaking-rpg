@@ -1,0 +1,48 @@
+{
+ "id": "mutfkmk7-2uj2k",
+ "finishedAt": "2026-10-04T06:19:45.152Z",
+ "durationMs": 26702,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Kniel,\" zeg je.\n\nJe stem is zacht, maar de troon maakt hem groot. Hij rolt langs de wanden, door honderden snavels die hem herhalen in een fluisterend gekras. Kniel. Kniel. Kniel.\n\nGarrel zet zich schrap. Het blauwe licht om zijn handen zwelt aan, zwaar als natte klei. Je voelt zijn wil tegen de jouwe duwen, een muur van spieren en haat. Je ribben doen nog pijn van de Abt. Je duwt toch terug. Je denkt aan elke winter op straat, elke schop, elke deur die dichtging.\n\nZijn knie raakt de steen. Dan de tweede. Het blauwe licht dooft tot een flakkering.\n\n\"Ik kniel,\" gromt hij met opeengeklemde kaken. \"Voor de troon. Niet voor een bedelaar.\"\n\nDoor duizend kraaienogen zie je Vorrin van de muur stappen. Zijn mannen volgen. Ze lopen nu snel door de stille straten naar de kapel.\n\n\"Ze zijn er voor de klok slaat,\" kraast de kroonkraai.",
+  "choices": [
+   "Stuur Garrel als eerste op Vorrin af",
+   "Laat de kraaien Vorrins mannen aanvallen",
+   "Laat Ilse Vorrin naar binnen lokken"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 12,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, straatarme magiër in Velmoor, bezit het knopenboek en de fluisterende steen. Hij offerde de spreukenmaker voor oude magie. Hij knoopte Ilse van de Toren, de Blinde Abt (Cassian Morr) en de eerste meester Aurek Valdemoor, die nu opgesloten zit in de steen. Joshua zit op de zwarte kraaientroon; de kraaien van Velmoor buigen en hij ziet door hun ogen. Garrel knielde onder dwang, maar alleen voor de troon, en haat hem nog. Vorrin Grauwveer marcheert met tien mannen naar de kapel en is er snel. De Abt waarschuwde dat Joshua niet weet wat hij losliet en dat hij de stad moet houden.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Vast round candlelit underground chamber, hundreds of crows on stone ledges. Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, ragged grey shawl, seated on a black wooden throne. Before him kneels a man in his thirties, enormous hulking build, broad scarred face, shaved head, heavy dark grey coat with silver crow pin, hands glowing faint blue.",
+   "fallback": "Vast round underground chamber lit by candles, an empty black wooden throne, stone ledges lined with dark feathers, cold stone floor, deep shadows and flickering warm light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
