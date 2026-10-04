@@ -1,0 +1,48 @@
+{
+ "id": "mutoc3zd-u84wc",
+ "finishedAt": "2026-10-04T10:25:04.967Z",
+ "durationMs": 28263,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Samen,\" zeg je tegen Vorrin. Hij knikt één keer.\n\nJe opent je borst voor de oude magie. Ze stroomt door je heen, zwaar en koud als diep water, en via de knoop naar Vorrin. Zijn handen worden asgrauw van licht. Jullie slaan tegelijk toe: jouw rode wind, zijn grijze storm, gevlochten tot één slag.\n\nDe Zonnevorst stapt er niet eens voor opzij.\n\nHij steekt een witte hand uit en grijpt de slag halverwege vast. Je voelt het meteen: hij trekt niet aan de wind. Hij trekt aan de knoop. Langs de oude magie kruipt zijn vuur terug naar binnen, door Vorrin, naar jou. Vorrin schreeuwt en valt op een knie. Jouw borst, net geheeld, staat in brand van binnenuit.\n\n\"Daar is hij,\" fluistert de Zonnevorst tevreden. \"Je mooie web. Alles hangt aan jou, knopenmaker. Dus trek ik aan jou.\"\n\nHet vuur kruipt verder. Naar Ilse. Naar de Abt. Naar elke draad die je ooit legde.",
+  "choices": [
+   "Knip je eigen knopen door met de lotschaar",
+   "Sluit de oude magie in jezelf af",
+   "Laat Lirre nee zeggen tegen hem"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Magisch Potentieel",
+   "dc": 16,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -6,
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo). Belofteknoop met Moeder Veen. Met Lirre maakte hij alle gestolen lotdraden los; ze is vrij, met bruine ogen en Vorrins sjaal. Vorrin koos uit vrije wil Joshua's kant. De Zonnevorst, een gestalte van wit vuur, stond in de westelijke deur. Joshua en Vorrin vielen hem aan met oude magie, maar hij greep de slag en kruipt nu met zijn vuur langs Joshua's knopen naar binnen, naar Vorrin, Ilse, de Abt en het hele web.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark stone hall, a towering figure of white fire in an open western doorway catches a braided blast of red and grey wind in one hand; white flames crawl back along glowing threads toward a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, and a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, dark clothes, kneeling.",
+   "fallback": "A dark stone hall with an open western doorway glowing with white light, grey ash scattered on the floor, crows perched on high beams, mist drifting in from a river outside."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
