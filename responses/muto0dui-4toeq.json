@@ -1,0 +1,55 @@
+{
+ "id": "muto0dui-4toeq",
+ "finishedAt": "2026-10-04T10:15:47.462Z",
+ "durationMs": 17846,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Geen tijd meer,\" zeg je. \"Alles wat over is. Nu.\"\n\nLirre legt haar handpalmen tegen de jouwe door de grijze tralies. Je laat de wil los waar je het hele gevecht aan hebt vastgehouden, en grijpt de laatste gouden draden in één bundel. Een visser. Een bruid. Een oude dichter. Tientallen namen, warm en levend.\n\n\"Nee,\" zegt Lirre. Niet fluisterend deze keer. Luid, helder, een bevel.\n\nDit keer trekt niemand terug. De Zonnevorst staat midden in de rivier, zonder hand vrij om aan haken te rukken. De draden schieten uit haar weg als een zwerm vonken, naar het noorden, het zuiden, de dorpen, de verloren mensen. Je neus bloedt, maar je staat.\n\nDe kooi zucht. Het laatste witte goud dooft, en de tralies vallen als as om haar voeten.\n\nLirre stapt eruit. Haar huid is niet meer doorschijnend. Twee bruine ogen kijken je aan.\n\nDan zwaait de westelijke deur open. Op de drempel staat een gestalte van wit vuur, druipend van rivierwater.",
+  "choices": [
+   "Val de Zonnevorst meteen aan met rode wind",
+   "Probeer zijn ware naam te grijpen",
+   "Stuur Lirre weg en spreek hem aan"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Red het gouden meisje"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (Tevin Aslo); Vorrin wil bewijs dat Joshua anders is dan de Zonnevorst. Belofteknoop met Moeder Veen. Samen met Lirre, een meisje van tien, maakte hij alle gestolen lotdraden los en stuurde ze terug naar hun eigenaren; de kooi viel tot as en Lirre is vrij, met gewone bruine ogen. Garrel, Ilse, de kraaien en de Abt hielpen. Joshua brak het zegel met een speer van rode wind. Nu staat de Zonnevorst zelf, een gestalte van wit vuur, in de westelijke deur van de Toren.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Dark stone hall, a towering figure made of white fire dripping river water stands in an open western doorway; in front, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, beside a small thin girl about ten with tangled pale hair, brown eyes, simple white shift, grey ash of a fallen cage at their feet, crows above.",
+   "fallback": "A dark stone hall with an open western door blazing with white light, grey ash scattered on the floor, black feathers drifting in the air, tall arched windows."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Lirre (het gouden meisje)",
+    "look": "girl about ten years old, small and thin, pale ordinary skin, warm brown eyes, tangled pale hair, simple white shift"
+   }
+  ]
+ },
+ "model": "opus"
+}
