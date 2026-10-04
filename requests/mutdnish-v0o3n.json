@@ -1,0 +1,196 @@
+{
+ "id": "mutdnish-v0o3n",
+ "createdAt": "2026-10-04T05:25:31.745Z",
+ "kind": "turn",
+ "model": "opus",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [
+   "Episch",
+   "Duister"
+  ],
+  "toneText": "",
+  "wishes": "Magie verhaal waar ik steeds sterker word totdat ik de wereld overneem en de sterkste word van de wereld. Daarna nog even doorgaan met regelen van mijn werelds koninkrijk"
+ },
+ "hero": {
+  "name": "Joshua",
+  "className": "Magiër",
+  "powers": "Begin zwak maar veel potentie",
+  "looks": "Ik begin als een heel erg arme persoon. Kapotte kleren en bijna geen geld op zak",
+  "heroLook": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots"
+ },
+ "state": {
+  "hp": 6,
+  "maxHp": 30,
+  "gold": 8,
+  "xp": 566,
+  "level": 6,
+  "location": "Werkplaats van de spreukenmaker",
+  "attributes": [
+   {
+    "name": "Magisch Potentieel",
+    "value": 5
+   },
+   {
+    "name": "Wilskracht",
+    "value": 4
+   },
+   {
+    "name": "Leergierigheid",
+    "value": 4
+   },
+   {
+    "name": "Overlevingsdrang",
+    "value": 3
+   },
+   {
+    "name": "Lichaamskracht",
+    "value": 1
+   },
+   {
+    "name": "Aanzien",
+    "value": 0
+   }
+  ],
+  "inventory": [
+   "Fluisterende steen",
+   "Kraaienzegel"
+  ],
+  "quests": [
+   {
+    "title": "Ontsnap aan de Orde van de Kraai",
+    "detail": "Kom levend weg met de fluisterende steen.",
+    "done": false
+   },
+   {
+    "title": "Word de sterkste magiër",
+    "detail": "Groei in kracht tot niemand je kan stoppen.",
+    "done": false
+   },
+   {
+    "title": "Ontdek het geheim van de kraaienkamer",
+    "detail": "Zoek uit wat achter het kraaienreliëf verborgen ligt.",
+    "done": false
+   },
+   {
+    "title": "Betaal de schuld aan de kroonkraai",
+    "detail": "Eén keer gehoorzamen, op een dag die hij kiest.",
+    "done": false
+   },
+   {
+    "title": "Red Maren boven de put",
+    "detail": "Kom boven voordat de Orde haar te pakken krijgt.",
+    "done": true
+   },
+   {
+    "title": "Leer van de spreukenmaker",
+    "detail": "Ontdek welke prijs hij voor zijn lessen vraagt.",
+    "done": false
+   },
+   {
+    "title": "Beslis over de prijs van de spreukenmaker",
+    "detail": "Accepteer of weiger zijn prijs voor de derde les.",
+    "done": true
+   },
+   {
+    "title": "Wek of laat de eerste meester rusten",
+    "detail": "Je kent zijn naam nu; beslis wat ermee gebeurt.",
+    "done": true
+   }
+  ],
+  "traits": [
+   {
+    "name": "Schaduwstap",
+    "kind": "kracht",
+    "detail": "Je beweegt bijna geluidloos en glipt ongezien weg."
+   },
+   {
+    "name": "Rode windstoot",
+    "kind": "kracht",
+    "detail": "Je kunt een ruwe, rode wind uit je handen laten losbarsten."
+   },
+   {
+    "name": "Kraaienpact",
+    "kind": "zwakte",
+    "detail": "Je bent één dienst verschuldigd aan de kroonkraai."
+   },
+   {
+    "name": "Zwak lichaam",
+    "kind": "zwakte",
+    "detail": "Honger en uitputting treffen je harder dan andere mensen."
+   },
+   {
+    "name": "Eerste knoop",
+    "kind": "kracht",
+    "detail": "Je kunt wilde magie vasthouden met een knoop voor ze losbreekt."
+   },
+   {
+    "name": "Tweede knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een belofte, als je die vraagt."
+   },
+   {
+    "name": "Derde knoop",
+    "kind": "kracht",
+    "detail": "Je kunt een knoop leggen om een naam en die vasthouden."
+   },
+   {
+    "name": "Splinter van de meester",
+    "kind": "zwakte",
+    "detail": "De meester beheerst je linkerarm tot halverwege je bovenarm en wil meer."
+   },
+   {
+    "name": "Zwarte vlam",
+    "kind": "kracht",
+    "detail": "Je linkerhand roept een koude vlam op die magie opeet en je voedt."
+   }
+  ]
+ },
+ "summary": "Joshua, straatarme magiër in Velmoor, bezit de fluisterende steen. De Orde van de Kraai jaagt op hem. Pact met de kroonkraai: één dienst verschuldigd. De spreukenmaker leerde hem drie knopen; prijs was de naam van de eerste meester, slapend in de steen. Een splinter van de meester zit in Joshua's linkerarm en geeft een koude zwarte vlam die magie eet en hem voedt. Joshua liet de vlam de cirkel opeten die de meester vasthield. Een knoop om zijn elleboog brak; de meester beheerst nu zijn arm tot halverwege de bovenarm en speelt geduldig. De spreukenmaker zegt dat een knoop alleen niet houdt: de meester moet iets of iemand krijgen om vast te houden. De kraai is gewond en waakzaam.",
+ "cast": [
+  {
+   "name": "Maren",
+   "look": "young woman in her late teens, wiry build, tired freckled face, short brown hair, torn sleeve on a patched green tunic, carries a small knife"
+  },
+  {
+   "name": "De bakker",
+   "look": "broad middle-aged man, bald, grey-streaked beard, flour on his arms, white apron"
+  },
+  {
+   "name": "De oude spreukenmaker",
+   "look": "elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe"
+  }
+ ],
+ "recent": [
+  {
+   "action": "Probeer de knoop rustig opnieuw los te maken",
+   "narration": "Je laat de zweep los. Dat is het moeilijkste. De rode zweem wil razen, maar je ademt in, telt tot de stem in je borst zwijgt en laat de zweem zacht door je zwarte vingers lekken, als water door een spleet.\n\nNu zie je het. De knoop is geen kluwen. Het is een gewone lus met een tweede lus eronder, en je hebt hem zelf gelegd, dus je weet waar je hand begon. Je volgt hem terug. Door je mond fluistert iets spottend: \"Langzamer, kind.\" Je antwoordt niet.\n\nJe tilt het eerste uiteinde op. Je geeft de belofte terug in plaats van hem te breken. \"Ik laat je gaan,\" zeg je. \"Je bent vrij.\"\n\nDe grijze lijn boven de knokkels van de oude man lost op in as. Hij trekt zijn hand terug en wrijft over zijn rode pols. De kraai laat de steen los, smeulend en hijgend. Je zwarte nagels worden langzaam bleek, maar in je borst blijft iets koud tikken, als een tweede hartslag.\n\n\"Goed,\" kraakt de spreukenmaker, en hij reikt naar zijn krijt. \"Nu de rest.\"",
+   "picture": "A ragged young mage in torn poor clothes kneeling, gently unpicking a glowing grey thread of light from the wrist of a frail elderly man with wild white hair and milky left eye, thread dissolving into ash, dim workshop, red embers, black crow nearby, chalk circle fading"
+  },
+  {
+   "action": "Dit is goed? En wat bedoel je met de rest?",
+   "narration": "\"Is dit goed?\" vraag je hees. \"En wat bedoel je met de rest?\"\n\nDe oude man trekt met trillende hand een nieuwe cirkel om je heen, kleiner, strakker. \"Goed? Je leeft nog, jongen. Dat is meer dan de meesten die die naam ooit uitspraken.\" Hij tikt met zijn inktvinger op je borst, precies waar het koude tikken zit. \"Hij zit nog in je. Niet heel. Een splinter. De naam ligt half geknoopt in je hoofd, half open.\"\n\nHij schuift de fluisterende steen naar je toe. Hij is nu stil, zwart als natte kool.\n\n\"De rest is kiezen,\" kraakt hij. \"Je kunt de knoop afmaken en hem terugduwen in de steen, voorgoed laten slapen. Of je laat de splinter in je, en leert hem te dragen. Dat maakt je sterk. Gevaarlijk sterk. Maar hij zal blijven fluisteren.\"\n\nDe kraai hipt dichterbij, zijn smeulende veren rokend. Hij kijkt je aan alsof hij al weet wat je kiest.\n\nIn je borst tikt het. Geduldig. Wachtend."
+  },
+  {
+   "action": "Houd de splinter en leer hem dragen",
+   "narration": "\"Ik houd hem,\" zeg je.\n\nDe oude man sluit zijn goede oog. \"Dan leer je dragen. Adem met hem mee, niet tegen hem in.\"\n\nJe probeert het. Je ademt in, en het koude tikken ademt mee. Even voelt het als een tweede hart dat in de maat slaat. Dan glijdt het uit de maat. De splinter grijpt de opening en kruipt omhoog, langs je ribben, naar je keel. Je ziet de werkplaats door twee paar ogen: de jouwe, en een paar ouder, kouder, hongerig.\n\n\"Wat een mager huis heb je, kind,\" fluistert hij. \"Ik zal het inrichten.\"\n\nJe slaat met je vuist op de vloer tot de pijn je terugtrekt. Het werkt. Half. Je ligt hijgend op het krijt, bloed op je lip, je linkerhand nog koud tot aan de pols. In die hand flakkert iets zwarts, als een vlam die geen licht geeft.\n\nDe kraai schuift weg van je. De spreukenmaker kijkt naar je hand. \"Hij heeft een plek gevonden,\" zegt hij zacht. \"Nu moet je hem daar houden.\"",
+   "picture": "A thin ragged young man in torn patched clothes lying gasping in a chalk circle, his left hand frost-pale holding a flickering lightless black flame, frail elderly man in his seventies with wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over patched woolen robe watching, a smoldering crow stepping back, dim workshop"
+  },
+  {
+   "action": "Test de zwarte vlam op het krijt",
+   "narration": "Je kruipt op je knieën naar de rand van de nieuwe cirkel en houdt je linkerhand boven het krijt. De zwarte vlam flakkert, koud als een winternacht in een kelder.\n\n\"Voorzichtig,\" kraakt de spreukenmaker. \"Krijt is geen hout, jongen. Krijt is een belofte.\"\n\nJe laat de vlam zakken. Hij brandt niet. Hij eet. De witte lijn wordt grijs, dan zwart, dan is hij weg, en de magie die erin zat stroomt koud je pols in. Je voelt je even minder leeg. Minder hongerig.\n\nIn je borst zucht iets tevreden. \"Zie je wel,\" fluistert de meester. \"Wij hoeven niets te maken. Wij nemen.\"\n\nJe trekt je hand terug voor de vlam verder kruipt. Het lukt, net. Er zit een gat in de cirkel, zo breed als een vinger.\n\nDe oude man staart naar het gat. De kraai krijst en vliegt naar de deur. \"Die cirkel,\" zegt de spreukenmaker zacht, \"hield hém vast. Niet jou.\""
+  },
+  {
+   "action": "Laat de vlam de hele cirkel opeten",
+   "narration": "Je laat de vlam zakken. Helemaal.\n\n\"Nee, jongen!\" De spreukenmaker grijpt naar je schouder, maar het is te laat. De zwarte vlam stort zich op het krijt als een uitgehongerde hond. Lijn na lijn wordt grijs, dan zwart, dan niets. De magie stroomt je pols in, koud en zwaar, en voor het eerst in maanden voel je je niet hongerig. Je botten voelen voller. Je adem dieper.\n\nMaar je kunt niet meer stoppen.\n\nJe wilt je hand terugtrekken en je hand wil niet. De kou kruipt langs je onderarm omhoog, tot voorbij je elleboog. Je huid wordt grauw, de aderen zwart als inkt. In je hoofd lacht de meester, nu niet meer fluisterend. \"Dank je, kind. Geen hek meer.\"\n\nVan de cirkel is alleen een kring van roet over.\n\nDe oude man deinst terug tegen zijn werkbank, zijn melkwitte oog wijd open. De kraai bij de deur krijst één keer, scherp, als een waarschuwing. Je linkerarm trilt. Hij heeft nog steeds honger.",
+   "picture": "Thin young man around twenty, gaunt pale face, messy dark hair, dark tired eyes, torn and patched brown tunic and trousers, frayed rope belt, bare worn boots, kneeling as a lightless black flame devours a chalk circle, his left arm grey with ink-black veins to the elbow; elderly man in his seventies, frail and hunched, wild white hair, milky left eye, ink-stained fingers, ragged grey shawl over a patched woolen robe recoiling against a workbench; crow shrieking by the door, dim workshop"
+  },
+  {
+   "action": "Leg een knoop om je eigen elleboog",
+   "narration": "Je klemt je tanden op elkaar en trekt met je rechterhand een rode draad uit de lucht. Eerste lus om je elleboog, precies op de grens waar grauwe huid overgaat in de jouwe. Tweede lus eronder.\n\n\"Een hek van touw,\" grinnikt de meester. \"Wat lief.\"\n\nJe trekt aan. Even houdt het. De kou stuit op de knoop als water tegen een dam. Dan voel je het: hij wacht niet, hij duwt. De draad kreunt, rafelt, en knapt met een geluid als een zweep. Het losse einde slaat terug over je gezicht. Een brandende streep van wang tot kin.\n\nDe kou schiet omhoog, tot halverwege je bovenarm, en stopt daar. Niet omdat jij hem tegenhoudt. Omdat hij het zo wil.\n\n\"Rustig, kind. Ik heb tijd.\"\n\nDe spreukenmaker kruipt naar je toe met een stuk krijt in zijn bevende hand. \"Een knoop alleen houdt hem niet,\" hijgt hij. \"Je moet hem iets geven om vast te houden. Of iemand.\" Bij de deur slaat de kraai met smeulende vleugels."
+  }
+ ],
+ "action": "Vraag de meester wat hij wil",
+ "roll": 15
+}
