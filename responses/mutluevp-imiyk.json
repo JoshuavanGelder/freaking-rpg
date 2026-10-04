@@ -1,0 +1,53 @@
+{
+ "id": "mutluevp-imiyk",
+ "finishedAt": "2026-10-04T09:15:09.043Z",
+ "durationMs": 16614,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je stopt de steen weg en kijkt Vorrin aan. Je ribben steken bij elke ademhaling.\n\n\"Vorrin. Ik vraag het je. Maak je draad wijder. Laat me erdoor.\"\n\nLange tijd zegt hij niets. Dan lacht hij, kort en zonder plezier.\n\n\"Nu vraag je het. Nu je weet dat het werkt.\" Hij komt een stap de kamer in. \"Je hebt mijn naam gestolen, Joshua. Tevin Aslo. Die naam heeft mijn moeder me gegeven, en jij hebt hem uit me gerukt als een tand. En nu wil je dat ik de deur ook nog openzet?\"\n\nHij schudt zijn hoofd. \"Nee. Niet zo. Niet vanavond.\"\n\nJe voelt zijn draad trillen, strak en koud, nog smaller dan eerst. Hij zou het weigeren, zelfs als je het hem beval.\n\nDan kijkt hij naar de trap. \"Misschien ooit. Als je laat zien dat je anders bent dan hij.\" Zijn stem wordt zachter. \"Begin daar beneden. Het geschenk huilt, Joshua. Het klinkt als een kind.\"",
+  "choices": [
+   "Geef Vorrin zijn naam terug",
+   "Ga meteen naar het geschenk",
+   "Vraag Ilse om haar draad"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Aanzien",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Verdien Vorrins vertrouwen",
+     "detail": "Toon dat je anders bent dan de Zonnevorst."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor, met knopenboek en fluisterende steen (meester Aurek). Hij knoopte Ilse, de Blinde Abt en Vorrin (ware naam Tevin Aslo). Garrel is dood; het volk haat hem. Belofteknoop met Moeder Veen; zij leert pas weer iets als hij haar iets nieuws toont. De Zonnevorst, onsterfelijke spreukenmaker met rafelende lotdraad, wil Joshua als knopenmaker en steekt bij volle maan de rivier over. Velmoor is voorbereid. Oude magie werkt alleen goed door draden die met toestemming wijd gemaakt zijn. Joshua vroeg Vorrin om toestemming; Vorrin weigerde, verbitterd over zijn gestolen naam, tenzij Joshua bewijst anders te zijn dan de Zonnevorst. Beneden wacht een ademend, huilend 'geschenk' van de Zonnevorst.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark tower chamber lit by a single relit candle, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, facing a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, tense standoff",
+   "fallback": "Dark round tower chamber at night, single candle, open old book on stone floor, wisps of smoke, narrow stairwell leading down into shadow"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
