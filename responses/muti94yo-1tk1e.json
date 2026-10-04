@@ -1,0 +1,48 @@
+{
+ "id": "muti94yo-1tk1e",
+ "finishedAt": "2026-10-04T07:34:52.229Z",
+ "durationMs": 30009,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je daalt de treden af, je dode arm slap langs je zij. Moeder Veen ligt in de grijze as als een vogel in een strik.\n\n\"Je leert het mij,\" zeg je. \"Het lot binden. Nu.\"\n\nJe zet je wil op haar, zwaar als een grafsteen. Even buigt ze. Haar lippen bewegen. Een woord, oud en nat als veen, ontvouwt zich in je hoofd, en je ziet draden, duizenden, die van elke kaarsvlam naar elke ademhaling in de zaal lopen.\n\nDan trekt ze aan het rode touwtje om jouw pols.\n\nDe draden knappen terug in het duister. Pijn schiet van je pols naar je slaap. Je proeft ijzer.\n\n\"Dwingen leert niemand iets, jongen,\" hijgt ze. \"Dat is precies wat er mis is met je knopen.\" Haar bange ogen worden sluw. \"Maar ik ruil. Haal dat touwtje van je pols, geef me de looiersbuurt voor altijd, en ik leer je één draad. Eén.\"\n\nAchter je schraapt Vorrin zijn keel. \"Of laat mij haar breken, heer.\"",
+  "choices": [
+   "Ga akkoord met haar ruil",
+   "Laat Vorrin haar breken",
+   "Sluit haar op in de kelders"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van de Toren in Velmoor. Hij bezit het knopenboek en de fluisterende steen met meester Aurek Valdemoor, en knoopte Ilse, de Blinde Abt (Cassian Morr) en Vorrin Grauwveer (Tevin Aslo). Garrel hangt dood aan de poort. De looiersbuurt betaalt geen belasting. Moeder Veen, oude Knoopmoeder, draaide Joshua's belofte om: rood touwtje om zijn pols, looiersbuurt verboden. Met de meester even vrij werd ze gevangen in grijze as; de meester probeerde te ontsnappen, Vorrin zag het. Joshua probeerde haar te dwingen het lot binden te leren, zag een glimp van draden, maar ze sloeg terug via het touwtje. Ze biedt ruil: touwtje weg en looiersbuurt voor altijd vrij, voor één draad lotmagie. Vorrin wil haar breken.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Candlelit stone throne hall at night, thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, standing over an elderly woman in her eighties, very small and bent, wrinkled sharp face, bright black eyes, thin white hair under a deep brown hood, worn patched scarf, trapped in swirling grey ash, faint glowing threads in the air",
+   "fallback": "Candlelit stone throne hall at night, black crow-carved throne, grey ash swirling on the floor, faint glowing threads hanging in the air between candles"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": []
+ },
+ "model": "opus"
+}
