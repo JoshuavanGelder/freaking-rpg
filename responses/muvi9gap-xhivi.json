@@ -1,0 +1,97 @@
+{
+ "id": "muvi9gap-xhivi",
+ "finishedAt": "2026-10-05T17:10:35.442Z",
+ "durationMs": 28293,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "The tug is called the Grubstake, and her captain, a wiry man named Dren Vasko, barely glances at your license. \"Six hundred credits on delivery to Vesta. Fly straight, don't open the hold.\"\n\nUndocking goes wrong right away. A docking clamp sticks, the tug lurches, and your head smacks the console. Through the ringing you hear a hollow knock from the hold. Ore doesn't knock.\n\nThen the comm crackles: \"Ore tug Grubstake, Ceres Customs. Hold position for inspection.\"\n\nVasko's hand lands on your shoulder, heavy. \"Burn for the asteroid shadow, kid. Now.\"\n\nThe patrol cutter's lights swing toward you.",
+  "choices": [
+   "Burn hard for the asteroid shadow",
+   "Hold position and answer customs",
+   "Demand Vasko tell you what's aboard"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Street Smarts",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Deliver the Grubstake to Vesta",
+     "detail": "Fly the tug to Vesta for six hundred credits."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Ore tug Grubstake",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a no-questions relief pilot job on the ore tug Grubstake for Captain Dren Vasko, promised six hundred credits on delivery to Vesta. Right after a rough undock he hears something alive knocking in the hold, and Ceres Customs orders the tug to stop for inspection. Vasko wants him to run for the asteroid shadow.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Cramped cockpit of an old industrial ore tug in space, a lean young man in his early twenties with short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, rubbing his forehead at the controls; behind him a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, grips his shoulder. Red warning lights, patrol searchlights through the viewport.",
+   "fallback": "Cramped cockpit of an old industrial ore tug, worn consoles and red warning lights, searchlights shining through the viewport against dark space and asteroids."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "Wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots.",
+    "status": "levend",
+    "home": "ore tug Grubstake",
+    "role": "captain of the Grubstake, Waren's shady employer",
+    "note": "Promised six hundred credits for delivery to Vesta; hiding something in the hold.",
+    "companion": "ja"
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Grubstake",
+     "detail": "Dren Vasko's battered ore tug, with a sealed hold that isn't carrying only ore."
+    }
+   ],
+   "facts": [
+    "Vasko promised Waren six hundred credits on delivery to Vesta.",
+    "Something alive knocks inside the Grubstake's sealed hold."
+   ],
+   "forgetFacts": [],
+   "time": "late morning, first day"
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "hit",
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3228,
+  "cacheRead": 15594,
+  "cacheWrite": 17391,
+  "costUsd": 0.2068,
+  "apiMs": 27223,
+  "numTurns": 3
+ }
+}
