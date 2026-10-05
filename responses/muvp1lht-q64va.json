@@ -1,0 +1,84 @@
+{
+ "id": "muvp1lht-q64va",
+ "finishedAt": "2026-10-05T20:29:20.950Z",
+ "durationMs": 28501,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You push off the hatch and thumb the suit jets. The wreck turns around you, but you fly the way you always have, feeling the angles more than reading them. You make short bursts and small corrections, and slide through the torn cables without touching one.\n\nThe nav core is half-torn from its rack. You brace, pull hard, and it comes free with a spray of frozen coolant. You've got both pieces.\n\nThen the grapple warning in your helmet goes solid red. You turn in time to see the last claw tear loose. Juno's skiff slowly rolls away from the Halcyon, unmanned and drifting toward the debris field. Your suit jets are already low.",
+  "choices": [
+   "Burn everything to chase the skiff",
+   "Ride the wreck's spin, then leap",
+   "Call the skiff's autopilot through your suit"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Piloting",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [
+    "Halcyon nav core"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Halcyon break, deep belt",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. Then he took the Halcyon salvage job for Juno Reyes: forty-five thousand for the wreck's recorder and nav core, minus her ten percent. At the tumbling wreck he lost a grapple arm and bruised his ribs. He went out in his suit and recovered both the recorder and the nav core. Then the last grapple tore loose, and Juno's skiff is drifting away unmanned toward the debris. His suit jets are running low.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, holding a blinking nav core amid drifting torn cables at the break of a tumbling ore freighter, an orange flight recorder clipped to his harness. Behind him, a battered salvage skiff drifts away toward glittering debris, harsh distant sunlight, deep asteroid belt.",
+   "fallback": "The torn break of a huge broken ore freighter in the deep asteroid belt, loose cables drifting, glittering debris and dark asteroids under harsh distant sunlight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren has recovered both the Halcyon's flight recorder and nav core.",
+    "The skiff's last grapple tore loose; it is drifting away unmanned.",
+    "Waren's suit jets are running low."
+   ],
+   "forgetFacts": [
+    "Waren has recovered the Halcyon's flight recorder; the nav core is still at the break.",
+    "Waren's skiff is grappled to the Halcyon's recorder bay hatch.",
+    "The skiff lost its port grapple arm; it holds to the Halcyon by one grapple."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "action",
+   "sfx": [
+    "discovery_sting",
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3345,
+  "cacheRead": 32068,
+  "cacheWrite": 6567,
+  "costUsd": 0.1259,
+  "apiMs": 27152,
+  "numTurns": 3
+ }
+}
