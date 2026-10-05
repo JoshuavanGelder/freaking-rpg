@@ -1,0 +1,128 @@
+{
+ "id": "muve4bct-jdxgy",
+ "finishedAt": "2026-10-05T15:14:48.020Z",
+ "durationMs": 37452,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "Forty Thousand to Fly",
+  "narration": "The tram drops you at Ceres Ring Port with your pilot's license in your pocket and ten credits on your chip. Your mother's flat, three decks down, already feels like another life.\n\nThrough the grimy window of Okafor's Used Hulls sits the Kestrel: a dented short-hauler with scorched intakes and good bones. Marta Okafor, grey braids and grease up to her elbows, follows your stare.\n\n\"Forty thousand and she's yours, kid. Not a credit less.\"\n\nBehind you, the dock job board flickers. One posting blinks red: RELIEF PILOT NEEDED. ORE TUG. LEAVES IN ONE HOUR. NO QUESTIONS.\n\nTen credits. Forty thousand. Your hands already itch for a flight stick.",
+  "choices": [
+   "Take the risky ore tug job",
+   "Ask Marta if she needs a pilot",
+   "Look for safer work on the board"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [
+   {
+    "name": "Piloting",
+    "value": 5
+   },
+   {
+    "name": "Navigation",
+    "value": 3
+   },
+   {
+    "name": "Mechanics",
+    "value": 2
+   },
+   {
+    "name": "Charm",
+    "value": 2
+   },
+   {
+    "name": "Fitness",
+    "value": 2
+   },
+   {
+    "name": "Street Smarts",
+    "value": 1
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 0,
+   "addItems": [
+    "Pilot's license"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Buy the Kestrel",
+     "detail": "Earn forty thousand credits to buy Marta's ship."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Ceres Ring Port",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with a fresh license and ten credits, has left home to make his way in the world. At Ceres Ring Port he finds the Kestrel, a battered short-hauler that dealer Marta Okafor will sell for forty thousand credits. His goal: earn that money. A shady posting on the dock job board offers a relief pilot job on an ore tug leaving within the hour, no questions asked.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A lean young man in his early twenties with short dark brown hair, light stubble and keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, stands in a busy industrial space station dock looking through a grimy window at a dented old short-haul spacecraft; beside him an elderly woman in her sixties, sturdy build, weathered dark skin, long grey braids, grease-stained blue coveralls. Harsh fluorescent light, flickering job board screen behind.",
+   "fallback": "Industrial space station hangar with a dented old short-haul spacecraft behind a grimy window, harsh fluorescent lights, cargo crates, a flickering wall screen, stars visible through a large viewport."
+  },
+  "heroLook": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots.",
+  "portrait": "Head and shoulders portrait of a lean young man in his early twenties with short dark brown hair, light stubble and keen grey eyes, wearing a worn olive flight jacket, against the background of a space station viewport full of stars and docked ships.",
+  "cast": [
+   {
+    "name": "Marta Okafor",
+    "look": "Elderly woman in her sixties, sturdy build, weathered dark skin, sharp brown eyes, long grey braids, grease-stained blue coveralls with rolled-up sleeves.",
+    "status": "levend",
+    "home": "Okafor's Used Hulls, Ceres Ring Port",
+    "role": "used ship dealer, owner of the Kestrel",
+    "note": "Wants forty thousand credits for the Kestrel, not a credit less.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Ceres Ring Port",
+     "detail": "Busy, grimy docking ring on Ceres full of haulers, tugs and a flickering job board."
+    },
+    {
+     "name": "Okafor's Used Hulls",
+     "detail": "Marta Okafor's used ship lot on Ceres Ring Port, where the Kestrel waits."
+    },
+    {
+     "name": "Mother's flat",
+     "detail": "Waren's mother's small flat, three decks below the port."
+    }
+   ],
+   "facts": [
+    "Marta Okafor will sell the Kestrel to Waren for forty thousand credits."
+   ],
+   "forgetFacts": [],
+   "time": "morning, first day"
+  },
+  "sound": {
+   "ambience": "spaceship_hum",
+   "mood": "calm",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "medium",
+ "usage": {
+  "input": 4,
+  "output": 4478,
+  "cacheRead": 14384,
+  "cacheWrite": 17050,
+  "costUsd": 0.2289,
+  "apiMs": 36271,
+  "numTurns": 3
+ }
+}
