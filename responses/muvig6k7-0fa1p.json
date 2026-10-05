@@ -1,0 +1,88 @@
+{
+ "id": "muvig6k7-0fa1p",
+ "finishedAt": "2026-10-05T17:15:49.292Z",
+ "durationMs": 27525,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You lunge for the airlock panel. Your fingers are on the release when the locker slams open behind you.\n\nVasko is faster. He drives you into the hatch frame shoulder-first, and something cold and blunt presses under your ribs: a cargo bolt gun, the kind used to pin crates. Your sore jaw throbs against the metal.\n\n\"Hands off the panel,\" he breathes. Outside, the docking collar clanks home. A gloved fist pounds the outer hatch. \"Customs! Open up!\"\n\nBehind you, from the sealed hold, the knocking turns into a voice. Muffled, desperate, human: \"Help us! Please!\"\n\nVasko's eyes flick toward the sound. For one second, the bolt gun drifts.",
+  "choices": [
+   "Slam the airlock release now",
+   "Twist away and grab the bolt gun",
+   "Shout to customs about the hold"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Fitness",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a no-questions relief pilot job on the ore tug Grubstake for Captain Dren Vasko, promised six hundred credits on delivery to Vesta. Something alive knocked in the sealed hold. When Ceres Customs ordered an inspection, Waren tried to comply; Vasko punched him and lied. Now the customs cutter has docked and is pounding on the hatch. Waren went for the airlock release, but Vasko pinned him with a cargo bolt gun. Human voices beg for help from the hold: Vasko is smuggling people.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cramped airlock corridor of an old ore tug, red emergency lights. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, cargo pants, scuffed boots, pinned against a hatch frame, hand reaching for a release panel; a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots, pressing an industrial tool against him.",
+   "fallback": "Cramped airlock corridor inside an old industrial ore tug, red emergency lights, heavy round hatch with a glowing release panel, scuffed metal walls and a sealed cargo hatch."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Smuggling people in the hold; threatened Waren with a cargo bolt gun.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "People are trapped in the Grubstake's sealed hold, begging for help."
+   ],
+   "forgetFacts": [
+    "Something alive knocks inside the Grubstake's sealed hold."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "action",
+   "sfx": [
+    "punch",
+    "horror_whisper"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3096,
+  "cacheRead": 30036,
+  "cacheWrite": 4574,
+  "costUsd": 0.1045,
+  "apiMs": 26784,
+  "numTurns": 3
+ }
+}
