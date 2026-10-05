@@ -1,0 +1,134 @@
+{
+ "id": "muv5jz9e-yejw3",
+ "createdAt": "2026-10-05T11:14:21.890Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "",
+  "textLength": "normaal",
+  "arc": "middel"
+ },
+ "hero": {
+  "name": "Bart Quick",
+  "className": "Speedster",
+  "powers": "Hij kan ongeveer 2 keer de snelheid van het geluid maar er is mogelijkheid voor groei en hij kan ook in slow motion zien, hiernaast kan hij ook allemaal dingen door zijn snelheid maar dit moet hij nog grotendeels uitvogelen",
+  "looks": "Giga chad",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 47,
+  "level": 1,
+  "location": "Plein voor de Stadsbank",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 4
+   },
+   {
+    "name": "Kracht",
+    "value": 2
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 2
+   },
+   {
+    "name": "Controle",
+    "value": 1
+   }
+  ],
+  "inventory": [],
+  "quests": [
+   {
+    "title": "Stop de bankroof",
+    "detail": "Houd de robotdief bij de Stadsbank tegen.",
+    "done": true
+   }
+  ],
+  "traits": [
+   {
+    "name": "Slow-motion zicht",
+    "kind": "kracht",
+    "detail": "Bart ziet de wereld vertraagd als hij zich concentreert."
+   }
+  ]
+ },
+ "summary": "Bart Quick, speedster in Nieuw-Rotterdam, trok uienbakker Gerrit uit het robotpak dat de Stadsbank overviel. Gerrit zegt dat iemand zijn frituurmandje herprogrammeerde. Bart schudde het mandje driemaal en zei sorry tegen de frituurpan: de robot staat stil en het geld ligt op het plein. De vraag blijft wie het mandje herprogrammeerde.",
+ "cast": [
+  {
+   "name": "De uienman",
+   "look": "middle-aged man, stocky and sweaty, round face, messy thinning hair, wearing an apron printed with onion rings",
+   "role": "bestuurder van het robotpak",
+   "note": "Heet Gerrit; vertelt zijn uienverhaal terwijl de robot piept."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Nieuw-Rotterdam",
+    "detail": "Grote havenstad vol wolkenkrabbers, waar Bart woont en patrouilleert."
+   },
+   {
+    "name": "Stadsbank",
+    "detail": "Imposante bank in het centrum, nu overvallen door een robotdief."
+   }
+  ],
+  "facts": [
+   "De bankrover draagt een groot robotpak dat naar gebakken ui ruikt.",
+   "De uienman heet Gerrit en beweert dat hij het robotpak niet zelf wilde laten rovers.",
+   "Robot uitzetten: mandje driemaal schudden en 'sorry' zeggen tegen de frituurpan.",
+   "De robot is uitgezet en zit stil op het plein voor de Stadsbank."
+  ],
+  "time": "schemering, eerste dag"
+ },
+ "recent": [
+  {
+   "action": "Spurt naar de bank en grijp de robot",
+   "narration": "Je springt. Het dak verdwijnt, de straat wordt een veeg, en een knal achter je laat acht ruiten trillen. Binnen een oogwenk hang je aan de metalen arm van de robot, die verbaasd piept.\n\n\"Wie... wat... ?\" kraakt een stem uit de helm, vol uiendamp. Een zak bankgeld bungelt aan zijn klauw. Je sneakers hangen een meter boven de grond, en de robot zwaait alsof hij een mug wil wegslaan.",
+   "picture": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, broad shoulders, clinging to the arm of a giant clunky robot walker in front of a city bank at dusk, motion streaks and swirling rain behind him, humorous epic"
+  },
+  {
+   "action": "Zoek de bestuurder in de cockpit",
+   "narration": "Je klautert langs de zwaaiende arm omhoog, sneller dan de robot kan piepen. Bij de cockpit trek je het luik open: een zweterige man in een schort met uienringen-print staart je aan, een frituurmandje als stuurknuppel in zijn hand. \"Ik kan alles uitleggen,\" zegt hij. \"Het is een lang verhaal. Met ui.\"",
+   "picture": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, broad shoulders, opening the cockpit hatch of a giant clunky robot, sweaty middle-aged man in an apron inside holding a fry basket joystick, dusk rain, humorous epic"
+  },
+  {
+   "action": "Trek hem uit de cockpit",
+   "narration": "Je grijpt hem bij zijn schort en trekt. Hij komt los met een plop, zoals een ui uit de grond. De robot schokt, maar jij bent al weg: een flits, een windvlaag, en je staat met de man onder je arm op het plein. Hij slaat zijn frituurmandje nog tegen je biceps. \"Mijn robot!\" jammert hij. \"Hij is nog niet klaar met uitzetten!\"\n\nBoven jullie begint het pak gevaarlijk te piepen."
+  },
+  {
+   "action": "Luister eerst naar het uienverhaal",
+   "narration": "\"Gerrit,\" stelt hij zich voor, terwijl je hem neerzet. \"Ik bak uien. Mijn robot was bedoeld om frituurvet te bezorgen! Maar iemand heeft mijn mandje... herprogrammeerd. Ik hoefde alleen maar stuurknuppel te zeggen, en toen liep hij naar de bank.\" Hij snuft. \"Ik wilde alleen een pizza-achtige ui verkopen.\" Boven jullie piept de robot steeds sneller."
+  },
+  {
+   "action": "Vraag hoe je de robot uitzet",
+   "narration": "\"Uitzetten?\" Gerrit wordt bleek. \"Je moet het mandje driemaal schudden, dan 'sorry' zeggen tegen de frituurpan. Maar het mandje zit nog in de robot!\" Hij wijst omhoog. Het pak piept nu als een kookwekker die vlak voor de uitslag staat. Een dun rookpluimpje ruikt naar ui."
+  },
+  {
+   "action": "Spring erheen en schud het mandje",
+   "narration": "Je spurt. De wereld vertraagt, en jij ziet het mandje liggen, trillend naast de frituurpan in de buik van de robot. Je grijpt het. Eén, twee, drie keer schudden, sneller dan een kolibrie met koffie. \"Sorry,\" zeg je plechtig tegen de frituurpan.\n\nDe pan sist beschaamd. De robot zucht, zakt door zijn knieën en gaat zitten als een vermoeide olifant. De zak bankgeld glijdt uit zijn klauw, recht voor Gerrits voeten.\n\nHet plein is stil. Alleen de regen tikt nog op het metaal. Het ruikt naar ui.",
+   "picture": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, shaking a fry basket inside the open belly of a giant clunky robot walker, motion blur, steam and onion smoke, bank plaza at dusk in rain, humorous epic"
+  }
+ ],
+ "action": "Breng het geld terug naar de bank",
+ "roll": 14,
+ "pacing": {
+  "turn": 7,
+  "total": 25,
+  "from": 0
+ }
+}
