@@ -1,0 +1,95 @@
+{
+ "id": "muvjfgp3-sbib9",
+ "finishedAt": "2026-10-05T17:43:00.877Z",
+ "durationMs": 12664,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You hold the bolt gun out by the barrel, grip first, arms wide. The first officer down the ladder is a broad woman in a grey customs vest. She takes it, checks it's safe, and studies you for a long second.\n\n\"You're the kid who shouted through the hatch.\" It isn't a question. Two officers cuff Vasko. He goes quietly, eyes on the floor.\n\n\"Inspector Hale,\" she says. \"Who else is aboard?\"\n\nBehind the hold door, the knocking starts again.",
+  "choices": [
+   "Open the hold with code 4471",
+   "Tell Hale about the people inside",
+   "Ask Hale to go easy on them"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [
+    "Bolt gun"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fought Waren. Waren warned customs, killed the drive breaker and talked Vasko into surrendering. Vasko gave him the hold code. Customs boarded, arrested Vasko, and Waren handed his bolt gun to Inspector Hale. The people in the hold still wait. The Vesta job is probably lost.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "character",
+   "prompt": "Dim red-lit engine corridor of an old ore tug. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, handing a bolt gun grip-first to a broad woman in her forties in a grey customs vest, officers cuffing a wiry man with shaved head behind.",
+   "fallback": "Dim red-lit engine corridor of an old ore tug, ladders, pipes and a sealed cargo hold door, faint sparks drifting from a cut hatch."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Inspector Hale",
+    "look": "Woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark uniform shirt, heavy boots.",
+    "status": "levend",
+    "home": "Ceres Customs, Ceres Ring Port",
+    "role": "Ceres Customs inspector",
+    "note": "Took Waren's bolt gun; knows he warned customs.",
+    "companion": ""
+   },
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "customs custody",
+    "role": "",
+    "note": "Arrested by customs aboard the Grubstake.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [
+    "Waren holds Vasko's bolt gun.",
+    "Ceres Customs is boarding the Grubstake."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1357,
+  "cacheRead": 13441,
+  "cacheWrite": 3917,
+  "costUsd": 0.0612,
+  "apiMs": 11656,
+  "numTurns": 2
+ }
+}
