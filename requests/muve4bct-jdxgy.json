@@ -1,0 +1,49 @@
+{
+ "id": "muve4bct-jdxgy",
+ "createdAt": "2026-10-05T15:14:07.613Z",
+ "kind": "start",
+ "model": "opus",
+ "lang": "en",
+ "world": {
+  "setting": "Sci-fi",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Realistic",
+  "wishes": "I am a man just going out into the world and my main goal is to get a the money to buy a space ship.",
+  "textLength": "normaal",
+  "arc": "middel",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Waren Spacefarer",
+  "className": "Pilot",
+  "powers": "Special affinity for flying",
+  "looks": ""
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "",
+  "attributes": [],
+  "inventory": [],
+  "quests": [],
+  "traits": []
+ },
+ "summary": "",
+ "cast": [],
+ "recent": [],
+ "action": null,
+ "roll": 20,
+ "pacing": {
+  "turn": 0,
+  "total": 25,
+  "from": 0
+ },
+ "sound": {
+  "ambience": null,
+  "mood": null
+ }
+}
