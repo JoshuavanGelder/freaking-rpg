@@ -1,0 +1,73 @@
+{
+ "id": "muvpog6w-syjg6",
+ "finishedAt": "2026-10-05T20:38:17.813Z",
+ "durationMs": 33214,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You take off the helmet and pull yourself over to the diagnostics panel, one arm pressed against your ribs.\n\nIt's bad, but she'll fly. Both grapple mounts are gone, and the torn port mount left a hairline crack in the hull that is slowly leaking air. The main drive still answers. But the coolant loop took a hit when the cable whipped loose, and if you run her hard she'll overheat about halfway to Ceres.\n\nYou have three ways home. You can burn hard in a straight line, patch the leak as you go and hope the drive holds. You can make a slow, cool burn that will take days and use up most of your air. Or you can call for a tow, and that won't be free.",
+  "choices": [
+   "Burn hard and patch the leak",
+   "Take the slow, cool route home",
+   "Radio Juno for a tow"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. He took the Halcyon salvage job for Juno Reyes: forty-five thousand credits for the wreck's recorder and nav core, minus her ten percent. He recovered both pieces and made it back aboard the skiff. The skiff is damaged: both grapples are gone, the hull is slowly leaking air and the coolant loop is hurt. Now he has to choose how to get home to Ceres.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Inside a cramped battered salvage skiff cockpit, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with helmet off, holding his ribs while studying a red-flashing diagnostics panel, an orange flight recorder and nav core strapped beside him.",
+   "fallback": "Cramped salvage skiff cockpit with a red-flashing diagnostics panel, frost on the canopy, distant asteroid belt and stars beyond the glass."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Juno's skiff has a slow hull leak and a damaged coolant loop; a hard burn risks overheating."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2537,
+  "cacheRead": 32326,
+  "cacheWrite": 6762,
+  "costUsd": 0.1113,
+  "apiMs": 32437,
+  "numTurns": 3
+ }
+}
