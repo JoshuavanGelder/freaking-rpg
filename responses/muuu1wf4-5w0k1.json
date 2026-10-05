@@ -1,0 +1,78 @@
+{
+ "id": "muuu1wf4-5w0k1",
+ "finishedAt": "2026-10-05T05:53:50.295Z",
+ "durationMs": 27642,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je grijpt met je wil naar de draad aan je pols en buigt hem, zoals in het moeras. Maar deze buigt niet. Hij is niet aan je huid geknoopt. Hij zit vast aan je eigen lotdraad, dwars door je heen.\n\nJe knipt toch. De schaar van je wil schampt af en snijdt in jóu. Een koude golf trekt door je borst, alsof een stukje van je toekomst wegvalt. Je knieën begeven het.\n\nDe vreter lacht, een geluid als krakend hout in de haard. \"Knip mij, en je knipt jezelf, koning.\"\n\nVorrin ligt hijgend tegen de rotswand. De Vorst kijkt je strak aan. \"Hij heeft een naam,\" fluistert hij. \"Alles wat eet, heeft een naam.\"",
+  "choices": [
+   "Zoek de ware naam van de vreter",
+   "Trek de vreter aan de draad naar binnen",
+   "Vraag de Vorst wat hij weet"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. In de zonnegrot goot hij het eerste vuur in het hart van de Vorst, maar de vreter stal de helft via de draad aan zijn pols. Zijn poging die draad te knippen mislukte: de draad zit aan zijn eigen lotdraad vast. De Vorst zegt dat de vreter een naam heeft, de mogelijke sleutel om hem te binden. Vorrin is gewond maar staat nog.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave beneath a golden sun throne at dusk; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, on his knees, a glowing red thread from his wrist to a towering faceless figure of smouldering coal and drifting smoke, roughly human-shaped, a single glowing open mouth of red fire, in the cave mouth.",
+   "fallback": "Dark rocky cave beneath an empty golden throne at dusk, scorched stones, red glow and smoke drifting in from the cave mouth."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Vorrin Grauwveer",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Gewond door de vreter bij de grotingang.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De draad van de vreter zit aan Joshua's eigen lotdraad; knippen schaadt hemzelf."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3224,
+  "cacheRead": 35658,
+  "cacheWrite": 1749,
+  "costUsd": 0.0856,
+  "apiMs": 26570,
+  "numTurns": 3
+ }
+}
