@@ -1,0 +1,117 @@
+{
+ "id": "muvi9gap-xhivi",
+ "createdAt": "2026-10-05T17:10:05.761Z",
+ "kind": "turn",
+ "model": "opus",
+ "lang": "en",
+ "world": {
+  "setting": "Sci-fi",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Realistic",
+  "wishes": "I am a man just going out into the world and my main goal is to get a the money to buy a space ship.",
+  "textLength": "normaal",
+  "arc": "middel",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Waren Spacefarer",
+  "className": "Pilot",
+  "powers": "Special affinity for flying",
+  "looks": "",
+  "heroLook": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "Ceres Ring Port",
+  "attributes": [
+   {
+    "name": "Piloting",
+    "value": 5
+   },
+   {
+    "name": "Navigation",
+    "value": 3
+   },
+   {
+    "name": "Mechanics",
+    "value": 2
+   },
+   {
+    "name": "Charm",
+    "value": 2
+   },
+   {
+    "name": "Fitness",
+    "value": 2
+   },
+   {
+    "name": "Street Smarts",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Pilot's license"
+  ],
+  "quests": [
+   {
+    "title": "Buy the Kestrel",
+    "detail": "Earn forty thousand credits to buy Marta's ship.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Waren Spacefarer, a young pilot with a fresh license and ten credits, has left home to make his way in the world. At Ceres Ring Port he finds the Kestrel, a battered short-hauler that dealer Marta Okafor will sell for forty thousand credits. His goal: earn that money. A shady posting on the dock job board offers a relief pilot job on an ore tug leaving within the hour, no questions asked.",
+ "cast": [
+  {
+   "name": "Marta Okafor",
+   "look": "Elderly woman in her sixties, sturdy build, weathered dark skin, sharp brown eyes, long grey braids, grease-stained blue coveralls with rolled-up sleeves.",
+   "home": "Okafor's Used Hulls, Ceres Ring Port",
+   "role": "used ship dealer, owner of the Kestrel",
+   "note": "Wants forty thousand credits for the Kestrel, not a credit less."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Ceres Ring Port",
+    "detail": "Busy, grimy docking ring on Ceres full of haulers, tugs and a flickering job board."
+   },
+   {
+    "name": "Okafor's Used Hulls",
+    "detail": "Marta Okafor's used ship lot on Ceres Ring Port, where the Kestrel waits."
+   },
+   {
+    "name": "Mother's flat",
+    "detail": "Waren's mother's small flat, three decks below the port."
+   }
+  ],
+  "facts": [
+   "Marta Okafor will sell the Kestrel to Waren for forty thousand credits."
+  ],
+  "time": "morning, first day"
+ },
+ "recent": [
+  {
+   "action": null,
+   "narration": "The tram drops you at Ceres Ring Port with your pilot's license in your pocket and ten credits on your chip. Your mother's flat, three decks down, already feels like another life.\n\nThrough the grimy window of Okafor's Used Hulls sits the Kestrel: a dented short-hauler with scorched intakes and good bones. Marta Okafor, grey braids and grease up to her elbows, follows your stare.\n\n\"Forty thousand and she's yours, kid. Not a credit less.\"\n\nBehind you, the dock job board flickers. One posting blinks red: RELIEF PILOT NEEDED. ORE TUG. LEAVES IN ONE HOUR. NO QUESTIONS.\n\nTen credits. Forty thousand. Your hands already itch for a flight stick.",
+   "picture": "A lean young man in his early twenties with short dark brown hair, light stubble and keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, stands in a busy industrial space station dock looking through a grimy window at a dented old short-haul spacecraft; beside him an elderly woman in her sixties, sturdy build, weathered dark skin, long grey braids, grease-stained blue coveralls. Harsh fluorescent light, flickering job board screen behind."
+  }
+ ],
+ "action": "Take the risky ore tug job",
+ "roll": 1,
+ "pacing": {
+  "turn": 1,
+  "total": 25,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "spaceship_hum",
+  "mood": "calm"
+ }
+}
