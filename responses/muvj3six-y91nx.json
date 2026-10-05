@@ -1,0 +1,82 @@
+{
+ "id": "muvj3six-y91nx",
+ "finishedAt": "2026-10-05T17:33:55.472Z",
+ "durationMs": 12445,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You press your mouth to the hot seam and shout over the hiss. \"He's starting the drive! Detach or you'll tear loose! There are people in the hold!\"\n\nThe torch cuts out. A muffled voice answers, fast and clear: \"Copy. Pulling the collar.\" Then, quieter: \"Kid, can you kill that drive?\"\n\nThrough the hull you hear the cutter's clamps release with a deep clunk. Up the ladder, the warm-up chime climbs toward its final tone. You have maybe a minute before Vasko burns.\n\nThe bolt gun is heavy in your hand. Your ribs still feel like they're full of glass.",
+  "choices": [
+   "Charge the cockpit with the bolt gun",
+   "Pull the drive's main breaker below decks",
+   "Talk Vasko down over the intercom"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 10,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Stop Vasko's burn",
+     "detail": "Kill the Grubstake's drive before Vasko flees."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko. Vasko smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock. Waren fought him; Vasko escaped to the cockpit to burn. Waren warned customs through the hatch: they stopped cutting and pulled their docking collar free, and asked him to kill the drive. Waren holds the bolt gun, ribs badly hurt, with about a minute before Vasko burns.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cramped airlock corridor of an old ore tug, red emergency lights, a half-cut glowing seam on a hatch. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, shouting against the hatch, holding an industrial bolt tool.",
+   "fallback": "Cramped airlock corridor of an old industrial ore tug, red emergency lights, a hatch with a half-finished glowing cut seam, ladder leading upward."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Customs detached from the Grubstake after Waren's warning and asked him to stop the drive."
+   ],
+   "forgetFacts": [
+    "The Grubstake's airlock panel is destroyed; customs is cutting through the hatch."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "door_slam"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1275,
+  "cacheRead": 13441,
+  "cacheWrite": 4127,
+  "costUsd": 0.0612,
+  "apiMs": 11255,
+  "numTurns": 2
+ }
+}
