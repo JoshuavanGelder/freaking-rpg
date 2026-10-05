@@ -1,17 +1,17 @@
 {
  "id": "muvmjfe0-ss2nv",
- "finishedAt": "2026-10-05T19:10:18.569Z",
- "durationMs": 27369,
+ "finishedAt": "2026-10-05T19:15:41.026Z",
+ "durationMs": 29440,
  "status": "ok",
  "message": "Done",
  "resetAt": null,
  "answer": {
   "title": "",
-  "narration": "The skiff leaps off the ring, and Ceres swells grey beneath you. You come in from the north, low, and pass the hab mast with room to spare. Then the dust rises like a curtain, and your sensors go blank.\n\nYou fly by eye. For a moment it's perfect. Then a pocket of loose regolith slides under the port pad, and the skiff drops a hand's width onto the starboard strut.\n\nThe weld cracks. The damper bursts with a shriek. The skiff lurches sideways and your ribs slam into the harness as the starboard side sags toward the edge of the ledge. Beyond it is nothing but crater shadow.\n\nThe engines are still idling and the crate is still strapped in behind you. Through the dust, figures in pressure suits are running from the hab lock.",
+  "narration": "The skiff kicks off the Bay Nine cradle and Ceres drops away grey and cratered. You hug the ground from the north, low, just like the margin note said. The hab mast slides past your canopy at forty metres.\n\nThen the dust comes up. The screens go white, and you're flying by feel. You ease her down, but your own thruster wash throws grit across the glass just as the pad rises to meet you.\n\nYou hit a little too hard. The starboard strut cracks like a gunshot. The skiff lurches sideways, and your strapped ribs flare white-hot. Metal grinds on rock.\n\nShe stops, listing to the right. Through the settling dust, the crater drops away a few metres past your starboard wing. Figures in dusty suits are running from the hab airlock.",
   "choices": [
-   "Feather the thrusters to level her",
-   "Grab the crate and bail out",
-   "Radio the hab crew for anchors"
+   "Kill the engines, climb out port side",
+   "Shift weight to port, hold her steady",
+   "Radio the hab crew for a tether"
   ],
   "check": {
    "used": true,
@@ -34,13 +34,13 @@
    "addTraits": [],
    "removeTraits": []
   },
-  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender, freed eleven refugees and filed an informant claim (payout months away). With strapped ribs he took Juno Reyes's three-hundred-credit medicine run to Occator Ridge. Flying blind through the dust, he landed, but the weak starboard strut broke. The skiff now teeters on the ledge edge with the crate aboard as the hab crew runs out.",
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender and freed eleven refugees. His informant claim is filed, but any payout is months away. With his ribs strapped, he flew Juno Reyes's medicine run to Occator Ridge. Dust blinded him on the landing, and he came down hard. The weak starboard strut snapped, and the skiff now lists near the ledge's edge with the crate still aboard. Juno had promised steadier work if he didn't crash her skiffs.",
   "gameOver": false,
   "image": {
    "show": true,
    "kind": "action",
-   "prompt": "A stubby courier skiff with a scarred belly tilting dangerously on a narrow landing ledge jutting from a grey crater wall on Ceres, broken starboard landing strut, grey dust swirling, black starry sky. Inside the cockpit a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, grips the controls. Distant figures in pressure suits run from a hab airlock.",
-   "fallback": "A narrow landing ledge on a grey crater wall on Ceres, dust swirling over the pad, a small mining hab with a tall mast, black starry sky above."
+   "prompt": "A stubby courier skiff tilted on a broken landing strut at the edge of a dusty crater ledge pad on Ceres. Grey dust is swirling, a mining hab mast stands behind, and the black starry sky is above. Through the canopy you can see a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, gripping the controls. Suited figures run from an airlock.",
+   "fallback": "A dusty landing pad jutting from a grey crater wall, a mining hab with a tall mast, swirling grey dust and a black starry sky above."
   },
   "heroLook": "",
   "portrait": "",
@@ -48,7 +48,7 @@
   "canon": {
    "places": [],
    "facts": [
-    "The skiff's starboard strut broke on landing at Occator Ridge; the skiff is tilting on the ledge."
+    "The skiff's starboard strut snapped on landing at Occator Ridge; the skiff lists near the ledge edge."
    ],
    "forgetFacts": [
     "The skiff's starboard strut is freshly welded with a weak damper; a hard landing may break it."
@@ -68,11 +68,11 @@
  "effort": "low",
  "usage": {
   "input": 4,
-  "output": 3187,
-  "cacheRead": 30995,
-  "cacheWrite": 5468,
-  "costUsd": 0.1137,
-  "apiMs": 26516,
+  "output": 3244,
+  "cacheRead": 34921,
+  "cacheWrite": 1548,
+  "costUsd": 0.0843,
+  "apiMs": 28386,
   "numTurns": 3
  }
 }
