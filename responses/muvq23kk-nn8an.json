@@ -1,0 +1,105 @@
+{
+ "id": "muvq23kk-nn8an",
+ "finishedAt": "2026-10-05T20:48:37.172Z",
+ "durationMs": 15321,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You set the skiff down in Bay Nine with a whisper of thrust. A tired insurance agent scans the recorder and nav core, nods, and the transfer pings your wrist: forty-five thousand. Juno takes her ten percent, slaps the scorched hull and says she'll get you a medic for the ribs.\n\nYou go straight to Okafor's Used Hulls. Marta counts the credits twice, then holds out the Kestrel's keycard. \"Not a credit less,\" she says, almost smiling. \"Fly her well.\"\n\nThat evening you call your mother from the Kestrel's cockpit. Through the window, the Grubstake sits impounded and the job board flickers. The Vesta run is long dead, but the sky is wide open now.\n\nYou run your hand over the controls. She's yours.",
+  "choices": [],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "groot",
+   "regen": "",
+   "gold": 500,
+   "xp": 30,
+   "addItems": [
+    "Kestrel keycard"
+   ],
+   "removeItems": [
+    "Halcyon flight recorder",
+    "Halcyon nav core",
+    "Salvage skiff codes"
+   ],
+   "addQuests": [],
+   "completeQuests": [
+    "Buy the Kestrel",
+    "Deliver the Grubstake to Vesta",
+    "Recover the Halcyon's recorder"
+   ],
+   "location": "Okafor's Used Hulls",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, set out to earn forty thousand credits for Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, which ended the Vesta delivery, and filed an informant claim that pays months from now. He recovered the Halcyon's recorder and nav core, nursed Juno's damaged skiff home, and was paid forty-five thousand on the pad. After Juno's cut, he bought the Kestrel. She is his own ship at last.",
+  "gameOver": true,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, smiling in the cockpit of a small used starship, hand on the controls, grimy docking ring and grey Ceres outside the window, warm evening lights.",
+   "fallback": "Cockpit of a small used starship parked at a grimy asteroid docking ring, grey cratered surface beyond the window, warm dim panel lights."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Marta Okafor",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Sold the Kestrel to Waren for forty thousand credits.",
+    "companion": ""
+   },
+   {
+    "name": "Juno Reyes",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Got her skiff back and her ten percent.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren owns the Kestrel."
+   ],
+   "forgetFacts": [
+    "Marta Okafor will sell the Kestrel to Waren for forty thousand credits.",
+    "Waren flies Juno's borrowed salvage skiff and must bring it back.",
+    "The Halcyon's insurer offers to pay Waren on the pad when he lands.",
+    "Vasko promised Waren six hundred credits on delivery to Vesta."
+   ],
+   "time": "evening, seventh day"
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "triumph",
+   "sfx": [
+    "victory"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1586,
+  "cacheRead": 13441,
+  "cacheWrite": 5267,
+  "costUsd": 0.0766,
+  "apiMs": 14258,
+  "numTurns": 2
+ }
+}
