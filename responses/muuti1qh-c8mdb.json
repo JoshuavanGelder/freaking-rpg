@@ -1,0 +1,70 @@
+{
+ "id": "muuti1qh-c8mdb",
+ "finishedAt": "2026-10-05T05:37:30.434Z",
+ "durationMs": 30492,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Veen wijst je de oude veenpaden, kort maar verraderlijk. Je rent. Je zwakke lichaam protesteert al na het eerste uur, maar je duwt door.\n\nHalverwege de middag zak je tot je heupen in het veen. Terwijl je jezelf eruit trekt, voel je het: een warme kriebel aan je pols, precies op de schroeiplek. Een nieuwe draad. Dun als een haar, en hij zit aan jóu vast.\n\nBij schemering struikel je de zonnegrot in, met een bloedende snee in je knie. Vorrin springt op. De Vorst heft zijn grauwe hoofd.\n\nAchter je, buiten in het donker, gloeit de grond rood. Het gras verschroeit in een lijn die precies je voetstappen volgt.",
+  "choices": [
+   "Giet het vuur meteen in zijn hart",
+   "Knip de nieuwe draad aan je pols",
+   "Laat Vorrin de ingang verdedigen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Overlevingsdrang",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Zonnegrot",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. Hij ving het eerste vuur in Veens potje en bond de ziekte van de Vorst in Aureks steen, waarin een vuurvreter bleek te zitten. Veen gooide de steen in het moeras en Joshua knipte de lichtdraad van de vreter door. Onderweg groeide er een nieuwe draad van de vreter aan Joshua's pols. Bij schemering bereikte hij de zonnegrot, maar de vreter volgt zijn spoor als een gloeiende lijn door de grond.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Dark cave beneath an empty golden sun throne at dusk; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, stumbling in clutching a glowing black clay pot; a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes, rising by a small fire; behind them a red glowing line burning through the grass outside.",
+   "fallback": "Dark cave entrance at dusk beneath a golden throne, a small campfire inside, a glowing red line of scorched grass leading toward the cave from the dark outside."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Een nieuwe draad van de vreter zit vast aan Joshua's pols en volgt hem."
+   ],
+   "forgetFacts": [
+    "De lichtdraad van de vreter is doorgeknipt, maar hij laat een nieuwe groeien."
+   ],
+   "time": "schemering, dag na de terugkeer naar het moeras"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3386,
+  "cacheRead": 29059,
+  "cacheWrite": 7781,
+  "costUsd": 0.1358,
+  "apiMs": 29611,
+  "numTurns": 3
+ }
+}
