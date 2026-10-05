@@ -1,0 +1,71 @@
+{
+ "id": "muvlx2kd-nibs2",
+ "finishedAt": "2026-10-05T18:52:48.951Z",
+ "durationMs": 19755,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "The medic is a tired man with cold hands. He presses along your side until you hiss, then scans you. Nothing's broken, he says, just cracked cartilage and deep bruising. He straps your ribs tight, gives you a painkiller shot and tells you to skip heavy lifting for a week.\n\nThe ache dulls to something you can breathe around. On your way out you pass a job screen in the hall. It's mostly customs notices, but one line flickers: \"Pilot wanted. Short-hop courier, Ring Port. Cash on landing.\"",
+  "choices": [
+   "Ask about the courier job",
+   "Visit Marta at the hull lot",
+   "Head home to Mother's flat"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "groot",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer is a young pilot with ten credits who wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He warned customs, killed the drive, talked Vasko into surrendering and opened the hold to eleven refugees. After clumsily asking about a reward, he gave Inspector Hale an honest statement and filed an informant fund claim that may pay out in months. A customs medic strapped up his cracked ribs. The Vesta job is probably lost. He has spotted a short-hop courier job on a customs job screen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Small station medical bay in cold white light, a tired male medic strapping the ribs of a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, sitting on an exam bench.",
+   "fallback": "Small clean medical bay on a space station, exam bench, scanner arm, shelves of supplies, cold white fluorescent light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "afternoon, first day"
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2263,
+  "cacheRead": 31168,
+  "cacheWrite": 5476,
+  "costUsd": 0.0953,
+  "apiMs": 18987,
+  "numTurns": 3
+ }
+}
