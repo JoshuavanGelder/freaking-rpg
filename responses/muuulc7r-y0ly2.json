@@ -1,0 +1,80 @@
+{
+ "id": "muuulc7r-y0ly2",
+ "finishedAt": "2026-10-05T06:07:58.432Z",
+ "durationMs": 26883,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je knielt bij het hoopje kool en maakt de naamknoop los, draad voor draad. De belofte houd je heel: het vuur blijft bij jou, de honger bij hem. \"Ga, Asharoth.\"\n\nHet kleine rode sintelmondje knippert. Dan waait hij uiteen als as in de wind, door de grotingang de schemering in. Geen dreiging meer. Alleen een zucht die op dank lijkt.\n\nIets in je borst wordt lichter. De honger krabt nog, maar zachter.\n\nAchter je zakt de Vorst door zijn knieën. Zijn halve hart flakkert, steeds trager. Vorrin kijkt je aan. \"Het oervuur zit in jou, koning. Hij heeft maar een vonk nodig.\"",
+  "choices": [
+   "Geef de Vorst een vonk oervuur",
+   "Leg een beschermknoop om zijn hart",
+   "Laat hem sterven en neem de troon"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "klein",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Abt en Vorrin en zwoer de Zonnevorst nooit te doden. De vreter stal half het eerste vuur uit het hart van de Vorst. Joshua vond zijn naam Asharoth, nam al het opgegeten vuur over zonder de honger, en liet Asharoth vrij zoals beloofd; hij verwaaide als as. Joshua is ongeëvenaard sterk; de geknoopte honger krabt zachter. Het halve hart van de Vorst sterft; met een vonk oervuur kan Joshua hem redden. De finale is nu.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark glowing cave beneath a golden sun throne at dusk; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling as grey ash drifts out of the cave entrance; behind him a man in his sixties, hunched and emaciated, grey ashen skin, sunken burning gold eyes, scorched tattered gold-and-white robes, collapsed on his knees.",
+   "fallback": "Dark cave beneath a golden sun throne, grey ash drifting toward the entrance in dusky light, faint golden glow on rough rock walls."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De vreter",
+    "look": "",
+    "status": "levend",
+    "home": "vrij, verwaaid als as",
+    "role": "vrijgelaten vuurvreter",
+    "note": "Door Joshua vrijgelaten zoals beloofd; verwaaide als as.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Joshua liet Asharoth vrij en hield zijn belofte."
+   ],
+   "forgetFacts": [
+    "Joshua nam al Asharoths vuur via een knoop en beloofde hem vrijheid."
+   ],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3175,
+  "cacheRead": 29231,
+  "cacheWrite": 7791,
+  "costUsd": 0.1317,
+  "apiMs": 26065,
+  "numTurns": 3
+ }
+}
