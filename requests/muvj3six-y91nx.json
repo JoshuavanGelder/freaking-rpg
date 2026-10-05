@@ -1,0 +1,161 @@
+{
+ "id": "muvj3six-y91nx",
+ "createdAt": "2026-10-05T17:33:41.289Z",
+ "kind": "turn",
+ "model": "opus",
+ "lang": "en",
+ "world": {
+  "setting": "Sci-fi",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Realistic",
+  "wishes": "I am a man just going out into the world and my main goal is to get a the money to buy a space ship.",
+  "textLength": "normaal",
+  "arc": "middel",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Waren Spacefarer",
+  "className": "Pilot",
+  "powers": "Special affinity for flying",
+  "looks": "",
+  "heroLook": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots."
+ },
+ "state": {
+  "hp": 7,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 31,
+  "level": 1,
+  "location": "Ore tug Grubstake",
+  "attributes": [
+   {
+    "name": "Piloting",
+    "value": 5
+   },
+   {
+    "name": "Navigation",
+    "value": 3
+   },
+   {
+    "name": "Mechanics",
+    "value": 2
+   },
+   {
+    "name": "Charm",
+    "value": 2
+   },
+   {
+    "name": "Fitness",
+    "value": 2
+   },
+   {
+    "name": "Street Smarts",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Pilot's license",
+   "Bolt gun"
+  ],
+  "quests": [
+   {
+    "title": "Buy the Kestrel",
+    "detail": "Earn forty thousand credits to buy Marta's ship.",
+    "done": false
+   },
+   {
+    "title": "Deliver the Grubstake to Vesta",
+    "detail": "Fly the tug to Vesta for six hundred credits.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko (six hundred credits on delivery to Vesta). Vasko smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock; customs is cutting through. Waren tackled Vasko, but Vasko broke free and ran to the cockpit to start the drive while the customs cutter is still clamped on. Waren now holds the bolt gun, injured ribs, and must choose: stop Vasko, free the people, or warn customs.",
+ "cast": [
+  {
+   "name": "Marta Okafor",
+   "look": "Elderly woman in her sixties, sturdy build, weathered dark skin, sharp brown eyes, long grey braids, grease-stained blue coveralls with rolled-up sleeves.",
+   "home": "Okafor's Used Hulls, Ceres Ring Port",
+   "role": "used ship dealer, owner of the Kestrel",
+   "note": "Wants forty thousand credits for the Kestrel, not a credit less."
+  },
+  {
+   "name": "Dren Vasko",
+   "look": "Wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots.",
+   "home": "ore tug Grubstake",
+   "role": "captain of the Grubstake, Waren's shady employer",
+   "note": "Broke free, ran to the cockpit to burn with customs clamped on."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Ceres Ring Port",
+    "detail": "Busy, grimy docking ring on Ceres full of haulers, tugs and a flickering job board."
+   },
+   {
+    "name": "Okafor's Used Hulls",
+    "detail": "Marta Okafor's used ship lot on Ceres Ring Port, where the Kestrel waits."
+   },
+   {
+    "name": "Mother's flat",
+    "detail": "Waren's mother's small flat, three decks below the port."
+   },
+   {
+    "name": "Grubstake",
+    "detail": "Dren Vasko's battered ore tug, with a sealed hold that isn't carrying only ore."
+   }
+  ],
+  "facts": [
+   "Marta Okafor will sell the Kestrel to Waren for forty thousand credits.",
+   "Vasko promised Waren six hundred credits on delivery to Vesta.",
+   "Ceres Customs is boarding the Grubstake.",
+   "People are trapped in the Grubstake's sealed hold, begging for help.",
+   "The Grubstake's airlock panel is destroyed; customs is cutting through the hatch.",
+   "Waren holds Vasko's bolt gun."
+  ],
+  "time": "late morning, first day"
+ },
+ "recent": [
+  {
+   "action": "Take the risky ore tug job",
+   "narration": "The tug is called the Grubstake, and her captain, a wiry man named Dren Vasko, barely glances at your license. \"Six hundred credits on delivery to Vesta. Fly straight, don't open the hold.\"\n\nUndocking goes wrong right away. A docking clamp sticks, the tug lurches, and your head smacks the console. Through the ringing you hear a hollow knock from the hold. Ore doesn't knock.\n\nThen the comm crackles: \"Ore tug Grubstake, Ceres Customs. Hold position for inspection.\"\n\nVasko's hand lands on your shoulder, heavy. \"Burn for the asteroid shadow, kid. Now.\"\n\nThe patrol cutter's lights swing toward you.",
+   "picture": "Cramped cockpit of an old industrial ore tug in space, a lean young man in his early twenties with short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, rubbing his forehead at the controls; behind him a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, grips his shoulder. Red warning lights, patrol searchlights through the viewport."
+  },
+  {
+   "action": "Hold position and answer customs",
+   "narration": "You key the comm. \"Customs, Grubstake holding position—\"\n\nVasko's fist cracks across your jaw before you finish. He rips the headset free and snarls into it: \"Clamp fault, Customs. Sorting it now.\" Too late. The cutter's voice goes flat and official: \"Grubstake, prepare to be boarded. Any burn will be treated as flight.\"\n\nThe cutter slides alongside, docking collar extending. Vasko stares at you, breathing hard, then at the hold hatch. The knocking starts again, faster now, like whoever is in there heard the word \"boarded\" too.\n\n\"You just cost me everything, kid,\" Vasko says quietly, and his hand drifts toward the locker by the hatch."
+  },
+  {
+   "action": "Unlock the airlock for the customs team",
+   "narration": "You lunge for the airlock panel. Your fingers are on the release when the locker slams open behind you.\n\nVasko is faster. He drives you into the hatch frame shoulder-first, and something cold and blunt presses under your ribs: a cargo bolt gun, the kind used to pin crates. Your sore jaw throbs against the metal.\n\n\"Hands off the panel,\" he breathes. Outside, the docking collar clanks home. A gloved fist pounds the outer hatch. \"Customs! Open up!\"\n\nBehind you, from the sealed hold, the knocking turns into a voice. Muffled, desperate, human: \"Help us! Please!\"\n\nVasko's eyes flick toward the sound. For one second, the bolt gun drifts.",
+   "picture": "Cramped airlock corridor of an old ore tug, red emergency lights. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, cargo pants, scuffed boots, pinned against a hatch frame, hand reaching for a release panel; a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots, pressing an industrial tool against him."
+  },
+  {
+   "action": "Slam the airlock release now",
+   "narration": "You slap at the release, but your palm skids off the panel. Vasko's distracted second ends in a flat, ugly thunk: the bolt gun fires into the panel beside your hand. Sparks spray. Fragments of hot plastic sting your knuckles, and his elbow catches your ribs on the way down.\n\nThe panel dies with a whine. The airlock is fused shut.\n\nOutside, the pounding stops. A new sound starts: the low hiss of a cutting torch biting into the outer hatch. A glowing orange line creeps across the metal.\n\nVasko reloads, breathing hard. \"Ten minutes before they're through,\" he mutters. \"Get up and fly, or get out of my way.\"\n\nFrom the hold, the voices have gone quiet, listening."
+  },
+  {
+   "action": "Tackle Vasko while he reloads",
+   "narration": "He's thumbing a fresh bolt into the chamber when you hit him low, the way your uncle taught you in the dock gym. You both slam into the deck. The bolt gun clatters away and skids under a cargo strap rack.\n\nVasko is wiry and mean. His knee finds your bruised ribs and the pain goes white, but you get your forearm across his throat and your weight on his chest. He thrashes, then goes still and glares up at you.\n\n\"You think they'll thank you?\" he rasps. \"They'll lock up the people in that hold too. Send them back to wherever they ran from.\"\n\nThe orange line on the hatch is a third of the way around. The hold is silent.",
+   "picture": "Cramped airlock corridor of an old ore tug, red emergency lights, a glowing orange cutting line on a hatch. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, pinning to the deck a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots."
+  },
+  {
+   "action": "Grab the bolt gun and hold him",
+   "narration": "You shift your weight to reach under the rack. That's all Vasko needs. He bucks, twists, and drives his heel into your bruised ribs. You fold, gasping, fingers brushing cold metal and losing it.\n\nBy the time you drag the bolt gun out, Vasko is gone, boots pounding up the ladder toward the cockpit. You hear the drive warm-up chime. He's going to burn with the customs cutter still clamped to the hatch.\n\nThe orange line is halfway around now. Somewhere behind the hold door, someone starts crying softly.\n\nYou stand there, ribs screaming, the bolt gun heavy in your hand. Cockpit, hold, or hatch."
+  }
+ ],
+ "action": "Shout a warning through the hatch",
+ "roll": 19,
+ "pacing": {
+  "turn": 7,
+  "total": 25,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "spaceship_hum",
+  "mood": "action"
+ }
+}
