@@ -1,0 +1,95 @@
+{
+ "id": "muvlr8sp-mef80",
+ "finishedAt": "2026-10-05T18:48:22.381Z",
+ "durationMs": 14671,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "The cutter ride is silent. At Ceres Customs, Hale sets you in a grey room with a recorder and a cup of bitter tea. Her questions come slowly, one at a time. You tell it straight: the job board, the sealed hold, the knocking, the breaker. You don't make yourself look better than you were.\n\nWhen you finish, she stops the recorder. \"That was clean.\" She slides a form across. \"Informant fund claim. It's filed now. Don't hold your breath.\" Then, after a pause: \"A medic's down the hall for those ribs. Free.\" \n\nAt the door she adds, \"The woman with the toddler asked your name. Said you opened the door before we could.\"\n\nYour ribs throb. Your pocket still holds ten credits.",
+  "choices": [
+   "Get the ribs checked by the medic",
+   "Ask Hale about the refugees' fate",
+   "Head back to the port job board"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [
+    "Informant fund claim form"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Give Hale your witness statement"
+   ],
+   "location": "Ceres Customs",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He warned customs, killed the drive, talked Vasko into surrendering and opened the hold to eleven refugees. He clumsily asked Inspector Hale about a reward. He then gave an honest statement at Ceres Customs, which earned back some of Hale's respect, and filed an informant fund claim that could pay out in months. The Vesta job is probably lost. He's still hurt and broke.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Bare grey interrogation room at a space station customs office, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, sitting at a metal table with a cup of tea, across from a woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark jacket shirt, heavy boots, sliding a form over, cold fluorescent light.",
+   "fallback": "Bare grey interrogation room on a space station, metal table with a recorder, a paper form and a cup of tea, cold fluorescent light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Inspector Hale",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Took Waren's statement; respects his honesty, filed his informant claim.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Ceres Customs",
+     "detail": "Grey customs offices on Ceres Ring Port with bare interview rooms and a medic down the hall."
+    }
+   ],
+   "facts": [
+    "Waren filed an informant fund claim; any payout is months away.",
+    "The refugee woman with the toddler asked for Waren's name."
+   ],
+   "forgetFacts": [
+    "Inspector Hale wants Waren's witness statement."
+   ],
+   "time": "early afternoon, first day"
+  },
+  "sound": {
+   "ambience": "city_day",
+   "mood": "calm",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1448,
+  "cacheRead": 13441,
+  "cacheWrite": 4076,
+  "costUsd": 0.0643,
+  "apiMs": 13267,
+  "numTurns": 2
+ }
+}
