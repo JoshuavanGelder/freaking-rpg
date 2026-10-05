@@ -1,0 +1,75 @@
+{
+ "id": "muvm1xiq-5ck8q",
+ "finishedAt": "2026-10-05T18:56:26.332Z",
+ "durationMs": 10356,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You sit on a hard bench in the hall and fill in the claim form line by line: name, license number, the tug, the hold code. The clerk at the window stamps it without looking up. \"Filed. Don't call us.\" Behind you, the courier job is still flickering on the screen.",
+  "choices": [
+   "Ask about the short-hop courier job",
+   "Head to Marta's lot for advice",
+   "Ask Hale about the refugees' fate"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 2,
+   "addItems": [
+    "Stamped claim receipt"
+   ],
+   "removeItems": [
+    "Informant fund claim form"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer is a young pilot with ten credits who wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He warned customs, killed the drive, talked Vasko into surrendering and opened the hold to eleven refugees. After clumsily asking about a reward, he gave Inspector Hale an honest statement and filed an informant fund claim, now stamped and filed; payout is months away. A customs medic strapped his cracked ribs. The Vesta job is probably lost. A short-hop courier job paying cash on landing is on the customs job screen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, filling in a paper form on a bench in a grey customs hallway, flickering job screen behind him, cold fluorescent light.",
+   "fallback": "Grey customs office hallway on a space station, hard bench, clerk window, flickering job screen on the wall, cold fluorescent light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1050,
+  "cacheRead": 13441,
+  "cacheWrite": 4116,
+  "costUsd": 0.0566,
+  "apiMs": 9387,
+  "numTurns": 2
+ }
+}
