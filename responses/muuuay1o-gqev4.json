@@ -1,0 +1,80 @@
+{
+ "id": "muuuay1o-gqev4",
+ "finishedAt": "2026-10-05T05:59:57.651Z",
+ "durationMs": 30680,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "De vreter is al halverwege de grot. Je kijkt niet naar zijn klauwen, maar naar het vuur in zijn borst. Het gestolen vuur is wit, en het is van jou geweest. Het herkent je.\n\nJe duikt erin met je wil. Hitte slaat in je gezicht, maar diep in de gloed hoor je de klank weer, nu helemaal. Oud als de eerste haard, hongerig als een winter zonder hout.\n\n*Asharoth.*\n\nJe spreekt hem uit. De grot wordt stil. De vreter bevriest, een kolenhand een handbreedte boven het hart van de Vorst.\n\n\"Niet doen,\" kraakt hij zacht. \"Koning. Wat ik draag, kan ik je geven.\"\n\nJe derde knoop ligt klaar in je vingers.",
+  "choices": [
+   "Knoop zijn naam en beveel: geef het vuur",
+   "Luister wat hij je wil aanbieden",
+   "Knoop hem en sluit hem op in steen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 25,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. In de zonnegrot goot hij het eerste vuur in het hart van de Vorst, maar de vreter stal de helft via een draad. Joshua knipte die draad door. Toen de vreter het halve hart van de Vorst aanviel, vond Joshua in het gestolen vuur zijn volledige naam: Asharoth. De vreter staat verstijfd, smeekt en biedt Joshua iets aan. Joshua's derde knoop ligt klaar. Vorrin is gewond.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark cave beneath a golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, arm outstretched, glowing silver threads at his fingers; a towering faceless figure of smouldering coal and drifting smoke, a single glowing open mouth of red fire, frozen mid-lunge above a hunched emaciated old man with grey ashen skin in scorched gold-and-white robes.",
+   "fallback": "Dark rocky cave beneath an empty golden throne, scorched stone floor, drifting smoke and faint red glow from the entrance, silver light shimmering in the air."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De vreter",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Ware naam Asharoth; verstijfd door Joshua's stem, draagt gestolen vuur.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "facts": [
+    "Joshua kent de volledige naam van de vreter: Asharoth."
+   ],
+   "forgetFacts": [
+    "Joshua kent de helft van de naam van de vreter: 'Ash...'."
+   ],
+   "places": [],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3500,
+  "cacheRead": 29289,
+  "cacheWrite": 8077,
+  "costUsd": 0.1405,
+  "apiMs": 29918,
+  "numTurns": 3
+ }
+}
