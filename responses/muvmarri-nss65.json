@@ -1,0 +1,73 @@
+{
+ "id": "muvmarri-nss65",
+ "finishedAt": "2026-10-05T19:03:19.094Z",
+ "durationMs": 10832,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You sit with the datapad on your knee and trace the approach. The ridge pad sticks out from a crater wall, and there's a long shadow to the east where your sensors will be useless. Someone has scrawled a note in the margin: \"Come in from the north, low. Watch the hab mast at forty metres.\" It means flying by eye for the last stretch. You can do that.\n\nJuno leans in the hatch. \"Clock's running, kid.\"",
+  "choices": [
+   "Launch now and fly the northern approach",
+   "Ask Juno about the last pilot's crash",
+   "Run a quick preflight check on the strut"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender and freed eleven refugees. He gave an honest statement and filed an informant claim (payout months away). His ribs are strapped. He took Juno Reyes's three-hundred-credit medicine run to Occator Ridge and studied the approach chart: come in low from the north, watch the hab mast, and fly by eye through the dust. Juno hints at better-paid work afterwards.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, studying a glowing approach chart on a datapad inside a cramped courier skiff cockpit, harsh work lights.",
+   "fallback": "Cramped courier skiff cockpit with worn controls and a glowing datapad showing a crater approach chart, harsh docking bay lights outside the canopy."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The ridge pad approach: come in low from the north, mind the hab mast at forty metres."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1101,
+  "cacheRead": 13441,
+  "cacheWrite": 4440,
+  "costUsd": 0.0602,
+  "apiMs": 9825,
+  "numTurns": 2
+ }
+}
