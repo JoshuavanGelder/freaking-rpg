@@ -1,0 +1,93 @@
+{
+ "id": "muvkxby7-iefoz",
+ "finishedAt": "2026-10-05T18:25:08.444Z",
+ "durationMs": 27036,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "The customs office smells of burnt coffee and disinfectant. A medic tapes your ribs while you talk. Hale records everything: the job board, the sealed hold, the code, Vasko's last words. You tell it straight, including the part where you asked about money.\n\nWhen the recorder clicks off, Hale leans back. \"Honest statement. Rarer than you'd think.\" She slides a tablet across. \"The Grubstake's impounded, but it's drifting in a traffic lane with a dead drive. Somebody has to reset that breaker and fly it to the impound yard. Contract pilots get eight hundred. My regulars are busy.\"\n\nThrough the window you can see the woman with the toddler in a processing line. She still isn't looking your way.",
+  "choices": [
+   "Take the impound job",
+   "Ask what happens to the refugees",
+   "Haggle for a better fee"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "klein",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Give Hale your witness statement"
+   ],
+   "location": "Ceres Customs",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He took a job on Dren Vasko's tug Grubstake, which was smuggling eleven refugees. When Ceres Customs boarded, Waren warned them, killed the drive and talked Vasko into surrendering. He opened the hold, then clumsily asked Inspector Hale about a reward. At Ceres Customs he gave an honest statement, which earned Hale's grudging respect. The informant fund may pay out in months. Hale now offers him eight hundred credits to restart the impounded Grubstake and fly it to the impound yard. The Vesta job is effectively dead. The refugees are being processed.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Cramped customs office on a space station under harsh fluorescent light. A woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark jacket shirt, heavy boots, slides a tablet across a desk to a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots. A window behind them shows a processing line.",
+   "fallback": "Cramped customs office on a space station, harsh fluorescent light, cluttered desk with a tablet and a coffee cup, a window looking onto a corridor of grey benches."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Inspector Hale",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Respects Waren's honest statement; offers him an 800-credit impound flight.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Ceres Customs",
+     "detail": "Cramped customs offices on Ceres Ring Port that smell of burnt coffee, with a refugee processing line."
+    }
+   ],
+   "facts": [
+    "Waren gave Hale an honest witness statement.",
+    "Hale offers eight hundred credits to fly the impounded Grubstake to the impound yard."
+   ],
+   "forgetFacts": [
+    "Inspector Hale wants Waren's witness statement."
+   ],
+   "time": "early afternoon, first day"
+  },
+  "sound": {
+   "ambience": "city_day",
+   "mood": "calm",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3132,
+  "cacheRead": 30955,
+  "cacheWrite": 5388,
+  "costUsd": 0.112,
+  "apiMs": 26291,
+  "numTurns": 3
+ }
+}
