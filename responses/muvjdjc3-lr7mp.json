@@ -1,0 +1,88 @@
+{
+ "id": "muvjdjc3-lr7mp",
+ "finishedAt": "2026-10-05T17:41:46.183Z",
+ "durationMs": 27033,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"It's over, Vasko.\" Your voice cracks, but it carries up the ladder. \"Drive's dead. Customs is clamped on. Shoot me and it's murder on top of smuggling.\"\n\nHis boots stop halfway down. For a long moment there's only the tick of cooling metal. Then he sits down heavily on a rung, hands hanging between his knees.\n\n\"Six years I kept this tug flying,\" he says to nobody.\n\nAbove, the torch breaks through in a shower of sparks. Boots hit the deck. \"Customs! Nobody move!\"\n\nVasko doesn't look at you. \"Hold code's four-four-seven-one,\" he mutters. \"Open it before they get rough with them. Tell them it was me.\"",
+  "choices": [
+   "Open the hold with Vasko's code",
+   "Hand the bolt gun to customs",
+   "Ask Vasko who the people are"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock and fought Waren. Waren warned customs and killed the drive breaker, then talked Vasko into surrendering. Vasko gave him the hold code and asked him to tell customs it was all his doing. Customs has cut through and is boarding. The Vesta job is probably lost.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dim red-lit ladder shaft of an old ore tug. A wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots, sitting defeated on a ladder rung; below, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, lowering an industrial tool. Sparks fall from above.",
+   "fallback": "Dim red-lit ladder shaft inside an old ore tug, metal rungs, pipes, faint sparks drifting down from an opening above."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "levend",
+    "home": "",
+    "role": "",
+    "note": "Surrendered to Waren; gave the hold code and takes the blame.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The Grubstake hold code is 4471.",
+    "Vasko surrendered and wants customs told it was all his doing."
+   ],
+   "forgetFacts": [
+    "Customs detached from the Grubstake after Waren's warning and asked him to stop the drive."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "door_slam"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3199,
+  "cacheRead": 31003,
+  "cacheWrite": 5481,
+  "costUsd": 0.114,
+  "apiMs": 26378,
+  "numTurns": 3
+ }
+}
