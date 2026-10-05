@@ -1,0 +1,86 @@
+{
+ "id": "muvik4po-ghzjk",
+ "finishedAt": "2026-10-05T17:18:40.813Z",
+ "durationMs": 13997,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "He's thumbing a fresh bolt into the chamber when you hit him low, the way your uncle taught you in the dock gym. You both slam into the deck. The bolt gun clatters away and skids under a cargo strap rack.\n\nVasko is wiry and mean. His knee finds your bruised ribs and the pain goes white, but you get your forearm across his throat and your weight on his chest. He thrashes, then goes still and glares up at you.\n\n\"You think they'll thank you?\" he rasps. \"They'll lock up the people in that hold too. Send them back to wherever they ran from.\"\n\nThe orange line on the hatch is a third of the way around. The hold is silent.",
+  "choices": [
+   "Grab the bolt gun and hold him",
+   "Ask who's in the hold",
+   "Open the hold to free them"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Fitness",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -1,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, promised six hundred credits on delivery to Vesta. Vasko is smuggling people in the sealed hold. Waren tried to cooperate with Ceres Customs; Vasko punched him and shot the airlock panel, fusing the hatch. Customs is cutting through. Waren tackled Vasko and pinned him; the bolt gun slid under a rack. Vasko claims customs will deport the people in the hold.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cramped airlock corridor of an old ore tug, red emergency lights, a glowing orange cutting line on a hatch. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, pinning to the deck a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots.",
+   "fallback": "Cramped airlock corridor of an old industrial spaceship, red emergency lights, a glowing orange line across a metal hatch, cargo straps on the wall."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Pinned by Waren; claims customs will deport the people in the hold.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Vasko's bolt gun lies under a cargo strap rack by the airlock."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "punch",
+    "fall"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1359,
+  "cacheRead": 13441,
+  "cacheWrite": 3922,
+  "costUsd": 0.0613,
+  "apiMs": 13289,
+  "numTurns": 2
+ }
+}
