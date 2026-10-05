@@ -1,0 +1,79 @@
+{
+ "id": "muvnac0e-ouky9",
+ "finishedAt": "2026-10-05T19:31:15.391Z",
+ "durationMs": 28769,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You release the port grapple, wait for the plate's shadow, and fire. The claw bites, but it bites at a bad angle. The plate keeps moving and the cable snaps tight.\n\nThe skiff is wrenched sideways. Your harness slams into your ribs, metal shrieks, and the port grapple arm tears off at its mount. The cable whips away into the dark, and the plate goes with it, spinning free into the debris field.\n\nYou're hanging on by one claw. Alarms are blinking, and your chest burns every time you breathe. But the yank peeled the buckled hatch half open. You can see the recorder's orange casing inside, close enough to reach in a suit.\n\nThe plate is gone for now. The wreck is still turning, though, and your last grapple is groaning.",
+  "choices": [
+   "Suit up and grab the recorder",
+   "Re-anchor the skiff before anything else",
+   "Cut the hatch wider with the arm"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Piloting",
+   "dc": 15,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay for months. He flew Juno Reyes's medicine run to Occator Ridge, then took the Halcyon salvage job: forty-five thousand for the recorder and nav core, minus Juno's ten percent. In the deep belt he grappled onto the recorder bay. When he tried to pin the sweeping hull plate, it tore off his port grapple arm and bruised his ribs. The plate drifted away, and the jolt peeled the hatch half open, so the recorder is now reachable. He hangs by one strained grapple. The nav core is still near the break.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A small battered salvage skiff wrenched sideways against a tumbling broken ore freighter in the deep asteroid belt, one grapple arm torn away with its cable whipping off, a huge twisted hull plate spinning away into glittering debris. Inside the cockpit is a lean young man in his early twenties with short dark brown hair, light stubble and keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, braced against his harness. Red warning lights, harsh distant sunlight.",
+   "fallback": "A broken ore freighter tumbling slowly in a dark asteroid belt, a half-open buckled hatch revealing an orange device inside, glittering debris, harsh distant sunlight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The skiff lost its port grapple arm; it holds to the Halcyon by one grapple.",
+    "The Halcyon's recorder hatch is torn half open; the recorder is reachable."
+   ],
+   "forgetFacts": [
+    "The Halcyon's recorder hatch is buckled; a loose hull plate sweeps past seconds after it."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "action",
+   "sfx": [
+    "hit",
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3392,
+  "cacheRead": 31704,
+  "cacheWrite": 6211,
+  "costUsd": 0.1239,
+  "apiMs": 27878,
+  "numTurns": 3
+ }
+}
