@@ -1,0 +1,167 @@
+{
+ "id": "muvjfgp3-sbib9",
+ "createdAt": "2026-10-05T17:42:45.831Z",
+ "kind": "turn",
+ "model": "opus",
+ "lang": "en",
+ "world": {
+  "setting": "Sci-fi",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Realistic",
+  "wishes": "I am a man just going out into the world and my main goal is to get a the money to buy a space ship.",
+  "textLength": "normaal",
+  "arc": "middel",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Waren Spacefarer",
+  "className": "Pilot",
+  "powers": "Special affinity for flying",
+  "looks": "",
+  "heroLook": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots."
+ },
+ "state": {
+  "hp": 7,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 76,
+  "level": 1,
+  "location": "Grubstake drive bay",
+  "attributes": [
+   {
+    "name": "Piloting",
+    "value": 5
+   },
+   {
+    "name": "Navigation",
+    "value": 3
+   },
+   {
+    "name": "Mechanics",
+    "value": 2
+   },
+   {
+    "name": "Charm",
+    "value": 2
+   },
+   {
+    "name": "Fitness",
+    "value": 2
+   },
+   {
+    "name": "Street Smarts",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Pilot's license",
+   "Bolt gun"
+  ],
+  "quests": [
+   {
+    "title": "Buy the Kestrel",
+    "detail": "Earn forty thousand credits to buy Marta's ship.",
+    "done": false
+   },
+   {
+    "title": "Deliver the Grubstake to Vesta",
+    "detail": "Fly the tug to Vesta for six hundred credits.",
+    "done": false
+   },
+   {
+    "title": "Stop Vasko's burn",
+    "detail": "Kill the Grubstake's drive before Vasko flees.",
+    "done": true
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock and fought Waren. Waren warned customs and killed the drive breaker, then talked Vasko into surrendering. Vasko gave him the hold code and asked him to tell customs it was all his doing. Customs has cut through and is boarding. The Vesta job is probably lost.",
+ "cast": [
+  {
+   "name": "Marta Okafor",
+   "look": "Elderly woman in her sixties, sturdy build, weathered dark skin, sharp brown eyes, long grey braids, grease-stained blue coveralls with rolled-up sleeves.",
+   "home": "Okafor's Used Hulls, Ceres Ring Port",
+   "role": "used ship dealer, owner of the Kestrel",
+   "note": "Wants forty thousand credits for the Kestrel, not a credit less."
+  },
+  {
+   "name": "Dren Vasko",
+   "look": "Wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots.",
+   "home": "ore tug Grubstake",
+   "role": "captain of the Grubstake, Waren's shady employer",
+   "note": "Surrendered to Waren; gave the hold code and takes the blame."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Ceres Ring Port",
+    "detail": "Busy, grimy docking ring on Ceres full of haulers, tugs and a flickering job board."
+   },
+   {
+    "name": "Okafor's Used Hulls",
+    "detail": "Marta Okafor's used ship lot on Ceres Ring Port, where the Kestrel waits."
+   },
+   {
+    "name": "Mother's flat",
+    "detail": "Waren's mother's small flat, three decks below the port."
+   },
+   {
+    "name": "Grubstake",
+    "detail": "Dren Vasko's battered ore tug, with a sealed hold that isn't carrying only ore."
+   }
+  ],
+  "facts": [
+   "Marta Okafor will sell the Kestrel to Waren for forty thousand credits.",
+   "Vasko promised Waren six hundred credits on delivery to Vesta.",
+   "Ceres Customs is boarding the Grubstake.",
+   "People are trapped in the Grubstake's sealed hold, begging for help.",
+   "Waren holds Vasko's bolt gun.",
+   "Waren killed the Grubstake's main drive breaker; the tug can't burn.",
+   "The Grubstake hold code is 4471.",
+   "Vasko surrendered and wants customs told it was all his doing."
+  ],
+  "time": "late morning, first day"
+ },
+ "recent": [
+  {
+   "action": "Slam the airlock release now",
+   "narration": "You slap at the release, but your palm skids off the panel. Vasko's distracted second ends in a flat, ugly thunk: the bolt gun fires into the panel beside your hand. Sparks spray. Fragments of hot plastic sting your knuckles, and his elbow catches your ribs on the way down.\n\nThe panel dies with a whine. The airlock is fused shut.\n\nOutside, the pounding stops. A new sound starts: the low hiss of a cutting torch biting into the outer hatch. A glowing orange line creeps across the metal.\n\nVasko reloads, breathing hard. \"Ten minutes before they're through,\" he mutters. \"Get up and fly, or get out of my way.\"\n\nFrom the hold, the voices have gone quiet, listening."
+  },
+  {
+   "action": "Tackle Vasko while he reloads",
+   "narration": "He's thumbing a fresh bolt into the chamber when you hit him low, the way your uncle taught you in the dock gym. You both slam into the deck. The bolt gun clatters away and skids under a cargo strap rack.\n\nVasko is wiry and mean. His knee finds your bruised ribs and the pain goes white, but you get your forearm across his throat and your weight on his chest. He thrashes, then goes still and glares up at you.\n\n\"You think they'll thank you?\" he rasps. \"They'll lock up the people in that hold too. Send them back to wherever they ran from.\"\n\nThe orange line on the hatch is a third of the way around. The hold is silent.",
+   "picture": "Cramped airlock corridor of an old ore tug, red emergency lights, a glowing orange cutting line on a hatch. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, pinning to the deck a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots."
+  },
+  {
+   "action": "Grab the bolt gun and hold him",
+   "narration": "You shift your weight to reach under the rack. That's all Vasko needs. He bucks, twists, and drives his heel into your bruised ribs. You fold, gasping, fingers brushing cold metal and losing it.\n\nBy the time you drag the bolt gun out, Vasko is gone, boots pounding up the ladder toward the cockpit. You hear the drive warm-up chime. He's going to burn with the customs cutter still clamped to the hatch.\n\nThe orange line is halfway around now. Somewhere behind the hold door, someone starts crying softly.\n\nYou stand there, ribs screaming, the bolt gun heavy in your hand. Cockpit, hold, or hatch."
+  },
+  {
+   "action": "Shout a warning through the hatch",
+   "narration": "You press your mouth to the hot seam and shout over the hiss. \"He's starting the drive! Detach or you'll tear loose! There are people in the hold!\"\n\nThe torch cuts out. A muffled voice answers, fast and clear: \"Copy. Pulling the collar.\" Then, quieter: \"Kid, can you kill that drive?\"\n\nThrough the hull you hear the cutter's clamps release with a deep clunk. Up the ladder, the warm-up chime climbs toward its final tone. You have maybe a minute before Vasko burns.\n\nThe bolt gun is heavy in your hand. Your ribs still feel like they're full of glass."
+  },
+  {
+   "action": "Pull the drive's main breaker below decks",
+   "narration": "You drop down the engine ladder, half falling, ribs screaming. The drive bay is hot and loud, the reactor coupling humming up toward burn. The main breaker sits behind a mesh cage stencilled with warnings. You remember the old tug drills: cage latch, safety pin, then the handle all the way down.\n\nThe warm-up chime hits its last note just as you throw your whole weight on the lever.\n\nIt drops with a heavy clack. The hum dies. The lights flicker down to a dim red emergency glow.\n\nOverhead, Vasko swears, long and loud. Then his boots start back down the ladder, fast.\n\nThrough the hull comes the clunk of the customs collar locking back on. In the hold, someone is knocking again, softly now, hopeful.",
+   "picture": "Cramped engine bay of an old ore tug in dim red emergency light. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, hanging his whole weight on a big breaker lever inside a mesh cage, sparks fading, pipes and machinery around him."
+  },
+  {
+   "action": "Call to Vasko: it's over",
+   "narration": "\"It's over, Vasko.\" Your voice cracks, but it carries up the ladder. \"Drive's dead. Customs is clamped on. Shoot me and it's murder on top of smuggling.\"\n\nHis boots stop halfway down. For a long moment there's only the tick of cooling metal. Then he sits down heavily on a rung, hands hanging between his knees.\n\n\"Six years I kept this tug flying,\" he says to nobody.\n\nAbove, the torch breaks through in a shower of sparks. Boots hit the deck. \"Customs! Nobody move!\"\n\nVasko doesn't look at you. \"Hold code's four-four-seven-one,\" he mutters. \"Open it before they get rough with them. Tell them it was me.\""
+  }
+ ],
+ "action": "Hand the bolt gun to customs",
+ "roll": 2,
+ "pacing": {
+  "turn": 10,
+  "total": 25,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "spaceship_hum",
+  "mood": "tense"
+ }
+}
