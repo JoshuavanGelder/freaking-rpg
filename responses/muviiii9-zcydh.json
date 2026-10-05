@@ -1,0 +1,86 @@
+{
+ "id": "muviiii9-zcydh",
+ "finishedAt": "2026-10-05T17:17:25.356Z",
+ "durationMs": 13942,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You slap at the release, but your palm skids off the panel. Vasko's distracted second ends in a flat, ugly thunk: the bolt gun fires into the panel beside your hand. Sparks spray. Fragments of hot plastic sting your knuckles, and his elbow catches your ribs on the way down.\n\nThe panel dies with a whine. The airlock is fused shut.\n\nOutside, the pounding stops. A new sound starts: the low hiss of a cutting torch biting into the outer hatch. A glowing orange line creeps across the metal.\n\nVasko reloads, breathing hard. \"Ten minutes before they're through,\" he mutters. \"Get up and fly, or get out of my way.\"\n\nFrom the hold, the voices have gone quiet, listening.",
+  "choices": [
+   "Tackle Vasko while he reloads",
+   "Head for the hold and free them",
+   "Pretend to obey, steer toward the cutter"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Fitness",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a no-questions relief pilot job on the ore tug Grubstake for Captain Dren Vasko, promised six hundred credits on delivery to Vesta. Vasko is smuggling people in the sealed hold. When Ceres Customs ordered an inspection, Waren tried to comply; Vasko punched him. Customs docked; Waren tried to open the airlock, but Vasko shot the panel with a cargo bolt gun, fusing the hatch. Customs is now cutting through, about ten minutes out. Vasko orders Waren to fly or get out of the way.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Cramped airlock corridor of an old ore tug, red emergency lights, sparks from a ruined control panel. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, cargo pants, scuffed boots, on the floor clutching his ribs; a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots, reloading an industrial tool. Orange glowing cut line on the hatch.",
+   "fallback": "Cramped airlock corridor of an old industrial spaceship, red emergency lights, a sparking dead control panel, and a glowing orange cut line creeping across a heavy metal hatch."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Smuggling people; shot the airlock panel with a bolt gun to stop customs.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The Grubstake's airlock panel is destroyed; customs is cutting through the hatch."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "gunshot",
+    "glass_break"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1467,
+  "cacheRead": 13441,
+  "cacheWrite": 3621,
+  "costUsd": 0.061,
+  "apiMs": 13082,
+  "numTurns": 2
+ }
+}
