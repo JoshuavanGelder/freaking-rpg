@@ -1,0 +1,73 @@
+{
+ "id": "muv5jz9e-yejw3",
+ "finishedAt": "2026-10-05T11:14:31.589Z",
+ "durationMs": 8206,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Het bankgeld is teruggebracht naar de Stadsbank; de herprogrammeerder van het mandje is nog onbekend."
+   ],
+   "forgetFacts": [],
+   "time": "avond, eerste dag"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Wie herprogrammeerde het mandje?",
+     "detail": "Zoek de dader achter de robotoverval."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Stadsbank",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Onderzoek het frituurmandje op sporen",
+   "Vraag Gerrit wie hem wilde pesten",
+   "Laat de bankdirecteur je bedanken"
+  ],
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, haalde uienbakker Gerrit uit het robotpak dat de Stadsbank overviel. Gerrit zegt dat iemand zijn frituurmandje herprogrammeerde. Bart zette de robot uit met driemaal schudden en sorry, en bracht het geld terug naar de bank. De vraag blijft wie erachter zit.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Bank entrance at dusk in rain, a bag of money placed on the steps, giant idle robot walker in background, humorous epic",
+   "fallback": "Grand city bank entrance at dusk in light rain, wet steps, warm lights glowing."
+  },
+  "heroLook": "\"\"",
+  "narration": "Je flitst met de zak de bank in en zet hem op de balie, voordat de baliemedewerker zijn pen heeft laten vallen. \"Alles er nog?\" vraag je. Hij telt, knikt sprakeloos en ruikt aan zijn mouw. Ui. Buiten hoor je Gerrit nog zachtjes sorry zeggen tegen de robot.",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 977,
+  "cacheRead": 11405,
+  "cacheWrite": 3037,
+  "costUsd": 0.0242,
+  "apiMs": 7136,
+  "numTurns": 2
+ }
+}
