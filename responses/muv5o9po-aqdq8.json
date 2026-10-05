@@ -1,0 +1,71 @@
+{
+ "id": "muv5o9po-aqdq8",
+ "finishedAt": "2026-10-05T11:17:53.518Z",
+ "durationMs": 9145,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Gerrits frituurkraam",
+     "detail": "Gammel frituurkraam aan een steegje bij het plein, vol vet, uienkorven en een flikkerend neonbord."
+    }
+   ],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "nacht, eerste dag"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Gerrits frituurkraam",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Onderzoek de pompon met slow-motion blik",
+   "Doorzoek de kassa en het afval",
+   "Wacht verborgen tot Het Mandje terugkomt"
+  ],
+  "summary": "Bart Quick versloeg Gerrits uienrobotpak en bracht het bankgeld terug. Iemand van 'Het Mandje' herprogrammeerde de robot en laat vettige briefjes achter. Gerrit zag een man met vette handschoenen en kerstmuts. Bart gaat nu naar Gerrits kraam voor sporen.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Greasy small fry stand in a rainy alley at night, flickering neon sign, onion baskets, fryer with a faint glowing greasy handprint, humorous epic mood",
+   "fallback": "A small fry stand in a rainy alley at night with a flickering neon sign and onion baskets."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "title": "",
+  "narration": "Je staat al bij de kraam voordat Gerrits laatste sorry is uitgesproken. Het neonbord flikkert \"FRIET & UI\". Op de rand van de frituurpan zit een vettige handschoenafdruk. Naast de kassa ligt iets kleins en rood: een kerstmuts-pompon. Het ruikt hier erg naar ui."
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1031,
+  "cacheRead": 11405,
+  "cacheWrite": 2988,
+  "costUsd": 0.0245,
+  "apiMs": 8242,
+  "numTurns": 2
+ }
+}
