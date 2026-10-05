@@ -1,0 +1,81 @@
+{
+ "id": "muuu7qp3-m3jyr",
+ "finishedAt": "2026-10-05T05:57:29.507Z",
+ "durationMs": 30311,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je buigt de rode draad nog één keer, nu hij alleen nog aan je huid hangt. Hij verzet zich, heet en glibberig. Dan knipt je wil hem door.\n\nHet knalt als een zweepslag. Je pols schroeit wit, maar je zilveren lotdraad blijft heel. Het losse eind zwiept terug en verdwijnt sissend in de mond van de vreter.\n\nHij wankelt. De gloed in zijn borst flakkert: het gestolen vuur zit in hem, maar via jou kan hij niet meer eten. Hij brult, en de grotwanden trillen.\n\n\"Dan neem ik het zelf, koning!\" Hij stort zich naar binnen, recht op het halve hart van de Vorst af.\n\nVorrin hijst zich hijgend overeind. De Vorst fluistert: \"De rest van zijn naam. Nu.\"",
+  "choices": [
+   "Zoek de rest van zijn naam",
+   "Werp jezelf tussen vreter en Vorst",
+   "Rode windstoot recht in zijn mond"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 10,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. In de zonnegrot goot hij het eerste vuur in het hart van de Vorst, maar de vreter stal de helft via een draad aan zijn pols. Joshua maakte die draad los van zijn lot en knipte hem door. De vreter kan niet meer via hem eten, draagt het gestolen vuur in zich en valt nu het halve hart van de Vorst aan. Joshua kent de helft van zijn naam: 'Ash...'. Vorrin is gewond.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark cave beneath a golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, as a glowing red thread snaps from his wrist in a burst of sparks; a towering faceless figure of smouldering coal and drifting smoke with a glowing open mouth of red fire lunges inward.",
+   "fallback": "Dark rocky cave with an empty golden sun throne, scorched stones, drifting embers and a red glow at the cave mouth at dusk."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De vreter",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Draad naar Joshua doorgeknipt; draagt gestolen vuur, valt Vorst aan.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De draad tussen Joshua en de vreter is doorgeknipt."
+   ],
+   "forgetFacts": [
+    "Een nieuwe draad van de vreter zit vast aan Joshua's pols en volgt hem.",
+    "De draad van de vreter hangt nu alleen aan Joshua's huid, los van zijn lot."
+   ],
+   "time": "schemering, dag na de terugkeer naar het moeras"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3544,
+  "cacheRead": 29144,
+  "cacheWrite": 7954,
+  "costUsd": 0.1404,
+  "apiMs": 29646,
+  "numTurns": 3
+ }
+}
