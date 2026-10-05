@@ -1,0 +1,89 @@
+{
+ "id": "muvm5xf5-sbnvt",
+ "finishedAt": "2026-10-05T18:59:36.841Z",
+ "durationMs": 14338,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"I'll take it.\" Juno grins and cuts the call.\n\nBay Nine is cold and smells of coolant. It's crammed with three stubby courier skiffs, and one of them is scarred along the belly like it has scraped a few ledges already. Juno meets you at the hatch and slaps a sealed white crate strapped in the cargo net.\n\n\"Insulin and antibiotics. The ridge hab's out of both.\" She hands you a datapad with the approach chart. \"Crosswinds don't exist on Ceres, but the dust does. Kicks up off the pad and blinds your sensors at the last fifty metres. Last guy bent a strut.\"\n\nThe skiff's controls are worn smooth. Your hands settle on them like they've always lived there.",
+  "choices": [
+   "Launch now and fly it straight",
+   "Study the approach chart first",
+   "Ask Juno about the steadier work"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [
+    "Occator Ridge medical crate"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Medicine run to Occator Ridge",
+     "detail": "Land the sealed medical crate on the ridge pad."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Bay Nine, Reyes Rapid",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender and freed eleven refugees. He gave Inspector Hale an honest statement, filed an informant fund claim (payout months away) and had his ribs strapped. The Vesta job is probably lost. He accepted Juno Reyes's three-hundred-credit courier run with medicine to Occator Ridge and is now in her skiff at Bay Nine. The ridge pad is a dusty ledge that blinds sensors. Juno hints at steadier, better-paid work afterwards.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Cramped cold docking bay with three stubby courier skiffs, one with a scarred belly. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, takes a datapad from a woman in her mid-thirties, athletic build, sharp tanned face, dark curly hair tied back, quick brown eyes, red work vest over a black thermal shirt, headset, beside a sealed white crate. Harsh work lights.",
+   "fallback": "Cramped cold docking bay on an asteroid station with three stubby courier skiffs, cargo nets, a sealed white crate and harsh work lights."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Occator Ridge",
+     "detail": "Mining hab on Ceres with a half-ledge landing pad where dust blinds sensors."
+    }
+   ],
+   "facts": [
+    "Waren accepted Juno's Occator Ridge run: three hundred cash on landing."
+   ],
+   "forgetFacts": [
+    "Juno Reyes offers three hundred cash on landing for medical cargo to Occator Ridge."
+   ],
+   "time": "late afternoon, first day"
+  },
+  "sound": {
+   "ambience": "spaceship_hum",
+   "mood": "",
+   "sfx": [
+    "footsteps"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1478,
+  "cacheRead": 13441,
+  "cacheWrite": 4326,
+  "costUsd": 0.0669,
+  "apiMs": 13285,
+  "numTurns": 2
+ }
+}
