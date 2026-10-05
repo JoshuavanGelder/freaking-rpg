@@ -1,0 +1,76 @@
+{
+ "id": "muv5el36-87w7e",
+ "finishedAt": "2026-10-05T11:10:23.234Z",
+ "durationMs": 10727,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je klautert langs de zwaaiende arm omhoog, sneller dan de robot kan piepen. Bij de cockpit trek je het luik open: een zweterige man in een schort met uienringen-print staart je aan, een frituurmandje als stuurknuppel in zijn hand. \"Ik kan alles uitleggen,\" zegt hij. \"Het is een lang verhaal. Met ui.\"",
+  "choices": [
+   "Trek hem uit de cockpit",
+   "Vraag waarom hij de bank berooft",
+   "Ruk het frituurmandje los"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Cockpit van de robot",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Bart Quick, jonge speedster in Nieuw-Rotterdam, sprint naar de Stadsbank en grijpt de arm van de robotdief. Hij klimt naar de cockpit en vindt een zweterige man in een uienschort die wil uitleggen waarom hij roofde.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, broad shoulders, opening the cockpit hatch of a giant clunky robot, sweaty middle-aged man in an apron inside holding a fry basket joystick, dusk rain, humorous epic",
+   "fallback": "A giant clunky robot walker standing before a grand bank building at dusk in light rain, city lights glowing."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De uienman",
+    "look": "middle-aged man, stocky and sweaty, round face, messy thinning hair, wearing an apron printed with onion rings",
+    "status": "levend",
+    "home": "",
+    "role": "bestuurder van het robotpak",
+    "note": "Wil uitleggen; houdt een frituurmandje als stuurknuppel.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1035,
+  "cacheRead": 0,
+  "cacheWrite": 13383,
+  "costUsd": 0.0639,
+  "apiMs": 9345,
+  "numTurns": 2
+ }
+}
