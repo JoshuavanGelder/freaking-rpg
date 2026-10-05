@@ -1,0 +1,79 @@
+{
+ "id": "muvk5hrb-bufav",
+ "finishedAt": "2026-10-05T18:03:15.906Z",
+ "durationMs": 14007,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You step past Hale, ignoring her raised hand, and tap four-four-seven-one into the hold pad. The lock clunks. The door grinds open on stale, warm air.\n\nEleven people blink at the red emergency light: three families, a teenage boy holding a water jug like a weapon, an old man on a bedroll. A woman with a toddler on her hip looks from you to the grey vests behind you, and her face closes.\n\nHale lowers her voice. \"Easy. Nobody's getting hurt.\" Then, to you, quieter: \"They'll need processing. Asylum claims, maybe. Or deportation.\" She glances at the dead tug. \"And you'll need a statement. You're the only witness who isn't in cuffs.\"\n\nThe woman with the toddler is still watching you.",
+  "choices": [
+   "Tell the woman they'll be safe",
+   "Ask Hale how to help their asylum claims",
+   "Ask Hale about payment for the tip"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Grubstake hold",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who smuggled people in the sealed hold. When Ceres Customs boarded, Waren warned them, killed the drive and talked Vasko into surrendering. Customs arrested Vasko. Waren opened the hold: eleven frightened refugees, now facing customs processing. Inspector Hale wants Waren's statement. The Vesta job is probably lost.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Open cargo hold of an old ore tug in dim red emergency light, eleven tired refugees on bedrolls, a woman holding a toddler staring warily. In the doorway a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, beside a woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark jacket shirt, heavy boots.",
+   "fallback": "Open cargo hold of an old ore tug in dim red emergency light, bedrolls, water jugs and crates scattered on a scuffed metal floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Eleven refugees from the Grubstake hold are now in customs custody.",
+    "Inspector Hale wants Waren's witness statement."
+   ],
+   "forgetFacts": [
+    "People are trapped in the Grubstake's sealed hold, begging for help."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "lock_click",
+    "door_creak"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1333,
+  "cacheRead": 13441,
+  "cacheWrite": 3918,
+  "costUsd": 0.0607,
+  "apiMs": 12537,
+  "numTurns": 2
+ }
+}
