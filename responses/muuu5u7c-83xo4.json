@@ -1,0 +1,77 @@
+{
+ "id": "muuu5u7c-83xo4",
+ "finishedAt": "2026-10-05T05:55:49.092Z",
+ "durationMs": 19139,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je sluit je ogen en zoekt je eigen lotdraad. Hij is dun en zilver, en de rode draad van de vreter zit eromheen gewonden als klimop om een tak. Je kunt niet knippen. Wel buigen.\n\nHeel voorzichtig wrik je de eerste lus los. Dan de tweede. Elke draai brandt, maar je zilver blijft heel. Bij de laatste lus gloeit de rode draad op, en heel even zie je wat erin geweven is: een klank, oud en hongerig, de helft van een naam. *Ash...*\n\nJe opent je ogen. De draad hangt nu alleen nog aan je huid. De vreter verstijft in de grotingang. Voor het eerst klinkt hij niet zeker.\n\n\"Wat doe je, koning?\"",
+  "choices": [
+   "Knip de losse draad nu door",
+   "Volg de draad naar zijn volle naam",
+   "Vraag de Vorst naar de naam"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [
+    {
+     "name": "Eerste lotdraad",
+     "kind": "kracht",
+     "detail": "Je kunt lotdraden buigen en verstrengelde draden uit elkaar halen."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. In de zonnegrot goot hij het eerste vuur in het hart van de Vorst, maar de vreter stal de helft via de draad aan zijn pols. Knippen mislukte eerst, maar Joshua haalde met zijn lotdraad de draad van de vreter los van zijn eigen lot; nu hangt die alleen aan zijn huid. Hij ving de helft van de naam van de vreter op: 'Ash...'. De vreter twijfelt voor het eerst. Vorrin is gewond.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave beneath a golden sun throne at dusk; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling, unwinding a glowing red thread from a thin silver thread of light around his wrist; a towering faceless figure of smouldering coal and drifting smoke with a glowing red mouth hesitating in the cave mouth.",
+   "fallback": "Dark rocky cave beneath an empty golden throne at dusk, faint red glow at the entrance, scorched grass outside, drifting smoke."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De draad van de vreter hangt nu alleen aan Joshua's huid, los van zijn lot.",
+    "Joshua kent de helft van de naam van de vreter: 'Ash...'."
+   ],
+   "forgetFacts": [
+    "De draad van de vreter zit aan Joshua's eigen lotdraad; knippen schaadt hemzelf."
+   ],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1703,
+  "cacheRead": 11405,
+  "cacheWrite": 6472,
+  "costUsd": 0.0881,
+  "apiMs": 18365,
+  "numTurns": 2
+ }
+}
