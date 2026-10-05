@@ -1,0 +1,109 @@
+{
+ "id": "muv07lax-v4xrz",
+ "finishedAt": "2026-10-05T08:45:12.944Z",
+ "durationMs": 24529,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "Bart Quick: Sneller dan Geluid",
+  "narration": "Bart Quick staat op het dak van een pizzeria in Nieuw-Rotterdam en kijkt hoe een regendruppel in slow motion naar beneden hangt. Mooi. Rustig. Dan gaat beneden een alarm af: de Stadsbank wordt leeggeroofd door een man in een gigantisch robotpak dat naar gebakken ui ruikt.\n\nBart rekt zijn schouders. Zijn zakken bevatten tien euro en geen plan. Maar hij is bijna twee keer zo snel als geluid, en dat moet voor nu genoeg zijn.",
+  "choices": [
+   "Spurt naar de bank en grijp de robot",
+   "Bekijk eerst alles in slow motion",
+   "Probeer iets nieuws met je snelheid"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 4
+   },
+   {
+    "name": "Kracht",
+    "value": 2
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 2
+   },
+   {
+    "name": "Controle",
+    "value": 1
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 0,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Stop de bankroof",
+     "detail": "Houd de robotdief bij de Stadsbank tegen."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Dak van pizzeria, Nieuw-Rotterdam",
+   "addTraits": [
+    {
+     "name": "Slow-motion zicht",
+     "kind": "kracht",
+     "detail": "Bart ziet de wereld vertraagd als hij zich concentreert."
+    }
+   ],
+   "removeTraits": []
+  },
+  "summary": "Bart Quick, jonge speedster in Nieuw-Rotterdam, ziet vanaf een pizzeriadak een bankroof door een man in een robotpak. Hij is bijna twee keer zo snel als geluid, maar kent zijn krachten nog niet goed.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Extremely muscular, handsome young man with short dark hair and strong jaw, fitted white t-shirt, jeans, sneakers, standing on a pizzeria rooftop at dusk in rain, raindrops frozen mid-air, city skyline, a giant clunky robot walker near a bank below, epic and humorous",
+   "fallback": "A rainy rooftop at dusk above a Dutch city, neon pizzeria sign, bank building below with flashing alarm lights."
+  },
+  "heroLook": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, broad shoulders.",
+  "portrait": "Head and shoulders portrait of an impossibly handsome, muscular young man with short dark hair, strong jaw, confident grin, white t-shirt, rainy city rooftop at dusk behind him.",
+  "cast": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Nieuw-Rotterdam",
+     "detail": "Grote havenstad vol wolkenkrabbers, waar Bart woont en patrouilleert."
+    },
+    {
+     "name": "Stadsbank",
+     "detail": "Imposante bank in het centrum, nu overvallen door een robotdief."
+    }
+   ],
+   "facts": [
+    "De bankrover draagt een groot robotpak dat naar gebakken ui ruikt."
+   ],
+   "forgetFacts": [],
+   "time": "schemering, eerste dag"
+  }
+ },
+ "model": "sonnet",
+ "effort": "medium",
+ "usage": {
+  "input": 4,
+  "output": 2913,
+  "cacheRead": 12156,
+  "cacheWrite": 13570,
+  "costUsd": 0.0858,
+  "apiMs": 23430,
+  "numTurns": 3
+ }
+}
