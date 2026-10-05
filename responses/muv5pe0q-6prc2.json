@@ -1,0 +1,70 @@
+{
+ "id": "muv5pe0q-6prc2",
+ "finishedAt": "2026-10-05T11:18:45.193Z",
+ "durationMs": 8330,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Bij Gerrits kraam ligt een rode kerstmuts-pompon met een klein label van een stoffenwinkel."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [
+    "Rode kerstmuts-pompon"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 10,
+   "success": true
+  },
+  "choices": [
+   "Ga naar Kerstkoning, de stoffenwinkel",
+   "Ruik zelf aan de pompon",
+   "Vraag Gerrit wat een kerstman nodig heeft"
+  ],
+  "gameOver": false,
+  "heroLook": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, studying a tiny red pompon in his palm at a greasy fry stand at night, neon glow",
+   "fallback": "A greasy fry stand in a rainy alley at night with a flickering neon sign and onion baskets."
+  },
+  "narration": "Je tuurt in slow-motion naar de pompon. Elke pluisvezel hangt stil in de lucht, vol vet. Aan de onderkant zit een piepklein label: \"Kerstkoning – Stoffen & Mutsen, Havenweg 7\". Wie breit er in juli kerstmutsen? Iemand met een plan. En vette handschoenen.",
+  "portrait": "",
+  "summary": "Bart versloeg Gerrits uienrobot en bracht het geld terug. Het Mandje laat vettige briefjes achter. Gerrit zag een man met vette handschoenen en kerstmuts. Bij de kraam vond Bart een pompon met label van Kerstkoning, Havenweg 7.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 994,
+  "cacheRead": 11405,
+  "cacheWrite": 3071,
+  "costUsd": 0.0245,
+  "apiMs": 7460,
+  "numTurns": 2
+ }
+}
