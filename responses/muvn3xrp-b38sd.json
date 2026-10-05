@@ -1,0 +1,76 @@
+{
+ "id": "muvn3xrp-b38sd",
+ "finishedAt": "2026-10-05T19:26:14.487Z",
+ "durationMs": 25251,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You feed in thrust a little at a time until the skiff rolls with the wreck. The stars wheel around you and the Halcyon seems to hold still. The hatch rises into view. You count one, then two, and fire.\n\nBoth grapples bite. The skiff shudders and locks to the hull. A heartbeat later the loose plate sweeps past overhead. Its shadow fills the canopy, and it clears your dorsal antenna by about an arm's length.\n\nYou're on. You're spinning with her now, so the plate will come back every eleven seconds and pass just as close. The cutting arm unfolds against the buckled hatch. It glows hot and ready, but a full cut will take longer than one gap.",
+  "choices": [
+   "Cut in short bursts between passes",
+   "Grapple the plate and pin it",
+   "Push the arm hard and cut fast"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Piloting",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay for months. He flew Juno Reyes's medicine run to Occator Ridge and was paid in full. Then he took the Halcyon salvage job, which pays forty-five thousand for the recorder and nav core, minus Juno's ten percent. Out in the deep belt he matched the wreck's spin and grappled onto the recorder bay. The hatch is buckled and still has to be cut open, and a loose hull plate sweeps past every eleven seconds. The nav core sits near the break.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A small battered salvage skiff clamped by grapple arms to the hull of a broken, tumbling ore freighter in the deep asteroid belt. A huge twisted hull plate sweeps just over the skiff's canopy, and a cutting arm glows orange against a buckled hatch. Inside the cockpit is a lean young man in his early twenties with short dark brown hair, light stubble and keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt. Glittering debris, harsh distant sunlight.",
+   "fallback": "The hull of a broken ore freighter tumbling slowly among glittering debris and dark asteroids, with a buckled hatch, under harsh distant sunlight and black space."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren's skiff is grappled to the Halcyon's recorder bay hatch."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "climb",
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3025,
+  "cacheRead": 31696,
+  "cacheWrite": 6080,
+  "costUsd": 0.1155,
+  "apiMs": 24490,
+  "numTurns": 3
+ }
+}
