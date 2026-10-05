@@ -1,0 +1,68 @@
+{
+ "id": "muuunjdu-ezuh4",
+ "finishedAt": "2026-10-05T06:09:32.059Z",
+ "durationMs": 17234,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je knielt bij de Vorst en legt je hand op zijn borst. Diep in jezelf pak je één vonk oervuur, wit en oud, en je duwt hem door je knoop naar binnen.\n\nMaar de honger gaat mee.\n\nHij krabt los van de knoop en glijdt achter de vonk aan, naar het halve hart, gretig. De Vorst kreunt. Zijn hart vlamt op, en tegelijk begint iets eraan te zuigen. Pijn scheurt door je borst, je knopen kraken als touw onder een storm.\n\n\"Hij eet mij via jou,\" hijgt de Vorst, zijn gouden ogen wijd open. Je eed trekt aan je. Vorrin grijpt je schouder. \"Koning, nu kiezen. Je honger of zijn hart.\"\n\nHet hele oervuur brandt in je handen, klaar.",
+  "choices": [
+   "Wurg de honger met al je knopen",
+   "Geef hem al je oervuur",
+   "Laat Vorrin de honger opvangen"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Oervuur",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Abt en Vorrin en zwoer de Zonnevorst nooit te doden. Hij nam al het oervuur van Asharoth over zonder de honger en liet hem vrij. Toen hij de stervende Vorst een vonk oervuur gaf, glipte de geknoopte honger mee en zuigt nu aan het halve hart van de Vorst. Joshua moet kiezen: zijn honger bedwingen of zijn hart redden. Het einde is nabij.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Dark glowing cave beneath a golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling with a hand of white fire on the chest of a man in his sixties, once tall now hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes; dark smoky tendrils follow the light; a man in his fifties, lean and sharp-featured, short grey beard, cold pale eyes, grey hair tied back, long ash-grey scarf over dark clothes grips his shoulder.",
+   "fallback": "Dark cave beneath a golden sun throne, white firelight flickering across scorched stone walls, drifting smoke and embers in the dusk light from the entrance."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De geknoopte honger glipte mee met de vonk en zuigt aan het hart van de Vorst."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1602,
+  "cacheRead": 11405,
+  "cacheWrite": 6389,
+  "costUsd": 0.0854,
+  "apiMs": 16580,
+  "numTurns": 2
+ }
+}
