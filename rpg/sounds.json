@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "sfx": {
+    "claude": [
+      "sword_swing", "sword_hit", "hit", "punch", "shield_block", "arrow", "gunshot", "laser",
+      "explosion", "fireball", "lightning", "ice_magic", "magic_ping", "summon",
+      "footsteps", "door_creak", "door_slam", "chest_open", "lock_click", "glass_break",
+      "water_splash", "climb", "fall",
+      "wolf_howl", "dragon_roar", "monster_growl", "horror_whisper", "crowd_cheer", "laugh",
+      "danger_sting", "discovery_sting", "victory"
+    ],
+    "auto": ["damage_taken", "heal", "death_sting", "power_up", "coin", "item_pickup", "quest_done"],
+    "app": ["ui_tick", "new_turn", "adventure_start", "adventure_end"]
+  },
+  "ambience": [
+    "forest_night", "forest_day", "cave", "dungeon", "city_rain", "city_day", "market", "tavern",
+    "sea_waves", "desert_wind", "snow_wind", "mountains", "battlefield", "horror_house", "spaceship_hum"
+  ],
+  "moods": ["calm", "tense", "action", "sad", "triumph"],
+  "variants": {
+    "superhelden": ["punch", "fireball", "explosion", "magic_ping", "lightning"],
+    "scifi": ["sword_swing", "sword_hit", "gunshot", "magic_ping", "door_creak", "door_slam", "footsteps", "explosion"],
+    "horror": ["footsteps", "door_creak", "danger_sting", "monster_growl"],
+    "apocalyps": ["gunshot", "explosion", "footsteps"],
+    "noir": ["gunshot", "footsteps", "door_slam"],
+    "modern": ["gunshot", "footsteps", "door_slam"]
+  }
+}

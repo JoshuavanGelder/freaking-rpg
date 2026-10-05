@@ -1,5 +1,6 @@
 // Alle vormen van een avontuur. Pure types, geen React.
 import type { Lang } from '../i18n.ts';
+import type { Ambience, ClaudeSfx, Mood, Sfx } from './soundTags.ts';
 
 export type World = {
   setting: string; // id uit SETTINGS, bv. 'superhelden'
@@ -115,6 +116,21 @@ export type Regen = 'traag' | 'snel';
 /** Grootte van een heling: een deel van het maximale leven, door de app uitgerekend. */
 export type Heal = '' | 'klein' | 'groot' | 'volledig';
 
+/** Het geluid van een beurt: wat de verteller koos plus wat de app zelf toevoegde (zie src/logic/sound.ts). */
+export type TurnSound = {
+  /** Achtergrond van de plek; '' = ongewijzigd, 'stop' = stilte. */
+  ambience: Ambience | 'stop' | '';
+  /** Muziekstemming; '' = ongewijzigd. */
+  mood: Mood | '';
+  /** Effecten, in volgorde van afspelen (oorzaak, dan gevolg). */
+  sfx: Sfx[];
+  /** Kleine actie: effecten zachter. */
+  soft?: boolean;
+};
+
+/** Wat de verteller voor geluid teruggeeft (zie rpg/schema.json). */
+export type SoundAnswer = { ambience: Ambience | 'stop' | ''; mood: Mood | ''; sfx: ClaudeSfx[] };
+
 export type Turn = {
   id: string;
   action: string | null; // null bij de openingsscène
@@ -124,6 +140,8 @@ export type Turn = {
   at: number;
   scene?: Scene; // voor "Toon scène"
   image?: Picture;
+  /** Geluid bij deze beurt. Ontbreekt bij beurten van vóór het geluid (die zijn stil). */
+  sound?: TurnSound;
 };
 
 export type Pending = {
@@ -191,6 +209,7 @@ export type Answer = {
   portrait: string;
   cast: CastUpdate[]; // nieuwe of veranderde bijpersonen deze beurt
   canon: CanonUpdate; // nieuwe of veranderde plekken, feiten en tijd deze beurt
+  sound: SoundAnswer; // ambience, stemming en effecten (leeg als het verzoek geen geluid vroeg)
 };
 
 /** Wat de workflow terugzet in responses/<id>.json. */
@@ -235,4 +254,6 @@ export type TurnRequest = {
   pacing: { turn: number; total: number | null; from: number };
   /** Alleen bij de eerste beurt nadat de speler een afgesloten verhaal toch voortzette. */
   resumed?: { died: boolean };
+  /** Aanwezig als de speler geluid aan heeft: de verteller kiest dan ook ambience, stemming en effecten. */
+  sound?: { ambience: Ambience | null; mood: Mood | null };
 };

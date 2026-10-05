@@ -10,3 +10,4 @@ npm-debug.*
 claude-inloggen.md
 plak-hier-de-code.txt
 claude-token.md
+__pycache__/

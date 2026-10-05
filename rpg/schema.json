@@ -357,6 +357,94 @@
         "forgetFacts",
         "time"
       ]
+    },
+    "sound": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Sound for this turn; the app plays it. Leave everything empty when the request says sound is off.",
+      "properties": {
+        "ambience": {
+          "type": "string",
+          "enum": [
+            "",
+            "stop",
+            "forest_night",
+            "forest_day",
+            "cave",
+            "dungeon",
+            "city_rain",
+            "city_day",
+            "market",
+            "tavern",
+            "sea_waves",
+            "desert_wind",
+            "snow_wind",
+            "mountains",
+            "battlefield",
+            "horror_house",
+            "spaceship_hum"
+          ],
+          "description": "Background loop of the place the hero is in after this turn. Empty string = keep the current one (the usual case). Set it on the start turn and whenever the hero arrives somewhere new or the surroundings change. 'stop' = sudden silence."
+        },
+        "mood": {
+          "type": "string",
+          "enum": [
+            "",
+            "calm",
+            "tense",
+            "action",
+            "sad",
+            "triumph"
+          ],
+          "description": "Music mood: calm = safe or quiet, tense = danger building, action = fight or chase, sad = loss, triumph = victory or a happy ending. Empty string = keep the current one. Set it on the start turn and change it only when the feeling of the scene changes."
+        },
+        "sfx": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "sword_swing",
+              "sword_hit",
+              "hit",
+              "punch",
+              "shield_block",
+              "arrow",
+              "gunshot",
+              "laser",
+              "explosion",
+              "fireball",
+              "lightning",
+              "ice_magic",
+              "magic_ping",
+              "summon",
+              "footsteps",
+              "door_creak",
+              "door_slam",
+              "chest_open",
+              "lock_click",
+              "glass_break",
+              "water_splash",
+              "climb",
+              "fall",
+              "wolf_howl",
+              "dragon_roar",
+              "monster_growl",
+              "horror_whisper",
+              "crowd_cheer",
+              "laugh",
+              "danger_sting",
+              "discovery_sting",
+              "victory"
+            ]
+          },
+          "description": "0-2 sound effects for the most striking thing that happens in the narration (the cause: a fireball, a door slam, a wolf, a sword hit). Empty list for quiet moments and small actions. Not for damage, healing, death, level-ups, items, gold or quests: the app plays those itself."
+        }
+      },
+      "required": [
+        "ambience",
+        "mood",
+        "sfx"
+      ]
     }
   },
   "required": [
@@ -372,6 +460,7 @@
     "heroLook",
     "portrait",
     "cast",
-    "canon"
+    "canon",
+    "sound"
   ]
 }

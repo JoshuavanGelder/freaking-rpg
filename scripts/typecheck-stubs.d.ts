@@ -83,3 +83,13 @@ declare module 'react-native' {
   export const KeyboardAvoidingView: any;
   export const Keyboard: { addListener(e: string, f: (e: any) => void): { remove(): void }; metrics(): { screenY: number; height: number } | undefined; dismiss(): void };
 }
+
+declare module 'expo-audio' {
+  export type AudioSource = number | string | { uri: string } | null;
+  export interface AudioPlayer { volume: number; loop: boolean; muted: boolean; readonly playing: boolean; readonly duration: number; play(): void; pause(): void; seekTo(seconds: number): Promise<void>; remove(): void }
+  export function createAudioPlayer(source?: AudioSource, options?: Record<string, unknown>): AudioPlayer;
+  export function setAudioModeAsync(mode: { playsInSilentMode?: boolean; interruptionMode?: 'mixWithOthers' | 'doNotMix' | 'duckOthers'; shouldPlayInBackground?: boolean; allowsRecording?: boolean }): Promise<void>;
+}
+declare module 'react-native' {
+  export const Vibration: { vibrate(pattern?: number | number[]): void; cancel(): void };
+}

@@ -1,6 +1,7 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
 import { DEFAULT_LANG, langOf, t, textLengthKey, arcKey, type Key, type Lang } from '../i18n.ts';
+import { parseSound, planSound, wordCount, currentAmbience, currentMood } from './sound.ts';
 import type { Adventure, Answer, Arc, Attribute, CanonUpdate, Canon, CastMember, CastUpdate, GameState, Heal, PersonStatus, Place, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
@@ -233,7 +234,7 @@ export function makePending(kind: 'start' | 'turn', action: string | null, now =
 /** De taal waarin dit avontuur verteld wordt (oude avonturen zonder keuze: Nederlands). */
 export const storyLang = (adv: Adventure): Lang => langOf(adv.world.lang);
 
-export function buildRequest(adv: Adventure, pending: Pending, model: string, lang: Lang = storyLang(adv)): TurnRequest {
+export function buildRequest(adv: Adventure, pending: Pending, model: string, lang: Lang = storyLang(adv), sound = false): TurnRequest {
   const w = adv.world;
   const world = {
     ...w,
@@ -263,6 +264,7 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string, la
     // Beurt die nu geschreven wordt (de opening is 0) en de gekozen lengte, zodat de verteller naar een einde kan toewerken.
     pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: endTotal(adv), from: adv.endPlan?.from ?? 0 },
     ...(pending.kind === 'turn' && adv.resumed && adv.resumed.at === turnCount(adv) ? { resumed: { died: adv.resumed.died } } : {}),
+    ...(sound ? { sound: { ambience: currentAmbience(adv.turns), mood: currentMood(adv.turns) } } : {}),
   };
 }
 
@@ -426,6 +428,7 @@ export function parseAnswer(raw: unknown): Answer | null {
       forgetFacts: strList(cn.forgetFacts, 8, 160),
       time: str(cn.time, 60),
     },
+    sound: parseSound(a.sound),
   };
 }
 
@@ -532,6 +535,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   const gold = Math.min(MAX_GOLD, Math.max(0, s.gold + c.gold));
 
   // Spullen.
+  let itemsGained = 0;
   let inventory = [...s.inventory];
   for (const item of c.removeItems) {
     const i = matchName(inventory, item); // ook "zwaard" voor "Roestig zwaard": anders blijft de tas vol met kwijte spullen
@@ -543,10 +547,12 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   for (const item of c.addItems) {
     if (inventory.length >= MAX_INVENTORY) break;
     inventory.push(item);
+    itemsGained++;
     notes.push(`+ ${item}`);
   }
 
   // Quests.
+  let questsDone = 0;
   let quests = s.quests.map((q) => ({ ...q }));
   for (const title of c.completeQuests) {
     const openIdx = quests.map((x, i) => (x.done ? -1 : i)).filter((i) => i >= 0);
@@ -554,6 +560,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     if (k >= 0) {
       const q = quests[openIdx[k]];
       q.done = true;
+      questsDone++;
       notes.push(t(lang, 'note.questDone', { title: q.title }));
     }
   }
@@ -578,6 +585,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     : answer.attributes;
 
   // Krachten en zwaktes die het verhaal geeft of afneemt (zichtbaar op het heldenscherm).
+  let traitsNew = 0;
   let traits = (s.traits ?? []).map((t) => ({ ...t }));
   for (const name of c.removeTraits) {
     const i = matchIndex(traits.map((t) => t.name), name);
@@ -593,12 +601,32 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
       continue;
     }
     traits.push(tr);
+    if (tr.kind === 'kracht') traitsNew++;
     notes.push(t(lang, tr.kind === 'zwakte' ? 'note.weaknessNew' : 'note.powerNew', { name: tr.name }));
   }
   traits = traits.slice(-MAX_TRAITS);
 
   const ended = answer.gameOver || hp <= 0;
   if (ended) hp = Math.max(0, hp);
+
+  // Geluid: de keuze van de verteller plus wat de app uit de staat haalt (schade, genezing, dood, level, spullen).
+  const sound = planSound(
+    answer.sound,
+    {
+      kind: pending.kind,
+      words: wordCount(answer.narration),
+      damaged: damage < 0,
+      healed: !!c.heal && hp > Math.max(0, s.hp + damage),
+      died: hp <= 0,
+      ended,
+      levelUp: levelsUp > 0,
+      newTrait: traitsNew > 0,
+      questDone: questsDone > 0,
+      itemGained: itemsGained > 0,
+      goldGained: gold > s.gold,
+    },
+    adv.turns[adv.turns.length - 1],
+  );
 
   const im = answer.image;
   const scene = im.prompt ? { kind: im.kind as PictureKind, prompt: im.prompt, fallback: im.fallback } : undefined;
@@ -609,6 +637,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     choices: ended ? [] : answer.choices,
     notes,
     at: now,
+    sound,
     ...(scene ? { scene } : {}),
     ...(scene && images && (im.show || pending.kind === 'start') ? { image: newPicture(`${pending.requestId}-beeld`, scene, now) } : {}),
   };

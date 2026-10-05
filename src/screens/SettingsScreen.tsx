@@ -6,6 +6,8 @@ import { useT } from '../lang';
 import { LANGS, type Key } from '../i18n';
 import * as gh from '../services/github';
 import * as img from '../services/images';
+import { sound } from '../services/sound';
+import { useSoundSettings } from '../storysound';
 import { formatTokens, summarizeUsage } from '../logic/usage';
 import { C } from '../theme';
 import { Button, Card, Chip, Field, Label, Notice, Row, Screen, T, TopBar } from '../ui';
@@ -16,7 +18,33 @@ const MODELS: { id: Model; label: string; hint: Key }[] = [
   { id: 'opus', label: 'Opus', hint: 'model.opus.hint' },
 ];
 
+const SOUND_LEVELS: { v: number; key: Key }[] = [
+  { v: 0, key: 'level.off' },
+  { v: 0.35, key: 'level.low' },
+  { v: 0.7, key: 'level.mid' },
+  { v: 1, key: 'level.high' },
+];
+
+/** Volume in vier stappen (uit, laag, middel, hoog): de dichtstbijzijnde stap is geselecteerd. */
+function LevelRow({ label, value, onChange }: { label: string; value: number; onChange: (v: number) => void }) {
+  const { t } = useT();
+  const nearest = SOUND_LEVELS.reduce((a, b) => (Math.abs(b.v - value) < Math.abs(a.v - value) ? b : a));
+  return (
+    <View style={{ gap: 6 }}>
+      <T size={13} color={C.muted}>
+        {label}
+      </T>
+      <Row style={{ gap: 8, flexWrap: 'wrap' }}>
+        {SOUND_LEVELS.map((l) => (
+          <Chip key={l.v} label={t(l.key)} selected={nearest.v === l.v} onPress={() => onChange(l.v)} />
+        ))}
+      </Row>
+    </View>
+  );
+}
+
 export function SettingsScreen() {
+  useSoundSettings(); // volumes meteen laten gelden (ook voor het proefgeluid)
   const { state, setSettings } = useApp();
   const nav = useNav();
   const { t, lang } = useT();
@@ -140,6 +168,37 @@ export function SettingsScreen() {
         <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
           {t('settings.warm.text')}
         </T>
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>{t('settings.sound')}</Label>
+        <Row style={{ gap: 8 }}>
+          <Chip label={t('common.on')} selected={st.soundOn} onPress={() => setSettings({ soundOn: true })} />
+          <Chip label={t('common.off')} selected={!st.soundOn} onPress={() => setSettings({ soundOn: false })} />
+        </Row>
+        <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+          {t('settings.sound.text')}
+        </T>
+        {st.soundOn ? (
+          <Card>
+            <LevelRow label={t('settings.sound.sfx')} value={st.sfxVolume} onChange={(v) => setSettings({ sfxVolume: v })} />
+            <LevelRow label={t('settings.sound.ambience')} value={st.ambienceVolume} onChange={(v) => setSettings({ ambienceVolume: v })} />
+            <LevelRow label={t('settings.sound.music')} value={st.musicVolume} onChange={(v) => setSettings({ musicVolume: v })} />
+            <T size={12} color={C.muted} style={{ lineHeight: 18 }}>
+              {t('settings.sound.musicNote')}
+            </T>
+            <View style={{ gap: 6 }}>
+              <T size={13} color={C.muted}>
+                {t('settings.sound.vibrate')}
+              </T>
+              <Row style={{ gap: 8 }}>
+                <Chip label={t('common.on')} selected={st.vibrate} onPress={() => setSettings({ vibrate: true })} />
+                <Chip label={t('common.off')} selected={!st.vibrate} onPress={() => setSettings({ vibrate: false })} />
+              </Row>
+            </View>
+            <Button label={t('settings.sound.try')} variant="outline" onPress={() => sound.playSfx('magic_ping', 'eigen')} />
+          </Card>
+        ) : null}
       </View>
 
       <View style={{ gap: 10 }}>

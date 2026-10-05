@@ -102,6 +102,21 @@ export function languageLines(r) {
   ];
 }
 
+/** Geluid: aan (met wat er nu klinkt) of uit, zodat de verteller geen tags verspilt als de speler geen geluid wil. */
+export function soundLines(r) {
+  const lines = ['## Sound'];
+  if (!r.sound || typeof r.sound !== 'object') {
+    lines.push('- sound is off: return empty strings for sound.ambience and sound.mood and an empty list for sound.sfx.');
+    return lines;
+  }
+  const now = (v) => (clean(v, 40) || 'none');
+  lines.push(`- sound is on (see "Sound" in your instructions). Now playing: ambience ${now(r.sound.ambience)}, music mood ${now(r.sound.mood)}.`);
+  lines.push(r.kind === 'start'
+    ? '- this is the opening: choose the ambience of the first place and the mood.'
+    : '- keep ambience and mood as an empty string unless the place or the feeling changes.');
+  return lines;
+}
+
 /** Maakt van het verzoek (JSON van de app) een leesbaar bericht voor Claude. */
 export function renderRequest(r) {
   const w = r.world ?? {};
@@ -208,6 +223,8 @@ export function renderRequest(r) {
     lines.push(clean(r.action, 500) || '(waits and looks around)');
     lines.push('');
   }
+  lines.push(...soundLines(r));
+  lines.push('');
   lines.push(`## Hidden d20 roll for this turn: ${Number.isInteger(r.roll) ? r.roll : 10}`);
   lines.push('Use it only if the action is risky. Never mention it.');
   return lines.join('\n');

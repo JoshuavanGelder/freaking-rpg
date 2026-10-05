@@ -18,6 +18,11 @@ export type Settings = {
   images: boolean; // beelden maken
   imageLimit: number; // max. beelden per dag (gratis tegoed)
   imageUrlSet: boolean; // staat de koppelings-URL in SecureStore?
+  soundOn: boolean; // geluid aan (hoofdschakelaar)
+  sfxVolume: number; // effecten, 0 = uit
+  ambienceVolume: number; // achtergrond van de plek
+  musicVolume: number; // muziek
+  vibrate: boolean; // trillen bij schade
 };
 
 export type AppState = {
@@ -39,6 +44,11 @@ export const DEFAULT_SETTINGS: Settings = {
   images: true,
   imageLimit: DEFAULT_IMAGE_LIMIT,
   imageUrlSet: false,
+  soundOn: true,
+  sfxVolume: 1,
+  ambienceVolume: 0.7,
+  musicVolume: 0,
+  vibrate: true,
 };
 
 const EMPTY: AppState = { version: 1, adventures: [], settings: DEFAULT_SETTINGS, lastResponse: null, imageCounter: null };

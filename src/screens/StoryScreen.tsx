@@ -7,6 +7,8 @@ import { useT } from '../lang';
 import { usePictures } from '../pictures';
 import { PictureBox } from '../picture-view';
 import { useDraft } from '../drafts';
+import { useStorySound } from '../storysound';
+import { sound } from '../services/sound';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
@@ -23,6 +25,7 @@ export function StoryScreen({ id }: { id: string }) {
   const { state } = useApp();
   const { t, lang } = useT();
   const imagesOn = state.settings.images && state.settings.imageUrlSet;
+  useStorySound(adv); // geluid van de plek en van elke nieuwe beurt (hooks horen boven de vroege return)
 
   // Toetsenbord open: het invoerveld staat onderaan en schuift mee omhoog (KeyboardAvoidingView in App);
   // het verhaal scrolt naar het einde zodat de laatste tekst zichtbaar blijft.
@@ -374,6 +377,7 @@ function ActionBar({ adv, disabled, bottom }: { adv: Adventure; disabled: boolea
   const open = !!last && openFor === last.id;
   const send = (t: string) => {
     if (disabled || !t.trim()) return;
+    sound.tick();
     act(adv.id, t);
     setText('');
     setOpenFor(null);

@@ -111,6 +111,18 @@ On `start` you also return a fitting `title` in the story language for the adven
 
 The starting state in the request is what the hero already has (their starting gold is already counted). Don't hand out starting money again: `changes.gold` stays 0 on the start turn unless the opening scene really gives or costs the hero money.
 
+## Sound
+
+The app plays sound with each turn. You choose three things in `sound`; the app does the rest (it picks the right variant for the setting, fades between places, and plays its own sounds for damage, healing, death, level-ups, items, gold and quests, so never choose effects for those).
+
+- **`ambience`**: the background loop of the place the hero is in after this turn. Set it on the start turn and whenever the hero arrives somewhere new or the surroundings change; otherwise an **empty string** (the current one keeps playing). Choose the loop that fits the place, in any setting: `forest_night`, `forest_day`, `cave`, `dungeon`, `city_rain`, `city_day`, `market`, `tavern`, `sea_waves`, `desert_wind`, `snow_wind`, `mountains`, `battlefield`, `horror_house`, `spaceship_hum`. A sci-fi ship or station is `spaceship_hum`, a ruined or empty modern place often `desert_wind`, `city_rain` or `battlefield`, a noir street `city_rain` or `city_day`, a haunted or creepy building `horror_house`. `stop` is a sudden silence (a held breath, the moment after an explosion); use it rarely.
+- **`mood`**: the music mood: `calm` (safe, quiet, travelling), `tense` (danger building, sneaking, a mystery), `action` (fight, chase, escape), `sad` (loss, a death, a farewell), `triumph` (victory, a happy ending). Set it on the start turn; after that change it only when the feeling of the scene really changes, otherwise an empty string. The player may have music turned off: choosing it costs nothing.
+- **`sfx`**: zero, one or at most two effects for the most striking thing that happens in the narration: the cause, in the order it happens. Pick from: sword_swing, sword_hit, hit, punch, shield_block, arrow, gunshot, laser, explosion, fireball, lightning, ice_magic, magic_ping, summon, footsteps, door_creak, door_slam, chest_open, lock_click, glass_break, water_splash, climb, fall, wolf_howl, dragon_roar, monster_growl, horror_whisper, crowd_cheer, laugh, danger_sting, discovery_sting, victory.
+  - **Most turns have none or one.** Quiet moments and small actions (eating, resting, looking around, a short talk) get an empty list. Two effects only for a big moment (a fight turn, an explosion, a climax).
+  - Match the effect to what is in the narration and to the world: `gunshot` only where guns exist, `laser` and `magic_ping` fit sci-fi and magic, `sword_*` only with blades. Never an effect for something that doesn't happen in this turn.
+  - `danger_sting` when something threatening shows up, `discovery_sting` for a find or a reveal, `victory` when the hero wins a big fight or reaches the happy ending.
+- The sound is never mentioned in the narration just because it exists: only write "de deur kraakt" when the story has that moment. When the request says sound is off, return empty strings and an empty list.
+
 ## Pictures
 
 The app turns your English prompts into small square pictures (FLUX). Every turn you fill `image`:

@@ -122,6 +122,20 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - Wachtrij: één beeld tegelijk, portret eerst, hervat na herstart; bestanden in `Paths.document/frpg-beelden`
   (expo-file-system); dagteller per UTC-dag (`imageCounter`), max. per dag instelbaar (standaard 150).
 
+## Geluid (`src/services/sound.ts`, `src/logic/sound.ts`, `src/logic/soundTags.ts`, `src/storysound.ts`)
+- **Alles zelf gemaakt en gratis**: geen externe geluidsbestanden of accounts. `rpg/sounds.json` is de enige bron van waarheid
+  (32 effecten voor de verteller, 7 automatische, 4 app-geluiden, 15 achtergronden, 5 muziekstemmingen, varianten per setting).
+  `python3 scripts/sounds/build.py [namen]` (numpy, scipy, ffmpeg) synthetiseert alles naar `assets/sounds/*.ogg` (±4 MB) en
+  schrijft `src/soundFiles.ts` (Metro heeft vaste require-paden; `metro.config.js` voegt `ogg` toe aan de assetExts).
+  Nieuw geluid: in `sounds.json`, generator (`effects.py`/`ambience.py`/`music.py`), `soundTags.ts`, `rpg/schema.json` en
+  `rpg/prompt.md` zetten; `src/logic/sound.test.ts` faalt als die niet gelijk lopen of een bestand ontbreekt.
+- Variant per setting heet `tag__setting` (bv. `gunshot__scifi`; nooit `@` in bestandsnamen). `sfxFile(tag, setting)` valt terug op het standaardgeluid.
+- **Verteller kiest** per beurt `sound {ambience, mood, sfx[≤2]}` (leeg = ongewijzigd, `stop` = achtergrond uit). De **app voegt zelf toe**
+  wat uit de verborgen staat volgt (schade, heling, dood, level, goud, spullen, quest), zie `planSound`; kleine beurten (≤45 woorden) houden het stil.
+  Oude antwoorden zonder `sound` blijven werken. Instellingen → Geluid: aan/uit, volumes, trillen; muziek staat standaard uit.
+- `rpg/lib.mjs` (`soundLines`) zegt de verteller wat er nu speelt, of dat het geluid uit staat (dan leeg laten).
+- Ik kan niet luisteren: het controleren is objectief (piek, RMS, geen clipping, naadloze lussen op de gedecodeerde ogg).
+
 ## Bouwen en controleren (sandbox zonder npm)
 - `npm install` werkt lokaal niet. Wel: node 22, `tsc`, python3.
 - Tests: `npm test` (node --experimental-strip-types). Logica-bestanden importeren elkaar met `.ts`-extensie.

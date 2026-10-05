@@ -114,7 +114,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
         const adv = getAdv(id);
         if (!adv) return;
         try {
-          await gh.putRequest(repo, p.requestId, buildRequest(adv, p, current().settings.model));
+          await gh.putRequest(repo, p.requestId, buildRequest(adv, p, current().settings.model, undefined, current().settings.soundOn));
         } catch (e: any) {
           // 422: het verzoek stond er al (de app werd eerder onderbroken). Dat is goed.
           if (e?.status !== 422) throw e;
