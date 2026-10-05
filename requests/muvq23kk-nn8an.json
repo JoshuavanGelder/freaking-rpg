@@ -1,0 +1,227 @@
+{
+ "id": "muvq23kk-nn8an",
+ "createdAt": "2026-10-05T20:48:19.604Z",
+ "kind": "turn",
+ "model": "opus",
+ "lang": "en",
+ "world": {
+  "setting": "Sci-fi",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Realistic",
+  "wishes": "I am a man just going out into the world and my main goal is to get a the money to buy a space ship.",
+  "textLength": "normaal",
+  "arc": "middel",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Waren Spacefarer",
+  "className": "Pilot",
+  "powers": "Special affinity for flying",
+  "looks": "",
+  "heroLook": "Lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, wearing a worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots."
+ },
+ "state": {
+  "hp": 23,
+  "maxHp": 24,
+  "gold": 310,
+  "xp": 265,
+  "level": 3,
+  "location": "Ceres approach",
+  "attributes": [
+   {
+    "name": "Piloting",
+    "value": 5
+   },
+   {
+    "name": "Navigation",
+    "value": 3
+   },
+   {
+    "name": "Mechanics",
+    "value": 2
+   },
+   {
+    "name": "Charm",
+    "value": 2
+   },
+   {
+    "name": "Fitness",
+    "value": 2
+   },
+   {
+    "name": "Street Smarts",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Pilot's license",
+   "Stamped claim receipt",
+   "Salvage skiff codes",
+   "Halcyon flight recorder",
+   "Halcyon nav core"
+  ],
+  "quests": [
+   {
+    "title": "Buy the Kestrel",
+    "detail": "Earn forty thousand credits to buy Marta's ship.",
+    "done": false
+   },
+   {
+    "title": "Deliver the Grubstake to Vesta",
+    "detail": "Fly the tug to Vesta for six hundred credits.",
+    "done": false
+   },
+   {
+    "title": "Stop Vasko's burn",
+    "detail": "Kill the Grubstake's drive before Vasko flees.",
+    "done": true
+   },
+   {
+    "title": "Give Hale your witness statement",
+    "detail": "Testify at Ceres Customs; it may unlock the informant fund.",
+    "done": true
+   },
+   {
+    "title": "Medicine run to Occator Ridge",
+    "detail": "Land the sealed medical crate on the ridge pad.",
+    "done": true
+   },
+   {
+    "title": "Recover the Halcyon's recorder",
+    "detail": "Bring back the flight recorder and nav core for forty-five thousand.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. He recovered the Halcyon's recorder and nav core for Juno Reyes's salvage job, worth forty-five thousand minus her ten percent. Then he nursed the damaged skiff home on a slow, cool burn with a gravity assist, running low on air. Now he is on approach to Ceres, and the insurer is offering to pay him on the pad.",
+ "cast": [
+  {
+   "name": "Marta Okafor",
+   "look": "Elderly woman in her sixties, sturdy build, weathered dark skin, sharp brown eyes, long grey braids, grease-stained blue coveralls with rolled-up sleeves.",
+   "home": "Okafor's Used Hulls, Ceres Ring Port",
+   "role": "used ship dealer, owner of the Kestrel",
+   "note": "Wants forty thousand credits for the Kestrel, not a credit less."
+  },
+  {
+   "name": "Dren Vasko",
+   "look": "Wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots.",
+   "home": "customs custody",
+   "role": "captain of the Grubstake, Waren's shady employer",
+   "note": "Arrested by customs aboard the Grubstake."
+  },
+  {
+   "name": "Inspector Hale",
+   "look": "Woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark jacket shirt, heavy boots.",
+   "home": "Ceres Customs, Ceres Ring Port",
+   "role": "Ceres Customs inspector",
+   "note": "Took Waren's statement; respects his honesty, filed his informant claim."
+  },
+  {
+   "name": "Juno Reyes",
+   "look": "Woman in her mid-thirties, athletic build, sharp tanned face, dark curly hair tied back, quick brown eyes, red work vest over a black thermal shirt, headset.",
+   "home": "Bay Nine, Ceres Ring Port",
+   "role": "owner of Reyes Rapid courier service",
+   "note": "Lent Waren a salvage skiff for the Halcyon job; takes ten percent."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Ceres Ring Port",
+    "detail": "Busy, grimy docking ring on Ceres full of haulers, tugs and a flickering job board."
+   },
+   {
+    "name": "Okafor's Used Hulls",
+    "detail": "Marta Okafor's used ship lot on Ceres Ring Port, where the Kestrel waits."
+   },
+   {
+    "name": "Mother's flat",
+    "detail": "Waren's mother's small flat, three decks below the port."
+   },
+   {
+    "name": "Grubstake",
+    "detail": "Dren Vasko's battered ore tug, with a sealed hold that isn't carrying only ore."
+   },
+   {
+    "name": "Ceres Customs",
+    "detail": "Grey customs offices on Ceres Ring Port with bare interview rooms and a medic down the hall."
+   },
+   {
+    "name": "Reyes Rapid",
+    "detail": "Juno Reyes's small courier outfit in Bay Nine, Ceres Ring Port, flying fast skiffs."
+   },
+   {
+    "name": "Occator Ridge",
+    "detail": "Mining hab on Ceres with a half-ledge landing pad where dust blinds sensors."
+   },
+   {
+    "name": "Halcyon wreck",
+    "detail": "Ore freighter broken in two, tumbling in a deep belt debris field; the recorder bay is aft."
+   }
+  ],
+  "facts": [
+   "Marta Okafor will sell the Kestrel to Waren for forty thousand credits.",
+   "Vasko promised Waren six hundred credits on delivery to Vesta.",
+   "Waren killed the Grubstake's main drive breaker; the tug can't burn.",
+   "The Grubstake hold code is 4471.",
+   "Vasko surrendered and wants customs told it was all his doing.",
+   "Eleven refugees from the Grubstake hold are now in customs custody.",
+   "A customs informant fund pays only after a statement, a conviction and a review, months away.",
+   "Waren filed an informant fund claim; any payout is months away.",
+   "The refugee woman with the toddler asked for Waren's name.",
+   "The ridge pad approach: come in low from the north, mind the hab mast at forty metres.",
+   "The Halcyon's insurer pays forty-five thousand for her flight recorder and nav core.",
+   "Juno's last pilot on the Halcyon run lost his skiff but survived.",
+   "Waren flies Juno's borrowed salvage skiff and must bring it back.",
+   "The Halcyon's aft section swings past every eleven seconds.",
+   "Waren has recovered both the Halcyon's flight recorder and nav core.",
+   "Juno's skiff has a slow hull leak and a damaged coolant loop; a hard burn risks overheating.",
+   "The Halcyon's insurer offers to pay Waren on the pad when he lands."
+  ],
+  "time": "seventh day, Ceres approach"
+ },
+ "recent": [
+  {
+   "action": "Suit up and grab the recorder",
+   "narration": "Your ribs flare as you twist into the suit. Helmet seals, the airlock cycles, and you pull yourself hand over hand along the skiff's hull, while the stars wheel past and the wreck holds still.\n\nThe torn hatch edge is razor-sharp. You wedge one boot against it and reach inside. The recorder's clamps are frozen, so you hammer the release with your fist. On the third hit it gives, and the orange casing comes free in your glove.\n\nYou clip it to your harness. Then your last grapple groans through the hull and into your bones.\n\nThirty metres forward, at the break, the nav core blinks faintly among the loose cables. The insurer wants both pieces. Your one claw might not hold long enough for you to get it.",
+   "picture": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, clinging to a torn hatch on a broken tumbling ore freighter, an orange flight recorder clipped to his harness. A battered salvage skiff is held by one straining grapple nearby, and glittering debris drifts in harsh distant sunlight in the deep asteroid belt."
+  },
+  {
+   "action": "Jet across to the nav core",
+   "narration": "You push off the hatch and thumb the suit jets. The wreck turns around you, but you fly the way you always have, feeling the angles more than reading them. You make short bursts and small corrections, and slide through the torn cables without touching one.\n\nThe nav core is half-torn from its rack. You brace, pull hard, and it comes free with a spray of frozen coolant. You've got both pieces.\n\nThen the grapple warning in your helmet goes solid red. You turn in time to see the last claw tear loose. Juno's skiff slowly rolls away from the Halcyon, unmanned and drifting toward the debris field. Your suit jets are already low.",
+   "picture": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, holding a blinking nav core amid drifting torn cables at the break of a tumbling ore freighter, an orange flight recorder clipped to his harness. Behind him, a battered salvage skiff drifts away toward glittering debris, harsh distant sunlight, deep asteroid belt."
+  },
+  {
+   "action": "Call the skiff's autopilot through your suit",
+   "narration": "You key the suit's link and punch in Juno's skiff codes. For a long moment nothing happens. Then the skiff's running lights blink green.\n\nYou don't trust the autopilot's clumsy hold logic, so you fly her yourself through the suit link. You make tiny thrust taps, the way you'd fly from her own seat. The skiff stops rolling, turns its nose toward you and creeps back past the debris.\n\nTwenty metres out, she holds steady with her airlock open. Your suit jets cough a warning, and there's maybe one good push left. Behind you, the Halcyon's aft section keeps turning. You hold the recorder and the nav core against your chest.\n\nIt's one jump, and you have to make it count.",
+   "picture": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, clutching an orange flight recorder and a blinking nav core, floating near a broken tumbling ore freighter. Twenty metres away a battered salvage skiff with green running lights holds steady, airlock open and glowing. Glittering debris, harsh distant sunlight, deep asteroid belt."
+  },
+  {
+   "action": "Push off with everything and fly it",
+   "narration": "You coil, aim at the glowing airlock and fire everything. The jets roar for a heartbeat, then sputter. You're short and drifting low, sliding toward the hull instead of through the hatch.\n\nYou don't panic. Through the suit link you tap the skiff's thrusters and bring her down toward you, flying two things at once. The airlock rim rushes up and you slam into it hard, chest first. White pain bursts through your cracked ribs. But one glove catches the handrail, and you haul yourself inside with both pieces still clipped to your chest.\n\nThe outer door seals. Air hisses in. You're lying on the deck, gasping and alive, and you've got forty-five thousand credits' worth of salvage on board. Ceres is a long burn away.",
+   "picture": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, slamming into the glowing open airlock of a battered salvage skiff, one glove gripping the handrail, an orange flight recorder and blinking nav core clipped to his chest. A broken tumbling ore freighter behind, glittering debris, harsh distant sunlight."
+  },
+  {
+   "action": "Check the skiff's damage before flying",
+   "narration": "You take off the helmet and pull yourself over to the diagnostics panel, one arm pressed against your ribs.\n\nIt's bad, but she'll fly. Both grapple mounts are gone, and the torn port mount left a hairline crack in the hull that is slowly leaking air. The main drive still answers. But the coolant loop took a hit when the cable whipped loose, and if you run her hard she'll overheat about halfway to Ceres.\n\nYou have three ways home. You can burn hard in a straight line, patch the leak as you go and hope the drive holds. You can make a slow, cool burn that will take days and use up most of your air. Or you can call for a tow, and that won't be free."
+  },
+  {
+   "action": "Take the slow, cool route home",
+   "narration": "You throttle the drive down until the coolant needles sit in the green, and you seal the hull crack with tape and foam from the emergency kit. Then you plot a long, lazy arc past a passing rock so its pull does some of the work for you. It's a clean line, the kind your instructor used to draw on the board.\n\nThe days stretch out. You eat ration bars, sleep in the seat and watch the air gauge creep down. Breathing hurts less each morning.\n\nOn the third day Ceres swells in the window, grey and pitted. The air is thin and your head aches, but you made it. Ceres Control comes over the radio: the Halcyon's insurer is offering to meet you on the pad and pay on the spot.",
+   "picture": "Inside a cramped battered salvage skiff cockpit, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, looking tired, a taped patch on the hull wall, gazing out at grey pitted Ceres and its glittering docking ring ahead. Soft dim cockpit lights."
+  }
+ ],
+ "action": "Meet the insurer on the pad",
+ "roll": 14,
+ "pacing": {
+  "turn": 34,
+  "total": 34,
+  "from": 31
+ },
+ "sound": {
+  "ambience": "spaceship_hum",
+  "mood": "calm"
+ }
+}
