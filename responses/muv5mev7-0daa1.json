@@ -1,0 +1,68 @@
+{
+ "id": "muv5mev7-0daa1",
+ "finishedAt": "2026-10-05T11:16:29.302Z",
+ "durationMs": 10356,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je zet de loopband op topsnelheid en laat je slow-motion-blik over het briefje glijden. Maar je rent zo hard dat de band begint te roken en het briefje van de paal waait. Het landt in een plas frituurvet. Je ziet alleen een vettige vingerafdruk, half weggesmeerd, en je ruikt ui.\n\nDe loopband geeft een droevig piepje en geeft de geest.",
+  "choices": [
+   "Onderzoek de vettige vingerafdruk van dichtbij",
+   "Vraag de snackbareigenaar beneden naar het briefje",
+   "Ga terug naar Gerrit en verhoor hem"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Reflexen",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, haalde uienbakker Gerrit uit het robotpak dat de Stadsbank overviel, zette de robot uit en bracht het geld terug. Gerrit zegt dat iemand zijn mandje herprogrammeerde. Op zijn trainingsplek vond Bart een briefje van 'Het Mandje'. Zijn loopband-experiment ging fout: de band is kapot, het briefje ligt in frituurvet met een half vettige vingerafdruk. De dader blijft onbekend.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "smoking broken treadmill on a rainy parking rooftop at night, a note lying in a puddle of grease",
+   "fallback": "A rainy rooftop parking lot at night with a smoking treadmill and a puddle of grease under dim lamps."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Op het briefje zit een half weggesmeerde vettige vingerafdruk; de loopband is kapot."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1284,
+  "cacheRead": 11405,
+  "cacheWrite": 2968,
+  "costUsd": 0.027,
+  "apiMs": 9550,
+  "numTurns": 2
+ }
+}
