@@ -1,0 +1,86 @@
+{
+ "id": "muvidthn-x0lpi",
+ "finishedAt": "2026-10-05T17:13:45.755Z",
+ "durationMs": 14286,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You key the comm. \"Customs, Grubstake holding position—\"\n\nVasko's fist cracks across your jaw before you finish. He rips the headset free and snarls into it: \"Clamp fault, Customs. Sorting it now.\" Too late. The cutter's voice goes flat and official: \"Grubstake, prepare to be boarded. Any burn will be treated as flight.\"\n\nThe cutter slides alongside, docking collar extending. Vasko stares at you, breathing hard, then at the hold hatch. The knocking starts again, faster now, like whoever is in there heard the word \"boarded\" too.\n\n\"You just cost me everything, kid,\" Vasko says quietly, and his hand drifts toward the locker by the hatch.",
+  "choices": [
+   "Block the locker before Vasko reaches it",
+   "Unlock the airlock for the customs team",
+   "Ask Vasko who's in the hold"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a no-questions relief pilot job on the ore tug Grubstake for Captain Dren Vasko, promised six hundred credits on delivery to Vesta. After a rough undock he heard something alive knocking in the hold. When Ceres Customs ordered an inspection, Waren tried to comply; Vasko punched him and lied about a clamp fault, but the cutter is now docking to board. Vasko, furious, reaches for a locker by the hold hatch.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cramped ore tug cockpit, a lean young man in his early twenties with short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over grey t-shirt, cargo pants, holding his jaw; a wiry man in his forties, gaunt face, shaved head, hard pale eyes, stained brown work jacket, heavy boots, reaching toward a wall locker. Patrol cutter docking lights through the viewport.",
+   "fallback": "Cramped cockpit of an old industrial ore tug, red warning lights, a wall locker beside a sealed hatch, bright patrol searchlights through the viewport."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Punched Waren for answering customs; blames him for the boarding.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Ceres Customs is boarding the Grubstake."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "punch",
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1448,
+  "cacheRead": 13441,
+  "cacheWrite": 2852,
+  "costUsd": 0.0545,
+  "apiMs": 13560,
+  "numTurns": 2
+ }
+}
