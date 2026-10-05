@@ -1,0 +1,46 @@
+{
+ "id": "muv07lax-v4xrz",
+ "createdAt": "2026-10-05T08:44:45.849Z",
+ "kind": "start",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "",
+  "textLength": "normaal",
+  "arc": "middel"
+ },
+ "hero": {
+  "name": "Bart Quick",
+  "className": "Speedster",
+  "powers": "Hij kan ongeveer 2 keer de snelheid van het geluid maar er is mogelijkheid voor groei en hij kan ook in slow motion zien, hiernaast kan hij ook allemaal dingen door zijn snelheid maar dit moet hij nog grotendeels uitvogelen",
+  "looks": "Giga chad"
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "",
+  "attributes": [],
+  "inventory": [],
+  "quests": [],
+  "traits": []
+ },
+ "summary": "",
+ "cast": [],
+ "recent": [],
+ "action": null,
+ "roll": 10,
+ "pacing": {
+  "turn": 0,
+  "total": 25,
+  "from": 0
+ }
+}
