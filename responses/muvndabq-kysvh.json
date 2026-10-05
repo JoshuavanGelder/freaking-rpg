@@ -1,0 +1,80 @@
+{
+ "id": "muvndabq-kysvh",
+ "finishedAt": "2026-10-05T19:33:33.284Z",
+ "durationMs": 27311,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Your ribs flare as you twist into the suit. Helmet seals, the airlock cycles, and you pull yourself hand over hand along the skiff's hull, while the stars wheel past and the wreck holds still.\n\nThe torn hatch edge is razor-sharp. You wedge one boot against it and reach inside. The recorder's clamps are frozen, so you hammer the release with your fist. On the third hit it gives, and the orange casing comes free in your glove.\n\nYou clip it to your harness. Then your last grapple groans through the hull and into your bones.\n\nThirty metres forward, at the break, the nav core blinks faintly among the loose cables. The insurer wants both pieces. Your one claw might not hold long enough for you to get it.",
+  "choices": [
+   "Jet across to the nav core",
+   "Get back aboard and cut loose",
+   "Call Juno and ask what the recorder's worth"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Fitness",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [
+    "Halcyon flight recorder"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. After a medicine run for Juno Reyes, he took the Halcyon salvage job, which pays forty-five thousand for the recorder and nav core, minus Juno's ten percent. At the tumbling wreck he lost a grapple arm and bruised his ribs. That tore the hatch open, and he went out in his suit and pulled the flight recorder free. The nav core is still thirty metres away at the break, and his last grapple is failing. Now he has to choose between the whole payout and getting out safe.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, clinging to a torn hatch on a broken tumbling ore freighter, an orange flight recorder clipped to his harness. A battered salvage skiff is held by one straining grapple nearby, and glittering debris drifts in harsh distant sunlight in the deep asteroid belt.",
+   "fallback": "A broken ore freighter hull with a torn-open hatch, loose cables drifting near the break, glittering debris and dark asteroids in harsh distant sunlight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren has recovered the Halcyon's flight recorder; the nav core is still at the break."
+   ],
+   "forgetFacts": [
+    "The Halcyon's recorder hatch is torn half open; the recorder is reachable."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "hit",
+    "discovery_sting"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3140,
+  "cacheRead": 31910,
+  "cacheWrite": 6336,
+  "costUsd": 0.1199,
+  "apiMs": 26463,
+  "numTurns": 3
+ }
+}
