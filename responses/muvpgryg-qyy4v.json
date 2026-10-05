@@ -1,0 +1,79 @@
+{
+ "id": "muvpgryg-qyy4v",
+ "finishedAt": "2026-10-05T20:32:12.715Z",
+ "durationMs": 24223,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You key the suit's link and punch in Juno's skiff codes. For a long moment nothing happens. Then the skiff's running lights blink green.\n\nYou don't trust the autopilot's clumsy hold logic, so you fly her yourself through the suit link. You make tiny thrust taps, the way you'd fly from her own seat. The skiff stops rolling, turns its nose toward you and creeps back past the debris.\n\nTwenty metres out, she holds steady with her airlock open. Your suit jets cough a warning, and there's maybe one good push left. Behind you, the Halcyon's aft section keeps turning. You hold the recorder and the nav core against your chest.\n\nIt's one jump, and you have to make it count.",
+  "choices": [
+   "Push off with everything and fly it",
+   "Bring the skiff closer, wait it out",
+   "Toss the cargo first, then jump"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Piloting",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. Then he took the Halcyon salvage job for Juno Reyes: forty-five thousand for the wreck's recorder and nav core, minus her ten percent. He recovered both pieces in his suit, but the skiff tore loose and drifted off. He flew it back by remote through his suit link. Now it's waiting twenty metres away, and his jets have one push left.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, clutching an orange flight recorder and a blinking nav core, floating near a broken tumbling ore freighter. Twenty metres away a battered salvage skiff with green running lights holds steady, airlock open and glowing. Glittering debris, harsh distant sunlight, deep asteroid belt.",
+   "fallback": "A battered salvage skiff with green running lights and an open glowing airlock, near a broken tumbling ore freighter among glittering debris in the deep asteroid belt, harsh distant sunlight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren flew the drifting skiff back by remote through his suit link.",
+    "Waren's suit jets have one push left."
+   ],
+   "forgetFacts": [
+    "The skiff's last grapple tore loose; it is drifting away unmanned.",
+    "Waren's suit jets are running low."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "magic_ping"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2739,
+  "cacheRead": 32145,
+  "cacheWrite": 6808,
+  "costUsd": 0.1157,
+  "apiMs": 23357,
+  "numTurns": 3
+ }
+}
