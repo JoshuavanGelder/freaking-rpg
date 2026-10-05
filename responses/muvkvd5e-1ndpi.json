@@ -1,0 +1,88 @@
+{
+ "id": "muvkvd5e-1ndpi",
+ "finishedAt": "2026-10-05T18:23:37.228Z",
+ "durationMs": 27322,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Is there a reward? For the tip?\" It comes out too loud. The woman with the toddler hears it. So does Hale.\n\nHale's eyes go flat. \"There's an informant fund. Statement first, then a conviction, then a review board. Months, maybe.\" She looks you over: the cheap jacket, the bruised ribs. \"And asking about money over an open hold doesn't look good in a file, kid.\"\n\nBehind you, the teenage boy mutters something to the woman. She turns away.\n\nHale jerks her chin at the ladder. \"The cutter's waiting. You can give your statement at Customs. Or you can walk, and I'll remember that you did.\"",
+  "choices": [
+   "Go with Hale and give the statement",
+   "Apologise to the woman with the toddler",
+   "Ask Hale who owns the Grubstake now"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 2,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Give Hale your witness statement",
+     "detail": "Testify at Ceres Customs; it may unlock the informant fund."
+    }
+   ],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who was smuggling people in the sealed hold. When Ceres Customs boarded, Waren warned them, killed the drive and talked Vasko into surrendering. Vasko was arrested, and Waren opened the hold to eleven refugees who now face processing. He clumsily asked Inspector Hale about a reward in front of them. An informant fund exists, but it pays only after a statement, a conviction and a review, months from now. Hale wants his statement now. The Vesta job is probably lost.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dim red-lit cargo hold doorway of an old ore tug. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, facing a woman in her forties, broad build, square face, short cropped black hair, steady hazel eyes, grey customs vest over a dark jacket shirt, heavy boots, her expression cold.",
+   "fallback": "Open cargo hold of an old ore tug in dim red emergency light, bedrolls and water jugs on the floor, a ladder leading up into shadow."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Inspector Hale",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Took Waren's bolt gun; thinks less of him for asking about a reward.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "A customs informant fund pays only after a statement, a conviction and a review, months away."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3179,
+  "cacheRead": 30857,
+  "cacheWrite": 5374,
+  "costUsd": 0.1128,
+  "apiMs": 26114,
+  "numTurns": 3
+ }
+}
