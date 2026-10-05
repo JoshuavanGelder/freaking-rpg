@@ -1,0 +1,88 @@
+{
+ "id": "muvm2w7e-i4v11",
+ "finishedAt": "2026-10-05T18:57:32.529Z",
+ "durationMs": 31123,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You tap the listing. A minute later a woman calls the hall screen back: mid-thirties, headset, a dock bay full of noise behind her.\n\n\"Juno Reyes, Reyes Rapid. My pilot quit an hour ago.\" She squints at your license scan. \"Licensed, young, cheap. Good. A sealed medical crate to the mining hab at Occator Ridge. Fast skiff, nasty terrain, the landing pad's half a ledge. Three hundred cash on landing.\"\n\nShe sees you hesitate. \"It's real medicine, kid. Customs already scanned it. I saw where you're calling from.\"\n\nThen she adds, \"Fly it clean and I've got steadier work. Real money for a pilot who doesn't crash my skiffs.\"\n\nBay Nine. She wants an answer now.",
+  "choices": [
+   "Take the job, head to Bay Nine",
+   "Ask for half the pay upfront",
+   "Ask about the steadier work first"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender and freed eleven refugees. He gave Inspector Hale an honest statement, filed an informant fund claim (payout months away) and had his cracked ribs strapped. The Vesta job is probably lost. Juno Reyes of Reyes Rapid offers him a three-hundred-credit courier run with medical cargo to Occator Ridge, and hints at steadier, better-paid work afterwards.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "character",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, facing a wall screen in a grey customs hallway showing a woman in her mid-thirties with a headset in a noisy dock bay, cold fluorescent light.",
+   "fallback": "Grey customs office hallway on a space station, a glowing wall screen with a video call, hard benches, cold fluorescent light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Juno Reyes",
+    "look": "Woman in her mid-thirties, athletic build, sharp tanned face, dark curly hair tied back, quick brown eyes, red work vest over a black thermal shirt, headset.",
+    "status": "levend",
+    "home": "Bay Nine, Ceres Ring Port",
+    "role": "owner of Reyes Rapid courier service",
+    "note": "Offers three hundred cash for the Occator Ridge run, hints at more work.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Reyes Rapid",
+     "detail": "Juno Reyes's small courier outfit in Bay Nine, Ceres Ring Port, flying fast skiffs."
+    }
+   ],
+   "facts": [
+    "Juno Reyes offers three hundred cash on landing for medical cargo to Occator Ridge."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3497,
+  "cacheRead": 30868,
+  "cacheWrite": 5423,
+  "costUsd": 0.1195,
+  "apiMs": 30330,
+  "numTurns": 3
+ }
+}
