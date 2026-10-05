@@ -1,0 +1,70 @@
+{
+ "id": "muv5ikj6-wlz6q",
+ "finishedAt": "2026-10-05T11:13:29.442Z",
+ "durationMs": 11794,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De robot is uitgezet en zit stil op het plein voor de Stadsbank."
+   ],
+   "forgetFacts": [],
+   "time": "schemering, eerste dag"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Stop de bankroof"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Snelheid",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Vraag Gerrit wie het mandje herprogrammeerde",
+   "Breng het geld terug naar de bank",
+   "Inspecteer de stille robot op aanwijzingen"
+  ],
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, trok uienbakker Gerrit uit het robotpak dat de Stadsbank overviel. Gerrit zegt dat iemand zijn frituurmandje herprogrammeerde. Bart schudde het mandje driemaal en zei sorry tegen de frituurpan: de robot staat stil en het geld ligt op het plein. De vraag blijft wie het mandje herprogrammeerde.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, shaking a fry basket inside the open belly of a giant clunky robot walker, motion blur, steam and onion smoke, bank plaza at dusk in rain, humorous epic",
+   "fallback": "A rainy plaza in front of a grand bank at dusk, a giant dormant robot walker sitting on the wet stones, wisps of steam rising."
+  },
+  "heroLook": "",
+  "narration": "Je spurt. De wereld vertraagt, en jij ziet het mandje liggen, trillend naast de frituurpan in de buik van de robot. Je grijpt het. Eén, twee, drie keer schudden, sneller dan een kolibrie met koffie. \"Sorry,\" zeg je plechtig tegen de frituurpan.\n\nDe pan sist beschaamd. De robot zucht, zakt door zijn knieën en gaat zitten als een vermoeide olifant. De zak bankgeld glijdt uit zijn klauw, recht voor Gerrits voeten.\n\nHet plein is stil. Alleen de regen tikt nog op het metaal. Het ruikt naar ui.",
+  "portrait": "",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1572,
+  "cacheRead": 11405,
+  "cacheWrite": 2979,
+  "costUsd": 0.0299,
+  "apiMs": 10850,
+  "numTurns": 2
+ }
+}
