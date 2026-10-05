@@ -1,0 +1,79 @@
+{
+ "id": "muvpmh1u-hkkfj",
+ "finishedAt": "2026-10-05T20:36:37.344Z",
+ "durationMs": 25009,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You coil, aim at the glowing airlock and fire everything. The jets roar for a heartbeat, then sputter. You're short and drifting low, sliding toward the hull instead of through the hatch.\n\nYou don't panic. Through the suit link you tap the skiff's thrusters and bring her down toward you, flying two things at once. The airlock rim rushes up and you slam into it hard, chest first. White pain bursts through your cracked ribs. But one glove catches the handrail, and you haul yourself inside with both pieces still clipped to your chest.\n\nThe outer door seals. Air hisses in. You're lying on the deck, gasping and alive, and you've got forty-five thousand credits' worth of salvage on board. Ceres is a long burn away.",
+  "choices": [
+   "Burn straight for Ceres at full speed",
+   "Check the skiff's damage before flying",
+   "Call Juno and report the haul"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Piloting",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Juno's salvage skiff, deep belt",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. He took the Halcyon salvage job for Juno Reyes: forty-five thousand for the wreck's recorder and nav core, minus her ten percent. He recovered both pieces, lost the skiff's grapples, flew the skiff back by remote, and with his last jet push and some remote flying he made it aboard, battered but safe. Now he has to bring the salvage home to Ceres.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, slamming into the glowing open airlock of a battered salvage skiff, one glove gripping the handrail, an orange flight recorder and blinking nav core clipped to his chest. A broken tumbling ore freighter behind, glittering debris, harsh distant sunlight.",
+   "fallback": "The glowing open airlock of a small battered salvage skiff floating in the deep asteroid belt, a broken ore freighter tumbling behind, glittering debris and harsh distant sunlight."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren is back aboard Juno's skiff with the recorder and nav core."
+   ],
+   "forgetFacts": [
+    "Waren's suit jets have one push left.",
+    "Waren flew the drifting skiff back by remote through his suit link."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "calm",
+   "sfx": [
+    "hit",
+    "door_slam"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2824,
+  "cacheRead": 32134,
+  "cacheWrite": 6863,
+  "costUsd": 0.1178,
+  "apiMs": 24072,
+  "numTurns": 3
+ }
+}
