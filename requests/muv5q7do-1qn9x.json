@@ -1,0 +1,153 @@
+{
+ "id": "muv5q7do-1qn9x",
+ "createdAt": "2026-10-05T11:19:12.348Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "",
+  "textLength": "normaal",
+  "arc": "middel"
+ },
+ "hero": {
+  "name": "Bart Quick",
+  "className": "Speedster",
+  "powers": "Hij kan ongeveer 2 keer de snelheid van het geluid maar er is mogelijkheid voor groei en hij kan ook in slow motion zien, hiernaast kan hij ook allemaal dingen door zijn snelheid maar dit moet hij nog grotendeels uitvogelen",
+  "looks": "Giga chad",
+  "heroLook": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers"
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 90,
+  "level": 1,
+  "location": "Gerrits frituurkraam",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 4
+   },
+   {
+    "name": "Kracht",
+    "value": 2
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 2
+   },
+   {
+    "name": "Controle",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Vettig briefje van Het Mandje",
+   "Rode kerstmuts-pompon"
+  ],
+  "quests": [
+   {
+    "title": "Stop de bankroof",
+    "detail": "Houd de robotdief bij de Stadsbank tegen.",
+    "done": true
+   },
+   {
+    "title": "Wie herprogrammeerde het mandje?",
+    "detail": "Zoek de dader achter de robotoverval.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Slow-motion zicht",
+    "kind": "kracht",
+    "detail": "Bart ziet de wereld vertraagd als hij zich concentreert."
+   }
+  ]
+ },
+ "summary": "Bart versloeg Gerrits uienrobot en bracht het geld terug. Het Mandje laat vettige briefjes achter. Gerrit zag een man met vette handschoenen en kerstmuts. Bij de kraam vond Bart een pompon met label van Kerstkoning, Havenweg 7.",
+ "cast": [
+  {
+   "name": "De uienman",
+   "look": "middle-aged man, stocky and sweaty, round face, messy thinning hair, wearing an apron printed with onion rings",
+   "role": "bestuurder van het robotpak",
+   "note": "Heet Gerrit; vertelt zijn uienverhaal terwijl de robot piept."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Nieuw-Rotterdam",
+    "detail": "Grote havenstad vol wolkenkrabbers, waar Bart woont en patrouilleert."
+   },
+   {
+    "name": "Stadsbank",
+    "detail": "Imposante bank in het centrum, nu overvallen door een robotdief."
+   },
+   {
+    "name": "Trainingsplek",
+    "detail": "Verlaten parkeerdak boven een snackbar in Nieuw-Rotterdam."
+   },
+   {
+    "name": "Gerrits frituurkraam",
+    "detail": "Gammel frituurkraam aan een steegje bij het plein, vol vet, uienkorven en een flikkerend neonbord."
+   }
+  ],
+  "facts": [
+   "De bankrover draagt een groot robotpak dat naar gebakken ui ruikt.",
+   "De uienman heet Gerrit en beweert dat hij het robotpak niet zelf wilde laten rovers.",
+   "Robot uitzetten: mandje driemaal schudden en 'sorry' zeggen tegen de frituurpan.",
+   "De robot is uitgezet en zit stil op het plein voor de Stadsbank.",
+   "Het bankgeld is teruggebracht naar de Stadsbank; de herprogrammeerder van het mandje is nog onbekend.",
+   "Een briefje getekend 'Het Mandje' zegt dat iemand Bart in de gaten houdt.",
+   "Op het briefje zit een half weggesmeerde vettige vingerafdruk; de loopband is kapot.",
+   "Gerrit herkent de vettige vingerafdruk en weet wie bij zijn frituurkraam kwam.",
+   "Bij Gerrits kraam ligt een rode kerstmuts-pompon met een klein label van een stoffenwinkel."
+  ],
+  "time": "nacht, eerste dag"
+ },
+ "recent": [
+  {
+   "action": "Breng het geld terug naar de bank",
+   "narration": "Je flitst met de zak de bank in en zet hem op de balie, voordat de baliemedewerker zijn pen heeft laten vallen. \"Alles er nog?\" vraag je. Hij telt, knikt sprakeloos en ruikt aan zijn mouw. Ui. Buiten hoor je Gerrit nog zachtjes sorry zeggen tegen de robot."
+  },
+  {
+   "action": "Gerrit mag het lekker zelf uitvogelen, ik ga naar mijn trainingsplek",
+   "narration": "Je laat Gerrit en zijn sorry's achter en flitst door de natte straten naar je trainingsplek: een verlaten parkeerdak boven een snackbar. Op je trainingspaal zit een briefje, vastgeplakt met frituurvet: \"Leuk geprobeerd, Quick. Ik kijk mee. – Het Mandje.\" Het ruikt naar ui."
+  },
+  {
+   "action": "Ik ga op mijn loopband trainen en laat mijn scanners uitvogelen wie het heeft geplakt",
+   "narration": "Je zet de loopband op topsnelheid en laat je slow-motion-blik over het briefje glijden. Maar je rent zo hard dat de band begint te roken en het briefje van de paal waait. Het landt in een plas frituurvet. Je ziet alleen een vettige vingerafdruk, half weggesmeerd, en je ruikt ui.\n\nDe loopband geeft een droevig piepje en geeft de geest."
+  },
+  {
+   "action": "Ga terug naar Gerrit en verhoor hem",
+   "narration": "Je bent er in een flits. Gerrit zit nog naast de stille robot en zegt sorry tegen een uitje. Je tilt hem bij zijn schort omhoog. \"Wie kwam bij je kraam? Wie raakte je mandje aan?\"\n\nHij zweet. \"Een man met vette handschoenen... en een kerstmuts. In juli.\" Hij slikt. \"Hij betaalde met een briefje. Een vettig briefje.\""
+  },
+  {
+   "action": "Ga naar de kraam van Gerrit",
+   "narration": "Je staat al bij de kraam voordat Gerrits laatste sorry is uitgesproken. Het neonbord flikkert \"FRIET & UI\". Op de rand van de frituurpan zit een vettige handschoenafdruk. Naast de kassa ligt iets kleins en rood: een kerstmuts-pompon. Het ruikt hier erg naar ui.",
+   "picture": "Greasy small fry stand in a rainy alley at night, flickering neon sign, onion baskets, fryer with a faint glowing greasy handprint, humorous epic mood"
+  },
+  {
+   "action": "Onderzoek de pompon met slow-motion blik",
+   "narration": "Je tuurt in slow-motion naar de pompon. Elke pluisvezel hangt stil in de lucht, vol vet. Aan de onderkant zit een piepklein label: \"Kerstkoning – Stoffen & Mutsen, Havenweg 7\". Wie breit er in juli kerstmutsen? Iemand met een plan. En vette handschoenen."
+  }
+ ],
+ "action": "Ga naar Kerstkoning, de stoffenwinkel",
+ "roll": 5,
+ "pacing": {
+  "turn": 13,
+  "total": 25,
+  "from": 0
+ }
+}
