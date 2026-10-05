@@ -6,21 +6,25 @@ import { useTurns, type Phase } from '../turns';
 import { useT } from '../lang';
 import { usePictures } from '../pictures';
 import { PictureBox } from '../picture-view';
-import { useDraft } from '../drafts';
+import { clearDraft, useDraft } from '../drafts';
+import { RevealCtx, useKeyboardReveal } from '../keyboard';
 import { useStorySound } from '../storysound';
 import { sound } from '../services/sound';
 import { useNav } from '../nav';
 import { C, F } from '../theme';
 import { Icon } from '../icons';
-import { Bar, Button, Chip, IconButton, Row, T, TopBar } from '../ui';
-import { MAX_TURNS_MORE, formatGold, paragraphs, setTurnsLeft, turnsLeft, worldLabel } from '../logic/game';
+import { Bar, Button, Chip, Field, IconButton, Row, T, TopBar } from '../ui';
+import { MAX_TURNS_MORE, MIN_RESUME_TURNS, formatGold, paragraphs, setTurnsLeft, turnsLeft, worldLabel } from '../logic/game';
 import type { Adventure, Turn } from '../logic/types';
 
 export function StoryScreen({ id }: { id: string }) {
   const adv = useAdventure(id);
   const nav = useNav();
   const insets = useSafeAreaInsets();
-  const scroll = useRef<any>(null);
+  const kb = useKeyboardReveal(); // het eindkaartje heeft een tekstveld in de ScrollView
+  const scroll = kb.ref;
+  const [endOpen, setEndOpen] = useState(false);
+  const endedRef = useRef(false);
   const { showScene } = usePictures();
   const { state } = useApp();
   const { t, lang } = useT();
@@ -28,11 +32,15 @@ export function StoryScreen({ id }: { id: string }) {
   useStorySound(adv); // geluid van de plek en van elke nieuwe beurt (hooks horen boven de vroege return)
 
   // Toetsenbord open: het invoerveld staat onderaan en schuift mee omhoog (KeyboardAvoidingView in App);
-  // het verhaal scrolt naar het einde zodat de laatste tekst zichtbaar blijft.
+  // het verhaal scrolt naar het einde zodat de laatste tekst zichtbaar blijft. Op de eindkaart (met een tekstveld in
+  // de ScrollView) doet useKeyboardReveal het scrollen, zodat het veld in beeld blijft.
   useEffect(() => {
-    const sub = Keyboard.addListener('keyboardDidShow', () => setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 80));
+    const sub = Keyboard.addListener('keyboardDidShow', () => {
+      if (endedRef.current) return;
+      setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 80);
+    });
     return () => sub.remove();
-  }, []);
+  }, [scroll]);
 
   if (!adv) {
     return (
@@ -43,6 +51,7 @@ export function StoryScreen({ id }: { id: string }) {
     );
   }
 
+  endedRef.current = adv.ended;
   const s = adv.state;
   const waiting = !!adv.pending && !adv.error;
   const last = adv.turns[adv.turns.length - 1];
@@ -59,6 +68,7 @@ export function StoryScreen({ id }: { id: string }) {
           right={
             <Row style={{ gap: 8 }}>
               {canShow ? <IconButton icon="image" label={t('story.showScene')} onPress={() => showScene(adv.id, last!.id)} /> : null}
+              {adv.turns.length && !adv.ended ? <IconButton icon="scroll" label={t('story.end')} color={endOpen ? C.accent : C.ink} onPress={() => setEndOpen(!endOpen)} /> : null}
               <IconButton icon="user" label={t('story.hero')} onPress={() => nav.push({ name: 'sheet', id: adv.id })} />
             </Row>
           }
@@ -83,24 +93,28 @@ export function StoryScreen({ id }: { id: string }) {
             </T>
           </Row>
         ) : null}
-        {adv.turns.length && !adv.ended ? <EndPlan adv={adv} /> : null}
+        {endOpen && adv.turns.length && !adv.ended ? <EndPlan adv={adv} onClose={() => setEndOpen(false)} /> : null}
       </View>
 
-      <ScrollView
-        ref={scroll}
-        style={{ flex: 1 }}
-        contentContainerStyle={{ padding: 20, paddingBottom: 28, gap: 18 }}
-        keyboardShouldPersistTaps="handled"
-        onContentSizeChange={() => scroll.current?.scrollToEnd({ animated: true })}
-      >
-        {adv.turns.map((t) => (
-          <TurnView key={t.id} turn={t} onRetryImage={() => showScene(adv.id, t.id)} />
-        ))}
-        {adv.pending ? <PendingAction text={adv.pending.action} /> : null}
-        {waiting ? <Waiting adv={adv} /> : null}
-        {adv.error ? <ErrorCard adv={adv} /> : null}
-        {adv.ended ? <EndCard adv={adv} /> : null}
-      </ScrollView>
+      <RevealCtx.Provider value={kb.reveal}>
+        <ScrollView
+          ref={scroll}
+          onScroll={kb.onScroll}
+          scrollEventThrottle={32}
+          style={{ flex: 1 }}
+          contentContainerStyle={{ padding: 20, paddingBottom: 28, gap: 18 }}
+          keyboardShouldPersistTaps="handled"
+          onContentSizeChange={() => scroll.current?.scrollToEnd({ animated: true })}
+        >
+          {adv.turns.map((t) => (
+            <TurnView key={t.id} turn={t} onRetryImage={() => showScene(adv.id, t.id)} />
+          ))}
+          {adv.pending ? <PendingAction text={adv.pending.action} /> : null}
+          {waiting ? <Waiting adv={adv} /> : null}
+          {adv.error ? <ErrorCard adv={adv} /> : null}
+          {adv.ended ? <EndCard adv={adv} /> : null}
+        </ScrollView>
+      </RevealCtx.Provider>
 
       {!adv.ended && !adv.error ? <ActionBar adv={adv} disabled={waiting} bottom={insets.bottom} /> : null}
     </View>
@@ -247,14 +261,7 @@ function ErrorCard({ adv }: { adv: Adventure }) {
   );
 }
 
-const END_PRESETS: { key: string; value: number | null }[] = [
-  { key: 'wrapUp', value: 1 },
-  { key: '3', value: 3 },
-  { key: '5', value: 5 },
-  { key: '10', value: 10 },
-  { key: '20', value: 20 },
-  { key: 'unlimited', value: null },
-];
+type Preset = { key: string; label: string; value: number | null };
 
 function endLabel(tr: ReturnType<typeof useT>, left: number | null): string {
   if (left === null) return tr.t('end.unlimited');
@@ -262,86 +269,81 @@ function endLabel(tr: ReturnType<typeof useT>, left: number | null): string {
   return tr.tn('end.left', left);
 }
 
-/** Regel onder de levensbalk met het einde van het verhaal; tikken opent een paneel om het aantal beurten te kiezen. */
-function EndPlan({ adv }: { adv: Adventure }) {
+const stepButton = (pressed: boolean) => ({
+  width: 44,
+  height: 44,
+  borderRadius: 12,
+  alignItems: 'center' as const,
+  justifyContent: 'center' as const,
+  borderWidth: 1.5,
+  borderColor: C.border,
+  backgroundColor: pressed ? C.cardHi : C.bg,
+});
+
+/** Aantal beurten kiezen: keuzeknoppen plus min/plus. value null = onbeperkt. */
+function TurnsPicker({ value, onChange, presets, min }: { value: number | null; onChange: (v: number | null) => void; presets: Preset[]; min: number }) {
+  const { t, tn } = useT();
+  const step = (d: number) => onChange(Math.min(MAX_TURNS_MORE, Math.max(min, (value ?? 10) + d)));
+  return (
+    <View style={{ gap: 12 }}>
+      <Row style={{ flexWrap: 'wrap', gap: 8 }}>
+        {presets.map((p) => (
+          <Chip key={p.key} label={p.label} selected={value === p.value} onPress={() => onChange(p.value)} />
+        ))}
+      </Row>
+      {value !== null ? (
+        <Row style={{ gap: 12, alignSelf: 'flex-start' }}>
+          <Pressable accessibilityRole="button" accessibilityLabel={t('end.less')} onPress={() => step(-1)} style={({ pressed }) => stepButton(pressed)}>
+            <T size={22} weight="bold">
+              −
+            </T>
+          </Pressable>
+          <T size={16} weight="bold" style={{ minWidth: 96, textAlign: 'center' }}>
+            {tn('end.turns', value)}
+          </T>
+          <Pressable accessibilityRole="button" accessibilityLabel={t('end.more')} onPress={() => step(1)} style={({ pressed }) => stepButton(pressed)}>
+            <Icon name="plus" size={20} color={C.ink} strokeWidth={2.5} />
+          </Pressable>
+        </Row>
+      ) : null}
+    </View>
+  );
+}
+
+/**
+ * Paneel om het einde van het verhaal te kiezen. Bewust niet in de standaardweergave: het aantal beurten
+ * dat nog over is leidt af van het verhaal. Het paneel opent met het icoon rechtsboven.
+ */
+function EndPlan({ adv, onClose }: { adv: Adventure; onClose: () => void }) {
   const { patchAdventure } = useApp();
   const tr = useT();
-  const { t, tn } = tr;
+  const { t } = tr;
   const left = turnsLeft(adv);
-  const [open, setOpen] = useState(false);
-  const [n, setN] = useState<number | null>(10);
-  const toggle = () => {
-    if (!open) setN(left === null ? 10 : Math.min(MAX_TURNS_MORE, Math.max(1, left)));
-    setOpen(!open);
-  };
-  const step = (d: number) => setN((v) => Math.min(MAX_TURNS_MORE, Math.max(1, (v ?? 10) + d)));
+  const [n, setN] = useState<number | null>(left === null ? 10 : Math.min(MAX_TURNS_MORE, Math.max(1, left)));
+  const presets: Preset[] = [
+    { key: 'wrapUp', label: t('end.preset.wrapUp'), value: 1 },
+    ...[3, 5, 10, 20].map((v) => ({ key: String(v), label: String(v), value: v })),
+    { key: 'unlimited', label: t('end.preset.unlimited'), value: null },
+  ];
   return (
-    <View style={{ gap: 10 }}>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityState={{ expanded: open }}
-        accessibilityLabel={t('end.tapToAdjust', { label: endLabel(tr, left) })}
-        onPress={toggle}
-        hitSlop={6}
-        style={{ flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 28, alignSelf: 'flex-start' }}
-      >
-        <Icon name="scroll" size={15} color={C.muted} />
-        <T size={13} weight="semibold" color={C.muted}>
-          {endLabel(tr, left)}
-        </T>
-        <Icon name={open ? 'chevronUp' : 'chevronDown'} size={16} color={C.muted} strokeWidth={2.25} />
-      </Pressable>
-      {open ? (
-        <View style={{ padding: 14, borderRadius: 16, backgroundColor: C.card, gap: 12 }}>
-          <T size={15} weight="bold">
-            {t('end.question')}
-          </T>
-          <Row style={{ flexWrap: 'wrap', gap: 8 }}>
-            {END_PRESETS.map((p) => (
-              <Chip key={p.key} label={p.key === 'wrapUp' ? t('end.preset.wrapUp') : p.key === 'unlimited' ? t('end.preset.unlimited') : p.key} selected={n === p.value} onPress={() => setN(p.value)} />
-            ))}
-          </Row>
-          {n !== null ? (
-            <Row style={{ gap: 12, alignSelf: 'flex-start' }}>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={t('end.less')}
-                onPress={() => step(-1)}
-                style={({ pressed }) => ({ width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: C.border, backgroundColor: pressed ? C.cardHi : C.bg })}
-              >
-                <T size={22} weight="bold">
-                  −
-                </T>
-              </Pressable>
-              <T size={16} weight="bold" style={{ minWidth: 96, textAlign: 'center' }}>
-                {tn('end.turns', n)}
-              </T>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={t('end.more')}
-                onPress={() => step(1)}
-                style={({ pressed }) => ({ width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: C.border, backgroundColor: pressed ? C.cardHi : C.bg })}
-              >
-                <Icon name="plus" size={20} color={C.ink} strokeWidth={2.5} />
-              </Pressable>
-            </Row>
-          ) : null}
-          <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-            {n === null
-              ? t('end.help.unlimited')
-              : n === 1
-                ? t('end.help.one')
-                : t('end.help.many')}
-          </T>
-          <Button
-            label={n === null ? t('end.button.unlimited') : n === 1 ? t('end.button.one') : t('end.button.many', { n })}
-            onPress={() => {
-              patchAdventure(adv.id, (a) => setTurnsLeft(a, n));
-              setOpen(false);
-            }}
-          />
-        </View>
-      ) : null}
+    <View style={{ padding: 14, borderRadius: 16, backgroundColor: C.card, gap: 12 }}>
+      <T size={13} weight="semibold" color={C.muted}>
+        {endLabel(tr, left)}
+      </T>
+      <T size={15} weight="bold">
+        {t('end.question')}
+      </T>
+      <TurnsPicker value={n} onChange={setN} presets={presets} min={1} />
+      <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+        {n === null ? t('end.help.unlimited') : n === 1 ? t('end.help.one') : t('end.help.many')}
+      </T>
+      <Button
+        label={n === null ? t('end.button.unlimited') : n === 1 ? t('end.button.one') : t('end.button.many', { n })}
+        onPress={() => {
+          patchAdventure(adv.id, (a) => setTurnsLeft(a, n));
+          onClose();
+        }}
+      />
     </View>
   );
 }
@@ -350,16 +352,45 @@ function EndCard({ adv }: { adv: Adventure }) {
   const nav = useNav();
   const { resume } = useTurns();
   const { t } = useT();
+  // Wat je hier invult blijft staan als je even naar je held kijkt (useDraft), en gaat weg zodra je doorgaat.
+  const noteKey = `doorgaan-${adv.id}`;
+  const turnsKey = `doorgaan-beurten-${adv.id}`;
+  const [note, setNote] = useDraft<string>(noteKey, '');
+  const [turns, setTurns] = useDraft<number | null>(turnsKey, null);
+  const presets: Preset[] = [
+    { key: 'unlimited', label: t('end.preset.unlimited'), value: null },
+    ...[3, 5, 10, 20].map((v) => ({ key: String(v), label: String(v), value: v })),
+  ];
   return (
-    <View style={{ padding: 18, borderRadius: 16, borderWidth: 1.5, borderColor: C.border, gap: 12, alignItems: 'center' }}>
-      <Icon name="scroll" size={28} color={C.accent} strokeWidth={1.75} />
-      <T weight="display" size={22}>
-        {t('endCard.title')}
-      </T>
-      <T size={14} color={C.muted} style={{ textAlign: 'center', lineHeight: 20 }}>
-        {t('endCard.text')}
-      </T>
-      <Button label={t('endCard.continue')} icon="arrow" onPress={() => resume(adv.id)} style={{ alignSelf: 'stretch' }} />
+    <View style={{ padding: 18, borderRadius: 16, borderWidth: 1.5, borderColor: C.border, gap: 14 }}>
+      <View style={{ alignItems: 'center', gap: 12 }}>
+        <Icon name="scroll" size={28} color={C.accent} strokeWidth={1.75} />
+        <T weight="display" size={22}>
+          {t('endCard.title')}
+        </T>
+        <T size={14} color={C.muted} style={{ textAlign: 'center', lineHeight: 20 }}>
+          {t('endCard.text')}
+        </T>
+      </View>
+      <Field label={t('endCard.wishLabel')} extra={t('endCard.optional')} value={note} onChangeText={setNote} placeholder={t('endCard.wishPlaceholder')} multiline />
+      <View style={{ gap: 10 }}>
+        <T size={13} weight="bold" color={C.accent} style={{ letterSpacing: 1, textTransform: 'uppercase' }}>
+          {t('end.question')}
+        </T>
+        <TurnsPicker value={turns} onChange={setTurns} presets={presets} min={MIN_RESUME_TURNS} />
+        <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+          {turns === null ? t('end.help.unlimited') : t('endCard.help.many')}
+        </T>
+      </View>
+      <Button
+        label={t('endCard.continue')}
+        icon="arrow"
+        onPress={() => {
+          resume(adv.id, { note, turns });
+          clearDraft(noteKey, turnsKey);
+        }}
+        style={{ alignSelf: 'stretch' }}
+      />
       <Button label={t('endCard.new')} variant="outline" onPress={() => nav.replace({ name: 'new' })} style={{ alignSelf: 'stretch' }} />
     </View>
   );

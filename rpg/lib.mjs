@@ -49,7 +49,10 @@ const NARRATION = {
   uitgebreid: 'at most 200 words (the ceiling for big moments), room for atmosphere and detail when the moment deserves it',
 };
 
-/** Regels over de lengte van het avontuur: waar staan we en moet het einde nu komen? */
+/** Hoeveel beurten het einde mag schuiven als het beslissende moment er echt nog middenin zit (nooit verder). */
+export const END_GRACE = 2;
+
+/** Regels over de lengte van het avontuur: waar staan we en moet het einde nu komen? Het aantal beurten is een richtlijn, geen muur. */
 export function pacingLines(r) {
   const total = Number(r.pacing?.total);
   const turn = Number.isInteger(r.pacing?.turn) ? r.pacing.turn : 0;
@@ -58,7 +61,7 @@ export function pacingLines(r) {
     lines.push('- no fixed length: the player decides when the story ends. Do not wrap the story up or end it on your own (unless the hero dies); keep opening new possibilities.');
     return lines;
   }
-  lines.push(`- the player chose a story of about ${total} turns, ending with a real conclusion.`);
+  lines.push(`- the player chose a story of about ${total} turns, ending with a real conclusion. The number is a guide, not a wall: the story must land well, never be cut off in the middle of something.`);
   if (r.kind === 'start') {
     lines.push('- this is the opening. Plan the arc now (see "Story length and ending").');
     return lines;
@@ -69,10 +72,20 @@ export function pacingLines(r) {
   const progress = (turn - from) / Math.max(1, total - from);
   lines.push(`- this is turn ${turn} of about ${total}.`);
   if (from > 0) lines.push(`- the player decided at turn ${from} that the story should end at turn ${total}. Shape a final arc from where the story stands now: use what is already in play (open quests, enemies, allies) rather than starting over.`);
-  if (left <= 0) lines.push('- THE END IS DUE: this turn must be the ending. Resolve the main thread, close the open quests, write a satisfying final scene in the tone and set gameOver to true. No new cliffhanger, no choices needed.');
-  else if (left === 1) lines.push('- ONE turn left after this one: this turn is the final confrontation or decision. The next turn is the ending.');
-  else if (left <= 3) lines.push(`- ${left} turns left after this one: you are in the climax. Wrap up open threads and head for the final confrontation; no new big threads.`);
-  else if (progress >= 0.6) lines.push(`- ${left} turns left: the story is in its last third. Escalate toward the climax and stop introducing new big threads.`);
+  const last = total + END_GRACE;
+  if (left <= -END_GRACE) {
+    lines.push(`- THE END IS DUE, NO EXTRA TURNS LEFT: this turn must be the ending. Bring whatever is still open to its conclusion right now, compressing it if needed (a time skip, "by the time ..."), close the open quests, write a satisfying final scene in the tone and set gameOver to true. No cliffhanger, no choices needed.`);
+  } else if (left <= 0) {
+    lines.push('- THE END IS DUE: this turn should be the ending. Resolve the main thread. If the hero is in the middle of the mission, finish it in this turn by compressing what is left (a time skip, "by the time ...") instead of cutting it off. Close the open quests, write a satisfying final scene in the tone and set gameOver to true. No new cliffhanger, no choices needed.');
+    lines.push(`- Ending now is the default and never padding. Only if the decisive moment is literally unfolding right now and would be spoiled by compressing it, you may play it out in one more turn (gameOver false); the story ends at turn ${last} at the latest.`);
+  } else if (left === 1) {
+    lines.push('- ONE turn left after this one: this turn is the final confrontation or decision, so the mission the hero is on must reach its decisive moment now. The next turn is the ending.');
+  } else if (left <= 3) {
+    lines.push(`- ${left} turns left after this one: you are in the climax. Wrap up open threads and head for the final confrontation; no new big threads.`);
+    lines.push(`- Check the main mission: count the scenes it still needs. If that is more than ${left - 1}, compress (skip travel, merge steps). If it is already resolved, you may end the story now with a closing scene (gameOver true) instead of padding.`);
+  } else if (left <= 6 || progress >= 0.6) {
+    lines.push(`- ${left} turns left: the story is in its last stretch. Stop opening new big threads, resolve the side threads and keep the main mission in view: count the scenes it still needs and, if that is more than ${left - 2}, compress (skip travel, merge steps) so it reaches its decisive moment in time.`);
+  }
   return lines;
 }
 
@@ -173,6 +186,7 @@ export function renderRequest(r) {
     lines.push('## The story had ended and the player chose to continue');
     lines.push(`- The last turn below was the ending${r.resumed.died ? ', and the hero fell' : ''}. The player does not want the story to stop there. Continue it now (see "Continuing after an ending").`);
     if (r.resumed.died) lines.push('- The hero is alive again in the state (hit points are what they have now). Explain in the story how they got back.');
+    if (clean(r.resumed.note, 500)) lines.push(`- The player says how they want it to go on: "${clean(r.resumed.note, 500)}". This is also the player's action below. Treat it as a wish for the direction of the new chapter, not a literal command: make it happen as far as the world, the hero's state and the tone allow, and keep everything consistent with the cast, places and facts.`);
     lines.push('');
   }
   if (r.kind !== 'start') {

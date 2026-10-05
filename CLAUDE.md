@@ -93,13 +93,24 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   (`NARRATION`, `pacingLines`); het verzoek bevat `pacing {turn, total}` (opening = 0). Bij beurt ≥ total zegt het
   verzoek "THE END IS DUE" en eindigt de verteller met `gameOver: true`; bij onbeperkt rondt hij nooit zelf af.
   Oude avonturen (zonder `arc`) zijn onbeperkt en krijgen normale tekstlengte. Aanleiding: verhalen voelden langdradig.
-  **Einde tijdens het spelen** (`adv.endPlan {total, from}`, `setTurnsLeft`, `turnsLeft`, `endTotal` in game.ts): onder de
-  levensbalk in Story staat "Einde: nog N beurten"; tikken opent een paneel (Afsluiten = volgende beurt is het einde,
-  3/5/10/20, stepper, Onbeperkt; bewust zonder tekstveld). Overschrijft de lengte van het startscherm, werkt ook bij
+  **Einde tijdens het spelen** (`adv.endPlan {total, from}`, `setTurnsLeft`, `turnsLeft`, `endTotal` in game.ts): het aantal
+  beurten tot het einde staat **nooit in de standaardweergave** (afleidend van het verhaal). Het icoon "scroll" rechtsboven in Story
+  opent een paneel met "Einde: nog N beurten" en de keuze (Afsluiten = volgende beurt is het einde, 3/5/10/20, stepper,
+  Onbeperkt; bewust zonder tekstveld; `TurnsPicker` in StoryScreen). Overschrijft de lengte van het startscherm, werkt ook bij
   onbeperkte of oude avonturen. `pacing.from` laat de verteller vanaf dat moment een slotstuk bouwen (geen reset).
-  **Toch doorgaan** (`resumeStory`, `resume` in turns.tsx): op de eindkaart; zet `ended` terug, geen vast einde meer
-  (`endPlan` onbeperkt), een gevallen held (0 leven) komt terug met half leven, en de app start meteen een beurt met
-  `RESUME_ACTION`. Alleen die eerste beurt krijgt `resumed {died}` in het verzoek (prompt: Continuing after an ending).
+  **Het einde is een richtlijn, geen muur** (`pacingLines`, `END_GRACE` = 2 in `rpg/lib.mjs`): de verteller begint al bij ≤ 6 beurten
+  (of het laatste derde) af te bouwen, telt elke beurt hoeveel scenes de missie nog nodig heeft en kort dat in (reisdelen overslaan,
+  stappen samenvoegen), mag bij ≤ 3 beurten vroeg afsluiten als de missie al af is, en maakt een lopende missie op de eindbeurt
+  af in plaats van hem af te kappen. Staat het beslissende moment er echt middenin, dan mag het einde 1 of 2 beurten schuiven
+  (nooit verder dan `total + END_GRACE`: dan "NO EXTRA TURNS LEFT"); afsluiten blijft de standaard. De verteller houdt in `summary`
+  één zin over hoe het hoofddoel moet aflopen. Aanleiding: nog midden in een missie met 1 beurt over; Joshua voegde zelf 3 beurten toe.
+  **Toch doorgaan** (`resumeStory(adv, {note, turns})`, `resume(id, opts)` in turns.tsx): op de eindkaart; zet `ended` terug, een
+  gevallen held (0 leven) komt terug met half leven, en de app start meteen een beurt. Optioneel (alles mag leeg): een tekst
+  "Hoe wil je verder?" (`note`, ≤ 400 tekens, wordt de actie in het verhaal én `resumed.note` in het verzoek: de verteller ziet het
+  als wens voor de richting van het nieuwe hoofdstuk) en een aantal beurten (min. `MIN_RESUME_TURNS` = 3, `TurnsPicker`; standaard
+  Onbeperkt = geen vast einde). De hervatbeurt zelf telt niet mee: `endPlan.total = gespeeld + 1 + n`. Invoer op de eindkaart is een
+  `Field` in de Story-ScrollView (`useKeyboardReveal` + `RevealCtx`), concept via `useDraft` (`doorgaan-<id>`). Alleen die eerste
+  beurt krijgt `resumed {died, note?}` in het verzoek (prompt: Continuing after an ending).
 - **Krachten en zwaktes uit het verhaal** (`state.traits`, zichtbaar op het heldenscherm onder Joshua's eigen tekst,
   zonder cijfers): verteller geeft `changes.addTraits` (naam, kracht|zwakte, korte uitleg) en `removeTraits`; zelfde
   naam = bijwerken. Bij een nieuwe kracht mag hij één nieuwe verborgen eigenschap toevoegen. Oude avonturen

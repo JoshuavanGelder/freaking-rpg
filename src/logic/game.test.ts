@@ -28,6 +28,10 @@ import {
   parseAnswer,
   regenAmount,
   resumeStory,
+  cleanResumeNote,
+  MIN_RESUME_TURNS,
+  MAX_TURNS_MORE,
+  RESUME_NOTE_MAX,
   RESUME_ACTION,
   rollD20,
   setTurnsLeft,
@@ -299,7 +303,7 @@ test('afgesloten verhaal toch voortzetten: overwinning', () => {
   adv = applyAnswer(adv, makePending('turn', 'a', 4), parseAnswer(raw({ gameOver: true }))!, 5);
   assert.equal(adv.ended, true);
   const hpBefore = adv.state.hp;
-  const back = resumeStory(adv, 9);
+  const back = resumeStory(adv, {}, 9);
   assert.equal(back.ended, false);
   assert.equal(back.state.hp, hpBefore); // levend: leven blijft
   assert.equal(endTotal(back), null); // geen vast einde meer
@@ -311,6 +315,40 @@ test('afgesloten verhaal toch voortzetten: overwinning', () => {
   assert.equal(buildRequest(later, makePending('turn', 'b', 12), 'sonnet').resumed, undefined);
   // Een verhaal dat niet af is blijft ongemoeid.
   assert.equal(resumeStory(later), later);
+});
+
+test('afgesloten verhaal voortzetten met een wens en een aantal beurten', () => {
+  let adv = newAdventure({ ...world, arc: 'kort' }, hero, 1, 'adv-resume-3');
+  adv = applyAnswer(adv, makePending('start', null, 2), parseAnswer(raw())!, 3);
+  adv = applyAnswer(adv, makePending('turn', 'a', 4), parseAnswer(raw({ gameOver: true }))!, 5);
+  assert.equal(adv.ended, true);
+
+  // Wens en beurten: de wens gaat netjes schoongemaakt mee, het nieuwe einde komt na het openingsstuk van het hoofdstuk.
+  const back = resumeStory(adv, { note: '  Een jaar later,\n een nieuwe dreiging.  ', turns: 5 }, 9);
+  assert.equal(back.ended, false);
+  assert.deepEqual(back.resumed, { at: 1, died: false, note: 'Een jaar later, een nieuwe dreiging.' });
+  assert.deepEqual(back.endPlan, { total: 1 + 1 + 5, from: 1 }); // 1 gespeeld + de hervatbeurt + 5 beurten
+  const req = buildRequest({ ...back, pending: null }, makePending('turn', 'Een jaar later, een nieuwe dreiging.', 10), 'sonnet');
+  assert.deepEqual(req.resumed, { died: false, note: 'Een jaar later, een nieuwe dreiging.' });
+  assert.deepEqual(req.pacing, { turn: 2, total: 7, from: 1 }); // de hervatbeurt zelf telt als beurt 2, nog 5 te gaan
+
+  // Zonder opties: zoals altijd, onbeperkt en zonder wens.
+  for (const opts of [{}, { note: '   ', turns: null }, { turns: undefined }]) {
+    const plain = resumeStory(adv, opts, 9);
+    assert.equal(endTotal(plain), null);
+    assert.deepEqual(plain.resumed, { at: 1, died: false });
+    assert.equal(buildRequest({ ...plain, pending: null }, makePending('turn', RESUME_ACTION, 10), 'sonnet').resumed?.note, undefined);
+  }
+
+  // Beurten krijgen grenzen: niet korter dan een echt hoofdstuk, niet langer dan de stepper.
+  assert.deepEqual(resumeStory(adv, { turns: 1 }).endPlan, { total: 1 + 1 + MIN_RESUME_TURNS, from: 1 });
+  assert.deepEqual(resumeStory(adv, { turns: 500 }).endPlan, { total: 1 + 1 + MAX_TURNS_MORE, from: 1 });
+  assert.equal(cleanResumeNote('x'.repeat(1000)).length, RESUME_NOTE_MAX);
+
+  // De wens hoort alleen bij de eerste beurt erna.
+  const later = applyAnswer(back, makePending('turn', 'x', 10), parseAnswer(raw())!, 11);
+  assert.equal(buildRequest(later, makePending('turn', 'b', 12), 'sonnet').resumed, undefined);
+  assert.equal(turnsLeft(later), 5); // na de hervatbeurt nog 5 beurten
 });
 
 test('afgesloten verhaal toch voortzetten: gevallen held komt terug met de helft', () => {

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { classify, effortFor, extractJson, langOf, msg, parseCliOutput, pendingIds, pickUsage, renderRequest, soundLines, validId } from './lib.mjs';
+import { END_GRACE, classify, effortFor, extractJson, langOf, msg, parseCliOutput, pendingIds, pickUsage, renderRequest, soundLines, validId } from './lib.mjs';
 
 const world = { setting: 'Superhelden', tones: ['Humoristisch', 'Rauw'], wishes: 'geen spinnen' };
 const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger', heroLook: 'lanky teen in a red hoodie' };
@@ -72,12 +72,34 @@ test('lengte van het avontuur: opening, onderweg, laatste beurten en het einde',
   const turn = (n, total = 12) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total }, action: 'x' });
   assert.match(renderRequest({ kind: 'start', world, hero, pacing: { turn: 0, total: 12 } }), /about 12 turns[\s\S]*this is the opening/);
   assert.match(turn(3), /turn 3 of about 12/);
-  assert.doesNotMatch(turn(3), /THE END IS DUE|last third|turns left/);
-  assert.match(turn(8), /last third/);
+  assert.doesNotMatch(turn(3), /THE END IS DUE|last stretch|turns left/);
+  assert.doesNotMatch(turn(5), /last stretch/); // 7 beurten over: nog gewoon onderweg
+  assert.match(turn(6), /6 turns left: the story is in its last stretch/); // al ruim op tijd beginnen met afbouwen
+  assert.match(turn(8), /last stretch/);
   assert.match(turn(10), /2 turns left after this one: you are in the climax/);
   assert.match(turn(11), /ONE turn left/);
   assert.match(turn(12), /THE END IS DUE/);
   assert.match(turn(15), /THE END IS DUE/); // te laat: het einde blijft "nu"
+});
+
+test('de verteller telt de missie mee: inkorten, vroeg afsluiten en nooit midden in iets stoppen', () => {
+  const turn = (n, total = 12) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total }, action: 'x' });
+  // Het aantal beurten is een richtlijn, geen muur.
+  assert.match(turn(3), /a guide, not a wall/);
+  // Vanaf de laatste stukken: tel de scenes die de missie nog nodig heeft en bouw dat zo nodig in.
+  assert.match(turn(6), /count the scenes it still needs[\s\S]*compress/);
+  assert.match(turn(10), /count the scenes it still needs[\s\S]*compress/);
+  assert.match(turn(10), /already resolved, you may end the story now/);
+  assert.match(turn(11), /mission the hero is on must reach its decisive moment now/);
+  // De eindbeurt maakt een lopende missie af in plaats van hem af te kappen.
+  assert.match(turn(12), /finish it in this turn by compressing what is left/);
+  // Een beetje speling (END_GRACE): het einde mag 1 of 2 beurten schuiven, maar nooit verder.
+  assert.equal(END_GRACE, 2);
+  assert.match(turn(12), /story ends at turn 14 at the latest/);
+  assert.match(turn(13), /story ends at turn 14 at the latest/);
+  assert.match(turn(14), /NO EXTRA TURNS LEFT/);
+  assert.doesNotMatch(turn(14), /one more turn/);
+  assert.match(turn(20), /NO EXTRA TURNS LEFT/);
 });
 
 test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => {
@@ -86,8 +108,8 @@ test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => 
   const t = turn(41, 60, 40);
   assert.match(t, /decided at turn 40 that the story should end at turn 60/);
   assert.match(t, /turn 41 of about 60/);
-  assert.doesNotMatch(t, /last third|THE END IS DUE/);
-  assert.match(turn(52, 60, 40), /last third/); // 12 van 20 beurten gespeeld
+  assert.doesNotMatch(t, /last stretch|THE END IS DUE/);
+  assert.match(turn(52, 60, 40), /last stretch/); // 12 van 20 beurten gespeeld
   assert.match(turn(58, 60, 40), /2 turns left after this one/);
   assert.match(turn(60, 60, 40), /THE END IS DUE/);
   // Vanaf de start (from 0) geen "decided"-regel.
@@ -104,6 +126,11 @@ test('verhaal hervat na het einde: aparte instructie, ook bij een gevallen held'
   assert.match(died, /the hero fell/);
   assert.match(died, /alive again/);
   assert.doesNotMatch(renderRequest(base), /chose to continue/);
+  // Zonder wens geen regel daarover; met een wens staat die erbij als richting voor het nieuwe hoofdstuk.
+  assert.doesNotMatch(won, /says how they want it to go on/);
+  const wish = renderRequest({ ...base, action: 'Een jaar later, een nieuwe dreiging.', resumed: { died: false, note: 'Een jaar later, een nieuwe dreiging.' } });
+  assert.match(wish, /says how they want it to go on: "Een jaar later, een nieuwe dreiging\."/);
+  assert.match(wish, /wish for the direction of the new chapter/);
 });
 
 test('onbeperkt avontuur (of oud avontuur): de verteller rondt zelf niets af', () => {

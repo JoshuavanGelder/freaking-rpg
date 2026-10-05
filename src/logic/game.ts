@@ -2,7 +2,7 @@
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
 import { DEFAULT_LANG, langOf, t, textLengthKey, arcKey, type Key, type Lang } from '../i18n.ts';
 import { parseSound, planSound, wordCount, currentAmbience, currentMood } from './sound.ts';
-import type { Adventure, Answer, Arc, Attribute, CanonUpdate, Canon, CastMember, CastUpdate, GameState, Heal, PersonStatus, Place, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
+import type { Adventure, Answer, Arc, Attribute, CanonUpdate, Canon, CastMember, CastUpdate, EndPlan, GameState, Heal, PersonStatus, Place, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
@@ -88,16 +88,30 @@ export const MAX_TURNS_MORE = 99;
 export const RESUME_ACTION = t('nl', 'action.resume');
 export const resumeAction = (lang: Lang = DEFAULT_LANG) => t(lang, 'action.resume');
 
+/** Kortste voortzetting met een nieuw einde: minder dan dit is geen hoofdstuk meer. */
+export const MIN_RESUME_TURNS = 3;
+export const RESUME_NOTE_MAX = 400;
+
+/** Wat de speler kan opgeven als hij een afgesloten verhaal voortzet: hoe het verder moet en hoeveel beurten hij nog wil (null of weg = onbeperkt). */
+export type ResumeOptions = { note?: string; turns?: number | null };
+
+/** De tekst waarmee de speler zegt hoe het verder moet: één regel, niet te lang. Leeg = niets opgegeven. */
+export const cleanResumeNote = (note: string | undefined): string => (note ?? '').replace(/\s+/g, ' ').trim().slice(0, RESUME_NOTE_MAX);
+
 /**
- * Een afgesloten verhaal toch voortzetten: zonder vast einde (de speler kan er later weer een kiezen).
- * Een gevallen held komt terug met de helft van zijn leven; de verteller bedenkt hoe dat in het verhaal kan.
+ * Een afgesloten verhaal toch voortzetten: standaard zonder vast einde (de speler kan er later weer een kiezen), of met
+ * `turns` beurten erna waarna de verteller weer afsluit (de beurt waarmee het nieuwe hoofdstuk opent telt niet mee).
+ * `note` zegt hoe het verder moet. Een gevallen held komt terug met de helft van zijn leven; de verteller bedenkt hoe dat in het verhaal kan.
  */
-export function resumeStory(adv: Adventure, now = Date.now()): Adventure {
+export function resumeStory(adv: Adventure, opts: ResumeOptions = {}, now = Date.now()): Adventure {
   if (!adv.ended) return adv;
   const died = adv.state.hp <= 0;
   const at = turnCount(adv);
   const hp = died ? Math.max(1, Math.ceil(adv.state.maxHp / 2)) : adv.state.hp;
-  return { ...adv, ended: false, state: { ...adv.state, hp }, endPlan: { total: null, from: at }, resumed: { at, died }, error: null, updatedAt: now };
+  const note = cleanResumeNote(opts.note);
+  const more = typeof opts.turns === 'number' && Number.isFinite(opts.turns) ? Math.min(MAX_TURNS_MORE, Math.max(MIN_RESUME_TURNS, Math.round(opts.turns))) : null;
+  const endPlan: EndPlan = { total: more === null ? null : at + 1 + more, from: at };
+  return { ...adv, ended: false, state: { ...adv.state, hp }, endPlan, resumed: { at, died, ...(note ? { note } : {}) }, error: null, updatedAt: now };
 }
 
 /** De speler kiest hoeveel beurten hij nog wil spelen (1 = de volgende beurt is het einde). null = onbeperkt. */
@@ -263,7 +277,7 @@ export function buildRequest(adv: Adventure, pending: Pending, model: string, la
     roll: pending.roll,
     // Beurt die nu geschreven wordt (de opening is 0) en de gekozen lengte, zodat de verteller naar een einde kan toewerken.
     pacing: { turn: pending.kind === 'start' ? 0 : turnCount(adv) + 1, total: endTotal(adv), from: adv.endPlan?.from ?? 0 },
-    ...(pending.kind === 'turn' && adv.resumed && adv.resumed.at === turnCount(adv) ? { resumed: { died: adv.resumed.died } } : {}),
+    ...(pending.kind === 'turn' && adv.resumed && adv.resumed.at === turnCount(adv) ? { resumed: { died: adv.resumed.died, ...(adv.resumed.note ? { note: adv.resumed.note } : {}) } } : {}),
     ...(sound ? { sound: { ambience: currentAmbience(adv.turns), mood: currentMood(adv.turns) } } : {}),
   };
 }

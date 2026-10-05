@@ -7,7 +7,7 @@ import * as gh from './services/github';
 import { fetchClaudeStatus } from './services/status';
 import { responseHealth, type ClaudeHealth } from './logic/status';
 import { addUsage } from './logic/usage';
-import { applyAnswer, buildRequest, makePending, newAdventure, parseAnswer, resumeAction, resumeStory, storyLang } from './logic/game';
+import { applyAnswer, buildRequest, cleanResumeNote, makePending, newAdventure, parseAnswer, resumeAction, resumeStory, storyLang, type ResumeOptions } from './logic/game';
 import { tt } from './i18n';
 import type { Adventure, Hero, Pending, TurnError, TurnErrorKind, TurnResponse, World } from './logic/types';
 
@@ -19,7 +19,7 @@ type TurnCtx = {
   phase: Record<string, Phase>;
   startAdventure: (world: World, hero: Hero) => string;
   act: (id: string, action: string) => void;
-  resume: (id: string) => void;
+  resume: (id: string, opts?: ResumeOptions) => void;
   retry: (id: string) => void;
   dismiss: (id: string) => void;
 };
@@ -243,11 +243,13 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
         setTimeout(() => run(id), 0);
         checkWarm(true);
       },
-      resume: (id) => {
+      resume: (id, opts) => {
         // Afgesloten verhaal toch voortzetten: meteen een beurt starten, zodat de keuzes er weer zijn.
+        // Zei de speler hoe het verder moet, dan is dat zijn actie (te zien in het verhaal); anders de standaardzin.
         const a = getAdv(id);
         if (!a || !a.ended || a.pending) return;
-        patchAdventure(id, (x) => ({ ...resumeStory(x), pending: makePending('turn', resumeAction(storyLang(a))), error: null }));
+        const action = cleanResumeNote(opts?.note) || resumeAction(storyLang(a));
+        patchAdventure(id, (x) => ({ ...resumeStory(x, opts), pending: makePending('turn', action), error: null }));
         setTimeout(() => run(id), 0);
         checkWarm(true);
       },
