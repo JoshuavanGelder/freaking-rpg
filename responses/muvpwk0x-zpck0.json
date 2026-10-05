@@ -1,0 +1,75 @@
+{
+ "id": "muvpwk0x-zpck0",
+ "finishedAt": "2026-10-05T20:44:28.703Z",
+ "durationMs": 26257,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You throttle the drive down until the coolant needles sit in the green, and you seal the hull crack with tape and foam from the emergency kit. Then you plot a long, lazy arc past a passing rock so its pull does some of the work for you. It's a clean line, the kind your instructor used to draw on the board.\n\nThe days stretch out. You eat ration bars, sleep in the seat and watch the air gauge creep down. Breathing hurts less each morning.\n\nOn the third day Ceres swells in the window, grey and pitted. The air is thin and your head aches, but you made it. Ceres Control comes over the radio: the Halcyon's insurer is offering to meet you on the pad and pay on the spot.",
+  "choices": [
+   "Land at Bay Nine with Juno",
+   "Meet the insurer on the pad",
+   "Fly past Marta's lot first"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Navigation",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "klein",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Ceres approach",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. He recovered the Halcyon's recorder and nav core for Juno Reyes's salvage job, worth forty-five thousand minus her ten percent. Then he nursed the damaged skiff home on a slow, cool burn with a gravity assist, running low on air. Now he is on approach to Ceres, and the insurer is offering to pay him on the pad.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Inside a cramped battered salvage skiff cockpit, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, looking tired, a taped patch on the hull wall, gazing out at grey pitted Ceres and its glittering docking ring ahead. Soft dim cockpit lights.",
+   "fallback": "A cramped salvage skiff cockpit with a taped hull patch, its window showing grey pitted Ceres and a glittering docking ring against black space."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The Halcyon's insurer offers to pay Waren on the pad when he lands."
+   ],
+   "forgetFacts": [
+    "Waren is back aboard Juno's skiff with the recorder and nav core."
+   ],
+   "time": "seventh day, Ceres approach"
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "calm",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3021,
+  "cacheRead": 32180,
+  "cacheWrite": 6671,
+  "costUsd": 0.1202,
+  "apiMs": 25468,
+  "numTurns": 3
+ }
+}
