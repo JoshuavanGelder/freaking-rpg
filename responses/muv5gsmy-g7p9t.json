@@ -1,0 +1,78 @@
+{
+ "id": "muv5gsmy-g7p9t",
+ "finishedAt": "2026-10-05T11:12:04.395Z",
+ "durationMs": 8916,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De uienman heet Gerrit en beweert dat hij het robotpak niet zelf wilde laten rovers."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [
+   {
+    "name": "De uienman",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Heet Gerrit; vertelt zijn uienverhaal terwijl de robot piept.",
+    "companion": ""
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Plein voor de Stadsbank",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Vraag hoe je de robot uitzet",
+   "Spurt naar de robot en rem hem",
+   "Vraag wie hem de robot gaf"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A rainy plaza in front of a grand city bank at dusk, a giant clunky robot walker looming and beeping in the background, wet cobblestones, glowing streetlights."
+  },
+  "narration": "\"Gerrit,\" stelt hij zich voor, terwijl je hem neerzet. \"Ik bak uien. Mijn robot was bedoeld om frituurvet te bezorgen! Maar iemand heeft mijn mandje... herprogrammeerd. Ik hoefde alleen maar stuurknuppel te zeggen, en toen liep hij naar de bank.\" Hij snuft. \"Ik wilde alleen een pizza-achtige ui verkopen.\" Boven jullie piept de robot steeds sneller.",
+  "portrait": "",
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, rende naar de Stadsbank, klom in de robot en trok de bestuurder, uienbakker Gerrit, eruit. Gerrit zegt dat iemand zijn frituurmandje herprogrammeerde en de robot de bank in stuurde. De robot is nog actief en piept alarmerend.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 998,
+  "cacheRead": 11405,
+  "cacheWrite": 2562,
+  "costUsd": 0.0225,
+  "apiMs": 8040,
+  "numTurns": 2
+ }
+}
