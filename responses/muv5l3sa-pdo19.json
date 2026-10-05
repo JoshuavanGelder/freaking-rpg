@@ -1,0 +1,75 @@
+{
+ "id": "muv5l3sa-pdo19",
+ "finishedAt": "2026-10-05T11:15:30.269Z",
+ "durationMs": 14173,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je laat Gerrit en zijn sorry's achter en flitst door de natte straten naar je trainingsplek: een verlaten parkeerdak boven een snackbar. Op je trainingspaal zit een briefje, vastgeplakt met frituurvet: \"Leuk geprobeerd, Quick. Ik kijk mee. – Het Mandje.\" Het ruikt naar ui.",
+  "choices": [
+   "Onderzoek het briefje op aanwijzingen",
+   "Sprint rond het dak op zoek naar de schrijver",
+   "Vraag de snackbareigenaar wie hier was"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [
+    "Vettig briefje van Het Mandje"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Trainingsplek op parkeerdak",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, haalde uienbakker Gerrit uit het robotpak dat de Stadsbank overviel, zette de robot uit en bracht het geld terug. Gerrit zegt dat iemand zijn mandje herprogrammeerde. Bart gaat naar zijn trainingsplek en vindt een briefje van 'Het Mandje', die hem in de gaten houdt. De dader blijft onbekend.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Rainy rooftop parking deck at night, a training pole with a greasy note taped to it, city lights behind, humorous epic",
+   "fallback": "Empty rooftop parking deck at night in light rain, city skyline glowing in the distance."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Trainingsplek",
+     "detail": "Verlaten parkeerdak boven een snackbar in Nieuw-Rotterdam."
+    }
+   ],
+   "facts": [
+    "Een briefje getekend 'Het Mandje' zegt dat iemand Bart in de gaten houdt."
+   ],
+   "forgetFacts": [],
+   "time": "nacht, eerste dag"
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2066,
+  "cacheRead": 25759,
+  "cacheWrite": 4205,
+  "costUsd": 0.0426,
+  "apiMs": 13190,
+  "numTurns": 3
+ }
+}
