@@ -1,0 +1,68 @@
+{
+ "id": "muv5nfps-3dut7",
+ "finishedAt": "2026-10-05T11:17:13.990Z",
+ "durationMs": 8270,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Gerrit herkent de vettige vingerafdruk en weet wie bij zijn frituurkraam kwam."
+   ],
+   "forgetFacts": [],
+   "time": "nacht, eerste dag"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Plein voor de Stadsbank",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Snelheid",
+   "dc": 10,
+   "success": true
+  },
+  "choices": [
+   "Ga naar de kraam van Gerrit",
+   "Houd de vingerafdruk onder Gerrits neus",
+   "Vraag Gerrit mee te helpen zoeken"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "Rainy bank plaza at night, a large silent clunky robot sitting on the wet stones, onion smoke drifting under street lamps."
+  },
+  "narration": "Je bent er in een flits. Gerrit zit nog naast de stille robot en zegt sorry tegen een uitje. Je tilt hem bij zijn schort omhoog. \"Wie kwam bij je kraam? Wie raakte je mandje aan?\"\n\nHij zweet. \"Een man met vette handschoenen... en een kerstmuts. In juli.\" Hij slikt. \"Hij betaalde met een briefje. Een vettig briefje.\"",
+  "portrait": "\"\"",
+  "summary": "Bart Quick versloeg het uienrobotpak van Gerrit en bracht het bankgeld terug. Gerrit zegt dat iemand zijn mandje herprogrammeerde. Bart vond een briefje van 'Het Mandje' met vettige vingerafdruk; de loopband is kapot. Nu verhoort Bart Gerrit: een man met vette handschoenen en kerstmuts kwam bij zijn kraam.",
+  "title": "\"\""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 945,
+  "cacheRead": 11405,
+  "cacheWrite": 3018,
+  "costUsd": 0.0238,
+  "apiMs": 7471,
+  "numTurns": 2
+ }
+}
