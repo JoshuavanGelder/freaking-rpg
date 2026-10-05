@@ -1,0 +1,79 @@
+{
+ "id": "muvmr2jd-s48ds",
+ "finishedAt": "2026-10-05T19:16:17.008Z",
+ "durationMs": 28837,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You key the open channel and keep your voice flat. \"Skiff on the pad, starboard strut gone. I need anchors on the port side, now. Nobody near the starboard edge.\"\n\nA gravelly voice answers. \"Copy, pilot. Hold her steady.\" Three suited figures crouch low and haul cable from the hab lock. They spike two ground anchors into the rock and snap the lines onto your port tie-downs. The cables go taut and the skiff groans, then settles. It's crooked, but it's not going anywhere.\n\nYou kill the engines. Your hands are shaking now that they're allowed to.\n\nThe crew unloads the white crate and hurries it inside. A minute later your comm blinks. It's Bay Nine, Juno Reyes, and she has already seen the telemetry.",
+  "choices": [
+   "Answer Juno and own the strut",
+   "Inspect the damage before answering",
+   "Ask the hab crew for repair help"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [
+    "Occator Ridge medical crate"
+   ],
+   "addQuests": [],
+   "completeQuests": [
+    "Medicine run to Occator Ridge"
+   ],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender, freed eleven refugees and filed an informant claim (payout months away). He took Juno Reyes's three-hundred-credit medicine run to Occator Ridge, landed blind in the dust and broke the weak starboard strut. The hab crew anchored the tilting skiff and took the medicine inside. Now Juno is calling after seeing the telemetry. His pay and the steady work she promised depend on that call.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Stubby courier skiff with a scarred belly tilted on a narrow ledge pad on a grey crater wall on Ceres, held by taut cables to rock anchors, suited crew carrying a white crate to a hab airlock, settling grey dust, black starry sky.",
+   "fallback": "Narrow landing ledge on a grey crater wall on Ceres, taut cables anchored into rock, a hab airlock glowing softly, settling dust under a black starry sky."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The skiff is anchored on the Occator Ridge pad with a broken starboard strut."
+   ],
+   "forgetFacts": [
+    "The skiff's starboard strut broke on landing at Occator Ridge; the skiff is tilting on the ledge."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "calm",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3234,
+  "cacheRead": 31229,
+  "cacheWrite": 5842,
+  "costUsd": 0.1177,
+  "apiMs": 28057,
+  "numTurns": 3
+ }
+}
