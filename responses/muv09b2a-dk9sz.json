@@ -1,0 +1,66 @@
+{
+ "id": "muv09b2a-dk9sz",
+ "finishedAt": "2026-10-05T08:46:18.941Z",
+ "durationMs": 10589,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Stadsbank, Nieuw-Rotterdam",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Snelheid",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Rukt de robotarm los",
+   "Zoek de bestuurder in de cockpit",
+   "Vraag beleefd of hij wil stoppen"
+  ],
+  "title": "",
+  "narration": "Je springt. Het dak verdwijnt, de straat wordt een veeg, en een knal achter je laat acht ruiten trillen. Binnen een oogwenk hang je aan de metalen arm van de robot, die verbaasd piept.\n\n\"Wie... wat... ?\" kraakt een stem uit de helm, vol uiendamp. Een zak bankgeld bungelt aan zijn klauw. Je sneakers hangen een meter boven de grond, en de robot zwaait alsof hij een mug wil wegslaan.",
+  "summary": "Bart Quick, jonge speedster in Nieuw-Rotterdam, sprint van het pizzeriadak naar de Stadsbank en grijpt de arm van de robotdief, die naar gebakken ui ruikt. Hij kent zijn krachten nog niet goed.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, broad shoulders, clinging to the arm of a giant clunky robot walker in front of a city bank at dusk, motion streaks and swirling rain behind him, humorous epic",
+   "fallback": "A grand city bank entrance at dusk with wet street, glowing streetlights and rain, skyscrapers behind."
+  },
+  "heroLook": "",
+  "portrait": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1057,
+  "cacheRead": 11405,
+  "cacheWrite": 1658,
+  "costUsd": 0.0195,
+  "apiMs": 9813,
+  "numTurns": 2
+ }
+}
