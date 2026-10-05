@@ -1,0 +1,77 @@
+{
+ "id": "muvmvoro-gpdts",
+ "finishedAt": "2026-10-05T19:19:53.385Z",
+ "durationMs": 28750,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Tell me about the salvage run.\"\n\nJuno exhales. \"There's an ore freighter called the Halcyon. She broke up three months ago in a rock field out in the deep belt. Her insurer will pay forty-five thousand to whoever brings back her flight recorder and nav core. They want to know whether it was the crew or the ship.\"\n\n\"Why don't you take it?\"\n\n\"Because the wreck is still tumbling, and the field around it is full of her own debris. I sent a pilot out there in the spring. He came home, but his skiff didn't.\" Her voice stays even. \"I'll lend you a salvage skiff. The insurer pays you and I take ten percent. You'd leave once the strut's fixed.\"\n\nAfter her cut, that's the Kestrel.",
+  "choices": [
+   "Take the Halcyon job, no hesitation",
+   "Ask what happened to her last pilot",
+   "Take the steady ridge contract instead"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 2,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. His job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender, freed eleven refugees and filed an informant claim, but any payout is months away. He flew Juno Reyes's medicine run to Occator Ridge, broke the skiff's weak strut on landing and owned up to it. Juno paid him in full. She has offered him a weekly ridge contract, or a deep belt salvage run: an insurer pays forty-five thousand for the wrecked freighter Halcyon's flight recorder and nav core, and Juno takes ten percent.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A crooked courier skiff anchored by cables on a dusty ledge on a grey crater wall on Ceres. In the cockpit a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, listens intently to a comm screen. Dim cockpit glow.",
+   "fallback": "A crooked courier skiff anchored by cables on a dusty grey ledge jutting from a crater wall, black starry sky, faint lights of a mining hab nearby."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The Halcyon's insurer pays forty-five thousand for her flight recorder and nav core.",
+    "Juno would lend a salvage skiff for the Halcyon job and take ten percent.",
+    "Juno's last pilot on the Halcyon run lost his skiff but survived."
+   ],
+   "forgetFacts": [
+    "Juno knows of a high-paying deep belt salvage run she won't fly herself."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3249,
+  "cacheRead": 31341,
+  "cacheWrite": 5903,
+  "costUsd": 0.1185,
+  "apiMs": 27966,
+  "numTurns": 3
+ }
+}
