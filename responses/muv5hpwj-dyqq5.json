@@ -1,0 +1,68 @@
+{
+ "id": "muv5hpwj-dyqq5",
+ "finishedAt": "2026-10-05T11:12:50.787Z",
+ "durationMs": 12882,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Uitzetten?\" Gerrit wordt bleek. \"Je moet het mandje driemaal schudden, dan 'sorry' zeggen tegen de frituurpan. Maar het mandje zit nog in de robot!\" Hij wijst omhoog. Het pak piept nu als een kookwekker die vlak voor de uitslag staat. Een dun rookpluimpje ruikt naar ui.",
+  "choices": [
+   "Spring erheen en schud het mandje",
+   "Zeg zelf 'sorry' tegen de robot",
+   "Vraag Gerrit om een noodknop"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Bart Quick, speedster in Nieuw-Rotterdam, trok uienbakker Gerrit uit het robotpak dat de Stadsbank overviel. Gerrit zegt dat iemand zijn frituurmandje herprogrammeerde. Uitzetten kan door het mandje driemaal te schudden en 'sorry' te zeggen tegen de frituurpan, maar het mandje zit nog in de piepende robot.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "giant clunky robot walker piping with smoke in front of a city bank plaza at dusk, rain",
+   "fallback": "city bank plaza at dusk with light rain and wet pavement"
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Robot uitzetten: mandje driemaal schudden en 'sorry' zeggen tegen de frituurpan."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 1828,
+  "cacheRead": 25566,
+  "cacheWrite": 3736,
+  "costUsd": 0.0383,
+  "apiMs": 11879,
+  "numTurns": 3
+ }
+}
