@@ -1,0 +1,146 @@
+{
+ "id": "muv5nfps-3dut7",
+ "createdAt": "2026-10-05T11:17:03.184Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "world": {
+  "setting": "Superhelden",
+  "settingText": "",
+  "tones": [
+   "Humoristisch",
+   "Episch"
+  ],
+  "toneText": "",
+  "wishes": "",
+  "textLength": "normaal",
+  "arc": "middel"
+ },
+ "hero": {
+  "name": "Bart Quick",
+  "className": "Speedster",
+  "powers": "Hij kan ongeveer 2 keer de snelheid van het geluid maar er is mogelijkheid voor groei en hij kan ook in slow motion zien, hiernaast kan hij ook allemaal dingen door zijn snelheid maar dit moet hij nog grotendeels uitvogelen",
+  "looks": "Giga chad",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 65,
+  "level": 1,
+  "location": "Trainingsplek op parkeerdak",
+  "attributes": [
+   {
+    "name": "Snelheid",
+    "value": 5
+   },
+   {
+    "name": "Reflexen",
+    "value": 4
+   },
+   {
+    "name": "Kracht",
+    "value": 2
+   },
+   {
+    "name": "Uithoudingsvermogen",
+    "value": 2
+   },
+   {
+    "name": "Controle",
+    "value": 1
+   }
+  ],
+  "inventory": [
+   "Vettig briefje van Het Mandje"
+  ],
+  "quests": [
+   {
+    "title": "Stop de bankroof",
+    "detail": "Houd de robotdief bij de Stadsbank tegen.",
+    "done": true
+   },
+   {
+    "title": "Wie herprogrammeerde het mandje?",
+    "detail": "Zoek de dader achter de robotoverval.",
+    "done": false
+   }
+  ],
+  "traits": [
+   {
+    "name": "Slow-motion zicht",
+    "kind": "kracht",
+    "detail": "Bart ziet de wereld vertraagd als hij zich concentreert."
+   }
+  ]
+ },
+ "summary": "Bart Quick, speedster in Nieuw-Rotterdam, haalde uienbakker Gerrit uit het robotpak dat de Stadsbank overviel, zette de robot uit en bracht het geld terug. Gerrit zegt dat iemand zijn mandje herprogrammeerde. Op zijn trainingsplek vond Bart een briefje van 'Het Mandje'. Zijn loopband-experiment ging fout: de band is kapot, het briefje ligt in frituurvet met een half vettige vingerafdruk. De dader blijft onbekend.",
+ "cast": [
+  {
+   "name": "De uienman",
+   "look": "middle-aged man, stocky and sweaty, round face, messy thinning hair, wearing an apron printed with onion rings",
+   "role": "bestuurder van het robotpak",
+   "note": "Heet Gerrit; vertelt zijn uienverhaal terwijl de robot piept."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Nieuw-Rotterdam",
+    "detail": "Grote havenstad vol wolkenkrabbers, waar Bart woont en patrouilleert."
+   },
+   {
+    "name": "Stadsbank",
+    "detail": "Imposante bank in het centrum, nu overvallen door een robotdief."
+   },
+   {
+    "name": "Trainingsplek",
+    "detail": "Verlaten parkeerdak boven een snackbar in Nieuw-Rotterdam."
+   }
+  ],
+  "facts": [
+   "De bankrover draagt een groot robotpak dat naar gebakken ui ruikt.",
+   "De uienman heet Gerrit en beweert dat hij het robotpak niet zelf wilde laten rovers.",
+   "Robot uitzetten: mandje driemaal schudden en 'sorry' zeggen tegen de frituurpan.",
+   "De robot is uitgezet en zit stil op het plein voor de Stadsbank.",
+   "Het bankgeld is teruggebracht naar de Stadsbank; de herprogrammeerder van het mandje is nog onbekend.",
+   "Een briefje getekend 'Het Mandje' zegt dat iemand Bart in de gaten houdt.",
+   "Op het briefje zit een half weggesmeerde vettige vingerafdruk; de loopband is kapot."
+  ],
+  "time": "nacht, eerste dag"
+ },
+ "recent": [
+  {
+   "action": "Luister eerst naar het uienverhaal",
+   "narration": "\"Gerrit,\" stelt hij zich voor, terwijl je hem neerzet. \"Ik bak uien. Mijn robot was bedoeld om frituurvet te bezorgen! Maar iemand heeft mijn mandje... herprogrammeerd. Ik hoefde alleen maar stuurknuppel te zeggen, en toen liep hij naar de bank.\" Hij snuft. \"Ik wilde alleen een pizza-achtige ui verkopen.\" Boven jullie piept de robot steeds sneller."
+  },
+  {
+   "action": "Vraag hoe je de robot uitzet",
+   "narration": "\"Uitzetten?\" Gerrit wordt bleek. \"Je moet het mandje driemaal schudden, dan 'sorry' zeggen tegen de frituurpan. Maar het mandje zit nog in de robot!\" Hij wijst omhoog. Het pak piept nu als een kookwekker die vlak voor de uitslag staat. Een dun rookpluimpje ruikt naar ui."
+  },
+  {
+   "action": "Spring erheen en schud het mandje",
+   "narration": "Je spurt. De wereld vertraagt, en jij ziet het mandje liggen, trillend naast de frituurpan in de buik van de robot. Je grijpt het. Eén, twee, drie keer schudden, sneller dan een kolibrie met koffie. \"Sorry,\" zeg je plechtig tegen de frituurpan.\n\nDe pan sist beschaamd. De robot zucht, zakt door zijn knieën en gaat zitten als een vermoeide olifant. De zak bankgeld glijdt uit zijn klauw, recht voor Gerrits voeten.\n\nHet plein is stil. Alleen de regen tikt nog op het metaal. Het ruikt naar ui.",
+   "picture": "Extremely muscular, impossibly handsome young man in his twenties, short dark hair, strong jaw, fitted white t-shirt, jeans and sneakers, shaking a fry basket inside the open belly of a giant clunky robot walker, motion blur, steam and onion smoke, bank plaza at dusk in rain, humorous epic"
+  },
+  {
+   "action": "Breng het geld terug naar de bank",
+   "narration": "Je flitst met de zak de bank in en zet hem op de balie, voordat de baliemedewerker zijn pen heeft laten vallen. \"Alles er nog?\" vraag je. Hij telt, knikt sprakeloos en ruikt aan zijn mouw. Ui. Buiten hoor je Gerrit nog zachtjes sorry zeggen tegen de robot."
+  },
+  {
+   "action": "Gerrit mag het lekker zelf uitvogelen, ik ga naar mijn trainingsplek",
+   "narration": "Je laat Gerrit en zijn sorry's achter en flitst door de natte straten naar je trainingsplek: een verlaten parkeerdak boven een snackbar. Op je trainingspaal zit een briefje, vastgeplakt met frituurvet: \"Leuk geprobeerd, Quick. Ik kijk mee. – Het Mandje.\" Het ruikt naar ui."
+  },
+  {
+   "action": "Ik ga op mijn loopband trainen en laat mijn scanners uitvogelen wie het heeft geplakt",
+   "narration": "Je zet de loopband op topsnelheid en laat je slow-motion-blik over het briefje glijden. Maar je rent zo hard dat de band begint te roken en het briefje van de paal waait. Het landt in een plas frituurvet. Je ziet alleen een vettige vingerafdruk, half weggesmeerd, en je ruikt ui.\n\nDe loopband geeft een droevig piepje en geeft de geest."
+  }
+ ],
+ "action": "Ga terug naar Gerrit en verhoor hem",
+ "roll": 13,
+ "pacing": {
+  "turn": 10,
+  "total": 25,
+  "from": 0
+ }
+}
