@@ -1,0 +1,73 @@
+{
+ "id": "muvn1j4g-c4ntg",
+ "finishedAt": "2026-10-05T19:24:19.918Z",
+ "durationMs": 23667,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You hold the skiff at a safe distance and let the scanner sweep the wreck. The aft section's spin is steady, which is the only good news. The recorder bay hatch is buckled shut, so you'll need the cutting arm. A twisted hull plate the size of a hangar door is caught in the same tumble, and it sweeps across the bay a few seconds after the hatch passes.\n\nThe nav core is closer to the break, where torn cables drift loose.\n\nThat gives you about four seconds between the hatch and the plate. It's enough to grapple on, as long as you don't hesitate.",
+  "choices": [
+   "Match the spin and grapple the hatch",
+   "Cut the hull plate loose first",
+   "Go for the nav core near the break"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling and filed an informant claim, but it pays out months from now. He flew Juno Reyes's medicine run to Occator Ridge and owned up to the broken strut, so Juno paid him in full. He took the Halcyon salvage job, which pays forty-five thousand for the recorder and nav core, minus Juno's ten percent. In her salvage skiff he scanned the tumbling wreck. The recorder bay hatch is buckled and will need cutting. A loose hull plate sweeps past the bay a few seconds behind it, and the nav core sits near the break.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Inside a salvage skiff cockpit, a glowing scan display; outside, the broken aft section of an ore freighter tumbling slowly, a huge twisted hull plate swinging behind a buckled hatch, drifting cables, dark asteroids. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, seen from behind.",
+   "fallback": "Broken ore freighter section tumbling slowly in a dark asteroid field, a twisted hull plate and drifting cables, faint distant sunlight, seen from a small cockpit window."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The Halcyon's recorder hatch is buckled; a loose hull plate sweeps past seconds after it."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2638,
+  "cacheRead": 31565,
+  "cacheWrite": 5950,
+  "costUsd": 0.1067,
+  "apiMs": 22809,
+  "numTurns": 3
+ }
+}
