@@ -1,0 +1,84 @@
+{
+ "id": "muuupmbo-pqawj",
+ "finishedAt": "2026-10-05T06:11:08.737Z",
+ "durationMs": 16236,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je trekt elke knoop tegelijk aan. Ilse, de Abt, Vorrin, de kraaien, de troon: al je draden worden één strop rond de honger. Hij krijst, klauwt, en dan breekt hij als ijs op een vuur. Het oervuur stroomt zuiver door je hand. Het halve hart van de Vorst vlamt op en wordt heel. Hij ademt, en zijn gouden ogen zijn helder.\n\nDaarna buigt niemand meer omdat het moet, maar omdat het zo is. Velmoor, de zonnelanden, de zuidelijke havens: één voor één leggen ze hun kronen voor de kraaientroon. Je regeert met draden en vuur, streng maar rechtvaardig.\n\nDe jongen in kapotte kleren is verdwenen. De sterkste magiër van de wereld kijkt over zijn rijk, en de kraaien zwijgen eerbiedig.",
+  "choices": [],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 15,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "volledig",
+   "regen": "",
+   "gold": 0,
+   "xp": 30,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Word de sterkste magiër",
+    "Leer meer lotdraden van Moeder Veen",
+    "Genees het hart van de Zonnevorst"
+   ],
+   "location": "Kraaientroon van Velmoor",
+   "addTraits": [],
+   "removeTraits": [
+    "Geknoopte honger"
+   ]
+  },
+  "summary": "Joshua, ooit straatarm, werd magiër op de kraaientroon van Velmoor. Hij nam Asharoths oervuur over en liet hem vrij. Toen de honger het hart van de Zonnevorst aanviel, wurgde Joshua hem met al zijn knopen en genas het hart. Daarna onderwierpen de landen zich één voor één; Joshua werd de sterkste magiër en heerser van de wereld vanaf de kraaientroon.",
+  "gameOver": true,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "A thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, seated on a great dark throne carved with crows, faint white fire around his hands, hundreds of crows perched in a vast hall, golden dusk light through tall windows over a sprawling kingdom.",
+   "fallback": "A vast dark throne hall carved with crows, tall windows showing golden dusk over a sprawling kingdom, an empty throne with faint white glow."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De Zonnevorst",
+    "look": "",
+    "status": "levend",
+    "home": "",
+    "role": "",
+    "note": "Zijn hart is door Joshua geheeld.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Joshua wurgde de honger en heelde het hart van de Vorst.",
+    "Joshua heerst over de hele wereld vanaf de kraaientroon."
+   ],
+   "forgetFacts": [
+    "De geknoopte honger glipte mee met de vonk en zuigt aan het hart van de Vorst.",
+    "De vreter stal de helft van het eerste vuur; het hart van de Vorst brandt half."
+   ],
+   "time": "jaren later"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1584,
+  "cacheRead": 11405,
+  "cacheWrite": 6670,
+  "costUsd": 0.0873,
+  "apiMs": 15474,
+  "numTurns": 2
+ }
+}
