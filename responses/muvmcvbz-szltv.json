@@ -1,0 +1,73 @@
+{
+ "id": "muvmcvbz-szltv",
+ "finishedAt": "2026-10-05T19:04:57.052Z",
+ "durationMs": 10376,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You crouch under the scarred belly and run your hand along the starboard strut. It's a fresh weld, rough but solid, and the damper hisses a little too softly when you lean on it. It will hold one landing if you put her down gently, maybe not a hard one.\n\nJuno taps the hatch frame. \"Well?\"",
+  "choices": [
+   "Launch now and land soft",
+   "Ask Juno to top up the damper",
+   "Request the other skiff instead"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy Marta Okafor's Kestrel. His relief pilot job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender and freed eleven refugees. He filed an informant claim (payout months away). His ribs are strapped. He took Juno Reyes's three-hundred-credit medicine run to Occator Ridge, studied the approach chart, and found the skiff's starboard strut freshly welded with a soft damper: it needs a gentle landing. Juno hints at better-paid work afterwards.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, crouching under a scarred courier skiff inspecting a freshly welded landing strut, cold docking bay, harsh work lights.",
+   "fallback": "Cold cramped docking bay with a stubby courier skiff, scarred belly and a rough fresh weld on its landing strut, harsh work lights."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The skiff's starboard strut is freshly welded with a weak damper; a hard landing may break it."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1122,
+  "cacheRead": 13441,
+  "cacheWrite": 4366,
+  "costUsd": 0.0601,
+  "apiMs": 9490,
+  "numTurns": 2
+ }
+}
