@@ -1,0 +1,68 @@
+{
+ "id": "muuueoed-bm37x",
+ "finishedAt": "2026-10-05T06:02:37.304Z",
+ "durationMs": 14494,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je houdt de knoop klaar, maar je laat hem praten.\n\n\"Het vuur dat ik droeg sinds de eerste winter,\" kraakt Asharoth. \"Niet alleen de helft van zijn hart. Álles wat ik ooit at. Steden. Koningen. Zonnen van vóór jouw wereld.\" Zijn mond gloeit zachter, bijna smekend. \"Laat me heel, en ik giet het in jou. Geen magiër zal je ooit nog evenaren. De wereld buigt.\"\n\nAchter je hijgt de Vorst. \"En dan eet hij jou van binnenuit, jongen.\"\n\nVorrin schudt langzaam zijn hoofd, bloed op zijn lip.\n\nAsharoth buigt dichterbij. \"Of bind me, en krijg niets. Kies, koning.\"\n\nDe naam ligt zwaar op je tong. Het halve hart van de Vorst flakkert.",
+  "choices": [
+   "Bind hem en eis het vuur",
+   "Neem zijn aanbod, maar met een knoop",
+   "Geef het gestolen vuur terug aan de Vorst"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. In de zonnegrot goot hij het eerste vuur in het hart van de Vorst, maar de vreter stal de helft. Joshua knipte de draad door en vond de volledige naam: Asharoth. De verstijfde vreter biedt al het vuur dat hij ooit at aan Joshua aan, ongeëvenaarde macht, in ruil voor zijn vrijheid. De Vorst waarschuwt dat het vuur Joshua van binnen zal opeten. Het halve hart van de Vorst flakkert; Joshua moet kiezen.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Dark cave beneath a golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, facing a towering faceless figure of smouldering coal and drifting smoke, a single glowing open mouth of red fire, leaning close and whispering; glowing silver thread between his fingers.",
+   "fallback": "Dark rocky cave beneath a golden throne, faint red glow on the walls, drifting smoke and scattered embers on the stone floor."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Asharoth bood Joshua al zijn opgegeten vuur aan in ruil voor vrijheid."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1361,
+  "cacheRead": 11405,
+  "cacheWrite": 6470,
+  "costUsd": 0.0813,
+  "apiMs": 13651,
+  "numTurns": 2
+ }
+}
