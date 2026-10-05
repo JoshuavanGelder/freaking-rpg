@@ -1,0 +1,91 @@
+{
+ "id": "muutkvss-4kwh5",
+ "finishedAt": "2026-10-05T05:39:45.625Z",
+ "durationMs": 33691,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je knielt bij de Vorst, scheurt het potje open en drukt het tegen zijn borst. Het eerste vuur stroomt naar binnen, wit en zingend.\n\nDan trekt de draad aan je pols strak.\n\nDe helft van het vuur buigt af, als water dat een helling vindt, en kronkelt via jouw arm naar buiten. Je huid schroeit. Je schreeuwt. In de borst van de Vorst gloeit zijn hart op, maar het flakkert: half verlicht, half nog grauw.\n\nBuiten barst de grond open. Een gestalte van smeulende kool en rook hijst zich uit de rode lijn, zonder gezicht, één open mond van gloed. Het andere eind van jouw draad zit in die mond.\n\n\"Koning,\" fluistert het. \"Je bracht me eten.\"\n\nVorrin trekt zijn mes. Het potje is leeg.",
+  "choices": [
+   "Knip de draad aan je pols door",
+   "Bind de vreter met een knoop",
+   "Laat Vorrin hem ophouden, sluit het hart"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -4,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [
+    "Potje met het eerste vuur"
+   ],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. Hij ving het eerste vuur en bond de ziekte van de Vorst in Aureks steen, waarin een vuurvreter zat. Veen gooide de steen in het moeras; de vreter liet een draad aan Joshua's pols groeien. In de zonnegrot goot Joshua het vuur in het hart van de Vorst, maar de vreter stal de helft via de draad. Het hart brandt half. De vreter, een wezen van kool en rook, staat nu in de grotingang.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "character",
+   "prompt": "Dark cave beneath a golden sun throne at dusk; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, kneeling by a man in his sixties, hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes, whose chest glows faintly; a glowing red thread runs from the young man's wrist to a towering faceless figure of smouldering coal and smoke in the cave mouth.",
+   "fallback": "Dark cave with an empty golden throne at dusk, red glowing cracks in the ground at the entrance, drifting smoke and embers."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "De vreter",
+    "look": "towering faceless figure of smouldering coal and drifting smoke, roughly human-shaped, a single glowing open mouth of red fire",
+    "status": "levend",
+    "home": "",
+    "role": "vuurvreter, vijand",
+    "note": "Stal de helft van het eerste vuur via Joshua's polsdraad.",
+    "companion": ""
+   },
+   {
+    "name": "De Zonnevorst",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Kreeg half het eerste vuur; zijn hart brandt maar half.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De vreter stal de helft van het eerste vuur; het hart van de Vorst brandt half."
+   ],
+   "forgetFacts": [
+    "Het eerste vuur moet vanavond in het hart van de Zonnevorst."
+   ],
+   "time": "schemering, dag na de terugkeer naar het moeras"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3905,
+  "cacheRead": 29081,
+  "cacheWrite": 7805,
+  "costUsd": 0.1464,
+  "apiMs": 32894,
+  "numTurns": 3
+ }
+}
