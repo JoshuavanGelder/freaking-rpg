@@ -1,0 +1,86 @@
+{
+ "id": "muvmthid-zv02t",
+ "finishedAt": "2026-10-05T19:18:11.646Z",
+ "durationMs": 29810,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Juno. The strut's on me. Loose regolith slid under the port pad, and I put her down a hand's width too hard. The medicine's inside, though, and nothing else is bent.\"\n\nThe line goes quiet. Then a short laugh. \"The last guy told me the pad moved. You're the first one who didn't lie.\" The comm pings: three hundred credits, all of it. \"I'm sending a crawler with a spare strut. You'll fly her home tomorrow.\"\n\nShe pauses. \"Listen. The ridge hab wants a contract pilot who can put down on that ledge every week. It's steady money. There's also a bigger job I don't take, a salvage run in the deep belt. It pays like a ship. Interested?\"",
+  "choices": [
+   "Ask about the deep belt salvage run",
+   "Take the weekly ridge contract",
+   "Ask why Juno won't take it"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Charm",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 300,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. His job on Dren Vasko's tug Grubstake turned out to be people smuggling. He alerted customs, disabled the drive, got Vasko to surrender, freed eleven refugees and filed an informant claim, though any payout is months away. He flew Juno Reyes's medicine run to Occator Ridge and broke the skiff's weak strut on landing, then owned up to it. Juno paid him in full and is sending a spare strut. She also offered him a weekly ridge contract or a high-paying deep belt salvage run that she won't fly herself.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Inside a tilted courier skiff cockpit on a dusty crater ledge, a lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, talks into a glowing comm screen, grey dust settling outside, dim cockpit lights.",
+   "fallback": "A tilted courier skiff cockpit with a glowing comm screen, grey dust settling over a narrow crater ledge outside, black starry sky beyond."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Juno Reyes",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Paid Waren in full and respects his honesty. Offers a ridge contract or a deep belt salvage run.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Juno is sending a crawler with a spare strut for the skiff.",
+    "Juno knows of a high-paying deep belt salvage run she won't fly herself."
+   ],
+   "forgetFacts": [
+    "Waren accepted Juno's Occator Ridge run: three hundred cash on landing."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3313,
+  "cacheRead": 31351,
+  "cacheWrite": 5971,
+  "costUsd": 0.1203,
+  "apiMs": 28849,
+  "numTurns": 3
+ }
+}
