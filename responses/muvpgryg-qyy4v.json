@@ -1,17 +1,17 @@
 {
  "id": "muvpgryg-qyy4v",
- "finishedAt": "2026-10-05T20:32:12.715Z",
- "durationMs": 24223,
+ "finishedAt": "2026-10-05T20:42:34.042Z",
+ "durationMs": 26089,
  "status": "ok",
  "message": "Done",
  "resetAt": null,
  "answer": {
   "title": "",
-  "narration": "You key the suit's link and punch in Juno's skiff codes. For a long moment nothing happens. Then the skiff's running lights blink green.\n\nYou don't trust the autopilot's clumsy hold logic, so you fly her yourself through the suit link. You make tiny thrust taps, the way you'd fly from her own seat. The skiff stops rolling, turns its nose toward you and creeps back past the debris.\n\nTwenty metres out, she holds steady with her airlock open. Your suit jets cough a warning, and there's maybe one good push left. Behind you, the Halcyon's aft section keeps turning. You hold the recorder and the nav core against your chest.\n\nIt's one jump, and you have to make it count.",
+  "narration": "You key the skiff codes into your wrist panel. The link stutters and drops, then catches, and the autopilot answers with a thin green line.\n\nYou don't let the autopilot fly. You fly the skiff yourself from your wrist panel. A gentle roll, then a short burn, and you ease it between two tumbling rocks that would have torn it apart. The skiff swings around and comes nose-first toward you, its airlock glowing.\n\nYou spend the last of your jets on one long glide. Your glove catches the airlock rail. The hatch seals behind you, and the recorder and nav core thump against your chest.\n\nThe skiff is back in your hands, but she's limping. Ceres is two days away.",
   "choices": [
-   "Push off with everything and fly it",
-   "Bring the skiff closer, wait it out",
-   "Toss the cargo first, then jump"
+   "Burn straight for Ceres, no stops",
+   "Patch the hull first, then fly home",
+   "Call Juno and report in"
   ],
   "check": {
    "used": true,
@@ -25,22 +25,22 @@
    "heal": "",
    "regen": "",
    "gold": 0,
-   "xp": 15,
+   "xp": 25,
    "addItems": [],
    "removeItems": [],
    "addQuests": [],
    "completeQuests": [],
-   "location": "",
+   "location": "Juno's salvage skiff, deep belt",
    "addTraits": [],
    "removeTraits": []
   },
-  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay out for months. Then he took the Halcyon salvage job for Juno Reyes: forty-five thousand for the wreck's recorder and nav core, minus her ten percent. He recovered both pieces in his suit, but the skiff tore loose and drifted off. He flew it back by remote through his suit link. Now it's waiting twenty metres away, and his jets have one push left.",
+  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling, but his informant claim won't pay for months. He took Juno Reyes's Halcyon salvage job, which pays forty-five thousand minus her ten percent. At the tumbling wreck he lost a grapple arm and bruised his ribs, then recovered both the recorder and the nav core in his suit. When the skiff tore loose, he flew it back to himself by remote and got aboard on the last of his suit jets. Now the damaged skiff has to make it home to Ceres.",
   "gameOver": false,
   "image": {
    "show": true,
    "kind": "action",
-   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, clutching an orange flight recorder and a blinking nav core, floating near a broken tumbling ore freighter. Twenty metres away a battered salvage skiff with green running lights holds steady, airlock open and glowing. Glittering debris, harsh distant sunlight, deep asteroid belt.",
-   "fallback": "A battered salvage skiff with green running lights and an open glowing airlock, near a broken tumbling ore freighter among glittering debris in the deep asteroid belt, harsh distant sunlight."
+   "prompt": "A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, in a spacesuit with a clear helmet, an orange flight recorder and a blinking nav core clipped to his harness, gliding toward the glowing open airlock of a battered salvage skiff that swings toward him between tumbling asteroids, harsh distant sunlight, deep asteroid belt.",
+   "fallback": "A battered salvage skiff with a glowing open airlock drifting between tumbling asteroids and glittering debris in the deep asteroid belt, a broken freighter in the distance, harsh faint sunlight."
   },
   "heroLook": "",
   "portrait": "",
@@ -48,8 +48,7 @@
   "canon": {
    "places": [],
    "facts": [
-    "Waren flew the drifting skiff back by remote through his suit link.",
-    "Waren's suit jets have one push left."
+    "Waren is back aboard Juno's damaged skiff with the recorder and nav core."
    ],
    "forgetFacts": [
     "The skiff's last grapple tore loose; it is drifting away unmanned.",
@@ -59,9 +58,9 @@
   },
   "sound": {
    "ambience": "",
-   "mood": "tense",
+   "mood": "triumph",
    "sfx": [
-    "magic_ping"
+    "door_slam"
    ]
   }
  },
@@ -69,11 +68,11 @@
  "effort": "low",
  "usage": {
   "input": 4,
-  "output": 2739,
-  "cacheRead": 32145,
-  "cacheWrite": 6808,
-  "costUsd": 0.1157,
-  "apiMs": 23357,
+  "output": 3071,
+  "cacheRead": 37219,
+  "cacheWrite": 1478,
+  "costUsd": 0.0807,
+  "apiMs": 24976,
   "numTurns": 3
  }
 }
