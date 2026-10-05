@@ -1,0 +1,90 @@
+{
+ "id": "muvimhff-xmp0g",
+ "finishedAt": "2026-10-05T17:20:30.414Z",
+ "durationMs": 14816,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You shift your weight to reach under the rack. That's all Vasko needs. He bucks, twists, and drives his heel into your bruised ribs. You fold, gasping, fingers brushing cold metal and losing it.\n\nBy the time you drag the bolt gun out, Vasko is gone, boots pounding up the ladder toward the cockpit. You hear the drive warm-up chime. He's going to burn with the customs cutter still clamped to the hatch.\n\nThe orange line is halfway around now. Somewhere behind the hold door, someone starts crying softly.\n\nYou stand there, ribs screaming, the bolt gun heavy in your hand. Cockpit, hold, or hatch.",
+  "choices": [
+   "Chase Vasko to the cockpit",
+   "Open the hold and free them",
+   "Shout a warning through the hatch"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Fitness",
+   "dc": 12,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [
+    "Bolt gun"
+   ],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko (six hundred credits on delivery to Vesta). Vasko smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock; customs is cutting through. Waren tackled Vasko, but Vasko broke free and ran to the cockpit to start the drive while the customs cutter is still clamped on. Waren now holds the bolt gun, injured ribs, and must choose: stop Vasko, free the people, or warn customs.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Cramped airlock corridor of an old ore tug, red emergency lights, glowing orange cutting line halfway around a hatch. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, clutching his ribs and holding an industrial bolt tool, looking up a ladder.",
+   "fallback": "Cramped airlock corridor of an old ore tug, red emergency lights, a glowing orange line on a metal hatch, a ladder leading up into darkness."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Broke free, ran to the cockpit to burn with customs clamped on.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren holds Vasko's bolt gun."
+   ],
+   "forgetFacts": [
+    "Vasko's bolt gun lies under a cargo strap rack by the airlock."
+   ],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "punch",
+    "footsteps"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1468,
+  "cacheRead": 13441,
+  "cacheWrite": 4321,
+  "costUsd": 0.0666,
+  "apiMs": 14078,
+  "numTurns": 2
+ }
+}
