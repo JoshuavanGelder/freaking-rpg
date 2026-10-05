@@ -1,0 +1,88 @@
+{
+ "id": "muvj7m6y-z7ttw",
+ "finishedAt": "2026-10-05T17:37:12.854Z",
+ "durationMs": 30086,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You drop down the engine ladder, half falling, ribs screaming. The drive bay is hot and loud, the reactor coupling humming up toward burn. The main breaker sits behind a mesh cage stencilled with warnings. You remember the old tug drills: cage latch, safety pin, then the handle all the way down.\n\nThe warm-up chime hits its last note just as you throw your whole weight on the lever.\n\nIt drops with a heavy clack. The hum dies. The lights flicker down to a dim red emergency glow.\n\nOverhead, Vasko swears, long and loud. Then his boots start back down the ladder, fast.\n\nThrough the hull comes the clunk of the customs collar locking back on. In the hold, someone is knocking again, softly now, hopeful.",
+  "choices": [
+   "Aim the bolt gun up the ladder",
+   "Lock the drive bay hatch shut",
+   "Call to Vasko: it's over"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Mechanics",
+   "dc": 13,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [
+    "Stop Vasko's burn"
+   ],
+   "location": "Grubstake drive bay",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Waren Spacefarer, a young pilot with ten credits, wants forty thousand credits to buy the Kestrel from Marta Okafor. He took a relief pilot job on the ore tug Grubstake for Captain Dren Vasko, who smuggles people in the sealed hold. When Ceres Customs boarded, Vasko fused the airlock, fought Waren, then ran to the cockpit to burn. Waren warned customs, who pulled their collar free, then he pulled the main drive breaker below decks and killed the burn. Customs is clamping back on. Vasko is coming down the ladder toward Waren, who holds the bolt gun and has badly hurt ribs. The Vesta job is probably lost.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Cramped engine bay of an old ore tug in dim red emergency light. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, cargo pants and scuffed boots, hanging his whole weight on a big breaker lever inside a mesh cage, sparks fading, pipes and machinery around him.",
+   "fallback": "Cramped engine bay of an old ore tug, dim red emergency lights, a large breaker lever in a mesh cage, pipes and a metal ladder rising into shadow."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Dren Vasko",
+    "look": "",
+    "status": "levend",
+    "home": "",
+    "role": "",
+    "note": "Drive killed; coming down the ladder after Waren.",
+    "companion": ""
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [
+    "Waren killed the Grubstake's main drive breaker; the tug can't burn."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "door_slam",
+    "footsteps"
+   ]
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3189,
+  "cacheRead": 30848,
+  "cacheWrite": 5267,
+  "costUsd": 0.1121,
+  "apiMs": 29353,
+  "numTurns": 3
+ }
+}
