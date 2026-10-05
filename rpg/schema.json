@@ -4,15 +4,15 @@
   "properties": {
     "title": {
       "type": "string",
-      "description": "Only on the start turn: Dutch title of the adventure, max 5 words. Otherwise empty string."
+      "description": "Only on the start turn: Title of the adventure in the story language, max 5 words. Otherwise empty string."
     },
     "narration": {
       "type": "string",
-      "description": "Dutch narration, at most the ceiling the request gives under 'narration length per turn' and usually much shorter: one to three short sentences for a small action (eating, resting, looking around), a short paragraph or two for a normal action, the full ceiling only for big moments. Short paragraphs separated by a blank line. No numbers or game terms."
+      "description": "Narration in the story language, at most the ceiling the request gives under 'narration length per turn' and usually much shorter: one to three short sentences for a small action (eating, resting, looking around), a short paragraph or two for a normal action, the full ceiling only for big moments. Short paragraphs separated by a blank line. No numbers or game terms."
     },
     "choices": {
       "type": "array",
-      "description": "Exactly 3 short Dutch actions (max 8 words each).",
+      "description": "Exactly 3 short actions in the story language (max 8 words each).",
       "items": {
         "type": "string"
       }
@@ -53,7 +53,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "Dutch attribute name."
+            "description": "Attribute name in the story language."
           },
           "value": {
             "type": "integer",
@@ -142,7 +142,7 @@
         },
         "location": {
           "type": "string",
-          "description": "Where the hero is now (short Dutch name), or empty string when unchanged."
+          "description": "Where the hero is now (short name in the story language), or empty string when unchanged."
         },
         "addTraits": {
           "type": "array",
@@ -153,7 +153,7 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "Short Dutch name, e.g. 'Windkracht', 'Schaduwstap', 'Bang voor vuur'."
+                "description": "Short name in the story language, e.g. 'Windkracht', 'Schaduwstap', 'Bang voor vuur' (or 'Wind power', 'Shadow step', 'Fear of fire')."
               },
               "kind": {
                 "type": "string",
@@ -164,7 +164,7 @@
               },
               "detail": {
                 "type": "string",
-                "description": "One short Dutch sentence what it does, max 15 words. No numbers."
+                "description": "One short sentence in the story language about what it does, max 15 words. No numbers."
               }
             },
             "required": [
@@ -199,7 +199,7 @@
     },
     "summary": {
       "type": "string",
-      "description": "The plot so far in at most 120 Dutch words: the main thread, open threads and turning points. People, places and lasting facts live in cast and canon, so do not repeat them here."
+      "description": "The plot so far in at most 120 words in the story language: the main thread, open threads and turning points. People, places and lasting facts live in cast and canon, so do not repeat them here."
     },
     "gameOver": {
       "type": "boolean",
@@ -256,7 +256,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "The character's name as used in the story (or a short Dutch label like 'de waard'). Use the name exactly as in the cast when they are already in it."
+            "description": "The character's name as used in the story (or a short label like 'de waard' / 'the innkeeper'). Use the name exactly as in the cast when they are already in it."
           },
           "look": {
             "type": "string",
@@ -274,15 +274,15 @@
           },
           "home": {
             "type": "string",
-            "description": "Short Dutch: where this person lives or stays (e.g. 'rood huis aan de rivier'). Give it when it first becomes known and whenever it changes. Empty string = unchanged."
+            "description": "Short, in the story language: where this person lives or stays (e.g. 'rood huis aan de rivier' / 'red house by the river'). Give it when it first becomes known and whenever it changes. Empty string = unchanged."
           },
           "role": {
             "type": "string",
-            "description": "Short Dutch: who this is to the hero or in the story (e.g. 'waard van De Gouden Os', 'oude vijand'). Empty string = unchanged."
+            "description": "Short, in the story language: who this is to the hero or in the story (e.g. 'waard van De Gouden Os' / 'innkeeper of the Golden Ox', 'oude vijand' / 'old enemy'). Empty string = unchanged."
           },
           "note": {
             "type": "string",
-            "description": "Short Dutch (max 15 words): what must be remembered, e.g. how and where they died, a promise, a grudge. Empty string = unchanged."
+            "description": "Short, in the story language (max 15 words): what must be remembered, e.g. how and where they died, a promise, a grudge. Empty string = unchanged."
           },
           "companion": {
             "type": "string",
@@ -319,11 +319,11 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "Short Dutch name of the place."
+                "description": "Short name of the place in the story language."
               },
               "detail": {
                 "type": "string",
-                "description": "One short Dutch sentence: what it looks like, where it is, who lives or works there."
+                "description": "One short sentence in the story language: what it looks like, where it is, who lives or works there."
               }
             },
             "required": [
@@ -334,7 +334,7 @@
         },
         "facts": {
           "type": "array",
-          "description": "New lasting facts: promises, debts, secrets (and who knows them), enemies, deals, curses. One short Dutch sentence each, max 20 words. Empty when none.",
+          "description": "New lasting facts: promises, debts, secrets (and who knows them), enemies, deals, curses. One short sentence each in the story language, max 20 words. Empty when none.",
           "items": {
             "type": "string"
           }
@@ -348,7 +348,7 @@
         },
         "time": {
           "type": "string",
-          "description": "Short Dutch marker of the moment, e.g. 'avond, tweede dag' or 'vroege ochtend'. Update it whenever time passes (a night's rest, a journey). Empty string when unchanged."
+          "description": "Short marker of the moment in the story language, e.g. 'avond, tweede dag' / 'evening, second day' or 'vroege ochtend' / 'early morning'. Update it whenever time passes (a night's rest, a journey). Empty string when unchanged."
         }
       },
       "required": [

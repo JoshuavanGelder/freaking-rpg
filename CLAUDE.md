@@ -26,6 +26,22 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
 - Ontwerp: donker en warm (`#15120F`), oranje accent `#FF7A3D`, Archivo Black / Archivo, verhaal in Literata.
   Ontwerp-artifact: "Freaking RPG – App-ontwerp" op claude.ai.
 
+## Taal (Nederlands / Engels)
+- **Twee talen, twee niveaus.** De *app-taal* (`settings.lang`, Instellingen → Taal / Language, standaard Nederlands) bepaalt alle schermteksten.
+  De *verhaaltaal* staat **per avontuur** (`world.lang`): Joshua kiest hem bij de start (stap 1, "Taal van het verhaal", begint met de
+  app-taal) en hij verandert niet meer. Oude avonturen zonder `world.lang` blijven Nederlands (`storyLang`, `langOf`).
+- **Elke tekst die de speler leest staat in `src/i18n.ts`, in beide talen** (`nl` en `en` hebben dezelfde sleutels, anders geeft tsc een fout;
+  `src/i18n.test.ts` controleert ook de `{plaatsvervangers}`). In React: `const { t, tn, lang } = useT()` (`src/lang.ts`); buiten React
+  (services, beurten, beeldenwachtrij): `tt('sleutel')`. Spellogica krijgt `lang` als laatste parameter met standaard `'nl'`
+  (`ago`, `formatGold`, `worldLabel`, `worldProblem`, ...). Meervoud: sleutels `x.one` / `x.other` met `tn('x', n)`.
+  Nooit een tekst hard in een scherm zetten, ook geen `accessibilityLabel` of `Alert`.
+- Opgeslagen waarden blijven Nederlandse id's (toon-namen, `kracht`/`zwakte`, `klein`/`groot`/`volledig`, `levend`/`dood`/`vermist`, `ja`/`nee`,
+  setting-id's): alleen de weergave wordt vertaald (`toneLabel`, `settingView`, `trait.*`). Zo blijven oude avonturen en het schema kloppen.
+- De app zet `lang` in elk verzoek (`buildRequest`, uit `storyLang(adv)`); `rpg/lib.mjs` (`languageLines`) zet een sectie **Language** bovenaan het bericht en
+  `rpg/prompt.md` + `rpg/schema.json` zeggen "story language" in plaats van "Dutch". Meldingen van de workflow (`msg`, `classify(..., lang)`) volgen de
+  taal van het verzoek. Beeldprompts blijven altijd Engels.
+- Een nieuwe taal toevoegen: `Lang` + `LANGS` + `localeOf` in `i18n.ts`, een derde woordenlijst met dezelfde sleutels, en `MSG` in `rpg/lib.mjs`.
+
 ## Claude via zijn abonnement (géén API-key)
 - De app zet een beurt in branch `rpg-data` (`requests/<id>.json`) en start `.github/workflows/rpg.yml`
   (workflow_dispatch, run-name `RPG <id>`). Warme verteller: `request_id=standby` (run-name `RPG standby`),

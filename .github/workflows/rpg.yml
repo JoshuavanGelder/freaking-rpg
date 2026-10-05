@@ -65,7 +65,7 @@ jobs:
         run: |
           if [ ! -f "responses/$REQUEST_ID.json" ]; then
             mkdir -p responses
-            printf '{"id":"%s","status":"fout","message":"De workflow liep vast voordat Claude klaar was.","resetAt":null,"answer":null,"finishedAt":"%s"}\n' \
+            printf '{"id":"%s","status":"fout","message":"De workflow liep vast voordat Claude klaar was. / The workflow got stuck before Claude finished.","resetAt":null,"answer":null,"finishedAt":"%s"}\n' \
               "$REQUEST_ID" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "responses/$REQUEST_ID.json"
           fi
           git config user.name "freaking-rpg"

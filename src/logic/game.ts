@@ -1,39 +1,69 @@
 // De spelregels van de app: avontuur maken, verzoek opbouwen en het antwoord van de verteller
 // veilig toepassen. De app is baas over de staat; Claude stelt alleen wijzigingen voor.
+import { DEFAULT_LANG, langOf, t, textLengthKey, arcKey, type Key, type Lang } from '../i18n.ts';
 import type { Adventure, Answer, Arc, Attribute, CanonUpdate, Canon, CastMember, CastUpdate, GameState, Heal, PersonStatus, Place, Regen, TextLength, Trait, Hero, Pending, Picture, PictureKind, Turn, TurnRequest, World } from './types.ts';
 
 export type Setting = { id: string; label: string; hint: string; classes: string[] };
 
-export const SETTINGS: Setting[] = [
-  { id: 'fantasy', label: 'Fantasy', hint: 'Draken, magie en herbergen', classes: ['Krijger', 'Sluipdief', 'Magiër', 'Bard'] },
-  { id: 'superhelden', label: 'Superhelden', hint: 'Krachten, schurken, geheime identiteit', classes: ['Speedster', 'Vliegende krachtpatser', 'Ringdrager', 'Gadget-genie'] },
-  { id: 'scifi', label: 'Sci-fi', hint: 'Ruimteschepen, AI en kolonies', classes: ['Piloot', 'Hacker', 'Huurling', 'Xenobioloog'] },
-  { id: 'horror', label: 'Horror', hint: 'Er klopt iets niet', classes: ['Journalist', 'Priester', 'Student', 'Nachtwaker'] },
-  { id: 'apocalyps', label: 'Post-apocalyps', hint: 'Puin, schaarste, mutanten', classes: ['Aaseter', 'Monteur', 'Medicus', 'Koerier'] },
-  { id: 'noir', label: 'Noir-detective', hint: 'Regen, rook en leugens', classes: ['Privédetective', 'Rechercheur', 'Journalist', 'Oplichter'] },
-  { id: 'modern', label: 'Modern', hint: 'De gewone wereld, maar raar', classes: ['Bezorger', 'Student', 'Influencer', 'Conciërge'] },
-  { id: 'eigen', label: 'Eigen wereld', hint: 'Beschrijf het zelf', classes: ['Avonturier', 'Held', 'Schurk', 'Gewone burger'] },
-];
+const SETTING_IDS = ['fantasy', 'superhelden', 'scifi', 'horror', 'apocalyps', 'noir', 'modern', 'eigen'] as const;
 
+/** Een setting met de teksten in de gekozen taal (de woordenlijst staat in src/i18n.ts). */
+export function settingView(id: string, lang: Lang = DEFAULT_LANG): Setting {
+  const known = (SETTING_IDS as readonly string[]).includes(id) ? id : 'eigen';
+  return {
+    id: known,
+    label: t(lang, `setting.${known}.label` as Key),
+    hint: t(lang, `setting.${known}.hint` as Key),
+    classes: t(lang, `setting.${known}.classes` as Key).split('|'),
+  };
+}
+
+/** De settings voor de keuzetegels, in de gekozen taal. */
+export function settingsList(lang: Lang = DEFAULT_LANG): Setting[] {
+  return SETTING_IDS.map((id) => settingView(id, lang));
+}
+
+/** Nederlandse versie: wat de app vroeger gebruikte (en wat oude tests verwachten). */
+export const SETTINGS: Setting[] = settingsList('nl');
+
+/**
+ * Tonen worden als Nederlandse id bewaard (zo blijven oude avonturen kloppen); de naam die de speler leest
+ * komt uit de woordenlijst.
+ */
 export const TONES = ['Humoristisch', 'Episch', 'Rauw', 'Duister', 'Absurd', 'Gezellig', 'Eigen toon'];
 export const OWN_TONE = 'Eigen toon';
+const TONE_KEYS: Record<string, Key> = {
+  Humoristisch: 'tone.humoristisch',
+  Episch: 'tone.episch',
+  Rauw: 'tone.rauw',
+  Duister: 'tone.duister',
+  Absurd: 'tone.absurd',
+  Gezellig: 'tone.gezellig',
+  'Eigen toon': 'tone.eigen',
+};
+
+/** Naam van een toon in de gekozen taal (onbekende tonen blijven zoals ze zijn). */
+export function toneLabel(tone: string, lang: Lang = DEFAULT_LANG): string {
+  const key = TONE_KEYS[tone];
+  return key ? t(lang, key) : tone;
+}
 
 /** Lengte van de verteltekst per beurt. De woordaantallen staan in rpg/lib.mjs (daar wordt het verzoek geschreven). */
-export const TEXT_LENGTHS: { id: TextLength; label: string; hint: string }[] = [
-  { id: 'kort', label: 'Kort', hint: 'Een paar zinnen per beurt' },
-  { id: 'normaal', label: 'Normaal', hint: 'Een kort stukje per beurt' },
-  { id: 'uitgebreid', label: 'Uitgebreid', hint: 'Meer sfeer en uitleg per beurt' },
-];
+export const TEXT_LENGTHS: { id: TextLength }[] = [{ id: 'kort' }, { id: 'normaal' }, { id: 'uitgebreid' }];
 export const DEFAULT_TEXT_LENGTH: TextLength = 'normaal';
+export const textLengthLabel = (id: TextLength, lang: Lang = DEFAULT_LANG) => t(lang, textLengthKey(id, 'label'));
+export const textLengthHint = (id: TextLength, lang: Lang = DEFAULT_LANG) => t(lang, textLengthKey(id, 'hint'));
 
 /** Hoe lang een avontuur duurt (in beurten) voor de verteller toewerkt naar een einde. Onbeperkt = jij bepaalt. */
-export const ARCS: { id: Arc; label: string; hint: string; turns: number | null }[] = [
-  { id: 'kort', label: 'Kort', hint: 'Ongeveer 12 beurten', turns: 12 },
-  { id: 'middel', label: 'Middel', hint: 'Ongeveer 25 beurten', turns: 25 },
-  { id: 'lang', label: 'Lang', hint: 'Ongeveer 50 beurten', turns: 50 },
-  { id: 'onbeperkt', label: 'Onbeperkt', hint: 'Het verhaal stopt pas als jij dat wilt', turns: null },
+export const ARCS: { id: Arc; turns: number | null }[] = [
+  { id: 'kort', turns: 12 },
+  { id: 'middel', turns: 25 },
+  { id: 'lang', turns: 50 },
+  { id: 'onbeperkt', turns: null },
 ];
 export const DEFAULT_ARC: Arc = 'middel';
+export const arcLabel = (id: Arc, lang: Lang = DEFAULT_LANG) => t(lang, arcKey(id, 'label'));
+export const arcHint = (id: Arc, lang: Lang = DEFAULT_LANG) => t(lang, arcKey(id, 'hint'));
 
 /** Aantal beurten tot het einde, of null als het avontuur onbeperkt is (ook bij oude avonturen zonder keuze). */
 export function arcTurns(arc: Arc | undefined): number | null {
@@ -54,7 +84,8 @@ export function turnsLeft(adv: Adventure): number | null {
 export const MAX_TURNS_MORE = 99;
 
 /** De actie die de app zelf verstuurt als de speler een afgesloten verhaal toch voortzet. */
-export const RESUME_ACTION = 'Het verhaal gaat toch door.';
+export const RESUME_ACTION = t('nl', 'action.resume');
+export const resumeAction = (lang: Lang = DEFAULT_LANG) => t(lang, 'action.resume');
 
 /**
  * Een afgesloten verhaal toch voortzetten: zonder vast einde (de speler kan er later weer een kiezen).
@@ -117,20 +148,20 @@ const regenOf = (v: unknown): '' | 'geen' | Regen => {
   return s === 'geen' || s === 'traag' || s === 'snel' ? s : '';
 };
 
-/** Bedrag met punten als duizendtalscheiding: 1000000 -> "1.000.000". */
-export function formatGold(n: number): string {
+/** Bedrag met duizendtalscheiding: 1000000 -> "1.000.000" (Nederlands) of "1,000,000" (Engels). */
+export function formatGold(n: number, lang: Lang = DEFAULT_LANG): string {
   const v = Math.round(Number.isFinite(n) ? n : 0);
-  return String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, '.').replace(/^/, v < 0 ? '-' : '');
+  return String(Math.abs(v)).replace(/\B(?=(\d{3})+(?!\d))/g, lang === 'en' ? ',' : '.').replace(/^/, v < 0 ? '-' : '');
 }
 
-export function settingOf(id: string): Setting {
-  return SETTINGS.find((s) => s.id === id) ?? SETTINGS[SETTINGS.length - 1];
+export function settingOf(id: string, lang: Lang = DEFAULT_LANG): Setting {
+  return settingView(id, lang);
 }
 
 /** Kort label voor lijsten: "Superhelden · Humoristisch + Rauw". */
-export function worldLabel(w: World): string {
-  const s = w.setting === 'eigen' ? (w.settingText.trim() ? 'Eigen wereld' : settingOf(w.setting).label) : settingOf(w.setting).label;
-  const tones = w.tones.filter(Boolean).join(' + ');
+export function worldLabel(w: World, lang: Lang = DEFAULT_LANG): string {
+  const s = settingOf(w.setting, lang).label;
+  const tones = w.tones.filter(Boolean).map((x) => toneLabel(x, lang)).join(' + ');
   return tones ? `${s} · ${tones}` : s;
 }
 
@@ -141,17 +172,17 @@ export function toggleTone(current: string[], tone: string): string[] {
 }
 
 /** Wat ontbreekt er nog om te kunnen beginnen? null = alles goed. */
-export function worldProblem(w: World): string | null {
-  if (!w.setting) return 'Kies een setting.';
-  if (w.setting === 'eigen' && !w.settingText.trim()) return 'Beschrijf je eigen wereld.';
-  if (!w.tones.length) return 'Kies minstens één toon.';
-  if (w.tones.includes(OWN_TONE) && !w.toneText.trim()) return 'Beschrijf je eigen toon.';
+export function worldProblem(w: World, lang: Lang = DEFAULT_LANG): string | null {
+  if (!w.setting) return t(lang, 'problem.setting');
+  if (w.setting === 'eigen' && !w.settingText.trim()) return t(lang, 'problem.ownWorld');
+  if (!w.tones.length) return t(lang, 'problem.tone');
+  if (w.tones.includes(OWN_TONE) && !w.toneText.trim()) return t(lang, 'problem.ownTone');
   return null;
 }
 
-export function heroProblem(h: Hero): string | null {
-  if (!h.name.trim()) return 'Geef je held een naam.';
-  if (!h.className.trim()) return 'Kies of typ een klasse.';
+export function heroProblem(h: Hero, lang: Lang = DEFAULT_LANG): string | null {
+  if (!h.name.trim()) return t(lang, 'problem.heroName');
+  if (!h.className.trim()) return t(lang, 'problem.heroClass');
   return null;
 }
 
@@ -170,7 +201,7 @@ export function initialState(): GameState {
 export function newAdventure(world: World, hero: Hero, now = Date.now(), id = newId(now)): Adventure {
   return {
     id,
-    title: hero.name.trim() || 'Nieuw avontuur',
+    title: hero.name.trim() || t(langOf(world.lang), 'home.new.title'),
     createdAt: now,
     updatedAt: now,
     world: {
@@ -181,6 +212,7 @@ export function newAdventure(world: World, hero: Hero, now = Date.now(), id = ne
       wishes: world.wishes.trim(),
       textLength: world.textLength ?? DEFAULT_TEXT_LENGTH,
       arc: world.arc ?? DEFAULT_ARC,
+      ...(world.lang ? { lang: world.lang } : {}),
     },
     hero: { name: hero.name.trim(), className: hero.className.trim(), powers: hero.powers.trim(), looks: hero.looks.trim() },
     state: initialState(),
@@ -198,18 +230,22 @@ export function makePending(kind: 'start' | 'turn', action: string | null, now =
 }
 
 /** Het verzoek voor de workflow: alles wat de verteller nodig heeft, want die onthoudt zelf niets. */
-export function buildRequest(adv: Adventure, pending: Pending, model: string): TurnRequest {
+/** De taal waarin dit avontuur verteld wordt (oude avonturen zonder keuze: Nederlands). */
+export const storyLang = (adv: Adventure): Lang => langOf(adv.world.lang);
+
+export function buildRequest(adv: Adventure, pending: Pending, model: string, lang: Lang = storyLang(adv)): TurnRequest {
   const w = adv.world;
   const world = {
     ...w,
-    setting: settingOf(w.setting).label,
-    tones: w.tones.filter((t) => t !== OWN_TONE),
+    setting: settingOf(w.setting, lang).label,
+    tones: w.tones.filter((x) => x !== OWN_TONE).map((x) => toneLabel(x, lang)),
   };
   return {
     id: pending.requestId,
     createdAt: new Date(pending.startedAt).toISOString(),
     kind: pending.kind,
     model,
+    lang,
     world,
     // Oude looks met een kostuum (van vóór de nieuwe regels) eerst opschonen, anders herhaalt de verteller ze.
     hero: adv.hero.heroLook ? { ...adv.hero, heroLook: defuse(adv.hero.heroLook) } : adv.hero,
@@ -473,7 +509,7 @@ export function dropTraitByHand(adv: Adventure, name: string, now = Date.now()):
 }
 
 /** Past het antwoord toe op het avontuur. De app bewaakt de grenzen. images = mogen er beelden gemaakt worden? */
-export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, now = Date.now(), images = false): Adventure {
+export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, now = Date.now(), images = false, lang: Lang = storyLang(adv)): Adventure {
   const s = adv.state;
   const c = answer.changes;
   const notes: string[] = [];
@@ -492,7 +528,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   if (regen && pending.kind === 'turn' && !c.heal && c.hp >= 0 && hp > 0 && !answer.gameOver) {
     hp = Math.min(maxHp, hp + regenAmount(regen, maxHp));
   }
-  if (levelsUp) notes.push(`Level ${level}`);
+  if (levelsUp) notes.push(t(lang, 'note.level', { n: level }));
   const gold = Math.min(MAX_GOLD, Math.max(0, s.gold + c.gold));
 
   // Spullen.
@@ -518,13 +554,13 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
     if (k >= 0) {
       const q = quests[openIdx[k]];
       q.done = true;
-      notes.push(`Quest voltooid: ${q.title}`);
+      notes.push(t(lang, 'note.questDone', { title: q.title }));
     }
   }
   for (const q of c.addQuests) {
     if (quests.some((x) => same(x.title, q.title))) continue;
     quests.push({ title: q.title, detail: q.detail, done: false });
-    notes.push(`Nieuwe quest: ${q.title}`);
+    notes.push(t(lang, 'note.questNew', { title: q.title }));
   }
   if (quests.length > MAX_QUESTS) {
     // Oude afgeronde quests eerst laten vallen.
@@ -534,7 +570,7 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   }
 
   const location = c.location || s.location;
-  if (c.location && !same(c.location, s.location)) notes.push(`Locatie: ${c.location}`);
+  if (c.location && !same(c.location, s.location)) notes.push(t(lang, 'note.location', { name: c.location }));
 
   // Verborgen eigenschappen: bij de start gemaakt; later alleen nieuwe erbij (bv. bij een nieuwe kracht), bestaande blijven.
   const attributes = s.attributes.length
@@ -546,18 +582,18 @@ export function applyAnswer(adv: Adventure, pending: Pending, answer: Answer, no
   for (const name of c.removeTraits) {
     const i = matchIndex(traits.map((t) => t.name), name);
     if (i >= 0) {
-      notes.push(`${traits[i].kind === 'zwakte' ? 'Zwakte' : 'Kracht'} kwijt: ${traits[i].name}`);
+      notes.push(t(lang, traits[i].kind === 'zwakte' ? 'note.weaknessLost' : 'note.powerLost', { name: traits[i].name }));
       traits.splice(i, 1);
     }
   }
-  for (const t of c.addTraits) {
-    const i = traits.findIndex((x) => same(x.name, t.name));
+  for (const tr of c.addTraits) {
+    const i = traits.findIndex((x) => same(x.name, tr.name));
     if (i >= 0) {
-      traits[i] = t; // zelfde naam: beschrijving bijwerken (kracht groeit), geen melding
+      traits[i] = tr; // zelfde naam: beschrijving bijwerken (kracht groeit), geen melding
       continue;
     }
-    traits.push(t);
-    notes.push(`${t.kind === 'zwakte' ? 'Nieuwe zwakte' : 'Nieuwe kracht'}: ${t.name}`);
+    traits.push(tr);
+    notes.push(t(lang, tr.kind === 'zwakte' ? 'note.weaknessNew' : 'note.powerNew', { name: tr.name }));
   }
   traits = traits.slice(-MAX_TRAITS);
 
@@ -607,17 +643,17 @@ export function turnCount(adv: Adventure): number {
   return adv.turns.filter((t) => t.action !== null).length;
 }
 
-/** "zojuist", "5 min geleden", "gisteren", "3 dagen geleden". */
-export function ago(ts: number, now = Date.now()): string {
+/** "zojuist", "5 min geleden", "gisteren", "3 dagen geleden" (of "just now", "5 min ago", ...). */
+export function ago(ts: number, now = Date.now(), lang: Lang = DEFAULT_LANG): string {
   const min = Math.round((now - ts) / 60000);
-  if (min < 2) return 'zojuist';
-  if (min < 60) return `${min} min geleden`;
+  if (min < 2) return t(lang, 'ago.now');
+  if (min < 60) return t(lang, 'ago.minutes', { n: min });
   const h = Math.round(min / 60);
-  if (h < 24) return `${h} uur geleden`;
+  if (h < 24) return t(lang, 'ago.hours', { n: h });
   const d = Math.round(h / 24);
-  if (d === 1) return 'gisteren';
-  if (d < 14) return `${d} dagen geleden`;
-  return `${Math.round(d / 7)} weken geleden`;
+  if (d === 1) return t(lang, 'ago.yesterday');
+  if (d < 14) return t(lang, 'ago.days', { n: d });
+  return t(lang, 'ago.weeks', { n: Math.round(d / 7) });
 }
 
 /** Splitst de verteltekst in alinea's. */

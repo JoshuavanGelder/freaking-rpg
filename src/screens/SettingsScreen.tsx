@@ -2,21 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { Linking, View } from 'react-native';
 import { useApp, type Model } from '../store';
 import { useNav } from '../nav';
+import { useT } from '../lang';
+import { LANGS, type Key } from '../i18n';
 import * as gh from '../services/github';
 import * as img from '../services/images';
 import { formatTokens, summarizeUsage } from '../logic/usage';
 import { C } from '../theme';
 import { Button, Card, Chip, Field, Label, Notice, Row, Screen, T, TopBar } from '../ui';
 
-const MODELS: { id: Model; label: string; hint: string }[] = [
-  { id: 'sonnet', label: 'Sonnet', hint: 'Aanbevolen: goede verhalen, vlot' },
-  { id: 'haiku', label: 'Haiku', hint: 'Snelst, eenvoudiger verhalen, spaart je limiet' },
-  { id: 'opus', label: 'Opus', hint: 'Rijkste verhalen, trager en zwaarder voor je limiet' },
+const MODELS: { id: Model; label: string; hint: Key }[] = [
+  { id: 'sonnet', label: 'Sonnet', hint: 'model.sonnet.hint' },
+  { id: 'haiku', label: 'Haiku', hint: 'model.haiku.hint' },
+  { id: 'opus', label: 'Opus', hint: 'model.opus.hint' },
 ];
 
 export function SettingsScreen() {
   const { state, setSettings } = useApp();
   const nav = useNav();
+  const { t, lang } = useT();
   const st = state.settings;
   const [hasToken, setHasToken] = useState<boolean | null>(null);
   const [token, setToken] = useState('');
@@ -37,7 +40,7 @@ export function SettingsScreen() {
       await img.setImageUrl(url);
       setImageUrlText('');
       setSettings({ imageUrlSet: true });
-      setImgCheck({ ok: true, text: 'Beelden staan klaar.' });
+      setImgCheck({ ok: true, text: t('settings.images.ready') });
     }
     setImgBusy(false);
   };
@@ -49,13 +52,13 @@ export function SettingsScreen() {
   };
 
   useEffect(() => {
-    gh.getToken().then((t) => setHasToken(!!t));
+    gh.getToken().then((tok) => setHasToken(!!tok));
   }, []);
 
   const test = async () => {
     setBusy(true);
     const problem = await gh.checkRepo(repo);
-    setCheck(problem ? { ok: false, text: problem } : { ok: true, text: `Verbonden met ${repo.owner}/${repo.repo}.` });
+    setCheck(problem ? { ok: false, text: problem } : { ok: true, text: t('settings.github.connected', { repo: `${repo.owner}/${repo.repo}` }) });
     setBusy(false);
   };
 
@@ -68,91 +71,108 @@ export function SettingsScreen() {
   };
 
   const model = MODELS.find((m) => m.id === st.model) ?? MODELS[0];
-  const usage = summarizeUsage(state.usageLog);
+  const usage = summarizeUsage(state.usageLog, lang);
 
   return (
     <Screen gap={24}>
-      <TopBar onBack={nav.back} title="Instellingen" center />
+      <TopBar onBack={nav.back} title={t('settings.title')} center />
 
       <View style={{ gap: 10 }}>
-        <Label>Verteller</Label>
+        <Label>{t('settings.language')}</Label>
+        <Row style={{ flexWrap: 'wrap', gap: 8 }}>
+          {LANGS.map((l) => (
+            <Chip key={l.id} label={l.label} selected={lang === l.id} onPress={() => setSettings({ lang: l.id })} />
+          ))}
+        </Row>
+        <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
+          {t('settings.language.hint')}
+        </T>
+      </View>
+
+      <View style={{ gap: 10 }}>
+        <Label>{t('settings.narrator')}</Label>
         <Row style={{ flexWrap: 'wrap', gap: 8 }}>
           {MODELS.map((m) => (
             <Chip key={m.id} label={m.label} selected={st.model === m.id} onPress={() => setSettings({ model: m.id })} />
           ))}
         </Row>
         <T size={13} color={C.muted}>
-          {model.hint}
+          {t(model.hint)}
         </T>
       </View>
 
       <View style={{ gap: 10 }}>
-        <Label>Verbruik per beurt</Label>
+        <Label>{t('settings.usage')}</Label>
         {usage.length ? (
           <Card>
             {usage.map((g) => (
               <View key={g.key} style={{ gap: 2 }}>
                 <T size={14} weight="semibold">
-                  {g.label} ({g.count}×)
+                  {t('usage.group', { label: g.label, n: g.count })}
                 </T>
                 <T size={13} color={C.muted}>
-                  {formatTokens(g.avgIn)} gelezen · {formatTokens(g.avgOut)} geschreven · {g.avgSecs} s{g.avgCost !== null ? ` · ca. $${String(g.avgCost).replace('.', ',')}` : ''}
+                  {t('usage.line', {
+                    read: formatTokens(g.avgIn, lang),
+                    written: formatTokens(g.avgOut, lang),
+                    secs: g.avgSecs,
+                    cost: g.avgCost !== null ? t('usage.cost', { cost: lang === 'en' ? String(g.avgCost) : String(g.avgCost).replace('.', ',') }) : '',
+                  })}
                 </T>
               </View>
             ))}
           </Card>
         ) : (
           <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-            Nog niets gemeten. Na je volgende beurt staat hier wat een opening en een gewone beurt kosten.
+            {t('usage.none')}
           </T>
         )}
         <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-          Gemiddelde van je laatste 40 beurten. Geschreven is de tekst plus het nadenken van de verteller; de opening denkt dieper na dan een gewone beurt. De kosten zijn een schatting tegen API-prijzen: je betaalt niets extra, maar het laat zien wat een beurt van je limiet gebruikt.
+          {t('usage.note')}
         </T>
       </View>
 
       <View style={{ gap: 10 }}>
-        <Label>Warme verteller</Label>
+        <Label>{t('settings.warm')}</Label>
         <Row style={{ gap: 8 }}>
-          <Chip label="Aan" selected={st.warm} onPress={() => setSettings({ warm: true })} />
-          <Chip label="Uit" selected={!st.warm} onPress={() => setSettings({ warm: false })} />
+          <Chip label={t('common.on')} selected={st.warm} onPress={() => setSettings({ warm: true })} />
+          <Chip label={t('common.off')} selected={!st.warm} onPress={() => setSettings({ warm: false })} />
         </Row>
         <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-          Maakt de verteller wakker zodra je de app opent, zodat een beurt ongeveer 20 seconden duurt in plaats van 1 à 2 minuten. Hij gaat na 10 minuten stilte weer slapen.
+          {t('settings.warm.text')}
         </T>
       </View>
 
       <View style={{ gap: 10 }}>
-        <Label>Beelden</Label>
+        <Label>{t('settings.images')}</Label>
         <Row style={{ gap: 8 }}>
-          <Chip label="Aan" selected={st.images} onPress={() => setSettings({ images: true })} />
-          <Chip label="Uit" selected={!st.images} onPress={() => setSettings({ images: false })} />
+          <Chip label={t('common.on')} selected={st.images} onPress={() => setSettings({ images: true })} />
+          <Chip label={t('common.off')} selected={!st.images} onPress={() => setSettings({ images: false })} />
         </Row>
         <Card>
           <T size={14} style={{ lineHeight: 20 }}>
             {st.imageUrlSet
-              ? 'Je beeldenserver is ingesteld. Beelden zijn 512×512 en worden gemaakt met het goedkoopste model.'
-              : 'Plak de URL van je Images-koppeling (je eigen Cloudflare Worker). Die eindigt op /mcp/ plus je geheime code.'}
+              ? t('settings.images.set')
+              : t('settings.images.unset')}
           </T>
           <Field
             value={imageUrl}
             onChangeText={setImageUrlText}
-            placeholder={st.imageUrlSet ? 'Nieuwe URL plakken' : 'https://…workers.dev/mcp/…'}
+            placeholder={st.imageUrlSet ? t('settings.images.newUrl') : 'https://…workers.dev/mcp/…'}
             secure
             autoCapitalize="none"
           />
-          <Button label={imgBusy ? 'Bezig…' : 'URL opslaan en testen'} onPress={saveImageUrl} disabled={!imageUrl.trim() || imgBusy} />
-          {st.imageUrlSet ? <Button label="URL verwijderen" variant="ghost" onPress={removeImageUrl} /> : null}
+          <Button label={imgBusy ? t('common.working') : t('settings.images.save')} onPress={saveImageUrl} disabled={!imageUrl.trim() || imgBusy} />
+          {st.imageUrlSet ? <Button label={t('settings.images.remove')} variant="ghost" onPress={removeImageUrl} /> : null}
           {imgCheck ? <Notice icon={imgCheck.ok ? 'check' : 'alert'} tone={imgCheck.ok ? 'quiet' : 'warn'} text={imgCheck.text} /> : null}
         </Card>
-        <Label>Maximaal per dag</Label>
+        <Label>{t('settings.images.perDay')}</Label>
         <Row style={{ gap: 8 }}>
           {[50, 150, 300].map((n) => (
             <Chip key={n} label={String(n)} selected={st.imageLimit === n} onPress={() => setSettings({ imageLimit: n })} />
           ))}
         </Row>
         <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-          Een beeld kost ongeveer 26 van de 10.000 gratis Cloudflare-punten per dag (ook gedeeld met je Images-koppeling in Claude). Het tegoed begint om middernacht (UTC) opnieuw.
+          {t('settings.images.quotaNote')}
         </T>
       </View>
 
@@ -160,43 +180,43 @@ export function SettingsScreen() {
         <Label>GitHub</Label>
         <Card>
           <T size={14} style={{ lineHeight: 20 }}>
-            {hasToken ? 'Er staat een GitHub-token op deze telefoon.' : 'Nog geen GitHub-token. Zonder token kan de app de verteller niet bereiken.'}
+            {hasToken ? t('settings.github.has') : t('settings.github.none')}
           </T>
           <Field
             value={token}
             onChangeText={setToken}
-            placeholder={hasToken ? 'Nieuw token plakken' : 'Plak hier je GitHub-token'}
+            placeholder={hasToken ? t('settings.github.newToken') : t('settings.github.pasteToken')}
             secure
             autoCapitalize="none"
           />
-          <Button label={busy ? 'Bezig…' : 'Token opslaan en testen'} onPress={save} disabled={!token.trim() || busy} />
-          {hasToken ? <Button label="Verbinding testen" variant="outline" onPress={test} disabled={busy} /> : null}
+          <Button label={busy ? t('common.working') : t('settings.github.save')} onPress={save} disabled={!token.trim() || busy} />
+          {hasToken ? <Button label={t('settings.github.test')} variant="outline" onPress={test} disabled={busy} /> : null}
           {check ? <Notice icon={check.ok ? 'check' : 'alert'} tone={check.ok ? 'quiet' : 'warn'} text={check.text} /> : null}
         </Card>
         <T size={13} color={C.muted} style={{ lineHeight: 19 }}>
-          Maak een fine-grained token met alleen toegang tot {st.repo}, rechten Contents en Actions: Read and write.
+          {t('settings.github.note', { repo: st.repo })}
         </T>
         <Row style={{ gap: 10 }}>
           <View style={{ flex: 1 }}>
-            <Field label="Eigenaar" value={st.owner} onChangeText={(t) => setSettings({ owner: t.trim() })} autoCapitalize="none" />
+            <Field label={t('settings.owner')} value={st.owner} onChangeText={(x) => setSettings({ owner: x.trim() })} autoCapitalize="none" />
           </View>
           <View style={{ flex: 1 }}>
-            <Field label="Repo" value={st.repo} onChangeText={(t) => setSettings({ repo: t.trim() })} autoCapitalize="none" />
+            <Field label={t('settings.repo')} value={st.repo} onChangeText={(x) => setSettings({ repo: x.trim() })} autoCapitalize="none" />
           </View>
         </Row>
       </View>
 
       <View style={{ gap: 10 }}>
-        <Label>Claude-token</Label>
+        <Label>{t('settings.claudeToken')}</Label>
         <T size={14} color={C.muted} style={{ lineHeight: 20 }}>
-          De verteller draait op je eigen Claude-abonnement. Het token zet je eenmalig als geheim in GitHub: open een Codespace op deze repo en draai{' '}
+          {t('settings.claudeToken.before')}
           <T size={14} weight="semibold">
             bash scripts/claude-token.sh
           </T>
-          . Na een jaar doe je dat opnieuw.
+          {t('settings.claudeToken.after')}
         </T>
         <Button
-          label="Uitleg openen"
+          label={t('settings.claudeToken.open')}
           variant="outline"
           onPress={() => Linking.openURL(`https://github.com/${st.owner}/${st.repo}#eenmalig-instellen`)}
         />

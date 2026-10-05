@@ -2,6 +2,7 @@ import React from 'react';
 import { Alert, Pressable, View } from 'react-native';
 import { useAdventure, useApp } from '../store';
 import { useNav } from '../nav';
+import { useT } from '../lang';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Bar, Button, Card, Label, Row, Screen, T, TopBar } from '../ui';
@@ -15,11 +16,12 @@ export function SheetScreen({ id }: { id: string }) {
   const nav = useNav();
   const { retryPortrait } = usePictures();
   const { patchAdventure } = useApp();
+  const { t, tn, lang } = useT();
   if (!adv) {
     return (
       <Screen>
         <TopBar onBack={nav.back} />
-        <T size={16}>Dit avontuur bestaat niet meer.</T>
+        <T size={16}>{t('story.gone')}</T>
       </Screen>
     );
   }
@@ -33,21 +35,21 @@ export function SheetScreen({ id }: { id: string }) {
 
   return (
     <Screen gap={22}>
-      <TopBar onBack={nav.back} title="Je held" center />
+      <TopBar onBack={nav.back} title={t('sheet.title')} center />
       <Row style={{ gap: 16 }}>
         {adv.portrait && adv.portrait.status !== 'failed' ? (
           <PictureBox pic={adv.portrait} size={112} />
         ) : (
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={adv.portrait ? 'Portret opnieuw proberen' : 'Nog geen portret'}
+            accessibilityLabel={adv.portrait ? t('sheet.portraitRetryA11y') : t('sheet.noPortrait')}
             onPress={adv.portrait ? () => retryPortrait(adv.id) : undefined}
             style={{ width: 112, height: 112, borderRadius: 16, backgroundColor: C.cardHi, alignItems: 'center', justifyContent: 'center', gap: 6, padding: 8 }}
           >
             <Icon name={adv.portrait ? 'refresh' : 'user'} size={26} color={C.dim} strokeWidth={1.5} />
             {adv.portrait ? (
               <T size={11} color={C.muted} style={{ textAlign: 'center' }}>
-                Portret opnieuw
+                {t('sheet.portraitRetry')}
               </T>
             ) : null}
           </Pressable>
@@ -57,13 +59,13 @@ export function SheetScreen({ id }: { id: string }) {
             {h.name}
           </T>
           <T size={14} color={C.muted}>
-            {h.className} · level {s.level}
+            {t('sheet.levelLine', { class: h.className, n: s.level })}
           </T>
           <Row style={{ gap: 8, marginTop: 4 }}>
             <Bar value={xpInLevel} max={XP_PER_LEVEL} color={C.gold} height={6} />
           </Row>
           <T size={12} color={C.muted}>
-            Op weg naar level {s.level + 1}
+            {t('sheet.toNextLevel', { n: s.level + 1 })}
           </T>
         </View>
       </Row>
@@ -71,7 +73,7 @@ export function SheetScreen({ id }: { id: string }) {
       <Row style={{ gap: 10 }}>
         <Card style={{ flex: 1, gap: 4, padding: 14 }}>
           <T size={12} weight="bold" color={C.muted} style={{ letterSpacing: 0.8, textTransform: 'uppercase' }}>
-            Leven
+            {t('sheet.health')}
           </T>
           <T weight="display" size={24} color={C.hp}>
             {s.hp}
@@ -83,17 +85,17 @@ export function SheetScreen({ id }: { id: string }) {
         </Card>
         <Card style={{ flex: 1, gap: 4, padding: 14 }}>
           <T size={12} weight="bold" color={C.muted} style={{ letterSpacing: 0.8, textTransform: 'uppercase' }}>
-            Goud
+            {t('sheet.gold')}
           </T>
           <T weight="display" size={24} color={C.gold}>
-            {formatGold(s.gold)}
+            {formatGold(s.gold, lang)}
           </T>
         </Card>
       </Row>
 
       {picturesOf(adv).some((p) => p.status === 'ok') ? (
         <Button
-          label={`Galerij · ${picturesOf(adv).filter((p) => p.status === 'ok').length} beelden`}
+          label={t('sheet.gallery', { n: picturesOf(adv).filter((p) => p.status === 'ok').length })}
           variant="outline"
           icon="grid"
           onPress={() => nav.push({ name: 'gallery', id: adv.id })}
@@ -102,7 +104,7 @@ export function SheetScreen({ id }: { id: string }) {
 
       {h.powers || traits.length ? (
         <View style={{ gap: 10 }}>
-          <Label>Krachten en zwaktes</Label>
+          <Label>{t('sheet.powers')}</Label>
           {h.powers ? (
             <T size={15} color={C.ink} style={{ lineHeight: 22 }}>
               {h.powers}
@@ -110,32 +112,32 @@ export function SheetScreen({ id }: { id: string }) {
           ) : null}
           {traits.length ? (
             <View style={{ borderRadius: 14, backgroundColor: C.card }}>
-              {traits.map((t, i) => (
-                <View key={t.name} style={{ paddingHorizontal: 16, paddingVertical: 12, gap: 4, borderTopWidth: i ? 1 : 0, borderTopColor: C.line }}>
+              {traits.map((tr, i) => (
+                <View key={tr.name} style={{ paddingHorizontal: 16, paddingVertical: 12, gap: 4, borderTopWidth: i ? 1 : 0, borderTopColor: C.line }}>
                   <Row style={{ gap: 8 }}>
                     <View
                       style={{
                         paddingHorizontal: 8,
                         paddingVertical: 2,
                         borderRadius: 6,
-                        backgroundColor: t.kind === 'zwakte' ? C.hpTint : C.accentTint,
+                        backgroundColor: tr.kind === 'zwakte' ? C.hpTint : C.accentTint,
                       }}
                     >
-                      <T size={11} weight="bold" color={t.kind === 'zwakte' ? C.hp : C.accent} style={{ letterSpacing: 0.6, textTransform: 'uppercase' }}>
-                        {t.kind === 'zwakte' ? 'Zwakte' : 'Kracht'}
+                      <T size={11} weight="bold" color={tr.kind === 'zwakte' ? C.hp : C.accent} style={{ letterSpacing: 0.6, textTransform: 'uppercase' }}>
+                        {tr.kind === 'zwakte' ? t('trait.zwakte') : t('trait.kracht')}
                       </T>
                     </View>
                     <T size={15} weight="semibold" style={{ flex: 1 }}>
-                      {t.name}
+                      {tr.name}
                     </T>
                     <Pressable
                       accessibilityRole="button"
-                      accessibilityLabel={`${t.kind === 'zwakte' ? 'Zwakte' : 'Kracht'} ${t.name} weghalen`}
+                      accessibilityLabel={`${tr.kind === 'zwakte' ? t('trait.zwakte') : t('trait.kracht')} ${tr.name} weghalen`}
                       hitSlop={10}
                       onPress={() =>
-                        Alert.alert(`${t.name} weghalen?`, 'Haal dit alleen weg als je het verhaal deze kracht of zwakte heeft zien verliezen.', [
-                          { text: 'Annuleer', style: 'cancel' },
-                          { text: 'Weghalen', style: 'destructive', onPress: () => patchAdventure(adv.id, (a) => dropTraitByHand(a, t.name)) },
+                        Alert.alert(t('sheet.removeTitle', { name: tr.name }), t('sheet.removeText'), [
+                          { text: t('common.cancel'), style: 'cancel' },
+                          { text: t('sheet.removeButton'), style: 'destructive', onPress: () => patchAdventure(adv.id, (a) => dropTraitByHand(a, tr.name)) },
                         ])
                       }
                       style={{ width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' }}
@@ -143,9 +145,9 @@ export function SheetScreen({ id }: { id: string }) {
                       <Icon name="close" size={16} color={C.muted} strokeWidth={2} />
                     </Pressable>
                   </Row>
-                  {t.detail ? (
+                  {tr.detail ? (
                     <T size={13} color={C.muted} style={{ lineHeight: 18 }}>
-                      {t.detail}
+                      {tr.detail}
                     </T>
                   ) : null}
                 </View>
@@ -156,7 +158,7 @@ export function SheetScreen({ id }: { id: string }) {
       ) : null}
 
       <View style={{ gap: 10 }}>
-        <Label right={<T size={13} color={C.muted}>{s.inventory.length === 1 ? '1 voorwerp' : `${s.inventory.length} voorwerpen`}</T>}>Tas</Label>
+        <Label right={<T size={13} color={C.muted}>{tn('sheet.items', s.inventory.length)}</T>}>{t('sheet.bag')}</Label>
         {s.inventory.length ? (
           <View style={{ borderRadius: 14, backgroundColor: C.card }}>
             {s.inventory.map((it, i) => (
@@ -172,13 +174,13 @@ export function SheetScreen({ id }: { id: string }) {
           </View>
         ) : (
           <T size={14} color={C.muted}>
-            Je tas is nog leeg.
+            {t('sheet.bagEmpty')}
           </T>
         )}
       </View>
 
       <View style={{ gap: 10 }}>
-        <Label>Quests</Label>
+        <Label>{t('sheet.quests')}</Label>
         {open.length ? (
           open.map((q) => (
             <Row key={q.title} style={{ gap: 12, alignItems: 'flex-start', padding: 14, borderRadius: 14, backgroundColor: C.card }}>
@@ -195,12 +197,12 @@ export function SheetScreen({ id }: { id: string }) {
               </View>
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel={`Quest ${q.title} afvinken`}
+                accessibilityLabel={t('sheet.finishA11y', { title: q.title })}
                 hitSlop={10}
                 onPress={() =>
-                  Alert.alert(`${q.title} afvinken?`, 'Vink een quest alleen af als je hem in het verhaal hebt afgerond.', [
-                    { text: 'Annuleer', style: 'cancel' },
-                    { text: 'Afvinken', onPress: () => patchAdventure(adv.id, (a) => finishQuestByHand(a, q.title)) },
+                  Alert.alert(t('sheet.finishTitle', { title: q.title }), t('sheet.finishText'), [
+                    { text: t('common.cancel'), style: 'cancel' },
+                    { text: t('sheet.finishButton'), onPress: () => patchAdventure(adv.id, (a) => finishQuestByHand(a, q.title)) },
                   ])
                 }
                 style={{ width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: C.cardHi }}
@@ -211,7 +213,7 @@ export function SheetScreen({ id }: { id: string }) {
           ))
         ) : (
           <T size={14} color={C.muted}>
-            Geen open quests.
+            {t('sheet.noQuests')}
           </T>
         )}
         {done.map((q) => (
@@ -225,7 +227,7 @@ export function SheetScreen({ id }: { id: string }) {
       </View>
 
       <T size={13} color={C.dim}>
-        {worldLabel(adv.world)}
+        {worldLabel(adv.world, lang)}
         {s.location ? ` · ${s.location}` : ''}
       </T>
     </Screen>

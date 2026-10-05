@@ -7,7 +7,8 @@ import * as gh from './services/github';
 import { fetchClaudeStatus } from './services/status';
 import { responseHealth, type ClaudeHealth } from './logic/status';
 import { addUsage } from './logic/usage';
-import { RESUME_ACTION, applyAnswer, buildRequest, makePending, newAdventure, parseAnswer, resumeStory } from './logic/game';
+import { applyAnswer, buildRequest, makePending, newAdventure, parseAnswer, resumeAction, resumeStory, storyLang } from './logic/game';
+import { tt } from './i18n';
 import type { Adventure, Hero, Pending, TurnError, TurnErrorKind, TurnResponse, World } from './logic/types';
 
 export type Phase = { stage: 'versturen' | 'opwarmen' | 'schrijven'; since: number };
@@ -50,7 +51,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
   const { state, loaded, current, update, saveAdventure, patchAdventure } = useApp();
   const [phase, setPhaseMap] = useState<Record<string, Phase>>({});
   const [warm, setWarm] = useState<gh.StandbyState>(null);
-  const [statusPage, setStatusPage] = useState<ClaudeHealth>({ level: 'onbekend', text: 'Status van Claude wordt opgehaald…' });
+  const [statusPage, setStatusPage] = useState<ClaudeHealth>({ level: 'onbekend', text: tt('status.fetching') });
   const active = useRef(new Set<string>());
 
   const setPhase = useCallback((id: string, stage: Phase['stage'] | null) => {
@@ -104,7 +105,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
     active.current.add(id);
     let p: Pending = first.pending;
     try {
-      if (!(await gh.getToken())) throw new TurnFail('setup', 'Stel eerst je GitHub-token in bij Instellingen.');
+      if (!(await gh.getToken())) throw new TurnFail('setup', tt('err.setup.text'));
       const repo = repoRef();
 
       if (!p.posted) {
@@ -139,7 +140,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
         response = await gh.getResponse(repo, p.requestId).catch(() => null);
         if (response) break;
         const secs = Math.round((Date.now() - p.startedAt) / 1000);
-        if (secs > MAX_WAIT_S) throw new TurnFail('fout', 'De verteller deed er te lang over (meer dan 13 minuten).', null, runUrl);
+        if (secs > MAX_WAIT_S) throw new TurnFail('fout', tt('turn.timeout'), null, runUrl);
         if (!p.dispatched) {
           setPhase(id, standby === 'klaar' ? 'schrijven' : 'opwarmen');
           // Vangnet: de warme verteller is net gestopt of doet het niet; dan alsnog een losse run.
@@ -162,7 +163,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
               // De workflow schrijft ook bij fouten een antwoord; kijk nog één keer.
               await sleep(3000);
               response = await gh.getResponse(repo, p.requestId).catch(() => null);
-              if (!response) throw new TurnFail('fout', `De verteller-workflow is mislukt (${r.conclusion}).`, null, r.url);
+              if (!response) throw new TurnFail('fout', tt('turn.workflowFailed', { conclusion: String(r.conclusion) }), null, r.url);
               break;
             }
             setPhase(id, r.status === 'in_progress' ? 'schrijven' : 'opwarmen');
@@ -173,10 +174,10 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
 
       update((s) => ({ ...s, lastResponse: response, usageLog: addUsage(s.usageLog, response, p.kind) }));
       if (response.status !== 'ok') {
-        throw new TurnFail(response.status, response.message || 'De verteller gaf geen antwoord.', response.resetAt, runUrl);
+        throw new TurnFail(response.status, response.message || tt('turn.noAnswer'), response.resetAt, runUrl);
       }
       const answer = parseAnswer(response.answer);
-      if (!answer) throw new TurnFail('fout', 'Het antwoord van de verteller was leeg of onleesbaar.', null, runUrl);
+      if (!answer) throw new TurnFail('fout', tt('turn.unreadable'), null, runUrl);
       const st = current().settings;
       const images = st.images && st.imageUrlSet;
       patchAdventure(id, (a) => (a.pending?.requestId === p.requestId ? applyAnswer(a, p, answer, Date.now(), images) : a));
@@ -184,7 +185,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
       const err: TurnError =
         e instanceof TurnFail
           ? { kind: e.kind, message: e.message, resetAt: e.resetAt, url: e.url }
-          : { kind: 'fout', message: e?.message ? `Er ging iets mis: ${e.message}` : 'Er ging iets mis.' };
+          : { kind: 'fout', message: e?.message ? tt('turn.wentWrongWith', { msg: e.message }) : tt('turn.wentWrong') };
       patchAdventure(id, (a) => (a.pending?.requestId === p.requestId ? { ...a, error: err } : a));
     } finally {
       active.current.delete(id);
@@ -192,6 +193,12 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // De statusmelding is tekst in de app-taal: opnieuw ophalen als die wisselt.
+  const appLang = state.settings.lang;
+  useEffect(() => {
+    if (loaded) fetchClaudeStatus().then(setStatusPage);
+  }, [loaded, appLang]);
 
   // Openstaande beurten weer oppakken (na opstarten of terugkomen in de app).
   const resumeAll = useCallback(() => {
@@ -202,7 +209,6 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
     if (!loaded) return;
     resumeAll();
     checkWarm(true);
-    fetchClaudeStatus().then(setStatusPage);
     const sub = RNAppState.addEventListener('change', (st) => {
       if (st !== 'active') return;
       resumeAll();
@@ -221,7 +227,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo<TurnCtx>(
     () => ({
       warm,
-      health: responseHealth(state.lastResponse, Date.now()) ?? statusPage,
+      health: responseHealth(state.lastResponse, Date.now(), state.settings.lang) ?? statusPage,
       phase,
       startAdventure: (world, hero) => {
         const adv = newAdventure(world, hero);
@@ -241,7 +247,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
         // Afgesloten verhaal toch voortzetten: meteen een beurt starten, zodat de keuzes er weer zijn.
         const a = getAdv(id);
         if (!a || !a.ended || a.pending) return;
-        patchAdventure(id, (x) => ({ ...resumeStory(x), pending: makePending('turn', RESUME_ACTION), error: null }));
+        patchAdventure(id, (x) => ({ ...resumeStory(x), pending: makePending('turn', resumeAction(storyLang(a))), error: null }));
         setTimeout(() => run(id), 0);
         checkWarm(true);
       },
@@ -258,7 +264,7 @@ export function TurnProvider({ children }: { children: React.ReactNode }) {
       },
     }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [warm, statusPage, phase, state.lastResponse, saveAdventure, patchAdventure, run, checkWarm],
+    [warm, statusPage, phase, state.lastResponse, state.settings.lang, saveAdventure, patchAdventure, run, checkWarm],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

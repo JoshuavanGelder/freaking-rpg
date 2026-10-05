@@ -7,6 +7,39 @@ export function validId(id) {
   return typeof id === 'string' && /^[a-z0-9-]{4,48}$/i.test(id);
 }
 
+/** Taal van het verzoek: alles wat geen 'en' is blijft Nederlands (oude verzoeken hebben geen taal). */
+export const langOf = (r) => (r?.lang === 'en' ? 'en' : 'nl');
+
+/** Meldingen van de verteller-workflow in de taal van het verzoek. */
+const MSG = {
+  nl: {
+    ok: 'Klaar',
+    limit: 'Je Claude-limiet is op.',
+    token: 'Het Claude-token werkt niet (verlopen of ongeldig). Maak een nieuw token met scripts/claude-token.sh.',
+    unusable: (short) => `De verteller gaf geen bruikbaar antwoord: ${short}`,
+    notFound: 'Verzoek niet gevonden in de rpg-data-branch.',
+    noToken: 'Er is nog geen Claude-token: zet het secret CLAUDE_CODE_OAUTH_TOKEN in de repo (maak het met scripts/claude-token.sh).',
+    badJson: 'Het verzoek is geen geldige JSON.',
+    cannotStart: (why) => `Claude Code kon niet starten: ${why}`,
+  },
+  en: {
+    ok: 'Done',
+    limit: 'Your Claude limit is used up.',
+    token: 'The Claude token does not work (expired or invalid). Create a new token with scripts/claude-token.sh.',
+    unusable: (short) => `The narrator gave no usable answer: ${short}`,
+    notFound: 'Request not found in the rpg-data branch.',
+    noToken: 'There is no Claude token yet: set the secret CLAUDE_CODE_OAUTH_TOKEN in the repo (create it with scripts/claude-token.sh).',
+    badJson: 'The request is not valid JSON.',
+    cannotStart: (why) => `Claude Code could not start: ${why}`,
+  },
+};
+
+/** Melding in de gegeven taal ('nl' of 'en'). */
+export const msg = (lang, key, arg) => {
+  const m = (MSG[lang] ?? MSG.nl)[key];
+  return typeof m === 'function' ? m(arg) : m;
+};
+
 const clean = (v, max = 600) => String(v ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
 
 /** Lengte van de verteltekst per beurt, zoals de speler hem kiest. */
@@ -58,6 +91,17 @@ function castLine(c) {
   return `- ${clean(c.name, 60)}: ${look ? `${look} | ` : ''}${parts.join(' | ')}`;
 }
 
+/** De taal waarin de speler dit avontuur leest. Bij een wissel midden in een verhaal blijft het oude gewoon staan. */
+export function languageLines(r) {
+  const name = langOf(r) === 'en' ? 'English' : 'Dutch';
+  return [
+    '## Language',
+    `- story language: ${name}`,
+    `- write everything the player reads in ${name}: narration, the 3 choices, title, item, quest and trait names and texts, location, summary, cast roles, homes and notes, canon places, facts and time, and the names of new attributes. Picture prompts (image, heroLook, portrait, cast looks) stay English.`,
+    `- earlier text may be in the other language (summary, quests, names, canon): keep it as it is, copy names exactly as written when you refer to them (completeQuests, removeTraits, forgetFacts, cast names), but write everything new in ${name}. You may restate the summary in ${name}.`,
+  ];
+}
+
 /** Maakt van het verzoek (JSON van de app) een leesbaar bericht voor Claude. */
 export function renderRequest(r) {
   const w = r.world ?? {};
@@ -65,6 +109,8 @@ export function renderRequest(r) {
   const s = r.state ?? {};
   const lines = [];
   lines.push(`# Turn type: ${r.kind === 'start' ? 'start (new adventure)' : 'turn'}`);
+  lines.push('');
+  lines.push(...languageLines(r));
   lines.push('');
   lines.push('## World');
   lines.push(`- setting: ${clean(w.setting) || 'free choice'}`);
@@ -171,13 +217,13 @@ const LIMIT_RE = /usage limit|limit reached|hit your (?:usage )?limit|you've rea
 const AUTH_RE = /invalid (?:api key|bearer token|oauth token)|oauth token (?:has )?expired|authentication[_ ]error|please run \/login|not logged in|could not resolve authentication|401\b|token (?:is )?(?:invalid|expired|revoked)/i;
 
 /** Maakt van de melding van Claude Code een leesbare resettijd, als die erin staat. */
-export function parseReset(text, timeZone = 'Europe/Amsterdam') {
+export function parseReset(text, timeZone = 'Europe/Amsterdam', lang = 'nl') {
   if (!text) return null;
   const epoch = text.match(/\|(\d{10,13})\b/);
   if (epoch) {
     const n = Number(epoch[1]);
     const d = new Date(epoch[1].length === 13 ? n : n * 1000);
-    return d.toLocaleString('nl-NL', { timeZone, weekday: 'long', hour: '2-digit', minute: '2-digit' });
+    return d.toLocaleString(lang === 'en' ? 'en-GB' : 'nl-NL', { timeZone, weekday: 'long', hour: '2-digit', minute: '2-digit' });
   }
   const resets = text.match(/resets?\s+(?:at\s+|on\s+)?([^\n·.|]{2,40})/i);
   if (resets) return resets[1].trim();
@@ -191,29 +237,29 @@ export function parseReset(text, timeZone = 'Europe/Amsterdam') {
  * out = geparste JSON-uitvoer van `claude -p --output-format json` (of null),
  * raw = ruwe stdout+stderr, code = exitcode.
  */
-export function classify(out, raw, code) {
+export function classify(out, raw, code, lang = 'nl') {
   const text = [out && typeof out.result === 'string' ? out.result : '', raw || ''].join('\n');
   const failed = code !== 0 || !out || out.is_error === true || (out.subtype && out.subtype !== 'success');
   if (!failed && out && isAnswer(out.structured_output)) {
-    return { status: 'ok', message: 'Klaar', resetAt: null, answer: out.structured_output };
+    return { status: 'ok', message: msg(lang, 'ok'), resetAt: null, answer: out.structured_output };
   }
   if (!failed && out && typeof out.result === 'string') {
     const answer = extractJson(out.result);
-    if (answer) return { status: 'ok', message: 'Klaar', resetAt: null, answer };
+    if (answer) return { status: 'ok', message: msg(lang, 'ok'), resetAt: null, answer };
   }
   if (LIMIT_RE.test(text)) {
-    return { status: 'limiet', message: 'Je Claude-limiet is op.', resetAt: parseReset(text), answer: null };
+    return { status: 'limiet', message: msg(lang, 'limit'), resetAt: parseReset(text, undefined, lang), answer: null };
   }
   if (AUTH_RE.test(text)) {
     return {
       status: 'token',
-      message: 'Het Claude-token werkt niet (verlopen of ongeldig). Maak een nieuw token met scripts/claude-token.sh.',
+      message: msg(lang, 'token'),
       resetAt: null,
       answer: null,
     };
   }
   const short = (out && typeof out.result === 'string' && out.result) || (raw || '').trim().split('\n').slice(-3).join(' ');
-  return { status: 'fout', message: `De verteller gaf geen bruikbaar antwoord: ${String(short).slice(0, 300)}`, resetAt: null, answer: null };
+  return { status: 'fout', message: msg(lang, 'unusable', String(short).slice(0, 300)), resetAt: null, answer: null };
 }
 
 function isAnswer(o) {

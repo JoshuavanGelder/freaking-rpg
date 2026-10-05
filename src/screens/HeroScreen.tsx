@@ -2,27 +2,30 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { useNav } from '../nav';
 import { useTurns } from '../turns';
+import { useT } from '../lang';
 import { clearDraft, useDraft } from '../drafts';
 import { C } from '../theme';
 import { Icon } from '../icons';
 import { Button, Chip, Field, Label, Notice, Row, Screen, T, TopBar } from '../ui';
 import { heroProblem, settingOf, worldLabel } from '../logic/game';
+import { langOf } from '../i18n';
 import type { Hero, World } from '../logic/types';
 
 /** Stap 2: je held. Eigenschappen maakt de verteller zelf, onzichtbaar. */
 export function HeroScreen({ world }: { world: World }) {
   const nav = useNav();
   const { startAdventure } = useTurns();
+  const { t, lang } = useT();
   // Blijft bewaard als je terug gaat naar stap 1 en weer verder.
   const [hero, setHero] = useDraft<Hero>('new-hero', { name: '', className: '', powers: '', looks: '' });
   const [tried, setTried] = useState(false);
   const set = (patch: Partial<Hero>) => setHero((h) => ({ ...h, ...patch }));
-  const classes = settingOf(world.setting).classes;
-  const problem = heroProblem(hero);
+  const classes = settingOf(world.setting, lang).classes;
+  const problem = heroProblem(hero, lang);
 
   return (
     <Screen>
-      <TopBar onBack={nav.back} title="Stap 2 van 2" center />
+      <TopBar onBack={nav.back} title={t('hero.step')} center />
       <Row style={{ gap: 16 }}>
         <View
           style={{
@@ -41,48 +44,48 @@ export function HeroScreen({ world }: { world: World }) {
         >
           <Icon name="user" size={28} color={C.dim} strokeWidth={1.75} />
           <T size={12} color={C.muted} style={{ textAlign: 'center' }}>
-            Portret volgt later
+            {t('hero.portraitLater')}
           </T>
         </View>
         <View style={{ flex: 1, gap: 6 }}>
           <T weight="display" size={30}>
-            Wie ben jij?
+            {t('hero.who')}
           </T>
           <T size={14} color={C.muted}>
-            {worldLabel(world)}
+            {worldLabel(world, lang)}
           </T>
         </View>
       </Row>
 
-      <Field label="Naam" value={hero.name} onChangeText={(t) => set({ name: t })} placeholder="Bijv. Fenna Vlugvinger" autoCapitalize="words" />
+      <Field label={t('hero.name')} value={hero.name} onChangeText={(x) => set({ name: x })} placeholder={t('hero.name.placeholder')} autoCapitalize="words" />
 
       <View style={{ gap: 10 }}>
-        <Label>Klasse</Label>
+        <Label>{t('hero.class')}</Label>
         <Row style={{ flexWrap: 'wrap', gap: 8 }}>
           {classes.map((c) => (
             <Chip key={c} label={c} selected={hero.className === c} onPress={() => set({ className: c })} />
           ))}
         </Row>
-        <Field value={hero.className} onChangeText={(t) => set({ className: t })} placeholder="Of typ je eigen klasse" />
+        <Field value={hero.className} onChangeText={(x) => set({ className: x })} placeholder={t('hero.class.placeholder')} />
       </View>
 
       <View style={{ gap: 10 }}>
         <Field
-          label="Krachten en zwaktes"
+          label={t('hero.powers.label')}
           value={hero.powers}
-          onChangeText={(t) => set({ powers: t })}
-          placeholder="Wat kan je held, en wat juist niet? Bijv. supersnel en ziet alles in slow motion, maar wordt doodmoe en heeft altijd honger"
+          onChangeText={(x) => set({ powers: x })}
+          placeholder={t('hero.powers.placeholder')}
           multiline
         />
-        <Notice text="De verteller maakt hier eigenschappen van die bij jouw held passen, en houdt ze op de achtergrond bij. Je ziet geen cijfers." />
+        <Notice text={t('hero.powers.notice')} />
       </View>
 
       <Field
-        label="Uiterlijk"
-        extra="voor je portret"
+        label={t('hero.looks.label')}
+        extra={t('hero.looks.extra')}
         value={hero.looks}
-        onChangeText={(t) => set({ looks: t })}
-        placeholder="Bijv. korte rode vlechten, te grote leren jas, litteken op de kin"
+        onChangeText={(x) => set({ looks: x })}
+        placeholder={t('hero.looks.placeholder')}
         multiline
       />
 
@@ -93,19 +96,19 @@ export function HeroScreen({ world }: { world: World }) {
           </T>
         ) : null}
         <Button
-          label="Begin het avontuur"
+          label={t('hero.start')}
           icon="arrow"
           onPress={() => {
             setTried(true);
             if (problem) return;
-            const id = startAdventure(world, hero);
+            const id = startAdventure({ ...world, lang: langOf(world.lang ?? lang) }, hero);
             clearDraft('new-world', 'new-hero');
             nav.home();
             nav.push({ name: 'story', id });
           }}
         />
         <T size={13} color={C.muted} style={{ textAlign: 'center', lineHeight: 19 }}>
-          De eerste beurt duurt 1 à 2 minuten: de verteller moet nog wakker worden.
+          {t('hero.firstTurn')}
         </T>
       </View>
     </Screen>

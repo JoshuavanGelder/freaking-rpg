@@ -4,6 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { C, F } from './theme';
 import { Icon, IconName } from './icons';
 import { RevealCtx, useKeyboardReveal, useReveal } from './keyboard';
+import { useT } from './lang';
 
 // ---------- tekst ----------
 
@@ -88,9 +89,10 @@ export function TopBar({
   right?: React.ReactNode;
   center?: boolean;
 }) {
+  const { t } = useT();
   return (
     <Row style={{ gap: 10, minHeight: 44 }}>
-      {onBack ? <IconButton icon="back" label="Terug" onPress={onBack} /> : null}
+      {onBack ? <IconButton icon="back" label={t('common.back')} onPress={onBack} /> : null}
       <View style={{ flex: 1, alignItems: center ? 'center' : 'flex-start' }}>
         {title ? (
           <T size={center ? 13 : 16} weight="bold" color={center ? C.muted : C.ink} numberOfLines={1} style={center ? { letterSpacing: 1, textTransform: 'uppercase' } : undefined}>

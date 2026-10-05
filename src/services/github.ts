@@ -1,6 +1,7 @@
 // GitHub: beurten in de branch rpg-data zetten, de verteller-workflow starten en het antwoord ophalen.
 import * as SecureStore from 'expo-secure-store';
 import { utf8ToBase64 } from '../logic/base64';
+import { tt } from '../i18n';
 import type { TurnResponse } from '../logic/types';
 
 const K_TOKEN = 'frpg_github_token';
@@ -28,7 +29,7 @@ export async function setToken(token: string | null): Promise<void> {
 
 async function gh<T = any>(repo: RepoRef, path: string, init: RequestInit = {}, accept = 'application/vnd.github+json'): Promise<T | null> {
   const token = await getToken();
-  if (!token) throw new GitHubError(401, 'Er is nog geen GitHub-token ingesteld (zie Instellingen).');
+  if (!token) throw new GitHubError(401, tt('gh.noToken'));
   const url = path.startsWith('/repos') || path.startsWith('/user') ? path : `/repos/${repo.owner}/${repo.repo}${path}`;
   const res = await fetch(`https://api.github.com${url}`, {
     ...init,
@@ -43,10 +44,10 @@ async function gh<T = any>(repo: RepoRef, path: string, init: RequestInit = {}, 
   if (res.status === 204) return null;
   const text = await res.text();
   if (!res.ok) {
-    if (res.status === 404) throw new GitHubError(404, 'Niet gevonden');
-    if (res.status === 401) throw new GitHubError(401, 'Het GitHub-token werkt niet (verlopen of ongeldig).');
-    if (res.status === 403) throw new GitHubError(403, `GitHub weigert dit: ${text.slice(0, 160)}`);
-    throw new GitHubError(res.status, `GitHub-fout ${res.status}: ${text.slice(0, 160)}`);
+    if (res.status === 404) throw new GitHubError(404, tt('gh.notFound'));
+    if (res.status === 401) throw new GitHubError(401, tt('gh.badToken'));
+    if (res.status === 403) throw new GitHubError(403, tt('gh.refused', { text: text.slice(0, 160) }));
+    throw new GitHubError(res.status, tt('gh.error', { status: res.status, text: text.slice(0, 160) }));
   }
   if (accept.includes('raw')) return text as unknown as T;
   return (text ? JSON.parse(text) : null) as T;
@@ -56,10 +57,10 @@ async function gh<T = any>(repo: RepoRef, path: string, init: RequestInit = {}, 
 export async function checkRepo(repo: RepoRef): Promise<string | null> {
   try {
     const r = await gh<any>(repo, '');
-    if (!r?.permissions?.push && r?.permissions) return 'Het token mag niet schrijven in deze repo.';
+    if (!r?.permissions?.push && r?.permissions) return tt('gh.noWrite');
     return null;
   } catch (e: any) {
-    if (e?.status === 404) return `Repo ${repo.owner}/${repo.repo} niet gevonden (of het token heeft er geen toegang toe).`;
+    if (e?.status === 404) return tt('gh.repoNotFound', { repo: `${repo.owner}/${repo.repo}` });
     return e?.message ?? String(e);
   }
 }

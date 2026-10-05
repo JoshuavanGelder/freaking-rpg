@@ -1,5 +1,6 @@
 // Verbruik per beurt bijhouden en samenvatten, zodat je zelf ziet wat "low" of "medium" nadenken kost.
 // Tokens komen van Claude Code zelf; de kosten zijn een schatting tegen API-prijzen (je betaalt via je abonnement).
+import { DEFAULT_LANG, t, type Lang } from '../i18n.ts';
 import type { TurnResponse } from './types.ts';
 
 export type UsageEntry = {
@@ -38,7 +39,7 @@ export type UsageGroup = { key: string; label: string; count: number; avgIn: num
 const avg = (xs: number[]) => (xs.length ? Math.round(xs.reduce((a, b) => a + b, 0) / xs.length) : 0);
 
 /** Gemiddelden per soort beurt (opening of beurt), model en nadenkstand. Openingen eerst. */
-export function summarizeUsage(log: UsageEntry[] | undefined): UsageGroup[] {
+export function summarizeUsage(log: UsageEntry[] | undefined, lang: Lang = DEFAULT_LANG): UsageGroup[] {
   const groups = new Map<string, UsageEntry[]>();
   for (const e of log ?? []) {
     const key = `${e.kind}|${e.model}|${e.effort}`;
@@ -49,7 +50,7 @@ export function summarizeUsage(log: UsageEntry[] | undefined): UsageGroup[] {
       const costs = es.map((e) => e.costUsd).filter((c): c is number => c !== null);
       return {
         key,
-        label: `${es[0].kind === 'start' ? 'Opening' : 'Beurt'} · ${es[0].model} ${es[0].effort}`,
+        label: `${t(lang, es[0].kind === 'start' ? 'usage.opening' : 'usage.turn')} · ${es[0].model} ${es[0].effort === 'standaard' ? t(lang, 'usage.defaultEffort') : es[0].effort}`,
         count: es.length,
         avgIn: avg(es.map((e) => e.tokensIn)),
         avgOut: avg(es.map((e) => e.tokensOut)),
@@ -60,7 +61,7 @@ export function summarizeUsage(log: UsageEntry[] | undefined): UsageGroup[] {
     .sort((a, b) => (a.key.startsWith('start') === b.key.startsWith('start') ? a.key.localeCompare(b.key) : a.key.startsWith('start') ? -1 : 1));
 }
 
-/** 9400 -> "9,4k", 850 -> "850". */
-export function formatTokens(n: number): string {
-  return n >= 1000 ? `${(n / 1000).toFixed(1).replace('.', ',')}k` : String(Math.round(n));
+/** 9400 -> "9,4k" (Nederlands) of "9.4k" (Engels), 850 -> "850". */
+export function formatTokens(n: number, lang: Lang = DEFAULT_LANG): string {
+  return n >= 1000 ? `${(n / 1000).toFixed(1).replace('.', lang === 'en' ? '.' : ',')}k` : String(Math.round(n));
 }

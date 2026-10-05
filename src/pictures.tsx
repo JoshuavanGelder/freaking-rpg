@@ -4,6 +4,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 import { AppState as RNAppState } from 'react-native';
 import { useApp } from './store';
 import * as img from './services/images';
+import { tt } from './i18n';
 import { deletePictures, savePicture } from './services/files';
 import { canMakeImage, promptAttempts, findPicture, imagesUsed, picturesOf, requestPicture, requestPortrait, styledPrompt, updatePicture } from './logic/game';
 import type { Adventure, Picture } from './logic/types';
@@ -62,16 +63,16 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
         const { advId, pic } = next;
         const st = current().settings;
         if (!st.images) {
-          fail(advId, pic.id, 'Beelden staan uit in Instellingen.');
+          fail(advId, pic.id, tt('pic.err.off'));
           continue;
         }
         const url = await img.getImageUrl();
         if (!url) {
-          fail(advId, pic.id, 'Stel eerst de beeld-URL in bij Instellingen.');
+          fail(advId, pic.id, tt('pic.err.noUrl'));
           continue;
         }
         if (!canMakeImage(current().imageCounter, st.imageLimit)) {
-          fail(advId, pic.id, 'Het beeldtegoed van vandaag is op.');
+          fail(advId, pic.id, tt('pic.err.quota'));
           continue;
         }
         const adv = current().adventures.find((a) => a.id === advId);
@@ -90,7 +91,7 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
           try {
             result = await img.generate(url, styledPrompt(adv.world.setting, prompts[p]));
           } catch (e: any) {
-            error = e?.message ?? 'Het beeld kon niet gemaakt worden.';
+            error = e?.message ?? tt('pic.err.failed');
             if (e?.kind === 'tegoed') {
               update((s) => ({ ...s, imageCounter: { ...imagesUsed(s.imageCounter), exhausted: true } }));
               break;
@@ -116,7 +117,7 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
         const still = current().adventures.find((a) => a.id === advId);
         if (!still || findPicture(still, pic.id)?.status !== 'pending') continue;
         if (!result) {
-          fail(advId, pic.id, error || 'Het beeld kon niet gemaakt worden.');
+          fail(advId, pic.id, error || tt('pic.err.failed'));
           continue;
         }
         try {
@@ -125,7 +126,7 @@ export function PictureProvider({ children }: { children: React.ReactNode }) {
           deletePictures([old]);
           patchAdventure(advId, (a) => updatePicture(a, pic.id, { status: 'ok', uri, error: undefined }));
         } catch (e: any) {
-          fail(advId, pic.id, `Opslaan mislukt: ${e?.message ?? e}`);
+          fail(advId, pic.id, tt('pic.err.saving', { msg: e?.message ?? e }));
         }
       }
     } finally {

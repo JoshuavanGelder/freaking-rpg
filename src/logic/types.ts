@@ -1,4 +1,5 @@
 // Alle vormen van een avontuur. Pure types, geen React.
+import type { Lang } from '../i18n.ts';
 
 export type World = {
   setting: string; // id uit SETTINGS, bv. 'superhelden'
@@ -10,6 +11,8 @@ export type World = {
   textLength?: TextLength;
   /** Hoe lang het avontuur duurt voor het een einde krijgt. undefined = avontuur van vóór deze keuze (onbeperkt). */
   arc?: Arc;
+  /** Taal waarin dit avontuur verteld wordt. undefined = avontuur van vóór deze keuze (Nederlands). */
+  lang?: Lang;
 };
 
 export type TextLength = 'kort' | 'normaal' | 'uitgebreid';
@@ -214,6 +217,8 @@ export type TurnRequest = {
   createdAt: string;
   kind: 'start' | 'turn';
   model: string;
+  /** Taal waarin de verteller schrijft (de taalinstelling van de app). Ontbreekt in oude verzoeken: Nederlands. */
+  lang?: Lang;
   world: World;
   hero: Hero;
   state: GameState;

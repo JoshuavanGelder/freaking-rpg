@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { MODELS, classify, effortFor, parseCliOutput, pickUsage, renderRequest, validId } from './lib.mjs';
+import { MODELS, classify, effortFor, langOf, msg, parseCliOutput, pickUsage, renderRequest, validId } from './lib.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
@@ -23,22 +23,18 @@ export async function handleRequest(id, dataDir) {
   if (!validId(id)) throw new Error('Ongeldig verzoek-id');
   const reqPath = join(dataDir, 'requests', `${id}.json`);
   if (!existsSync(reqPath)) {
-    return write(dataDir, id, started, { status: 'fout', message: 'Verzoek niet gevonden in de rpg-data-branch.', resetAt: null, answer: null });
-  }
-  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN) {
-    return write(dataDir, id, started, {
-      status: 'token',
-      message: 'Er is nog geen Claude-token: zet het secret CLAUDE_CODE_OAUTH_TOKEN in de repo (maak het met scripts/claude-token.sh).',
-      resetAt: null,
-      answer: null,
-    });
+    return write(dataDir, id, started, { status: 'fout', message: msg('nl', 'notFound'), resetAt: null, answer: null });
   }
 
   let request;
   try {
     request = JSON.parse(readFileSync(reqPath, 'utf8'));
   } catch {
-    return write(dataDir, id, started, { status: 'fout', message: 'Het verzoek is geen geldige JSON.', resetAt: null, answer: null });
+    return write(dataDir, id, started, { status: 'fout', message: msg('nl', 'badJson'), resetAt: null, answer: null });
+  }
+  const lang = langOf(request);
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+    return write(dataDir, id, started, { status: 'token', message: msg(lang, 'noToken'), resetAt: null, answer: null });
   }
   const model = MODELS.includes(request.model) ? request.model : 'sonnet';
   const prompt = renderRequest(request);
@@ -92,7 +88,7 @@ export async function handleRequest(id, dataDir) {
     child.on('close', (code) => {
       clearTimeout(timer);
       const out = parseCliOutput(stdout);
-      const res = classify(out, `${stdout}\n${stderr}`, code ?? 1);
+      const res = classify(out, `${stdout}\n${stderr}`, code ?? 1, lang);
       if (res.status !== 'ok') {
         console.error((stderr || stdout).slice(-2000));
         // Korte melding als annotation: die is via de API te lezen.
@@ -105,7 +101,7 @@ export async function handleRequest(id, dataDir) {
     });
     child.on('error', (err) => {
       clearTimeout(timer);
-      finish({ status: 'fout', message: `Claude Code kon niet starten: ${err.message}`, resetAt: null, answer: null });
+      finish({ status: 'fout', message: msg(lang, 'cannotStart', err.message), resetAt: null, answer: null });
     });
   });
 }

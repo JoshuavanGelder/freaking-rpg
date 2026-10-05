@@ -5,10 +5,12 @@ import type { Adventure, TurnResponse } from './logic/types';
 import { DEFAULT_IMAGE_LIMIT, type ImageCounter } from './logic/game';
 import type { UsageEntry } from './logic/usage';
 import { loadDrafts } from './drafts';
+import { DEFAULT_LANG, langOf, setCurrentLang, type Lang } from './i18n';
 
 export type Model = 'sonnet' | 'haiku' | 'opus';
 
 export type Settings = {
+  lang: Lang; // taal van de app en van de verteller
   owner: string;
   repo: string;
   model: Model;
@@ -29,6 +31,7 @@ export type AppState = {
 };
 
 export const DEFAULT_SETTINGS: Settings = {
+  lang: DEFAULT_LANG,
   owner: 'JoshuavanGelder',
   repo: 'freaking-rpg',
   model: 'sonnet',
@@ -86,6 +89,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           adventures: Array.isArray(parsed.adventures) ? parsed.adventures : [],
           settings: { ...DEFAULT_SETTINGS, ...(parsed.settings ?? {}) },
         };
+        next.settings.lang = langOf(next.settings.lang);
+        setCurrentLang(next.settings.lang);
         ref.current = next;
         setState(next);
       })
@@ -95,6 +100,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const update = useCallback((fn: (s: AppState) => AppState) => {
     const next = fn(ref.current);
+    if (next.settings.lang !== ref.current.settings.lang) setCurrentLang(next.settings.lang);
     ref.current = next;
     setState(next);
     AsyncStorage.setItem(KEY, JSON.stringify(next)).catch(() => undefined);

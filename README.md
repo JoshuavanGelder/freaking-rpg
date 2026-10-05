@@ -20,6 +20,11 @@ Open op je Android-telefoon de nieuwste [release](../../releases/latest) en tik 
 3. **Beelden** — plak in Instellingen → Beelden de URL van je Images-koppeling (je Cloudflare Worker
    `claudia-image-mcp`, eindigt op `/mcp/<geheime code>`). De app test hem zonder tegoed te gebruiken.
 
+## Taal
+- **App-taal**: Nederlands of Engels, in Instellingen → *Taal / Language* (standaard Nederlands).
+- **Verhaaltaal**: per avontuur, te kiezen bij stap 1 (*Taal van het verhaal*; begint met de app-taal). De verteller schrijft dan alles in die taal.
+  Oude avonturen blijven Nederlands.
+
 ## Hoe het werkt
 - De app zet je beurt (wereld, held, verborgen staat, samenvatting, laatste beurten, je actie en een verborgen
   d20-worp) als JSON in branch `rpg-data` en start de workflow **Verteller**. Die draait de officiële Claude Code

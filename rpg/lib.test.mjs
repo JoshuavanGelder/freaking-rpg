@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { classify, effortFor, extractJson, parseCliOutput, pendingIds, pickUsage, renderRequest, validId } from './lib.mjs';
+import { classify, effortFor, extractJson, langOf, msg, parseCliOutput, pendingIds, pickUsage, renderRequest, validId } from './lib.mjs';
 
 const world = { setting: 'Superhelden', tones: ['Humoristisch', 'Rauw'], wishes: 'geen spinnen' };
 const hero = { name: 'Bliksem Bas', className: 'Speedster', powers: 'supersnel, maar altijd honger', heroLook: 'lanky teen in a red hoodie' };
@@ -216,4 +216,28 @@ test('verbruik en nadenkstand', () => {
   assert.equal(effortFor('opus', 'start'), 'medium');
   assert.equal(effortFor('sonnet', 'turn'), 'low');
   assert.equal(effortFor('haiku', 'start'), null);
+});
+
+test('taal: het verzoek zegt in welke taal de verteller schrijft (oude verzoeken: Nederlands)', () => {
+  assert.equal(langOf({}), 'nl');
+  assert.equal(langOf({ lang: 'en' }), 'en');
+  assert.equal(langOf({ lang: 'fr' }), 'nl');
+  const base = { kind: 'start', world: { setting: 'Fantasy', tones: ['Gritty'] }, hero: { name: 'Fenna' }, state: { hp: 20, maxHp: 20, gold: 10 }, roll: 7, pacing: { turn: 0, total: null, from: 0 } };
+  const nl = renderRequest(base);
+  assert.match(nl, /## Language\n- story language: Dutch/);
+  const en = renderRequest({ ...base, lang: 'en' });
+  assert.match(en, /## Language\n- story language: English/);
+  assert.match(en, /write everything new in English/);
+  assert.ok(en.indexOf('## Language') < en.indexOf('## World'));
+});
+
+test('taal: meldingen van de workflow in de taal van het verzoek', () => {
+  assert.equal(classify(null, "You've reached your usage limit", 1, 'en').message, 'Your Claude limit is used up.');
+  assert.equal(classify(null, "You've reached your usage limit", 1).message, 'Je Claude-limiet is op.');
+  assert.match(classify(null, 'Invalid bearer token', 1, 'en').message, /does not work/);
+  assert.match(classify(null, 'iets anders', 1, 'en').message, /no usable answer/);
+  assert.match(classify(null, 'iets anders', 1).message, /geen bruikbaar antwoord/);
+  assert.equal(classify({ subtype: 'success', structured_output: { narration: 'x' } }, '', 0, 'en').message, 'Done');
+  assert.equal(msg('en', 'cannotStart', 'boom'), 'Claude Code could not start: boom');
+  assert.equal(msg('xx', 'ok'), 'Klaar');
 });
