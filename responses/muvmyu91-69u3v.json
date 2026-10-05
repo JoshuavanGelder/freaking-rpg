@@ -1,17 +1,17 @@
 {
  "id": "muvmyu91-69u3v",
- "finishedAt": "2026-10-05T19:22:08.008Z",
- "durationMs": 17576,
+ "finishedAt": "2026-10-05T19:23:09.524Z",
+ "durationMs": 27407,
  "status": "ok",
  "message": "Done",
  "resetAt": null,
  "answer": {
   "title": "",
-  "narration": "\"I'll take it.\" Juno doesn't argue. \"Then get some sleep, Spacefarer.\"\n\nYou sleep on a cot in the ridge hab. By morning the crawler has come and gone, and the new strut holds when you lift off. At Bay Nine, Juno hands you the codes to a battered salvage skiff with grapples and a cutting arm. \"Bring the skiff back. The money's nice too.\"\n\nTwo days out, the deep belt is dark and quiet. Then the Halcyon slides into your forward view. She's broken in half and tumbling slowly, with glittering debris all around her. The recorder bay is on the aft section, and every eleven seconds it swings past you.",
+  "narration": "\"I'm in.\" Juno doesn't argue. \"Thought you'd say that.\"\n\nThe crawler arrives at dawn. By noon the new strut is on, and you set the skiff down at Bay Nine like it's made of glass. Juno hands you the keys to a battered salvage skiff with grapple arms and a cutting rig. \"Recorder's orange, aft of the bridge. Nav core's behind the pilot seat. Don't be a hero.\"\n\nTwo days out, the Halcyon fills your canopy. She's a broken spine of grey hull, turning slowly end over end. A glittering cloud of her own plating drifts around her. Every few minutes, a slab of it crosses your path. The bridge section comes around, and then it's gone again.",
   "choices": [
-   "Match her spin and grapple on",
-   "Thread the debris toward the stern",
-   "Scan the wreck before moving closer"
+   "Match her spin and grapple the bridge",
+   "Watch the debris and time a gap",
+   "Scan the wreck for a safer entry"
   ],
   "check": {
    "used": false,
@@ -25,15 +25,15 @@
    "heal": "volledig",
    "regen": "",
    "gold": 0,
-   "xp": 5,
+   "xp": 10,
    "addItems": [
-    "Salvage skiff codes"
+    "Salvage skiff keys"
    ],
    "removeItems": [],
    "addQuests": [
     {
-     "title": "Recover the Halcyon's recorder",
-     "detail": "Bring back the flight recorder and nav core for forty-five thousand."
+     "title": "Recover the Halcyon's recorder and core",
+     "detail": "Bring the flight recorder and nav core back for the insurer."
     }
    ],
    "completeQuests": [],
@@ -41,13 +41,13 @@
    "addTraits": [],
    "removeTraits": []
   },
-  "summary": "Waren Spacefarer, a young pilot, wants forty thousand credits to buy Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling on the Grubstake, freed eleven refugees and filed an informant claim, but that pays out months from now. He flew Juno Reyes's medicine run to Occator Ridge and owned up to the broken strut, so Juno paid him in full. He took the Halcyon salvage job: the insurer pays forty-five thousand for the wrecked freighter's flight recorder and nav core, and Juno takes ten percent. Flying Juno's salvage skiff, he has reached the tumbling, broken Halcyon in the deep belt.",
+  "summary": "Waren Spacefarer wants forty thousand credits for Marta Okafor's Kestrel. He exposed Dren Vasko's people smuggling on the Grubstake, freed eleven refugees and filed an informant claim that won't pay for months. He flew Juno Reyes's medicine run to Occator Ridge, broke a strut, owned it and got paid. He then took Juno's deep belt salvage job: the Halcyon's insurer pays forty-five thousand for her flight recorder and nav core. Juno takes ten percent. In a borrowed salvage skiff, Waren has reached the tumbling wreck, which is surrounded by drifting debris.",
   "gameOver": false,
   "image": {
    "show": true,
    "kind": "scene",
-   "prompt": "View from a small salvage skiff cockpit with grapple arms visible: a huge ore freighter broken in half, slowly tumbling among glittering debris and dark asteroids in the deep asteroid belt, distant faint sunlight. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, at the controls, seen from behind.",
-   "fallback": "A broken ore freighter split in two tumbling slowly among glittering debris and dark asteroids in deep space, faint distant sunlight, cold and silent."
+   "prompt": "View from a small salvage skiff cockpit with grapple arms: a broken grey ore freighter wreck tumbling slowly end over end in deep space, a glittering cloud of hull plating drifting around it, distant asteroids, harsh white sunlight. A lean young man in his early twenties, short dark brown hair, light stubble, keen grey eyes, worn olive flight jacket over a grey t-shirt, at the controls.",
+   "fallback": "A broken grey freighter hull tumbling in deep space among drifting metal debris and distant asteroids, harsh white sunlight, black starry sky."
   },
   "heroLook": "",
   "portrait": "",
@@ -58,7 +58,7 @@
     "status": "",
     "home": "",
     "role": "",
-    "note": "Lent Waren a salvage skiff for the Halcyon job; takes ten percent.",
+    "note": "Lent Waren a salvage skiff for the Halcyon job, takes ten percent.",
     "companion": ""
    }
   ],
@@ -66,17 +66,15 @@
    "places": [
     {
      "name": "Halcyon wreck",
-     "detail": "Ore freighter broken in two, tumbling in a deep belt debris field; the recorder bay is aft."
+     "detail": "Broken ore freighter tumbling in a deep belt rock field, ringed by her own debris."
     }
    ],
    "facts": [
-    "Waren flies Juno's borrowed salvage skiff and must bring it back.",
-    "The Halcyon's aft section swings past every eleven seconds."
+    "The Halcyon's recorder is orange, aft of the bridge; the nav core is behind the pilot seat."
    ],
    "forgetFacts": [
     "The skiff is anchored on the Occator Ridge pad with a broken starboard strut.",
-    "Juno is sending a crawler with a spare strut for the skiff.",
-    "Juno would lend a salvage skiff for the Halcyon job and take ten percent."
+    "Juno is sending a crawler with a spare strut for the skiff."
    ],
    "time": "fourth day, deep belt"
   },
@@ -84,19 +82,19 @@
    "ambience": "spaceship_hum",
    "mood": "tense",
    "sfx": [
-    "discovery_sting"
+    "danger_sting"
    ]
   }
  },
  "model": "opus",
  "effort": "low",
  "usage": {
-  "input": 2,
-  "output": 1801,
-  "cacheRead": 13441,
-  "cacheWrite": 4399,
-  "costUsd": 0.0739,
-  "apiMs": 16699,
-  "numTurns": 2
+  "input": 4,
+  "output": 3188,
+  "cacheRead": 35493,
+  "cacheWrite": 1944,
+  "costUsd": 0.0864,
+  "apiMs": 26420,
+  "numTurns": 3
  }
 }
