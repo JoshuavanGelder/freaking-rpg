@@ -1,0 +1,76 @@
+{
+ "id": "muuto08n-zzypg",
+ "finishedAt": "2026-10-05T05:42:05.956Z",
+ "durationMs": 28651,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "\"Houd hem tegen!\" Vorrin springt de grotingang in, zijn mes flitsend in de gloed. Het wezen slaat hem opzij als een vlieg. Hij rolt over de stenen, maar staat weer op en gaat opnieuw.\n\nJij drukt beide handen op de borst van de Vorst en legt een knoop om zijn hart. Die glijdt weg. Het vuur is te heet, je handen trillen te hard. De draad aan je pols rukt. Nog een vlaag wit vuur kronkelt via jouw arm naar buiten, en je huid scheurt open in een rode lijn tot aan je elleboog.\n\nDe vreter zwelt op. Zijn mond wordt breder.\n\nDe Vorst grijpt je mouw. \"Het hart is niet het probleem, jongen,\" hijgt hij. \"Die draad is het.\"",
+  "choices": [
+   "Knip de draad aan je pols door",
+   "Bind de vreter bij zijn naam",
+   "Trek het vuur uit de vreter terug"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Wilskracht",
+   "dc": 14,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -5,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. Hij bond de ziekte van de Vorst in Aureks steen, waarin een vuurvreter zat. In de zonnegrot goot Joshua het eerste vuur in het hart van de Vorst, maar de vreter stal de helft via de draad aan zijn pols. Joshua's poging het hart te sluiten mislukte; de vreter zoog nog meer vuur weg en groeit. Vorrin houdt het wezen bij de ingang op. De Vorst zegt dat de draad het echte probleem is.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Dark cave beneath a golden sun throne; a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, pressing glowing hands on the chest of a man in his sixties, hunched and emaciated, grey ashen skin, sunken burning gold eyes, thin white hair, scorched tattered gold-and-white robes; white fire streams from his wrist toward a towering faceless figure of smouldering coal and drifting smoke in the cave mouth.",
+   "fallback": "Dark cave beneath an empty golden throne at dusk, scorched stone floor, a red glow and drifting smoke at the cave mouth."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Vorrin Grauwveer",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Houdt de vreter op bij de grotingang.",
+    "companion": "ja"
+   }
+  ],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3413,
+  "cacheRead": 29354,
+  "cacheWrite": 8023,
+  "costUsd": 0.1383,
+  "apiMs": 27834,
+  "numTurns": 3
+ }
+}
