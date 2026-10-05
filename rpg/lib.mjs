@@ -63,13 +63,12 @@ export function pacingLines(r) {
   }
   lines.push(`- the player chose a story of about ${total} turns, ending with a real conclusion. The number is a guide, not a wall: the story must land well, never be cut off in the middle of something.`);
   if (r.kind === 'start') {
-    lines.push('- this is the opening. Plan the arc now (see "Story length and ending").');
+    lines.push(`- this is the opening. Plan the whole arc now for exactly ${total} turns (see "Story length and ending"): size the main mission and the problem of the world to what fits in ${total} turns, so the main goal is reached and concluded by turn ${total}. Do not start something bigger than that.`);
     return lines;
   }
   const left = total - turn;
   // De speler kan het einde ook tijdens het spelen kiezen ("nog 10 beurten"): dan telt de voortgang vanaf dat moment.
   const from = Number.isInteger(r.pacing?.from) && r.pacing.from > 0 ? Math.min(r.pacing.from, total - 1) : 0;
-  const progress = (turn - from) / Math.max(1, total - from);
   lines.push(`- this is turn ${turn} of about ${total}.`);
   if (from > 0) lines.push(`- the player decided at turn ${from} that the story should end at turn ${total}. Shape a final arc from where the story stands now: use what is already in play (open quests, enemies, allies) rather than starting over.`);
   const last = total + END_GRACE;
@@ -79,12 +78,15 @@ export function pacingLines(r) {
     lines.push('- THE END IS DUE: this turn should be the ending. Resolve the main thread. If the hero is in the middle of the mission, finish it in this turn by compressing what is left (a time skip, "by the time ...") instead of cutting it off. Close the open quests, write a satisfying final scene in the tone and set gameOver to true. No new cliffhanger, no choices needed.');
     lines.push(`- Ending now is the default and never padding. Only if the decisive moment is literally unfolding right now and would be spoiled by compressing it, you may play it out in one more turn (gameOver false); the story ends at turn ${last} at the latest.`);
   } else if (left === 1) {
-    lines.push('- ONE turn left after this one: this turn is the final confrontation or decision, so the mission the hero is on must reach its decisive moment now. The next turn is the ending.');
+    lines.push('- this turn is the final confrontation or decision, so the mission the hero is on must reach its decisive moment now. The next turn is the ending.');
   } else if (left <= 3) {
-    lines.push(`- ${left} turns left after this one: you are in the climax. Wrap up open threads and head for the final confrontation; no new big threads.`);
+    lines.push('- you are in the climax: wrap up open threads and head for the final confrontation; no new big threads.');
     lines.push(`- Check the main mission: count the scenes it still needs. If that is more than ${left - 1}, compress (skip travel, merge steps). If it is already resolved, you may end the story now with a closing scene (gameOver true) instead of padding.`);
-  } else if (left <= 6 || progress >= 0.6) {
-    lines.push(`- ${left} turns left: the story is in its last stretch. Stop opening new big threads, resolve the side threads and keep the main mission in view: count the scenes it still needs and, if that is more than ${left - 2}, compress (skip travel, merge steps) so it reaches its decisive moment in time.`);
+  }
+  // Elke beurt, niet pas aan het einde: het hele verhaal en elke missie worden op het aantal beurten dat er nog is afgestemd.
+  if (left > 0) {
+    lines.push(`- ${left} turn${left === 1 ? '' : 's'} left after this one (the ending is turn ${total}). Fit the whole story to that number, from now on and not only near the end: every mission, quest and plot thread you start or continue must be finished within the turns that are left.`);
+    if (left > 1) lines.push(`- Before you open a new mission or thread, count: with ${left} turns left it may take at most about ${Math.max(1, left - 2)} turns, so it is done in time and the main goal is still reached by turn ${total}. Size its scope to that (a short job of two or three scenes, not a long campaign), skip travel and filler, and do not start anything that cannot finish in time. If the mission the hero is on needs more scenes than remain, compress it now instead of at the end.`);
   }
   return lines;
 }

@@ -98,12 +98,15 @@ de techniek (GitHub-branch + workflow + warme runner + APK via Releases) komt da
   opent een paneel met "Einde: nog N beurten" en de keuze (Afsluiten = volgende beurt is het einde, 3/5/10/20, stepper,
   Onbeperkt; bewust zonder tekstveld; `TurnsPicker` in StoryScreen). Overschrijft de lengte van het startscherm, werkt ook bij
   onbeperkte of oude avonturen. `pacing.from` laat de verteller vanaf dat moment een slotstuk bouwen (geen reset).
-  **Het einde is een richtlijn, geen muur** (`pacingLines`, `END_GRACE` = 2 in `rpg/lib.mjs`): de verteller begint al bij ≤ 6 beurten
-  (of het laatste derde) af te bouwen, telt elke beurt hoeveel scenes de missie nog nodig heeft en kort dat in (reisdelen overslaan,
-  stappen samenvoegen), mag bij ≤ 3 beurten vroeg afsluiten als de missie al af is, en maakt een lopende missie op de eindbeurt
-  af in plaats van hem af te kappen. Staat het beslissende moment er echt middenin, dan mag het einde 1 of 2 beurten schuiven
-  (nooit verder dan `total + END_GRACE`: dan "NO EXTRA TURNS LEFT"); afsluiten blijft de standaard. De verteller houdt in `summary`
-  één zin over hoe het hoofddoel moet aflopen. Aanleiding: nog midden in een missie met 1 beurt over; Joshua voegde zelf 3 beurten toe.
+  **Het hele verhaal past bij het aantal beurten** (`pacingLines`, `END_GRACE` = 2 in `rpg/lib.mjs`): niet pas bij de laatste beurten afbouwen,
+  maar vanaf de opening. De opening bepaalt de grootte van het verhaal (hoofdmissie en probleem van de wereld passen in N beurten);
+  elk verzoek zegt "K turns left after this one" en eist dat elke missie, quest of draad die hij start of voortzet daarin past
+  (nieuwe missie hooguit ± K−2 beurten, klein van opzet, geen opvulling; past de lopende missie niet meer, dan meteen inkorten). Bij
+  ≤ 3 beurten klimaat en mag hij vroeg afsluiten als de missie al af is; de eindbeurt maakt een lopende missie af in plaats van
+  hem af te kappen. Staat het beslissende moment er echt middenin, dan mag het einde 1 of 2 beurten schuiven (nooit verder dan
+  `total + END_GRACE`: dan "NO EXTRA TURNS LEFT"); afsluiten blijft de standaard. Kiest Joshua tijdens het spelen een nieuw einde
+  (`pacing.from`), dan stemt de verteller het hele restant daarop af. In `summary` houdt hij één zin over hoofddoel, afloop en wat er nog
+  voor nodig is. Aanleiding: nog midden in een missie met 1 beurt over; Joshua voegde zelf 3 beurten toe.
   **Toch doorgaan** (`resumeStory(adv, {note, turns})`, `resume(id, opts)` in turns.tsx): op de eindkaart; zet `ended` terug, een
   gevallen held (0 leven) komt terug met half leven, en de app start meteen een beurt. Optioneel (alles mag leeg): een tekst
   "Hoe wil je verder?" (`note`, ≤ 400 tekens, wordt de actie in het verhaal én `resumed.note` in het verzoek: de verteller ziet het

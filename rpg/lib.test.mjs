@@ -72,34 +72,40 @@ test('lengte van het avontuur: opening, onderweg, laatste beurten en het einde',
   const turn = (n, total = 12) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total }, action: 'x' });
   assert.match(renderRequest({ kind: 'start', world, hero, pacing: { turn: 0, total: 12 } }), /about 12 turns[\s\S]*this is the opening/);
   assert.match(turn(3), /turn 3 of about 12/);
-  assert.doesNotMatch(turn(3), /THE END IS DUE|last stretch|turns left/);
-  assert.doesNotMatch(turn(5), /last stretch/); // 7 beurten over: nog gewoon onderweg
-  assert.match(turn(6), /6 turns left: the story is in its last stretch/); // al ruim op tijd beginnen met afbouwen
-  assert.match(turn(8), /last stretch/);
-  assert.match(turn(10), /2 turns left after this one: you are in the climax/);
-  assert.match(turn(11), /ONE turn left/);
+  assert.doesNotMatch(turn(3), /THE END IS DUE/);
+  assert.match(turn(10), /you are in the climax/);
+  assert.match(turn(11), /final confrontation or decision[\s\S]*next turn is the ending/);
   assert.match(turn(12), /THE END IS DUE/);
   assert.match(turn(15), /THE END IS DUE/); // te laat: het einde blijft "nu"
 });
 
-test('de verteller telt de missie mee: inkorten, vroeg afsluiten en nooit midden in iets stoppen', () => {
+test('het hele verhaal past bij het aantal beurten dat er is: elke beurt, niet pas aan het eind', () => {
   const turn = (n, total = 12) => renderRequest({ kind: 'turn', world, hero, pacing: { turn: n, total }, action: 'x' });
-  // Het aantal beurten is een richtlijn, geen muur.
-  assert.match(turn(3), /a guide, not a wall/);
-  // Vanaf de laatste stukken: tel de scenes die de missie nog nodig heeft en bouw dat zo nodig in.
-  assert.match(turn(6), /count the scenes it still needs[\s\S]*compress/);
+  // De opening zet de grootte van het verhaal meteen op het aantal beurten.
+  const start = renderRequest({ kind: 'start', world, hero, pacing: { turn: 0, total: 12 } });
+  assert.match(start, /Plan the whole arc now for exactly 12 turns/);
+  assert.match(start, /size the main mission[\s\S]*fits in 12 turns/);
+  // Ook vroeg en halverwege staat het aantal beurten dat over is erbij, met de eis dat elke missie erin past.
+  assert.match(turn(1), /11 turns left after this one \(the ending is turn 12\)/);
+  assert.match(turn(1), /Fit the whole story to that number, from now on and not only near the end/);
+  assert.match(turn(1), /with 11 turns left it may take at most about 9 turns/);
+  assert.match(turn(5), /with 7 turns left it may take at most about 5 turns/);
+  assert.match(turn(5), /do not start anything that cannot finish in time/);
+  assert.match(turn(8), /compress it now instead of at the end/);
+  assert.match(turn(10), /2 turns left after this one/);
+  // Het einde: een lopende missie wordt afgemaakt, niet afgekapt; de speling is maximaal END_GRACE beurten.
   assert.match(turn(10), /count the scenes it still needs[\s\S]*compress/);
   assert.match(turn(10), /already resolved, you may end the story now/);
   assert.match(turn(11), /mission the hero is on must reach its decisive moment now/);
-  // De eindbeurt maakt een lopende missie af in plaats van hem af te kappen.
   assert.match(turn(12), /finish it in this turn by compressing what is left/);
-  // Een beetje speling (END_GRACE): het einde mag 1 of 2 beurten schuiven, maar nooit verder.
   assert.equal(END_GRACE, 2);
   assert.match(turn(12), /story ends at turn 14 at the latest/);
   assert.match(turn(13), /story ends at turn 14 at the latest/);
   assert.match(turn(14), /NO EXTRA TURNS LEFT/);
   assert.doesNotMatch(turn(14), /one more turn/);
-  assert.match(turn(20), /NO EXTRA TURNS LEFT/);
+  assert.doesNotMatch(turn(12), /turns? left after this one/); // op de eindbeurt geen telling meer
+  // Onbeperkt: geen budget.
+  assert.doesNotMatch(renderRequest({ kind: 'turn', world, hero, pacing: { turn: 5, total: null }, action: 'x' }), /Fit the whole story/);
 });
 
 test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => {
@@ -108,8 +114,9 @@ test('einde tijdens het spelen gekozen: voortgang telt vanaf dat moment', () => 
   const t = turn(41, 60, 40);
   assert.match(t, /decided at turn 40 that the story should end at turn 60/);
   assert.match(t, /turn 41 of about 60/);
-  assert.doesNotMatch(t, /last stretch|THE END IS DUE/);
-  assert.match(turn(52, 60, 40), /last stretch/); // 12 van 20 beurten gespeeld
+  assert.doesNotMatch(t, /THE END IS DUE/);
+  assert.match(t, /19 turns left after this one \(the ending is turn 60\)/); // het hele restant wordt op die 19 beurten afgestemd
+  assert.match(turn(52, 60, 40), /8 turns left after this one/); // 12 van 20 beurten gespeeld
   assert.match(turn(58, 60, 40), /2 turns left after this one/);
   assert.match(turn(60, 60, 40), /THE END IS DUE/);
   // Vanaf de start (from 0) geen "decided"-regel.
