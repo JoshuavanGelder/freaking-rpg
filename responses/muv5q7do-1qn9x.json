@@ -1,0 +1,71 @@
+{
+ "id": "muv5q7do-1qn9x",
+ "finishedAt": "2026-10-05T11:19:24.223Z",
+ "durationMs": 8545,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Kerstkoning",
+     "detail": "Stoffenwinkel aan Havenweg 7, vol kerstmutsen, garen en gordijnen; ruikt naar ui."
+    }
+   ],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "nacht, eerste dag"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Kerstkoning, Havenweg 7",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Trap de deur in met supersnelheid",
+   "Sluip door het raam naar binnen",
+   "Klop beleefd en roep: 'Pizzakoerier!'"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Small dark fabric shop at night on a harbor street, window full of red Christmas hats in summer, a faint greasy handprint on the door glass, a young extremely muscular handsome man with short dark hair, white t-shirt, jeans and sneakers standing before it, wind swirl behind him",
+   "fallback": "Dark fabric shop front on a harbor street at night, window full of red Christmas hats and yarn, dim streetlight, wet cobblestones."
+  },
+  "narration": "Je bent er in een oogwenk. Havenweg 7: een donker winkeltje, het raam vol rode kerstmutsen midden in de zomer. Op de deurklink zit een vettige afdruk. Binnen brandt zacht licht en je hoort het getik van breinaalden. Heel snel getik.\n\nHet ruikt naar ui.",
+  "portrait": "",
+  "summary": "Bart versloeg Gerrits uienrobot en bracht het geld terug. Het Mandje laat vettige briefjes achter en kijkt mee. Gerrit zag een man met vette handschoenen en kerstmuts. Een pompon leidde Bart naar stoffenwinkel Kerstkoning, Havenweg 7, waar nu licht brandt en iemand razendsnel breit.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1011,
+  "cacheRead": 11405,
+  "cacheWrite": 2950,
+  "costUsd": 0.0242,
+  "apiMs": 7572,
+  "numTurns": 2
+ }
+}
