@@ -1,0 +1,68 @@
+{
+ "id": "muutf1yf-gmnmw",
+ "finishedAt": "2026-10-05T05:35:07.858Z",
+ "durationMs": 29073,
+ "status": "ok",
+ "message": "Klaar",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "Je strekt je hand naar het water en zoekt met je wil naar de draad. Hij is heet, glad en hongerig. Je buigt hem, verder, verder, tot hij strak staat als een snaar.\n\nDan knipt je wil hem door.\n\nOnder het water klinkt een kreet die je niet met je oren hoort, maar met je botten. Het afgeknipte eind zwiept terug en schroeit een rode streep over je pols. Het rode licht zakt weg in de diepte. Het water kookt niet meer, het pruttelt.\n\nHet potje tegen je buik wordt rustig.\n\n\"Verdoofd, niet dood,\" zegt Veen schor. \"Hij laat een nieuwe draad groeien. Je hebt tot vanavond, jongen. Misschien minder.\"",
+  "choices": [
+   "Vertrek meteen met het vuur naar de grot",
+   "Vraag Veen hoe je de vreter bedwingt",
+   "Bind de vreter met een naamknoop"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Lotbinden",
+   "dc": 12,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Joshua, ooit straatarm, is magiër op de kraaientroon van Velmoor. Hij knoopte Ilse, de Blinde Abt en Vorrin en heeft een belofteknoop met Moeder Veen. Hij zwoer de Zonnevorst nooit te doden. Hij ving het eerste vuur in Veens potje en bond de ziekte van de Vorst in Aureks steen, waarin een vuurvreter bleek te zitten. Veen gooide de steen in het moeras. Joshua knipte met zijn lotschaar de lichtdraad door waarmee de vreter naar het vuur zocht; het beest is verdoofd maar laat een nieuwe draad groeien. Het vuur moet vanavond naar het hart van de Vorst in de zonnegrot.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Misty swamp in the morning, a thin young man around twenty, gaunt pale face, messy dark hair, dark intense eyes, black velvet clothes with a high silver-embroidered collar, heavy dark wool mantle, sturdy black boots, slicing a thread of red light above black water with an outstretched hand, sparks scattering, steam rising.",
+   "fallback": "Misty swamp in the morning, black water with faint steam, reeds along the bank, a crooked little hut in the background, cold grey light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "De lichtdraad van de vreter is doorgeknipt, maar hij laat een nieuwe groeien."
+   ],
+   "forgetFacts": [],
+   "time": "ochtend, na de terugreis"
+  }
+ },
+ "model": "opus",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 3206,
+  "cacheRead": 17897,
+  "cacheWrite": 19481,
+  "costUsd": 0.2236,
+  "apiMs": 27929,
+  "numTurns": 3
+ }
+}
