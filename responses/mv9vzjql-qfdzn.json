@@ -1,0 +1,83 @@
+{
+ "id": "mv9vzjql-qfdzn",
+ "finishedAt": "2026-10-15T18:43:20.326Z",
+ "durationMs": 13740,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "narration": "You slam your staff into the rock and pull the wet air toward you. Water sheets across the ground ahead of the charging beast and snaps to ice. The salamander hits the glaze and skids, claws shrieking, steam boiling off its belly. It crashes into a boulder and snarls, scales dimming. The ice is already cracking and sagging under its heat.",
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [
+   {
+    "name": "Fire salamander",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Skidded on Mr Magic's ice, dazed against a boulder, ice melting fast.",
+    "companion": ""
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Blast it with fire while it's stunned",
+   "Slam it with another cold wave",
+   "Try to talk to the beast"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, wooden staff raised, a sheet of ice spreading across black rock as a huge ember-scaled salamander skids on it, steam clouds, dusk, red glowing spring behind",
+   "fallback": "A bowl of black rock with a glowing red steaming spring, a sheet of ice glittering across the ground, clouds of steam at dusk."
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, tracked claw prints to the red spring, blocked by a giant ember-scaled salamander. His water wave enraged it; he froze its path and it skidded, dazed. Plan: defeat or calm the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "ice_magic"
+   ]
+  },
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2162,
+  "cacheRead": 31247,
+  "cacheWrite": 4278,
+  "costUsd": 0.0419,
+  "apiMs": 12805,
+  "numTurns": 3
+ }
+}
