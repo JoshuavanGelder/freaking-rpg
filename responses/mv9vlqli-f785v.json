@@ -1,0 +1,73 @@
+{
+ "id": "mv9vlqli-f785v",
+ "finishedAt": "2026-10-15T18:32:34.650Z",
+ "durationMs": 11223,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You raise your staff and call the water. It comes sluggishly, as if the air itself is parched. A thin silver stream trickles into the fountain basin, then sputters out: barely a bucketful. The villagers surge forward with cups and cupped hands, jostling.\n\nThe old woman tugs your sleeve again. \"It's a start, mage, but it's not enough. The spring is the only true cure.\"",
+  "choices": [
+   "Conjure again, harder, until the basin fills",
+   "Ask the old woman about the hills",
+   "Set out for the glowing hills now"
+  ],
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 8,
+   "success": false
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Mr Magic, a hugely muscular, fast-learning mage, arrived in Karrowmere where the fountain has run dry. A fiery presence blocks the spring in the hills. His first water conjuring yielded only a bucketful. Plan: reach the spring, face the fire creature, restore the water, and conclude within 50 turns.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Villagers crowding around a stone fountain with a thin trickle of water in a medieval market square, afternoon light, red glow over hills behind",
+   "fallback": "A dry stone fountain in a medieval timber-house market square, red glow over distant hills, afternoon light."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "water_splash"
+   ]
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1240,
+  "cacheRead": 0,
+  "cacheWrite": 16205,
+  "costUsd": 0.0772,
+  "apiMs": 9791,
+  "numTurns": 2
+ }
+}
