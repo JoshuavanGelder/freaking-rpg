@@ -1,0 +1,71 @@
+{
+ "id": "mv9vpt2r-lb88w",
+ "finishedAt": "2026-10-15T18:35:41.426Z",
+ "durationMs": 8407,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "dusk, first day"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Dry streambed in the red hills",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Examine the glassy footprints",
+   "Press on toward the glow",
+   "Cool the air with water magic"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, walking up a cracked dry streambed toward a red glowing ridge at dusk, heat haze",
+   "fallback": "A cracked dry streambed winding up scorched hills toward a pulsing red glow at dusk, heat haze over blackened rocks."
+  },
+  "narration": "The streambed narrows between blackened boulders. Pebbles here have fused into glass, and in the cracked mud you spot wide, scorched prints, each one melted smooth, leading uphill. Whatever walked here was heavy, and it walked recently. Beyond the next ridge, the red glow brightens, and the air shimmers.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  },
+  "summary": "Mr Magic, a muscular, fast-learning mage, found Karrowmere's fountain dry and conjured a bucketful of water. He now follows the dry streambed up the red hills, finding melted, scorched footprints of something heavy. Plan: reach the spring, face the fire creature, restore the water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1022,
+  "cacheRead": 14053,
+  "cacheWrite": 2579,
+  "costUsd": 0.0219,
+  "apiMs": 7360,
+  "numTurns": 2
+ }
+}
