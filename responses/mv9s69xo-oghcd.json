@@ -1,0 +1,116 @@
+{
+ "id": "mv9s69xo-oghcd",
+ "finishedAt": "2026-10-15T16:56:41.401Z",
+ "durationMs": 19154,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "The Ember Road",
+  "narration": "Smoke stings your nose as you stride into Karrowmere's market square, shoulders broad enough to turn heads. Then you see why: the fountain has gone dry, and a dozen villagers stand around it, panicking.\n\nAn old woman in a faded blue shawl grabs your sleeve. \"Mage! The spring in the hills has stopped. Something fiery sits on it. Please, we'll be dead of thirst in days.\"\n\nBehind her, the hills glow a sullen red.",
+  "choices": [
+   "Promise to restore the spring",
+   "Ask what the villagers have seen",
+   "Conjure water to calm them"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [
+   {
+    "name": "Fire",
+    "value": 4
+   },
+   {
+    "name": "Water",
+    "value": 3
+   },
+   {
+    "name": "Speed",
+    "value": 3
+   },
+   {
+    "name": "Strength",
+    "value": 5
+   },
+   {
+    "name": "Quick Learning",
+    "value": 5
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 0,
+   "addItems": [
+    "Mage's staff"
+   ],
+   "removeItems": [],
+   "addQuests": [
+    {
+     "title": "Restore the Spring",
+     "detail": "Find what blocks Karrowmere's spring in the hills."
+    }
+   ],
+   "completeQuests": [],
+   "location": "Karrowmere market square",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Mr Magic, a hugely muscular and powerful mage, arrives in Karrowmere where the well has dried. A fiery presence blocks the spring in the hills. Plan: reach the spring, face the fire creature, restore the water, and conclude within 50 turns.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling cloak over linen shirt, holding a wooden staff, in a medieval market square beside a dry stone fountain, worried villagers around him, an old woman in a blue shawl, red glow over hills behind, afternoon light",
+   "fallback": "A medieval village square with a dry stone fountain, timber houses, and a red glow over distant hills at dusk."
+  },
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, wearing a dark green travelling cloak over a plain linen shirt, leather boots, carrying a wooden staff.",
+  "portrait": "Head and shoulders portrait of a very muscular man in his thirties, short dark hair, strong jaw, dark green cloak, confident look, village square background in warm light.",
+  "cast": [
+   {
+    "name": "Old woman",
+    "look": "elderly woman in her seventies, thin, weathered face, grey hair in a bun, faded blue shawl over a brown dress",
+    "status": "levend",
+    "home": "Karrowmere",
+    "role": "villager who asks the hero for help",
+    "note": "Begged the hero to save the spring.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "Karrowmere",
+     "detail": "A timber-house village whose fountain has run dry; hills with a glowing red spring lie beyond."
+    }
+   ],
+   "facts": [
+    "The spring in the hills is blocked by something fiery."
+   ],
+   "forgetFacts": [],
+   "time": "afternoon, first day"
+  },
+  "sound": {
+   "ambience": "market",
+   "mood": "tense",
+   "sfx": []
+  }
+ },
+ "model": "sonnet",
+ "effort": "medium",
+ "usage": {
+  "input": 4,
+  "output": 2788,
+  "cacheRead": 15253,
+  "cacheWrite": 16501,
+  "costUsd": 0.0954,
+  "apiMs": 17955,
+  "numTurns": 3
+ }
+}
