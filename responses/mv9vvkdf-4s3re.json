@@ -1,0 +1,84 @@
+{
+ "id": "mv9vvkdf-4s3re",
+ "finishedAt": "2026-10-15T18:40:10.389Z",
+ "durationMs": 8136,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [
+   {
+    "name": "Fire salamander",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Hit by Mr Magic's water; hissing, enraged, now charging him.",
+    "companion": ""
+   }
+  ],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Freeze its path with water",
+   "Dodge and strike its flank",
+   "Shout to calm the beast"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, hurling a roaring surge of water at a huge ember-scaled salamander beside a glowing red spring, clouds of steam, dusk",
+   "fallback": "A bowl of black rock with a glowing red spring, clouds of steam rising in the dusk light."
+  },
+  "narration": "You sweep your staff and a roaring wave of water leaps from it, slamming into the beast's flank. Steam explodes outward in a scalding cloud. The salamander shrieks, scales dimming where the water struck.\n\nThen it lunges. Its tail whips through the steam and clips your ribs, hot as a forge poker, as the yellow eyes lock on you.",
+  "portrait": "\"\"",
+  "sound": {
+   "ambience": "",
+   "mood": "action",
+   "sfx": [
+    "water_splash",
+    "monster_growl"
+   ]
+  },
+  "summary": "Mr Magic, a muscular, fast-learning mage, followed melted claw prints to the red spring, held by a giant ember-scaled salamander. He hit it with a wave of water; it is now enraged and charging. Plan: deal with the creature, restore the spring's water for Karrowmere, conclude by turn 50.",
+  "title": "\"\""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1026,
+  "cacheRead": 14053,
+  "cacheWrite": 3218,
+  "costUsd": 0.0245,
+  "apiMs": 7179,
+  "numTurns": 2
+ }
+}
