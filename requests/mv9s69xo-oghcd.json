@@ -1,0 +1,49 @@
+{
+ "id": "mv9s69xo-oghcd",
+ "createdAt": "2026-10-15T16:56:20.172Z",
+ "kind": "start",
+ "model": "sonnet",
+ "lang": "en",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Standard",
+  "wishes": "Normal magic. Like fire, speed, water. Nothing like knots of destiny etc.",
+  "textLength": "normaal",
+  "arc": "lang",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Mr Magic",
+  "className": "Mage",
+  "powers": "Fast in learning new magic. Already very strong",
+  "looks": "Very muscular"
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "",
+  "attributes": [],
+  "inventory": [],
+  "quests": [],
+  "traits": []
+ },
+ "summary": "",
+ "cast": [],
+ "recent": [],
+ "action": null,
+ "roll": 14,
+ "pacing": {
+  "turn": 0,
+  "total": 50,
+  "from": 0
+ },
+ "sound": {
+  "ambience": null,
+  "mood": null
+ }
+}
