@@ -1,0 +1,105 @@
+{
+ "id": "mv9vlqli-f785v",
+ "createdAt": "2026-10-15T18:32:20.454Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "lang": "en",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Standard",
+  "wishes": "Normal magic. Like fire, speed, water. Nothing like knots of destiny etc.",
+  "textLength": "normaal",
+  "arc": "lang",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Mr Magic",
+  "className": "Mage",
+  "powers": "Fast in learning new magic. Already very strong",
+  "looks": "Very muscular",
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, wearing a dark green travelling scarf over a plain linen shirt, leather boots, carrying a wooden staff."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 0,
+  "level": 1,
+  "location": "Karrowmere market square",
+  "attributes": [
+   {
+    "name": "Fire",
+    "value": 4
+   },
+   {
+    "name": "Water",
+    "value": 3
+   },
+   {
+    "name": "Speed",
+    "value": 3
+   },
+   {
+    "name": "Strength",
+    "value": 5
+   },
+   {
+    "name": "Quick Learning",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Mage's staff"
+  ],
+  "quests": [
+   {
+    "title": "Restore the Spring",
+    "detail": "Find what blocks Karrowmere's spring in the hills.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Mr Magic, a hugely muscular and powerful mage, arrives in Karrowmere where the well has dried. A fiery presence blocks the spring in the hills. Plan: reach the spring, face the fire creature, restore the water, and conclude within 50 turns.",
+ "cast": [
+  {
+   "name": "Old woman",
+   "look": "elderly woman in her seventies, thin, weathered face, grey hair in a bun, faded blue shawl over a brown dress",
+   "home": "Karrowmere",
+   "role": "villager who asks the hero for help",
+   "note": "Begged the hero to save the spring."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Karrowmere",
+    "detail": "A timber-house village whose fountain has run dry; hills with a glowing red spring lie beyond."
+   }
+  ],
+  "facts": [
+   "The spring in the hills is blocked by something fiery."
+  ],
+  "time": "afternoon, first day"
+ },
+ "recent": [
+  {
+   "action": null,
+   "narration": "Smoke stings your nose as you stride into Karrowmere's market square, shoulders broad enough to turn heads. Then you see why: the fountain has gone dry, and a dozen villagers stand around it, panicking.\n\nAn old woman in a faded blue shawl grabs your sleeve. \"Mage! The spring in the hills has stopped. Something fiery sits on it. Please, we'll be dead of thirst in days.\"\n\nBehind her, the hills glow a sullen red.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling cloak over linen shirt, holding a wooden staff, in a medieval market square beside a dry stone fountain, worried villagers around him, an old woman in a blue shawl, red glow over hills behind, afternoon light"
+  }
+ ],
+ "action": "Conjure water to calm them",
+ "roll": 4,
+ "pacing": {
+  "turn": 1,
+  "total": 50,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "market",
+  "mood": "tense"
+ }
+}
