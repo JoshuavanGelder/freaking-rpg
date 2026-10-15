@@ -1,0 +1,88 @@
+{
+ "id": "mv9vt01i-a0ff7",
+ "finishedAt": "2026-10-15T18:38:10.449Z",
+ "durationMs": 8370,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You crest the ridge, staff ready. Below lies a bowl of black rock, and in its center the spring: a pool of glowing red water, steaming and bubbling.\n\nCoiled around it lies a huge salamander-like beast, scales glowing like embers, its tail thrashing in the shallows. Water hisses to steam where it touches. One yellow eye is slowly opening, and it has already found you.",
+  "choices": [
+   "Hurl water at the beast",
+   "Call out and try to talk",
+   "Circle the rim and sneak closer"
+  ],
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "attributes": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Ridge above the spring",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "summary": "Mr Magic, a muscular, fast-learning mage, conjured a little water for Karrowmere and followed melted claw prints up the red hills. Over the ridge he found the spring, held by a giant ember-scaled salamander that has just noticed him. Plan: deal with the creature, restore the water, conclude by turn 50.",
+  "gameOver": false,
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, on a ridge looking down at a giant glowing ember-scaled salamander coiled around a steaming red spring in a black rock bowl, dusk",
+   "fallback": "A bowl of black volcanic rock at dusk with a glowing red steaming pool in the center, heat haze and drifting embers."
+  },
+  "heroLook": "",
+  "portrait": "",
+  "cast": [
+   {
+    "name": "Fire salamander",
+    "look": "huge salamander-like beast larger than a horse, ember-glowing scales, thick tail, yellow eyes",
+    "status": "levend",
+    "home": "The red spring",
+    "role": "fiery creature blocking the spring",
+    "note": "Coiled on the spring; has noticed the hero.",
+    "companion": "nee"
+   }
+  ],
+  "canon": {
+   "places": [
+    {
+     "name": "The red spring",
+     "detail": "A glowing, steaming pool in a bowl of black rock beyond the ridge."
+    }
+   ],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "dusk, first day"
+  },
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1103,
+  "cacheRead": 14053,
+  "cacheWrite": 2843,
+  "costUsd": 0.0238,
+  "apiMs": 7466,
+  "numTurns": 2
+ }
+}
