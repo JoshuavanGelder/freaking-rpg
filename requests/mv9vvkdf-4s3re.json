@@ -1,0 +1,143 @@
+{
+ "id": "mv9vvkdf-4s3re",
+ "createdAt": "2026-10-15T18:39:58.947Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "lang": "en",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Standard",
+  "wishes": "Normal magic. Like fire, speed, water. Nothing like knots of destiny etc.",
+  "textLength": "normaal",
+  "arc": "lang",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Mr Magic",
+  "className": "Mage",
+  "powers": "Fast in learning new magic. Already very strong",
+  "looks": "Very muscular",
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, wearing a dark green travelling scarf over a plain linen shirt, leather boots, carrying a wooden staff."
+ },
+ "state": {
+  "hp": 20,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 23,
+  "level": 1,
+  "location": "Ridge above the spring",
+  "attributes": [
+   {
+    "name": "Fire",
+    "value": 4
+   },
+   {
+    "name": "Water",
+    "value": 3
+   },
+   {
+    "name": "Speed",
+    "value": 3
+   },
+   {
+    "name": "Strength",
+    "value": 5
+   },
+   {
+    "name": "Quick Learning",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Mage's staff"
+  ],
+  "quests": [
+   {
+    "title": "Restore the Spring",
+    "detail": "Find what blocks Karrowmere's spring in the hills.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Mr Magic, a muscular, fast-learning mage, conjured a little water for Karrowmere and followed melted claw prints up the red hills. Over the ridge he found the spring, held by a giant ember-scaled salamander that has just noticed him. Plan: deal with the creature, restore the water, conclude by turn 50.",
+ "cast": [
+  {
+   "name": "Old woman",
+   "look": "elderly woman in her seventies, thin, weathered face, grey hair in a bun, faded blue shawl over a brown dress",
+   "home": "Karrowmere",
+   "role": "villager who asks the hero for help",
+   "note": "Begged the hero to save the spring."
+  },
+  {
+   "name": "Fire salamander",
+   "look": "huge salamander-like beast larger than a horse, ember-glowing scales, thick tail, yellow eyes",
+   "home": "The red spring",
+   "role": "fiery creature blocking the spring",
+   "note": "Coiled on the spring; has noticed the hero."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Karrowmere",
+    "detail": "A timber-house village whose fountain has run dry; hills with a glowing red spring lie beyond."
+   },
+   {
+    "name": "Red hills",
+    "detail": "Scorched slopes above Karrowmere, glowing red where the blocked spring lies."
+   },
+   {
+    "name": "The red spring",
+    "detail": "A glowing, steaming pool in a bowl of black rock beyond the ridge."
+   }
+  ],
+  "facts": [
+   "The spring in the hills is blocked by something fiery.",
+   "The scorched prints are wide, clawed and melted smooth, leading uphill toward the spring."
+  ],
+  "time": "dusk, first day"
+ },
+ "recent": [
+  {
+   "action": null,
+   "narration": "Smoke stings your nose as you stride into Karrowmere's market square, shoulders broad enough to turn heads. Then you see why: the fountain has gone dry, and a dozen villagers stand around it, panicking.\n\nAn old woman in a faded blue shawl grabs your sleeve. \"Mage! The spring in the hills has stopped. Something fiery sits on it. Please, we'll be dead of thirst in days.\"\n\nBehind her, the hills glow a sullen red.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling cloak over linen shirt, holding a wooden staff, in a medieval market square beside a dry stone fountain, worried villagers around him, an old woman in a blue shawl, red glow over hills behind, afternoon light"
+  },
+  {
+   "action": "Conjure water to calm them",
+   "narration": "You raise your staff and call the water. It comes sluggishly, as if the air itself is parched. A thin silver stream trickles into the fountain basin, then sputters out: barely a bucketful. The villagers surge forward with cups and cupped hands, jostling.\n\nThe old woman tugs your sleeve again. \"It's a start, mage, but it's not enough. The spring is the only true cure.\""
+  },
+  {
+   "action": "Set out for the glowing hills now",
+   "narration": "The old woman presses a heel of bread into your hand and points to a dry streambed that winds uphill. You leave the square behind, villagers' eyes on your back.\n\nThe path climbs through cracked earth and withered grass. The air warms with every step, and the red glow ahead pulses like a slow heartbeat.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, climbing a rocky path toward glowing red hills at dusk, heat haze, cracked dry streambed beside him"
+  },
+  {
+   "action": "Follow the dry streambed upward",
+   "narration": "The streambed narrows between blackened boulders. Pebbles here have fused into glass, and in the cracked mud you spot wide, scorched prints, each one melted smooth, leading uphill. Whatever walked here was heavy, and it walked recently. Beyond the next ridge, the red glow brightens, and the air shimmers."
+  },
+  {
+   "action": "Examine the glassy footprints",
+   "narration": "You crouch beside a print. The glass is still faintly warm under your palm. Four long claw-grooves, deep and even, with a drag mark between them, like a heavy tail. Whatever it is, it's bigger than a horse, and it's headed for the spring."
+  },
+  {
+   "action": "Follow the prints over the ridge",
+   "narration": "You crest the ridge, staff ready. Below lies a bowl of black rock, and in its center the spring: a pool of glowing red water, steaming and bubbling.\n\nCoiled around it lies a huge salamander-like beast, scales glowing like embers, its tail thrashing in the shallows. Water hisses to steam where it touches. One yellow eye is slowly opening, and it has already found you.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, on a ridge looking down at a giant glowing ember-scaled salamander coiled around a steaming red spring in a black rock bowl, dusk"
+  }
+ ],
+ "action": "Hurl water at the beast",
+ "roll": 10,
+ "pacing": {
+  "turn": 6,
+  "total": 50,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "mountains",
+  "mood": "tense"
+ }
+}
