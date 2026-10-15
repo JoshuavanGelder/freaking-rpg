@@ -1,0 +1,73 @@
+{
+ "id": "mv9vr09q-8tqf2",
+ "finishedAt": "2026-10-15T18:36:37.421Z",
+ "durationMs": 8398,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The scorched prints are wide, clawed and melted smooth, leading uphill toward the spring."
+   ],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Follow the prints over the ridge",
+   "Cool the glass with water magic",
+   "Climb a boulder to scout ahead"
+  ],
+  "gameOver": false,
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, wearing a dark green travelling scarf over a plain linen shirt, leather boots, carrying a wooden staff.",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf, linen shirt, leather boots, wooden staff, crouching over melted clawed footprints in cracked mud, red glow at dusk",
+   "fallback": "Cracked dry streambed with glassy fused pebbles and melted footprints between blackened boulders, red glow at dusk."
+  },
+  "narration": "You crouch beside a print. The glass is still faintly warm under your palm. Four long claw-grooves, deep and even, with a drag mark between them, like a heavy tail. Whatever it is, it's bigger than a horse, and it's headed for the spring.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  },
+  "summary": "Mr Magic, a muscular, fast-learning mage, conjured a little water for Karrowmere's villagers and follows the dry streambed up the red hills. He found warm, melted, clawed prints of a large tailed fiery creature leading to the spring. Plan: reach the spring, face the creature, restore the water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 956,
+  "cacheRead": 14053,
+  "cacheWrite": 2704,
+  "costUsd": 0.0218,
+  "apiMs": 7557,
+  "numTurns": 2
+ }
+}
