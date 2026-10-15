@@ -1,0 +1,76 @@
+{
+ "id": "mv9vn5gi-rd0m4",
+ "finishedAt": "2026-10-15T18:33:37.303Z",
+ "durationMs": 8400,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Red hills",
+     "detail": "Scorched slopes above Karrowmere, glowing red where the blocked spring lies."
+    }
+   ],
+   "facts": [],
+   "forgetFacts": [],
+   "time": "late afternoon, first day"
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Path to the red hills",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": false,
+   "attribute": "",
+   "dc": 0,
+   "success": true
+  },
+  "choices": [
+   "Follow the dry streambed upward",
+   "Climb straight toward the red glow",
+   "Call water to cool the path"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, climbing a rocky path toward glowing red hills at dusk, heat haze, cracked dry streambed beside him",
+   "fallback": "A rocky hill path with a cracked dry streambed leading toward distant slopes glowing red at dusk, heat haze in the air."
+  },
+  "narration": "The old woman presses a heel of bread into your hand and points to a dry streambed that winds uphill. You leave the square behind, villagers' eyes on your back.\n\nThe path climbs through cracked earth and withered grass. The air warms with every step, and the red glow ahead pulses like a slow heartbeat.",
+  "portrait": "",
+  "sound": {
+   "ambience": "mountains",
+   "mood": "",
+   "sfx": []
+  },
+  "summary": "Mr Magic, a hugely muscular, fast-learning mage, found Karrowmere's fountain dry. A fiery presence blocks the spring in the red hills. He conjured only a bucketful of water, then set out uphill along the dry streambed. Plan: reach the spring, face the fire creature, restore the water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 957,
+  "cacheRead": 14053,
+  "cacheWrite": 2319,
+  "costUsd": 0.0203,
+  "apiMs": 7446,
+  "numTurns": 2
+ }
+}
