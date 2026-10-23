@@ -1,0 +1,73 @@
+{
+ "id": "mvkztr0u-mvqyb",
+ "finishedAt": "2026-10-23T13:16:14.892Z",
+ "durationMs": 12514,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "title": "",
+  "narration": "You rake your hand toward the spring and the water answers sluggishly. Ice crawls up the pool's rim, then shatters as the salamander's heat flares back. A burst of scalding steam rolls over you, blistering your arm and shoulder.\n\nThe beast drags itself closer, yellow eyes narrowed. The glow in its scales flickers, but it isn't out.",
+  "portrait": "",
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 3,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Hurl a fireball to stun it",
+   "Dodge and circle to the spring",
+   "Try to speak calmly to it"
+  ],
+  "summary": "Mr Magic, a muscular fast-learning mage, fights a giant ember-scaled salamander blocking the red spring above Karrowmere. Cold waves weakened it, but his staff strike and his attempt to freeze the spring's edge failed, and he is burned and battered. Plan: defeat or calm the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "gameOver": false,
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "Black rock bowl with a glowing red steaming spring, cracked ice on the rim, scattered sparks, dusk light.",
+   "fallback": "Black rock bowl with a glowing red steaming spring, cracked ice on the rim, scattered sparks, dusk light."
+  },
+  "heroLook": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "danger_sting"
+   ]
+  }
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 1769,
+  "cacheRead": 31560,
+  "cacheWrite": 4397,
+  "costUsd": 0.0384,
+  "apiMs": 11783,
+  "numTurns": 3
+ }
+}
