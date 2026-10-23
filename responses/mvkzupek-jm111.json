@@ -1,0 +1,71 @@
+{
+ "id": "mvkzupek-jm111",
+ "finishedAt": "2026-10-23T13:16:54.328Z",
+ "durationMs": 6185,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 8,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "The red spring",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Speed",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Drench the spring's source with water",
+   "Calm the beast with gentle magic",
+   "Strike its dimmed scales with fire"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A steaming glowing red spring in a bowl of black rock at dusk, scattered sparks, drifting steam."
+  },
+  "narration": "You roll clear as the tail smashes the stone where you lay, then sprint low along the rim. The beast twists to follow, too slow, claws scrabbling on wet rock. You skid to a stop at the water's edge, the spring's heat on your face. Behind you, the salamander turns, sides heaving.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, fights a weakened ember-scaled salamander blocking the red spring above Karrowmere. He is burned and battered but has now dodged around to the spring's edge. Plan: defeat or calm the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 803,
+  "cacheRead": 14053,
+  "cacheWrite": 3511,
+  "costUsd": 0.0235,
+  "apiMs": 5504,
+  "numTurns": 2
+ }
+}
