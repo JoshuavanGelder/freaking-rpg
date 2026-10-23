@@ -1,0 +1,77 @@
+{
+ "id": "mvl0makb-76hby",
+ "finishedAt": "2026-10-23T13:38:32.154Z",
+ "durationMs": 16618,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "narration": "You wrap the water around you in a tight, thick shell and dive back against the current. The shield hisses but holds. You jam the staff behind the shards and heave with every muscle you have. The stone grinds, breaks free and tumbles away into the dark.\n\nThe spring roars through the channel and flings you upward in a rush of cold. You break the surface gasping, scorched and shaking. The pool runs clear and strong. At the rim the salamander crouches, its glow dim, watching you.",
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The vent is cleared and the spring flows freely again."
+   ],
+   "forgetFacts": [
+    "The molten stone in the vent has been frozen and cracked; the spring's water can flow again."
+   ],
+   "time": "dusk, first day"
+  },
+  "cast": [],
+  "changes": {
+   "hp": -1,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "The red spring",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Approach the salamander calmly",
+   "Climb out and rest first",
+   "Head down to Karrowmere"
+  ],
+  "gameOver": false,
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots.",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, rising from a clear steaming spring pool at dusk, gripping a wooden staff, huge ember-scaled salamander with yellow eyes crouched on the black rock rim watching",
+   "fallback": "A clear steaming spring pool in a bowl of black rock at dusk, red hills beyond, water flowing strongly."
+  },
+  "portrait": "",
+  "sound": {
+   "ambience": "mountains",
+   "mood": "calm",
+   "sfx": [
+    "water_splash"
+   ]
+  },
+  "summary": "Mr Magic fought the weakened fire salamander at the red spring above Karrowmere, froze the molten stone in the vent, then pried the shards free. The spring flows again. Still to do: calm the frightened salamander, return to Karrowmere with the water restored, and conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 4,
+  "output": 2205,
+  "cacheRead": 31426,
+  "cacheWrite": 4524,
+  "costUsd": 0.0433,
+  "apiMs": 15734,
+  "numTurns": 3
+ }
+}
