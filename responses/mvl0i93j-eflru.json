@@ -1,0 +1,71 @@
+{
+ "id": "mvl0i93j-eflru",
+ "finishedAt": "2026-10-23T13:35:12.551Z",
+ "durationMs": 7063,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Strength",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Surface and catch your breath",
+   "Blast the shards with water",
+   "Shield yourself and try again"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": false,
+   "kind": "scene",
+   "prompt": "",
+   "fallback": "A dark underwater vent in black rock, grey cracked stone wedged in a channel, orange glow fading, bubbles rising."
+  },
+  "narration": "You wedge your hands against the grey shards and heave. The fragments hold, still hot at their cores, and a jet of scalding water lashes your ribs as the channel shudders. Your grip tears loose. The current is pulling you up, and the stone is only half freed.",
+  "portrait": "\"\"",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": []
+  },
+  "summary": "Mr Magic fought the weakened fire salamander at the red spring above Karrowmere, dived in and froze the molten stone wedged in the vent. It cracked, but the shards still jam the channel and he was scalded trying to pry them loose. Still to do: clear the vent, calm the frightened salamander, restore Karrowmere's water, and conclude by turn 50.",
+  "title": "\"\""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 815,
+  "cacheRead": 14053,
+  "cacheWrite": 3383,
+  "costUsd": 0.0231,
+  "apiMs": 6114,
+  "numTurns": 2
+ }
+}
