@@ -1,0 +1,87 @@
+{
+ "id": "mvl0exi8-9b0l6",
+ "finishedAt": "2026-10-23T13:32:43.749Z",
+ "durationMs": 12201,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The molten stone in the vent has been frozen and cracked; the spring's water can flow again."
+   ],
+   "forgetFacts": [
+    "A pulsing molten stone wedged in the vent beneath the spring blocks the water and feeds the salamander."
+   ],
+   "time": "dusk, first day"
+  },
+  "cast": [
+   {
+    "name": "Fire salamander",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Starved of its fire when the stone froze; weak, frightened, may be calmed.",
+    "companion": ""
+   }
+  ],
+  "changes": {
+   "hp": -2,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 20,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Spring vent",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 14,
+   "success": true
+  },
+  "choices": [
+   "Surface and face the salamander",
+   "Pry the shattered stone loose",
+   "Calm the salamander with cool water"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, underwater in a glowing cavern, thrusting a hand at a molten stone in a rock channel, white frost and cracks spreading across it, steam and bubbles, orange light fading to blue",
+   "fallback": "An underwater rock channel with a glowing stone covered in white frost, bubbles and steam, orange and blue light."
+  },
+  "portrait": "",
+  "narration": "You gather the last of your breath and hurl cold into your palm, then loose it in one tight blast. Frost races over the molten stone. It screams, steam bursting around you, and your shield buckles. Then the stone cracks with a sharp crunch, its glow dying to dull grey. Water rushes past you through the channel, freed, and lifts you upward. A scalding splash catches your shoulder as you go.",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "ice_magic"
+   ]
+  },
+  "summary": "Mr Magic fought a weakened fire salamander at the red spring above Karrowmere, dived in, and froze the molten stone wedged in the vent. The water is freeing. Still to do: deal with the frightened salamander, finish clearing the vent, restore Karrowmere's water, and conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1074,
+  "cacheRead": 14053,
+  "cacheWrite": 3397,
+  "costUsd": 0.0257,
+  "apiMs": 11285,
+  "numTurns": 2
+ }
+}
