@@ -1,0 +1,85 @@
+{
+ "id": "mvkzvrkd-ol679",
+ "finishedAt": "2026-10-23T13:17:48.761Z",
+ "durationMs": 11696,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [
+    "The salamander's heat is fed by something deep under the red spring's source."
+   ],
+   "forgetFacts": [],
+   "time": "dusk, first day"
+  },
+  "cast": [
+   {
+    "name": "Fire salamander",
+    "look": "",
+    "status": "",
+    "home": "",
+    "role": "",
+    "note": "Dimmed and weakened; recoils from the cooling spring, no longer attacking blindly.",
+    "companion": ""
+   }
+  ],
+  "changes": {
+   "hp": 0,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 15,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 12,
+   "success": true
+  },
+  "choices": [
+   "Calm the salamander with gentle water",
+   "Dive in and find the blockage",
+   "Strike while it's weak"
+  ],
+  "gameOver": false,
+  "heroLook": "\"\"",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, driving a wooden staff into a glowing red spring, a column of water surging down, huge ember-scaled salamander with yellow eyes recoiling in steam behind him, dusk",
+   "fallback": "A glowing red spring in a bowl of black rock at dusk, thick steam rising, scorched hills around."
+  },
+  "narration": "You plunge the staff into the pool and pour everything into the water. It surges, a cold current driving down toward the glowing depths. The spring shudders. Far below, something hot and sullen hisses, and a pillar of steam erupts skyward.\n\nBehind you the salamander shrieks, but it doesn't charge. It flinches from the cooling water, its glow guttering, yellow eyes darting between you and the pool. Whatever feeds its fire is down there.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "tense",
+   "sfx": [
+    "water_splash"
+   ]
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, battered but standing, has reached the red spring above Karrowmere and drenched its source. The weakened salamander flinches from the cooling water; something hot below feeds it. Plan: calm or defeat the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1049,
+  "cacheRead": 14053,
+  "cacheWrite": 3346,
+  "costUsd": 0.0253,
+  "apiMs": 10890,
+  "numTurns": 2
+ }
+}
