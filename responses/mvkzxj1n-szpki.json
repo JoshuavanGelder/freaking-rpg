@@ -1,0 +1,73 @@
+{
+ "id": "mvkzxj1n-szpki",
+ "finishedAt": "2026-10-23T13:19:08.086Z",
+ "durationMs": 8648,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Strength",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Dive into the spring after the heat",
+   "Hurl a fireball to feed it, then calm it",
+   "Back off and shout to the beast"
+  ],
+  "gameOver": false,
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots",
+  "image": {
+   "show": false,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, stumbling back from a huge ember-scaled salamander with yellow eyes, steam, black rock bowl, red spring, dusk",
+   "fallback": "A bowl of black rock around a glowing red spring, steam rising at dusk."
+  },
+  "narration": "You leap in while it flinches, staff raised high. But your boots slip on the wet rock and the blow lands short. The salamander snaps its head round and slams into your shoulder. You tumble across the stone, bruised and breathless.\n\nIt doesn't follow. It crouches by the spring, glow guttering, yellow eyes flicking to the steaming depths. It's afraid of what's down there, too.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "hit"
+   ]
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, is hurt at the red spring above Karrowmere. He drenched its source; the weakened salamander fears whatever hot thing lies below. His latest strike failed on wet rock. Plan: calm or defeat the creature, deal with the heat below, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 972,
+  "cacheRead": 14053,
+  "cacheWrite": 3359,
+  "costUsd": 0.0246,
+  "apiMs": 7983,
+  "numTurns": 2
+ }
+}
