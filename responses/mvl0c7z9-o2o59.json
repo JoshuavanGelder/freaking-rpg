@@ -1,0 +1,81 @@
+{
+ "id": "mvl0c7z9-o2o59",
+ "finishedAt": "2026-10-23T13:30:36.076Z",
+ "durationMs": 11876,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [
+    {
+     "name": "Spring vent",
+     "detail": "A scalding hollow beneath the red spring where a molten stone wedges the water channel."
+    }
+   ],
+   "facts": [
+    "A pulsing molten stone wedged in the vent beneath the spring blocks the water and feeds the salamander."
+   ],
+   "forgetFacts": [],
+   "time": "dusk, first day"
+  },
+  "cast": [],
+  "changes": {
+   "hp": -1,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 10,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "Spring vent",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Water",
+   "dc": 13,
+   "success": true
+  },
+  "choices": [
+   "Grab the molten stone with water-wrapped hands",
+   "Freeze the stone with a focused blast",
+   "Surface and think of another plan"
+  ],
+  "gameOver": false,
+  "heroLook": "",
+  "image": {
+   "show": true,
+   "kind": "scene",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, underwater in a glowing cavern, wrapped in a shimmering bubble of water, facing a pulsing molten stone wedged in a rock channel, orange light, steam",
+   "fallback": "An underwater cavern of black rock with a glowing molten stone wedged in a narrow channel, orange light and rising bubbles."
+  },
+  "portrait": "",
+  "sound": {
+   "ambience": "cave",
+   "mood": "tense",
+   "sfx": [
+    "water_splash",
+    "discovery_sting"
+   ]
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, fights a weakened fire salamander at the red spring above Karrowmere. He drenched the source, then dived in and found a molten stone wedged in the vent, blocking the water and feeding the beast's fire. Plan: remove or quench the stone, settle the salamander, free the spring, restore Karrowmere's water, and conclude by turn 50.",
+  "title": "",
+  "narration": "You pull the water around you like a cloak and dive. The cold current drags you down through scalding dark, heat pressing at the edges of your shield.\n\nAt the bottom a vent opens into a hollow. A fist-sized lump of molten stone pulses in the channel, wedged tight, hissing and spitting at the cold. This is what blocks the spring.\n\nYour cloak thins. Your lungs burn."
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1377,
+  "cacheRead": 14053,
+  "cacheWrite": 3317,
+  "costUsd": 0.0284,
+  "apiMs": 10378,
+  "numTurns": 2
+ }
+}
