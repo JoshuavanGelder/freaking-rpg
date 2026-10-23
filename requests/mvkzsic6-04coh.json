@@ -1,0 +1,144 @@
+{
+ "id": "mvkzsic6-04coh",
+ "createdAt": "2026-10-23T13:15:02.742Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "lang": "en",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Standard",
+  "wishes": "Normal magic. Like fire, speed, water. Nothing like knots of destiny etc.",
+  "textLength": "normaal",
+  "arc": "lang",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Mr Magic",
+  "className": "Mage",
+  "powers": "Fast in learning new magic. Already very strong",
+  "looks": "Very muscular",
+  "heroLook": "\""
+ },
+ "state": {
+  "hp": 18,
+  "maxHp": 20,
+  "gold": 10,
+  "xp": 58,
+  "level": 1,
+  "location": "Ridge above the spring",
+  "attributes": [
+   {
+    "name": "Fire",
+    "value": 4
+   },
+   {
+    "name": "Water",
+    "value": 3
+   },
+   {
+    "name": "Speed",
+    "value": 3
+   },
+   {
+    "name": "Strength",
+    "value": 5
+   },
+   {
+    "name": "Quick Learning",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Mage's staff"
+  ],
+  "quests": [
+   {
+    "title": "Restore the Spring",
+    "detail": "Find what blocks Karrowmere's spring in the hills.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Mr Magic, a muscular fast-learning mage, tracked claw prints to the red spring, blocked by a giant ember-scaled salamander. He hit it with water, froze its path, then struck with a second cold wave. It is weakened and wary, retreating to the spring. Plan: defeat or calm the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+ "cast": [
+  {
+   "name": "Old woman",
+   "look": "elderly woman in her seventies, thin, weathered face, grey hair in a bun, faded blue shawl over a brown dress",
+   "home": "Karrowmere",
+   "role": "villager who asks the hero for help",
+   "note": "Begged the hero to save the spring."
+  },
+  {
+   "name": "Fire salamander",
+   "look": "huge salamander-like beast larger than a horse, ember-glowing scales, thick tail, yellow eyes",
+   "home": "The red spring",
+   "role": "fiery creature blocking the spring",
+   "note": "Battered by Mr Magic's cold wave, dimmed and sagging, wary and weakening."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Karrowmere",
+    "detail": "A timber-house village whose fountain has run dry; hills with a glowing red spring lie beyond."
+   },
+   {
+    "name": "Red hills",
+    "detail": "Scorched slopes above Karrowmere, glowing red where the blocked spring lies."
+   },
+   {
+    "name": "The red spring",
+    "detail": "A glowing, steaming pool in a bowl of black rock beyond the ridge."
+   }
+  ],
+  "facts": [
+   "The spring in the hills is blocked by something fiery.",
+   "The scorched prints are wide, clawed and melted smooth, leading uphill toward the spring."
+  ],
+  "time": "dusk, first day"
+ },
+ "recent": [
+  {
+   "action": "Follow the dry streambed upward",
+   "narration": "The streambed narrows between blackened boulders. Pebbles here have fused into glass, and in the cracked mud you spot wide, scorched prints, each one melted smooth, leading uphill. Whatever walked here was heavy, and it walked recently. Beyond the next ridge, the red glow brightens, and the air shimmers."
+  },
+  {
+   "action": "Examine the glassy footprints",
+   "narration": "You crouch beside a print. The glass is still faintly warm under your palm. Four long claw-grooves, deep and even, with a drag mark between them, like a heavy tail. Whatever it is, it's bigger than a horse, and it's headed for the spring."
+  },
+  {
+   "action": "Follow the prints over the ridge",
+   "narration": "You crest the ridge, staff ready. Below lies a bowl of black rock, and in its center the spring: a pool of glowing red water, steaming and bubbling.\n\nCoiled around it lies a huge salamander-like beast, scales glowing like embers, its tail thrashing in the shallows. Water hisses to steam where it touches. One yellow eye is slowly opening, and it has already found you.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, on a ridge looking down at a giant glowing ember-scaled salamander coiled around a steaming red spring in a black rock bowl, dusk"
+  },
+  {
+   "action": "Hurl water at the beast",
+   "narration": "You sweep your staff and a roaring wave of water leaps from it, slamming into the beast's flank. Steam explodes outward in a scalding cloud. The salamander shrieks, scales dimming where the water struck.\n\nThen it lunges. Its tail whips through the steam and clips your ribs, hot as a forge poker, as the yellow eyes lock on you.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, carrying a wooden staff, hurling a roaring surge of water at a huge ember-scaled salamander beside a glowing red spring, clouds of steam, dusk"
+  },
+  {
+   "action": "Freeze its path with water",
+   "narration": "You slam your staff into the rock and pull the wet air toward you. Water sheets across the ground ahead of the charging beast and snaps to ice. The salamander hits the glaze and skids, claws shrieking, steam boiling off its belly. It crashes into a boulder and snarls, scales dimming. The ice is already cracking and sagging under its heat.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, wooden staff raised, a sheet of ice spreading across black rock as a huge ember-scaled salamander skids on it, steam clouds, dusk, red glowing spring behind"
+  },
+  {
+   "action": "Slam it with another cold wave",
+   "narration": "You drag the staff through the air and a second wave surges out, colder than the first, crashing over the salamander as it struggles free of the ice. Steam bursts in a white wall. The beast screams, its glow sinking to a dull orange, and it staggers back toward the spring, thick tail dragging. Its yellow eyes stay fixed on you, wary now, not furious.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, sweeping a wooden staff as a huge cold wave of water crashes onto a huge ember-scaled salamander with yellow eyes, billowing steam, black rock bowl, glowing red spring, dusk"
+  }
+ ],
+ "action": "Smash the cooled scales with your staff",
+ "roll": 3,
+ "pacing": {
+  "turn": 9,
+  "total": 50,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "mountains",
+  "mood": "action"
+ }
+}
