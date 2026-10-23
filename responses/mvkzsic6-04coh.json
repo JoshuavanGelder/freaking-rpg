@@ -1,0 +1,73 @@
+{
+ "id": "mvkzsic6-04coh",
+ "finishedAt": "2026-10-23T13:15:15.521Z",
+ "durationMs": 9610,
+ "status": "ok",
+ "message": "Done",
+ "resetAt": null,
+ "answer": {
+  "attributes": [],
+  "canon": {
+   "places": [],
+   "facts": [],
+   "forgetFacts": [],
+   "time": ""
+  },
+  "cast": [],
+  "changes": {
+   "hp": -3,
+   "heal": "",
+   "regen": "",
+   "gold": 0,
+   "xp": 5,
+   "addItems": [],
+   "removeItems": [],
+   "addQuests": [],
+   "completeQuests": [],
+   "location": "",
+   "addTraits": [],
+   "removeTraits": []
+  },
+  "check": {
+   "used": true,
+   "attribute": "Strength",
+   "dc": 12,
+   "success": false
+  },
+  "choices": [
+   "Blast it with water again",
+   "Back off and talk to it",
+   "Freeze the spring's edge around it"
+  ],
+  "gameOver": false,
+  "heroLook": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots",
+  "image": {
+   "show": true,
+   "kind": "action",
+   "prompt": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, swinging a wooden staff at a huge ember-scaled salamander with yellow eyes, sparks flying, steam, black rock bowl, glowing red spring, dusk",
+   "fallback": "A bowl of black rock with a glowing red steaming spring at dusk, drifting steam and scattered sparks."
+  },
+  "narration": "You charge in and swing the staff at its cooled scales. They ring like cracked pottery, but the blow skips off and the beast twists. Its heavy tail sweeps your legs, and you hit the rock hard, ribs aching. Sparks scatter around you. The salamander looms, sides heaving, dimmer but still dangerous.",
+  "portrait": "",
+  "sound": {
+   "ambience": "",
+   "mood": "",
+   "sfx": [
+    "hit"
+   ]
+  },
+  "summary": "Mr Magic, a muscular fast-learning mage, found the red spring blocked by a giant ember-scaled salamander. Water and cold waves weakened it, but his staff strike failed and its tail knocked him down. Plan: defeat or calm the creature, free the spring, restore Karrowmere's water, conclude by turn 50.",
+  "title": ""
+ },
+ "model": "sonnet",
+ "effort": "low",
+ "usage": {
+  "input": 2,
+  "output": 1009,
+  "cacheRead": 0,
+  "cacheWrite": 17369,
+  "costUsd": 0.0796,
+  "apiMs": 8290,
+  "numTurns": 2
+ }
+}
