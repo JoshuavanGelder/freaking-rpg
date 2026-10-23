@@ -1,0 +1,149 @@
+{
+ "id": "mvl0makb-76hby",
+ "createdAt": "2026-10-23T13:38:12.347Z",
+ "kind": "turn",
+ "model": "sonnet",
+ "lang": "en",
+ "world": {
+  "setting": "Fantasy",
+  "settingText": "",
+  "tones": [],
+  "toneText": "Standard",
+  "wishes": "Normal magic. Like fire, speed, water. Nothing like knots of destiny etc.",
+  "textLength": "normaal",
+  "arc": "lang",
+  "lang": "en"
+ },
+ "hero": {
+  "name": "Mr Magic",
+  "className": "Mage",
+  "powers": "Fast in learning new magic. Already very strong",
+  "looks": "Very muscular",
+  "heroLook": "\"\""
+ },
+ "state": {
+  "hp": 5,
+  "maxHp": 22,
+  "gold": 10,
+  "xp": 129,
+  "level": 2,
+  "location": "Spring vent",
+  "attributes": [
+   {
+    "name": "Fire",
+    "value": 4
+   },
+   {
+    "name": "Water",
+    "value": 3
+   },
+   {
+    "name": "Speed",
+    "value": 3
+   },
+   {
+    "name": "Strength",
+    "value": 5
+   },
+   {
+    "name": "Quick Learning",
+    "value": 5
+   }
+  ],
+  "inventory": [
+   "Mage's staff"
+  ],
+  "quests": [
+   {
+    "title": "Restore the Spring",
+    "detail": "Find what blocks Karrowmere's spring in the hills.",
+    "done": false
+   }
+  ],
+  "traits": []
+ },
+ "summary": "Mr Magic fought the weakened fire salamander at the red spring above Karrowmere, dived in and froze the molten stone wedged in the vent. It cracked, but the shards still jam the channel and he was scalded trying to pry them loose. Still to do: clear the vent, calm the frightened salamander, restore Karrowmere's water, and conclude by turn 50.",
+ "cast": [
+  {
+   "name": "Old woman",
+   "look": "elderly woman in her seventies, thin, weathered face, grey hair in a bun, faded blue shawl over a brown dress",
+   "home": "Karrowmere",
+   "role": "villager who asks the hero for help",
+   "note": "Begged the hero to save the spring."
+  },
+  {
+   "name": "Fire salamander",
+   "look": "huge salamander-like beast larger than a horse, ember-glowing scales, thick tail, yellow eyes",
+   "home": "The red spring",
+   "role": "fiery creature blocking the spring",
+   "note": "Starved of its fire when the stone froze; weak, frightened, may be calmed."
+  }
+ ],
+ "canon": {
+  "places": [
+   {
+    "name": "Karrowmere",
+    "detail": "A timber-house village whose fountain has run dry; hills with a glowing red spring lie beyond."
+   },
+   {
+    "name": "Red hills",
+    "detail": "Scorched slopes above Karrowmere, glowing red where the blocked spring lies."
+   },
+   {
+    "name": "The red spring",
+    "detail": "A glowing, steaming pool in a bowl of black rock beyond the ridge."
+   },
+   {
+    "name": "Spring vent",
+    "detail": "A scalding hollow beneath the red spring where a molten stone wedges the water channel."
+   }
+  ],
+  "facts": [
+   "The spring in the hills is blocked by something fiery.",
+   "The scorched prints are wide, clawed and melted smooth, leading uphill toward the spring.",
+   "The salamander's heat is fed by something deep under the red spring's source.",
+   "The molten stone in the vent has been frozen and cracked; the spring's water can flow again."
+  ],
+  "time": "dusk, first day"
+ },
+ "recent": [
+  {
+   "action": "Dodge and circle to the spring",
+   "narration": "You roll clear as the tail smashes the stone where you lay, then sprint low along the rim. The beast twists to follow, too slow, claws scrabbling on wet rock. You skid to a stop at the water's edge, the spring's heat on your face. Behind you, the salamander turns, sides heaving."
+  },
+  {
+   "action": "Drench the spring's source with water",
+   "narration": "You plunge the staff into the pool and pour everything into the water. It surges, a cold current driving down toward the glowing depths. The spring shudders. Far below, something hot and sullen hisses, and a pillar of steam erupts skyward.\n\nBehind you the salamander shrieks, but it doesn't charge. It flinches from the cooling water, its glow guttering, yellow eyes darting between you and the pool. Whatever feeds its fire is down there.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, driving a wooden staff into a glowing red spring, a column of water surging down, huge ember-scaled salamander with yellow eyes recoiling in steam behind him, dusk"
+  },
+  {
+   "action": "Strike while it's weak",
+   "narration": "You leap in while it flinches, staff raised high. But your boots slip on the wet rock and the blow lands short. The salamander snaps its head round and slams into your shoulder. You tumble across the stone, bruised and breathless.\n\nIt doesn't follow. It crouches by the spring, glow guttering, yellow eyes flicking to the steaming depths. It's afraid of what's down there, too."
+  },
+  {
+   "action": "Dive into the spring after the heat",
+   "narration": "You pull the water around you like a cloak and dive. The cold current drags you down through scalding dark, heat pressing at the edges of your shield.\n\nAt the bottom a vent opens into a hollow. A fist-sized lump of molten stone pulses in the channel, wedged tight, hissing and spitting at the cold. This is what blocks the spring.\n\nYour cloak thins. Your lungs burn.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, underwater in a glowing cavern, wrapped in a shimmering bubble of water, facing a pulsing molten stone wedged in a rock channel, orange light, steam"
+  },
+  {
+   "action": "Freeze the stone with a focused blast",
+   "narration": "You gather the last of your breath and hurl cold into your palm, then loose it in one tight blast. Frost races over the molten stone. It screams, steam bursting around you, and your shield buckles. Then the stone cracks with a sharp crunch, its glow dying to dull grey. Water rushes past you through the channel, freed, and lifts you upward. A scalding splash catches your shoulder as you go.",
+   "picture": "Very muscular man in his thirties, short dark hair, strong jaw, dark green travelling scarf over plain linen shirt, leather boots, underwater in a glowing cavern, thrusting a hand at a molten stone in a rock channel, white frost and cracks spreading across it, steam and bubbles, orange light fading to blue"
+  },
+  {
+   "action": "Pry the shattered stone loose",
+   "narration": "You wedge your hands against the grey shards and heave. The fragments hold, still hot at their cores, and a jet of scalding water lashes your ribs as the channel shudders. Your grip tears loose. The current is pulling you up, and the stone is only half freed."
+  }
+ ],
+ "action": "Shield yourself and try again",
+ "roll": 10,
+ "pacing": {
+  "turn": 17,
+  "total": 50,
+  "from": 0
+ },
+ "sound": {
+  "ambience": "cave",
+  "mood": "tense"
+ }
+}
